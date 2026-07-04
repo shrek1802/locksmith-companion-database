@@ -1,10 +1,9 @@
-# Ford Verified Correction Pack
+# Ford v1.1 Verified Correction Pack
 
-Upload this as database_pack.zip and run Install Database Pack.
+Upload this as database_pack.zip and run the Install Database Pack workflow.
 
 Main improvements:
-- Ford records split by Mk/generation.
-- Transit, Transit Custom, Transit Connect and Courier split properly.
-- HU101 Lishi and blade populated where supported.
-- ID63/ID83/ID49 transponder families separated by generation.
-- 2023+ vehicles marked needs_review where direct workshop confirmation is needed.
+- Stronger Access Fobs / MR-Key / Auto-Keys / Transpondery source trail.
+- Better split between ID63/80-bit and ID49 Hitag Pro generations.
+- Transit, Transit Custom, Connect, Courier and Tourneo split by generation.
+- New 2023+ platforms kept as needs_review rather than guessed.

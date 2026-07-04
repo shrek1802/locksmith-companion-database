@@ -1,6 +1,6 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-ford-verified-1",
+  "database_version": "2026.07.04-ford-v1.1",
   "created": "2026-07-04",
   "pack_type": "verified_key_lishi_database",
   "packs": [
@@ -80,9 +80,9 @@
       "id": "ford_key_lishi_profiles",
       "name": "FORD Verified Key + Lishi Profiles",
       "manufacturer": "ford",
-      "version": "2026.07.04-ford-verified-1",
+      "version": "2026.07.04-ford-v1.1",
       "file": "manufacturers/ford.json",
-      "records": 39,
+      "records": 38,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/ford.json"
     },
     {
@@ -303,10 +303,10 @@
     }
   ],
   "notes": [
-    "Ford verified correction pack.",
-    "Generation/Mk based records to avoid mixing Tibbe, HU101, ID63/ID83 and ID49 systems.",
-    "Transit/Transit Custom/Connect split into dedicated generations.",
-    "Newer 2023+ platforms marked needs_review where exact key system needs workshop confirmation.",
-    "Previous manufacturer manifest entries are retained."
+    "Ford v1.1 verified correction pack.",
+    "Tightens Ford records using Access Fobs, MR-Key, Auto-Keys and Transpondery references.",
+    "Generation/Mk based records retained.",
+    "Transit/Transit Custom/Transit Connect/Tourneo split into independent records.",
+    "2023+ platforms are marked needs_review until workshop-confirmed."
   ]
 }
