@@ -1,14 +1,15 @@
-# Locksmith Companion Database - VAG Key + Lishi Pack
+# Locksmith Companion Database Pack
 
-Upload these files to the root of:
-https://github.com/shrek1802/locksmith-companion-database
+Upload this ZIP as database_pack.zip to the root of your locksmith-companion-database repo.
 
-Structure:
-manifest.json
-manufacturers/
-  audi.json
-  skoda.json
-  seat.json
-  vw.json
+Then run the Install Database Pack workflow.
 
-This replaces the earlier small Batch 1 VAG files with expanded key + Lishi records.
+This pack adds:
+- Ford
+- Mercedes-Benz
+- Peugeot
+- Citroen / DS
+- Vauxhall / Opel
+- Nissan
+
+It keeps the VAG manifest entries already installed.
