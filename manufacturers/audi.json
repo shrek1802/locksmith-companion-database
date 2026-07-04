@@ -6,27 +6,35 @@
     "years": "2010-2018",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "audi_key_001"
+    "record_id": "audi_key_lishi_001"
   },
   {
     "make": "Audi",
@@ -35,27 +43,109 @@
     "years": "2018-present",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
     "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "audi_key_002"
+    "record_id": "audi_key_lishi_002"
+  },
+  {
+    "make": "Audi",
+    "model": "A2",
+    "variant": "A2",
+    "years": "1999-2005",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_003"
+  },
+  {
+    "make": "Audi",
+    "model": "A3",
+    "variant": "8L",
+    "years": "1996-2003",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_004"
   },
   {
     "make": "Audi",
@@ -64,27 +154,35 @@
     "years": "2003-2013",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "audi_key_003"
+    "record_id": "audi_key_lishi_005"
   },
   {
     "make": "Audi",
@@ -93,27 +191,35 @@
     "years": "2012-2020",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
     "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "audi_key_004"
+    "record_id": "audi_key_lishi_006"
   },
   {
     "make": "Audi",
@@ -122,375 +228,72 @@
     "years": "2020-present",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB Evo",
     "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
+      "blade_profile": "HU162T",
+      "lishi_tool": "HU162T",
+      "transponder": "MQB Evo AES smart key family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB Evo",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "audi_key_005"
+    "record_id": "audi_key_lishi_007"
   },
   {
     "make": "Audi",
-    "model": "A4",
-    "variant": "B7",
-    "years": "2004-2008",
+    "model": "TT",
+    "variant": "8N",
+    "years": "1998-2006",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
-      "blade_profile": "VAG profile - verify",
-      "transponder": "VAG transponder family - verify",
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart",
-      "immobiliser_family": "PQ/MLB older - verify",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "audi_key_006"
-  },
-  {
-    "make": "Audi",
-    "model": "A4",
-    "variant": "B8",
-    "years": "2008-2016",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 / emergency blade depending model - verify",
-      "transponder": "VAG MLB smart key AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart proximity / advanced key",
-      "immobiliser_family": "VAG MLB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_007"
-  },
-  {
-    "make": "Audi",
-    "model": "A4",
-    "variant": "B9",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 / emergency blade depending model - verify",
-      "transponder": "VAG MLB smart key AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart proximity / advanced key",
-      "immobiliser_family": "VAG MLB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_008"
-  },
-  {
-    "make": "Audi",
-    "model": "A5",
-    "variant": "8T/F5",
-    "years": "2007-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 / emergency blade depending model - verify",
-      "transponder": "VAG MLB smart key AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart proximity / advanced key",
-      "immobiliser_family": "VAG MLB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_009"
-  },
-  {
-    "make": "Audi",
-    "model": "A6",
-    "variant": "C6",
-    "years": "2004-2011",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "VAG profile - verify",
-      "transponder": "VAG transponder family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart",
-      "immobiliser_family": "MLB older - verify",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_010"
-  },
-  {
-    "make": "Audi",
-    "model": "A6",
-    "variant": "C7",
-    "years": "2011-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 / emergency blade depending model - verify",
-      "transponder": "VAG MLB smart key AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart proximity / advanced key",
-      "immobiliser_family": "VAG MLB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_011"
-  },
-  {
-    "make": "Audi",
-    "model": "A6",
-    "variant": "C8",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 / emergency blade depending model - verify",
-      "transponder": "VAG MLB smart key AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart proximity / advanced key",
-      "immobiliser_family": "VAG MLB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_012"
-  },
-  {
-    "make": "Audi",
-    "model": "Q2",
-    "variant": "Q2",
-    "years": "2016-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_013"
-  },
-  {
-    "make": "Audi",
-    "model": "Q3",
-    "variant": "8U",
-    "years": "2011-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "VAG profile - verify",
-      "transponder": "VAG transponder family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart",
-      "immobiliser_family": "PQ/MQB mixed",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_014"
-  },
-  {
-    "make": "Audi",
-    "model": "Q3",
-    "variant": "F3",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_015"
-  },
-  {
-    "make": "Audi",
-    "model": "Q5",
-    "variant": "8R/FY",
-    "years": "2008-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 / emergency blade depending model - verify",
-      "transponder": "VAG MLB smart key AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart proximity / advanced key",
-      "immobiliser_family": "VAG MLB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_016"
-  },
-  {
-    "make": "Audi",
-    "model": "Q7",
-    "variant": "4L/4M",
-    "years": "2005-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 / emergency blade depending model - verify",
-      "transponder": "VAG MLB smart key AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart proximity / advanced key",
-      "immobiliser_family": "VAG MLB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "audi_key_017"
+    "record_id": "audi_key_lishi_008"
   },
   {
     "make": "Audi",
@@ -499,27 +302,35 @@
     "years": "2006-2014",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "audi_key_018"
+    "record_id": "audi_key_lishi_009"
   },
   {
     "make": "Audi",
@@ -528,26 +339,737 @@
     "years": "2014-2023",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
     "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "audi_key_019"
+    "record_id": "audi_key_lishi_010"
+  },
+  {
+    "make": "Audi",
+    "model": "A4",
+    "variant": "B6 / B7",
+    "years": "2000-2008",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_011"
+  },
+  {
+    "make": "Audi",
+    "model": "A4",
+    "variant": "B8",
+    "years": "2008-2016",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_012"
+  },
+  {
+    "make": "Audi",
+    "model": "A4",
+    "variant": "B9",
+    "years": "2015-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_013"
+  },
+  {
+    "make": "Audi",
+    "model": "A5",
+    "variant": "8T / F5",
+    "years": "2007-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_014"
+  },
+  {
+    "make": "Audi",
+    "model": "A6",
+    "variant": "C6",
+    "years": "2004-2011",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_015"
+  },
+  {
+    "make": "Audi",
+    "model": "A6",
+    "variant": "C7",
+    "years": "2011-2018",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_016"
+  },
+  {
+    "make": "Audi",
+    "model": "A6",
+    "variant": "C8",
+    "years": "2018-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_017"
+  },
+  {
+    "make": "Audi",
+    "model": "A7",
+    "variant": "4G / 4K",
+    "years": "2010-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_018"
+  },
+  {
+    "make": "Audi",
+    "model": "A8",
+    "variant": "D3",
+    "years": "2002-2010",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_019"
+  },
+  {
+    "make": "Audi",
+    "model": "A8",
+    "variant": "D4",
+    "years": "2010-2017",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_020"
+  },
+  {
+    "make": "Audi",
+    "model": "A8",
+    "variant": "D5",
+    "years": "2017-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_021"
+  },
+  {
+    "make": "Audi",
+    "model": "Q2",
+    "variant": "Q2",
+    "years": "2016-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
+    "key_profile": {
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_022"
+  },
+  {
+    "make": "Audi",
+    "model": "Q3",
+    "variant": "8U",
+    "years": "2011-2018",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_023"
+  },
+  {
+    "make": "Audi",
+    "model": "Q3",
+    "variant": "F3",
+    "years": "2018-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
+    "key_profile": {
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_024"
+  },
+  {
+    "make": "Audi",
+    "model": "Q5",
+    "variant": "8R / FY",
+    "years": "2008-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_025"
+  },
+  {
+    "make": "Audi",
+    "model": "Q7",
+    "variant": "4L / 4M",
+    "years": "2005-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_026"
+  },
+  {
+    "make": "Audi",
+    "model": "Q8",
+    "variant": "Q8",
+    "years": "2018-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_027"
+  },
+  {
+    "make": "Audi",
+    "model": "Q4 e-tron",
+    "variant": "Q4 e-tron",
+    "years": "2021-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MEB",
+    "key_profile": {
+      "blade_profile": "HU162T emergency blade family",
+      "lishi_tool": "HU162T",
+      "transponder": "MEB smart key AES family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MEB",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T emergency blade family",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_028"
+  },
+  {
+    "make": "Audi",
+    "model": "e-tron",
+    "variant": "e-tron / Q8 e-tron",
+    "years": "2018-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "audi_key_lishi_029"
   }
 ]

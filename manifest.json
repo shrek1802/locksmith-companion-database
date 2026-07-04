@@ -1,56 +1,49 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-batch1",
+  "database_version": "2026.07.04-vag-key-lishi",
   "created": "2026-07-04",
-  "pack_type": "online_key_profile_database",
+  "pack_type": "online_key_lishi_database",
   "packs": [
     {
-      "id": "audi_key_profiles",
-      "name": "AUDI Key Profiles",
+      "id": "audi_key_lishi_profiles",
+      "name": "AUDI Key + Lishi Profiles",
       "manufacturer": "audi",
+      "version": "2026.07.04-vag-lishi-1",
       "file": "manufacturers/audi.json",
-      "records": 19,
-      "url": "https://raw.githubusercontent.com/shrek1/locksmith-companion-database/main/manufacturers/audi.json"
+      "records": 29,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/audi.json"
     },
     {
-      "id": "dacia_key_profiles",
-      "name": "DACIA Key Profiles",
-      "manufacturer": "dacia",
-      "file": "manufacturers/dacia.json",
-      "records": 12,
-      "url": "https://raw.githubusercontent.com/shrek1/locksmith-companion-database/main/manufacturers/dacia.json"
-    },
-    {
-      "id": "renault_key_profiles",
-      "name": "RENAULT Key Profiles",
-      "manufacturer": "renault",
-      "file": "manufacturers/renault.json",
-      "records": 21,
-      "url": "https://raw.githubusercontent.com/shrek1/locksmith-companion-database/main/manufacturers/renault.json"
-    },
-    {
-      "id": "seat_key_profiles",
-      "name": "SEAT Key Profiles",
+      "id": "seat_key_lishi_profiles",
+      "name": "SEAT Key + Lishi Profiles",
       "manufacturer": "seat",
+      "version": "2026.07.04-vag-lishi-1",
       "file": "manufacturers/seat.json",
-      "records": 12,
-      "url": "https://raw.githubusercontent.com/shrek1/locksmith-companion-database/main/manufacturers/seat.json"
+      "records": 22,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/seat.json"
     },
     {
-      "id": "skoda_key_profiles",
-      "name": "SKODA Key Profiles",
+      "id": "skoda_key_lishi_profiles",
+      "name": "SKODA Key + Lishi Profiles",
       "manufacturer": "skoda",
+      "version": "2026.07.04-vag-lishi-1",
       "file": "manufacturers/skoda.json",
-      "records": 14,
-      "url": "https://raw.githubusercontent.com/shrek1/locksmith-companion-database/main/manufacturers/skoda.json"
+      "records": 21,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/skoda.json"
     },
     {
-      "id": "vw_key_profiles",
-      "name": "VW Key Profiles",
+      "id": "vw_key_lishi_profiles",
+      "name": "VW Key + Lishi Profiles",
       "manufacturer": "vw",
+      "version": "2026.07.04-vag-lishi-1",
       "file": "manufacturers/vw.json",
-      "records": 24,
-      "url": "https://raw.githubusercontent.com/shrek1/locksmith-companion-database/main/manufacturers/vw.json"
+      "records": 42,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/vw.json"
     }
+  ],
+  "notes": [
+    "VAG Layer 1 key + Lishi profiles.",
+    "High confidence public/trade key data, still confirm by VIN/original key where variants exist.",
+    "Programming and module locations are not included in this layer."
   ]
 }

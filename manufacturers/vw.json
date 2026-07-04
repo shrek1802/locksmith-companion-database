@@ -1,351 +1,743 @@
 [
   {
     "make": "Volkswagen",
-    "model": "Golf",
-    "variant": "Golf Mk5",
-    "years": "2003-2009",
+    "model": "Lupo",
+    "variant": "Lupo",
+    "years": "1998-2005",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_001"
+    "record_id": "vw_key_lishi_001"
   },
   {
     "make": "Volkswagen",
-    "model": "Golf",
-    "variant": "Golf Mk6",
-    "years": "2008-2013",
+    "model": "Fox",
+    "variant": "Fox",
+    "years": "2005-2011",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_002"
+    "record_id": "vw_key_lishi_002"
   },
   {
     "make": "Volkswagen",
-    "model": "Golf",
-    "variant": "Golf Mk7",
-    "years": "2012-2020",
+    "model": "Up!",
+    "variant": "Up!",
+    "years": "2011-2023",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_003"
-  },
-  {
-    "make": "Volkswagen",
-    "model": "Golf",
-    "variant": "Golf Mk8",
-    "years": "2020-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "vw_key_004"
+    "record_id": "vw_key_lishi_003"
   },
   {
     "make": "Volkswagen",
     "model": "Polo",
-    "variant": "Polo 9N",
+    "variant": "9N",
     "years": "2001-2009",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_005"
+    "record_id": "vw_key_lishi_004"
   },
   {
     "make": "Volkswagen",
     "model": "Polo",
-    "variant": "Polo 6R/6C",
+    "variant": "6R / 6C",
     "years": "2009-2017",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_006"
+    "record_id": "vw_key_lishi_005"
   },
   {
     "make": "Volkswagen",
     "model": "Polo",
-    "variant": "Polo AW",
+    "variant": "AW",
     "years": "2017-present",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
     "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_007"
+    "record_id": "vw_key_lishi_006"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "variant": "Mk4",
+    "years": "1997-2004",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_007"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "variant": "Mk5",
+    "years": "2003-2009",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_008"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "variant": "Mk6",
+    "years": "2008-2013",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_009"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "variant": "Mk7",
+    "years": "2012-2020",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
+    "key_profile": {
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_010"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "variant": "Mk8",
+    "years": "2020-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB Evo",
+    "key_profile": {
+      "blade_profile": "HU162T",
+      "lishi_tool": "HU162T",
+      "transponder": "MQB Evo AES smart key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_011"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Jetta",
+    "variant": "Mk5 / Mk6",
+    "years": "2005-2018",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_012"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Beetle",
+    "variant": "New Beetle / A5",
+    "years": "1998-2019",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_013"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Scirocco",
+    "variant": "Mk3",
+    "years": "2008-2017",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_014"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Eos",
+    "variant": "Eos",
+    "years": "2006-2015",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_015"
   },
   {
     "make": "Volkswagen",
     "model": "Passat",
-    "variant": "Passat B6",
+    "variant": "B5 / B5.5",
+    "years": "1996-2005",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_016"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Passat",
+    "variant": "B6",
     "years": "2005-2010",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_008"
+    "record_id": "vw_key_lishi_017"
   },
   {
     "make": "Volkswagen",
     "model": "Passat",
-    "variant": "Passat B7",
+    "variant": "B7",
     "years": "2010-2015",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_009"
+    "record_id": "vw_key_lishi_018"
   },
   {
     "make": "Volkswagen",
     "model": "Passat",
-    "variant": "Passat B8",
+    "variant": "B8",
     "years": "2015-present",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
     "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_010"
+    "record_id": "vw_key_lishi_019"
   },
   {
     "make": "Volkswagen",
-    "model": "Tiguan",
-    "variant": "Tiguan I",
-    "years": "2007-2016",
+    "model": "CC",
+    "variant": "Passat CC / CC",
+    "years": "2008-2017",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_011"
-  },
-  {
-    "make": "Volkswagen",
-    "model": "Tiguan",
-    "variant": "Tiguan II",
-    "years": "2016-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "vw_key_012"
+    "record_id": "vw_key_lishi_020"
   },
   {
     "make": "Volkswagen",
@@ -354,27 +746,35 @@
     "years": "2003-2015",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_013"
+    "record_id": "vw_key_lishi_021"
   },
   {
     "make": "Volkswagen",
@@ -383,201 +783,146 @@
     "years": "2015-present",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
     "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_014"
+    "record_id": "vw_key_lishi_022"
   },
   {
     "make": "Volkswagen",
-    "model": "Caddy",
-    "variant": "Caddy 2K",
-    "years": "2004-2020",
+    "model": "Sharan",
+    "variant": "Sharan II",
+    "years": "2010-2022",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_015"
+    "record_id": "vw_key_lishi_023"
   },
   {
     "make": "Volkswagen",
-    "model": "Caddy",
-    "variant": "Caddy V",
-    "years": "2020-present",
+    "model": "Tiguan",
+    "variant": "Tiguan I",
+    "years": "2007-2016",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "vw_key_016"
-  },
-  {
-    "make": "Volkswagen",
-    "model": "Transporter",
-    "variant": "T5",
-    "years": "2003-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
-      "transponder": "ID48 / Megamos Crypto family - verify generation",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote",
-      "immobiliser_family": "VAG Immo 4 / PQ",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_017"
+    "record_id": "vw_key_lishi_024"
   },
   {
     "make": "Volkswagen",
-    "model": "Transporter",
-    "variant": "T6 / T6.1",
-    "years": "2015-present",
+    "model": "Tiguan",
+    "variant": "Tiguan II",
+    "years": "2016-present",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
     "key_profile": {
-      "blade_profile": "VAG profile - verify",
-      "transponder": "VAG transponder family - verify",
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart",
-      "immobiliser_family": "PQ/MQB mixed",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_018"
-  },
-  {
-    "make": "Volkswagen",
-    "model": "Crafter",
-    "variant": "Crafter I",
-    "years": "2006-2017",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "VAG profile - verify",
-      "transponder": "VAG transponder family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart",
-      "immobiliser_family": "VW/Mercedes shared - verify",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "vw_key_019"
-  },
-  {
-    "make": "Volkswagen",
-    "model": "Crafter",
-    "variant": "Crafter II",
-    "years": "2017-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "key_profile": {
-      "blade_profile": "VAG profile - verify",
-      "transponder": "VAG transponder family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart",
-      "immobiliser_family": "MQB commercial",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
-    },
-    "completion": {
-      "key_profile": 80,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "source_status": "public parts/key references + field confirmation required",
-    "last_updated": "2026-07-04",
-    "record_id": "vw_key_020"
+    "record_id": "vw_key_lishi_025"
   },
   {
     "make": "Volkswagen",
@@ -586,27 +931,35 @@
     "years": "2017-present",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
     "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_021"
+    "record_id": "vw_key_lishi_026"
   },
   {
     "make": "Volkswagen",
@@ -615,27 +968,442 @@
     "years": "2019-present",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
     "key_profile": {
-      "blade_profile": "HU162T / HU66 depending year/key - verify",
-      "transponder": "VAG MQB AES / ID48 AES family - verify",
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart proximity",
-      "immobiliser_family": "VAG MQB / MQB Evo",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_022"
+    "record_id": "vw_key_lishi_027"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Taigo",
+    "variant": "Taigo",
+    "years": "2021-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
+    "key_profile": {
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_028"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Touareg",
+    "variant": "Touareg I/II",
+    "years": "2002-2018",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
+    "key_profile": {
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_029"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Touareg",
+    "variant": "Touareg III",
+    "years": "2018-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MLB / MLB Evo",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T emergency blade by generation",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "MLB AES / advanced key family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity / advanced key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MLB / MLB Evo",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade by generation",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key/VIN because Audi MLB blade and smart key variants vary."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_030"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Caddy",
+    "variant": "2K",
+    "years": "2004-2020",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_031"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Caddy",
+    "variant": "Caddy V",
+    "years": "2020-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
+    "key_profile": {
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_032"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Transporter",
+    "variant": "T5",
+    "years": "2003-2015",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_033"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Transporter",
+    "variant": "T6 / T6.1",
+    "years": "2015-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_034"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Amarok",
+    "variant": "Amarok I",
+    "years": "2010-2020",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG PQ / Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66",
+      "transponder": "ID48 / Megamos Crypto family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ / Immo 4",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_035"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Amarok",
+    "variant": "Amarok II",
+    "years": "2022-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "Ford/VW shared platform",
+    "key_profile": {
+      "blade_profile": "HU101 / Ford-style emergency blade - verify",
+      "lishi_tool": "HU101 - verify",
+      "transponder": "Ford/VW smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Ford/VW shared platform",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 - verify where fitted",
+      "akl_blade_decode": "Decode/cut by HU101 / Ford-style emergency blade - verify",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Based on Ford Ranger platform; verify by original key."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_036"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Crafter",
+    "variant": "Crafter I",
+    "years": "2006-2017",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VW/Mercedes shared",
+    "key_profile": {
+      "blade_profile": "HU66 / Mercedes variant - verify",
+      "lishi_tool": "HU66 / HU64 verify",
+      "transponder": "ID48 / Mercedes-shared variant - verify",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VW/Mercedes shared",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU64 verify where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / Mercedes variant - verify",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Check original key; first-gen Crafter shares Mercedes Sprinter architecture."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_037"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Crafter",
+    "variant": "Crafter II",
+    "years": "2017-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MQB",
+    "key_profile": {
+      "blade_profile": "HU162T / HU66 variant by year",
+      "lishi_tool": "HU162T / HU66",
+      "transponder": "MQB AES / ID48 AES family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_038"
   },
   {
     "make": "Volkswagen",
@@ -644,27 +1412,35 @@
     "years": "2020-present",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MEB",
     "key_profile": {
-      "blade_profile": "VAG profile - verify",
-      "transponder": "VAG transponder family - verify",
+      "blade_profile": "HU162T emergency blade family",
+      "lishi_tool": "HU162T",
+      "transponder": "MEB smart key AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart",
-      "immobiliser_family": "MEB",
+      "key_type": "Smart proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MEB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T emergency blade family",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_023"
+    "record_id": "vw_key_lishi_039"
   },
   {
     "make": "Volkswagen",
@@ -673,26 +1449,108 @@
     "years": "2021-present",
     "market": "UK/EU",
     "database_layer": "layer_1_key_profile",
+    "platform": "VAG MEB",
     "key_profile": {
-      "blade_profile": "VAG profile - verify",
-      "transponder": "VAG transponder family - verify",
+      "blade_profile": "HU162T emergency blade family",
+      "lishi_tool": "HU162T",
+      "transponder": "MEB smart key AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart",
-      "immobiliser_family": "MEB",
+      "key_type": "Smart proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MEB",
       "oem_key": "to be added",
       "xhorse_equivalent": "to be added / verify",
       "keydiy_equivalent": "to be added / verify",
-      "verification_status": "needs_field_check",
-      "confidence": "medium"
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T emergency blade family",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
     },
     "completion": {
-      "key_profile": 80,
+      "key_profile": 90,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
-    "source_status": "public parts/key references + field confirmation required",
     "last_updated": "2026-07-04",
-    "record_id": "vw_key_024"
+    "record_id": "vw_key_lishi_040"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "ID.5",
+    "variant": "ID.5",
+    "years": "2022-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MEB",
+    "key_profile": {
+      "blade_profile": "HU162T emergency blade family",
+      "lishi_tool": "HU162T",
+      "transponder": "MEB smart key AES family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MEB",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T emergency blade family",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_041"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "ID.Buzz",
+    "variant": "ID.Buzz",
+    "years": "2022-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_key_profile",
+    "platform": "VAG MEB",
+    "key_profile": {
+      "blade_profile": "HU162T emergency blade family",
+      "lishi_tool": "HU162T",
+      "transponder": "MEB smart key AES family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MEB",
+      "oem_key": "to be added",
+      "xhorse_equivalent": "to be added / verify",
+      "keydiy_equivalent": "to be added / verify",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T emergency blade family",
+      "stock_note": "Confirm flip/prox and board type before ordering",
+      "notes": "Confirm by VIN/original key where variants exist."
+    },
+    "completion": {
+      "key_profile": 90,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-04",
+    "record_id": "vw_key_lishi_042"
   }
 ]

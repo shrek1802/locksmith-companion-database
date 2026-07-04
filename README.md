@@ -1,19 +1,14 @@
-# Locksmith Companion Database
+# Locksmith Companion Database - VAG Key + Lishi Pack
 
-Upload these files to a GitHub repository called:
+Upload these files to the root of:
+https://github.com/shrek1802/locksmith-companion-database
 
-locksmith-companion-database
-
-The app currently checks:
-https://raw.githubusercontent.com/shrek1/locksmith-companion-database/main/manifest.json
-
-Keep this structure:
-
+Structure:
 manifest.json
 manufacturers/
-  dacia.json
-  renault.json
-  vw.json
   audi.json
   skoda.json
   seat.json
+  vw.json
+
+This replaces the earlier small Batch 1 VAG files with expanded key + Lishi records.
