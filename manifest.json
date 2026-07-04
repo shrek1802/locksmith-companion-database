@@ -1,6 +1,6 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-renault-verified-1",
+  "database_version": "2026.07.04-ford-verified-1",
   "created": "2026-07-04",
   "pack_type": "verified_key_lishi_database",
   "packs": [
@@ -78,11 +78,11 @@
     },
     {
       "id": "ford_key_lishi_profiles",
-      "name": "FORD Key + Lishi Profiles",
+      "name": "FORD Verified Key + Lishi Profiles",
       "manufacturer": "ford",
-      "version": "2026.07.04-batch2-lishi-1",
+      "version": "2026.07.04-ford-verified-1",
       "file": "manufacturers/ford.json",
-      "records": 34,
+      "records": 39,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/ford.json"
     },
     {
@@ -303,9 +303,10 @@
     }
   ],
   "notes": [
-    "Renault verified correction pack.",
-    "Replaces generic Renault records with v5 verified-style key/Lishi/transponder records.",
-    "Uses ID4A/PCF7961/Hitag AES and VA2/VA6 where supported by references; older/newer variants marked high_confidence or needs_review.",
+    "Ford verified correction pack.",
+    "Generation/Mk based records to avoid mixing Tibbe, HU101, ID63/ID83 and ID49 systems.",
+    "Transit/Transit Custom/Connect split into dedicated generations.",
+    "Newer 2023+ platforms marked needs_review where exact key system needs workshop confirmation.",
     "Previous manufacturer manifest entries are retained."
   ]
 }

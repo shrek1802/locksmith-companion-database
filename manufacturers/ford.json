@@ -1,1260 +1,4580 @@
 [
   {
+    "record_id": "FORD-FIESTA-MK5",
     "make": "Ford",
     "model": "Fiesta",
-    "variant": "Mk4 / Mk5",
-    "years": "1995-2002",
+    "variant": "Mk5",
+    "generation": "Mk5",
+    "years": "2002-2008",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS older",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
     "key_profile": {
-      "blade_profile": "FO21 / Tibbe",
-      "lishi_tool": "FO21 / Tibbe",
-      "transponder": "4D / ID4D family depending year - verify",
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "4D / ID63 family - verify",
       "remote_frequency_uk": "433 MHz",
       "key_type": "Remote / transponder key",
-      "smart_keyless": "No / rare",
-      "immobiliser_family": "Ford PATS older",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "No / remote only",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use FO21 / Tibbe where fitted",
-      "akl_blade_decode": "Decode/cut by FO21 / Tibbe",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "4D / ID63 family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / transponder key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_001"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-FIESTA-MK6",
     "make": "Ford",
     "model": "Fiesta",
     "variant": "Mk6",
-    "years": "2002-2008",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "4D / ID63 family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_002"
-  },
-  {
-    "make": "Ford",
-    "model": "Fiesta",
-    "variant": "Mk7",
+    "generation": "Mk6",
     "years": "2008-2017",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / ID83 family depending year - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
+      "key_type": "Remote / flip key",
+      "smart_keyless": "No / optional",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / flip key",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
     },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101",
+        "Access Fobs HU101 ID63"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
-      "programming": 0,
+      "key_profile": 100,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_003"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-FIESTA-MK7-MK8",
     "make": "Ford",
     "model": "Fiesta",
-    "variant": "Mk8",
+    "variant": "Mk7 / Mk8",
+    "generation": "Mk7 / Mk8",
     "years": "2017-2023",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID49 / ID83 smart/remote family - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
+      "key_type": "Remote / proximity key",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / proximity key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_004"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-FOCUS-MK1",
     "make": "Ford",
     "model": "Focus",
     "variant": "Mk1",
+    "generation": "Mk1",
     "years": "1998-2004",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "4D / ID63 family - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D-60 / ID4D60",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
+      "key_type": "Remote / transponder key",
       "smart_keyless": "No / remote only",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D-60 / ID4D60",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / transponder key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Auto-Keys"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_005"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-FOCUS-MK2",
     "make": "Ford",
     "model": "Focus",
     "variant": "Mk2",
+    "generation": "Mk2",
     "years": "2004-2011",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / 4D family - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
+      "key_type": "Remote / flip key",
+      "smart_keyless": "No / optional",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / flip key",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
     },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101",
+        "Access Fobs HU101 ID63"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
-      "programming": 0,
+      "key_profile": 100,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_006"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-FOCUS-MK3",
     "make": "Ford",
     "model": "Focus",
     "variant": "Mk3",
+    "generation": "Mk3",
     "years": "2011-2018",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID83 / ID63 family depending year - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "4D / ID83 / 80-bit Ford family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
+      "key_type": "Flip remote / proximity key",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "4D / ID83 / 80-bit Ford family",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Flip remote / proximity key",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
     },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101",
+        "Access Fobs HU101 ID63"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
-      "programming": 0,
+      "key_profile": 100,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_007"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-FOCUS-MK4",
     "make": "Ford",
     "model": "Focus",
     "variant": "Mk4",
+    "generation": "Mk4",
     "years": "2018-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID49 / ID83 smart/remote family - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
+      "key_type": "Remote / proximity key",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / proximity key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_008"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-MONDEO-MK3",
     "make": "Ford",
     "model": "Mondeo",
     "variant": "Mk3",
+    "generation": "Mk3",
     "years": "2000-2007",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "4D / ID63 family - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D-60 / ID4D60",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
+      "key_type": "Remote / transponder key",
+      "smart_keyless": "No / remote only",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D-60 / ID4D60",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / transponder key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Auto-Keys"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_009"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-MONDEO-MK4",
     "make": "Ford",
     "model": "Mondeo",
     "variant": "Mk4",
+    "generation": "Mk4",
     "years": "2007-2014",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / ID83 family - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
+      "key_type": "Remote / smart key depending spec",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key depending spec",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
     },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101",
+        "Access Fobs HU101 ID63"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
-      "programming": 0,
+      "key_profile": 100,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_010"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-MONDEO-MK5",
     "make": "Ford",
     "model": "Mondeo",
     "variant": "Mk5",
+    "generation": "Mk5",
     "years": "2014-2022",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID49 / ID83 smart/remote family - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
+      "key_type": "Remote / proximity key",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_011"
-  },
-  {
-    "make": "Ford",
-    "model": "B-Max",
-    "variant": "B-Max",
-    "years": "2012-2017",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / ID83 / 4D/49 family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_012"
-  },
-  {
-    "make": "Ford",
-    "model": "C-Max",
-    "variant": "C-Max I",
-    "years": "2003-2010",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / ID83 / 4D/49 family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / proximity key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
     },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_013"
+    "last_updated": "2026-07-04"
   },
   {
-    "make": "Ford",
-    "model": "C-Max",
-    "variant": "C-Max II",
-    "years": "2010-2019",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / ID83 / 4D/49 family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_014"
-  },
-  {
-    "make": "Ford",
-    "model": "S-Max",
-    "variant": "S-Max I",
-    "years": "2006-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / ID83 / 4D/49 family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_015"
-  },
-  {
-    "make": "Ford",
-    "model": "S-Max",
-    "variant": "S-Max II",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID49 smart/prox family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_016"
-  },
-  {
-    "make": "Ford",
-    "model": "Galaxy",
-    "variant": "Galaxy Mk2",
-    "years": "2006-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / ID83 / 4D/49 family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_017"
-  },
-  {
-    "make": "Ford",
-    "model": "Galaxy",
-    "variant": "Galaxy Mk3",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID49 smart/prox family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_018"
-  },
-  {
-    "make": "Ford",
-    "model": "Kuga",
-    "variant": "Kuga I",
-    "years": "2008-2012",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / ID83 / 4D/49 family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_019"
-  },
-  {
-    "make": "Ford",
-    "model": "Kuga",
-    "variant": "Kuga II",
-    "years": "2012-2019",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID83 / ID49 family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_020"
-  },
-  {
-    "make": "Ford",
-    "model": "Kuga",
-    "variant": "Kuga III",
-    "years": "2019-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID49 smart/prox family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_021"
-  },
-  {
-    "make": "Ford",
-    "model": "EcoSport",
-    "variant": "EcoSport",
-    "years": "2013-2022",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / ID83 / 4D/49 family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_022"
-  },
-  {
-    "make": "Ford",
-    "model": "Puma",
-    "variant": "Puma",
-    "years": "2019-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID49 smart/prox family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_023"
-  },
-  {
+    "record_id": "FORD-KA-MK1",
     "make": "Ford",
     "model": "Ka",
-    "variant": "Ka Mk2",
-    "years": "2008-2016",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "1996-2008",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID46 / Fiat-shared family - verify",
+      "blade_profile": "FO21 / Tibbe earlier; later HU101 variant - verify",
+      "lishi_tool": "FO21 / HU101 depending lockset",
+      "transponder": "4C / 4D family depending year",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "No / remote only",
+      "key_type": "Transponder / remote key",
+      "smart_keyless": "No",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "FO21 / Tibbe earlier; later HU101 variant - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "FO21 / HU101 depending lockset",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "4C / 4D family depending year",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Transponder / remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use FO21 / HU101 depending lockset where fitted",
+      "akl_blade_decode": "Decode/cut by FO21 / Tibbe earlier; later HU101 variant - verify",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Auto-Keys"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_024"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-KA-MK2",
+    "make": "Ford",
+    "model": "Ka",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2008-2016",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford/Fiat shared",
+    "key_profile": {
+      "blade_profile": "SIP22 / Fiat shared profile - verify",
+      "lishi_tool": "SIP22 / Fiat shared",
+      "transponder": "ID46 / PCF7936 / PCF7946",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote key",
+      "smart_keyless": "No / remote only",
+      "immobiliser_family": "Ford/Fiat shared",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "SIP22 / Fiat shared profile - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "SIP22 / Fiat shared",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF7936 / PCF7946",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use SIP22 / Fiat shared where fitted",
+      "akl_blade_decode": "Decode/cut by SIP22 / Fiat shared profile - verify",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-KA-PLUS",
     "make": "Ford",
     "model": "Ka+",
     "variant": "Ka+",
+    "generation": "Ka+",
     "years": "2016-2020",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford BCM",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
     "key_profile": {
-      "blade_profile": "HU101 / Ford profile - verify",
-      "lishi_tool": "HU101 - verify",
-      "transponder": "ID49 / ID83 family - verify",
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
       "remote_frequency_uk": "433 MHz",
       "key_type": "Remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "No / optional",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU101 - verify where fitted",
-      "akl_blade_decode": "Decode/cut by HU101 / Ford profile - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_025"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-FUSION",
     "make": "Ford",
-    "model": "Transit",
-    "variant": "Mk6",
-    "years": "2000-2006",
+    "model": "Fusion",
+    "variant": "Fusion",
+    "generation": "Fusion",
+    "years": "2002-2012",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS older",
-    "key_profile": {
-      "blade_profile": "FO21 / Tibbe",
-      "lishi_tool": "FO21 / Tibbe",
-      "transponder": "4D / ID4D family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / rare",
-      "immobiliser_family": "Ford PATS older",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use FO21 / Tibbe where fitted",
-      "akl_blade_decode": "Decode/cut by FO21 / Tibbe",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_026"
-  },
-  {
-    "make": "Ford",
-    "model": "Transit",
-    "variant": "Mk7",
-    "years": "2006-2014",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 / ID83 family - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "No / remote only",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Auto-Keys"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Auto-Keys"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_027"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-BMAX",
     "make": "Ford",
-    "model": "Transit",
-    "variant": "Mk8 / Custom",
-    "years": "2014-2023",
+    "model": "B-Max",
+    "variant": "B-Max",
+    "generation": "B-Max",
+    "years": "2012-2017",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID83 / ID49 family depending year - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
+      "key_type": "Remote / flip key",
+      "smart_keyless": "No / optional",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / flip key",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
     },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101",
+        "Access Fobs HU101 ID63"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
-      "programming": 0,
+      "key_profile": 100,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_028"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-CMAX",
     "make": "Ford",
-    "model": "Transit",
-    "variant": "2024+ / Custom 2",
-    "years": "2023-present",
+    "model": "C-Max",
+    "variant": "Mk1/Mk2",
+    "generation": "Mk1/Mk2",
+    "years": "2003-2019",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "Latest Ford smart/remote family - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
+      "key_type": "Remote / flip / smart key depending spec",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / flip / smart key depending spec",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
     },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101",
+        "Access Fobs HU101 ID63"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
-      "programming": 0,
+      "key_profile": 100,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_029"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-SMAX-MK1",
     "make": "Ford",
-    "model": "Transit Connect",
+    "model": "S-Max",
     "variant": "Mk1",
-    "years": "2002-2013",
+    "generation": "Mk1",
+    "years": "2006-2015",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_verified_key_lishi_profile",
     "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID63 family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_030"
-  },
-  {
-    "make": "Ford",
-    "model": "Transit Connect",
-    "variant": "Mk2",
-    "years": "2013-2023",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID83 / ID49 family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_031"
-  },
-  {
-    "make": "Ford",
-    "model": "Transit Connect",
-    "variant": "2024+",
-    "years": "2024-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "VW/Ford shared key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_032"
-  },
-  {
-    "make": "Ford",
-    "model": "Ranger",
-    "variant": "T6",
-    "years": "2011-2022",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford PATS / BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID83 / ID49 family depending year - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
       "remote_frequency_uk": "433 MHz",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "Ford PATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_033"
+    "last_updated": "2026-07-04"
   },
   {
+    "record_id": "FORD-SMAX-MK2",
+    "make": "Ford",
+    "model": "S-Max",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2015-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart / proximity key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart / proximity key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-GALAXY-MK2",
+    "make": "Ford",
+    "model": "Galaxy",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2006-2015",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-GALAXY-MK3",
+    "make": "Ford",
+    "model": "Galaxy",
+    "variant": "Mk3",
+    "generation": "Mk3",
+    "years": "2015-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart / proximity key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart / proximity key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-ECOSPORT",
+    "make": "Ford",
+    "model": "EcoSport",
+    "variant": "EcoSport",
+    "generation": "EcoSport",
+    "years": "2013-2022",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / flip key",
+      "smart_keyless": "No / optional",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / flip key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-PUMA",
+    "make": "Ford",
+    "model": "Puma",
+    "variant": "Puma",
+    "generation": "Puma",
+    "years": "2019-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / proximity key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-KUGA-MK1",
+    "make": "Ford",
+    "model": "Kuga",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2008-2012",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101",
+        "Access Fobs HU101 ID63"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-KUGA-MK2",
+    "make": "Ford",
+    "model": "Kuga",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2012-2019",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / proximity key",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101",
+        "Access Fobs HU101 ID63"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-KUGA-MK3",
+    "make": "Ford",
+    "model": "Kuga",
+    "variant": "Mk3",
+    "generation": "Mk3",
+    "years": "2019-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / proximity key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / proximity key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-EDGE",
+    "make": "Ford",
+    "model": "Edge",
+    "variant": "Edge",
+    "generation": "Edge",
+    "years": "2016-2019",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart / proximity key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart / proximity key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-MUSTANG-S550",
+    "make": "Ford",
+    "model": "Mustang",
+    "variant": "EU S550",
+    "generation": "EU S550",
+    "years": "2015-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart / proximity key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart / proximity key",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Access Fobs Transit Custom ID49",
+        "Original Lishi HU101",
+        "Transpondery"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-TRANSIT-MK6",
+    "make": "Ford",
+    "model": "Transit",
+    "variant": "Mk6",
+    "generation": "Mk6",
+    "years": "2000-2006",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS older",
+    "key_profile": {
+      "blade_profile": "FO21 / Tibbe",
+      "lishi_tool": "FO21 / Tibbe 6-cut / 8-cut tool family",
+      "transponder": "Texas Crypto 4D family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / transponder key",
+      "smart_keyless": "No / remote only",
+      "immobiliser_family": "Ford PATS older",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "FO21 / Tibbe",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Ford Tibbe workshop/reference"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "FO21 / Tibbe 6-cut / 8-cut tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Ford Tibbe workshop/reference"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Ford Tibbe workshop/reference"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Ford Tibbe workshop/reference"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / transponder key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Ford Tibbe workshop/reference"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use FO21 / Tibbe 6-cut / 8-cut tool family where fitted",
+      "akl_blade_decode": "Decode/cut by FO21 / Tibbe",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Ford Tibbe workshop/reference"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-TRANSIT-MK7",
+    "make": "Ford",
+    "model": "Transit",
+    "variant": "Mk7",
+    "generation": "Mk7",
+    "years": "2006-2014",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Mk7 commonly HU101 with Ford PATS transponder family; confirm ID63/ID83 by year/tool read.",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / transponder key",
+      "smart_keyless": "No / remote only",
+      "immobiliser_family": "Mk7 commonly HU101 with Ford PATS transponder family; confirm ID63/ID83 by year/tool read.",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / transponder key",
+        "status": "verified",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101",
+          "Access Fobs HU101 ID63"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101",
+        "Access Fobs HU101 ID63"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-TRANSIT-MK8",
+    "make": "Ford",
+    "model": "Transit",
+    "variant": "Mk8",
+    "generation": "Mk8",
+    "years": "2014-2023",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Access Fobs lists Transit 2016-2022 ID49 Hitag Pro 433MHz with HU101 blade.",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID83 / ID49 Hitag Pro depending year/spec",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "3 button remote / smart key depending spec",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Access Fobs lists Transit 2016-2022 ID49 Hitag Pro 433MHz with HU101 blade.",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID83 / ID49 Hitag Pro depending year/spec",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "3 button remote / smart key depending spec",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Access Fobs Transit Custom ID49",
+        "Original Lishi HU101",
+        "Transpondery"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-TRANSITCUSTOM-MK1",
+    "make": "Ford",
+    "model": "Transit Custom",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2012-2023",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Access Fobs lists Transit Custom 2016-2022 ID49 Hitag Pro 433MHz with HU101 blade.",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID83 / ID49 Hitag Pro depending year/spec",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "3 button remote / smart key depending spec",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Access Fobs lists Transit Custom 2016-2022 ID49 Hitag Pro 433MHz with HU101 blade.",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID83 / ID49 Hitag Pro depending year/spec",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "3 button remote / smart key depending spec",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Access Fobs Transit Custom ID49",
+        "Original Lishi HU101",
+        "Transpondery"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-TRANSITCUSTOM-MK2",
+    "make": "Ford",
+    "model": "Transit Custom",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2023-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "New platform; keep as needs review until workshop-confirmed.",
+    "key_profile": {
+      "blade_profile": "HU101 emergency blade - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Latest Ford smart/remote family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "New platform; keep as needs review until workshop-confirmed.",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101 emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Latest Ford smart/remote family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart / remote key",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101 emergency blade - verify",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Workshop"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 65,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-TRANSITCONNECT-MK1",
+    "make": "Ford",
+    "model": "Transit Connect",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2002-2013",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / transponder key",
+      "smart_keyless": "No / remote only",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / transponder key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-TRANSITCONNECT-MK2",
+    "make": "Ford",
+    "model": "Transit Connect",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2013-2023",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID83 / ID49 Hitag Pro depending year/spec",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / smart key depending spec",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID83 / ID49 Hitag Pro depending year/spec",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key depending spec",
+        "status": "verified",
+        "sources": [
+          "Access Fobs Transit Custom ID49",
+          "Original Lishi HU101",
+          "Transpondery"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Access Fobs Transit Custom ID49",
+        "Original Lishi HU101",
+        "Transpondery"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-TRANSITCONNECT-MK3",
+    "make": "Ford",
+    "model": "Transit Connect",
+    "variant": "Mk3",
+    "generation": "Mk3",
+    "years": "2024-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Newest shared VW/Ford platform; verify by original key.",
+    "key_profile": {
+      "blade_profile": "HU162T / HU101 shared-platform - verify",
+      "lishi_tool": "HU162T / HU101 - verify",
+      "transponder": "VW/Ford shared smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Smart / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Newest shared VW/Ford platform; verify by original key.",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU162T / HU101 shared-platform - verify",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU162T / HU101 - verify",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "VW/Ford shared smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart / remote key",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU101 - verify where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU101 shared-platform - verify",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Workshop"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 65,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-TRANSITCOURIER-MK1",
+    "make": "Ford",
+    "model": "Transit Courier",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2014-2023",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote key",
+      "smart_keyless": "No / optional",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-TRANSITCOURIER-MK2",
+    "make": "Ford",
+    "model": "Transit Courier",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2023-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101 emergency blade - verify",
+      "lishi_tool": "HU101 - verify",
+      "transponder": "Latest Ford smart/remote family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101 emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 - verify",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Latest Ford smart/remote family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Workshop"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 - verify where fitted",
+      "akl_blade_decode": "Decode/cut by HU101 emergency blade - verify",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Workshop"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 65,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-RANGER-T6",
+    "make": "Ford",
+    "model": "Ranger",
+    "variant": "T6",
+    "generation": "T6",
+    "years": "2011-2022",
+    "market": "UK/EU",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
+    "key_profile": {
+      "blade_profile": "HU101",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "Texas Crypto 4D / ID63 / ID83 family",
+      "remote_frequency_uk": "433 MHz",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Texas Crypto 4D / ID63 / ID83 family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
+    "completion": {
+      "key_profile": 90,
+      "programming": 15,
+      "locations": 0,
+      "workshop_notes": 20
+    },
+    "last_updated": "2026-07-04"
+  },
+  {
+    "record_id": "FORD-RANGER-NEXTGEN",
     "make": "Ford",
     "model": "Ranger",
     "variant": "Next Gen",
+    "generation": "Next Gen",
     "years": "2022-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Ford BCM",
+    "database_layer": "layer_1_verified_key_lishi_profile",
+    "platform": "Ford PATS / BCM",
     "key_profile": {
       "blade_profile": "HU101",
-      "lishi_tool": "HU101",
-      "transponder": "ID49 smart key family - verify",
+      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
+      "transponder": "ID49 / Hitag Pro / latest Ford smart-remote family",
       "remote_frequency_uk": "433 MHz",
       "key_type": "Smart / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Ford PATS / BCM",
+      "oem_key": "Ford remote/prox family - verify by original key",
+      "xhorse_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
+      "keydiy_equivalent": "Ford 433MHz HU101 profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU101 where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU101",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU101 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID49 / Hitag Pro / latest Ford smart-remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart / proximity key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Original Lishi HU101"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU101",
+      "stock_note": "Confirm 2/3/4 button, remote/prox, board and transponder by original key/VIN before ordering.",
+      "notes": "Ford generations and transponders vary by year/spec; exact key should always be confirmed."
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Original Lishi HU101"
+      ],
+      "last_checked": "2026-07-04",
+      "source_notes": "Ford pack built generation-first to avoid mixing older Tibbe, HU101, ID63/ID83 and ID49 systems."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Ford Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html"
+      },
+      {
+        "name": "Genuine/Original Lishi HU101 Ford application lists",
+        "url": "https://ca.lockpickable.com/products/mr-li-original-lishi-hu101"
+      },
+      {
+        "name": "Access Fobs Ford Transit Custom ID49 HU101 433MHz",
+        "url": "https://accessfobs.co.uk/products/flip-key-remote-for-ford-transit-custom-hitag-pro-id49-oem"
+      },
+      {
+        "name": "Auto-Keys Ford Transponder Catalogue",
+        "url": "https://auto-keys.eu/Transpoder-Catalogue_Ford"
+      },
+      {
+        "name": "Access Fobs Ford HU101 ID63-80 key listing",
+        "url": "https://accessfobs.co.uk/products/transponder-key-for-ford-new-models-hu101-id63"
+      }
+    ],
     "completion": {
       "key_profile": 90,
-      "programming": 0,
+      "programming": 15,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 20
     },
-    "last_updated": "2026-07-04",
-    "record_id": "ford_key_lishi_034"
+    "last_updated": "2026-07-04"
   }
 ]

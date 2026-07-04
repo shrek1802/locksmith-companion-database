@@ -1,9 +1,10 @@
-# Renault Verified Correction Pack
+# Ford Verified Correction Pack
 
 Upload this as database_pack.zip and run Install Database Pack.
 
 Main improvements:
-- Renault ID4A / PCF7961 / Hitag AES entries added where supported.
-- VA2 / VA6 Lishi family correctly populated.
-- v5 verified_fields added per record.
-- Older/newer variants marked high_confidence or needs_review where exact data still needs workshop confirmation.
+- Ford records split by Mk/generation.
+- Transit, Transit Custom, Transit Connect and Courier split properly.
+- HU101 Lishi and blade populated where supported.
+- ID63/ID83/ID49 transponder families separated by generation.
+- 2023+ vehicles marked needs_review where direct workshop confirmation is needed.
