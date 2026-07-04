@@ -1,9 +1,18 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-batch2-key-lishi",
+  "database_version": "2026.07.04-batch3-key-lishi",
   "created": "2026-07-04",
   "pack_type": "online_key_lishi_database",
   "packs": [
+    {
+      "id": "alfa_key_lishi_profiles",
+      "name": "ALFA Key + Lishi Profiles",
+      "manufacturer": "alfa",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/alfa.json",
+      "records": 4,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/alfa.json"
+    },
     {
       "id": "audi_key_lishi_profiles",
       "name": "AUDI Key + Lishi Profiles",
@@ -23,6 +32,24 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/citroen.json"
     },
     {
+      "id": "dacia_key_lishi_profiles",
+      "name": "DACIA Key + Lishi Profiles",
+      "manufacturer": "dacia",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/dacia.json",
+      "records": 12,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/dacia.json"
+    },
+    {
+      "id": "fiat_key_lishi_profiles",
+      "name": "FIAT Key + Lishi Profiles",
+      "manufacturer": "fiat",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/fiat.json",
+      "records": 9,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/fiat.json"
+    },
+    {
       "id": "ford_key_lishi_profiles",
       "name": "FORD Key + Lishi Profiles",
       "manufacturer": "ford",
@@ -30,6 +57,51 @@
       "file": "manufacturers/ford.json",
       "records": 34,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/ford.json"
+    },
+    {
+      "id": "honda_key_lishi_profiles",
+      "name": "HONDA Key + Lishi Profiles",
+      "manufacturer": "honda",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/honda.json",
+      "records": 13,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/honda.json"
+    },
+    {
+      "id": "hyundai_key_lishi_profiles",
+      "name": "HYUNDAI Key + Lishi Profiles",
+      "manufacturer": "hyundai",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/hyundai.json",
+      "records": 14,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/hyundai.json"
+    },
+    {
+      "id": "kia_key_lishi_profiles",
+      "name": "KIA Key + Lishi Profiles",
+      "manufacturer": "kia",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/kia.json",
+      "records": 12,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/kia.json"
+    },
+    {
+      "id": "lexus_key_lishi_profiles",
+      "name": "LEXUS Key + Lishi Profiles",
+      "manufacturer": "lexus",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/lexus.json",
+      "records": 8,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/lexus.json"
+    },
+    {
+      "id": "mazda_key_lishi_profiles",
+      "name": "MAZDA Key + Lishi Profiles",
+      "manufacturer": "mazda",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/mazda.json",
+      "records": 12,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mazda.json"
     },
     {
       "id": "mercedes_key_lishi_profiles",
@@ -59,6 +131,15 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/peugeot.json"
     },
     {
+      "id": "renault_key_lishi_profiles",
+      "name": "RENAULT Key + Lishi Profiles",
+      "manufacturer": "renault",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/renault.json",
+      "records": 24,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/renault.json"
+    },
+    {
       "id": "seat_key_lishi_profiles",
       "name": "SEAT Key + Lishi Profiles",
       "manufacturer": "seat",
@@ -75,6 +156,24 @@
       "file": "manufacturers/skoda.json",
       "records": 21,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/skoda.json"
+    },
+    {
+      "id": "suzuki_key_lishi_profiles",
+      "name": "SUZUKI Key + Lishi Profiles",
+      "manufacturer": "suzuki",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/suzuki.json",
+      "records": 8,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/suzuki.json"
+    },
+    {
+      "id": "toyota_key_lishi_profiles",
+      "name": "TOYOTA Key + Lishi Profiles",
+      "manufacturer": "toyota",
+      "version": "2026.07.04-batch3-lishi-1",
+      "file": "manufacturers/toyota.json",
+      "records": 21,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/toyota.json"
     },
     {
       "id": "vauxhall_key_lishi_profiles",
@@ -96,9 +195,9 @@
     }
   ],
   "notes": [
-    "Batch 2 Layer 1 key + Lishi profiles.",
-    "Includes Ford, Mercedes-Benz, Peugeot, Citroen/DS, Vauxhall/Opel and Nissan.",
-    "VAG manifest entries are retained so already-uploaded VAG packs stay visible.",
+    "Batch 3 Layer 1 key + Lishi profiles.",
+    "Adds Dacia/Renault plus Japanese, Korean and Italian coverage.",
+    "Previous VAG and Batch 2 manifest entries are retained.",
     "Programming and module locations are not included in this layer."
   ]
 }
