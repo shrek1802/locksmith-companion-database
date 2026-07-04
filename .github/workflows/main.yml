@@ -1,39 +1,42 @@
-name: Unzip and Cleanup
+name: Unzip and Cleanup Dynamic
 on:
   push:
     paths:
-      - '*.zip' # Triggers only when a .zip file is uploaded
+      - '**/*.zip' # Triggers when ANY zip file is uploaded anywhere
 
 jobs:
   extract:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Allows the script to delete the zip and add JSONs
+      contents: write # Grants permission to delete zip and write JSONs
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Extract and Delete Zip
+      - name: Dynamic Extract and Delete
         run: |
-          # 1. Find the zip file (change 'my_data.zip' to your file name)
-          ZIP_FILE="my_data.zip" 
+          # 1. Automatically find the first zip file in the repo
+          ZIP_FILE=$(find . -maxdepth 2 -name "*.zip" -print -quit)
           
-          if [ -f "$ZIP_FILE" ]; then
-            echo "Extracting $ZIP_FILE..."
-            unzip -o "$ZIP_FILE"
+          if [ -n "$ZIP_FILE" ]; then
+            echo "Found zip archive: $ZIP_FILE"
             
-            echo "Deleting $ZIP_FILE..."
+            # 2. Extract contents directly into the same folder
+            TARGET_DIR=$(dirname "$ZIP_FILE")
+            unzip -o "$ZIP_FILE" -d "$TARGET_DIR"
+            
+            echo "Deleting original archive..."
             rm "$ZIP_FILE"
             
-            # 2. Configure Git to commit the changes
+            # 3. Configure Git to push back
             git config --global user.name "github-actions[bot]"
-            git config --global user.email "41898282+github-actions[bot]@://github.com"
+            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
             
-            # 3. Push the extracted JSON files back to the repository
+            # 4. Commit and push JSON changes
             git add .
-            git commit -m "Automation: Extracted files and cleaned up zip archive"
-            git push
+            git commit -m "Automation: Extracted zip and cleaned archive"
+            git push origin HEAD:${{ github.ref }}
           else
-            echo "Target zip file not found."
+            echo "No zip archive detected in this commit."
           fi
           
