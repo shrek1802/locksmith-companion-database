@@ -1,0 +1,39 @@
+name: Unzip and Cleanup
+on:
+  push:
+    paths:
+      - '*.zip' # Triggers only when a .zip file is uploaded
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Allows the script to delete the zip and add JSONs
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Extract and Delete Zip
+        run: |
+          # 1. Find the zip file (change 'my_data.zip' to your file name)
+          ZIP_FILE="my_data.zip" 
+          
+          if [ -f "$ZIP_FILE" ]; then
+            echo "Extracting $ZIP_FILE..."
+            unzip -o "$ZIP_FILE"
+            
+            echo "Deleting $ZIP_FILE..."
+            rm "$ZIP_FILE"
+            
+            # 2. Configure Git to commit the changes
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "41898282+github-actions[bot]@://github.com"
+            
+            # 3. Push the extracted JSON files back to the repository
+            git add .
+            git commit -m "Automation: Extracted files and cleaned up zip archive"
+            git push
+          else
+            echo "Target zip file not found."
+          fi
+          
