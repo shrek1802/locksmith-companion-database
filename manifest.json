@@ -1,8 +1,8 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-batch4-key-lishi",
+  "database_version": "2026.07.04-dacia-verified-1",
   "created": "2026-07-04",
-  "pack_type": "online_key_lishi_database",
+  "pack_type": "verified_key_lishi_database",
   "packs": [
     {
       "id": "alfa_key_lishi_profiles",
@@ -60,9 +60,9 @@
     },
     {
       "id": "dacia_key_lishi_profiles",
-      "name": "DACIA Key + Lishi Profiles",
+      "name": "DACIA Verified Key + Lishi Profiles",
       "manufacturer": "dacia",
-      "version": "2026.07.04-batch3-lishi-1",
+      "version": "2026.07.04-dacia-verified-1",
       "file": "manufacturers/dacia.json",
       "records": 12,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/dacia.json"
@@ -303,9 +303,9 @@
     }
   ],
   "notes": [
-    "Batch 4 Layer 1 key + Lishi profiles.",
-    "Adds premium, EV, commercial and remaining UK-market brands.",
-    "Previous batch manifest entries are retained.",
-    "Programming and module locations are not included in this layer."
+    "Dacia verified correction pack.",
+    "Fixes Logan II / Sandero II / Duster I from generic ID46/null Lishi values to verified-style ID4A/VA2 data where supported.",
+    "Adds per-field verified_fields metadata for future app display.",
+    "Previous manufacturer manifest entries are retained."
   ]
 }
