@@ -1,6 +1,6 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-dacia-verified-1",
+  "database_version": "2026.07.04-renault-verified-1",
   "created": "2026-07-04",
   "pack_type": "verified_key_lishi_database",
   "packs": [
@@ -222,9 +222,9 @@
     },
     {
       "id": "renault_key_lishi_profiles",
-      "name": "RENAULT Key + Lishi Profiles",
+      "name": "RENAULT Verified Key + Lishi Profiles",
       "manufacturer": "renault",
-      "version": "2026.07.04-batch3-lishi-1",
+      "version": "2026.07.04-renault-verified-1",
       "file": "manufacturers/renault.json",
       "records": 24,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/renault.json"
@@ -303,9 +303,9 @@
     }
   ],
   "notes": [
-    "Dacia verified correction pack.",
-    "Fixes Logan II / Sandero II / Duster I from generic ID46/null Lishi values to verified-style ID4A/VA2 data where supported.",
-    "Adds per-field verified_fields metadata for future app display.",
+    "Renault verified correction pack.",
+    "Replaces generic Renault records with v5 verified-style key/Lishi/transponder records.",
+    "Uses ID4A/PCF7961/Hitag AES and VA2/VA6 where supported by references; older/newer variants marked high_confidence or needs_review.",
     "Previous manufacturer manifest entries are retained."
   ]
 }
