@@ -1,2834 +1,870 @@
 [
   {
-    "record_id": "renault_verified_twingo_ii",
+    "record_id": "RENAULT-CLIO-RANGE",
     "make": "Renault",
-    "model": "Twingo",
-    "variant": "Twingo II",
-    "years": "2007-2014",
+    "model": "Clio",
+    "variant": "Clio II/III/IV/V",
+    "generation": "Clio II/III/IV/V",
+    "years": "1998-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
+    "database_layer": "layer_1_v5_key_lishi_profile",
     "platform": "Renault UCH/BCM",
     "key_profile": {
-      "blade_profile": "VA2 / VA6 depending lockset",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID46 / PCF7946 / PCF7947 family",
+      "blade_profile": "VA2 / VAC102 by generation - verify",
+      "lishi_tool": "VA2 / VAC102 Renault tool family",
+      "transponder": "ID46 / ID4A / AES family by generation",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "2 button remote key",
-      "smart_keyless": "No / remote only",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / keycard / smart key",
+      "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
+      "oem_key": "Renault OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Renault remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Renault remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "VA2 / VA6 depending lockset",
+        "value": "VA2 / VAC102 by generation - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
+        "value": "VA2 / VAC102 Renault tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "transponder": {
-        "value": "ID46 / PCF7946 / PCF7947 family",
+        "value": "ID46 / ID4A / AES family by generation",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "key_type": {
-        "value": "2 button remote key",
+        "value": "Remote / keycard / smart key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / VA6 depending lockset",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Earlier Renault remote family; confirm exact blade by original key."
+      "lockout": "Use VA2 / VAC102 Renault tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / VAC102 by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
+        "Transpondery Renault/Nissan/Mitsubishi",
+        "Alliance supplier catalogues",
+        "Original Lishi VA2/VAC102/NSN family",
+        "Workshop confirmation needed on newer smart systems"
       ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
+        "name": "Transpondery Renault/Nissan/Mitsubishi",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
+        "name": "Alliance supplier catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
+        "name": "Original Lishi VA2/VAC102/NSN family",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 25
+      "workshop_notes": 10
     },
-    "last_updated": "2026-07-04"
+    "last_updated": "2026-07-05"
   },
   {
-    "record_id": "renault_verified_twingo_iii",
-    "make": "Renault",
-    "model": "Twingo",
-    "variant": "Twingo III",
-    "years": "2014-2024",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID4A / PCF7961 / Hitag AES",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "2/3 button remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "verified",
-      "confidence": "verified"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID4A / PCF7961 / Hitag AES",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "2/3 button remote key",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "ID4A/PCF7961 VA2 family is listed for later Renault models; confirm on early crossover vehicles."
-    },
-    "verification": {
-      "overall_status": "verified",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation",
-        "MR-Key"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 100,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_clio_ii",
-    "make": "Renault",
-    "model": "Clio",
-    "variant": "Clio II",
-    "years": "1998-2012",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2 / NE72 depending lockset - verify",
-      "lishi_tool": "VA2 / NE72 Renault tool family",
-      "transponder": "ID46 / PCF7946 family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2 / NE72 depending lockset - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / NE72 Renault tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID46 / PCF7946 family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "Remote / transponder key",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / NE72 Renault tool family where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / NE72 depending lockset - verify",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_clio_iii",
-    "make": "Renault",
-    "model": "Clio",
-    "variant": "Clio III",
-    "years": "2005-2014",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2 / VA6 depending lockset",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID46 / PCF7946 / PCF7947 family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key / keycard depending spec",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2 / VA6 depending lockset",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID46 / PCF7946 / PCF7947 family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "Remote key / keycard depending spec",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / VA6 depending lockset",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_clio_iv",
-    "make": "Renault",
-    "model": "Clio",
-    "variant": "Clio IV",
-    "years": "2012-2019",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID4A / PCF7961 / Hitag AES",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "2/3 button flip or card depending spec",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "verified",
-      "confidence": "verified"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID4A / PCF7961 / Hitag AES",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "2/3 button flip or card depending spec",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Renault ID4A PCF7961 433MHz VA2 family applies to this generation."
-    },
-    "verification": {
-      "overall_status": "verified",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation",
-        "MR-Key"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 100,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_clio_v",
-    "make": "Renault",
-    "model": "Clio",
-    "variant": "Clio V",
-    "years": "2019-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID4A / PCF7961 / Hitag AES",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "2/3 button flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "verified",
-      "confidence": "verified"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID4A / PCF7961 / Hitag AES",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "2/3 button flip remote / proximity key",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Clio 5 listed by aftermarket ID4A/PCF7961 VA2 references."
-    },
-    "verification": {
-      "overall_status": "verified",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation",
-        "MR-Key"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 100,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_captur_i",
-    "make": "Renault",
-    "model": "Captur",
-    "variant": "Captur I",
-    "years": "2013-2019",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID4A / PCF7961 / Hitag AES",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "2/3 button flip remote / proximity card",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "verified",
-      "confidence": "verified"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID4A / PCF7961 / Hitag AES",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "2/3 button flip remote / proximity card",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Captur 2013-2019 listed by ID4A/PCF7961 VA2 references."
-    },
-    "verification": {
-      "overall_status": "verified",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation",
-        "MR-Key"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 100,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_captur_ii",
-    "make": "Renault",
-    "model": "Captur",
-    "variant": "Captur II",
-    "years": "2019-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VAC102 / VA2 emergency blade family - verify",
-      "lishi_tool": "VAC102 / VA2 Renault 2-in-1 family",
-      "transponder": "ID4A / AES smart key/card family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Proximity keycard / flip remote",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VAC102 / VA2 emergency blade family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VAC102 / VA2 Renault 2-in-1 family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID4A / AES smart key/card family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "Proximity keycard / flip remote",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VAC102 / VA2 Renault 2-in-1 family where fitted",
-      "akl_blade_decode": "Decode/cut by VAC102 / VA2 emergency blade family - verify",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Newer platform may use multiple emergency blades; verify by original key."
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_megane_ii",
+    "record_id": "RENAULT-MEGANE-RANGE",
     "make": "Renault",
     "model": "Megane",
-    "variant": "Megane II",
-    "years": "2002-2009",
+    "variant": "Megane II/III/IV/E-Tech",
+    "generation": "Megane II/III/IV/E-Tech",
+    "years": "2002-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
+    "database_layer": "layer_1_v5_key_lishi_profile",
     "platform": "Renault UCH/BCM",
     "key_profile": {
-      "blade_profile": "VA2 / VA6 depending lockset",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID46 / PCF7946 / PCF7947 family",
+      "blade_profile": "VA2 / VAC102 by generation - verify",
+      "lishi_tool": "VA2 / VAC102 Renault tool family",
+      "transponder": "ID46 / ID4A / AES smart card family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Keycard / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2 / VA6 depending lockset",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID46 / PCF7946 / PCF7947 family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "Keycard / remote key",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / VA6 depending lockset",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_megane_iii",
-    "make": "Renault",
-    "model": "Megane",
-    "variant": "Megane III",
-    "years": "2008-2016",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2 / VA6 depending lockset",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID46 / PCF7946 / PCF7947 family",
-      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Keycard / proximity key",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
+      "oem_key": "Renault OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Renault remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Renault remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "VA2 / VA6 depending lockset",
+        "value": "VA2 / VAC102 by generation - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
+        "value": "VA2 / VAC102 Renault tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "transponder": {
-        "value": "ID46 / PCF7946 / PCF7947 family",
+        "value": "ID46 / ID4A / AES smart card family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "key_type": {
         "value": "Keycard / proximity key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / VA6 depending lockset",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
+      "lockout": "Use VA2 / VAC102 Renault tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / VAC102 by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
+        "Transpondery Renault/Nissan/Mitsubishi",
+        "Alliance supplier catalogues",
+        "Original Lishi VA2/VAC102/NSN family",
+        "Workshop confirmation needed on newer smart systems"
       ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
+        "name": "Transpondery Renault/Nissan/Mitsubishi",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
+        "name": "Alliance supplier catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
+        "name": "Original Lishi VA2/VAC102/NSN family",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 25
+      "workshop_notes": 10
     },
-    "last_updated": "2026-07-04"
+    "last_updated": "2026-07-05"
   },
   {
-    "record_id": "renault_verified_megane_iv",
+    "record_id": "RENAULT-CAPTUR-RANGE",
     "make": "Renault",
-    "model": "Megane",
-    "variant": "Megane IV",
-    "years": "2016-present",
+    "model": "Captur",
+    "variant": "Captur I/II",
+    "generation": "Captur I/II",
+    "years": "2013-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Renault BCM",
     "key_profile": {
-      "blade_profile": "VA2",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID4A / PCF7961 / Hitag AES",
+      "blade_profile": "VA2 / VAC102 by generation - verify",
+      "lishi_tool": "VA2 / VAC102 Renault tool family",
+      "transponder": "ID4A / AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "2/3 button flip remote / proximity card",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "verified",
-      "confidence": "verified"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID4A / PCF7961 / Hitag AES",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "2/3 button flip remote / proximity card",
-        "status": "verified",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Megane 4 listed by ID4A/PCF7961 VA2 references."
-    },
-    "verification": {
-      "overall_status": "verified",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation",
-        "MR-Key"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 100,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_scenic_ii",
-    "make": "Renault",
-    "model": "Scenic",
-    "variant": "Scenic II",
-    "years": "2003-2009",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2 / VA6 depending lockset",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID46 / PCF7946 / PCF7947 family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Keycard",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
+      "immobiliser_family": "Renault BCM",
+      "oem_key": "Renault OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Renault remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Renault remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "VA2 / VA6 depending lockset",
+        "value": "VA2 / VAC102 by generation - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
+        "value": "VA2 / VAC102 Renault tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "transponder": {
-        "value": "ID46 / PCF7946 / PCF7947 family",
+        "value": "ID4A / AES family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "key_type": {
-        "value": "Keycard",
+        "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / VA6 depending lockset",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
+      "lockout": "Use VA2 / VAC102 Renault tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / VAC102 by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
+        "Transpondery Renault/Nissan/Mitsubishi",
+        "Alliance supplier catalogues",
+        "Original Lishi VA2/VAC102/NSN family",
+        "Workshop confirmation needed on newer smart systems"
       ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
+        "name": "Transpondery Renault/Nissan/Mitsubishi",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
+        "name": "Alliance supplier catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
+        "name": "Original Lishi VA2/VAC102/NSN family",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 25
+      "workshop_notes": 10
     },
-    "last_updated": "2026-07-04"
+    "last_updated": "2026-07-05"
   },
   {
-    "record_id": "renault_verified_scenic_iii",
-    "make": "Renault",
-    "model": "Scenic",
-    "variant": "Scenic III",
-    "years": "2009-2016",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2 / VA6 depending lockset",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID46 / PCF7946 / PCF7947 family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Keycard / proximity card",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2 / VA6 depending lockset",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID46 / PCF7946 / PCF7947 family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "Keycard / proximity card",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / VA6 depending lockset",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_scenic_iv",
-    "make": "Renault",
-    "model": "Scenic",
-    "variant": "Scenic IV",
-    "years": "2016-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VAC102 / VA2 emergency blade family - verify",
-      "lishi_tool": "VAC102 / VA2 Renault 2-in-1 family",
-      "transponder": "ID4A / AES smart key/card family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Proximity keycard",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VAC102 / VA2 emergency blade family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VAC102 / VA2 Renault 2-in-1 family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID4A / AES smart key/card family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "Proximity keycard",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VAC102 / VA2 Renault 2-in-1 family where fitted",
-      "akl_blade_decode": "Decode/cut by VAC102 / VA2 emergency blade family - verify",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verify exact emergency blade by original key."
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_kadjar",
+    "record_id": "RENAULT-KADJAR",
     "make": "Renault",
     "model": "Kadjar",
     "variant": "Kadjar",
+    "generation": "Kadjar",
     "years": "2015-2022",
     "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Renault/Nissan shared BCM",
     "key_profile": {
       "blade_profile": "VA2",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
+      "lishi_tool": "VA2 Renault 2-in-1 Pick & Decoder",
       "transponder": "ID4A / PCF7961 / Hitag AES",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "2/3 button flip remote / proximity card",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "verified",
-      "confidence": "verified"
+      "immobiliser_family": "Renault/Nissan shared BCM",
+      "oem_key": "Renault OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Renault remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Renault remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
         "value": "VA2",
-        "status": "verified",
+        "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "verified",
+        "value": "VA2 Renault 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "transponder": {
         "value": "ID4A / PCF7961 / Hitag AES",
-        "status": "verified",
+        "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
-        "status": "verified",
+        "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "key_type": {
-        "value": "2/3 button flip remote / proximity card",
-        "status": "verified",
+        "value": "Remote / smart key",
+        "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation",
-          "MR-Key"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
+      "lockout": "Use VA2 Renault 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by VA2",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Kadjar 2015-2021 listed by ID4A/PCF7961 VA2 references."
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
-    "verification": {
-      "overall_status": "verified",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation",
-        "MR-Key"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 100,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_austral",
-    "make": "Renault",
-    "model": "Austral",
-    "variant": "Austral",
-    "years": "2022-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VAC102 / VA2 emergency blade family - verify",
-      "lishi_tool": "VAC102 / VA2 Renault 2-in-1 family",
-      "transponder": "ID4A / AES smart key/card family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart proximity key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VAC102 / VA2 emergency blade family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Workshop"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VAC102 / VA2 Renault 2-in-1 family",
-        "status": "needs_review",
-        "sources": [
-          "Workshop"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID4A / AES smart key/card family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Workshop"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Workshop"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "Smart proximity key",
-        "status": "needs_review",
-        "sources": [
-          "Workshop"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VAC102 / VA2 Renault 2-in-1 family where fitted",
-      "akl_blade_decode": "Decode/cut by VAC102 / VA2 emergency blade family - verify",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "New platform; needs direct workshop confirmation before verified."
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Workshop"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_koleos",
-    "make": "Renault",
-    "model": "Koleos",
-    "variant": "Koleos I/II",
-    "years": "2008-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "NSN14 / VA2 depending generation - verify",
-      "lishi_tool": "NSN14 / VA2 family",
-      "transponder": "ID46 / AES smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "NSN14 / VA2 depending generation - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "NSN14 / VA2 family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID46 / AES smart key family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "Smart / proximity key",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / VA2 family where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / VA2 depending generation - verify",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Renault/Nissan shared platform variants exist."
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
+        "Transpondery Renault/Nissan/Mitsubishi",
+        "Alliance supplier catalogues",
+        "Original Lishi VA2/VAC102/NSN family",
+        "Workshop confirmation needed on newer smart systems"
       ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
+        "name": "Transpondery Renault/Nissan/Mitsubishi",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
+        "name": "Alliance supplier catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
+        "name": "Original Lishi VA2/VAC102/NSN family",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 25
+      "workshop_notes": 10
     },
-    "last_updated": "2026-07-04"
+    "last_updated": "2026-07-05"
   },
   {
-    "record_id": "renault_verified_zoe",
-    "make": "Renault",
-    "model": "Zoe",
-    "variant": "Zoe",
-    "years": "2012-2024",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VAC102 / VA2 emergency blade family - verify",
-      "lishi_tool": "VAC102 / VA2 Renault 2-in-1 family",
-      "transponder": "ID4A / AES smart key/card family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Keycard / proximity key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VAC102 / VA2 emergency blade family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VAC102 / VA2 Renault 2-in-1 family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID4A / AES smart key/card family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "Keycard / proximity key",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VAC102 / VA2 Renault 2-in-1 family where fitted",
-      "akl_blade_decode": "Decode/cut by VAC102 / VA2 emergency blade family - verify",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "EV platform; verify exact card/blade by original key."
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_kangoo_ii",
+    "record_id": "RENAULT-KANGOO-RANGE",
     "make": "Renault",
     "model": "Kangoo",
-    "variant": "Kangoo II",
-    "years": "2007-2021",
+    "variant": "Kangoo II/III",
+    "generation": "Kangoo II/III",
+    "years": "2007-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Renault commercial BCM",
     "key_profile": {
-      "blade_profile": "VA2 / VA6 depending lockset",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID46 / PCF7946 / PCF7947 family",
+      "blade_profile": "VA2 / VAC102 by generation - verify",
+      "lishi_tool": "VA2 / VAC102 Renault tool family",
+      "transponder": "ID46 / AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "2/3 button remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2 / VA6 depending lockset",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID46 / PCF7946 / PCF7947 family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "2/3 button remote key",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / VA6 depending lockset",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_kangoo_iii",
-    "make": "Renault",
-    "model": "Kangoo",
-    "variant": "Kangoo III",
-    "years": "2021-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VAC102 / VA2 emergency blade family - verify",
-      "lishi_tool": "VAC102 / VA2 Renault 2-in-1 family",
-      "transponder": "ID4A / AES smart key/card family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key depending spec",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
+      "immobiliser_family": "Renault commercial BCM",
+      "oem_key": "Renault OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Renault remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Renault remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "VAC102 / VA2 emergency blade family - verify",
+        "value": "VA2 / VAC102 by generation - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "lishi_tool": {
-        "value": "VAC102 / VA2 Renault 2-in-1 family",
+        "value": "VA2 / VAC102 Renault tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "transponder": {
-        "value": "ID4A / AES smart key/card family - verify",
+        "value": "ID46 / AES family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "key_type": {
-        "value": "Remote / smart key depending spec",
+        "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use VAC102 / VA2 Renault 2-in-1 family where fitted",
-      "akl_blade_decode": "Decode/cut by VAC102 / VA2 emergency blade family - verify",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
+      "lockout": "Use VA2 / VAC102 Renault tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / VAC102 by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
+        "Transpondery Renault/Nissan/Mitsubishi",
+        "Alliance supplier catalogues",
+        "Original Lishi VA2/VAC102/NSN family",
+        "Workshop confirmation needed on newer smart systems"
       ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
+        "name": "Transpondery Renault/Nissan/Mitsubishi",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
+        "name": "Alliance supplier catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
+        "name": "Original Lishi VA2/VAC102/NSN family",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 25
+      "workshop_notes": 10
     },
-    "last_updated": "2026-07-04"
+    "last_updated": "2026-07-05"
   },
   {
-    "record_id": "renault_verified_trafic_ii",
+    "record_id": "RENAULT-TRAFIC-RANGE",
     "make": "Renault",
     "model": "Trafic",
-    "variant": "Trafic II",
-    "years": "2001-2014",
+    "variant": "Trafic II/III",
+    "generation": "Trafic II/III",
+    "years": "2001-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Renault commercial BCM",
     "key_profile": {
-      "blade_profile": "VA2 / NE72 depending lockset - verify",
-      "lishi_tool": "VA2 / NE72 Renault tool family",
-      "transponder": "ID46 / PCF7946 family - verify",
+      "blade_profile": "VA2 / VAC102 by generation - verify",
+      "lishi_tool": "VA2 / VAC102 Renault tool family",
+      "transponder": "ID46 / ID4A / AES family",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
+      "smart_keyless": "No / optional",
+      "immobiliser_family": "Renault commercial BCM",
+      "oem_key": "Renault OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Renault remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Renault remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "VA2 / NE72 depending lockset - verify",
+        "value": "VA2 / VAC102 by generation - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "lishi_tool": {
-        "value": "VA2 / NE72 Renault tool family",
+        "value": "VA2 / VAC102 Renault tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "transponder": {
-        "value": "ID46 / PCF7946 family - verify",
+        "value": "ID46 / ID4A / AES family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "key_type": {
         "value": "Remote key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use VA2 / NE72 Renault tool family where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / NE72 depending lockset - verify",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
+      "lockout": "Use VA2 / VAC102 Renault tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / VAC102 by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
+        "Transpondery Renault/Nissan/Mitsubishi",
+        "Alliance supplier catalogues",
+        "Original Lishi VA2/VAC102/NSN family",
+        "Workshop confirmation needed on newer smart systems"
       ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
+        "name": "Transpondery Renault/Nissan/Mitsubishi",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
+        "name": "Alliance supplier catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
+        "name": "Original Lishi VA2/VAC102/NSN family",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 25
+      "workshop_notes": 10
     },
-    "last_updated": "2026-07-04"
+    "last_updated": "2026-07-05"
   },
   {
-    "record_id": "renault_verified_trafic_iii",
-    "make": "Renault",
-    "model": "Trafic",
-    "variant": "Trafic III",
-    "years": "2014-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID4A / PCF7961 / Hitag AES",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "2/3 button remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID4A / PCF7961 / Hitag AES",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "2/3 button remote key",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Common Renault commercial ID4A/VA2 family; verify exact key on crossover years."
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_master_ii",
+    "record_id": "RENAULT-MASTER-RANGE",
     "make": "Renault",
     "model": "Master",
-    "variant": "Master II",
-    "years": "1998-2010",
+    "variant": "Master II/III/IV",
+    "generation": "Master II/III/IV",
+    "years": "1998-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Renault commercial BCM",
     "key_profile": {
-      "blade_profile": "VA2 / NE72 depending lockset - verify",
-      "lishi_tool": "VA2 / NE72 Renault tool family",
-      "transponder": "ID46 / PCF7946 family - verify",
+      "blade_profile": "VA2 / VAC102 by generation - verify",
+      "lishi_tool": "VA2 / VAC102 Renault tool family",
+      "transponder": "ID46 / AES commercial family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "VA2 / NE72 depending lockset - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "lishi_tool": {
-        "value": "VA2 / NE72 Renault tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "transponder": {
-        "value": "ID46 / PCF7946 family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      },
-      "key_type": {
-        "value": "Remote / transponder key",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / NE72 Renault tool family where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / NE72 depending lockset - verify",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
-      ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
-    },
-    "sources": [
-      {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
-      },
-      {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
-      },
-      {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
-      },
-      {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
-      }
-    ],
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 25
-    },
-    "last_updated": "2026-07-04"
-  },
-  {
-    "record_id": "renault_verified_master_iii",
-    "make": "Renault",
-    "model": "Master",
-    "variant": "Master III",
-    "years": "2010-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_verified_key_lishi_profile",
-    "platform": "Renault UCH/BCM",
-    "key_profile": {
-      "blade_profile": "VA2 / VA6 depending lockset",
-      "lishi_tool": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
-      "transponder": "ID46 / PCF7946 / PCF7947 family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "2/3 button remote key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
       "smart_keyless": "No / optional",
-      "immobiliser_family": "Renault UCH/BCM",
-      "oem_key": "805670077R / related Renault part family - verify by original key",
-      "xhorse_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
-      "keydiy_equivalent": "Renault ID4A/ID46 433MHz profile - verify exact remote/card",
+      "immobiliser_family": "Renault commercial BCM",
+      "oem_key": "Renault OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Renault remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Renault remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "VA2 / VA6 depending lockset",
+        "value": "VA2 / VAC102 by generation - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "lishi_tool": {
-        "value": "VA2 / VA6 Renault 2-in-1 Pick & Decoder",
+        "value": "VA2 / VAC102 Renault tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "transponder": {
-        "value": "ID46 / PCF7946 / PCF7947 family",
+        "value": "ID46 / AES commercial family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       },
       "key_type": {
-        "value": "2/3 button remote key",
+        "value": "Remote key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
-          "Genuine Lishi",
-          "Keystation"
-        ],
-        "notes": ""
+          "Transpondery Renault/Nissan/Mitsubishi",
+          "Alliance supplier catalogues",
+          "Original Lishi VA2/VAC102/NSN family",
+          "Workshop confirmation needed on newer smart systems"
+        ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use VA2 / VA6 Renault 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / VA6 depending lockset",
-      "stock_note": "Confirm 2/3/4 button, flip/card/prox and blade by original key before ordering.",
-      "notes": "Verified-style Renault record. Confirm by VIN/original key on crossover years."
+      "lockout": "Use VA2 / VAC102 Renault tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / VAC102 by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery",
-        "Genuine Lishi",
-        "Keystation"
+        "Transpondery Renault/Nissan/Mitsubishi",
+        "Alliance supplier catalogues",
+        "Original Lishi VA2/VAC102/NSN family",
+        "Workshop confirmation needed on newer smart systems"
       ],
-      "last_checked": "2026-07-04",
-      "source_notes": "Built from Renault transponder catalogue, Genuine Lishi Renault VA2/VA6 references, UK key supplier listings and workshop-ready schema."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Renault Transponder Catalog",
-        "url": "https://www.transpondery.com/transponder_catalog/renault_transponder_catalog.html"
+        "name": "Transpondery Renault/Nissan/Mitsubishi",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Genuine Lishi Renault 2-in-1",
-        "url": "https://www.genuinelishi.com/lishi_tool/renault-2-in-1/"
+        "name": "Alliance supplier catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Keystation Renault Clio Megane OEM 3 Button 433MHz ID4A",
-        "url": "https://keystation.co.uk/renault-clio-megane-oem-3-button-remote-433mhz-805670077r"
+        "name": "Original Lishi VA2/VAC102/NSN family",
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "MR-Key Renault ID4A PCF7961 VA2",
-        "url": "https://mr-key.com/product/renault-remote-key-805670077r-4a-pcf7961m-hitag-aes-aftermarket"
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 25
+      "workshop_notes": 10
     },
-    "last_updated": "2026-07-04"
+    "last_updated": "2026-07-05"
   }
 ]

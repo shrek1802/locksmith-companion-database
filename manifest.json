@@ -1,6 +1,6 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-multipack-premium-1",
+  "database_version": "2026.07.04-multipack-misc-ev-1",
   "created": "2026-07-05",
   "pack_type": "multi_pack_bulk_v5_coverage",
   "packs": [
@@ -42,11 +42,11 @@
     },
     {
       "id": "byd_key_lishi_profiles",
-      "name": "BYD Key + Lishi Profiles",
+      "name": "BYD v5 Key + Lishi Profiles",
       "manufacturer": "byd",
-      "version": "2026.07.04-batch4-lishi-1",
+      "version": "2026.07.04-multipack-misc-ev-1",
       "file": "manufacturers/byd.json",
-      "records": 3,
+      "records": 1,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/byd.json"
     },
     {
@@ -122,6 +122,15 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/iveco.json"
     },
     {
+      "id": "jeep_key_lishi_profiles",
+      "name": "JEEP v5 Key + Lishi Profiles",
+      "manufacturer": "jeep",
+      "version": "2026.07.04-multipack-misc-ev-1",
+      "file": "manufacturers/jeep.json",
+      "records": 3,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/jeep.json"
+    },
+    {
       "id": "jlr_key_lishi_profiles",
       "name": "JLR v5 Key + Lishi Profiles",
       "manufacturer": "jlr",
@@ -159,11 +168,11 @@
     },
     {
       "id": "maxus_key_lishi_profiles",
-      "name": "MAXUS Key + Lishi Profiles",
+      "name": "MAXUS v5 Key + Lishi Profiles",
       "manufacturer": "maxus",
-      "version": "2026.07.04-batch4-lishi-1",
+      "version": "2026.07.04-multipack-misc-ev-1",
       "file": "manufacturers/maxus.json",
-      "records": 3,
+      "records": 1,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/maxus.json"
     },
     {
@@ -257,6 +266,15 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/skoda.json"
     },
     {
+      "id": "smart_key_lishi_profiles",
+      "name": "SMART v5 Key + Lishi Profiles",
+      "manufacturer": "smart",
+      "version": "2026.07.04-multipack-misc-ev-1",
+      "file": "manufacturers/smart.json",
+      "records": 2,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/smart.json"
+    },
+    {
       "id": "suzuki_key_lishi_profiles",
       "name": "SUZUKI v5 Key + Lishi Profiles",
       "manufacturer": "suzuki",
@@ -267,11 +285,11 @@
     },
     {
       "id": "tesla_key_lishi_profiles",
-      "name": "TESLA Key + Lishi Profiles",
+      "name": "TESLA v5 Key + Lishi Profiles",
       "manufacturer": "tesla",
-      "version": "2026.07.04-batch4-lishi-1",
+      "version": "2026.07.04-multipack-misc-ev-1",
       "file": "manufacturers/tesla.json",
-      "records": 4,
+      "records": 2,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/tesla.json"
     },
     {
@@ -312,8 +330,8 @@
     }
   ],
   "notes": [
-    "Premium v5 coverage refresh.",
-    "Updates JLR, Volvo, Porsche and Bentley.",
-    "Newer smart key systems kept needs_review where exact workshop confirmation is needed."
+    "Miscellaneous and EV coverage expansion.",
+    "Adds Jeep, Smart, Tesla, Maxus and BYD model-family records.",
+    "EV and newer smart systems are marked needs_review."
   ]
 }

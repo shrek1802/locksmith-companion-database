@@ -1,2 +1,3 @@
-# 2026.07.04-multipack-premium-1
-Upload with other database_pack*.zip files.
+# 2026.07.04-multipack-misc-ev-1
+
+Upload with the other database_pack*.zip files and run Install Database Packs.

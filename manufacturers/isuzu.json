@@ -1,54 +1,57 @@
 [
   {
-    "record_id": "BYD-EV-RANGE",
-    "make": "BYD",
-    "model": "Atto 3 / Dolphin / Seal",
-    "variant": "EV range",
-    "generation": "EV range",
-    "years": "2022-present",
+    "record_id": "ISUZU-DMAX-RANGE",
+    "make": "Isuzu",
+    "model": "D-Max",
+    "variant": "D-Max",
+    "generation": "D-Max",
+    "years": "2012-present",
     "market": "UK/EU",
     "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "BYD EV smart key",
+    "platform": "Isuzu immobiliser",
     "key_profile": {
-      "blade_profile": "BYD emergency blade - verify",
-      "lishi_tool": "BYD tool family - verify",
-      "transponder": "BYD NFC/smart key family - verify",
+      "blade_profile": "ISU / emergency blade - verify",
+      "lishi_tool": "Isuzu tool family - verify",
+      "transponder": "ID46 / smart key family - verify",
       "remote_frequency_uk": "433 MHz",
       "buttons": "2/3 button depending spec",
-      "key_type": "Smart key / NFC card",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "BYD EV smart key",
-      "oem_key": "BYD OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "BYD remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "BYD remote/prox profile - verify exact board/prox type",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Isuzu immobiliser",
+      "oem_key": "Isuzu OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Isuzu remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Isuzu remote/prox profile - verify exact board/prox type",
       "verification_status": "needs_review",
       "confidence": "review"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "BYD emergency blade - verify",
+        "value": "ISU / emergency blade - verify",
         "status": "needs_review",
         "sources": [
-          "Transpondery misc catalogues",
+          "Transpondery Hyundai/Kia/KGM/Isuzu",
           "Supplier catalogues",
+          "Original Lishi application lists",
           "Workshop confirmation needed"
         ]
       },
       "lishi_tool": {
-        "value": "BYD tool family - verify",
+        "value": "Isuzu tool family - verify",
         "status": "needs_review",
         "sources": [
-          "Transpondery misc catalogues",
+          "Transpondery Hyundai/Kia/KGM/Isuzu",
           "Supplier catalogues",
+          "Original Lishi application lists",
           "Workshop confirmation needed"
         ]
       },
       "transponder": {
-        "value": "BYD NFC/smart key family - verify",
+        "value": "ID46 / smart key family - verify",
         "status": "needs_review",
         "sources": [
-          "Transpondery misc catalogues",
+          "Transpondery Hyundai/Kia/KGM/Isuzu",
           "Supplier catalogues",
+          "Original Lishi application lists",
           "Workshop confirmation needed"
         ]
       },
@@ -56,24 +59,26 @@
         "value": "433 MHz",
         "status": "needs_review",
         "sources": [
-          "Transpondery misc catalogues",
+          "Transpondery Hyundai/Kia/KGM/Isuzu",
           "Supplier catalogues",
+          "Original Lishi application lists",
           "Workshop confirmation needed"
         ]
       },
       "key_type": {
-        "value": "Smart key / NFC card",
+        "value": "Remote / smart key",
         "status": "needs_review",
         "sources": [
-          "Transpondery misc catalogues",
+          "Transpondery Hyundai/Kia/KGM/Isuzu",
           "Supplier catalogues",
+          "Original Lishi application lists",
           "Workshop confirmation needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use BYD tool family - verify where fitted",
-      "akl_blade_decode": "Decode/cut by BYD emergency blade - verify",
+      "lockout": "Use Isuzu tool family - verify where fitted",
+      "akl_blade_decode": "Decode/cut by ISU / emergency blade - verify",
       "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
       "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
@@ -85,19 +90,24 @@
     "verification": {
       "overall_status": "needs_review",
       "verified_by": [
-        "Transpondery misc catalogues",
+        "Transpondery Hyundai/Kia/KGM/Isuzu",
         "Supplier catalogues",
+        "Original Lishi application lists",
         "Workshop confirmation needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery misc catalogues",
+        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
         "url": "source://bulk-v5-reference"
       },
       {
         "name": "Supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi application lists",
         "url": "source://bulk-v5-reference"
       },
       {

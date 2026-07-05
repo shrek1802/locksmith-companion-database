@@ -1,6 +1,6 @@
 # Database Changelog
 
-## 2026.07.04-multipack-premium-1
-- Premium v5 coverage refresh.
-- Updates JLR, Volvo, Porsche and Bentley.
-- Newer smart key systems kept needs_review where exact workshop confirmation is needed.
+## 2026.07.04-multipack-misc-ev-1
+- Miscellaneous and EV coverage expansion.
+- Adds Jeep, Smart, Tesla, Maxus and BYD model-family records.
+- EV and newer smart systems are marked needs_review.

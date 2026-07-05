@@ -1,113 +1,116 @@
 [
   {
+    "record_id": "MAXUS-DELIVER-RANGE",
     "make": "Maxus",
-    "model": "Deliver 3",
-    "variant": "Deliver 3",
+    "model": "Deliver 3 / 9",
+    "variant": "Deliver range",
+    "generation": "Deliver range",
     "years": "2020-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "SAIC/Maxus immobiliser",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "SAIC/Maxus",
     "key_profile": {
-      "blade_profile": "Maxus profile - verify",
-      "lishi_tool": "verify",
-      "transponder": "ID46 / smart key family - verify",
+      "blade_profile": "Maxus emergency blade - verify",
+      "lishi_tool": "Maxus tool family - verify",
+      "transponder": "SAIC/Maxus key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "SAIC/Maxus immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use verify where fitted",
-      "akl_blade_decode": "Decode/cut by Maxus profile - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "maxus_key_lishi_001"
-  },
-  {
-    "make": "Maxus",
-    "model": "Deliver 9",
-    "variant": "Deliver 9",
-    "years": "2020-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "SAIC/Maxus immobiliser",
-    "key_profile": {
-      "blade_profile": "Maxus profile - verify",
-      "lishi_tool": "verify",
-      "transponder": "ID46 / smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "SAIC/Maxus immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "immobiliser_family": "SAIC/Maxus",
+      "oem_key": "Maxus OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Maxus remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Maxus remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "Maxus emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery misc catalogues",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "Maxus tool family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery misc catalogues",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "transponder": {
+        "value": "SAIC/Maxus key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery misc catalogues",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery misc catalogues",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery misc catalogues",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      }
     },
     "locksmith_use": {
-      "lockout": "Use verify where fitted",
-      "akl_blade_decode": "Decode/cut by Maxus profile - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "lockout": "Use Maxus tool family - verify where fitted",
+      "akl_blade_decode": "Decode/cut by Maxus emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Transpondery misc catalogues",
+        "Supplier catalogues",
+        "Workshop confirmation needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Transpondery misc catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "maxus_key_lishi_002"
-  },
-  {
-    "make": "Maxus",
-    "model": "T90EV",
-    "variant": "T90EV",
-    "years": "2022-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "SAIC/Maxus EV smart key",
-    "key_profile": {
-      "blade_profile": "Emergency blade - verify",
-      "lishi_tool": "verify",
-      "transponder": "EV smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "SAIC/Maxus EV smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use verify where fitted",
-      "akl_blade_decode": "Decode/cut by Emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "maxus_key_lishi_003"
+    "last_updated": "2026-07-05"
   }
 ]

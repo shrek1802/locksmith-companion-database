@@ -1,150 +1,210 @@
 [
   {
+    "record_id": "TESLA-S-X",
     "make": "Tesla",
-    "model": "Model S",
-    "variant": "Model S",
+    "model": "Model S / X",
+    "variant": "S/X",
+    "generation": "S/X",
     "years": "2012-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Tesla keyless / BLE/NFC",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Tesla NFC/BLE",
     "key_profile": {
-      "blade_profile": "No mechanical blade for normal entry",
+      "blade_profile": "No normal mechanical blade / emergency access varies",
       "lishi_tool": "N/A",
-      "transponder": "Tesla key fob / card / phone key system",
+      "transponder": "Tesla fob/card/phone key system",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Key card / phone / fob",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Fob/card/phone key",
       "smart_keyless": "Yes",
-      "immobiliser_family": "Tesla keyless / BLE/NFC",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "immobiliser_family": "Tesla NFC/BLE",
+      "oem_key": "Tesla OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Tesla remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Tesla remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "No normal mechanical blade / emergency access varies",
+        "status": "needs_review",
+        "sources": [
+          "Workshop required",
+          "Tesla service info"
+        ]
+      },
+      "lishi_tool": {
+        "value": "N/A",
+        "status": "needs_review",
+        "sources": [
+          "Workshop required",
+          "Tesla service info"
+        ]
+      },
+      "transponder": {
+        "value": "Tesla fob/card/phone key system",
+        "status": "needs_review",
+        "sources": [
+          "Workshop required",
+          "Tesla service info"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Workshop required",
+          "Tesla service info"
+        ]
+      },
+      "key_type": {
+        "value": "Fob/card/phone key",
+        "status": "needs_review",
+        "sources": [
+          "Workshop required",
+          "Tesla service info"
+        ]
+      }
     },
     "locksmith_use": {
       "lockout": "Use N/A where fitted",
-      "akl_blade_decode": "Decode/cut by No mechanical blade for normal entry",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Lockout/entry method is not traditional Lishi; follow Tesla access procedures."
+      "akl_blade_decode": "Decode/cut by No normal mechanical blade / emergency access varies",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Workshop required",
+        "Tesla service info"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Workshop required",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Tesla service info",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "tesla_key_lishi_001"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "TESLA-3-Y",
     "make": "Tesla",
-    "model": "Model 3",
-    "variant": "Model 3",
+    "model": "Model 3 / Y",
+    "variant": "3/Y",
+    "generation": "3/Y",
     "years": "2017-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_v5_key_lishi_profile",
     "platform": "Tesla NFC/BLE",
     "key_profile": {
-      "blade_profile": "No mechanical blade for normal entry",
+      "blade_profile": "No normal mechanical blade",
       "lishi_tool": "N/A",
-      "transponder": "Tesla key card / phone key",
+      "transponder": "Tesla NFC card / phone key",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Key card / phone",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Card/phone key",
       "smart_keyless": "Yes",
       "immobiliser_family": "Tesla NFC/BLE",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "oem_key": "Tesla OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Tesla remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Tesla remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "No normal mechanical blade",
+        "status": "needs_review",
+        "sources": [
+          "Workshop required",
+          "Tesla service info"
+        ]
+      },
+      "lishi_tool": {
+        "value": "N/A",
+        "status": "needs_review",
+        "sources": [
+          "Workshop required",
+          "Tesla service info"
+        ]
+      },
+      "transponder": {
+        "value": "Tesla NFC card / phone key",
+        "status": "needs_review",
+        "sources": [
+          "Workshop required",
+          "Tesla service info"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Workshop required",
+          "Tesla service info"
+        ]
+      },
+      "key_type": {
+        "value": "Card/phone key",
+        "status": "needs_review",
+        "sources": [
+          "Workshop required",
+          "Tesla service info"
+        ]
+      }
     },
     "locksmith_use": {
       "lockout": "Use N/A where fitted",
-      "akl_blade_decode": "Decode/cut by No mechanical blade for normal entry",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "No conventional blade/Lishi decode."
+      "akl_blade_decode": "Decode/cut by No normal mechanical blade",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Workshop required",
+        "Tesla service info"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Workshop required",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Tesla service info",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "tesla_key_lishi_002"
-  },
-  {
-    "make": "Tesla",
-    "model": "Model X",
-    "variant": "Model X",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Tesla keyless / BLE/NFC",
-    "key_profile": {
-      "blade_profile": "No mechanical blade for normal entry",
-      "lishi_tool": "N/A",
-      "transponder": "Tesla key fob / card / phone key system",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Key card / phone / fob",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Tesla keyless / BLE/NFC",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use N/A where fitted",
-      "akl_blade_decode": "Decode/cut by No mechanical blade for normal entry",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "tesla_key_lishi_003"
-  },
-  {
-    "make": "Tesla",
-    "model": "Model Y",
-    "variant": "Model Y",
-    "years": "2020-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Tesla NFC/BLE",
-    "key_profile": {
-      "blade_profile": "No mechanical blade for normal entry",
-      "lishi_tool": "N/A",
-      "transponder": "Tesla key card / phone key",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Key card / phone",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Tesla NFC/BLE",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use N/A where fitted",
-      "akl_blade_decode": "Decode/cut by No mechanical blade for normal entry",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "tesla_key_lishi_004"
+    "last_updated": "2026-07-05"
   }
 ]
