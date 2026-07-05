@@ -1,779 +1,374 @@
 [
   {
-    "make": "Skoda",
-    "model": "Citigo",
-    "variant": "Citigo",
-    "years": "2011-2020",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_001"
-  },
-  {
+    "record_id": "SKODA-FABIA",
     "make": "Skoda",
     "model": "Fabia",
-    "variant": "Mk1",
-    "years": "1999-2007",
+    "variant": "Mk2/Mk3/Mk4",
+    "generation": "Mk2/Mk3/Mk4",
+    "years": "2007-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Skoda immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
+      "blade_profile": "HU66 / HU162T by generation - verify",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "ID48 / MQB AES family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "No / optional",
+      "immobiliser_family": "Skoda immobiliser / BCM",
+      "oem_key": "Skoda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Skoda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Skoda remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU66 / HU162T by generation - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU66 / HU162T",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "transponder": {
+        "value": "ID48 / MQB AES family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery VAG",
+        "Original Lishi HU66/HU162T",
+        "VAG supplier catalogues",
+        "Workshop required for exact MQB variant"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Transpondery VAG",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU66/HU162T",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "VAG supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop required for exact MQB variant",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_002"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "Skoda",
-    "model": "Fabia",
-    "variant": "Mk2",
-    "years": "2007-2014",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_003"
-  },
-  {
-    "make": "Skoda",
-    "model": "Fabia",
-    "variant": "Mk3",
-    "years": "2014-2021",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_004"
-  },
-  {
-    "make": "Skoda",
-    "model": "Fabia",
-    "variant": "Mk4",
-    "years": "2021-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_005"
-  },
-  {
-    "make": "Skoda",
-    "model": "Roomster",
-    "variant": "Roomster",
-    "years": "2006-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_006"
-  },
-  {
-    "make": "Skoda",
-    "model": "Rapid",
-    "variant": "Rapid",
-    "years": "2012-2019",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_007"
-  },
-  {
-    "make": "Skoda",
-    "model": "Scala",
-    "variant": "Scala",
-    "years": "2019-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_008"
-  },
-  {
+    "record_id": "SKODA-OCTAVIA",
     "make": "Skoda",
     "model": "Octavia",
-    "variant": "Mk1",
-    "years": "1996-2010",
+    "variant": "Mk2/Mk3/Mk4",
+    "generation": "Mk2/Mk3/Mk4",
+    "years": "2004-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Skoda immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
+      "blade_profile": "HU66 / HU162T by generation - verify",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "ID48 / MQB / MQB Evo AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / KESSY",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Skoda immobiliser / BCM",
+      "oem_key": "Skoda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Skoda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Skoda remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU66 / HU162T by generation - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU66 / HU162T",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "transponder": {
+        "value": "ID48 / MQB / MQB Evo AES family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / KESSY",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery VAG",
+        "Original Lishi HU66/HU162T",
+        "VAG supplier catalogues",
+        "Workshop required for exact MQB variant"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Transpondery VAG",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU66/HU162T",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "VAG supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop required for exact MQB variant",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_009"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "Skoda",
-    "model": "Octavia",
-    "variant": "Mk2",
-    "years": "2004-2013",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_010"
-  },
-  {
-    "make": "Skoda",
-    "model": "Octavia",
-    "variant": "Mk3",
-    "years": "2013-2020",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_011"
-  },
-  {
-    "make": "Skoda",
-    "model": "Octavia",
-    "variant": "Mk4",
-    "years": "2020-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB Evo",
-    "key_profile": {
-      "blade_profile": "HU162T",
-      "lishi_tool": "HU162T",
-      "transponder": "MQB Evo AES smart key family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB Evo",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_012"
-  },
-  {
+    "record_id": "SKODA-SUPERB",
     "make": "Skoda",
     "model": "Superb",
-    "variant": "Mk1",
-    "years": "2001-2008",
+    "variant": "Mk2/Mk3/Mk4",
+    "generation": "Mk2/Mk3/Mk4",
+    "years": "2008-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Skoda immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
+      "blade_profile": "HU66 / HU162T by generation - verify",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "ID48 / MQB AES family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / KESSY",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Skoda immobiliser / BCM",
+      "oem_key": "Skoda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Skoda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Skoda remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU66 / HU162T by generation - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU66 / HU162T",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "transponder": {
+        "value": "ID48 / MQB AES family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / KESSY",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery VAG",
+        "Original Lishi HU66/HU162T",
+        "VAG supplier catalogues",
+        "Workshop required for exact MQB variant"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Transpondery VAG",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU66/HU162T",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "VAG supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop required for exact MQB variant",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_013"
-  },
-  {
-    "make": "Skoda",
-    "model": "Superb",
-    "variant": "Mk2",
-    "years": "2008-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_014"
-  },
-  {
-    "make": "Skoda",
-    "model": "Superb",
-    "variant": "Mk3",
-    "years": "2015-2023",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_015"
-  },
-  {
-    "make": "Skoda",
-    "model": "Superb",
-    "variant": "Mk4",
-    "years": "2023-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_016"
-  },
-  {
-    "make": "Skoda",
-    "model": "Yeti",
-    "variant": "Yeti",
-    "years": "2009-2017",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_017"
-  },
-  {
-    "make": "Skoda",
-    "model": "Kamiq",
-    "variant": "Kamiq",
-    "years": "2019-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_018"
-  },
-  {
-    "make": "Skoda",
-    "model": "Karoq",
-    "variant": "Karoq",
-    "years": "2017-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_019"
-  },
-  {
-    "make": "Skoda",
-    "model": "Kodiaq",
-    "variant": "Kodiaq",
-    "years": "2016-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_020"
-  },
-  {
-    "make": "Skoda",
-    "model": "Enyaq",
-    "variant": "Enyaq",
-    "years": "2020-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MEB",
-    "key_profile": {
-      "blade_profile": "HU162T emergency blade family",
-      "lishi_tool": "HU162T",
-      "transponder": "MEB smart key AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MEB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T emergency blade family",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "skoda_key_lishi_021"
+    "last_updated": "2026-07-05"
   }
 ]

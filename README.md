@@ -1,3 +1,2 @@
-# Bulk v5 Coverage Pack
-
-Upload as database_pack.zip and run Install Database Pack.
+# 2026.07.04-multipack-premium-1
+Upload with other database_pack*.zip files.

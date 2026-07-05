@@ -1,8 +1,8 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-bulk-v5-coverage-1",
+  "database_version": "2026.07.04-multipack-premium-1",
   "created": "2026-07-05",
-  "pack_type": "bulk_v5_key_lishi_coverage",
+  "pack_type": "multi_pack_bulk_v5_coverage",
   "packs": [
     {
       "id": "alfa_key_lishi_profiles",
@@ -33,11 +33,11 @@
     },
     {
       "id": "bentley_key_lishi_profiles",
-      "name": "BENTLEY Key + Lishi Profiles",
+      "name": "BENTLEY v5 Key + Lishi Profiles",
       "manufacturer": "bentley",
-      "version": "2026.07.04-batch4-lishi-1",
+      "version": "2026.07.04-multipack-premium-1",
       "file": "manufacturers/bentley.json",
-      "records": 6,
+      "records": 1,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/bentley.json"
     },
     {
@@ -123,11 +123,11 @@
     },
     {
       "id": "jlr_key_lishi_profiles",
-      "name": "JLR Key + Lishi Profiles",
+      "name": "JLR v5 Key + Lishi Profiles",
       "manufacturer": "jlr",
-      "version": "2026.07.04-batch4-lishi-1",
+      "version": "2026.07.04-multipack-premium-1",
       "file": "manufacturers/jlr.json",
-      "records": 21,
+      "records": 3,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/jlr.json"
     },
     {
@@ -222,11 +222,11 @@
     },
     {
       "id": "porsche_key_lishi_profiles",
-      "name": "PORSCHE Key + Lishi Profiles",
+      "name": "PORSCHE v5 Key + Lishi Profiles",
       "manufacturer": "porsche",
-      "version": "2026.07.04-batch4-lishi-1",
+      "version": "2026.07.04-multipack-premium-1",
       "file": "manufacturers/porsche.json",
-      "records": 13,
+      "records": 2,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/porsche.json"
     },
     {
@@ -294,11 +294,11 @@
     },
     {
       "id": "volvo_key_lishi_profiles",
-      "name": "VOLVO Key + Lishi Profiles",
+      "name": "VOLVO v5 Key + Lishi Profiles",
       "manufacturer": "volvo",
-      "version": "2026.07.04-batch4-lishi-1",
+      "version": "2026.07.04-multipack-premium-1",
       "file": "manufacturers/volvo.json",
-      "records": 17,
+      "records": 1,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/volvo.json"
     },
     {
@@ -312,9 +312,8 @@
     }
   ],
   "notes": [
-    "Bulk v5 coverage pack for faster database growth.",
-    "Adds/updates Citroen, DS, Nissan, Toyota, Lexus, Honda, Mazda, Hyundai, Kia and Suzuki.",
-    "Uses honest status levels: verified, high_confidence and needs_review.",
-    "Does not claim full verification where exact model/year/key system still needs workshop confirmation."
+    "Premium v5 coverage refresh.",
+    "Updates JLR, Volvo, Porsche and Bentley.",
+    "Newer smart key systems kept needs_review where exact workshop confirmation is needed."
   ]
 }

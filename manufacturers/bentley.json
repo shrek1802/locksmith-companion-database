@@ -1,224 +1,120 @@
 [
   {
+    "record_id": "HU66 / HU162T by generation - verify",
     "make": "Bentley",
-    "model": "Continental GT",
-    "variant": "Mk1",
-    "years": "2003-2011",
+    "model": "Continental/Flying Spur/Bentayga",
+    "variant": "2003-present",
+    "generation": "2003-present",
+    "years": "BENTLEY-RANGE",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Bentley / VAG KESSY",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Bentley immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU66 / HU162T emergency blade - verify",
-      "lishi_tool": "HU66 / HU162T",
-      "transponder": "VAG KESSY ID48 / AES family - verify",
+      "blade_profile": "HU66 / HU162T",
+      "lishi_tool": "VAG/Bentley KESSY smart key family - verify",
+      "transponder": "Remote / smart key",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Bentley / VAG KESSY",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "buttons": "2/3 button depending spec",
+      "key_type": "high_confidence",
+      "smart_keyless": "Bentley/VAG KESSY",
+      "immobiliser_family": "Bentley immobiliser / BCM",
+      "oem_key": "Bentley OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Bentley remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Bentley remote/prox profile - verify exact board/prox type",
+      "verification_status": [
+        "Transpondery premium catalogues",
+        "Supplier catalogues",
+        "Workshop required for exact smart key"
+      ],
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU66 / HU162T",
+        "status": [
+          "Transpondery premium catalogues",
+          "Supplier catalogues",
+          "Workshop required for exact smart key"
+        ],
+        "sources": "Yes"
+      },
+      "lishi_tool": {
+        "value": "VAG/Bentley KESSY smart key family - verify",
+        "status": [
+          "Transpondery premium catalogues",
+          "Supplier catalogues",
+          "Workshop required for exact smart key"
+        ],
+        "sources": "Yes"
+      },
+      "transponder": {
+        "value": "Remote / smart key",
+        "status": [
+          "Transpondery premium catalogues",
+          "Supplier catalogues",
+          "Workshop required for exact smart key"
+        ],
+        "sources": "Yes"
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": [
+          "Transpondery premium catalogues",
+          "Supplier catalogues",
+          "Workshop required for exact smart key"
+        ],
+        "sources": "Yes"
+      },
+      "key_type": {
+        "value": "high_confidence",
+        "status": [
+          "Transpondery premium catalogues",
+          "Supplier catalogues",
+          "Workshop required for exact smart key"
+        ],
+        "sources": "Yes"
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HU66 / HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "lockout": "Use VAG/Bentley KESSY smart key family - verify where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": [
+        "Transpondery premium catalogues",
+        "Supplier catalogues",
+        "Workshop required for exact smart key"
+      ],
+      "verified_by": "Yes",
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Y",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "e",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "s",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "bentley_key_lishi_001"
-  },
-  {
-    "make": "Bentley",
-    "model": "Continental GT",
-    "variant": "Mk2",
-    "years": "2011-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Bentley / VAG KESSY",
-    "key_profile": {
-      "blade_profile": "HU66 / HU162T emergency blade - verify",
-      "lishi_tool": "HU66 / HU162T",
-      "transponder": "VAG KESSY ID48 / AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Bentley / VAG KESSY",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 / HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "bentley_key_lishi_002"
-  },
-  {
-    "make": "Bentley",
-    "model": "Continental GT",
-    "variant": "Mk3",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Bentley / VAG KESSY",
-    "key_profile": {
-      "blade_profile": "HU66 / HU162T emergency blade - verify",
-      "lishi_tool": "HU66 / HU162T",
-      "transponder": "VAG KESSY ID48 / AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Bentley / VAG KESSY",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 / HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "bentley_key_lishi_003"
-  },
-  {
-    "make": "Bentley",
-    "model": "Flying Spur",
-    "variant": "Mk1/Mk2/Mk3",
-    "years": "2005-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Bentley / VAG KESSY",
-    "key_profile": {
-      "blade_profile": "HU66 / HU162T emergency blade - verify",
-      "lishi_tool": "HU66 / HU162T",
-      "transponder": "VAG KESSY ID48 / AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Bentley / VAG KESSY",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 / HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "bentley_key_lishi_004"
-  },
-  {
-    "make": "Bentley",
-    "model": "Bentayga",
-    "variant": "Bentayga",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Bentley / VAG KESSY",
-    "key_profile": {
-      "blade_profile": "HU66 / HU162T emergency blade - verify",
-      "lishi_tool": "HU66 / HU162T",
-      "transponder": "VAG KESSY ID48 / AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Bentley / VAG KESSY",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 / HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "bentley_key_lishi_005"
-  },
-  {
-    "make": "Bentley",
-    "model": "Mulsanne",
-    "variant": "Mulsanne",
-    "years": "2010-2020",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Bentley / VAG KESSY",
-    "key_profile": {
-      "blade_profile": "HU66 / HU162T emergency blade - verify",
-      "lishi_tool": "HU66 / HU162T",
-      "transponder": "VAG KESSY ID48 / AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Bentley / VAG KESSY",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 / HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU66 / HU162T emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "bentley_key_lishi_006"
+    "last_updated": "2026-07-05"
   }
 ]

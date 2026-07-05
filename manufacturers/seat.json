@@ -1,816 +1,374 @@
 [
   {
-    "make": "SEAT",
-    "model": "Arosa",
-    "variant": "Arosa",
-    "years": "1997-2004",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_001"
-  },
-  {
-    "make": "SEAT",
-    "model": "Mii",
-    "variant": "Mii",
-    "years": "2011-2021",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_002"
-  },
-  {
+    "record_id": "SEAT-IBIZA",
     "make": "SEAT",
     "model": "Ibiza",
-    "variant": "6L",
-    "years": "2002-2008",
+    "variant": "6J/KJ",
+    "generation": "6J/KJ",
+    "years": "2008-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "SEAT immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
+      "blade_profile": "HU66 / HU162T by generation - verify",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "ID48 / MQB AES family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "SEAT immobiliser / BCM",
+      "oem_key": "SEAT OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "SEAT remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "SEAT remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU66 / HU162T by generation - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU66 / HU162T",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "transponder": {
+        "value": "ID48 / MQB AES family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery VAG",
+        "Original Lishi HU66/HU162T",
+        "VAG supplier catalogues",
+        "Workshop required for exact MQB variant"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Transpondery VAG",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU66/HU162T",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "VAG supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop required for exact MQB variant",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_003"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "SEAT",
-    "model": "Ibiza",
-    "variant": "6J",
-    "years": "2008-2017",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_004"
-  },
-  {
-    "make": "SEAT",
-    "model": "Ibiza",
-    "variant": "KJ",
-    "years": "2017-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_005"
-  },
-  {
-    "make": "SEAT",
-    "model": "Cordoba",
-    "variant": "Cordoba",
-    "years": "2002-2009",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_006"
-  },
-  {
-    "make": "SEAT",
-    "model": "Toledo",
-    "variant": "Toledo III",
-    "years": "2004-2009",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_007"
-  },
-  {
-    "make": "SEAT",
-    "model": "Toledo",
-    "variant": "Toledo IV",
-    "years": "2012-2019",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_008"
-  },
-  {
+    "record_id": "SEAT-LEON",
     "make": "SEAT",
     "model": "Leon",
-    "variant": "1M",
-    "years": "1999-2005",
+    "variant": "1P/5F/KL",
+    "generation": "1P/5F/KL",
+    "years": "2005-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "SEAT immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
+      "blade_profile": "HU66 / HU162T by generation - verify",
+      "lishi_tool": "HU66 / HU162T",
+      "transponder": "ID48 / MQB / MQB Evo AES family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / KESSY",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "SEAT immobiliser / BCM",
+      "oem_key": "SEAT OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "SEAT remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "SEAT remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU66 / HU162T by generation - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU66 / HU162T",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "transponder": {
+        "value": "ID48 / MQB / MQB Evo AES family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / KESSY",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU66 / HU162T where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery VAG",
+        "Original Lishi HU66/HU162T",
+        "VAG supplier catalogues",
+        "Workshop required for exact MQB variant"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Transpondery VAG",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU66/HU162T",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "VAG supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop required for exact MQB variant",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_009"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "SEAT",
-    "model": "Leon",
-    "variant": "1P",
-    "years": "2005-2012",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_010"
-  },
-  {
-    "make": "SEAT",
-    "model": "Leon",
-    "variant": "5F",
-    "years": "2012-2020",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_011"
-  },
-  {
-    "make": "SEAT",
-    "model": "Leon",
-    "variant": "KL",
-    "years": "2020-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB Evo",
-    "key_profile": {
-      "blade_profile": "HU162T",
-      "lishi_tool": "HU162T",
-      "transponder": "MQB Evo AES smart key family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB Evo",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_012"
-  },
-  {
-    "make": "SEAT",
-    "model": "Altea",
-    "variant": "Altea",
-    "years": "2004-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_013"
-  },
-  {
-    "make": "SEAT",
-    "model": "Exeo",
-    "variant": "Exeo",
-    "years": "2008-2013",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_014"
-  },
-  {
-    "make": "SEAT",
-    "model": "Alhambra",
-    "variant": "Alhambra II",
-    "years": "2010-2020",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG PQ / Immo 4",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66",
-      "transponder": "ID48 / Megamos Crypto family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ / Immo 4",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_015"
-  },
-  {
-    "make": "SEAT",
-    "model": "Arona",
-    "variant": "Arona",
-    "years": "2017-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_016"
-  },
-  {
-    "make": "SEAT",
-    "model": "Ateca",
-    "variant": "Ateca",
-    "years": "2016-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_017"
-  },
-  {
-    "make": "SEAT",
-    "model": "Tarraco",
-    "variant": "Tarraco",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_018"
-  },
-  {
+    "record_id": "CUPRA-FORMENTOR",
     "make": "Cupra",
     "model": "Formentor",
     "variant": "Formentor",
+    "generation": "Formentor",
     "years": "2020-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
+    "database_layer": "layer_1_v5_key_lishi_profile",
     "platform": "VAG MQB Evo",
     "key_profile": {
       "blade_profile": "HU162T",
-      "lishi_tool": "HU162T",
-      "transponder": "MQB Evo AES smart key family",
+      "lishi_tool": "HU162T 2-in-1 Pick & Decoder",
+      "transponder": "MQB Evo AES family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes",
       "immobiliser_family": "VAG MQB Evo",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "oem_key": "Cupra OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Cupra remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Cupra remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU162T",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU162T 2-in-1 Pick & Decoder",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "transponder": {
+        "value": "MQB Evo AES family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery VAG",
+          "Original Lishi HU66/HU162T",
+          "VAG supplier catalogues",
+          "Workshop required for exact MQB variant"
+        ]
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HU162T where fitted",
+      "lockout": "Use HU162T 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU162T",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Transpondery VAG",
+        "Original Lishi HU66/HU162T",
+        "VAG supplier catalogues",
+        "Workshop required for exact MQB variant"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Transpondery VAG",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU66/HU162T",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "VAG supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop required for exact MQB variant",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_019"
-  },
-  {
-    "make": "Cupra",
-    "model": "Leon",
-    "variant": "Cupra Leon",
-    "years": "2020-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB Evo",
-    "key_profile": {
-      "blade_profile": "HU162T",
-      "lishi_tool": "HU162T",
-      "transponder": "MQB Evo AES smart key family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB Evo",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_020"
-  },
-  {
-    "make": "Cupra",
-    "model": "Born",
-    "variant": "Born",
-    "years": "2021-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MEB",
-    "key_profile": {
-      "blade_profile": "HU162T emergency blade family",
-      "lishi_tool": "HU162T",
-      "transponder": "MEB smart key AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Smart proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MEB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T emergency blade family",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_021"
-  },
-  {
-    "make": "Cupra",
-    "model": "Ateca",
-    "variant": "Cupra Ateca",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_profile",
-    "platform": "VAG MQB",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant by year",
-      "lishi_tool": "HU162T / HU66",
-      "transponder": "MQB AES / ID48 AES family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant by year",
-      "stock_note": "Confirm flip/prox and board type before ordering",
-      "notes": "Many MQB vehicles use HU162T, but some lower/early variants may still be HU66."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "seat_key_lishi_022"
+    "last_updated": "2026-07-05"
   }
 ]
