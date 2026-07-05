@@ -1,6 +1,6 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-realrepo-vauxhall-v1.0",
+  "database_version": "2026.07.04-peugeot-v1.0",
   "created": "2026-07-05",
   "pack_type": "verified_key_lishi_database",
   "packs": [
@@ -195,11 +195,11 @@
     },
     {
       "id": "peugeot_key_lishi_profiles",
-      "name": "PEUGEOT Key + Lishi Profiles",
+      "name": "PEUGEOT Verified Key + Lishi Profiles",
       "manufacturer": "peugeot",
-      "version": "2026.07.04-batch2-lishi-1",
+      "version": "2026.07.04-peugeot-v1.0",
       "file": "manufacturers/peugeot.json",
-      "records": 24,
+      "records": 27,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/peugeot.json"
     },
     {
@@ -303,9 +303,9 @@
     }
   ],
   "notes": [
-    "Built from uploaded real locksmith-companion-database repository.",
-    "Adds Vauxhall/Opel v1.0 verified correction data to the real repo state.",
-    "Keeps existing Dacia, Renault and Ford v1.1 entries intact.",
-    "Vauxhall GM-era HU100/ID46 records are separated from PSA/Stellantis-era vehicles."
+    "Peugeot v1.0 verified correction pack.",
+    "Splits PSA HU83, VA2 and newer Stellantis-era vehicles instead of mixing them.",
+    "Verified/high-confidence records use Transpondery, Genuine Lishi HU83, Keystation, Access Fobs and supplier cross-checks.",
+    "Newer 2018/2019+ Stellantis-era models are marked needs_review until workshop-confirmed."
   ]
 }
