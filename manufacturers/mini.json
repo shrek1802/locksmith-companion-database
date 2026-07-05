@@ -1,23 +1,23 @@
 [
   {
-    "record_id": "MINI-HATCH",
+    "record_id": "MINI-HATCH-R50-2001-2006-REMOTE-KEY",
     "make": "MINI",
     "model": "Hatch",
-    "variant": "R50/R56/F56",
-    "generation": "R50/R56/F56",
-    "years": "2001-present",
+    "variant": "R50",
+    "generation": "R50",
+    "years": "2001-2006",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "MINI immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI EWS",
     "key_profile": {
-      "blade_profile": "HU92 / HU100R by generation - verify",
-      "lishi_tool": "HU92 / HU100R",
-      "transponder": "BMW/MINI CAS/FEM/BDC family",
+      "blade_profile": "HU92 / MINI profile - verify",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI EWS/CAS remote family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "MINI immobiliser / BCM",
+      "immobiliser_family": "BMW/MINI EWS",
       "oem_key": "MINI OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
@@ -26,112 +26,132 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HU92 / HU100R by generation - verify",
+        "value": "HU92 / MINI profile - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery BMW/MINI",
-          "BMW/MINI supplier catalogues",
-          "Workshop required for CAS/FEM/BDC exact system"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU92 / HU100R",
+        "value": "HU92 2-in-1 Pick & Decoder",
         "status": "high_confidence",
         "sources": [
-          "Transpondery BMW/MINI",
-          "BMW/MINI supplier catalogues",
-          "Workshop required for CAS/FEM/BDC exact system"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "BMW/MINI CAS/FEM/BDC family",
+        "value": "BMW/MINI EWS/CAS remote family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery BMW/MINI",
-          "BMW/MINI supplier catalogues",
-          "Workshop required for CAS/FEM/BDC exact system"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery BMW/MINI",
-          "BMW/MINI supplier catalogues",
-          "Workshop required for CAS/FEM/BDC exact system"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Remote / smart key",
+        "value": "Remote key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery BMW/MINI",
-          "BMW/MINI supplier catalogues",
-          "Workshop required for CAS/FEM/BDC exact system"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU92 / HU100R where fitted",
-      "akl_blade_decode": "Decode/cut by HU92 / HU100R by generation - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92 / MINI profile - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery BMW/MINI",
-        "BMW/MINI supplier catalogues",
-        "Workshop required for CAS/FEM/BDC exact system"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery BMW/MINI",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "BMW/MINI supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for CAS/FEM/BDC exact system",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "MINI-COUNTRYMAN",
+    "record_id": "MINI-HATCH-R53-COOPER-S-2002-2006-REMOTE-KEY",
     "make": "MINI",
-    "model": "Countryman",
-    "variant": "R60/F60",
-    "generation": "R60/F60",
-    "years": "2010-present",
+    "model": "Hatch",
+    "variant": "R53 Cooper S",
+    "generation": "R53 Cooper S",
+    "years": "2002-2006",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "MINI immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI EWS",
     "key_profile": {
-      "blade_profile": "HU92 / HU100R by generation - verify",
-      "lishi_tool": "HU92 / HU100R",
-      "transponder": "BMW/MINI CAS/FEM/BDC family",
+      "blade_profile": "HU92 / MINI profile - verify",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI EWS/CAS remote family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "MINI immobiliser / BCM",
+      "immobiliser_family": "BMW/MINI EWS",
       "oem_key": "MINI OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
@@ -140,90 +160,2254 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HU92 / HU100R by generation - verify",
+        "value": "HU92 / MINI profile - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery BMW/MINI",
-          "BMW/MINI supplier catalogues",
-          "Workshop required for CAS/FEM/BDC exact system"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU92 / HU100R",
+        "value": "HU92 2-in-1 Pick & Decoder",
         "status": "high_confidence",
         "sources": [
-          "Transpondery BMW/MINI",
-          "BMW/MINI supplier catalogues",
-          "Workshop required for CAS/FEM/BDC exact system"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "BMW/MINI CAS/FEM/BDC family",
+        "value": "BMW/MINI EWS/CAS remote family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery BMW/MINI",
-          "BMW/MINI supplier catalogues",
-          "Workshop required for CAS/FEM/BDC exact system"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery BMW/MINI",
-          "BMW/MINI supplier catalogues",
-          "Workshop required for CAS/FEM/BDC exact system"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Remote / smart key",
+        "value": "Remote key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery BMW/MINI",
-          "BMW/MINI supplier catalogues",
-          "Workshop required for CAS/FEM/BDC exact system"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU92 / HU100R where fitted",
-      "akl_blade_decode": "Decode/cut by HU92 / HU100R by generation - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92 / MINI profile - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery BMW/MINI",
-        "BMW/MINI supplier catalogues",
-        "Workshop required for CAS/FEM/BDC exact system"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery BMW/MINI",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "BMW/MINI supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for CAS/FEM/BDC exact system",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-CONVERTIBLE-R52-2004-2008-REMOTE-KEY",
+    "make": "MINI",
+    "model": "Convertible",
+    "variant": "R52",
+    "generation": "R52",
+    "years": "2004-2008",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI EWS",
+    "key_profile": {
+      "blade_profile": "HU92 / MINI profile - verify",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI EWS/CAS remote family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI EWS",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92 / MINI profile - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI EWS/CAS remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92 / MINI profile - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-HATCH-R56-2006-2013-REMOTE-KEY",
+    "make": "MINI",
+    "model": "Hatch",
+    "variant": "R56",
+    "generation": "R56",
+    "years": "2006-2013",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI CAS",
+    "key_profile": {
+      "blade_profile": "HU92",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI CAS remote family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI CAS",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI CAS remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-CLUBMAN-R55-2007-2014-REMOTE-KEY",
+    "make": "MINI",
+    "model": "Clubman",
+    "variant": "R55",
+    "generation": "R55",
+    "years": "2007-2014",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI CAS",
+    "key_profile": {
+      "blade_profile": "HU92",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI CAS remote family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI CAS",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI CAS remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-CONVERTIBLE-R57-2009-2015-REMOTE-KEY",
+    "make": "MINI",
+    "model": "Convertible",
+    "variant": "R57",
+    "generation": "R57",
+    "years": "2009-2015",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI CAS",
+    "key_profile": {
+      "blade_profile": "HU92",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI CAS remote family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI CAS",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI CAS remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-COUPE-R58-2011-2015-REMOTE-KEY",
+    "make": "MINI",
+    "model": "Coupe",
+    "variant": "R58",
+    "generation": "R58",
+    "years": "2011-2015",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI CAS",
+    "key_profile": {
+      "blade_profile": "HU92",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI CAS remote family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI CAS",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI CAS remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-ROADSTER-R59-2012-2015-REMOTE-KEY",
+    "make": "MINI",
+    "model": "Roadster",
+    "variant": "R59",
+    "generation": "R59",
+    "years": "2012-2015",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI CAS",
+    "key_profile": {
+      "blade_profile": "HU92",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI CAS remote family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI CAS",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI CAS remote family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-COUNTRYMAN-R60-2010-2016-REMOTE-SMART-KEY",
+    "make": "MINI",
+    "model": "Countryman",
+    "variant": "R60",
+    "generation": "R60",
+    "years": "2010-2016",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI CAS",
+    "key_profile": {
+      "blade_profile": "HU92",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI CAS remote/prox family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI CAS",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI CAS remote/prox family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-PACEMAN-R61-2012-2016-REMOTE-SMART-KEY",
+    "make": "MINI",
+    "model": "Paceman",
+    "variant": "R61",
+    "generation": "R61",
+    "years": "2012-2016",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI CAS",
+    "key_profile": {
+      "blade_profile": "HU92",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI CAS remote/prox family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI CAS",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI CAS remote/prox family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-HATCH-3-DOOR-F56-2014-PRESENT-REMOTE-SMART-KEY",
+    "make": "MINI",
+    "model": "Hatch 3-door",
+    "variant": "F56",
+    "generation": "F56",
+    "years": "2014-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI FEM/BDC",
+    "key_profile": {
+      "blade_profile": "HU92 / HU100R by year - verify",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI FEM/BDC remote/prox family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI FEM/BDC",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92 / HU100R by year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI FEM/BDC remote/prox family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92 / HU100R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-HATCH-5-DOOR-F55-2014-PRESENT-REMOTE-SMART-KEY",
+    "make": "MINI",
+    "model": "Hatch 5-door",
+    "variant": "F55",
+    "generation": "F55",
+    "years": "2014-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI FEM/BDC",
+    "key_profile": {
+      "blade_profile": "HU92 / HU100R by year - verify",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI FEM/BDC remote/prox family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI FEM/BDC",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92 / HU100R by year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI FEM/BDC remote/prox family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92 / HU100R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-CONVERTIBLE-F57-2016-PRESENT-REMOTE-SMART-KEY",
+    "make": "MINI",
+    "model": "Convertible",
+    "variant": "F57",
+    "generation": "F57",
+    "years": "2016-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI FEM/BDC",
+    "key_profile": {
+      "blade_profile": "HU92 / HU100R by year - verify",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI FEM/BDC remote/prox family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI FEM/BDC",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92 / HU100R by year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI FEM/BDC remote/prox family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92 / HU100R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-CLUBMAN-F54-2015-PRESENT-REMOTE-SMART-KEY",
+    "make": "MINI",
+    "model": "Clubman",
+    "variant": "F54",
+    "generation": "F54",
+    "years": "2015-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI FEM/BDC",
+    "key_profile": {
+      "blade_profile": "HU92 / HU100R by year - verify",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI FEM/BDC remote/prox family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI FEM/BDC",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92 / HU100R by year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI FEM/BDC remote/prox family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92 / HU100R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-COUNTRYMAN-F60-2017-PRESENT-REMOTE-SMART-KEY",
+    "make": "MINI",
+    "model": "Countryman",
+    "variant": "F60",
+    "generation": "F60",
+    "years": "2017-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI BDC",
+    "key_profile": {
+      "blade_profile": "HU92 / HU100R by year - verify",
+      "lishi_tool": "HU92 2-in-1 Pick & Decoder",
+      "transponder": "BMW/MINI BDC remote/prox family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI BDC",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU92 / HU100R by year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU92 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI BDC remote/prox family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU92 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU92 / HU100R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-ELECTRIC-F56-SE-2020-PRESENT-SMART-KEY",
+    "make": "MINI",
+    "model": "Electric",
+    "variant": "F56 SE",
+    "generation": "F56 SE",
+    "years": "2020-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI BDC EV",
+    "key_profile": {
+      "blade_profile": "HU100R / emergency blade - verify",
+      "lishi_tool": "HU100R / HU92 MINI tool family",
+      "transponder": "BMW/MINI EV BDC smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI BDC EV",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU100R / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU100R / HU92 MINI tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI EV BDC smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU100R / HU92 MINI tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU100R / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-HATCH-F66-2024-PRESENT-SMART-KEY",
+    "make": "MINI",
+    "model": "Hatch",
+    "variant": "F66",
+    "generation": "F66",
+    "years": "2024-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI BDC latest",
+    "key_profile": {
+      "blade_profile": "HU100R / emergency blade - verify",
+      "lishi_tool": "HU100R / HU92 MINI tool family",
+      "transponder": "BMW/MINI latest BDC smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI BDC latest",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU100R / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU100R / HU92 MINI tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI latest BDC smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU100R / HU92 MINI tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU100R / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MINI-COUNTRYMAN-U25-2024-PRESENT-SMART-KEY",
+    "make": "MINI",
+    "model": "Countryman",
+    "variant": "U25",
+    "generation": "U25",
+    "years": "2024-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "BMW/MINI BDC latest",
+    "key_profile": {
+      "blade_profile": "HU100R / emergency blade - verify",
+      "lishi_tool": "HU100R / HU92 MINI tool family",
+      "transponder": "BMW/MINI latest BDC smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "BMW/MINI BDC latest",
+      "oem_key": "MINI OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "MINI remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU100R / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU100R / HU92 MINI tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "BMW/MINI latest BDC smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU100R / HU92 MINI tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU100R / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "BMW/MINI generation record. Exact CAS/FEM/BDC key can vary by year, comfort access and market."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm CAS/FEM/BDC system and tool support before AKL.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   }

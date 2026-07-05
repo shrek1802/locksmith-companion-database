@@ -1,3 +1,3 @@
-# 2026.07.04-big-japan-korea-individual-1
+# 2026.07.04-big-mini-individual-1
 
-Vehicle generation key-system pack.
+BMW/MINI vehicle generation key-system pack.

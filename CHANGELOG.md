@@ -1,5 +1,5 @@
 # Database Changelog
 
-## 2026.07.04-big-japan-korea-individual-1
-- Japan/Korea individual expansion: 68 records.
-- Adds generation-level Toyota/Lexus/Honda/Mazda/Hyundai/Kia/Suzuki records.
+## 2026.07.04-big-mini-individual-1
+- MINI generation/key-system expansion: 18 records.
+- Splits MINI by R/F/U chassis and EWS/CAS/FEM/BDC family.

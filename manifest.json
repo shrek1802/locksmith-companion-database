@@ -1,6 +1,6 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-big-japan-korea-individual-1",
+  "database_version": "2026.07.04-big-mini-individual-1",
   "created": "2026-07-05",
   "pack_type": "vehicle_generation_key_system_pack",
   "packs": [
@@ -203,6 +203,15 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mg.json"
     },
     {
+      "id": "mini_key_lishi_profiles",
+      "name": "MINI Vehicle Key-System Records",
+      "manufacturer": "mini",
+      "version": "2026.07.04-big-mini-individual-1",
+      "file": "manufacturers/mini.json",
+      "records": 18,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mini.json"
+    },
+    {
       "id": "nissan_key_lishi_profiles",
       "name": "NISSAN v5 Key + Lishi Profiles",
       "manufacturer": "nissan",
@@ -348,7 +357,7 @@
     }
   ],
   "notes": [
-    "Japan/Korea individual expansion: 68 records.",
-    "Adds generation-level Toyota/Lexus/Honda/Mazda/Hyundai/Kia/Suzuki records."
+    "MINI generation/key-system expansion: 18 records.",
+    "Splits MINI by R/F/U chassis and EWS/CAS/FEM/BDC family."
   ]
 }
