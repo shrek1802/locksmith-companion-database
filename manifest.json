@@ -5,13 +5,15 @@
   "pack_type": "single_cumulative_database_pack",
   "packs": [
     {
-      "id": "alfa_key_lishi_profiles",
-      "name": "ALFA Key + Lishi Profiles",
-      "manufacturer": "alfa",
-      "version": "existing",
-      "file": "manufacturers/alfa.json",
-      "records": 2,
-      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/alfa.json"
+  "manufacturers": [
+    {
+      "id": "alfa_romeo_key_lishi_profiles",
+      "name": "ALFA ROMEO Key + Lishi Profiles",
+      "manufacturer": "alfa_romeo", 
+      "version": "2026.07.05-rebuild-1",
+      "file": "manufacturers/alfa_romeo.json",
+      "records": 5,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/alfa_romeo.json"
     },
     {
       "id": "aston_key_lishi_profiles",
