@@ -1,8 +1,8 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-big-mini-individual-1",
+  "database_version": "2026.07.04-merged-all-packs-1",
   "created": "2026-07-05",
-  "pack_type": "vehicle_generation_key_system_pack",
+  "pack_type": "merged_database_pack",
   "packs": [
     {
       "id": "alfa_key_lishi_profiles",
@@ -10,7 +10,7 @@
       "manufacturer": "alfa",
       "version": "2026.07.04-batch3-lishi-1",
       "file": "manufacturers/alfa.json",
-      "records": 4,
+      "records": 2,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/alfa.json"
     },
     {
@@ -19,7 +19,7 @@
       "manufacturer": "aston",
       "version": "2026.07.04-batch4-lishi-1",
       "file": "manufacturers/aston.json",
-      "records": 5,
+      "records": 2,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/aston.json"
     },
     {
@@ -28,7 +28,7 @@
       "manufacturer": "audi",
       "version": "2026.07.04-vag-lishi-1",
       "file": "manufacturers/audi.json",
-      "records": 29,
+      "records": 10,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/audi.json"
     },
     {
@@ -41,6 +41,15 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/bentley.json"
     },
     {
+      "id": "bmw_key_lishi_profiles",
+      "name": "BMW Vehicle Key-System Records",
+      "manufacturer": "bmw",
+      "version": "2026.07.04-big-bmw-individual-1",
+      "file": "manufacturers/bmw.json",
+      "records": 66,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/bmw.json"
+    },
+    {
       "id": "byd_key_lishi_profiles",
       "name": "BYD v5 Key + Lishi Profiles",
       "manufacturer": "byd",
@@ -50,22 +59,40 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/byd.json"
     },
     {
+      "id": "chevrolet_key_lishi_profiles",
+      "name": "CHEVROLET v5 Key + Lishi Profiles",
+      "manufacturer": "chevrolet",
+      "version": "2026.07.04-multipack-legacy-rare-1",
+      "file": "manufacturers/chevrolet.json",
+      "records": 2,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/chevrolet.json"
+    },
+    {
+      "id": "chrysler_key_lishi_profiles",
+      "name": "CHRYSLER v5 Key + Lishi Profiles",
+      "manufacturer": "chrysler",
+      "version": "2026.07.04-multipack-legacy-rare-1",
+      "file": "manufacturers/chrysler.json",
+      "records": 2,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/chrysler.json"
+    },
+    {
       "id": "citroen_key_lishi_profiles",
       "name": "CITROEN v5 Key + Lishi Profiles",
       "manufacturer": "citroen",
-      "version": "2026.07.04-bulk-v5-coverage-1",
+      "version": "2026.07.04-multipack-psa-stellantis-exp-1",
       "file": "manufacturers/citroen.json",
-      "records": 18,
+      "records": 3,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/citroen.json"
     },
     {
-      "id": "dacia_key_lishi_profiles",
-      "name": "DACIA Verified Key + Lishi Profiles",
-      "manufacturer": "dacia",
-      "version": "2026.07.04-dacia-verified-1",
-      "file": "manufacturers/dacia.json",
-      "records": 12,
-      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/dacia.json"
+      "id": "dodge_key_lishi_profiles",
+      "name": "DODGE v5 Key + Lishi Profiles",
+      "manufacturer": "dodge",
+      "version": "2026.07.04-multipack-legacy-rare-1",
+      "file": "manufacturers/dodge.json",
+      "records": 1,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/dodge.json"
     },
     {
       "id": "ds_key_lishi_profiles",
@@ -73,16 +100,25 @@
       "manufacturer": "ds",
       "version": "2026.07.04-bulk-v5-coverage-1",
       "file": "manufacturers/ds.json",
-      "records": 5,
+      "records": 6,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/ds.json"
     },
     {
+      "id": "ferrari_key_lishi_profiles",
+      "name": "FERRARI v5 Key + Lishi Profiles",
+      "manufacturer": "ferrari",
+      "version": "2026.07.04-multipack-luxury-1",
+      "file": "manufacturers/ferrari.json",
+      "records": 1,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/ferrari.json"
+    },
+    {
       "id": "fiat_key_lishi_profiles",
-      "name": "FIAT Key + Lishi Profiles",
+      "name": "FIAT v5 Key + Lishi Profiles",
       "manufacturer": "fiat",
-      "version": "2026.07.04-batch3-lishi-1",
+      "version": "2026.07.04-multipack-psa-stellantis-exp-1",
       "file": "manufacturers/fiat.json",
-      "records": 9,
+      "records": 2,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/fiat.json"
     },
     {
@@ -91,26 +127,35 @@
       "manufacturer": "ford",
       "version": "2026.07.04-ford-v1.1",
       "file": "manufacturers/ford.json",
-      "records": 38,
+      "records": 8,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/ford.json"
     },
     {
       "id": "honda_key_lishi_profiles",
-      "name": "HONDA Vehicle Key-System Records",
+      "name": "HONDA v5 Key + Lishi Profiles",
       "manufacturer": "honda",
-      "version": "2026.07.04-big-japan-korea-individual-1",
+      "version": "2026.07.04-bulk-v5-coverage-1",
       "file": "manufacturers/honda.json",
-      "records": 8,
+      "records": 4,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/honda.json"
     },
     {
       "id": "hyundai_key_lishi_profiles",
-      "name": "HYUNDAI Vehicle Key-System Records",
+      "name": "HYUNDAI v5 Key + Lishi Profiles",
       "manufacturer": "hyundai",
-      "version": "2026.07.04-big-japan-korea-individual-1",
+      "version": "2026.07.04-bulk-v5-coverage-1",
       "file": "manufacturers/hyundai.json",
-      "records": 13,
+      "records": 5,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/hyundai.json"
+    },
+    {
+      "id": "isuzu_key_lishi_profiles",
+      "name": "ISUZU v5 Key + Lishi Profiles",
+      "manufacturer": "isuzu",
+      "version": "2026.07.04-multipack-korean-utility-1",
+      "file": "manufacturers/isuzu.json",
+      "records": 1,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/isuzu.json"
     },
     {
       "id": "iveco_key_lishi_profiles",
@@ -118,7 +163,7 @@
       "manufacturer": "iveco",
       "version": "2026.07.04-batch4-lishi-1",
       "file": "manufacturers/iveco.json",
-      "records": 3,
+      "records": 1,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/iveco.json"
     },
     {
@@ -140,21 +185,39 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/jlr.json"
     },
     {
+      "id": "kgm_key_lishi_profiles",
+      "name": "KGM v5 Key + Lishi Profiles",
+      "manufacturer": "kgm",
+      "version": "2026.07.04-multipack-korean-utility-1",
+      "file": "manufacturers/kgm.json",
+      "records": 2,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/kgm.json"
+    },
+    {
       "id": "kia_key_lishi_profiles",
-      "name": "KIA Vehicle Key-System Records",
+      "name": "KIA v5 Key + Lishi Profiles",
       "manufacturer": "kia",
-      "version": "2026.07.04-big-japan-korea-individual-1",
+      "version": "2026.07.04-bulk-v5-coverage-1",
       "file": "manufacturers/kia.json",
-      "records": 10,
+      "records": 5,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/kia.json"
     },
     {
+      "id": "lamborghini_key_lishi_profiles",
+      "name": "LAMBORGHINI v5 Key + Lishi Profiles",
+      "manufacturer": "lamborghini",
+      "version": "2026.07.04-multipack-luxury-1",
+      "file": "manufacturers/lamborghini.json",
+      "records": 1,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/lamborghini.json"
+    },
+    {
       "id": "lexus_key_lishi_profiles",
-      "name": "LEXUS Vehicle Key-System Records",
+      "name": "LEXUS v5 Key + Lishi Profiles",
       "manufacturer": "lexus",
-      "version": "2026.07.04-big-japan-korea-individual-1",
+      "version": "2026.07.04-bulk-v5-coverage-1",
       "file": "manufacturers/lexus.json",
-      "records": 6,
+      "records": 2,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/lexus.json"
     },
     {
@@ -163,7 +226,7 @@
       "manufacturer": "maserati",
       "version": "2026.07.04-batch4-lishi-1",
       "file": "manufacturers/maserati.json",
-      "records": 4,
+      "records": 1,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/maserati.json"
     },
     {
@@ -177,11 +240,11 @@
     },
     {
       "id": "mazda_key_lishi_profiles",
-      "name": "MAZDA Vehicle Key-System Records",
+      "name": "MAZDA v5 Key + Lishi Profiles",
       "manufacturer": "mazda",
-      "version": "2026.07.04-big-japan-korea-individual-1",
+      "version": "2026.07.04-bulk-v5-coverage-1",
       "file": "manufacturers/mazda.json",
-      "records": 11,
+      "records": 5,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mazda.json"
     },
     {
@@ -190,7 +253,7 @@
       "manufacturer": "mercedes",
       "version": "2026.07.04-batch2-lishi-1",
       "file": "manufacturers/mercedes.json",
-      "records": 27,
+      "records": 3,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mercedes.json"
     },
     {
@@ -199,7 +262,7 @@
       "manufacturer": "mg",
       "version": "2026.07.04-batch4-lishi-1",
       "file": "manufacturers/mg.json",
-      "records": 5,
+      "records": 1,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mg.json"
     },
     {
@@ -212,31 +275,31 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mini.json"
     },
     {
+      "id": "mitsubishi_key_lishi_profiles",
+      "name": "MITSUBISHI v5 Key + Lishi Profiles",
+      "manufacturer": "mitsubishi",
+      "version": "2026.07.04-multipack-alliance-2",
+      "file": "manufacturers/mitsubishi.json",
+      "records": 4,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mitsubishi.json"
+    },
+    {
       "id": "nissan_key_lishi_profiles",
       "name": "NISSAN v5 Key + Lishi Profiles",
       "manufacturer": "nissan",
       "version": "2026.07.04-bulk-v5-coverage-1",
       "file": "manufacturers/nissan.json",
-      "records": 17,
+      "records": 7,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/nissan.json"
     },
     {
       "id": "peugeot_key_lishi_profiles",
-      "name": "PEUGEOT Verified Key + Lishi Profiles",
+      "name": "PEUGEOT v5 Key + Lishi Profiles",
       "manufacturer": "peugeot",
-      "version": "2026.07.04-peugeot-v1.0",
+      "version": "2026.07.04-multipack-psa-stellantis-exp-1",
       "file": "manufacturers/peugeot.json",
-      "records": 27,
+      "records": 5,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/peugeot.json"
-    },
-    {
-      "id": "polestar_key_lishi_profiles",
-      "name": "POLESTAR Key + Lishi Profiles",
-      "manufacturer": "polestar",
-      "version": "2026.07.04-batch4-lishi-1",
-      "file": "manufacturers/polestar.json",
-      "records": 2,
-      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/polestar.json"
     },
     {
       "id": "porsche_key_lishi_profiles",
@@ -271,8 +334,35 @@
       "manufacturer": "renault",
       "version": "2026.07.04-renault-verified-1",
       "file": "manufacturers/renault.json",
-      "records": 24,
+      "records": 7,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/renault.json"
+    },
+    {
+      "id": "rollsroyce_key_lishi_profiles",
+      "name": "ROLLSROYCE v5 Key + Lishi Profiles",
+      "manufacturer": "rollsroyce",
+      "version": "2026.07.04-multipack-luxury-1",
+      "file": "manufacturers/rollsroyce.json",
+      "records": 1,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/rollsroyce.json"
+    },
+    {
+      "id": "rover_key_lishi_profiles",
+      "name": "ROVER v5 Key + Lishi Profiles",
+      "manufacturer": "rover",
+      "version": "2026.07.04-multipack-legacy-rare-1",
+      "file": "manufacturers/rover.json",
+      "records": 2,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/rover.json"
+    },
+    {
+      "id": "saab_key_lishi_profiles",
+      "name": "SAAB v5 Key + Lishi Profiles",
+      "manufacturer": "saab",
+      "version": "2026.07.04-multipack-legacy-rare-1",
+      "file": "manufacturers/saab.json",
+      "records": 2,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/saab.json"
     },
     {
       "id": "seat_key_lishi_profiles",
@@ -280,7 +370,7 @@
       "manufacturer": "seat",
       "version": "2026.07.04-vag-lishi-1",
       "file": "manufacturers/seat.json",
-      "records": 22,
+      "records": 9,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/seat.json"
     },
     {
@@ -289,7 +379,7 @@
       "manufacturer": "skoda",
       "version": "2026.07.04-vag-lishi-1",
       "file": "manufacturers/skoda.json",
-      "records": 21,
+      "records": 10,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/skoda.json"
     },
     {
@@ -302,10 +392,19 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/smart.json"
     },
     {
+      "id": "subaru_key_lishi_profiles",
+      "name": "SUBARU v5 Key + Lishi Profiles",
+      "manufacturer": "subaru",
+      "version": "2026.07.04-multipack-asian-2",
+      "file": "manufacturers/subaru.json",
+      "records": 3,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/subaru.json"
+    },
+    {
       "id": "suzuki_key_lishi_profiles",
-      "name": "SUZUKI Vehicle Key-System Records",
+      "name": "SUZUKI v5 Key + Lishi Profiles",
       "manufacturer": "suzuki",
-      "version": "2026.07.04-big-japan-korea-individual-1",
+      "version": "2026.07.04-bulk-v5-coverage-1",
       "file": "manufacturers/suzuki.json",
       "records": 6,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/suzuki.json"
@@ -321,20 +420,20 @@
     },
     {
       "id": "toyota_key_lishi_profiles",
-      "name": "TOYOTA Vehicle Key-System Records",
+      "name": "TOYOTA v5 Key + Lishi Profiles",
       "manufacturer": "toyota",
-      "version": "2026.07.04-big-japan-korea-individual-1",
+      "version": "2026.07.04-bulk-v5-coverage-1",
       "file": "manufacturers/toyota.json",
-      "records": 14,
+      "records": 5,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/toyota.json"
     },
     {
       "id": "vauxhall_key_lishi_profiles",
-      "name": "VAUXHALL Verified Key + Lishi Profiles",
+      "name": "VAUXHALL v5 Key + Lishi Profiles",
       "manufacturer": "vauxhall",
-      "version": "2026.07.04-vauxhall-v1.0",
+      "version": "2026.07.04-multipack-psa-stellantis-exp-1",
       "file": "manufacturers/vauxhall.json",
-      "records": 36,
+      "records": 3,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/vauxhall.json"
     },
     {
@@ -352,12 +451,86 @@
       "manufacturer": "vw",
       "version": "2026.07.04-vag-lishi-1",
       "file": "manufacturers/vw.json",
-      "records": 42,
+      "records": 15,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/vw.json"
     }
   ],
   "notes": [
+    "Merged all available database_pack*.zip files into one single upload pack.",
+    "This fixes the manifest overwrite problem from uploading many separate packs.",
+    "Final manifest is rebuilt from the final manufacturer JSON files so the app can detect all brands.",
+    "Later packs overwrite earlier manufacturer files where the same manufacturer was updated.",
+    "VAG v5 coverage refresh.",
+    "Updates VW, Audi, Skoda and SEAT/Cupra.",
+    "Uncertain MQB/MQB Evo variants marked high_confidence or needs_review.",
+    "BMW, MINI and Mercedes v5 coverage refresh.",
+    "Groups by CAS/FEM/BDC and FBS families.",
+    "Exact newer smart key systems marked high_confidence/needs_review.",
+    "Legacy/rare UK vehicle coverage pack.",
+    "Adds Chevrolet, Chrysler, Dodge, Saab, Rover and legacy MG family records.",
+    "Most legacy/rare records are needs_review until stronger confirmation.",
+    "Luxury/supercar coverage pack.",
+    "Adds Rolls-Royce, Aston Martin, Ferrari, Maserati and Lamborghini family records.",
+    "All records kept needs_review until exact key systems are confirmed.",
+    "Reference index pack.",
+    "Adds searchable blade and transponder reference records.",
+    "Useful for searching HU101, HU66, HU83, VA2, SIP22, ID46, ID48, ID4A and ID49.",
+    "Ford individual generation/key-system expansion: 47 records.",
+    "Replaces broad Ford family entries with more granular vehicle records.",
+    "PSA/Opel individual expansion: 60 records.",
+    "Adds Peugeot, Citroen, DS and Vauxhall generation-level records.",
+    "VAG individual expansion: 44 records.",
+    "Adds generation-level VW, Audi, Skoda and SEAT/Cupra records.",
+    "Japan/Korea individual expansion: 68 records.",
+    "Adds generation-level Toyota/Lexus/Honda/Mazda/Hyundai/Kia/Suzuki records.",
+    "BMW generation/key-system expansion: 66 records.",
+    "Splits BMW by E/F/G chassis and EWS/CAS/CAS4/FEM/BDC family.",
     "MINI generation/key-system expansion: 18 records.",
-    "Splits MINI by R/F/U chassis and EWS/CAS/FEM/BDC family."
+    "Splits MINI by R/F/U chassis and EWS/CAS/FEM/BDC family.",
+    "Fiat, Alfa, MG and Iveco v5 coverage refresh.",
+    "Uses SIP22/FCA families where high confidence.",
+    "MG EV/newer smart key records marked needs_review."
+  ],
+  "merged_from": [
+    "database_pack.zip",
+    "database_pack_1.zip",
+    "database_pack_10.zip",
+    "database_pack_11.zip",
+    "database_pack_12.zip",
+    "database_pack_13.zip",
+    "database_pack_14.zip",
+    "database_pack_15.zip",
+    "database_pack_16.zip",
+    "database_pack_17.zip",
+    "database_pack_18.zip",
+    "database_pack_2.zip",
+    "database_pack_3.zip",
+    "database_pack_4.zip",
+    "database_pack_5.zip",
+    "database_pack_6.zip",
+    "database_pack_7.zip",
+    "database_pack_8.zip",
+    "database_pack_9.zip"
+  ],
+  "source_versions_seen": [
+    "2026.07.04-multipack-vag-1",
+    "2026.07.04-multipack-bmw-mini-mercedes-1",
+    "2026.07.04-multipack-legacy-rare-1",
+    "2026.07.04-multipack-luxury-1",
+    "2026.07.04-multipack-reference-index-1",
+    "2026.07.04-big-ford-individual-1",
+    "2026.07.04-big-psa-opel-individual-1",
+    "2026.07.04-big-vag-individual-1",
+    "2026.07.04-big-japan-korea-individual-1",
+    "2026.07.04-big-bmw-individual-1",
+    "2026.07.04-big-mini-individual-1",
+    "2026.07.04-multipack-fca-commercial-1",
+    "2026.07.04-multipack-premium-1",
+    "2026.07.04-multipack-alliance-2",
+    "2026.07.04-multipack-asian-2",
+    "2026.07.04-multipack-korean-utility-1",
+    "2026.07.04-multipack-misc-ev-1",
+    "2026.07.04-multipack-ford-mazda-exp-1",
+    "2026.07.04-multipack-psa-stellantis-exp-1"
   ]
 }

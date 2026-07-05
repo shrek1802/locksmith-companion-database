@@ -1,3 +1,7 @@
-# 2026.07.04-big-mini-individual-1
+# Merged Database Pack
 
-BMW/MINI vehicle generation key-system pack.
+Upload this single file as `database_pack.zip`.
+
+It contains all available multi-pack manufacturer JSON files merged into one pack with one final manifest.json.
+
+Use this instead of uploading database_pack_1.zip, database_pack_2.zip, etc.

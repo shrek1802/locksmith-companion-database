@@ -1,20 +1,144 @@
 [
   {
-    "record_id": "TOYOTA-YARIS-XP90-2005-2011-REMOTE-SMART-KEY",
+    "record_id": "TOYOTA-YARIS-RANGE",
     "make": "Toyota",
     "model": "Yaris",
-    "variant": "XP90",
-    "generation": "XP90",
-    "years": "2005-2011",
+    "variant": "XP90/XP130/XP210",
+    "generation": "XP90/XP130/XP210",
+    "years": "2005-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "TOY48 / emergency blade by generation - verify",
+      "lishi_tool": "TOY48 Toyota tool family",
+      "transponder": "4D/G/DST-AES by generation",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Toyota immobiliser / smart key",
+      "oem_key": "Toyota OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "TOY48 / emergency blade by generation - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Asian catalogues",
+          "Supplier catalogues",
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
+        ]
+      },
+      "lishi_tool": {
+        "value": "TOY48 Toyota tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Asian catalogues",
+          "Supplier catalogues",
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
+        ]
+      },
+      "transponder": {
+        "value": "4D/G/DST-AES by generation",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Asian catalogues",
+          "Supplier catalogues",
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Asian catalogues",
+          "Supplier catalogues",
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Asian catalogues",
+          "Supplier catalogues",
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use TOY48 Toyota tool family where fitted",
+      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade by generation - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Asian catalogues",
+        "Supplier catalogues",
+        "Original Lishi application lists",
+        "Workshop confirmation needed on newer smart systems"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Transpondery Asian catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi application lists",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "TOYOTA-AURIS-COROLLA-RANGE",
+    "make": "Toyota",
+    "model": "Auris / Corolla",
+    "variant": "E150/E180/E210",
+    "generation": "E150/E180/E210",
+    "years": "2006-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
     "platform": "Toyota immobiliser / smart key",
     "key_profile": {
       "blade_profile": "TOY48 / emergency blade - verify",
       "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
+      "transponder": "G chip / DST-AES smart family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "Toyota immobiliser / smart key",
@@ -29,799 +153,119 @@
         "value": "TOY48 / emergency blade - verify",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "lishi_tool": {
         "value": "TOY48 Toyota tool family",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
+        "value": "G chip / DST-AES smart family",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "key_type": {
         "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use TOY48 Toyota tool family where fitted",
       "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
+        "Transpondery Asian catalogues",
         "Supplier catalogues",
-        "Workshop confirmation where needed"
+        "Original Lishi application lists",
+        "Workshop confirmation needed on newer smart systems"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
+        "name": "Transpondery Asian catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
+        "name": "Original Lishi application lists",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "TOYOTA-YARIS-XP130-2011-2020-REMOTE-SMART-KEY",
-    "make": "Toyota",
-    "model": "Yaris",
-    "variant": "XP130",
-    "generation": "XP130",
-    "years": "2011-2020",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "Toyota OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "TOYOTA-YARIS-XP210-2020-PRESENT-REMOTE-SMART-KEY",
-    "make": "Toyota",
-    "model": "Yaris",
-    "variant": "XP210",
-    "generation": "XP210",
-    "years": "2020-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "Toyota OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "TOYOTA-AURIS-MK1-2006-2012-REMOTE-SMART-KEY",
-    "make": "Toyota",
-    "model": "Auris",
-    "variant": "Mk1",
-    "generation": "Mk1",
-    "years": "2006-2012",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "Toyota OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "TOYOTA-AURIS-MK2-2012-2018-REMOTE-SMART-KEY",
-    "make": "Toyota",
-    "model": "Auris",
-    "variant": "Mk2",
-    "generation": "Mk2",
-    "years": "2012-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "Toyota OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "TOYOTA-COROLLA-E210-2019-PRESENT-REMOTE-SMART-KEY",
-    "make": "Toyota",
-    "model": "Corolla",
-    "variant": "E210",
-    "generation": "E210",
-    "years": "2019-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "Toyota OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "TOYOTA-RAV4-XA30-2005-2012-REMOTE-SMART-KEY",
+    "record_id": "TOYOTA-RAV4-RANGE",
     "make": "Toyota",
     "model": "RAV4",
-    "variant": "XA30",
-    "generation": "XA30",
-    "years": "2005-2012",
+    "variant": "XA30/XA40/XA50",
+    "generation": "XA30/XA40/XA50",
+    "years": "2005-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota smart key",
     "key_profile": {
       "blade_profile": "TOY48 / emergency blade - verify",
       "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
+      "transponder": "G chip / DST-AES smart family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Toyota smart key",
       "oem_key": "Toyota OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
@@ -833,397 +277,119 @@
         "value": "TOY48 / emergency blade - verify",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "lishi_tool": {
         "value": "TOY48 Toyota tool family",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
+        "value": "G chip / DST-AES smart family",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "key_type": {
-        "value": "Remote / smart key",
+        "value": "Smart key",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use TOY48 Toyota tool family where fitted",
       "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
+        "Transpondery Asian catalogues",
         "Supplier catalogues",
-        "Workshop confirmation where needed"
+        "Original Lishi application lists",
+        "Workshop confirmation needed on newer smart systems"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
+        "name": "Transpondery Asian catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
+        "name": "Original Lishi application lists",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "TOYOTA-RAV4-XA40-2012-2018-REMOTE-SMART-KEY",
-    "make": "Toyota",
-    "model": "RAV4",
-    "variant": "XA40",
-    "generation": "XA40",
-    "years": "2012-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "Toyota OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "TOYOTA-RAV4-XA50-2018-PRESENT-REMOTE-SMART-KEY",
-    "make": "Toyota",
-    "model": "RAV4",
-    "variant": "XA50",
-    "generation": "XA50",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "Toyota OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "TOYOTA-HILUX-MK7-2004-2015-REMOTE-SMART-KEY",
+    "record_id": "TOYOTA-HILUX-RANGE",
     "make": "Toyota",
     "model": "Hilux",
-    "variant": "Mk7",
-    "generation": "Mk7",
-    "years": "2004-2015",
+    "variant": "Mk7/Mk8",
+    "generation": "Mk7/Mk8",
+    "years": "2004-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota immobiliser",
     "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
+      "blade_profile": "TOY48",
+      "lishi_tool": "TOY48 2-in-1 Pick & Decoder",
+      "transponder": "G chip / smart family by spec",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
+      "immobiliser_family": "Toyota immobiliser",
       "oem_key": "Toyota OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
@@ -1232,646 +398,224 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
+        "value": "TOY48",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
+        "value": "TOY48 2-in-1 Pick & Decoder",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
+        "value": "G chip / smart family by spec",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "key_type": {
         "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+      "lockout": "Use TOY48 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by TOY48",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
+        "Transpondery Asian catalogues",
         "Supplier catalogues",
-        "Workshop confirmation where needed"
+        "Original Lishi application lists",
+        "Workshop confirmation needed on newer smart systems"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
+        "name": "Transpondery Asian catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
+        "name": "Original Lishi application lists",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "TOYOTA-HILUX-MK8-2015-PRESENT-REMOTE-SMART-KEY",
-    "make": "Toyota",
-    "model": "Hilux",
-    "variant": "Mk8",
-    "generation": "Mk8",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "Toyota OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "TOYOTA-AYGO-MK1-2005-2014-REMOTE-SMART-KEY",
-    "make": "Toyota",
-    "model": "Aygo",
-    "variant": "Mk1",
-    "generation": "Mk1",
-    "years": "2005-2014",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "Toyota OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "TOYOTA-AYGO-MK2-2014-2021-REMOTE-SMART-KEY",
-    "make": "Toyota",
-    "model": "Aygo",
-    "variant": "Mk2",
-    "generation": "Mk2",
-    "years": "2014-2021",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "Toyota OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "TOYOTA-PROACE-PROACE-2013-PRESENT-REMOTE-SMART-KEY",
+    "record_id": "TOYOTA-PROACE-RANGE",
     "make": "Toyota",
     "model": "Proace",
-    "variant": "Proace",
-    "generation": "Proace",
+    "variant": "Proace/Proace City",
+    "generation": "Proace/Proace City",
     "years": "2013-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Toyota immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "PSA/Toyota shared",
     "key_profile": {
-      "blade_profile": "TOY48 / emergency blade - verify",
-      "lishi_tool": "TOY48 Toyota tool family",
-      "transponder": "Toyota G / DST-AES by generation - verify",
+      "blade_profile": "HU83 / VA2 PSA shared - verify",
+      "lishi_tool": "HU83 / VA2 PSA tool family",
+      "transponder": "ID46 / AES PSA family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Toyota immobiliser / smart key",
+      "immobiliser_family": "PSA/Toyota shared",
       "oem_key": "Toyota OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+      "verification_status": "high_confidence",
+      "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "TOY48 / emergency blade - verify",
-        "status": "needs_review",
+        "value": "HU83 / VA2 PSA shared - verify",
+        "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "lishi_tool": {
-        "value": "TOY48 Toyota tool family",
-        "status": "needs_review",
+        "value": "HU83 / VA2 PSA tool family",
+        "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "transponder": {
-        "value": "Toyota G / DST-AES by generation - verify",
-        "status": "needs_review",
+        "value": "ID46 / AES PSA family",
+        "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
-        "status": "needs_review",
+        "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "key_type": {
         "value": "Remote / smart key",
-        "status": "needs_review",
+        "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use TOY48 Toyota tool family where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+      "lockout": "Use HU83 / VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU83 / VA2 PSA shared - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
-      "overall_status": "needs_review",
+      "overall_status": "high_confidence",
       "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
+        "Transpondery Asian catalogues",
         "Supplier catalogues",
-        "Workshop confirmation where needed"
+        "Original Lishi application lists",
+        "Workshop confirmation needed on newer smart systems"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
+        "name": "Transpondery Asian catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
+        "name": "Original Lishi application lists",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
-      "key_profile": 55,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
     "last_updated": "2026-07-05"
   }

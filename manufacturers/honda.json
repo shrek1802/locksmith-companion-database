@@ -1,23 +1,23 @@
 [
   {
-    "record_id": "HONDA-JAZZ-GE-2008-2015-REMOTE-SMART-KEY",
+    "record_id": "HONDA-JAZZ-RANGE",
     "make": "Honda",
     "model": "Jazz",
-    "variant": "GE",
-    "generation": "GE",
-    "years": "2008-2015",
+    "variant": "GD/GE/GK/GR",
+    "generation": "GD/GE/GK/GR",
+    "years": "2001-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Honda immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Honda immobiliser",
     "key_profile": {
       "blade_profile": "HON66 / HON58R by generation - verify",
       "lishi_tool": "HON66 / HON58R Honda tool family",
-      "transponder": "Honda ID46 / smart key family - verify",
+      "transponder": "ID46 / Honda smart family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Honda immobiliser / smart key",
+      "immobiliser_family": "Honda immobiliser",
       "oem_key": "Honda OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
@@ -29,397 +29,119 @@
         "value": "HON66 / HON58R by generation - verify",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "lishi_tool": {
         "value": "HON66 / HON58R Honda tool family",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "transponder": {
-        "value": "Honda ID46 / smart key family - verify",
+        "value": "ID46 / Honda smart family",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "key_type": {
         "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use HON66 / HON58R Honda tool family where fitted",
       "akl_blade_decode": "Decode/cut by HON66 / HON58R by generation - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
+        "Transpondery Asian catalogues",
         "Supplier catalogues",
-        "Workshop confirmation where needed"
+        "Original Lishi application lists",
+        "Workshop confirmation needed on newer smart systems"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
+        "name": "Transpondery Asian catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
+        "name": "Original Lishi application lists",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "HONDA-JAZZ-GK-2015-2020-REMOTE-SMART-KEY",
-    "make": "Honda",
-    "model": "Jazz",
-    "variant": "GK",
-    "generation": "GK",
-    "years": "2015-2020",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R by generation - verify",
-      "lishi_tool": "HON66 / HON58R Honda tool family",
-      "transponder": "Honda ID46 / smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "Honda OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HON66 / HON58R by generation - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HON66 / HON58R Honda tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Honda ID46 / smart key family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R Honda tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R by generation - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "HONDA-JAZZ-GR-2020-PRESENT-REMOTE-SMART-KEY",
-    "make": "Honda",
-    "model": "Jazz",
-    "variant": "GR",
-    "generation": "GR",
-    "years": "2020-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R by generation - verify",
-      "lishi_tool": "HON66 / HON58R Honda tool family",
-      "transponder": "Honda ID46 / smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "Honda OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HON66 / HON58R by generation - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HON66 / HON58R Honda tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Honda ID46 / smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R Honda tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R by generation - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "HONDA-CIVIC-FN-FK-2006-2017-REMOTE-SMART-KEY",
+    "record_id": "HONDA-CIVIC-RANGE",
     "make": "Honda",
     "model": "Civic",
-    "variant": "FN/FK",
-    "generation": "FN/FK",
-    "years": "2006-2017",
+    "variant": "EP/FN/FK/FL",
+    "generation": "EP/FN/FK/FL",
+    "years": "2001-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Honda immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Honda immobiliser",
     "key_profile": {
       "blade_profile": "HON66 / HON58R by generation - verify",
       "lishi_tool": "HON66 / HON58R Honda tool family",
-      "transponder": "Honda ID46 / smart key family - verify",
+      "transponder": "ID46 / Honda smart family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Honda immobiliser / smart key",
+      "immobiliser_family": "Honda immobiliser",
       "oem_key": "Honda OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
@@ -431,263 +153,119 @@
         "value": "HON66 / HON58R by generation - verify",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "lishi_tool": {
         "value": "HON66 / HON58R Honda tool family",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "transponder": {
-        "value": "Honda ID46 / smart key family - verify",
+        "value": "ID46 / Honda smart family",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "key_type": {
         "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use HON66 / HON58R Honda tool family where fitted",
       "akl_blade_decode": "Decode/cut by HON66 / HON58R by generation - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
+        "Transpondery Asian catalogues",
         "Supplier catalogues",
-        "Workshop confirmation where needed"
+        "Original Lishi application lists",
+        "Workshop confirmation needed on newer smart systems"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
+        "name": "Transpondery Asian catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
+        "name": "Original Lishi application lists",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "HONDA-CIVIC-FK-FL-2017-PRESENT-REMOTE-SMART-KEY",
-    "make": "Honda",
-    "model": "Civic",
-    "variant": "FK/FL",
-    "generation": "FK/FL",
-    "years": "2017-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R by generation - verify",
-      "lishi_tool": "HON66 / HON58R Honda tool family",
-      "transponder": "Honda ID46 / smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "Honda OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HON66 / HON58R by generation - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HON66 / HON58R Honda tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Honda ID46 / smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R Honda tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R by generation - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "HONDA-CR-V-MK3-MK4-2006-2018-REMOTE-SMART-KEY",
+    "record_id": "HONDA-CRV-RANGE",
     "make": "Honda",
     "model": "CR-V",
-    "variant": "Mk3/Mk4",
-    "generation": "Mk3/Mk4",
-    "years": "2006-2018",
+    "variant": "Mk2/Mk3/Mk4/Mk5/Mk6",
+    "generation": "Mk2/Mk3/Mk4/Mk5/Mk6",
+    "years": "2001-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Honda immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Honda smart key",
     "key_profile": {
-      "blade_profile": "HON66 / HON58R by generation - verify",
-      "lishi_tool": "HON66 / HON58R Honda tool family",
-      "transponder": "Honda ID46 / smart key family - verify",
+      "blade_profile": "HON66 / emergency blade - verify",
+      "lishi_tool": "HON66 Honda tool family",
+      "transponder": "Honda smart key family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Honda immobiliser / smart key",
+      "immobiliser_family": "Honda smart key",
       "oem_key": "Honda OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
@@ -696,266 +274,122 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HON66 / HON58R by generation - verify",
+        "value": "HON66 / emergency blade - verify",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "lishi_tool": {
-        "value": "HON66 / HON58R Honda tool family",
+        "value": "HON66 Honda tool family",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "transponder": {
-        "value": "Honda ID46 / smart key family - verify",
+        "value": "Honda smart key family",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "key_type": {
         "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HON66 / HON58R Honda tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R by generation - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+      "lockout": "Use HON66 Honda tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HON66 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
+        "Transpondery Asian catalogues",
         "Supplier catalogues",
-        "Workshop confirmation where needed"
+        "Original Lishi application lists",
+        "Workshop confirmation needed on newer smart systems"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
+        "name": "Transpondery Asian catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
+        "name": "Original Lishi application lists",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "HONDA-CR-V-MK5-MK6-2018-PRESENT-REMOTE-SMART-KEY",
-    "make": "Honda",
-    "model": "CR-V",
-    "variant": "Mk5/Mk6",
-    "generation": "Mk5/Mk6",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R by generation - verify",
-      "lishi_tool": "HON66 / HON58R Honda tool family",
-      "transponder": "Honda ID46 / smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "Honda OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HON66 / HON58R by generation - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HON66 / HON58R Honda tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Honda ID46 / smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R Honda tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R by generation - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "HONDA-HR-V-HR-V-2015-PRESENT-REMOTE-SMART-KEY",
+    "record_id": "HONDA-HRV-RANGE",
     "make": "Honda",
     "model": "HR-V",
     "variant": "HR-V",
     "generation": "HR-V",
     "years": "2015-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Honda immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Honda smart key",
     "key_profile": {
-      "blade_profile": "HON66 / HON58R by generation - verify",
-      "lishi_tool": "HON66 / HON58R Honda tool family",
-      "transponder": "Honda ID46 / smart key family - verify",
+      "blade_profile": "HON66 / emergency blade - verify",
+      "lishi_tool": "HON66 Honda tool family",
+      "transponder": "Honda smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Honda immobiliser / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Honda smart key",
       "oem_key": "Honda OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
@@ -964,110 +398,100 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HON66 / HON58R by generation - verify",
+        "value": "HON66 / emergency blade - verify",
         "status": "needs_review",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "lishi_tool": {
-        "value": "HON66 / HON58R Honda tool family",
+        "value": "HON66 Honda tool family",
         "status": "needs_review",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "transponder": {
-        "value": "Honda ID46 / smart key family - verify",
+        "value": "Honda smart key family - verify",
         "status": "needs_review",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "needs_review",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       },
       "key_type": {
-        "value": "Remote / smart key",
+        "value": "Smart key",
         "status": "needs_review",
         "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
+          "Transpondery Asian catalogues",
           "Supplier catalogues",
-          "Workshop confirmation where needed"
+          "Original Lishi application lists",
+          "Workshop confirmation needed on newer smart systems"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HON66 / HON58R Honda tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R by generation - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+      "lockout": "Use HON66 Honda tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HON66 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
     },
     "verification": {
       "overall_status": "needs_review",
       "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
+        "Transpondery Asian catalogues",
         "Supplier catalogues",
-        "Workshop confirmation where needed"
+        "Original Lishi application lists",
+        "Workshop confirmation needed on newer smart systems"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
+        "name": "Transpondery Asian catalogues",
+        "url": "source://bulk-v5-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
+        "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
+        "name": "Original Lishi application lists",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed on newer smart systems",
+        "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
       "key_profile": 55,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 0
+      "workshop_notes": 10
     },
     "last_updated": "2026-07-05"
   }
