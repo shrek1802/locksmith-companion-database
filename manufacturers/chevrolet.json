@@ -1,59 +1,56 @@
 [
   {
-    "record_id": "FIAT-SMALL-COMMERCIAL-RANGE",
-    "make": "Fiat",
-    "model": "Doblo / Fiorino",
-    "variant": "small commercial",
-    "generation": "small commercial",
-    "years": "2007-present",
+    "record_id": "CHEVROLET-SMALL-UK-RANGE",
+    "make": "Chevrolet",
+    "model": "Spark / Aveo",
+    "variant": "UK small range",
+    "generation": "UK small range",
+    "years": "2005-2015",
     "market": "UK/EU",
     "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Fiat/Stellantis commercial",
+    "platform": "GM/Daewoo",
     "key_profile": {
-      "blade_profile": "SIP22 / HU83 by platform",
-      "lishi_tool": "SIP22 / HU83 tool family",
-      "transponder": "ID46 / AES commercial family",
+      "blade_profile": "HU100 / GM blade family - verify",
+      "lishi_tool": "HU100 / GM tool family",
+      "transponder": "ID46 / GM family - verify",
       "remote_frequency_uk": "433 MHz",
       "buttons": "2/3/4 button depending spec",
       "key_type": "Remote key",
       "smart_keyless": "No / optional",
-      "immobiliser_family": "Fiat/Stellantis commercial",
-      "oem_key": "Fiat OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Fiat remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Fiat remote/prox profile - verify exact board/prox type",
+      "immobiliser_family": "GM/Daewoo",
+      "oem_key": "Chevrolet OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Chevrolet remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Chevrolet remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "SIP22 / HU83 by platform",
+        "value": "HU100 / GM blade family - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery legacy catalogues",
           "Supplier catalogues",
           "Workshop confirmation needed"
         ]
       },
       "lishi_tool": {
-        "value": "SIP22 / HU83 tool family",
+        "value": "HU100 / GM tool family",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery legacy catalogues",
           "Supplier catalogues",
           "Workshop confirmation needed"
         ]
       },
       "transponder": {
-        "value": "ID46 / AES commercial family",
+        "value": "ID46 / GM family - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery legacy catalogues",
           "Supplier catalogues",
           "Workshop confirmation needed"
         ]
@@ -63,8 +60,7 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery legacy catalogues",
           "Supplier catalogues",
           "Workshop confirmation needed"
         ]
@@ -74,16 +70,15 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery legacy catalogues",
           "Supplier catalogues",
           "Workshop confirmation needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use SIP22 / HU83 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by SIP22 / HU83 by platform",
+      "lockout": "Use HU100 / GM tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU100 / GM blade family - verify",
       "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
       "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
     },
@@ -96,8 +91,7 @@
       "overall_status": "high_confidence",
       "verified_by": [
         "Auto Key Tool Pro",
-        "Transpondery PSA/Stellantis",
-        "Original Lishi HU83/VA2/SIP22",
+        "Transpondery legacy catalogues",
         "Supplier catalogues",
         "Workshop confirmation needed"
       ],
@@ -109,11 +103,7 @@
         "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Transpondery PSA/Stellantis",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi HU83/VA2/SIP22",
+        "name": "Transpondery legacy catalogues",
         "url": "source://bulk-v5-reference"
       },
       {
@@ -134,60 +124,57 @@
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "FIAT-DUCATO-COMMERCIAL-EXP",
-    "make": "Fiat",
-    "model": "Ducato",
-    "variant": "Ducato",
-    "generation": "Ducato",
-    "years": "2006-present",
+    "record_id": "CHEVROLET-CRUZE-CAPTIVA",
+    "make": "Chevrolet",
+    "model": "Cruze / Captiva",
+    "variant": "UK range",
+    "generation": "UK range",
+    "years": "2006-2015",
     "market": "UK/EU",
     "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Fiat/PSA commercial",
+    "platform": "GM/Daewoo",
     "key_profile": {
-      "blade_profile": "SIP22",
-      "lishi_tool": "SIP22 2-in-1 Pick & Decoder",
-      "transponder": "ID46 / AES commercial family",
+      "blade_profile": "HU100 / GM blade family - verify",
+      "lishi_tool": "HU100 / GM tool family",
+      "transponder": "ID46 / GM family - verify",
       "remote_frequency_uk": "433 MHz",
       "buttons": "2/3/4 button depending spec",
       "key_type": "Remote key",
       "smart_keyless": "No / optional",
-      "immobiliser_family": "Fiat/PSA commercial",
-      "oem_key": "Fiat OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Fiat remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Fiat remote/prox profile - verify exact board/prox type",
+      "immobiliser_family": "GM/Daewoo",
+      "oem_key": "Chevrolet OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Chevrolet remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Chevrolet remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "SIP22",
+        "value": "HU100 / GM blade family - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery legacy catalogues",
           "Supplier catalogues",
           "Workshop confirmation needed"
         ]
       },
       "lishi_tool": {
-        "value": "SIP22 2-in-1 Pick & Decoder",
+        "value": "HU100 / GM tool family",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery legacy catalogues",
           "Supplier catalogues",
           "Workshop confirmation needed"
         ]
       },
       "transponder": {
-        "value": "ID46 / AES commercial family",
+        "value": "ID46 / GM family - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery legacy catalogues",
           "Supplier catalogues",
           "Workshop confirmation needed"
         ]
@@ -197,8 +184,7 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery legacy catalogues",
           "Supplier catalogues",
           "Workshop confirmation needed"
         ]
@@ -208,16 +194,15 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery legacy catalogues",
           "Supplier catalogues",
           "Workshop confirmation needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use SIP22 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by SIP22",
+      "lockout": "Use HU100 / GM tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU100 / GM blade family - verify",
       "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
       "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
     },
@@ -230,8 +215,7 @@
       "overall_status": "high_confidence",
       "verified_by": [
         "Auto Key Tool Pro",
-        "Transpondery PSA/Stellantis",
-        "Original Lishi HU83/VA2/SIP22",
+        "Transpondery legacy catalogues",
         "Supplier catalogues",
         "Workshop confirmation needed"
       ],
@@ -243,11 +227,7 @@
         "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Transpondery PSA/Stellantis",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi HU83/VA2/SIP22",
+        "name": "Transpondery legacy catalogues",
         "url": "source://bulk-v5-reference"
       },
       {

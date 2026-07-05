@@ -1,6 +1,6 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-multipack-misc-ev-1",
+  "database_version": "2026.07.04-multipack-reference-index-1",
   "created": "2026-07-05",
   "pack_type": "multi_pack_bulk_v5_coverage",
   "packs": [
@@ -239,6 +239,24 @@
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/porsche.json"
     },
     {
+      "id": "reference_blades_key_lishi_profiles",
+      "name": "REFERENCE_BLADES v5 Key + Lishi Profiles",
+      "manufacturer": "reference_blades",
+      "version": "2026.07.04-multipack-reference-index-1",
+      "file": "manufacturers/reference_blades.json",
+      "records": 5,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/reference_blades.json"
+    },
+    {
+      "id": "reference_chips_key_lishi_profiles",
+      "name": "REFERENCE_CHIPS v5 Key + Lishi Profiles",
+      "manufacturer": "reference_chips",
+      "version": "2026.07.04-multipack-reference-index-1",
+      "file": "manufacturers/reference_chips.json",
+      "records": 4,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/reference_chips.json"
+    },
+    {
       "id": "renault_key_lishi_profiles",
       "name": "RENAULT Verified Key + Lishi Profiles",
       "manufacturer": "renault",
@@ -330,8 +348,8 @@
     }
   ],
   "notes": [
-    "Miscellaneous and EV coverage expansion.",
-    "Adds Jeep, Smart, Tesla, Maxus and BYD model-family records.",
-    "EV and newer smart systems are marked needs_review."
+    "Reference index pack.",
+    "Adds searchable blade and transponder reference records.",
+    "Useful for searching HU101, HU66, HU83, VA2, SIP22, ID46, ID48, ID4A and ID49."
   ]
 }

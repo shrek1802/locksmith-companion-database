@@ -1,32 +1,32 @@
 [
   {
-    "record_id": "MASERATI-MODERN-RANGE",
-    "make": "Maserati",
-    "model": "Ghibli / Quattroporte / Levante",
+    "record_id": "ROLLS-ROYCE-MODERN-RANGE",
+    "make": "Rolls-Royce",
+    "model": "Phantom / Ghost / Wraith / Dawn / Cullinan",
     "variant": "modern range",
     "generation": "modern range",
-    "years": "2013-present",
+    "years": "2003-present",
     "market": "UK/EU",
     "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Maserati/FCA",
+    "platform": "BMW/Rolls-Royce",
     "key_profile": {
-      "blade_profile": "SIP22 / emergency blade - verify",
-      "lishi_tool": "SIP22 tool family",
-      "transponder": "Maserati smart key family - verify",
+      "blade_profile": "BMW/RR emergency blade - verify",
+      "lishi_tool": "BMW/RR tool family - verify",
+      "transponder": "BMW/RR smart key family - verify",
       "remote_frequency_uk": "433 MHz",
       "buttons": "2/3/4 button depending spec",
       "key_type": "Smart key",
       "smart_keyless": "Yes",
-      "immobiliser_family": "Maserati/FCA",
-      "oem_key": "Maserati OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Maserati remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Maserati remote/prox profile - verify exact board/prox type",
+      "immobiliser_family": "BMW/Rolls-Royce",
+      "oem_key": "Rolls-Royce OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Rolls-Royce remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Rolls-Royce remote/prox profile - verify exact board/prox type",
       "verification_status": "needs_review",
       "confidence": "review"
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "SIP22 / emergency blade - verify",
+        "value": "BMW/RR emergency blade - verify",
         "status": "needs_review",
         "sources": [
           "Supplier catalogues",
@@ -35,7 +35,7 @@
         ]
       },
       "lishi_tool": {
-        "value": "SIP22 tool family",
+        "value": "BMW/RR tool family - verify",
         "status": "needs_review",
         "sources": [
           "Supplier catalogues",
@@ -44,7 +44,7 @@
         ]
       },
       "transponder": {
-        "value": "Maserati smart key family - verify",
+        "value": "BMW/RR smart key family - verify",
         "status": "needs_review",
         "sources": [
           "Supplier catalogues",
@@ -72,8 +72,8 @@
       }
     },
     "locksmith_use": {
-      "lockout": "Use SIP22 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by SIP22 / emergency blade - verify",
+      "lockout": "Use BMW/RR tool family - verify where fitted",
+      "akl_blade_decode": "Decode/cut by BMW/RR emergency blade - verify",
       "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
       "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
     },
