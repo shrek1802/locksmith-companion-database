@@ -1,17 +1,47 @@
 {
-  "title": "Locksmith Companion Database",
-  "database_version": "2026.07.05-build-002", 
-  "last_updated": "2026-07-05T14:30:00Z",
+  "database_version": "2026.07.05-batch-002",
+  "last_updated": "2026-07-05T16:30:00Z",
   "pack_type": "multi_manufacturer",
   "manufacturers": [
+    {
+      "id": "alfa_romeo_key_lishi_profiles",
+      "manufacturer": "alfa_romeo",
+      "version": "2026.07.05-alfa-002",
+      "file": "manufacturers/alfa_romeo.json",
+      "records": 5,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/alfa_romeo.json"
+    },
     {
       "id": "aston_key_lishi_profiles",
       "manufacturer": "aston",
       "version": "2026.07.05-aston-002",
       "file": "manufacturers/aston.json", 
       "records": 4,
-      "sha256": "a1b2c3d4",
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/aston.json"
+    },
+    {
+      "id": "audi_key_lishi_profiles",
+      "manufacturer": "audi",
+      "version": "2026.07.05-audi-002",
+      "file": "manufacturers/audi.json",
+      "records": 6,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/audi.json"
+    },
+    {
+      "id": "bentley_key_lishi_profiles", 
+      "manufacturer": "bentley",
+      "version": "2026.07.05-bentley-002",
+      "file": "manufacturers/bentley.json",
+      "records": 3,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/bentley.json"
+    },
+    {
+      "id": "byd_key_lishi_profiles",
+      "manufacturer": "byd",
+      "version": "2026.07.05-byd-002", 
+      "file": "manufacturers/byd.json",
+      "records": 3,
+      "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/byd.json"
     }
   ]
 }
