@@ -1,116 +1,27 @@
-[
-  {
-    "record_id": "BYD-EV-RANGE",
-    "make": "BYD",
-    "model": "Atto 3 / Dolphin / Seal",
-    "variant": "EV range",
-    "generation": "EV range",
-    "years": "2022-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "BYD EV smart key",
-    "key_profile": {
-      "blade_profile": "BYD emergency blade - verify",
-      "lishi_tool": "BYD tool family - verify",
-      "transponder": "BYD NFC/smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Smart key / NFC card",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "BYD EV smart key",
-      "oem_key": "BYD OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "BYD remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "BYD remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+{
+  "manufacturer": "byd",
+  "records": 3,
+  "models": [
+    {
+      "model": "Atto 3",
+      "year_start": 2022,
+      "year_end": 2025,
+      "tool": "HYN22",
+      "notes": ""
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "BYD emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "BYD tool family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "BYD NFC/smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Smart key / NFC card",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
+    {
+      "model": "Dolphin",
+      "year_start": 2021,
+      "year_end": 2025,
+      "tool": "HYN22",
+      "notes": ""
     },
-    "locksmith_use": {
-      "lockout": "Use BYD tool family - verify where fitted",
-      "akl_blade_decode": "Decode/cut by BYD emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
-    },
-    "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Transpondery misc catalogues",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Transpondery misc catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-05"
-  }
-]
+    {
+      "model": "Seal",
+      "year_start": 2022,
+      "year_end": 2025,
+      "tool": "HYN22",
+      "notes": ""
+    }
+  ]
+}
