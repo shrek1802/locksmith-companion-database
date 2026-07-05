@@ -1,0 +1,38 @@
+name: Bulk Update Manufacturers from Zip
+on:
+  workflow_dispatch:
+    inputs:
+      zip_url:
+        description: 'Direct download URL to the manufacturers zip'
+        required: true
+        type: string
+
+jobs:
+  update-manufacturers:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Download zip
+        run: |
+          echo "Downloading from ${{ github.event.inputs.zip_url }}"
+          curl -L "${{ github.event.inputs.zip_url }}" -o manufacturers_update.zip
+          
+      - name: Extract to manufacturers folder
+        run: |
+          unzip -o manufacturers_update.zip -d manufacturers/
+          rm manufacturers_update.zip
+          
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Bulk update manufacturer database via workflow"
+          file_pattern: manufacturers/*.json
+          commit_user_name: Meta AI Bot
+          commit_user_email: bot@meta.ai
