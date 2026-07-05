@@ -1,5 +1,12 @@
 # Database Changelog
 
+## 2026.07.05-cumulative-asia-1
+
+- Expanded Toyota/Lexus/Honda/Mazda/Hyundai/Kia/Suzuki/Subaru generation-key records.
+- Rebuilt manifest from actual manufacturer files.
+- Single cumulative pack only.
+
+
 ## 2026.07.05-cumulative-alliance-1
 
 - Expanded Renault generation/key-system records.
