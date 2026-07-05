@@ -1,2230 +1,2782 @@
 [
   {
-    "record_id": "KIA-PICANTO-RANGE",
+    "record_id": "KIA-PICANTO-2004-2011-ID46",
     "make": "Kia",
     "model": "Picanto",
-    "variant": "TA/JA",
-    "generation": "TA/JA",
-    "years": "2011-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Kia immobiliser / BCM",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "ID46 / Hyundai-Kia family",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / BCM",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "generation": "1st Gen",
+    "years": "2004-2011",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID46 / Hyundai-Kia family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-RIO-RANGE",
-    "make": "Kia",
-    "model": "Rio",
-    "variant": "UB/YB",
-    "generation": "UB/YB",
-    "years": "2011-2023",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Kia immobiliser / BCM",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "ID46 / Hyundai-Kia family",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / BCM",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID46 / Hyundai-Kia family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote key",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
-    },
-    "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "KIA-CEED-RANGE",
-    "make": "Kia",
-    "model": "Ceed",
-    "variant": "ED/JD/CD",
-    "generation": "ED/JD/CD",
-    "years": "2006-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Kia immobiliser / BCM",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "ID46 / smart family",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / BCM",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID46 / smart family",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
-    },
-    "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "KIA-SPORTAGE-RANGE",
-    "make": "Kia",
-    "model": "Sportage",
-    "variant": "SL/QL/NQ5",
-    "generation": "SL/QL/NQ5",
-    "years": "2010-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Kia immobiliser / BCM",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Kia smart key family",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Kia immobiliser / BCM",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "Kia smart key family",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Smart key",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
-    },
-    "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "KIA-EV-RANGE",
-    "make": "Kia",
-    "model": "Niro / EV6",
-    "variant": "EV range",
-    "generation": "EV range",
-    "years": "2016-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Kia immobiliser / BCM",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Kia EV smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Kia immobiliser / BCM",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "Kia EV smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Smart key",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
-    },
-    "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "KIA-PICANTO-TA-2011-2017-REMOTE-KEY",
+    "record_id": "KIA-PICANTO-2011-2017-ID46",
     "make": "Kia",
     "model": "Picanto",
-    "variant": "TA",
-    "generation": "TA",
+    "generation": "2nd Gen",
     "years": "2011-2017",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai/Kia ID46 family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Hyundai/Kia ID46 family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-PICANTO-JA-2017-PRESENT-REMOTE-SMART-KEY",
+    "record_id": "KIA-PICANTO-2017-2024-ID47",
     "make": "Kia",
     "model": "Picanto",
-    "variant": "JA",
-    "generation": "JA",
-    "years": "2017-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai/Kia smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+    "generation": "3rd Gen",
+    "years": "2017-2024",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Hyundai/Kia smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system."
     ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-RIO-UB-2011-2017-REMOTE-KEY",
+    "record_id": "KIA-RIO-2005-2011-ID46",
     "make": "Kia",
     "model": "Rio",
-    "variant": "UB",
-    "generation": "UB",
+    "generation": "2nd Gen",
+    "years": "2005-2011",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-RIO-2011-2017-ID46",
+    "make": "Kia",
+    "model": "Rio",
+    "generation": "3rd Gen",
     "years": "2011-2017",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai/Kia ID46 family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Hyundai/Kia ID46 family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-RIO-YB-2017-2023-REMOTE-SMART-KEY",
+    "record_id": "KIA-RIO-2017-2023-ID47",
     "make": "Kia",
     "model": "Rio",
-    "variant": "YB",
-    "generation": "YB",
+    "generation": "4th Gen",
     "years": "2017-2023",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai/Kia ID46 / smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Hyundai/Kia ID46 / smart family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-CEED-ED-2006-2012-REMOTE-KEY",
+    "record_id": "KIA-CEED-2006-2012-ID46",
     "make": "Kia",
     "model": "Ceed",
-    "variant": "ED",
-    "generation": "ED",
+    "generation": "1st Gen",
     "years": "2006-2012",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai/Kia ID46 family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "body": [
+      "Hatchback",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Hyundai/Kia ID46 family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-CEED-JD-2012-2018-REMOTE-KEY",
+    "record_id": "KIA-CEED-2012-2018-ID46",
     "make": "Kia",
     "model": "Ceed",
-    "variant": "JD",
-    "generation": "JD",
+    "generation": "2nd Gen",
     "years": "2012-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai/Kia ID46 family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "body": [
+      "Hatchback",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Hyundai/Kia ID46 family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-CEED-CD-2018-PRESENT-REMOTE-SMART-KEY",
+    "record_id": "KIA-CEED-2018-2025-ID47",
     "make": "Kia",
     "model": "Ceed",
-    "variant": "CD",
-    "generation": "CD",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai/Kia smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+    "generation": "3rd Gen",
+    "years": "2018-2025",
+    "body": [
+      "Hatchback",
+      "Estate",
+      "Proceed"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Hyundai/Kia smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system."
     ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-SPORTAGE-SL-2010-2015-REMOTE-SMART-KEY",
+    "record_id": "KIA-SPORTAGE-2004-2010-ID46",
     "make": "Kia",
     "model": "Sportage",
-    "variant": "SL",
-    "generation": "SL",
+    "generation": "2nd Gen",
+    "years": "2004-2010",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-SPORTAGE-2010-2015-ID46",
+    "make": "Kia",
+    "model": "Sportage",
+    "generation": "3rd Gen",
     "years": "2010-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai/Kia ID46 family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Hyundai/Kia ID46 family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-SPORTAGE-QL-2015-2021-SMART-KEY",
+    "record_id": "KIA-SPORTAGE-2016-2021-ID47",
     "make": "Kia",
     "model": "Sportage",
-    "variant": "QL",
-    "generation": "QL",
-    "years": "2015-2021",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai/Kia smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "generation": "4th Gen",
+    "years": "2016-2021",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Hyundai/Kia smart key family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-SPORTAGE-NQ5-2021-PRESENT-SMART-KEY",
+    "record_id": "KIA-SPORTAGE-2021-2025-ID47",
     "make": "Kia",
     "model": "Sportage",
-    "variant": "NQ5",
-    "generation": "NQ5",
-    "years": "2021-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai/Kia smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+    "generation": "5th Gen",
+    "years": "2021-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Hyundai/Kia smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system.",
+      "Hybrid/PHEV"
     ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-NIRO-NIRO-2016-2022-SMART-KEY",
+    "record_id": "KIA-SORENTO-2002-2009-ID46",
     "make": "Kia",
-    "model": "Niro",
-    "variant": "Niro",
-    "generation": "Niro",
-    "years": "2016-2022",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Kia hybrid/EV smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+    "model": "Sorento",
+    "generation": "1st Gen",
+    "years": "2002-2009",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Kia hybrid/EV smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
     ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "KIA-EV6-EV6-2021-PRESENT-SMART-KEY",
+    "record_id": "KIA-SORENTO-2009-2014-ID46",
+    "make": "Kia",
+    "model": "Sorento",
+    "generation": "2nd Gen",
+    "years": "2009-2014",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-SORENTO-2015-2020-ID47",
+    "make": "Kia",
+    "model": "Sorento",
+    "generation": "3rd Gen",
+    "years": "2015-2020",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-SORENTO-2020-2025-ID47",
+    "make": "Kia",
+    "model": "Sorento",
+    "generation": "4th Gen",
+    "years": "2020-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system.",
+      "Hybrid/PHEV"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-STINGER-2017-2023-ID47",
+    "make": "Kia",
+    "model": "Stinger",
+    "generation": "1st Gen",
+    "years": "2017-2023",
+    "body": [
+      "Saloon"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-EV6-2021-2025-ID47",
     "make": "Kia",
     "model": "EV6",
-    "variant": "EV6",
-    "generation": "EV6",
-    "years": "2021-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "Kia immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Kia EV smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Kia immobiliser / smart key",
-      "oem_key": "Kia OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+    "generation": "1st Gen",
+    "years": "2021-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HY22 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HY22 Hyundai/Kia tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "Kia EV smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Smart key",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation key record. Exact key can vary by spec, facelift and keyless option."
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm exact vehicle/tool support before AKL.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system.",
+      "Electric"
     ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-NIRO-2016-2022-ID47",
+    "make": "Kia",
+    "model": "Niro",
+    "generation": "1st Gen",
+    "years": "2016-2022",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system.",
+      "Hybrid/PHEV/EV"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-NIRO-2022-2025-ID47",
+    "make": "Kia",
+    "model": "Niro",
+    "generation": "2nd Gen",
+    "years": "2022-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-SOUL-2009-2014-ID46",
+    "make": "Kia",
+    "model": "Soul",
+    "generation": "1st Gen",
+    "years": "2009-2014",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HY22",
+      "emergency_blade": null,
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Immo",
+      "generation": "Immo 1",
+      "module": "BCM",
+      "location": "Behind dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM water damage"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-SOUL-2014-2019-ID47",
+    "make": "Kia",
+    "model": "Soul",
+    "generation": "2nd Gen",
+    "years": "2014-2019",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "KIA-SOUL-2019-2025-ID47",
+    "make": "Kia",
+    "model": "Soul",
+    "generation": "3rd Gen",
+    "years": "2019-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HY22",
+      "emergency_blade": "HY22",
+      "lishi": "HY22 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Kia Smart",
+      "generation": "Gen 2",
+      "module": "SMK",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 6 digit.",
+        "10 min delay AKL."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SMK",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SMK antenna failure"
+      ],
+      "related_dtc": [
+        "B1976"
+      ]
+    },
+    "parts": {
+      "key_shell": "Kia HY22",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system.",
+      "EV option"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HY22"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   }
 ]

@@ -1,12 +1,12 @@
 [
   {
-    "record_id": "LEXUS-IS-2001-2005-ID4C",
-    "make": "Lexus",
-    "model": "IS",
+    "record_id": "INFINITI-FX35-2003-2008-ID46",
+    "make": "Infiniti",
+    "model": "FX35",
     "generation": "1st Gen",
-    "years": "2001-2005",
+    "years": "2003-2008",
     "body": [
-      "Saloon"
+      "SUV"
     ],
     "market": "UK",
     "vin_range": "",
@@ -14,20 +14,20 @@
     "key": {
       "key_type": "Remote Head Key",
       "smart_key": false,
-      "blade": "TOY40",
+      "blade": "NSN14",
       "emergency_blade": null,
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID4C / 4C",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 3,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota Immo",
-      "generation": "Immo 2",
-      "module": "IMMO ECU",
-      "location": "Behind dash",
+      "system": "Nissan/Infiniti Immo",
+      "generation": "NATS 5",
+      "module": "IMMO",
+      "location": "Behind steering column",
       "security_delay": "None"
     },
     "programming": {
@@ -42,12 +42,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
+        "Smart Pro",
         "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "No pin required."
+        "Pin code required."
       ]
     },
     "obd": {
@@ -65,22 +65,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "IMMO ECU",
-      "location": "Behind dash",
+      "module": "IMMO",
+      "location": "Behind steering column",
       "removal_time": "15 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "IMMO antenna"
+        "IMMO antenna ring"
       ],
       "related_dtc": [
-        "B2799"
+        "B2190",
+        "B2191"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Infiniti NSN14",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -88,12 +89,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID4C / 4C system."
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi NSN14"
       ],
       "transponder": [
         "Autel IM608"
@@ -115,937 +116,11 @@
     }
   },
   {
-    "record_id": "LEXUS-IS-2005-2013-ID67",
-    "make": "Lexus",
-    "model": "IS",
+    "record_id": "INFINITI-FX50-2008-2013-ID46",
+    "make": "Infiniti",
+    "model": "FX50",
     "generation": "2nd Gen",
-    "years": "2005-2013",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-IS-2013-2020-ID67",
-    "make": "Lexus",
-    "model": "IS",
-    "generation": "3rd Gen",
-    "years": "2013-2020",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": true,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-GS-1998-2005-ID4C",
-    "make": "Lexus",
-    "model": "GS",
-    "generation": "2nd Gen",
-    "years": "1998-2005",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Remote Head Key",
-      "smart_key": false,
-      "blade": "TOY40",
-      "emergency_blade": null,
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID4C / 4C",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 3,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota Immo",
-      "generation": "Immo 2",
-      "module": "IMMO ECU",
-      "location": "Behind dash",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "IMMO ECU",
-      "location": "Behind dash",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "IMMO antenna"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID4C / 4C system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-GS-2005-2011-ID67",
-    "make": "Lexus",
-    "model": "GS",
-    "generation": "3rd Gen",
-    "years": "2005-2011",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-GS-2012-2020-ID67",
-    "make": "Lexus",
-    "model": "GS",
-    "generation": "4th Gen",
-    "years": "2012-2020",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-LS-2001-2006-ID4C",
-    "make": "Lexus",
-    "model": "LS",
-    "generation": "3rd Gen",
-    "years": "2001-2006",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Remote Head Key",
-      "smart_key": false,
-      "blade": "TOY40",
-      "emergency_blade": null,
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID4C / 4C",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 3,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota Immo",
-      "generation": "Immo 2",
-      "module": "IMMO ECU",
-      "location": "Behind dash",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "IMMO ECU",
-      "location": "Behind dash",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "IMMO antenna"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID4C / 4C system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-LS-2006-2017-ID67",
-    "make": "Lexus",
-    "model": "LS",
-    "generation": "4th Gen",
-    "years": "2006-2017",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-LS-2017-2025-ID67",
-    "make": "Lexus",
-    "model": "LS",
-    "generation": "5th Gen",
-    "years": "2017-2025",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-RX-2003-2009-ID67",
-    "make": "Lexus",
-    "model": "RX",
-    "generation": "2nd Gen",
-    "years": "2003-2009",
+    "years": "2008-2013",
     "body": [
       "SUV"
     ],
@@ -1055,21 +130,21 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 4,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
+      "system": "Nissan/Infiniti Smart",
       "generation": "Gen 2",
-      "module": "Smart ECU",
+      "module": "BCM",
       "location": "Behind glove box",
-      "security_delay": "None"
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -1083,13 +158,13 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
+        "Smart Pro",
         "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
+        "Pin code required for AKL.",
         "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
+        "12 digit PIN from dealer/Nissan."
       ]
     },
     "obd": {
@@ -1107,7 +182,7 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
+      "module": "BCM",
       "location": "Behind glove box",
       "removal_time": "15 Minutes",
       "airbag_risk": false,
@@ -1115,14 +190,15 @@
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "BCM failure"
       ],
       "related_dtc": [
-        "B2799"
+        "B2190",
+        "B2191"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Infiniti NSN14",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -1130,12 +206,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system."
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi NSN14"
       ],
       "transponder": [
         "Autel IM608"
@@ -1157,850 +233,35 @@
     }
   },
   {
-    "record_id": "LEXUS-RX-2009-2015-ID67",
-    "make": "Lexus",
-    "model": "RX",
-    "generation": "3rd Gen",
-    "years": "2009-2015",
-    "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": true,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-RX-2015-2022-ID67",
-    "make": "Lexus",
-    "model": "RX",
-    "generation": "4th Gen",
-    "years": "2015-2022",
-    "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-RX-2022-2025-ID67",
-    "make": "Lexus",
-    "model": "RX",
-    "generation": "5th Gen",
-    "years": "2022-2025",
-    "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system.",
-      "Hybrid/PHEV"
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-CT-2011-2022-ID67",
-    "make": "Lexus",
-    "model": "CT",
+    "record_id": "INFINITI-G35-2003-2007-ID46",
+    "make": "Infiniti",
+    "model": "G35",
     "generation": "1st Gen",
-    "years": "2011-2022",
+    "years": "2003-2007",
     "body": [
-      "Hatchback"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system.",
-      "Hybrid"
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-NX-2014-2021-ID67",
-    "make": "Lexus",
-    "model": "NX",
-    "generation": "1st Gen",
-    "years": "2014-2021",
-    "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-NX-2021-2025-ID67",
-    "make": "Lexus",
-    "model": "NX",
-    "generation": "2nd Gen",
-    "years": "2021-2025",
-    "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system.",
-      "Hybrid/PHEV"
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-UX-2018-2025-ID67",
-    "make": "Lexus",
-    "model": "UX",
-    "generation": "1st Gen",
-    "years": "2018-2025",
-    "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system.",
-      "Hybrid/EV"
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-RC-2014-2024-ID67",
-    "make": "Lexus",
-    "model": "RC",
-    "generation": "1st Gen",
-    "years": "2014-2024",
-    "body": [
+      "Saloon",
       "Coupe"
     ],
     "market": "UK",
     "vin_range": "",
     "facelift": false,
     "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "NSN14",
+      "emergency_blade": null,
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
-      "buttons": 4,
+      "buttons": 3,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
+      "system": "Nissan/Infiniti Immo",
+      "generation": "NATS 5",
+      "module": "IMMO",
+      "location": "Behind steering column",
       "security_delay": "None"
     },
     "programming": {
@@ -2015,13 +276,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
+        "Smart Pro",
         "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
+        "Pin code required."
       ]
     },
     "obd": {
@@ -2039,22 +299,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
+      "module": "IMMO",
+      "location": "Behind steering column",
       "removal_time": "15 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "IMMO antenna ring"
       ],
       "related_dtc": [
-        "B2799"
+        "B2190",
+        "B2191"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Infiniti NSN14",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -2062,12 +323,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system."
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi NSN14"
       ],
       "transponder": [
         "Autel IM608"
@@ -2089,12 +350,13 @@
     }
   },
   {
-    "record_id": "LEXUS-LC-2017-2025-ID67",
-    "make": "Lexus",
-    "model": "LC",
-    "generation": "1st Gen",
-    "years": "2017-2025",
+    "record_id": "INFINITI-G37-2008-2014-ID46",
+    "make": "Infiniti",
+    "model": "G37",
+    "generation": "2nd Gen",
+    "years": "2008-2014",
     "body": [
+      "Saloon",
       "Coupe",
       "Convertible"
     ],
@@ -2104,21 +366,21 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 4,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
+      "system": "Nissan/Infiniti Smart",
       "generation": "Gen 2",
-      "module": "Smart ECU",
+      "module": "BCM",
       "location": "Behind glove box",
-      "security_delay": "None"
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -2132,13 +394,13 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
+        "Smart Pro",
         "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
+        "Pin code required for AKL.",
         "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
+        "12 digit PIN from dealer/Nissan."
       ]
     },
     "obd": {
@@ -2156,7 +418,7 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
+      "module": "BCM",
       "location": "Behind glove box",
       "removal_time": "15 Minutes",
       "airbag_risk": false,
@@ -2164,14 +426,15 @@
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "BCM failure"
       ],
       "related_dtc": [
-        "B2799"
+        "B2190",
+        "B2191"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Infiniti NSN14",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -2179,12 +442,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system."
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi NSN14"
       ],
       "transponder": [
         "Autel IM608"
@@ -2206,11 +469,714 @@
     }
   },
   {
-    "record_id": "LEXUS-RZ-2022-2025-ID67",
-    "make": "Lexus",
-    "model": "RZ",
+    "record_id": "INFINITI-M35-2006-2010-ID46",
+    "make": "Infiniti",
+    "model": "M35",
     "generation": "1st Gen",
-    "years": "2022-2025",
+    "years": "2006-2010",
+    "body": [
+      "Saloon"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Nissan/Infiniti Smart",
+      "generation": "Gen 2",
+      "module": "BCM",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "Pin code required for AKL.",
+        "OBD supported.",
+        "12 digit PIN from dealer/Nissan."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM failure"
+      ],
+      "related_dtc": [
+        "B2190",
+        "B2191"
+      ]
+    },
+    "parts": {
+      "key_shell": "Infiniti NSN14",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi NSN14"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "INFINITI-M37-2010-2014-ID46",
+    "make": "Infiniti",
+    "model": "M37",
+    "generation": "2nd Gen",
+    "years": "2010-2014",
+    "body": [
+      "Saloon"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Nissan/Infiniti Smart",
+      "generation": "Gen 2",
+      "module": "BCM",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "Pin code required for AKL.",
+        "OBD supported.",
+        "12 digit PIN from dealer/Nissan."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM failure"
+      ],
+      "related_dtc": [
+        "B2190",
+        "B2191"
+      ]
+    },
+    "parts": {
+      "key_shell": "Infiniti NSN14",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi NSN14"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "INFINITI-Q30-2015-2019-ID47",
+    "make": "Infiniti",
+    "model": "Q30",
+    "generation": "1st Gen",
+    "years": "2015-2019",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Nissan/Infiniti Smart",
+      "generation": "Gen 2",
+      "module": "BCM",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "Pin code required for AKL.",
+        "OBD supported.",
+        "12 digit PIN from dealer/Nissan."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM failure"
+      ],
+      "related_dtc": [
+        "B2190",
+        "B2191"
+      ]
+    },
+    "parts": {
+      "key_shell": "Infiniti NSN14",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system.",
+      "Mercedes MFA platform"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi NSN14"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "INFINITI-Q50-2014-2024-ID46",
+    "make": "Infiniti",
+    "model": "Q50",
+    "generation": "1st Gen",
+    "years": "2014-2024",
+    "body": [
+      "Saloon"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Nissan/Infiniti Smart",
+      "generation": "Gen 2",
+      "module": "BCM",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "Pin code required for AKL.",
+        "OBD supported.",
+        "12 digit PIN from dealer/Nissan."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM failure"
+      ],
+      "related_dtc": [
+        "B2190",
+        "B2191"
+      ]
+    },
+    "parts": {
+      "key_shell": "Infiniti NSN14",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi NSN14"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "INFINITI-Q60-2016-2022-ID46",
+    "make": "Infiniti",
+    "model": "Q60",
+    "generation": "1st Gen",
+    "years": "2016-2022",
+    "body": [
+      "Coupe"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Nissan/Infiniti Smart",
+      "generation": "Gen 2",
+      "module": "BCM",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "Pin code required for AKL.",
+        "OBD supported.",
+        "12 digit PIN from dealer/Nissan."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM failure"
+      ],
+      "related_dtc": [
+        "B2190",
+        "B2191"
+      ]
+    },
+    "parts": {
+      "key_shell": "Infiniti NSN14",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi NSN14"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "INFINITI-Q70-2013-2019-ID46",
+    "make": "Infiniti",
+    "model": "Q70",
+    "generation": "1st Gen",
+    "years": "2013-2019",
+    "body": [
+      "Saloon"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Nissan/Infiniti Smart",
+      "generation": "Gen 2",
+      "module": "BCM",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "Pin code required for AKL.",
+        "OBD supported.",
+        "12 digit PIN from dealer/Nissan."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM failure"
+      ],
+      "related_dtc": [
+        "B2190",
+        "B2191"
+      ]
+    },
+    "parts": {
+      "key_shell": "Infiniti NSN14",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi NSN14"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "INFINITI-QX30-2016-2019-ID47",
+    "make": "Infiniti",
+    "model": "QX30",
+    "generation": "1st Gen",
+    "years": "2016-2019",
     "body": [
       "SUV"
     ],
@@ -2220,21 +1186,21 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID47 / Hitag AES",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 4,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
+      "system": "Nissan/Infiniti Smart",
       "generation": "Gen 2",
-      "module": "Smart ECU",
+      "module": "BCM",
       "location": "Behind glove box",
-      "security_delay": "None"
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -2248,13 +1214,13 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
+        "Smart Pro",
         "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
+        "Pin code required for AKL.",
         "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
+        "12 digit PIN from dealer/Nissan."
       ]
     },
     "obd": {
@@ -2272,7 +1238,7 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
+      "module": "BCM",
       "location": "Behind glove box",
       "removal_time": "15 Minutes",
       "airbag_risk": false,
@@ -2280,14 +1246,15 @@
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "BCM failure"
       ],
       "related_dtc": [
-        "B2799"
+        "B2190",
+        "B2191"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Infiniti NSN14",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -2295,13 +1262,13 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system.",
-      "Electric"
+      "ID47 / Hitag AES system.",
+      "Mercedes MFA platform"
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi NSN14"
       ],
       "transponder": [
         "Autel IM608"
@@ -2323,13 +1290,13 @@
     }
   },
   {
-    "record_id": "LEXUS-SC-2001-2010-ID67",
-    "make": "Lexus",
-    "model": "SC",
-    "generation": "2nd Gen",
-    "years": "2001-2010",
+    "record_id": "INFINITI-QX50-2013-2018-ID46",
+    "make": "Infiniti",
+    "model": "QX50",
+    "generation": "1st Gen",
+    "years": "2013-2018",
     "body": [
-      "Convertible"
+      "SUV"
     ],
     "market": "UK",
     "vin_range": "",
@@ -2337,21 +1304,21 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 4,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
+      "system": "Nissan/Infiniti Smart",
       "generation": "Gen 2",
-      "module": "Smart ECU",
+      "module": "BCM",
       "location": "Behind glove box",
-      "security_delay": "None"
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -2365,13 +1332,13 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
+        "Smart Pro",
         "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
+        "Pin code required for AKL.",
         "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
+        "12 digit PIN from dealer/Nissan."
       ]
     },
     "obd": {
@@ -2389,7 +1356,7 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
+      "module": "BCM",
       "location": "Behind glove box",
       "removal_time": "15 Minutes",
       "airbag_risk": false,
@@ -2397,14 +1364,15 @@
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "BCM failure"
       ],
       "related_dtc": [
-        "B2799"
+        "B2190",
+        "B2191"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Infiniti NSN14",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -2412,12 +1380,247 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system."
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi NSN14"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "INFINITI-QX70-2008-2017-ID46",
+    "make": "Infiniti",
+    "model": "QX70",
+    "generation": "1st Gen",
+    "years": "2008-2017",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Nissan/Infiniti Smart",
+      "generation": "Gen 2",
+      "module": "BCM",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "Pin code required for AKL.",
+        "OBD supported.",
+        "12 digit PIN from dealer/Nissan."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM failure"
+      ],
+      "related_dtc": [
+        "B2190",
+        "B2191"
+      ]
+    },
+    "parts": {
+      "key_shell": "Infiniti NSN14",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system.",
+      "Formerly FX"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi NSN14"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "INFINITI-EX35-2008-2013-ID46",
+    "make": "Infiniti",
+    "model": "EX35",
+    "generation": "1st Gen",
+    "years": "2008-2013",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "NSN14",
+      "emergency_blade": "NSN14",
+      "lishi": "NSN14 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Nissan/Infiniti Smart",
+      "generation": "Gen 2",
+      "module": "BCM",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "Pin code required for AKL.",
+        "OBD supported.",
+        "12 digit PIN from dealer/Nissan."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM failure"
+      ],
+      "related_dtc": [
+        "B2190",
+        "B2191"
+      ]
+    },
+    "parts": {
+      "key_shell": "Infiniti NSN14",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi NSN14"
       ],
       "transponder": [
         "Autel IM608"

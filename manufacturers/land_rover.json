@@ -1,12 +1,12 @@
 [
   {
-    "record_id": "LEXUS-IS-2001-2005-ID4C",
-    "make": "Lexus",
-    "model": "IS",
-    "generation": "1st Gen",
-    "years": "2001-2005",
+    "record_id": "LANDROVER-DEFENDER-1998-2006-ID33",
+    "make": "Land Rover",
+    "model": "Defender",
+    "generation": "TD5",
+    "years": "1998-2006",
     "body": [
-      "Saloon"
+      "SUV"
     ],
     "market": "UK",
     "vin_range": "",
@@ -14,20 +14,20 @@
     "key": {
       "key_type": "Remote Head Key",
       "smart_key": false,
-      "blade": "TOY40",
+      "blade": "HU101",
       "emergency_blade": null,
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID4C / 4C",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID33 / Hitag1",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 3,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota Immo",
-      "generation": "Immo 2",
-      "module": "IMMO ECU",
-      "location": "Behind dash",
+      "system": "Land Rover Immo",
+      "generation": "PATS",
+      "module": "IMMO",
+      "location": "Behind steering column",
       "security_delay": "None"
     },
     "programming": {
@@ -42,8 +42,8 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
+        "SDD",
+        "Pathfinder"
       ],
       "procedure_notes": [
         "OBD supported.",
@@ -65,8 +65,8 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "IMMO ECU",
-      "location": "Behind dash",
+      "module": "IMMO",
+      "location": "Behind steering column",
       "removal_time": "15 Minutes",
       "airbag_risk": false,
       "photos": []
@@ -76,11 +76,11 @@
         "IMMO antenna"
       ],
       "related_dtc": [
-        "B2799"
+        "B1600"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Land Rover HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -88,12 +88,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID4C / 4C system."
+      "ID33 / Hitag1 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -115,13 +115,1639 @@
     }
   },
   {
-    "record_id": "LEXUS-IS-2005-2013-ID67",
-    "make": "Lexus",
-    "model": "IS",
-    "generation": "2nd Gen",
+    "record_id": "LANDROVER-DEFENDER-2007-2016-ID46",
+    "make": "Land Rover",
+    "model": "Defender",
+    "generation": "Puma",
+    "years": "2007-2016",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Immo",
+      "generation": "PATS",
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna"
+      ],
+      "related_dtc": [
+        "B1600"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-DEFENDER-2020-2025-ID46",
+    "make": "Land Rover",
+    "model": "Defender",
+    "generation": "L663",
+    "years": "2020-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Smart",
+      "generation": "Gen 2",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "KVM water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-DISCOVERY-1998-2004-ID33",
+    "make": "Land Rover",
+    "model": "Discovery",
+    "generation": "Series 2",
+    "years": "1998-2004",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID33 / Hitag1",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Immo",
+      "generation": "PATS",
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna"
+      ],
+      "related_dtc": [
+        "B1600"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID33 / Hitag1 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-DISCOVERY-2004-2009-ID46",
+    "make": "Land Rover",
+    "model": "Discovery",
+    "generation": "3",
+    "years": "2004-2009",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Immo",
+      "generation": "PATS",
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna"
+      ],
+      "related_dtc": [
+        "B1600"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-DISCOVERY-2009-2017-ID46",
+    "make": "Land Rover",
+    "model": "Discovery",
+    "generation": "4",
+    "years": "2009-2017",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Smart",
+      "generation": "Gen 2",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "KVM water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-DISCOVERY-2017-2025-ID46",
+    "make": "Land Rover",
+    "model": "Discovery",
+    "generation": "5",
+    "years": "2017-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Smart",
+      "generation": "Gen 2",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "KVM water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-DISCOVERY-SPORT-2014-2019-ID46",
+    "make": "Land Rover",
+    "model": "Discovery Sport",
+    "generation": "L550",
+    "years": "2014-2019",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Smart",
+      "generation": "Gen 2",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "KVM water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-DISCOVERY-SPORT-2020-2025-ID46",
+    "make": "Land Rover",
+    "model": "Discovery Sport",
+    "generation": "L550 Facelift",
+    "years": "2020-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Smart",
+      "generation": "Gen 2",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "KVM water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-FREELANDER-1997-2006-ID33",
+    "make": "Land Rover",
+    "model": "Freelander",
+    "generation": "1",
+    "years": "1997-2006",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID33 / Hitag1",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Immo",
+      "generation": "PATS",
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna"
+      ],
+      "related_dtc": [
+        "B1600"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID33 / Hitag1 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-FREELANDER-2006-2014-ID46",
+    "make": "Land Rover",
+    "model": "Freelander",
+    "generation": "2",
+    "years": "2006-2014",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Immo",
+      "generation": "PATS",
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna"
+      ],
+      "related_dtc": [
+        "B1600"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-RANGE-ROVER-2002-2009-ID46",
+    "make": "Land Rover",
+    "model": "Range Rover",
+    "generation": "L322",
+    "years": "2002-2009",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Immo",
+      "generation": "PATS",
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna"
+      ],
+      "related_dtc": [
+        "B1600"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-RANGE-ROVER-2010-2012-ID46",
+    "make": "Land Rover",
+    "model": "Range Rover",
+    "generation": "L322 Facelift",
+    "years": "2010-2012",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Smart",
+      "generation": "Gen 2",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "KVM water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-RANGE-ROVER-2013-2021-ID46",
+    "make": "Land Rover",
+    "model": "Range Rover",
+    "generation": "L405",
+    "years": "2013-2021",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Smart",
+      "generation": "Gen 2",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "KVM water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-RANGE-ROVER-2022-2025-ID46",
+    "make": "Land Rover",
+    "model": "Range Rover",
+    "generation": "L460",
+    "years": "2022-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Land Rover Smart",
+      "generation": "Gen 2",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "SDD",
+        "Pathfinder"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "KVM water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Land Rover HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "LANDROVER-RANGE-ROVER-SPORT-2005-2013-ID46",
+    "make": "Land Rover",
+    "model": "Range Rover Sport",
+    "generation": "L320",
     "years": "2005-2013",
     "body": [
-      "Saloon"
+      "SUV"
     ],
     "market": "UK",
     "vin_range": "",
@@ -129,21 +1755,21 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 4,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
+      "system": "Land Rover Smart",
       "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -157,12 +1783,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
+        "SDD",
+        "Pathfinder"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "No pin required.",
+        "SDD/Pathfinder for AKL.",
         "Battery support essential."
       ]
     },
@@ -181,22 +1807,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "KVM water ingress"
       ],
       "related_dtc": [
-        "B2799"
+        "B1A84",
+        "B1A85"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Land Rover HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -204,12 +1831,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system."
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -231,821 +1858,11 @@
     }
   },
   {
-    "record_id": "LEXUS-IS-2013-2020-ID67",
-    "make": "Lexus",
-    "model": "IS",
-    "generation": "3rd Gen",
-    "years": "2013-2020",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": true,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-GS-1998-2005-ID4C",
-    "make": "Lexus",
-    "model": "GS",
-    "generation": "2nd Gen",
-    "years": "1998-2005",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Remote Head Key",
-      "smart_key": false,
-      "blade": "TOY40",
-      "emergency_blade": null,
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID4C / 4C",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 3,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota Immo",
-      "generation": "Immo 2",
-      "module": "IMMO ECU",
-      "location": "Behind dash",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "IMMO ECU",
-      "location": "Behind dash",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "IMMO antenna"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID4C / 4C system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-GS-2005-2011-ID67",
-    "make": "Lexus",
-    "model": "GS",
-    "generation": "3rd Gen",
-    "years": "2005-2011",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-GS-2012-2020-ID67",
-    "make": "Lexus",
-    "model": "GS",
-    "generation": "4th Gen",
-    "years": "2012-2020",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-LS-2001-2006-ID4C",
-    "make": "Lexus",
-    "model": "LS",
-    "generation": "3rd Gen",
-    "years": "2001-2006",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Remote Head Key",
-      "smart_key": false,
-      "blade": "TOY40",
-      "emergency_blade": null,
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID4C / 4C",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 3,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota Immo",
-      "generation": "Immo 2",
-      "module": "IMMO ECU",
-      "location": "Behind dash",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "IMMO ECU",
-      "location": "Behind dash",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "IMMO antenna"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID4C / 4C system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-LS-2006-2017-ID67",
-    "make": "Lexus",
-    "model": "LS",
-    "generation": "4th Gen",
-    "years": "2006-2017",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-LS-2017-2025-ID67",
-    "make": "Lexus",
-    "model": "LS",
-    "generation": "5th Gen",
-    "years": "2017-2025",
-    "body": [
-      "Saloon"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-RX-2003-2009-ID67",
-    "make": "Lexus",
-    "model": "RX",
-    "generation": "2nd Gen",
-    "years": "2003-2009",
+    "record_id": "LANDROVER-RANGE-ROVER-SPORT-2013-2022-ID46",
+    "make": "Land Rover",
+    "model": "Range Rover Sport",
+    "generation": "L494",
+    "years": "2013-2022",
     "body": [
       "SUV"
     ],
@@ -1055,21 +1872,21 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 4,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
+      "system": "Land Rover Smart",
       "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -1083,12 +1900,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
+        "SDD",
+        "Pathfinder"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "No pin required.",
+        "SDD/Pathfinder for AKL.",
         "Battery support essential."
       ]
     },
@@ -1107,22 +1924,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "KVM water ingress"
       ],
       "related_dtc": [
-        "B2799"
+        "B1A84",
+        "B1A85"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Land Rover HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -1130,12 +1948,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system."
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -1157,242 +1975,10 @@
     }
   },
   {
-    "record_id": "LEXUS-RX-2009-2015-ID67",
-    "make": "Lexus",
-    "model": "RX",
-    "generation": "3rd Gen",
-    "years": "2009-2015",
-    "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": true,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-RX-2015-2022-ID67",
-    "make": "Lexus",
-    "model": "RX",
-    "generation": "4th Gen",
-    "years": "2015-2022",
-    "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-RX-2022-2025-ID67",
-    "make": "Lexus",
-    "model": "RX",
-    "generation": "5th Gen",
+    "record_id": "LANDROVER-RANGE-ROVER-SPORT-2022-2025-ID46",
+    "make": "Land Rover",
+    "model": "Range Rover Sport",
+    "generation": "L461",
     "years": "2022-2025",
     "body": [
       "SUV"
@@ -1403,21 +1989,21 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 4,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
+      "system": "Land Rover Smart",
       "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -1431,12 +2017,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
+        "SDD",
+        "Pathfinder"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "No pin required.",
+        "SDD/Pathfinder for AKL.",
         "Battery support essential."
       ]
     },
@@ -1455,22 +2041,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "KVM water ingress"
       ],
       "related_dtc": [
-        "B2799"
+        "B1A84",
+        "B1A85"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Land Rover HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -1478,13 +2065,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system.",
-      "Hybrid/PHEV"
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -1506,13 +2092,14 @@
     }
   },
   {
-    "record_id": "LEXUS-CT-2011-2022-ID67",
-    "make": "Lexus",
-    "model": "CT",
-    "generation": "1st Gen",
-    "years": "2011-2022",
+    "record_id": "LANDROVER-RANGE-ROVER-EVOQUE-2011-2018-ID46",
+    "make": "Land Rover",
+    "model": "Range Rover Evoque",
+    "generation": "L538",
+    "years": "2011-2018",
     "body": [
-      "Hatchback"
+      "SUV",
+      "Convertible"
     ],
     "market": "UK",
     "vin_range": "",
@@ -1520,21 +2107,21 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 4,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
+      "system": "Land Rover Smart",
       "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -1548,12 +2135,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
+        "SDD",
+        "Pathfinder"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "No pin required.",
+        "SDD/Pathfinder for AKL.",
         "Battery support essential."
       ]
     },
@@ -1572,22 +2159,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "KVM water ingress"
       ],
       "related_dtc": [
-        "B2799"
+        "B1A84",
+        "B1A85"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Land Rover HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -1595,13 +2183,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system.",
-      "Hybrid"
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -1623,127 +2210,11 @@
     }
   },
   {
-    "record_id": "LEXUS-NX-2014-2021-ID67",
-    "make": "Lexus",
-    "model": "NX",
-    "generation": "1st Gen",
-    "years": "2014-2021",
-    "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-NX-2021-2025-ID67",
-    "make": "Lexus",
-    "model": "NX",
-    "generation": "2nd Gen",
-    "years": "2021-2025",
+    "record_id": "LANDROVER-RANGE-ROVER-EVOQUE-2019-2025-ID46",
+    "make": "Land Rover",
+    "model": "Range Rover Evoque",
+    "generation": "L551",
+    "years": "2019-2025",
     "body": [
       "SUV"
     ],
@@ -1753,21 +2224,21 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 4,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
+      "system": "Land Rover Smart",
       "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -1781,12 +2252,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
+        "SDD",
+        "Pathfinder"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "No pin required.",
+        "SDD/Pathfinder for AKL.",
         "Battery support essential."
       ]
     },
@@ -1805,22 +2276,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "KVM water ingress"
       ],
       "related_dtc": [
-        "B2799"
+        "B1A84",
+        "B1A85"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Land Rover HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -1828,13 +2300,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system.",
-      "Hybrid/PHEV"
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -1856,362 +2327,12 @@
     }
   },
   {
-    "record_id": "LEXUS-UX-2018-2025-ID67",
-    "make": "Lexus",
-    "model": "UX",
-    "generation": "1st Gen",
-    "years": "2018-2025",
-    "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system.",
-      "Hybrid/EV"
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-RC-2014-2024-ID67",
-    "make": "Lexus",
-    "model": "RC",
-    "generation": "1st Gen",
-    "years": "2014-2024",
-    "body": [
-      "Coupe"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-LC-2017-2025-ID67",
-    "make": "Lexus",
-    "model": "LC",
-    "generation": "1st Gen",
+    "record_id": "LANDROVER-RANGE-ROVER-VELAR-2017-2025-ID46",
+    "make": "Land Rover",
+    "model": "Range Rover Velar",
+    "generation": "L560",
     "years": "2017-2025",
     "body": [
-      "Coupe",
-      "Convertible"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-RZ-2022-2025-ID67",
-    "make": "Lexus",
-    "model": "RZ",
-    "generation": "1st Gen",
-    "years": "2022-2025",
-    "body": [
       "SUV"
     ],
     "market": "UK",
@@ -2220,21 +2341,21 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 4,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Toyota/Lexus Smart",
+      "system": "Land Rover Smart",
       "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
+      "module": "KVM",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -2248,12 +2369,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
+        "SDD",
+        "Pathfinder"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "No pin required.",
+        "SDD/Pathfinder for AKL.",
         "Battery support essential."
       ]
     },
@@ -2272,22 +2393,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
+      "module": "KVM",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "Smart ECU failure"
+        "KVM water ingress"
       ],
       "related_dtc": [
-        "B2799"
+        "B1A84",
+        "B1A85"
       ]
     },
     "parts": {
-      "key_shell": "Lexus TOY40",
+      "key_shell": "Land Rover HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -2295,129 +2417,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID67 / Texas 6F system.",
-      "Electric"
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi TOY40"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "LEXUS-SC-2001-2010-ID67",
-    "make": "Lexus",
-    "model": "SC",
-    "generation": "2nd Gen",
-    "years": "2001-2010",
-    "body": [
-      "Convertible"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "TOY40",
-      "emergency_blade": "TOY40",
-      "lishi": "TOY40 2-in-1",
-      "transponder": "ID67 / Texas 6F",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Toyota/Lexus Smart",
-      "generation": "Gen 2",
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Techstream",
-        "VVDI Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required.",
-        "Battery support essential."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "Smart ECU",
-      "location": "Behind glove box",
-      "removal_time": "15 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "Smart ECU failure"
-      ],
-      "related_dtc": [
-        "B2799"
-      ]
-    },
-    "parts": {
-      "key_shell": "Lexus TOY40",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID67 / Texas 6F system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi TOY40"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"

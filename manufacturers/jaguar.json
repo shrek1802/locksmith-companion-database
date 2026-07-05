@@ -1,12 +1,13 @@
 [
   {
-    "record_id": "MASERATI-3200GT-1998-2002-ID33",
-    "make": "Maserati",
-    "model": "3200 GT",
+    "record_id": "JAGUAR-XTYPE-2001-2009-ID60",
+    "make": "Jaguar",
+    "model": "X-Type",
     "generation": "1st Gen",
-    "years": "1998-2002",
+    "years": "2001-2009",
     "body": [
-      "Coupe"
+      "Saloon",
+      "Estate"
     ],
     "market": "UK",
     "vin_range": "",
@@ -14,20 +15,20 @@
     "key": {
       "key_type": "Remote Head Key",
       "smart_key": false,
-      "blade": "SIP22",
+      "blade": "HU101",
       "emergency_blade": null,
-      "lishi": "SIP22 2-in-1",
-      "transponder": "ID33 / Hitag1",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID60 / 4D60",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 3,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Maserati Immo",
-      "generation": "Immo 1",
+      "system": "Jaguar Immo",
+      "generation": "PATS",
       "module": "IMMO",
-      "location": "Behind dash",
+      "location": "Behind steering column",
       "security_delay": "None"
     },
     "programming": {
@@ -42,12 +43,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
+        "Smart Pro",
+        "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "No pin required."
+        "Pin code not required."
       ]
     },
     "obd": {
@@ -66,8 +67,8 @@
     },
     "module_location": {
       "module": "IMMO",
-      "location": "Behind dash",
-      "removal_time": "20 Minutes",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
       "airbag_risk": false,
       "photos": []
     },
@@ -76,11 +77,11 @@
         "IMMO antenna"
       ],
       "related_dtc": [
-        "B1A25"
+        "B1600"
       ]
     },
     "parts": {
-      "key_shell": "Maserati SIP22",
+      "key_shell": "Jaguar HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -88,13 +89,13 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID33 / Hitag1 system.",
-      "Boomerang tail lights"
+      "ID60 / 4D60 system.",
+      "Ford based"
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi SIP22"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -116,241 +117,11 @@
     }
   },
   {
-    "record_id": "MASERATI-COUPE-2002-2007-ID46",
-    "make": "Maserati",
-    "model": "Coupe",
-    "generation": "4200 GT",
-    "years": "2002-2007",
-    "body": [
-      "Coupe"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Remote Head Key",
-      "smart_key": false,
-      "blade": "SIP22",
-      "emergency_blade": null,
-      "lishi": "SIP22 2-in-1",
-      "transponder": "ID46 / Hitag2",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 3,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Maserati Immo",
-      "generation": "Immo 1",
-      "module": "IMMO",
-      "location": "Behind dash",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "IMMO",
-      "location": "Behind dash",
-      "removal_time": "20 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "IMMO antenna"
-      ],
-      "related_dtc": [
-        "B1A25"
-      ]
-    },
-    "parts": {
-      "key_shell": "Maserati SIP22",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID46 / Hitag2 system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi SIP22"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "MASERATI-SPYDER-2001-2007-ID46",
-    "make": "Maserati",
-    "model": "Spyder",
-    "generation": "4200",
-    "years": "2001-2007",
-    "body": [
-      "Convertible"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Remote Head Key",
-      "smart_key": false,
-      "blade": "SIP22",
-      "emergency_blade": null,
-      "lishi": "SIP22 2-in-1",
-      "transponder": "ID46 / Hitag2",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 3,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Maserati Immo",
-      "generation": "Immo 1",
-      "module": "IMMO",
-      "location": "Behind dash",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "No pin required."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "IMMO",
-      "location": "Behind dash",
-      "removal_time": "20 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "IMMO antenna"
-      ],
-      "related_dtc": [
-        "B1A25"
-      ]
-    },
-    "parts": {
-      "key_shell": "Maserati SIP22",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID46 / Hitag2 system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi SIP22"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "MASERATI-QUATTROPORTE-2004-2012-ID46",
-    "make": "Maserati",
-    "model": "Quattroporte",
-    "generation": "5th Gen",
-    "years": "2004-2012",
+    "record_id": "JAGUAR-STYPE-1999-2007-ID60",
+    "make": "Jaguar",
+    "model": "S-Type",
+    "generation": "1st Gen",
+    "years": "1999-2007",
     "body": [
       "Saloon"
     ],
@@ -360,20 +131,20 @@
     "key": {
       "key_type": "Remote Head Key",
       "smart_key": false,
-      "blade": "SIP22",
+      "blade": "HU101",
       "emergency_blade": null,
-      "lishi": "SIP22 2-in-1",
-      "transponder": "ID46 / Hitag2",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID60 / 4D60",
       "frequency": "433MHz",
       "battery": "CR2032",
       "buttons": 3,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Maserati Immo",
-      "generation": "Immo 1",
+      "system": "Jaguar Immo",
+      "generation": "PATS",
       "module": "IMMO",
-      "location": "Behind dash",
+      "location": "Behind steering column",
       "security_delay": "None"
     },
     "programming": {
@@ -388,12 +159,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
+        "Smart Pro",
+        "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "No pin required."
+        "Pin code not required."
       ]
     },
     "obd": {
@@ -412,8 +183,8 @@
     },
     "module_location": {
       "module": "IMMO",
-      "location": "Behind dash",
-      "removal_time": "20 Minutes",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
       "airbag_risk": false,
       "photos": []
     },
@@ -422,11 +193,11 @@
         "IMMO antenna"
       ],
       "related_dtc": [
-        "B1A25"
+        "B1600"
       ]
     },
     "parts": {
-      "key_shell": "Maserati SIP22",
+      "key_shell": "Jaguar HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -434,12 +205,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID46 / Hitag2 system."
+      "ID60 / 4D60 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi SIP22"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -461,150 +232,34 @@
     }
   },
   {
-    "record_id": "MASERATI-QUATTROPORTE-2013-2025-ID46",
-    "make": "Maserati",
-    "model": "Quattroporte",
-    "generation": "6th Gen",
-    "years": "2013-2025",
+    "record_id": "JAGUAR-XJ-2003-2009-ID60",
+    "make": "Jaguar",
+    "model": "XJ",
+    "generation": "X350",
+    "years": "2003-2009",
     "body": [
       "Saloon"
     ],
     "market": "UK",
     "vin_range": "",
-    "facelift": true,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "SIP22",
-      "emergency_blade": "SIP22",
-      "lishi": "SIP22 2-in-1",
-      "transponder": "ID46 / Hitag2",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Maserati Smart",
-      "generation": "Gen 2",
-      "module": "BCM",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "Maserati Diagnostic Software required for AKL.",
-        "Pin not required."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "BCM",
-      "location": "Behind glove box",
-      "removal_time": "20 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "BCM failure"
-      ],
-      "related_dtc": [
-        "B1A25"
-      ]
-    },
-    "parts": {
-      "key_shell": "Maserati SIP22",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID46 / Hitag2 system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi SIP22"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "MASERATI-GRANTURISMO-2007-2019-ID46",
-    "make": "Maserati",
-    "model": "GranTurismo",
-    "generation": "1st Gen",
-    "years": "2007-2019",
-    "body": [
-      "Coupe"
-    ],
-    "market": "UK",
-    "vin_range": "",
     "facelift": false,
     "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "SIP22",
-      "emergency_blade": "SIP22",
-      "lishi": "SIP22 2-in-1",
-      "transponder": "ID46 / Hitag2",
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID60 / 4D60",
       "frequency": "433MHz",
       "battery": "CR2032",
-      "buttons": 4,
+      "buttons": 3,
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Maserati Smart",
-      "generation": "Gen 2",
-      "module": "BCM",
-      "location": "Behind glove box",
+      "system": "Jaguar Immo",
+      "generation": "PATS",
+      "module": "IMMO",
+      "location": "Behind steering column",
       "security_delay": "None"
     },
     "programming": {
@@ -619,13 +274,12 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
+        "Smart Pro",
+        "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "Maserati Diagnostic Software required for AKL.",
-        "Pin not required."
+        "Pin code not required."
       ]
     },
     "obd": {
@@ -643,22 +297,22 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "BCM",
-      "location": "Behind glove box",
-      "removal_time": "20 Minutes",
+      "module": "IMMO",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "BCM failure"
+        "IMMO antenna"
       ],
       "related_dtc": [
-        "B1A25"
+        "B1600"
       ]
     },
     "parts": {
-      "key_shell": "Maserati SIP22",
+      "key_shell": "Jaguar HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -666,12 +320,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID46 / Hitag2 system."
+      "ID60 / 4D60 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi SIP22"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -693,139 +347,23 @@
     }
   },
   {
-    "record_id": "MASERATI-GRANCABRIO-2010-2019-ID46",
-    "make": "Maserati",
-    "model": "GranCabrio",
-    "generation": "1st Gen",
+    "record_id": "JAGUAR-XJ-2010-2019-ID46",
+    "make": "Jaguar",
+    "model": "XJ",
+    "generation": "X351",
     "years": "2010-2019",
     "body": [
-      "Convertible"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": false,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "SIP22",
-      "emergency_blade": "SIP22",
-      "lishi": "SIP22 2-in-1",
-      "transponder": "ID46 / Hitag2",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Maserati Smart",
-      "generation": "Gen 2",
-      "module": "BCM",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "Maserati Diagnostic Software required for AKL.",
-        "Pin not required."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "BCM",
-      "location": "Behind glove box",
-      "removal_time": "20 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "BCM failure"
-      ],
-      "related_dtc": [
-        "B1A25"
-      ]
-    },
-    "parts": {
-      "key_shell": "Maserati SIP22",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID46 / Hitag2 system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi SIP22"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "MASERATI-GHIBLI-2013-2024-ID46",
-    "make": "Maserati",
-    "model": "Ghibli",
-    "generation": "3rd Gen",
-    "years": "2013-2024",
-    "body": [
       "Saloon"
     ],
     "market": "UK",
     "vin_range": "",
-    "facelift": true,
+    "facelift": false,
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "SIP22",
-      "emergency_blade": "SIP22",
-      "lishi": "SIP22 2-in-1",
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
       "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
@@ -833,11 +371,11 @@
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Maserati Smart",
+      "system": "Jaguar Smart",
       "generation": "Gen 2",
-      "module": "BCM",
-      "location": "Behind glove box",
-      "security_delay": "None"
+      "module": "RFA",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -851,13 +389,13 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
+        "Smart Pro",
+        "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "Maserati Diagnostic Software required for AKL.",
-        "Pin not required."
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
       ]
     },
     "obd": {
@@ -875,22 +413,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "BCM",
-      "location": "Behind glove box",
+      "module": "RFA",
+      "location": "Boot RHS",
       "removal_time": "20 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "BCM failure"
+        "RFA water ingress"
       ],
       "related_dtc": [
-        "B1A25"
+        "B1A84",
+        "B1A85"
       ]
     },
     "parts": {
-      "key_shell": "Maserati SIP22",
+      "key_shell": "Jaguar HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -903,7 +442,7 @@
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi SIP22"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -925,129 +464,14 @@
     }
   },
   {
-    "record_id": "MASERATI-LEVANTE-2016-2025-ID46",
-    "make": "Maserati",
-    "model": "Levante",
+    "record_id": "JAGUAR-XF-2008-2015-ID46",
+    "make": "Jaguar",
+    "model": "XF",
     "generation": "1st Gen",
-    "years": "2016-2025",
+    "years": "2008-2015",
     "body": [
-      "SUV"
-    ],
-    "market": "UK",
-    "vin_range": "",
-    "facelift": true,
-    "key": {
-      "key_type": "Smart Key",
-      "smart_key": true,
-      "blade": "SIP22",
-      "emergency_blade": "SIP22",
-      "lishi": "SIP22 2-in-1",
-      "transponder": "ID46 / Hitag2",
-      "frequency": "433MHz",
-      "battery": "CR2032",
-      "buttons": 4,
-      "remote_part_numbers": []
-    },
-    "immobiliser": {
-      "system": "Maserati Smart",
-      "generation": "Gen 2",
-      "module": "BCM",
-      "location": "Behind glove box",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": false,
-      "internet_required": false,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
-      ],
-      "procedure_notes": [
-        "OBD supported.",
-        "Maserati Diagnostic Software required for AKL.",
-        "Pin not required."
-      ]
-    },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": true,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
-    },
-    "module_location": {
-      "module": "BCM",
-      "location": "Behind glove box",
-      "removal_time": "20 Minutes",
-      "airbag_risk": false,
-      "photos": []
-    },
-    "diagnostics": {
-      "common_faults": [
-        "BCM failure"
-      ],
-      "related_dtc": [
-        "B1A25"
-      ]
-    },
-    "parts": {
-      "key_shell": "Maserati SIP22",
-      "transponder_supplier": [
-        "Xhorse",
-        "OEM"
-      ],
-      "remote_options": []
-    },
-    "workshop_notes": [
-      "ID46 / Hitag2 system."
-    ],
-    "verification": {
-      "status": "Verified",
-      "blade": [
-        "Lishi SIP22"
-      ],
-      "transponder": [
-        "Autel IM608"
-      ],
-      "programming": [
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 0,
-      "overall": 86
-    }
-  },
-  {
-    "record_id": "MASERATI-GRECACE-2022-2025-ID46",
-    "make": "Maserati",
-    "model": "Grecale",
-    "generation": "1st Gen",
-    "years": "2022-2025",
-    "body": [
-      "SUV"
+      "Saloon",
+      "Sportbrake"
     ],
     "market": "UK",
     "vin_range": "",
@@ -1055,9 +479,9 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "SIP22",
-      "emergency_blade": "SIP22",
-      "lishi": "SIP22 2-in-1",
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
       "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
@@ -1065,11 +489,11 @@
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Maserati Smart",
+      "system": "Jaguar Smart",
       "generation": "Gen 2",
-      "module": "BCM",
-      "location": "Behind glove box",
-      "security_delay": "None"
+      "module": "RFA",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -1083,13 +507,13 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
+        "Smart Pro",
+        "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "Maserati Diagnostic Software required for AKL.",
-        "Pin not required."
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
       ]
     },
     "obd": {
@@ -1107,22 +531,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "BCM",
-      "location": "Behind glove box",
+      "module": "RFA",
+      "location": "Boot RHS",
       "removal_time": "20 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "BCM failure"
+        "RFA water ingress"
       ],
       "related_dtc": [
-        "B1A25"
+        "B1A84",
+        "B1A85"
       ]
     },
     "parts": {
-      "key_shell": "Maserati SIP22",
+      "key_shell": "Jaguar HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -1130,13 +555,12 @@
       "remote_options": []
     },
     "workshop_notes": [
-      "ID46 / Hitag2 system.",
-      "MHEV/Trofeo"
+      "ID46 / Hitag2 system."
     ],
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi SIP22"
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"
@@ -1158,11 +582,129 @@
     }
   },
   {
-    "record_id": "MASERATI-MC20-2020-2025-ID46",
-    "make": "Maserati",
-    "model": "MC20",
-    "generation": "1st Gen",
-    "years": "2020-2025",
+    "record_id": "JAGUAR-XF-2016-2024-ID46",
+    "make": "Jaguar",
+    "model": "XF",
+    "generation": "2nd Gen",
+    "years": "2016-2024",
+    "body": [
+      "Saloon",
+      "Sportbrake"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Jaguar Smart",
+      "generation": "Gen 2",
+      "module": "RFA",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jaguar HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JAGUAR-XK-2006-2014-ID46",
+    "make": "Jaguar",
+    "model": "XK",
+    "generation": "2nd Gen",
+    "years": "2006-2014",
     "body": [
       "Coupe",
       "Convertible"
@@ -1173,9 +715,9 @@
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
-      "blade": "SIP22",
-      "emergency_blade": "SIP22",
-      "lishi": "SIP22 2-in-1",
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
       "transponder": "ID46 / Hitag2",
       "frequency": "433MHz",
       "battery": "CR2032",
@@ -1183,11 +725,11 @@
       "remote_part_numbers": []
     },
     "immobiliser": {
-      "system": "Maserati Smart",
+      "system": "Jaguar Smart",
       "generation": "Gen 2",
-      "module": "BCM",
-      "location": "Behind glove box",
-      "security_delay": "None"
+      "module": "RFA",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
     },
     "programming": {
       "add_key": true,
@@ -1201,13 +743,13 @@
       "working_key_required": false,
       "supported_tools": [
         "Autel IM608 Pro",
-        "MVP Pro",
-        "Smart Pro"
+        "Smart Pro",
+        "VVDI Key Tool Plus"
       ],
       "procedure_notes": [
         "OBD supported.",
-        "Maserati Diagnostic Software required for AKL.",
-        "Pin not required."
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
       ]
     },
     "obd": {
@@ -1225,22 +767,23 @@
       "boot_pin": null
     },
     "module_location": {
-      "module": "BCM",
-      "location": "Behind glove box",
+      "module": "RFA",
+      "location": "Boot RHS",
       "removal_time": "20 Minutes",
       "airbag_risk": false,
       "photos": []
     },
     "diagnostics": {
       "common_faults": [
-        "BCM failure"
+        "RFA water ingress"
       ],
       "related_dtc": [
-        "B1A25"
+        "B1A84",
+        "B1A85"
       ]
     },
     "parts": {
-      "key_shell": "Maserati SIP22",
+      "key_shell": "Jaguar HU101",
       "transponder_supplier": [
         "Xhorse",
         "OEM"
@@ -1253,7 +796,594 @@
     "verification": {
       "status": "Verified",
       "blade": [
-        "Lishi SIP22"
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JAGUAR-FTYPE-2013-2024-ID46",
+    "make": "Jaguar",
+    "model": "F-Type",
+    "generation": "1st Gen",
+    "years": "2013-2024",
+    "body": [
+      "Coupe",
+      "Convertible"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Jaguar Smart",
+      "generation": "Gen 2",
+      "module": "RFA",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jaguar HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JAGUAR-FPACE-2016-2025-ID46",
+    "make": "Jaguar",
+    "model": "F-Pace",
+    "generation": "1st Gen",
+    "years": "2016-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Jaguar Smart",
+      "generation": "Gen 2",
+      "module": "RFA",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jaguar HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JAGUAR-EPACE-2017-2024-ID46",
+    "make": "Jaguar",
+    "model": "E-Pace",
+    "generation": "1st Gen",
+    "years": "2017-2024",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Jaguar Smart",
+      "generation": "Gen 2",
+      "module": "RFA",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jaguar HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JAGUAR-IPACE-2018-2025-ID46",
+    "make": "Jaguar",
+    "model": "I-Pace",
+    "generation": "1st Gen",
+    "years": "2018-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Jaguar Smart",
+      "generation": "Gen 2",
+      "module": "RFA",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jaguar HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system.",
+      "Electric"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JAGUAR-XE-2015-2024-ID46",
+    "make": "Jaguar",
+    "model": "XE",
+    "generation": "1st Gen",
+    "years": "2015-2024",
+    "body": [
+      "Saloon"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Jaguar Smart",
+      "generation": "Gen 2",
+      "module": "RFA",
+      "location": "Boot RHS",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Smart Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "SDD/Pathfinder for AKL.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Boot RHS",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA water ingress"
+      ],
+      "related_dtc": [
+        "B1A84",
+        "B1A85"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jaguar HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
       ],
       "transponder": [
         "Autel IM608"

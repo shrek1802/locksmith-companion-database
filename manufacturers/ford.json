@@ -1,1074 +1,5427 @@
 [
   {
-    "record_id": "FORD-FIESTA-RANGE-EXP",
+    "record_id": "FORD-FIESTA-1995-2002-ID33",
     "make": "Ford",
     "model": "Fiesta",
-    "variant": "Mk5/Mk6/Mk7/Mk8",
-    "generation": "Mk5/Mk6/Mk7/Mk8",
-    "years": "2002-2023",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Ford PATS/BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
-      "transponder": "ID63 / ID83 / ID49 by generation",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS/BCM",
-      "oem_key": "Ford OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "generation": "Mk4",
+    "years": "1995-2002",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "FO21",
+      "emergency_blade": null,
+      "lishi": "FO21 2-in-1",
+      "transponder": "ID33 / 4C",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU101",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU101 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID63 / ID83 / ID49 by generation",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / flip / proximity key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 2",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery Ford/Mazda",
-        "Original Lishi HU101/FO21/MAZ24",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Transpondery Ford/Mazda",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi HU101/FO21/MAZ24",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford FO21",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID33 / 4C system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "FORD-FOCUS-RANGE-EXP",
+    "record_id": "FORD-FIESTA-2002-2008-ID60",
+    "make": "Ford",
+    "model": "Fiesta",
+    "generation": "Mk5",
+    "years": "2002-2008",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 2",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-FIESTA-2008-2017-ID63",
+    "make": "Ford",
+    "model": "Fiesta",
+    "generation": "Mk6",
+    "years": "2008-2017",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-FIESTA-2017-2023-ID83",
+    "make": "Ford",
+    "model": "Fiesta",
+    "generation": "Mk7",
+    "years": "2017-2023",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-FOCUS-1998-2004-ID60",
     "make": "Ford",
     "model": "Focus",
-    "variant": "Mk1/Mk2/Mk3/Mk4",
-    "generation": "Mk1/Mk2/Mk3/Mk4",
-    "years": "1998-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Ford PATS/BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
-      "transponder": "4D60 / ID63 / ID83 / ID49 by generation",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / flip / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS/BCM",
-      "oem_key": "Ford OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "generation": "Mk1",
+    "years": "1998-2004",
+    "body": [
+      "Hatchback",
+      "Saloon",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "FO21",
+      "emergency_blade": null,
+      "lishi": "FO21 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU101",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU101 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "4D60 / ID63 / ID83 / ID49 by generation",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / flip / proximity key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 2",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery Ford/Mazda",
-        "Original Lishi HU101/FO21/MAZ24",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Transpondery Ford/Mazda",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi HU101/FO21/MAZ24",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford FO21",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "FORD-MONDEO-RANGE-EXP",
+    "record_id": "FORD-FOCUS-2004-2011-ID60",
+    "make": "Ford",
+    "model": "Focus",
+    "generation": "Mk2",
+    "years": "2004-2011",
+    "body": [
+      "Hatchback",
+      "Saloon",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-FOCUS-2011-2018-ID63",
+    "make": "Ford",
+    "model": "Focus",
+    "generation": "Mk3",
+    "years": "2011-2018",
+    "body": [
+      "Hatchback",
+      "Saloon",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-FOCUS-2018-2025-ID83",
+    "make": "Ford",
+    "model": "Focus",
+    "generation": "Mk4",
+    "years": "2018-2025",
+    "body": [
+      "Hatchback",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-MONDEO-2000-2007-ID60",
     "make": "Ford",
     "model": "Mondeo",
-    "variant": "Mk3/Mk4/Mk5",
-    "generation": "Mk3/Mk4/Mk5",
-    "years": "2000-2022",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Ford PATS/BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
-      "transponder": "4D60 / ID63 / ID49 by generation",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS/BCM",
-      "oem_key": "Ford OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "generation": "Mk3",
+    "years": "2000-2007",
+    "body": [
+      "Saloon",
+      "Hatchback",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "FO21",
+      "emergency_blade": null,
+      "lishi": "FO21 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU101",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU101 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "4D60 / ID63 / ID49 by generation",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / proximity key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 2",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery Ford/Mazda",
-        "Original Lishi HU101/FO21/MAZ24",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Transpondery Ford/Mazda",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi HU101/FO21/MAZ24",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford FO21",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "FORD-KUGA-RANGE-EXP",
+    "record_id": "FORD-MONDEO-2007-2014-ID63",
+    "make": "Ford",
+    "model": "Mondeo",
+    "generation": "Mk4",
+    "years": "2007-2014",
+    "body": [
+      "Saloon",
+      "Hatchback",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-MONDEO-2014-2022-ID83",
+    "make": "Ford",
+    "model": "Mondeo",
+    "generation": "Mk5",
+    "years": "2014-2022",
+    "body": [
+      "Saloon",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-KUGA-2008-2012-ID63",
     "make": "Ford",
     "model": "Kuga",
-    "variant": "Mk1/Mk2/Mk3",
-    "generation": "Mk1/Mk2/Mk3",
-    "years": "2008-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Ford PATS/BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
-      "transponder": "ID63 / ID83 / ID49 by generation",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford PATS/BCM",
-      "oem_key": "Ford OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "generation": "Mk1",
+    "years": "2008-2012",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU101",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU101 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID63 / ID83 / ID49 by generation",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / proximity key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery Ford/Mazda",
-        "Original Lishi HU101/FO21/MAZ24",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Transpondery Ford/Mazda",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi HU101/FO21/MAZ24",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "FORD-TRANSIT-RANGE-EXP",
+    "record_id": "FORD-KUGA-2012-2019-ID83",
     "make": "Ford",
-    "model": "Transit",
-    "variant": "Mk6/Mk7/Mk8/Mk9",
-    "generation": "Mk6/Mk7/Mk8/Mk9",
-    "years": "2000-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Ford commercial PATS/BCM",
-    "key_profile": {
-      "blade_profile": "FO21 / HU101 by generation",
-      "lishi_tool": "FO21 / HU101 tool family",
-      "transponder": "4D ID60/ID63 / ID83 / ID49 by generation",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford commercial PATS/BCM",
-      "oem_key": "Ford OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "model": "Kuga",
+    "generation": "Mk2",
+    "years": "2012-2019",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "FO21 / HU101 by generation",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "FO21 / HU101 tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "4D ID60/ID63 / ID83 / ID49 by generation",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use FO21 / HU101 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by FO21 / HU101 by generation",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery Ford/Mazda",
-        "Original Lishi HU101/FO21/MAZ24",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Transpondery Ford/Mazda",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi HU101/FO21/MAZ24",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "FORD-TRANSITCUSTOM-RANGE-EXP",
+    "record_id": "FORD-KUGA-2019-2025-ID83",
     "make": "Ford",
-    "model": "Transit Custom",
-    "variant": "Mk1/Mk2",
-    "generation": "Mk1/Mk2",
-    "years": "2012-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Ford commercial BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
-      "transponder": "ID83 / ID49 / latest Ford smart family",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford commercial BCM",
-      "oem_key": "Ford OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "model": "Kuga",
+    "generation": "Mk3",
+    "years": "2019-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU101",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU101 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID83 / ID49 / latest Ford smart family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery Ford/Mazda",
-        "Original Lishi HU101/FO21/MAZ24",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Transpondery Ford/Mazda",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi HU101/FO21/MAZ24",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system.",
+      "PHEV"
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "FORD-TRANSITCONNECT-RANGE-EXP",
+    "record_id": "FORD-PUMA-2019-2025-ID83",
     "make": "Ford",
-    "model": "Transit Connect",
-    "variant": "Mk1/Mk2/Mk3",
-    "generation": "Mk1/Mk2/Mk3",
-    "years": "2002-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Ford commercial BCM",
-    "key_profile": {
-      "blade_profile": "HU101 / HU162T shared platform - verify",
-      "lishi_tool": "HU101 / HU162T tool family",
-      "transponder": "ID63 / ID49 / VW-Ford shared family",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford commercial BCM",
-      "oem_key": "Ford OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "model": "Puma",
+    "generation": "Mk2",
+    "years": "2019-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU101 / HU162T shared platform - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU101 / HU162T tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID63 / ID49 / VW-Ford shared family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 / HU162T tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU101 / HU162T shared platform - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery Ford/Mazda",
-        "Original Lishi HU101/FO21/MAZ24",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Transpondery Ford/Mazda",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi HU101/FO21/MAZ24",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "FORD-RANGER-RANGE-EXP",
+    "record_id": "FORD-ECOSPORT-2013-2022-ID63",
+    "make": "Ford",
+    "model": "EcoSport",
+    "generation": "1st Gen",
+    "years": "2013-2022",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-EDGE-2016-2021-ID83",
+    "make": "Ford",
+    "model": "Edge",
+    "generation": "2nd Gen",
+    "years": "2016-2021",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-SMAX-2006-2015-ID63",
+    "make": "Ford",
+    "model": "S-Max",
+    "generation": "Mk1",
+    "years": "2006-2015",
+    "body": [
+      "MPV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-SMAX-2015-2023-ID83",
+    "make": "Ford",
+    "model": "S-Max",
+    "generation": "Mk2",
+    "years": "2015-2023",
+    "body": [
+      "MPV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-GALAXY-2006-2015-ID63",
+    "make": "Ford",
+    "model": "Galaxy",
+    "generation": "Mk2",
+    "years": "2006-2015",
+    "body": [
+      "MPV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-GALAXY-2015-2023-ID83",
+    "make": "Ford",
+    "model": "Galaxy",
+    "generation": "Mk3",
+    "years": "2015-2023",
+    "body": [
+      "MPV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-RANGER-1998-2006-ID60",
     "make": "Ford",
     "model": "Ranger",
-    "variant": "T6/Next Gen",
-    "generation": "T6/Next Gen",
-    "years": "2011-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Ford BCM",
-    "key_profile": {
-      "blade_profile": "HU101",
-      "lishi_tool": "HU101 2-in-1 Pick & Decoder",
-      "transponder": "ID63 / ID49 by generation",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / proximity key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Ford BCM",
-      "oem_key": "Ford OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Ford remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "generation": "2nd Gen",
+    "years": "1998-2006",
+    "body": [
+      "Pickup"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "FO21",
+      "emergency_blade": null,
+      "lishi": "FO21 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU101",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU101 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID63 / ID49 by generation",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / proximity key",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery Ford/Mazda",
-          "Original Lishi HU101/FO21/MAZ24",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU101 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by HU101",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 2",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery Ford/Mazda",
-        "Original Lishi HU101/FO21/MAZ24",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Transpondery Ford/Mazda",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi HU101/FO21/MAZ24",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford FO21",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-RANGER-2006-2011-ID60",
+    "make": "Ford",
+    "model": "Ranger",
+    "generation": "3rd Gen",
+    "years": "2006-2011",
+    "body": [
+      "Pickup"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-RANGER-2011-2022-ID63",
+    "make": "Ford",
+    "model": "Ranger",
+    "generation": "T6",
+    "years": "2011-2022",
+    "body": [
+      "Pickup"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-RANGER-2022-2025-ID83",
+    "make": "Ford",
+    "model": "Ranger",
+    "generation": "T6.2",
+    "years": "2022-2025",
+    "body": [
+      "Pickup"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-MUSTANG-2015-2023-ID83",
+    "make": "Ford",
+    "model": "Mustang",
+    "generation": "6th Gen",
+    "years": "2015-2023",
+    "body": [
+      "Coupe",
+      "Convertible"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-MUSTANG-2024-2025-ID83",
+    "make": "Ford",
+    "model": "Mustang",
+    "generation": "7th Gen",
+    "years": "2024-2025",
+    "body": [
+      "Coupe",
+      "Convertible"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-MUSTANG-MACHE-2020-2025-ID83",
+    "make": "Ford",
+    "model": "Mustang Mach-E",
+    "generation": "1st Gen",
+    "years": "2020-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system.",
+      "Electric"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-TRANSIT-2000-2006-ID60",
+    "make": "Ford",
+    "model": "Transit",
+    "generation": "Mk6",
+    "years": "2000-2006",
+    "body": [
+      "Van"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "FO21",
+      "emergency_blade": null,
+      "lishi": "FO21 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 2",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford FO21",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-TRANSIT-2006-2014-ID63",
+    "make": "Ford",
+    "model": "Transit",
+    "generation": "Mk7",
+    "years": "2006-2014",
+    "body": [
+      "Van"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-TRANSIT-2014-2025-ID83",
+    "make": "Ford",
+    "model": "Transit",
+    "generation": "Mk8",
+    "years": "2014-2025",
+    "body": [
+      "Van"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-TRANSIT-CUSTOM-2012-2023-ID83",
+    "make": "Ford",
+    "model": "Transit Custom",
+    "generation": "1st Gen",
+    "years": "2012-2023",
+    "body": [
+      "Van"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-TRANSIT-CUSTOM-2023-2025-ID83",
+    "make": "Ford",
+    "model": "Transit Custom",
+    "generation": "2nd Gen",
+    "years": "2023-2025",
+    "body": [
+      "Van"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-TRANSIT-CONNECT-2002-2013-ID60",
+    "make": "Ford",
+    "model": "Transit Connect",
+    "generation": "1st Gen",
+    "years": "2002-2013",
+    "body": [
+      "Van"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "FO21",
+      "emergency_blade": null,
+      "lishi": "FO21 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 2",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford FO21",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-TRANSIT-CONNECT-2013-2022-ID63",
+    "make": "Ford",
+    "model": "Transit Connect",
+    "generation": "2nd Gen",
+    "years": "2013-2022",
+    "body": [
+      "Van"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-TRANSIT-CONNECT-2022-2025-ID83",
+    "make": "Ford",
+    "model": "Transit Connect",
+    "generation": "3rd Gen",
+    "years": "2022-2025",
+    "body": [
+      "Van"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-CMAX-2003-2010-ID60",
+    "make": "Ford",
+    "model": "C-Max",
+    "generation": "Mk1",
+    "years": "2003-2010",
+    "body": [
+      "MPV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 2",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-CMAX-2010-2019-ID63",
+    "make": "Ford",
+    "model": "C-Max",
+    "generation": "Mk2",
+    "years": "2010-2019",
+    "body": [
+      "MPV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-KA-1996-2008-ID33",
+    "make": "Ford",
+    "model": "Ka",
+    "generation": "Mk1",
+    "years": "1996-2008",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "FO21",
+      "emergency_blade": null,
+      "lishi": "FO21 2-in-1",
+      "transponder": "ID33 / 4C",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 2",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford FO21",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID33 / 4C system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-KA-2008-2016-ID60",
+    "make": "Ford",
+    "model": "Ka",
+    "generation": "Mk2",
+    "years": "2008-2016",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-KA-2016-2020-ID63",
+    "make": "Ford",
+    "model": "Ka+",
+    "generation": "Mk3",
+    "years": "2016-2020",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-FOCUS-RS-2009-2011-ID63",
+    "make": "Ford",
+    "model": "Focus RS",
+    "generation": "Mk2",
+    "years": "2009-2011",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system.",
+      "RS"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-FOCUS-RS-2016-2018-ID83",
+    "make": "Ford",
+    "model": "Focus RS",
+    "generation": "Mk3",
+    "years": "2016-2018",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system.",
+      "RS"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-FIESTA-ST-2005-2008-ID60",
+    "make": "Ford",
+    "model": "Fiesta ST",
+    "generation": "Mk5",
+    "years": "2005-2008",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": null,
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID60 / 40bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "PATS",
+      "generation": "PATS 4",
+      "module": "PATS",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Incode/Outcode required.",
+        "2 keys minimum."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "PATS",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "PATS antenna"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID60 / 40bit system.",
+      "ST"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-FIESTA-ST-2013-2017-ID63",
+    "make": "Ford",
+    "model": "Fiesta ST",
+    "generation": "Mk6",
+    "years": "2013-2017",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID63 / 80bit system.",
+      "ST"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "FORD-FIESTA-ST-2018-2023-ID83",
+    "make": "Ford",
+    "model": "Fiesta ST",
+    "generation": "Mk7",
+    "years": "2018-2023",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID83 / 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Ford Smart",
+      "generation": "PATS 5",
+      "module": "RFA",
+      "location": "Behind glove box",
+      "security_delay": "10 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI Key Tool Plus",
+        "Smart Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "10 min delay AKL.",
+        "Incode/Outcode for older.",
+        "Battery support essential."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFA",
+      "location": "Behind glove box",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFA failure"
+      ],
+      "related_dtc": [
+        "B1600",
+        "B1601"
+      ]
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID83 / 80bit system.",
+      "ST"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi HU101"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   }
 ]

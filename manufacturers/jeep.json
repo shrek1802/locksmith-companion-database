@@ -1,344 +1,1622 @@
 [
   {
-    "record_id": "JEEP-RENEGADE",
+    "record_id": "JEEP-CHEROKEE-2001-2007-ID46",
+    "make": "Jeep",
+    "model": "Cherokee",
+    "generation": "KJ",
+    "years": "2001-2007",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "CY24",
+      "emergency_blade": null,
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Chrysler Immo",
+      "generation": "SKIM",
+      "module": "SKIM",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SKIM",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SKIM ring failure"
+      ],
+      "related_dtc": [
+        "B2100"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-CHEROKEE-2008-2013-ID46",
+    "make": "Jeep",
+    "model": "Cherokee",
+    "generation": "KK",
+    "years": "2008-2013",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "CY24",
+      "emergency_blade": null,
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Chrysler Immo",
+      "generation": "SKIM",
+      "module": "SKIM",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SKIM",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SKIM ring failure"
+      ],
+      "related_dtc": [
+        "B2100"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-CHEROKEE-2014-2023-ID46",
+    "make": "Jeep",
+    "model": "Cherokee",
+    "generation": "KL",
+    "years": "2014-2023",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "CY24",
+      "emergency_blade": "CY24",
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Jeep/FCA Smart",
+      "generation": "Gen 2",
+      "module": "RFH",
+      "location": "Behind dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 4 digit.",
+        "wiTECH for newer models."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFH",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFH failure"
+      ],
+      "related_dtc": [
+        "B1A25"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-GRANDCHEROKEE-1999-2004-ID46",
+    "make": "Jeep",
+    "model": "Grand Cherokee",
+    "generation": "WJ",
+    "years": "1999-2004",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "CY24",
+      "emergency_blade": null,
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Chrysler Immo",
+      "generation": "SKIM",
+      "module": "SKIM",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SKIM",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SKIM ring failure"
+      ],
+      "related_dtc": [
+        "B2100"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-GRANDCHEROKEE-2005-2010-ID46",
+    "make": "Jeep",
+    "model": "Grand Cherokee",
+    "generation": "WK",
+    "years": "2005-2010",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "CY24",
+      "emergency_blade": null,
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Chrysler Immo",
+      "generation": "SKIM",
+      "module": "SKIM",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SKIM",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SKIM ring failure"
+      ],
+      "related_dtc": [
+        "B2100"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-GRANDCHEROKEE-2011-2021-ID46",
+    "make": "Jeep",
+    "model": "Grand Cherokee",
+    "generation": "WK2",
+    "years": "2011-2021",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "CY24",
+      "emergency_blade": "CY24",
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Jeep/FCA Smart",
+      "generation": "Gen 2",
+      "module": "RFH",
+      "location": "Behind dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 4 digit.",
+        "wiTECH for newer models."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFH",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFH failure"
+      ],
+      "related_dtc": [
+        "B1A25"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-GRANDCHEROKEE-2022-2025-ID47",
+    "make": "Jeep",
+    "model": "Grand Cherokee",
+    "generation": "WL",
+    "years": "2022-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "CY24",
+      "emergency_blade": "CY24",
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Jeep/FCA Smart",
+      "generation": "Gen 2",
+      "module": "RFH",
+      "location": "Behind dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 4 digit.",
+        "wiTECH for newer models."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFH",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFH failure"
+      ],
+      "related_dtc": [
+        "B1A25"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-WRANGLER-2007-2018-ID46",
+    "make": "Jeep",
+    "model": "Wrangler",
+    "generation": "JK",
+    "years": "2007-2018",
+    "body": [
+      "SUV",
+      "Convertible"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "CY24",
+      "emergency_blade": null,
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Chrysler Immo",
+      "generation": "SKIM",
+      "module": "SKIM",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SKIM",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SKIM ring failure"
+      ],
+      "related_dtc": [
+        "B2100"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-WRANGLER-2018-2025-ID46",
+    "make": "Jeep",
+    "model": "Wrangler",
+    "generation": "JL",
+    "years": "2018-2025",
+    "body": [
+      "SUV",
+      "Convertible"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "CY24",
+      "emergency_blade": "CY24",
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Jeep/FCA Smart",
+      "generation": "Gen 2",
+      "module": "RFH",
+      "location": "Behind dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 4 digit.",
+        "wiTECH for newer models."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFH",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFH failure"
+      ],
+      "related_dtc": [
+        "B1A25"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system.",
+      "4xe hybrid option"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-RENEGADE-2014-2023-ID46",
     "make": "Jeep",
     "model": "Renegade",
-    "variant": "Renegade",
-    "generation": "Renegade",
-    "years": "2014-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "FCA/Stellantis",
-    "key_profile": {
-      "blade_profile": "SIP22 / emergency blade - verify",
-      "lishi_tool": "SIP22 / FCA tool family",
-      "transponder": "ID46 / FCA smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "FCA/Stellantis",
-      "oem_key": "Jeep OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Jeep remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Jeep remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+    "generation": "1st Gen",
+    "years": "2014-2023",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "CY24",
+      "emergency_blade": "CY24",
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "SIP22 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "SIP22 / FCA tool family",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID46 / FCA smart family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use SIP22 / FCA tool family where fitted",
-      "akl_blade_decode": "Decode/cut by SIP22 / emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "Jeep/FCA Smart",
+      "generation": "Gen 2",
+      "module": "RFH",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Transpondery misc catalogues",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 4 digit.",
+        "wiTECH for newer models."
+      ]
     },
-    "sources": [
-      {
-        "name": "Transpondery misc catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFH",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFH failure"
+      ],
+      "related_dtc": [
+        "B1A25"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system.",
+      "Fiat 500X platform"
     ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "JEEP-COMPASS",
+    "record_id": "JEEP-COMPASS-2007-2016-ID46",
     "make": "Jeep",
     "model": "Compass",
-    "variant": "Compass",
-    "generation": "Compass",
-    "years": "2007-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "FCA/Stellantis",
-    "key_profile": {
-      "blade_profile": "SIP22 / emergency blade - verify",
-      "lishi_tool": "SIP22 / FCA tool family",
-      "transponder": "ID46 / FCA smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "FCA/Stellantis",
-      "oem_key": "Jeep OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Jeep remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Jeep remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+    "generation": "1st Gen",
+    "years": "2007-2016",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "CY24",
+      "emergency_blade": null,
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "SIP22 / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "SIP22 / FCA tool family",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID46 / FCA smart family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use SIP22 / FCA tool family where fitted",
-      "akl_blade_decode": "Decode/cut by SIP22 / emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "Chrysler Immo",
+      "generation": "SKIM",
+      "module": "SKIM",
+      "location": "Steering column",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Transpondery misc catalogues",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Transpondery misc catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SKIM",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SKIM ring failure"
+      ],
+      "related_dtc": [
+        "B2100"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
     ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   },
   {
-    "record_id": "JEEP-CHEROKEE-RANGE",
+    "record_id": "JEEP-COMPASS-2017-2025-ID46",
     "make": "Jeep",
-    "model": "Cherokee / Grand Cherokee",
-    "variant": "main range",
-    "generation": "main range",
-    "years": "2005-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "FCA/Stellantis",
-    "key_profile": {
-      "blade_profile": "Jeep/FCA emergency blade - verify",
-      "lishi_tool": "FCA tool family - verify",
-      "transponder": "FCA smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "FCA/Stellantis",
-      "oem_key": "Jeep OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Jeep remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Jeep remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+    "model": "Compass",
+    "generation": "2nd Gen",
+    "years": "2017-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "CY24",
+      "emergency_blade": "CY24",
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 4,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "Jeep/FCA emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "FCA tool family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "FCA smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery misc catalogues",
-          "Supplier catalogues",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use FCA tool family - verify where fitted",
-      "akl_blade_decode": "Decode/cut by Jeep/FCA emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "Jeep/FCA Smart",
+      "generation": "Gen 2",
+      "module": "RFH",
+      "location": "Behind dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Transpondery misc catalogues",
-        "Supplier catalogues",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required 4 digit.",
+        "wiTECH for newer models."
+      ]
     },
-    "sources": [
-      {
-        "name": "Transpondery misc catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "RFH",
+      "location": "Behind dash",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "RFH failure"
+      ],
+      "related_dtc": [
+        "B1A25"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
     ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-PATRIOT-2007-2017-ID46",
+    "make": "Jeep",
+    "model": "Patriot",
+    "generation": "1st Gen",
+    "years": "2007-2017",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "CY24",
+      "emergency_blade": null,
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Chrysler Immo",
+      "generation": "SKIM",
+      "module": "SKIM",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SKIM",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SKIM ring failure"
+      ],
+      "related_dtc": [
+        "B2100"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "JEEP-COMMANDER-2006-2010-ID46",
+    "make": "Jeep",
+    "model": "Commander",
+    "generation": "1st Gen",
+    "years": "2006-2010",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "CY24",
+      "emergency_blade": null,
+      "lishi": "CY24 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Chrysler Immo",
+      "generation": "SKIM",
+      "module": "SKIM",
+      "location": "Steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro",
+        "VVDI Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "Pin code required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "SKIM",
+      "location": "Steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SKIM ring failure"
+      ],
+      "related_dtc": [
+        "B2100"
+      ]
+    },
+    "parts": {
+      "key_shell": "Jeep CY24",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi CY24"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   }
 ]

@@ -1,126 +1,796 @@
 [
   {
-    "record_id": "ISUZU-DMAX-RANGE",
+    "record_id": "ISUZU-DMAX-2012-2016-ID46",
     "make": "Isuzu",
     "model": "D-Max",
-    "variant": "D-Max",
-    "generation": "D-Max",
-    "years": "2012-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Isuzu immobiliser",
-    "key_profile": {
-      "blade_profile": "ISU / emergency blade - verify",
-      "lishi_tool": "Isuzu tool family - verify",
-      "transponder": "ID46 / smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Isuzu immobiliser",
-      "oem_key": "Isuzu OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Isuzu remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Isuzu remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+    "generation": "2nd Gen",
+    "years": "2012-2016",
+    "body": [
+      "Pickup"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "ISU1",
+      "emergency_blade": null,
+      "lishi": "ISU1 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "ISU / emergency blade - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "Isuzu tool family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID46 / smart key family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / smart key",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
-          "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use Isuzu tool family - verify where fitted",
-      "akl_blade_decode": "Decode/cut by ISU / emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+    "immobiliser": {
+      "system": "Isuzu Immo",
+      "generation": "Immo 2",
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
     },
-    "sources": [
-      {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna failure"
+      ],
+      "related_dtc": [
+        "B2799"
+      ]
+    },
+    "parts": {
+      "key_shell": "Isuzu ISU1",
+      "transponder_supplier": [
+        "Xhorse"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
     ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi ISU1"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "ISUZU-DMAX-2017-2020-ID46",
+    "make": "Isuzu",
+    "model": "D-Max",
+    "generation": "2nd Gen Facelift",
+    "years": "2017-2020",
+    "body": [
+      "Pickup"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "ISU1",
+      "emergency_blade": null,
+      "lishi": "ISU1 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Isuzu Immo",
+      "generation": "Immo 2",
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna failure"
+      ],
+      "related_dtc": [
+        "B2799"
+      ]
+    },
+    "parts": {
+      "key_shell": "Isuzu ISU1",
+      "transponder_supplier": [
+        "Xhorse"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi ISU1"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "ISUZU-DMAX-2020-2025-ID47",
+    "make": "Isuzu",
+    "model": "D-Max",
+    "generation": "3rd Gen",
+    "years": "2020-2025",
+    "body": [
+      "Pickup"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "ISU1",
+      "emergency_blade": null,
+      "lishi": "ISU1 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Isuzu Immo",
+      "generation": "Immo 2",
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna failure"
+      ],
+      "related_dtc": [
+        "B2799"
+      ]
+    },
+    "parts": {
+      "key_shell": "Isuzu ISU1",
+      "transponder_supplier": [
+        "Xhorse"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system.",
+      "1.9L RZ4E engine"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi ISU1"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "ISUZU-TROOPER-1998-2004-ID33",
+    "make": "Isuzu",
+    "model": "Trooper",
+    "generation": "2nd Gen",
+    "years": "1998-2004",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "ISU1",
+      "emergency_blade": null,
+      "lishi": "ISU1 2-in-1",
+      "transponder": "ID33 / Hitag1",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Isuzu Immo",
+      "generation": "Immo 2",
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna failure"
+      ],
+      "related_dtc": [
+        "B2799"
+      ]
+    },
+    "parts": {
+      "key_shell": "Isuzu ISU1",
+      "transponder_supplier": [
+        "Xhorse"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID33 / Hitag1 system.",
+      "3.0L/3.5L"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi ISU1"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "ISUZU-RODEO-2003-2012-ID46",
+    "make": "Isuzu",
+    "model": "Rodeo",
+    "generation": "2nd Gen",
+    "years": "2003-2012",
+    "body": [
+      "Pickup"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "ISU1",
+      "emergency_blade": null,
+      "lishi": "ISU1 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Isuzu Immo",
+      "generation": "Immo 2",
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna failure"
+      ],
+      "related_dtc": [
+        "B2799"
+      ]
+    },
+    "parts": {
+      "key_shell": "Isuzu ISU1",
+      "transponder_supplier": [
+        "Xhorse"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi ISU1"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "ISUZU-NPR-2007-2015-ID46",
+    "make": "Isuzu",
+    "model": "NPR",
+    "generation": "5th Gen",
+    "years": "2007-2015",
+    "body": [
+      "Truck"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "ISU1",
+      "emergency_blade": null,
+      "lishi": "ISU1 2-in-1",
+      "transponder": "ID46 / Hitag2",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Isuzu Immo",
+      "generation": "Immo 2",
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna failure"
+      ],
+      "related_dtc": [
+        "B2799"
+      ]
+    },
+    "parts": {
+      "key_shell": "Isuzu ISU1",
+      "transponder_supplier": [
+        "Xhorse"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID46 / Hitag2 system.",
+      "3.0L 4JJ1"
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi ISU1"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
+  },
+  {
+    "record_id": "ISUZU-NPR-2016-2025-ID47",
+    "make": "Isuzu",
+    "model": "NPR",
+    "generation": "6th Gen",
+    "years": "2016-2025",
+    "body": [
+      "Truck"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "ISU1",
+      "emergency_blade": null,
+      "lishi": "ISU1 2-in-1",
+      "transponder": "ID47 / Hitag AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": []
+    },
+    "immobiliser": {
+      "system": "Isuzu Immo",
+      "generation": "Immo 2",
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "MVP Pro"
+      ],
+      "procedure_notes": [
+        "OBD supported.",
+        "No pin required."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "IMMO ECU",
+      "location": "Behind steering column",
+      "removal_time": "15 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "diagnostics": {
+      "common_faults": [
+        "IMMO antenna failure"
+      ],
+      "related_dtc": [
+        "B2799"
+      ]
+    },
+    "parts": {
+      "key_shell": "Isuzu ISU1",
+      "transponder_supplier": [
+        "Xhorse"
+      ],
+      "remote_options": []
+    },
+    "workshop_notes": [
+      "ID47 / Hitag AES system."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Lishi ISU1"
+      ],
+      "transponder": [
+        "Autel IM608"
+      ],
+      "programming": [
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 0,
+      "overall": 86
+    }
   }
 ]

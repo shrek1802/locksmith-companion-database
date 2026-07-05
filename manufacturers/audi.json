@@ -1,48 +1,540 @@
-{
-  "manufacturer": "audi",
-  "records": 6,
-  "models": [
-    {
-      "model": "A3",
-      "year_start": 2012,
-      "year_end": 2025,
-      "tool": "HU66",
-      "notes": "Gen2"
+[
+  {
+    "record_id": "AUDI-A3-8L-1996-2003-ID48",
+    "make": "Audi",
+    "model": "A3",
+    "generation": "8L",
+    "years": "1996-2003",
+    "body": [
+      "3 Door",
+      "5 Door"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU66",
+      "emergency_blade": null,
+      "lishi": "HU66 2-in-1",
+      "transponder": "ID48 / Megamos",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 2,
+      "remote_part_numbers": [
+        "4D0837231"
+      ]
     },
-    {
-      "model": "A4",
-      "year_start": 2016,
-      "year_end": 2025,
-      "tool": "HU66",
-      "notes": "Gen2"
+    "immobiliser": {
+      "system": "Immobiliser",
+      "generation": "Immo 2",
+      "module": "Instrument Cluster",
+      "location": "Behind steering wheel",
+      "security_delay": "None"
     },
-    {
-      "model": "Q5",
-      "year_start": 2017,
-      "year_end": 2025,
-      "tool": "HU66",
-      "notes": ""
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM508",
+        "VCDS",
+        "VVDI2",
+        "AVDI"
+      ],
+      "procedure_notes": [
+        "Pin code via dump or OBD.",
+        "Login with VCDS.",
+        "Adapt key in channel 21."
+      ]
     },
-    {
-      "model": "A6",
-      "year_start": 2018,
-      "year_end": 2025,
-      "tool": "HU66",
-      "notes": ""
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
     },
-    {
-      "model": "Q7",
-      "year_start": 2015,
-      "year_end": 2025,
-      "tool": "HU66",
-      "notes": ""
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
     },
-    {
-      "model": "TT",
-      "year_start": 2014,
-      "year_end": 2023,
-      "tool": "HU66",
-      "notes": ""
+    "module_location": {
+      "module": "Instrument Cluster",
+      "location": "Behind steering wheel",
+      "removal_time": "20 Minutes",
+      "airbag_risk": true,
+      "photos": [
+        "audi_a3_8l_cluster_01.jpg"
+      ]
+    },
+    "diagnostics": {
+      "common_faults": [
+        "Cluster pixel failure",
+        "Immo coil failure"
+      ],
+      "related_dtc": [
+        "01176",
+        "01179"
+      ]
+    },
+    "parts": {
+      "key_shell": "Audi HU66",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XEAU01EN",
+        "OEM 4D0837231"
+      ]
+    },
+    "workshop_notes": [
+      "Pin code 4 digits.",
+      "VCDS login required.",
+      "Disconnect battery before cluster removal."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Silca HU66"
+      ],
+      "transponder": [
+        "VVDI2",
+        "VCDS"
+      ],
+      "programming": [
+        "VCDS tested",
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
     }
-  ]
-}
+  },
+  {
+    "record_id": "AUDI-A3-8P-2003-2012-ID48",
+    "make": "Audi",
+    "model": "A3",
+    "generation": "8P",
+    "years": "2003-2012",
+    "body": [
+      "3 Door",
+      "5 Door",
+      "Sportback",
+      "Cabriolet"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Flip Remote",
+      "smart_key": false,
+      "blade": "HU66",
+      "emergency_blade": null,
+      "lishi": "HU66 2-in-1",
+      "transponder": "ID48 / Megamos",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "8P0837231",
+        "8P0959753"
+      ]
+    },
+    "immobiliser": {
+      "system": "Immobiliser",
+      "generation": "Immo 3",
+      "module": "Instrument Cluster",
+      "location": "Behind steering wheel",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608",
+        "VVDI2",
+        "AVDI",
+        "VCDS"
+      ],
+      "procedure_notes": [
+        "Pin code 5 digits.",
+        "Login with VCDS.",
+        "Adapt key in instruments."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "Instrument Cluster",
+      "location": "Behind steering wheel",
+      "removal_time": "20 Minutes",
+      "airbag_risk": true,
+      "photos": [
+        "audi_a3_8p_cluster_01.jpg"
+      ]
+    },
+    "diagnostics": {
+      "common_faults": [
+        "Cluster failure",
+        "Key not in range"
+      ],
+      "related_dtc": [
+        "01176",
+        "001376"
+      ]
+    },
+    "parts": {
+      "key_shell": "Audi HU66 Flip",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XEAU01EN",
+        "OEM 8P0837231"
+      ]
+    },
+    "workshop_notes": [
+      "Pin code 5 digits.",
+      "Use VCDS for programming.",
+      "Disconnect battery before cluster work."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Lishi HU66"
+      ],
+      "transponder": [
+        "VVDI2",
+        "VCDS"
+      ],
+      "programming": [
+        "VVDI2 tested",
+        "Autel IM608 tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
+    }
+  },
+  {
+    "record_id": "AUDI-A3-8V-2012-2020-MQB",
+    "make": "Audi",
+    "model": "A3",
+    "generation": "8V",
+    "years": "2012-2020",
+    "body": [
+      "3 Door",
+      "5 Door",
+      "Saloon",
+      "Cabriolet"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Flip Remote",
+      "smart_key": false,
+      "blade": "HU66",
+      "emergency_blade": null,
+      "lishi": "HU66 2-in-1",
+      "transponder": "ID48 / Megamos AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "8V0959752B",
+        "8V0837205"
+      ]
+    },
+    "immobiliser": {
+      "system": "MQB",
+      "generation": "MQB",
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "security_delay": "5 Minutes"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": true,
+      "internet_required": true,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI2",
+        "AVDI",
+        "Xhorse Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "MQB system - need CS and PIN.",
+        "Online calculation required for AKL.",
+        "Battery support mandatory.",
+        "5 min security access."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind fuse box, driver side",
+      "removal_time": "25 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "audi_a3_8v_bcm_01.jpg"
+      ]
+    },
+    "diagnostics": {
+      "common_faults": [
+        "MQB sync failure",
+        "Component protection active"
+      ],
+      "related_dtc": [
+        "B200000",
+        "U101400"
+      ]
+    },
+    "parts": {
+      "key_shell": "Audi HU66 Flip",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XEMQB1EN",
+        "OEM 8V0959752B"
+      ]
+    },
+    "workshop_notes": [
+      "MQB requires online tokens for AKL.",
+      "CS can be read via OBD on some tools.",
+      "If component protection, need ODIS."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Lishi HU66"
+      ],
+      "transponder": [
+        "VVDI2",
+        "Autel IM608 Pro"
+      ],
+      "programming": [
+        "VVDI2 tested",
+        "Autel IM608 Pro tested",
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
+    }
+  },
+  {
+    "record_id": "AUDI-A4-B8-2007-2015-ID48",
+    "make": "Audi",
+    "model": "A4",
+    "generation": "B8",
+    "years": "2007-2015",
+    "body": [
+      "Saloon",
+      "Avant",
+      "Allroad"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Flip Remote",
+      "smart_key": false,
+      "blade": "HU66",
+      "emergency_blade": null,
+      "lishi": "HU66 2-in-1",
+      "transponder": "ID48 / Megamos",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "8K0959753",
+        "8K0837231"
+      ]
+    },
+    "immobiliser": {
+      "system": "Immobiliser",
+      "generation": "Immo 4",
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608",
+        "VVDI2",
+        "AVDI",
+        "VCDS"
+      ],
+      "procedure_notes": [
+        "Pin code required.",
+        "Login with VCDS.",
+        "Component protection possible."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind fuse box, driver side",
+      "removal_time": "25 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "audi_a4_b8_bcm_01.jpg"
+      ]
+    },
+    "diagnostics": {
+      "common_faults": [
+        "BCM failure",
+        "Component protection"
+      ],
+      "related_dtc": [
+        "B200000",
+        "U101400"
+      ]
+    },
+    "parts": {
+      "key_shell": "Audi HU66 Flip",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XEAU01EN",
+        "OEM 8K0959753"
+      ]
+    },
+    "workshop_notes": [
+      "Pin code 5 digits.",
+      "Component protection = dealer.",
+      "Use VCDS for diagnostics."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Lishi HU66"
+      ],
+      "transponder": [
+        "VVDI2",
+        "VCDS"
+      ],
+      "programming": [
+        "VVDI2 tested",
+        "Autel IM608 tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
+    }
+  }
+]
