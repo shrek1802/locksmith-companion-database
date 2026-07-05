@@ -1,446 +1,262 @@
 [
   {
+    "record_id": "KIA-HATCH-RANGE",
     "make": "Kia",
-    "model": "Picanto",
-    "variant": "TA/JA",
+    "model": "Picanto/Rio/Ceed",
+    "variant": "Main hatch range",
+    "generation": "Main hatch range",
     "years": "2011-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Kia immobiliser / BCM",
     "key_profile": {
       "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
+      "lishi_tool": "HY22 Hyundai/Kia tool family",
+      "transponder": "ID46 / Hyundai-Kia family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_001"
-  },
-  {
-    "make": "Kia",
-    "model": "Rio",
-    "variant": "UB/YB",
-    "years": "2011-2023",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_002"
-  },
-  {
-    "make": "Kia",
-    "model": "Ceed",
-    "variant": "ED/JD",
-    "years": "2006-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_003"
-  },
-  {
-    "make": "Kia",
-    "model": "Ceed",
-    "variant": "CD",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
-      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Kia immobiliser / BCM",
+      "oem_key": "Kia OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HY22 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HY22 Hyundai/Kia tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / Hyundai-Kia family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Hyundai/Kia",
+        "Hyundai/Kia supplier catalogues",
+        "Original Lishi HY family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Hyundai/Kia",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Hyundai/Kia supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HY family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_004"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "KIA-SUV-RANGE",
     "make": "Kia",
-    "model": "Venga",
-    "variant": "Venga",
-    "years": "2009-2019",
+    "model": "Sportage/Sorento/Niro",
+    "variant": "SUV range",
+    "generation": "SUV range",
+    "years": "2010-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Kia immobiliser / BCM",
     "key_profile": {
       "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
+      "lishi_tool": "HY22 Hyundai/Kia tool family",
+      "transponder": "Kia smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_005"
-  },
-  {
-    "make": "Kia",
-    "model": "Soul",
-    "variant": "Soul",
-    "years": "2008-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
       "smart_keyless": "Yes",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "immobiliser_family": "Kia immobiliser / BCM",
+      "oem_key": "Kia OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Kia remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Kia remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HY22 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HY22 Hyundai/Kia tool family",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Kia smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Hyundai/Kia",
+          "Hyundai/Kia supplier catalogues",
+          "Original Lishi HY family"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
+      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
       "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Transpondery Hyundai/Kia",
+        "Hyundai/Kia supplier catalogues",
+        "Original Lishi HY family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Hyundai/Kia",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Hyundai/Kia supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HY family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_006"
-  },
-  {
-    "make": "Kia",
-    "model": "Niro",
-    "variant": "Niro",
-    "years": "2016-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_007"
-  },
-  {
-    "make": "Kia",
-    "model": "Sportage",
-    "variant": "SL/QL",
-    "years": "2010-2021",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_008"
-  },
-  {
-    "make": "Kia",
-    "model": "Sportage",
-    "variant": "NQ5",
-    "years": "2021-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_009"
-  },
-  {
-    "make": "Kia",
-    "model": "Sorento",
-    "variant": "XM/UM/MQ4",
-    "years": "2009-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_010"
-  },
-  {
-    "make": "Kia",
-    "model": "Stonic",
-    "variant": "Stonic",
-    "years": "2017-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_011"
-  },
-  {
-    "make": "Kia",
-    "model": "EV6",
-    "variant": "EV6",
-    "years": "2021-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Hyundai/Kia immobiliser",
-    "key_profile": {
-      "blade_profile": "HY22 / emergency blade - verify",
-      "lishi_tool": "HY22",
-      "transponder": "ID46 / Hyundai-Kia smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Hyundai/Kia immobiliser",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HY22 where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "kia_key_lishi_012"
+    "last_updated": "2026-07-05"
   }
 ]

@@ -1,816 +1,2212 @@
 [
   {
-    "make": "Nissan",
-    "model": "Micra",
-    "variant": "K11",
-    "years": "1992-2002",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
-    "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID33/ID46 depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_001"
-  },
-  {
+    "record_id": "NISSAN-MICRA-K12",
     "make": "Nissan",
     "model": "Micra",
     "variant": "K12",
+    "generation": "K12",
     "years": "2002-2010",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID46 / PCF family - verify",
+      "blade_profile": "NSN11 / NSN14 family - verify",
+      "lishi_tool": "NSN11 / NSN14 Nissan tool family",
+      "transponder": "ID46 / PCF family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN11 / NSN14 family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN11 / NSN14 Nissan tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN11 / NSN14 Nissan tool family where fitted",
+      "akl_blade_decode": "Decode/cut by NSN11 / NSN14 family - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_002"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-MICRA-K13",
     "make": "Nissan",
     "model": "Micra",
     "variant": "K13",
+    "generation": "K13",
     "years": "2010-2017",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID46 / smart key family - verify",
+      "blade_profile": "NSN14",
+      "lishi_tool": "NSN14 2-in-1 Pick & Decoder",
+      "transponder": "ID46 / smart key family",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / smart key family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_003"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-MICRA-K14",
     "make": "Nissan",
     "model": "Micra",
     "variant": "K14",
+    "generation": "K14",
     "years": "2017-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID46 / AES smart key family - verify",
+      "blade_profile": "NSN14 / emergency blade - verify",
+      "lishi_tool": "NSN14 Nissan tool family",
+      "transponder": "AES smart key family - verify",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 Nissan tool family",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "AES smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "lockout": "Use NSN14 Nissan tool family where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_004"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-NOTE-E11",
     "make": "Nissan",
     "model": "Note",
     "variant": "E11",
+    "generation": "E11",
     "years": "2004-2013",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID46 / PCF family - verify",
+      "blade_profile": "NSN14",
+      "lishi_tool": "NSN14 2-in-1 Pick & Decoder",
+      "transponder": "ID46 / PCF family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_005"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-NOTE-E12",
     "make": "Nissan",
     "model": "Note",
     "variant": "E12",
+    "generation": "E12",
     "years": "2013-2017",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID46 / smart key family - verify",
+      "blade_profile": "NSN14",
+      "lishi_tool": "NSN14 2-in-1 Pick & Decoder",
+      "transponder": "ID46 / smart key family",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / smart key family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_006"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-JUKE-F15",
     "make": "Nissan",
     "model": "Juke",
     "variant": "F15",
+    "generation": "F15",
     "years": "2010-2019",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID46 / smart key family - verify",
+      "blade_profile": "NSN14",
+      "lishi_tool": "NSN14 2-in-1 Pick & Decoder",
+      "transponder": "ID46 / smart key family",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / smart key family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_007"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-JUKE-F16",
     "make": "Nissan",
     "model": "Juke",
     "variant": "F16",
+    "generation": "F16",
     "years": "2019-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
+      "blade_profile": "NSN14 / emergency blade - verify",
+      "lishi_tool": "NSN14 Nissan tool family",
       "transponder": "AES smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 Nissan tool family",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "AES smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "lockout": "Use NSN14 Nissan tool family where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_008"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-QASHQAI-J10",
     "make": "Nissan",
     "model": "Qashqai",
     "variant": "J10",
+    "generation": "J10",
     "years": "2006-2013",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID46 / smart key family - verify",
+      "blade_profile": "NSN14",
+      "lishi_tool": "NSN14 2-in-1 Pick & Decoder",
+      "transponder": "ID46 / smart key family",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / smart key family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_009"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-QASHQAI-J11",
     "make": "Nissan",
     "model": "Qashqai",
     "variant": "J11",
+    "generation": "J11",
     "years": "2013-2021",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
+      "blade_profile": "NSN14 / emergency blade - verify",
+      "lishi_tool": "NSN14 Nissan tool family",
       "transponder": "ID46 / AES smart key family - verify",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 Nissan tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / AES smart key family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 Nissan tool family where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_010"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-QASHQAI-J12",
     "make": "Nissan",
     "model": "Qashqai",
     "variant": "J12",
+    "generation": "J12",
     "years": "2021-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
+      "blade_profile": "NSN14 / emergency blade - verify",
+      "lishi_tool": "NSN14 Nissan tool family",
       "transponder": "AES smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 Nissan tool family",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "AES smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "lockout": "Use NSN14 Nissan tool family where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_011"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "Nissan",
-    "model": "X-Trail",
-    "variant": "T30",
-    "years": "2001-2007",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
-    "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID46 family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_012"
-  },
-  {
+    "record_id": "NISSAN-XTRAIL-T31",
     "make": "Nissan",
     "model": "X-Trail",
     "variant": "T31",
+    "generation": "T31",
     "years": "2007-2013",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID46 / smart key family - verify",
+      "blade_profile": "NSN14",
+      "lishi_tool": "NSN14 2-in-1 Pick & Decoder",
+      "transponder": "ID46 / smart key family",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / smart key family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_013"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-XTRAIL-T32",
     "make": "Nissan",
     "model": "X-Trail",
     "variant": "T32",
+    "generation": "T32",
     "years": "2013-2022",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
+      "blade_profile": "NSN14 / emergency blade - verify",
+      "lishi_tool": "NSN14 Nissan tool family",
       "transponder": "ID46 / AES smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 Nissan tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / AES smart key family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 Nissan tool family where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_014"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "Nissan",
-    "model": "X-Trail",
-    "variant": "T33",
-    "years": "2022-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
-    "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "AES smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_015"
-  },
-  {
+    "record_id": "NISSAN-LEAF-ZE0",
     "make": "Nissan",
     "model": "Leaf",
     "variant": "ZE0",
+    "generation": "ZE0",
     "years": "2010-2017",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
+      "blade_profile": "NSN14 / emergency blade - verify",
+      "lishi_tool": "NSN14 Nissan tool family",
       "transponder": "EV smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
       "smart_keyless": "Yes",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 Nissan tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "EV smart key family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 Nissan tool family where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_016"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "Nissan",
-    "model": "Leaf",
-    "variant": "ZE1",
-    "years": "2017-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
-    "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "EV smart key AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_017"
-  },
-  {
+    "record_id": "NISSAN-NAVARA-D40",
     "make": "Nissan",
     "model": "Navara",
     "variant": "D40",
+    "generation": "D40",
     "years": "2005-2015",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
-      "transponder": "ID46 family - verify",
+      "blade_profile": "NSN14",
+      "lishi_tool": "NSN14 2-in-1 Pick & Decoder",
+      "transponder": "ID46 family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_018"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-NAVARA-D23",
     "make": "Nissan",
     "model": "Navara",
-    "variant": "NP300 D23",
+    "variant": "D23 NP300",
+    "generation": "D23 NP300",
     "years": "2015-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan NATS / BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "NSN14 / NSN11 family - verify",
-      "lishi_tool": "NSN14 / NSN11",
+      "blade_profile": "NSN14 / emergency blade - verify",
+      "lishi_tool": "NSN14 Nissan tool family",
       "transponder": "ID46 / smart key family - verify",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Nissan NATS / BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use NSN14 / NSN11 where fitted",
-      "akl_blade_decode": "Decode/cut by NSN14 / NSN11 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NSN14 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "NSN14 Nissan tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / smart key family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use NSN14 Nissan tool family where fitted",
+      "akl_blade_decode": "Decode/cut by NSN14 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_019"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "NISSAN-NV200",
     "make": "Nissan",
     "model": "NV200",
     "variant": "NV200",
+    "generation": "NV200",
     "years": "2009-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Nissan / Renault BCM",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Nissan immobiliser / BCM",
     "key_profile": {
       "blade_profile": "VA2 / NSN14 depending lockset - verify",
-      "lishi_tool": "VA2 / NSN14",
+      "lishi_tool": "VA2 / NSN14 tool family",
       "transponder": "ID46 family - verify",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote key",
       "smart_keyless": "No / remote only",
-      "immobiliser_family": "Nissan / Renault BCM",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Nissan immobiliser / BCM",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / NSN14 depending lockset - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 / NSN14 tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
+    },
     "locksmith_use": {
-      "lockout": "Use VA2 / NSN14 where fitted",
+      "lockout": "Use VA2 / NSN14 tool family where fitted",
       "akl_blade_decode": "Decode/cut by VA2 / NSN14 depending lockset - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_020"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "Nissan",
-    "model": "NV300",
-    "variant": "NV300",
-    "years": "2016-2021",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Renault shared",
-    "key_profile": {
-      "blade_profile": "VA2 / VAC102 family - verify",
-      "lishi_tool": "VA2 / VAC102",
-      "transponder": "ID46 / AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Renault shared",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VAC102 where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / VAC102 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_021"
-  },
-  {
+    "record_id": "NISSAN-PRIMASTAR",
     "make": "Nissan",
     "model": "Primastar",
     "variant": "Primastar",
+    "generation": "Primastar",
     "years": "2001-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
+    "database_layer": "layer_1_v5_key_lishi_profile",
     "platform": "Renault shared",
     "key_profile": {
-      "blade_profile": "VA2 / VAC102 family - verify",
-      "lishi_tool": "VA2 / VAC102",
+      "blade_profile": "VA2 / VAC102 Renault shared - verify",
+      "lishi_tool": "VA2 / VAC102 Renault tool family",
       "transponder": "ID46 / AES family - verify",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote key",
-      "smart_keyless": "Yes / No depending spec",
+      "smart_keyless": "No / optional",
       "immobiliser_family": "Renault shared",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "oem_key": "Nissan OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Nissan remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use VA2 / VAC102 where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / VAC102 family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / VAC102 Renault shared - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 / VAC102 Renault tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / AES family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Nissan",
+          "Nissan supplier catalogues",
+          "Original Lishi NSN family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use VA2 / VAC102 Renault tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / VAC102 Renault shared - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Nissan",
+        "Nissan supplier catalogues",
+        "Original Lishi NSN family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Nissan",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Nissan supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi NSN family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "nissan_key_lishi_022"
+    "last_updated": "2026-07-05"
   }
 ]

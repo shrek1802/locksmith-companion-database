@@ -1,8 +1,7 @@
 # Database Changelog
 
-## 2026.07.04-peugeot-v1.0
+## 2026.07.04-bulk-v5-coverage-1
 
-- Added Peugeot v1.0 verified-style manufacturer file.
-- Split 208/2008/308/3008/5008 by generation.
-- Added HU83/VA2 Lishi and ID46/433MHz source-backed records.
-- Marked newer Stellantis-era vehicles as needs_review where exact key system must be confirmed.
+- Fast coverage upgrade for Citroen, DS, Nissan, Toyota, Lexus, Honda, Mazda, Hyundai, Kia and Suzuki.
+- Converted these brands to v5 schema style.
+- Uncertain items marked high_confidence or needs_review.

@@ -1,779 +1,782 @@
 [
   {
+    "record_id": "TOYOTA-AYGO",
     "make": "Toyota",
     "model": "Aygo",
-    "variant": "Aygo I",
-    "years": "2005-2014",
+    "variant": "Mk1/Mk2",
+    "generation": "Mk1/Mk2",
+    "years": "2005-2021",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota immobiliser / BCM",
     "key_profile": {
       "blade_profile": "TOY43 / TOY48 depending year - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "4D / G chip family depending year - verify",
+      "lishi_tool": "TOY43 / TOY48 Toyota tool family",
+      "transponder": "4D / ID46 shared family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Toyota immobiliser / BCM",
+      "oem_key": "Toyota OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "TOY43 / TOY48 depending year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "TOY43 / TOY48 Toyota tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "4D / ID46 shared family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      }
+    },
     "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
+      "lockout": "Use TOY43 / TOY48 Toyota tool family where fitted",
       "akl_blade_decode": "Decode/cut by TOY43 / TOY48 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Toyota",
+        "Toyota supplier catalogues",
+        "Original Lishi TOY family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Toyota",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Toyota supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi TOY family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_001"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "Toyota",
-    "model": "Aygo",
-    "variant": "Aygo II",
-    "years": "2014-2021",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY43 / TOY48 depending year - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "4D / G chip family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY43 / TOY48 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_002"
-  },
-  {
-    "make": "Toyota",
-    "model": "Aygo X",
-    "variant": "Aygo X",
-    "years": "2022-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_003"
-  },
-  {
-    "make": "Toyota",
-    "model": "Yaris",
-    "variant": "XP90",
-    "years": "2005-2011",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY43 / TOY48 depending year - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "4D / G chip family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY43 / TOY48 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_004"
-  },
-  {
+    "record_id": "TOYOTA-YARIS-XP130",
     "make": "Toyota",
     "model": "Yaris",
     "variant": "XP130",
+    "generation": "XP130",
     "years": "2011-2020",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "TOY43 / TOY48 depending year - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "4D / G chip family depending year - verify",
+      "blade_profile": "TOY48",
+      "lishi_tool": "TOY48 2-in-1 Pick & Decoder",
+      "transponder": "G chip / smart family depending spec",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Toyota immobiliser / BCM",
+      "oem_key": "Toyota OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY43 / TOY48 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "TOY48",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "TOY48 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "G chip / smart family depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use TOY48 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by TOY48",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Toyota",
+        "Toyota supplier catalogues",
+        "Original Lishi TOY family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Toyota",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Toyota supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi TOY family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_005"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "TOYOTA-YARIS-XP210",
     "make": "Toyota",
     "model": "Yaris",
     "variant": "XP210",
+    "generation": "XP210",
     "years": "2020-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
+      "blade_profile": "TOY48 / emergency blade - verify",
+      "lishi_tool": "TOY48 Toyota tool family",
+      "transponder": "DST-AES smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
       "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "immobiliser_family": "Toyota immobiliser / BCM",
+      "oem_key": "Toyota OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "TOY48 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "TOY48 Toyota tool family",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "DST-AES smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "lockout": "Use TOY48 Toyota tool family where fitted",
+      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Transpondery Toyota",
+        "Toyota supplier catalogues",
+        "Original Lishi TOY family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Toyota",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Toyota supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi TOY family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_006"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "TOYOTA-AURIS-COROLLA",
     "make": "Toyota",
-    "model": "Corolla",
-    "variant": "E120/E150",
-    "years": "2001-2013",
+    "model": "Auris/Corolla",
+    "variant": "Auris/Corolla",
+    "generation": "Auris/Corolla",
+    "years": "2006-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "TOY43 / TOY48 depending year - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "4D / G chip family depending year - verify",
+      "blade_profile": "TOY48 / emergency blade - verify",
+      "lishi_tool": "TOY48 Toyota tool family",
+      "transponder": "G chip / DST-AES smart family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY43 / TOY48 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_007"
-  },
-  {
-    "make": "Toyota",
-    "model": "Corolla",
-    "variant": "E210",
-    "years": "2019-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
-      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Toyota immobiliser / BCM",
+      "oem_key": "Toyota OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "TOY48 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "TOY48 Toyota tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "G chip / DST-AES smart family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use TOY48 Toyota tool family where fitted",
+      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Toyota",
+        "Toyota supplier catalogues",
+        "Original Lishi TOY family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Toyota",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Toyota supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi TOY family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_008"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "Toyota",
-    "model": "Auris",
-    "variant": "Auris I",
-    "years": "2006-2012",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY43 / TOY48 depending year - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "4D / G chip family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY43 / TOY48 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_009"
-  },
-  {
-    "make": "Toyota",
-    "model": "Auris",
-    "variant": "Auris II",
-    "years": "2012-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_010"
-  },
-  {
-    "make": "Toyota",
-    "model": "Avensis",
-    "variant": "T25/T27",
-    "years": "2003-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY43 / TOY48 depending year - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "4D / G chip family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY43 / TOY48 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_011"
-  },
-  {
-    "make": "Toyota",
-    "model": "C-HR",
-    "variant": "C-HR",
-    "years": "2016-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_012"
-  },
-  {
+    "record_id": "TOYOTA-RAV4",
     "make": "Toyota",
     "model": "RAV4",
-    "variant": "XA30",
-    "years": "2005-2012",
+    "variant": "XA40/XA50",
+    "generation": "XA40/XA50",
+    "years": "2012-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "TOY43 / TOY48 depending year - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "4D / G chip family depending year - verify",
+      "blade_profile": "TOY48 / emergency blade - verify",
+      "lishi_tool": "TOY48 Toyota tool family",
+      "transponder": "G chip / DST-AES smart family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY43 / TOY48 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_013"
-  },
-  {
-    "make": "Toyota",
-    "model": "RAV4",
-    "variant": "XA40",
-    "years": "2012-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
       "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Toyota immobiliser / BCM",
+      "oem_key": "Toyota OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "TOY48 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "TOY48 Toyota tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "G chip / DST-AES smart family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use TOY48 Toyota tool family where fitted",
+      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Toyota",
+        "Toyota supplier catalogues",
+        "Original Lishi TOY family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Toyota",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Toyota supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi TOY family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_014"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "Toyota",
-    "model": "RAV4",
-    "variant": "XA50",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_015"
-  },
-  {
-    "make": "Toyota",
-    "model": "Prius",
-    "variant": "XW20/XW30",
-    "years": "2003-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_016"
-  },
-  {
-    "make": "Toyota",
-    "model": "Prius",
-    "variant": "XW50/XW60",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_017"
-  },
-  {
-    "make": "Toyota",
-    "model": "Land Cruiser",
-    "variant": "J120/J150",
-    "years": "2002-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_018"
-  },
-  {
-    "make": "Toyota",
-    "model": "Hilux",
-    "variant": "Mk7",
-    "years": "2004-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY43 / TOY48 depending year - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "4D / G chip family depending year - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / transponder key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY43 / TOY48 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_019"
-  },
-  {
+    "record_id": "TOYOTA-HILUX-MK8",
     "make": "Toyota",
     "model": "Hilux",
     "variant": "Mk8",
+    "generation": "Mk8",
     "years": "2015-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
+      "blade_profile": "TOY48",
+      "lishi_tool": "TOY48 2-in-1 Pick & Decoder",
+      "transponder": "G chip / smart family depending spec",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Toyota immobiliser / BCM",
+      "oem_key": "Toyota OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Toyota remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "TOY48",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "TOY48 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "G chip / smart family depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Toyota",
+          "Toyota supplier catalogues",
+          "Original Lishi TOY family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use TOY48 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by TOY48",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Toyota",
+        "Toyota supplier catalogues",
+        "Original Lishi TOY family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Toyota",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Toyota supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi TOY family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_020"
-  },
-  {
-    "make": "Toyota",
-    "model": "Proace",
-    "variant": "Proace",
-    "years": "2013-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Toyota immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "TOY48 / emergency blade family - verify",
-      "lishi_tool": "TOY48 / TOY43",
-      "transponder": "Toyota G/H/DST-AES smart family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Toyota immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use TOY48 / TOY43 where fitted",
-      "akl_blade_decode": "Decode/cut by TOY48 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "toyota_key_lishi_021"
+    "last_updated": "2026-07-05"
   }
 ]

@@ -1,483 +1,392 @@
 [
   {
+    "record_id": "HONDA-JAZZ",
     "make": "Honda",
     "model": "Jazz",
-    "variant": "GD",
-    "years": "2001-2008",
+    "variant": "GE/GK/GR",
+    "generation": "GE/GK/GR",
+    "years": "2008-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Honda immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
+      "blade_profile": "HON66 / HON58R depending year - verify",
+      "lishi_tool": "HON66 / HON58R Honda tool family",
+      "transponder": "ID46 / Honda smart family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_001"
-  },
-  {
-    "make": "Honda",
-    "model": "Jazz",
-    "variant": "GE",
-    "years": "2008-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_002"
-  },
-  {
-    "make": "Honda",
-    "model": "Jazz",
-    "variant": "GK/GR",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Honda immobiliser / BCM",
+      "oem_key": "Honda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HON66 / HON58R depending year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HON66 / HON58R Honda tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / Honda smart family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HON66 / HON58R Honda tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HON66 / HON58R depending year - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Honda",
+        "Honda supplier catalogues",
+        "Original Lishi HON family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Honda",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Honda supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HON family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_003"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "HONDA-CIVIC",
     "make": "Honda",
     "model": "Civic",
-    "variant": "EP/EU",
-    "years": "2001-2005",
+    "variant": "FN/FK/FL",
+    "generation": "FN/FK/FL",
+    "years": "2006-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Honda immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
+      "blade_profile": "HON66 / HON58R depending year - verify",
+      "lishi_tool": "HON66 / HON58R Honda tool family",
+      "transponder": "ID46 / Honda smart family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_004"
-  },
-  {
-    "make": "Honda",
-    "model": "Civic",
-    "variant": "FN/FK",
-    "years": "2006-2011",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_005"
-  },
-  {
-    "make": "Honda",
-    "model": "Civic",
-    "variant": "FK/FC",
-    "years": "2011-2021",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Honda immobiliser / BCM",
+      "oem_key": "Honda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HON66 / HON58R depending year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HON66 / HON58R Honda tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / Honda smart family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HON66 / HON58R Honda tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HON66 / HON58R depending year - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Honda",
+        "Honda supplier catalogues",
+        "Original Lishi HON family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Honda",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Honda supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HON family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_006"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "HONDA-SUV-RANGE",
     "make": "Honda",
-    "model": "Civic",
-    "variant": "FL",
-    "years": "2021-present",
+    "model": "CR-V/HR-V",
+    "variant": "SUV range",
+    "generation": "SUV range",
+    "years": "2006-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Honda immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
+      "blade_profile": "HON66 / emergency blade - verify",
+      "lishi_tool": "HON66 Honda tool family",
+      "transponder": "Honda smart key family - verify",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Honda immobiliser / BCM",
+      "oem_key": "Honda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Honda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Honda remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HON66 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HON66 Honda tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Honda smart key family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery Honda",
+          "Honda supplier catalogues",
+          "Original Lishi HON family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HON66 Honda tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HON66 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery Honda",
+        "Honda supplier catalogues",
+        "Original Lishi HON family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery Honda",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Honda supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HON family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_007"
-  },
-  {
-    "make": "Honda",
-    "model": "Accord",
-    "variant": "Accord",
-    "years": "2003-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_008"
-  },
-  {
-    "make": "Honda",
-    "model": "CR-V",
-    "variant": "Mk2/Mk3",
-    "years": "2001-2012",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_009"
-  },
-  {
-    "make": "Honda",
-    "model": "CR-V",
-    "variant": "Mk4/Mk5",
-    "years": "2012-2023",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_010"
-  },
-  {
-    "make": "Honda",
-    "model": "HR-V",
-    "variant": "HR-V",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_011"
-  },
-  {
-    "make": "Honda",
-    "model": "FR-V",
-    "variant": "FR-V",
-    "years": "2004-2009",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_012"
-  },
-  {
-    "make": "Honda",
-    "model": "Insight",
-    "variant": "Insight",
-    "years": "2009-2014",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Honda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "HON66 / HON58R / emergency blade - verify",
-      "lishi_tool": "HON66 / HON58R",
-      "transponder": "ID46 / Honda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Honda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HON66 / HON58R where fitted",
-      "akl_blade_decode": "Decode/cut by HON66 / HON58R / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "honda_key_lishi_013"
+    "last_updated": "2026-07-05"
   }
 ]

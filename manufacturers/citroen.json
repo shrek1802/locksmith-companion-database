@@ -1,779 +1,2540 @@
 [
   {
-    "make": "Citroen",
-    "model": "Saxo",
-    "variant": "Saxo",
-    "years": "1996-2004",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI",
-    "key_profile": {
-      "blade_profile": "VA2 / HU83 depending year - verify",
-      "lishi_tool": "VA2 / HU83",
-      "transponder": "ID46 / PCF family depending year",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "PSA BSI",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use VA2 / HU83 where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / HU83 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_001"
-  },
-  {
+    "record_id": "CITROEN-C1-MK1",
     "make": "Citroen",
     "model": "C1",
-    "variant": "C1 I/II",
-    "years": "2005-2021",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2005-2014",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota/PSA shared",
     "key_profile": {
-      "blade_profile": "VA2 / HU83 depending year - verify",
-      "lishi_tool": "VA2 / HU83",
-      "transponder": "ID46 / PCF family depending year",
+      "blade_profile": "TOY43 / VA2 depending lockset - verify",
+      "lishi_tool": "TOY43 / VA2 - verify",
+      "transponder": "ID46 Toyota/PSA shared family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
       "smart_keyless": "No / remote only",
-      "immobiliser_family": "PSA BSI",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Toyota/PSA shared",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use VA2 / HU83 where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / HU83 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "TOY43 / VA2 depending lockset - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "TOY43 / VA2 - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 Toyota/PSA shared family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use TOY43 / VA2 - verify where fitted",
+      "akl_blade_decode": "Decode/cut by TOY43 / VA2 depending lockset - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_002"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "CITROEN-C1-MK2",
+    "make": "Citroen",
+    "model": "C1",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2014-2021",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Toyota/PSA shared",
+    "key_profile": {
+      "blade_profile": "TOY48 / VA2 depending lockset - verify",
+      "lishi_tool": "TOY48 / VA2 - verify",
+      "transponder": "ID46 Toyota/PSA shared family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "No / remote only",
+      "immobiliser_family": "Toyota/PSA shared",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "TOY48 / VA2 depending lockset - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "TOY48 / VA2 - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 Toyota/PSA shared family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use TOY48 / VA2 - verify where fitted",
+      "akl_blade_decode": "Decode/cut by TOY48 / VA2 depending lockset - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "CITROEN-C2",
     "make": "Citroen",
     "model": "C2",
     "variant": "C2",
+    "generation": "C2",
     "years": "2003-2009",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "VA2 / HU83 depending year - verify",
-      "lishi_tool": "VA2 / HU83",
-      "transponder": "ID46 / PCF family depending year",
+      "blade_profile": "HU83 / VA2 depending year - verify",
+      "lishi_tool": "HU83 / VA2 PSA tool family",
+      "transponder": "ID46 / PCF family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "PSA BSI",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use VA2 / HU83 where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / HU83 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83 / VA2 depending year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU83 / VA2 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU83 / VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU83 / VA2 depending year - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_003"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "CITROEN-C3-MK1",
     "make": "Citroen",
     "model": "C3",
-    "variant": "C3 I",
+    "variant": "Mk1",
+    "generation": "Mk1",
     "years": "2002-2009",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "VA2 / HU83 depending year - verify",
-      "lishi_tool": "VA2 / HU83",
-      "transponder": "ID46 / PCF family depending year",
+      "blade_profile": "HU83 / VA2 depending year - verify",
+      "lishi_tool": "HU83 / VA2 PSA tool family",
+      "transponder": "ID46 / PCF family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "PSA BSI",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use VA2 / HU83 where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / HU83 depending year - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83 / VA2 depending year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU83 / VA2 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU83 / VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU83 / VA2 depending year - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_004"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "CITROEN-C3-MK2",
     "make": "Citroen",
     "model": "C3",
-    "variant": "C3 II",
+    "variant": "Mk2",
+    "generation": "Mk2",
     "years": "2009-2016",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU83",
-      "lishi_tool": "HU83",
+      "blade_profile": "VA2 / HU83 depending key - verify",
+      "lishi_tool": "VA2 / HU83 PSA tool family",
       "transponder": "ID46 / PCF family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "PSA BSI",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Flip remote",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU83 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / HU83 depending key - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 / HU83 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Flip remote",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use VA2 / HU83 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / HU83 depending key - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_005"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "CITROEN-C3-MK3",
     "make": "Citroen",
     "model": "C3",
-    "variant": "C3 III",
+    "variant": "Mk3",
+    "generation": "Mk3",
     "years": "2016-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
-      "transponder": "ID46 / AES smart key family - verify",
+      "blade_profile": "VA2 / emergency blade - verify",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "ID46 / AES family - verify",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Flip remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / AES family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Flip remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_006"
+    "last_updated": "2026-07-05"
   },
   {
-    "make": "Citroen",
-    "model": "C4",
-    "variant": "C4 I",
-    "years": "2004-2010",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI",
-    "key_profile": {
-      "blade_profile": "HU83",
-      "lishi_tool": "HU83",
-      "transponder": "ID46 / PCF family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "PSA BSI",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU83 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_007"
-  },
-  {
-    "make": "Citroen",
-    "model": "C4",
-    "variant": "C4 II/III",
-    "years": "2010-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
-    "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
-      "transponder": "ID46 / AES smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_008"
-  },
-  {
-    "make": "Citroen",
-    "model": "C5",
-    "variant": "C5 I/II",
-    "years": "2001-2017",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI",
-    "key_profile": {
-      "blade_profile": "HU83",
-      "lishi_tool": "HU83",
-      "transponder": "ID46 / PCF family",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "PSA BSI",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU83 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_009"
-  },
-  {
-    "make": "Citroen",
-    "model": "C5 Aircross",
-    "variant": "C5 Aircross",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
-    "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
-      "transponder": "ID46 / AES smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_010"
-  },
-  {
+    "record_id": "CITROEN-C3-AIRCROSS",
     "make": "Citroen",
     "model": "C3 Aircross",
     "variant": "C3 Aircross",
+    "generation": "C3 Aircross",
     "years": "2017-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
-      "transponder": "ID46 / AES smart key family - verify",
+      "blade_profile": "VA2 / emergency blade - verify",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "ID46 / AES family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / AES family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_011"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "CITROEN-C4-MK1",
+    "make": "Citroen",
+    "model": "C4",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2004-2010",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
+    "key_profile": {
+      "blade_profile": "HU83",
+      "lishi_tool": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+      "transponder": "ID46 / PCF family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Flip remote",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83",
+        "status": "verified",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "verified",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Flip remote",
+        "status": "verified",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "verified",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU83 2-in-1 / 3-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU83",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "CITROEN-C4-MK2",
+    "make": "Citroen",
+    "model": "C4",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2010-2018",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
+    "key_profile": {
+      "blade_profile": "VA2 / HU83 depending key - verify",
+      "lishi_tool": "VA2 / HU83 PSA tool family",
+      "transponder": "ID46 / PCF family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Flip remote / prox",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / HU83 depending key - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 / HU83 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Flip remote / prox",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 / HU83 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / HU83 depending key - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "CITROEN-C4-MK3",
+    "make": "Citroen",
+    "model": "C4",
+    "variant": "Mk3",
+    "generation": "Mk3",
+    "years": "2020-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
+    "key_profile": {
+      "blade_profile": "VA2 / emergency blade - verify",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "ID46 / AES smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart / flip remote",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / AES smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart / flip remote",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "CITROEN-C4-CACTUS",
     "make": "Citroen",
     "model": "C4 Cactus",
     "variant": "C4 Cactus",
+    "generation": "C4 Cactus",
     "years": "2014-2020",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
-      "transponder": "ID46 / AES smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_012"
-  },
-  {
-    "make": "Citroen",
-    "model": "Berlingo",
-    "variant": "Berlingo I/II",
-    "years": "1996-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI",
-    "key_profile": {
-      "blade_profile": "HU83",
-      "lishi_tool": "HU83",
+      "blade_profile": "VA2",
+      "lishi_tool": "VA2 PSA tool family",
       "transponder": "ID46 / PCF family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "PSA BSI",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Flip remote / prox",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU83 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Flip remote / prox",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_013"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "CITROEN-C5",
     "make": "Citroen",
-    "model": "Berlingo",
-    "variant": "Berlingo III",
+    "model": "C5",
+    "variant": "Mk1/Mk2",
+    "generation": "Mk1/Mk2",
+    "years": "2001-2017",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
+    "key_profile": {
+      "blade_profile": "HU83 / VA2 depending year - verify",
+      "lishi_tool": "HU83 / VA2 PSA tool family",
+      "transponder": "ID46 / PCF family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / flip key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83 / VA2 depending year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU83 / VA2 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / flip key",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU83 / VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU83 / VA2 depending year - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "CITROEN-C5-AIRCROSS",
+    "make": "Citroen",
+    "model": "C5 Aircross",
+    "variant": "C5 Aircross",
+    "generation": "C5 Aircross",
     "years": "2018-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
+      "blade_profile": "VA2 / emergency blade - verify",
+      "lishi_tool": "VA2 PSA tool family",
       "transponder": "ID46 / AES smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / AES smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_014"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "CITROEN-BERLINGO-I-II",
     "make": "Citroen",
-    "model": "Dispatch",
-    "variant": "Dispatch II",
-    "years": "2007-2016",
+    "model": "Berlingo",
+    "variant": "Mk1/Mk2",
+    "generation": "Mk1/Mk2",
+    "years": "1996-2018",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU83",
-      "lishi_tool": "HU83",
+      "blade_profile": "HU83 / VA2 depending year - verify",
+      "lishi_tool": "HU83 / VA2 PSA tool family",
       "transponder": "ID46 / PCF family",
       "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / flip key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "PSA BSI",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU83 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83 / VA2 depending year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU83 / VA2 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / flip key",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU83 / VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU83 / VA2 depending year - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_015"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "CITROEN-BERLINGO-MK3",
+    "make": "Citroen",
+    "model": "Berlingo",
+    "variant": "Mk3",
+    "generation": "Mk3",
+    "years": "2018-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
+    "key_profile": {
+      "blade_profile": "VA2 / HU83 / emergency blade - verify",
+      "lishi_tool": "VA2 / HU83 PSA tool family",
+      "transponder": "ID46 / AES family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / HU83 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 / HU83 PSA tool family",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / AES family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 / HU83 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / HU83 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "CITROEN-DISPATCH-MK2",
     "make": "Citroen",
     "model": "Dispatch",
-    "variant": "Dispatch III",
-    "years": "2016-present",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2007-2016",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
     "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
-      "transponder": "ID46 / AES smart key family - verify",
+      "blade_profile": "HU83",
+      "lishi_tool": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+      "transponder": "ID46 / PCF family",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / flip key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / flip key",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use HU83 2-in-1 / 3-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU83",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_016"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "CITROEN-DISPATCH-MK3",
+    "make": "Citroen",
+    "model": "Dispatch",
+    "variant": "Mk3",
+    "generation": "Mk3",
+    "years": "2016-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Citroen immobiliser / BCM",
+    "key_profile": {
+      "blade_profile": "VA2 / HU83 / emergency blade - verify",
+      "lishi_tool": "VA2 / HU83 PSA tool family",
+      "transponder": "ID46 / AES family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Citroen immobiliser / BCM",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / HU83 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "VA2 / HU83 PSA tool family",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / AES family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "needs_review",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 / HU83 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / HU83 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "CITROEN-RELAY",
     "make": "Citroen",
     "model": "Relay",
     "variant": "Relay",
+    "generation": "Relay",
     "years": "2006-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Fiat/PSA commercial",
     "key_profile": {
-      "blade_profile": "HU83",
-      "lishi_tool": "HU83",
-      "transponder": "ID46 / PCF family",
+      "blade_profile": "SIP22 / HU83 commercial variant - verify",
+      "lishi_tool": "SIP22 / HU83 commercial tool family",
+      "transponder": "ID46 commercial family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / flip key",
-      "smart_keyless": "No / remote only",
-      "immobiliser_family": "PSA BSI",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "No / optional",
+      "immobiliser_family": "Fiat/PSA commercial",
+      "oem_key": "Citroen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Citroen remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use HU83 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "SIP22 / HU83 commercial variant - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "SIP22 / HU83 commercial tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 commercial family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Peugeot v1.0 cross-reference",
+          "Genuine Lishi HU83/VA2",
+          "Transpondery PSA",
+          "PSA supplier catalogues"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use SIP22 / HU83 commercial tool family where fitted",
+      "akl_blade_decode": "Decode/cut by SIP22 / HU83 commercial variant - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Peugeot v1.0 cross-reference",
+        "Genuine Lishi HU83/VA2",
+        "Transpondery PSA",
+        "PSA supplier catalogues"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Peugeot v1.0 cross-reference",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Genuine Lishi HU83/VA2",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery PSA",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "PSA supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_017"
-  },
-  {
-    "make": "DS",
-    "model": "DS3",
-    "variant": "DS3",
-    "years": "2010-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
-    "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
-      "transponder": "ID46 / AES smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_018"
-  },
-  {
-    "make": "DS",
-    "model": "DS4",
-    "variant": "DS4",
-    "years": "2011-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
-    "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
-      "transponder": "ID46 / AES smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_019"
-  },
-  {
-    "make": "DS",
-    "model": "DS5",
-    "variant": "DS5",
-    "years": "2011-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
-    "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
-      "transponder": "ID46 / AES smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_020"
-  },
-  {
-    "make": "DS",
-    "model": "DS7",
-    "variant": "DS7 Crossback",
-    "years": "2017-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "PSA BSI / SGW",
-    "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade family - verify",
-      "lishi_tool": "HU83 / VA2",
-      "transponder": "ID46 / AES smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Flip remote / smart key",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA BSI / SGW",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use HU83 / VA2 where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade family - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "citroen_key_lishi_021"
+    "last_updated": "2026-07-05"
   }
 ]

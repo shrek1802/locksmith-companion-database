@@ -1,446 +1,262 @@
 [
   {
+    "record_id": "MAZDA-2-3",
     "make": "Mazda",
-    "model": "Mazda2",
-    "variant": "DE",
-    "years": "2007-2014",
+    "model": "Mazda2/3",
+    "variant": "Main hatch range",
+    "generation": "Main hatch range",
+    "years": "2007-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Mazda immobiliser / BCM",
     "key_profile": {
       "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
+      "lishi_tool": "MAZ24 Mazda tool family",
+      "transponder": "ID46 / Mazda smart family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_001"
-  },
-  {
-    "make": "Mazda",
-    "model": "Mazda2",
-    "variant": "DJ",
-    "years": "2014-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3 button depending spec",
       "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Mazda immobiliser / BCM",
+      "oem_key": "Mazda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
       "verification_status": "high_confidence",
       "confidence": "high"
     },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+    "verified_fields": {
+      "blade_profile": {
+        "value": "MAZ24 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "MAZ24 Mazda tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "ID46 / Mazda smart family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "high_confidence",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      }
     },
+    "locksmith_use": {
+      "lockout": "Use MAZ24 Mazda tool family where fitted",
+      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Transpondery",
+        "Supplier catalogues",
+        "Original Lishi family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_002"
+    "last_updated": "2026-07-05"
   },
   {
+    "record_id": "MAZDA-SUV-RANGE",
     "make": "Mazda",
-    "model": "Mazda3",
-    "variant": "BK/BL",
-    "years": "2003-2013",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_003"
-  },
-  {
-    "make": "Mazda",
-    "model": "Mazda3",
-    "variant": "BM/BP",
-    "years": "2013-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_004"
-  },
-  {
-    "make": "Mazda",
-    "model": "Mazda5",
-    "variant": "Mazda5",
-    "years": "2005-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_005"
-  },
-  {
-    "make": "Mazda",
-    "model": "Mazda6",
-    "variant": "GG/GH",
-    "years": "2002-2012",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_006"
-  },
-  {
-    "make": "Mazda",
-    "model": "Mazda6",
-    "variant": "GJ",
-    "years": "2012-2023",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_007"
-  },
-  {
-    "make": "Mazda",
-    "model": "CX-3",
-    "variant": "CX-3",
-    "years": "2015-2021",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_008"
-  },
-  {
-    "make": "Mazda",
-    "model": "CX-5",
-    "variant": "CX-5",
+    "model": "CX-5/CX-30",
+    "variant": "SUV range",
+    "generation": "SUV range",
     "years": "2012-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Mazda immobiliser / BCM",
     "key_profile": {
       "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
+      "lishi_tool": "MAZ24 Mazda tool family",
+      "transponder": "Mazda smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3 button depending spec",
+      "key_type": "Smart key",
       "smart_keyless": "Yes",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+      "immobiliser_family": "Mazda immobiliser / BCM",
+      "oem_key": "Mazda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "MAZ24 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      },
+      "lishi_tool": {
+        "value": "MAZ24 Mazda tool family",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      },
+      "transponder": {
+        "value": "Mazda smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      },
+      "buttons": {
+        "value": "2/3 button depending spec",
+        "status": "needs_review",
+        "sources": [
+          "Transpondery",
+          "Supplier catalogues",
+          "Original Lishi family"
+        ],
+        "notes": ""
+      }
     },
     "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
+      "lockout": "Use MAZ24 Mazda tool family where fitted",
       "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
     },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Transpondery",
+        "Supplier catalogues",
+        "Original Lishi family"
+      ],
+      "last_checked": "2026-07-05",
+      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+    },
+    "sources": [
+      {
+        "name": "Transpondery",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi family",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
     "completion": {
-      "key_profile": 90,
+      "key_profile": 55,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
     },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_009"
-  },
-  {
-    "make": "Mazda",
-    "model": "CX-30",
-    "variant": "CX-30",
-    "years": "2019-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_010"
-  },
-  {
-    "make": "Mazda",
-    "model": "MX-5",
-    "variant": "NC",
-    "years": "2005-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_011"
-  },
-  {
-    "make": "Mazda",
-    "model": "MX-5",
-    "variant": "ND",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_key_lishi_profile",
-    "platform": "Mazda immobiliser / smart key",
-    "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
-      "lishi_tool": "MAZ24",
-      "transponder": "ID46 / Mazda smart key family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "key_type": "Remote / smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Mazda immobiliser / smart key",
-      "oem_key": "to be added",
-      "xhorse_equivalent": "to be added / verify",
-      "keydiy_equivalent": "to be added / verify",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "locksmith_use": {
-      "lockout": "Use MAZ24 where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
-      "stock_note": "Confirm remote/prox/board type before ordering",
-      "notes": "Confirm by VIN/original key where variants exist."
-    },
-    "completion": {
-      "key_profile": 90,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 10
-    },
-    "last_updated": "2026-07-04",
-    "record_id": "mazda_key_lishi_012"
+    "last_updated": "2026-07-05"
   }
 ]
