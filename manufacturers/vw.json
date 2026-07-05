@@ -1,22 +1,22 @@
 [
   {
-    "record_id": "VW-GOLF-MK4",
+    "record_id": "VOLKSWAGEN-GOLF-MK4-1997-2004-REMOTE-KESSY",
     "make": "Volkswagen",
     "model": "Golf",
     "variant": "Mk4",
     "generation": "Mk4",
     "years": "1997-2004",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
+    "database_layer": "layer_1_vehicle_generation_key_system",
     "platform": "VAG Immo 3/4",
     "key_profile": {
       "blade_profile": "HU66",
       "lishi_tool": "HU66 2-in-1 Pick & Decoder",
       "transponder": "ID48 / Megamos Crypto",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Flip remote / transponder key",
-      "smart_keyless": "No / optional",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
+      "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "VAG Immo 3/4",
       "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
@@ -29,117 +29,127 @@
         "value": "HU66",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
         "value": "HU66 2-in-1 Pick & Decoder",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
         "value": "ID48 / Megamos Crypto",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Flip remote / transponder key",
+        "value": "Remote / KESSY",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery VAG",
-        "Original Lishi HU66/HU162T",
-        "VAG supplier catalogues",
-        "Workshop required for exact MQB variant"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery VAG",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU66/HU162T",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "VAG supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for exact MQB variant",
-        "url": "source://bulk-v5-reference"
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "VW-GOLF-MK5-MK6",
+    "record_id": "VOLKSWAGEN-GOLF-MK5-2003-2009-REMOTE-KESSY",
     "make": "Volkswagen",
     "model": "Golf",
-    "variant": "Mk5/Mk6",
-    "generation": "Mk5/Mk6",
-    "years": "2003-2013",
+    "variant": "Mk5",
+    "generation": "Mk5",
+    "years": "2003-2009",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
+    "database_layer": "layer_1_vehicle_generation_key_system",
     "platform": "VAG Immo 4",
     "key_profile": {
       "blade_profile": "HU66",
       "lishi_tool": "HU66 2-in-1 Pick & Decoder",
       "transponder": "ID48 / Megamos Crypto",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Flip remote / KESSY",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "VAG Immo 4",
       "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
@@ -153,117 +163,261 @@
         "value": "HU66",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
         "value": "HU66 2-in-1 Pick & Decoder",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
         "value": "ID48 / Megamos Crypto",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Flip remote / KESSY",
+        "value": "Remote / KESSY",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery VAG",
-        "Original Lishi HU66/HU162T",
-        "VAG supplier catalogues",
-        "Workshop required for exact MQB variant"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery VAG",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU66/HU162T",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "VAG supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for exact MQB variant",
-        "url": "source://bulk-v5-reference"
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "VW-GOLF-MK7",
+    "record_id": "VOLKSWAGEN-GOLF-MK6-2008-2013-REMOTE-KESSY",
     "make": "Volkswagen",
     "model": "Golf",
-    "variant": "Mk7",
-    "generation": "Mk7",
+    "variant": "Mk6",
+    "generation": "Mk6",
+    "years": "2008-2013",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "VAG Immo 4",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66 2-in-1 Pick & Decoder",
+      "transponder": "ID48 / Megamos Crypto",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG Immo 4",
+      "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU66",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU66 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID48 / Megamos Crypto",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / KESSY",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "VOLKSWAGEN-GOLF-MK7-MQB-2012-2020-REMOTE-KESSY",
+    "make": "Volkswagen",
+    "model": "Golf",
+    "variant": "Mk7 MQB",
+    "generation": "Mk7 MQB",
     "years": "2012-2020",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
+    "database_layer": "layer_1_vehicle_generation_key_system",
     "platform": "VAG MQB",
     "key_profile": {
       "blade_profile": "HU162T / HU66 variant - verify",
-      "lishi_tool": "HU162T / HU66",
+      "lishi_tool": "HU162T / HU66 tool family",
       "transponder": "MQB ID48 AES / dealer key family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Flip remote / proximity key",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "VAG MQB",
       "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
@@ -277,118 +431,128 @@
         "value": "HU162T / HU66 variant - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU162T / HU66",
+        "value": "HU162T / HU66 tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
         "value": "MQB ID48 AES / dealer key family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Flip remote / proximity key",
+        "value": "Remote / KESSY",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU162T / HU66 where fitted",
+      "lockout": "Use HU162T / HU66 tool family where fitted",
       "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery VAG",
-        "Original Lishi HU66/HU162T",
-        "VAG supplier catalogues",
-        "Workshop required for exact MQB variant"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery VAG",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU66/HU162T",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "VAG supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for exact MQB variant",
-        "url": "source://bulk-v5-reference"
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "VW-GOLF-MK8",
+    "record_id": "VOLKSWAGEN-GOLF-MK8-MQB-EVO-2020-PRESENT-REMOTE-KESSY",
     "make": "Volkswagen",
     "model": "Golf",
-    "variant": "Mk8",
-    "generation": "Mk8",
+    "variant": "Mk8 MQB Evo",
+    "generation": "Mk8 MQB Evo",
     "years": "2020-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
+    "database_layer": "layer_1_vehicle_generation_key_system",
     "platform": "VAG MQB Evo",
     "key_profile": {
       "blade_profile": "HU162T",
-      "lishi_tool": "HU162T 2-in-1 Pick & Decoder",
-      "transponder": "MQB Evo AES smart key family - verify",
+      "lishi_tool": "HU162T / HU66 tool family",
+      "transponder": "MQB Evo AES family - verify",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Smart / remote key",
-      "smart_keyless": "Yes",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
+      "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "VAG MQB Evo",
       "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
@@ -401,119 +565,129 @@
         "value": "HU162T",
         "status": "needs_review",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU162T 2-in-1 Pick & Decoder",
+        "value": "HU162T / HU66 tool family",
         "status": "needs_review",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "MQB Evo AES smart key family - verify",
+        "value": "MQB Evo AES family - verify",
         "status": "needs_review",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "needs_review",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Smart / remote key",
+        "value": "Remote / KESSY",
         "status": "needs_review",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU162T 2-in-1 Pick & Decoder where fitted",
+      "lockout": "Use HU162T / HU66 tool family where fitted",
       "akl_blade_decode": "Decode/cut by HU162T",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "needs_review",
       "verified_by": [
-        "Transpondery VAG",
-        "Original Lishi HU66/HU162T",
-        "VAG supplier catalogues",
-        "Workshop required for exact MQB variant"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery VAG",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU66/HU162T",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "VAG supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for exact MQB variant",
-        "url": "source://bulk-v5-reference"
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 55,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "VW-POLO",
+    "record_id": "VOLKSWAGEN-POLO-6R-6C-2009-2017-REMOTE-KESSY",
     "make": "Volkswagen",
     "model": "Polo",
-    "variant": "6R/6C/AW",
-    "generation": "6R/6C/AW",
-    "years": "2009-present",
+    "variant": "6R/6C",
+    "generation": "6R/6C",
+    "years": "2009-2017",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Volkswagen immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "VAG PQ",
     "key_profile": {
-      "blade_profile": "HU66 / HU162T by generation - verify",
-      "lishi_tool": "HU66 / HU162T",
-      "transponder": "ID48 / MQB AES family - verify",
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66 2-in-1 Pick & Decoder",
+      "transponder": "ID48 / Megamos Crypto",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote / smart key",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Volkswagen immobiliser / BCM",
+      "immobiliser_family": "VAG PQ",
       "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
@@ -522,122 +696,266 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HU66 / HU162T by generation - verify",
+        "value": "HU66",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU66 / HU162T",
+        "value": "HU66 2-in-1 Pick & Decoder",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID48 / MQB AES family - verify",
+        "value": "ID48 / Megamos Crypto",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Remote / smart key",
+        "value": "Remote / KESSY",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU66 / HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU66 / HU162T by generation - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery VAG",
-        "Original Lishi HU66/HU162T",
-        "VAG supplier catalogues",
-        "Workshop required for exact MQB variant"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery VAG",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU66/HU162T",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "VAG supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for exact MQB variant",
-        "url": "source://bulk-v5-reference"
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "VW-PASSAT",
+    "record_id": "VOLKSWAGEN-POLO-AW-2017-PRESENT-REMOTE-KESSY",
+    "make": "Volkswagen",
+    "model": "Polo",
+    "variant": "AW",
+    "generation": "AW",
+    "years": "2017-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "VAG MQB A0",
+    "key_profile": {
+      "blade_profile": "HU162T / HU66 variant - verify",
+      "lishi_tool": "HU162T / HU66 tool family",
+      "transponder": "MQB AES family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB A0",
+      "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU162T / HU66 variant - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU162T / HU66 tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "MQB AES family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / KESSY",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "VOLKSWAGEN-PASSAT-B6-B7-2005-2015-REMOTE-KESSY",
     "make": "Volkswagen",
     "model": "Passat",
-    "variant": "B6/B7/B8",
-    "generation": "B6/B7/B8",
-    "years": "2005-present",
+    "variant": "B6/B7",
+    "generation": "B6/B7",
+    "years": "2005-2015",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Volkswagen immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "VAG Immo 4",
     "key_profile": {
-      "blade_profile": "HU66 / HU162T by generation - verify",
-      "lishi_tool": "HU66 / HU162T",
-      "transponder": "ID48 / MQB AES family - verify",
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66 2-in-1 Pick & Decoder",
+      "transponder": "ID48 / Megamos Crypto",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
+      "buttons": "2/3/4 button depending spec",
       "key_type": "Remote / KESSY",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Volkswagen immobiliser / BCM",
+      "immobiliser_family": "VAG Immo 4",
       "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
@@ -646,122 +964,266 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HU66 / HU162T by generation - verify",
+        "value": "HU66",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU66 / HU162T",
+        "value": "HU66 2-in-1 Pick & Decoder",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID48 / MQB AES family - verify",
+        "value": "ID48 / Megamos Crypto",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
         "value": "Remote / KESSY",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU66 / HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU66 / HU162T by generation - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery VAG",
-        "Original Lishi HU66/HU162T",
-        "VAG supplier catalogues",
-        "Workshop required for exact MQB variant"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery VAG",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU66/HU162T",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "VAG supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for exact MQB variant",
-        "url": "source://bulk-v5-reference"
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "VW-TIGUAN",
+    "record_id": "VOLKSWAGEN-PASSAT-B8-2015-PRESENT-REMOTE-KESSY",
+    "make": "Volkswagen",
+    "model": "Passat",
+    "variant": "B8",
+    "generation": "B8",
+    "years": "2015-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "VAG MQB",
+    "key_profile": {
+      "blade_profile": "HU162T / HU66 variant - verify",
+      "lishi_tool": "HU162T / HU66 tool family",
+      "transponder": "MQB AES family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
+      "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU162T / HU66 variant - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU162T / HU66 tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "MQB AES family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / KESSY",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "VOLKSWAGEN-TIGUAN-MK1-2007-2016-REMOTE-KESSY",
     "make": "Volkswagen",
     "model": "Tiguan",
-    "variant": "Mk1/Mk2",
-    "generation": "Mk1/Mk2",
-    "years": "2007-present",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2007-2016",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Volkswagen immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "VAG PQ",
     "key_profile": {
-      "blade_profile": "HU66 / HU162T by generation - verify",
-      "lishi_tool": "HU66 / HU162T",
-      "transponder": "ID48 / MQB AES family - verify",
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66 2-in-1 Pick & Decoder",
+      "transponder": "ID48 / Megamos Crypto",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
+      "buttons": "2/3/4 button depending spec",
       "key_type": "Remote / KESSY",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Volkswagen immobiliser / BCM",
+      "immobiliser_family": "VAG PQ",
       "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
@@ -770,122 +1232,132 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HU66 / HU162T by generation - verify",
+        "value": "HU66",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU66 / HU162T",
+        "value": "HU66 2-in-1 Pick & Decoder",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID48 / MQB AES family - verify",
+        "value": "ID48 / Megamos Crypto",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
         "value": "Remote / KESSY",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU66 / HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU66 / HU162T by generation - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery VAG",
-        "Original Lishi HU66/HU162T",
-        "VAG supplier catalogues",
-        "Workshop required for exact MQB variant"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery VAG",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU66/HU162T",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "VAG supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for exact MQB variant",
-        "url": "source://bulk-v5-reference"
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "VW-CADDY",
+    "record_id": "VOLKSWAGEN-TIGUAN-MK2-2016-PRESENT-REMOTE-KESSY",
     "make": "Volkswagen",
-    "model": "Caddy",
-    "variant": "2K/Mk5",
-    "generation": "2K/Mk5",
-    "years": "2004-present",
+    "model": "Tiguan",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2016-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Volkswagen immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "VAG MQB",
     "key_profile": {
-      "blade_profile": "HU66 / HU162T by generation - verify",
-      "lishi_tool": "HU66 / HU162T",
-      "transponder": "ID48 / MQB AES family - verify",
+      "blade_profile": "HU162T / HU66 variant - verify",
+      "lishi_tool": "HU162T / HU66 tool family",
+      "transponder": "MQB AES family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "Volkswagen immobiliser / BCM",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
       "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
@@ -894,121 +1366,399 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HU66 / HU162T by generation - verify",
+        "value": "HU162T / HU66 variant - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU66 / HU162T",
+        "value": "HU162T / HU66 tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID48 / MQB AES family - verify",
+        "value": "MQB AES family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Remote key",
+        "value": "Remote / KESSY",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU66 / HU162T where fitted",
-      "akl_blade_decode": "Decode/cut by HU66 / HU162T by generation - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "lockout": "Use HU162T / HU66 tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery VAG",
-        "Original Lishi HU66/HU162T",
-        "VAG supplier catalogues",
-        "Workshop required for exact MQB variant"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery VAG",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU66/HU162T",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "VAG supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for exact MQB variant",
-        "url": "source://bulk-v5-reference"
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "VW-TRANSPORTER",
+    "record_id": "VOLKSWAGEN-CADDY-2K-2004-2020-REMOTE-KESSY",
+    "make": "Volkswagen",
+    "model": "Caddy",
+    "variant": "2K",
+    "generation": "2K",
+    "years": "2004-2020",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "VAG PQ",
+    "key_profile": {
+      "blade_profile": "HU66",
+      "lishi_tool": "HU66 2-in-1 Pick & Decoder",
+      "transponder": "ID48 / Megamos Crypto",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG PQ",
+      "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU66",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU66 2-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID48 / Megamos Crypto",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / KESSY",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU66",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "VOLKSWAGEN-CADDY-MK5-2020-PRESENT-REMOTE-KESSY",
+    "make": "Volkswagen",
+    "model": "Caddy",
+    "variant": "Mk5",
+    "generation": "Mk5",
+    "years": "2020-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "VAG MQB",
+    "key_profile": {
+      "blade_profile": "HU162T",
+      "lishi_tool": "HU162T / HU66 tool family",
+      "transponder": "MQB AES family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG MQB",
+      "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU162T",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU162T / HU66 tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "MQB AES family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / KESSY",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU162T",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "VOLKSWAGEN-TRANSPORTER-T5-T6-2003-2019-REMOTE-KESSY",
     "make": "Volkswagen",
     "model": "Transporter",
-    "variant": "T5/T6/T6.1",
-    "generation": "T5/T6/T6.1",
-    "years": "2003-present",
+    "variant": "T5/T6",
+    "generation": "T5/T6",
+    "years": "2003-2019",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
+    "database_layer": "layer_1_vehicle_generation_key_system",
     "platform": "VAG Commercial",
     "key_profile": {
       "blade_profile": "HU66",
       "lishi_tool": "HU66 2-in-1 Pick & Decoder",
-      "transponder": "ID48 / AES on later - verify",
+      "transponder": "ID48 / Megamos Crypto",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
+      "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "VAG Commercial",
       "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
@@ -1021,97 +1771,241 @@
         "value": "HU66",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
         "value": "HU66 2-in-1 Pick & Decoder",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID48 / AES on later - verify",
+        "value": "ID48 / Megamos Crypto",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Remote key",
+        "value": "Remote / KESSY",
         "status": "high_confidence",
         "sources": [
-          "Transpondery VAG",
-          "Original Lishi HU66/HU162T",
-          "VAG supplier catalogues",
-          "Workshop required for exact MQB variant"
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
       "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Uncertain items are marked high_confidence or needs_review."
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery VAG",
-        "Original Lishi HU66/HU162T",
-        "VAG supplier catalogues",
-        "Workshop required for exact MQB variant"
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery VAG",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU66/HU162T",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "VAG supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop required for exact MQB variant",
-        "url": "source://bulk-v5-reference"
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "VOLKSWAGEN-TRANSPORTER-T6-1-2019-PRESENT-REMOTE-KESSY",
+    "make": "Volkswagen",
+    "model": "Transporter",
+    "variant": "T6.1",
+    "generation": "T6.1",
+    "years": "2019-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "VAG Commercial",
+    "key_profile": {
+      "blade_profile": "HU66 / HU162T - verify",
+      "lishi_tool": "HU162T / HU66 tool family",
+      "transponder": "ID48 / AES by spec - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / KESSY",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "VAG Commercial",
+      "oem_key": "Volkswagen OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Volkswagen remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU66 / HU162T - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU162T / HU66 tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID48 / AES by spec - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / KESSY",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU162T / HU66 tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU66 / HU162T - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   }

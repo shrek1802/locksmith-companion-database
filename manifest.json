@@ -1,8 +1,8 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-multipack-reference-index-1",
+  "database_version": "2026.07.04-big-japan-korea-individual-1",
   "created": "2026-07-05",
-  "pack_type": "multi_pack_bulk_v5_coverage",
+  "pack_type": "vehicle_generation_key_system_pack",
   "packs": [
     {
       "id": "alfa_key_lishi_profiles",
@@ -96,20 +96,20 @@
     },
     {
       "id": "honda_key_lishi_profiles",
-      "name": "HONDA v5 Key + Lishi Profiles",
+      "name": "HONDA Vehicle Key-System Records",
       "manufacturer": "honda",
-      "version": "2026.07.04-bulk-v5-coverage-1",
+      "version": "2026.07.04-big-japan-korea-individual-1",
       "file": "manufacturers/honda.json",
-      "records": 3,
+      "records": 8,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/honda.json"
     },
     {
       "id": "hyundai_key_lishi_profiles",
-      "name": "HYUNDAI v5 Key + Lishi Profiles",
+      "name": "HYUNDAI Vehicle Key-System Records",
       "manufacturer": "hyundai",
-      "version": "2026.07.04-bulk-v5-coverage-1",
+      "version": "2026.07.04-big-japan-korea-individual-1",
       "file": "manufacturers/hyundai.json",
-      "records": 2,
+      "records": 13,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/hyundai.json"
     },
     {
@@ -141,20 +141,20 @@
     },
     {
       "id": "kia_key_lishi_profiles",
-      "name": "KIA v5 Key + Lishi Profiles",
+      "name": "KIA Vehicle Key-System Records",
       "manufacturer": "kia",
-      "version": "2026.07.04-bulk-v5-coverage-1",
+      "version": "2026.07.04-big-japan-korea-individual-1",
       "file": "manufacturers/kia.json",
-      "records": 2,
+      "records": 10,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/kia.json"
     },
     {
       "id": "lexus_key_lishi_profiles",
-      "name": "LEXUS v5 Key + Lishi Profiles",
+      "name": "LEXUS Vehicle Key-System Records",
       "manufacturer": "lexus",
-      "version": "2026.07.04-bulk-v5-coverage-1",
+      "version": "2026.07.04-big-japan-korea-individual-1",
       "file": "manufacturers/lexus.json",
-      "records": 2,
+      "records": 6,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/lexus.json"
     },
     {
@@ -177,11 +177,11 @@
     },
     {
       "id": "mazda_key_lishi_profiles",
-      "name": "MAZDA v5 Key + Lishi Profiles",
+      "name": "MAZDA Vehicle Key-System Records",
       "manufacturer": "mazda",
-      "version": "2026.07.04-bulk-v5-coverage-1",
+      "version": "2026.07.04-big-japan-korea-individual-1",
       "file": "manufacturers/mazda.json",
-      "records": 2,
+      "records": 11,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mazda.json"
     },
     {
@@ -294,11 +294,11 @@
     },
     {
       "id": "suzuki_key_lishi_profiles",
-      "name": "SUZUKI v5 Key + Lishi Profiles",
+      "name": "SUZUKI Vehicle Key-System Records",
       "manufacturer": "suzuki",
-      "version": "2026.07.04-bulk-v5-coverage-1",
+      "version": "2026.07.04-big-japan-korea-individual-1",
       "file": "manufacturers/suzuki.json",
-      "records": 2,
+      "records": 6,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/suzuki.json"
     },
     {
@@ -312,11 +312,11 @@
     },
     {
       "id": "toyota_key_lishi_profiles",
-      "name": "TOYOTA v5 Key + Lishi Profiles",
+      "name": "TOYOTA Vehicle Key-System Records",
       "manufacturer": "toyota",
-      "version": "2026.07.04-bulk-v5-coverage-1",
+      "version": "2026.07.04-big-japan-korea-individual-1",
       "file": "manufacturers/toyota.json",
-      "records": 6,
+      "records": 14,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/toyota.json"
     },
     {
@@ -348,8 +348,7 @@
     }
   ],
   "notes": [
-    "Reference index pack.",
-    "Adds searchable blade and transponder reference records.",
-    "Useful for searching HU101, HU66, HU83, VA2, SIP22, ID46, ID48, ID4A and ID49."
+    "Japan/Korea individual expansion: 68 records.",
+    "Adds generation-level Toyota/Lexus/Honda/Mazda/Hyundai/Kia/Suzuki records."
   ]
 }

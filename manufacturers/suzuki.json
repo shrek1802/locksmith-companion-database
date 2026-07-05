@@ -1,23 +1,23 @@
 [
   {
-    "record_id": "SUZUKI-SWIFT",
+    "record_id": "SUZUKI-SWIFT-MK2-2004-2010-REMOTE-SMART-KEY",
     "make": "Suzuki",
     "model": "Swift",
-    "variant": "Swift",
-    "generation": "Swift",
-    "years": "2005-present",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2004-2010",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Suzuki immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Suzuki immobiliser / smart key",
     "key_profile": {
-      "blade_profile": "SZ11 / HU133R depending year - verify",
+      "blade_profile": "SZ11 / HU133R by year - verify",
       "lishi_tool": "SZ11 / HU133R Suzuki tool family",
-      "transponder": "ID46 / Suzuki smart family - verify",
+      "transponder": "Suzuki ID46 / smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
+      "buttons": "2/3/4 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Suzuki immobiliser / BCM",
+      "immobiliser_family": "Suzuki immobiliser / smart key",
       "oem_key": "Suzuki OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
@@ -26,128 +26,266 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "SZ11 / HU133R depending year - verify",
+        "value": "SZ11 / HU133R by year - verify",
         "status": "high_confidence",
         "sources": [
+          "Auto Key Tool Pro",
           "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation where needed"
+        ]
       },
       "lishi_tool": {
         "value": "SZ11 / HU133R Suzuki tool family",
         "status": "high_confidence",
         "sources": [
+          "Auto Key Tool Pro",
           "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation where needed"
+        ]
       },
       "transponder": {
-        "value": "ID46 / Suzuki smart family - verify",
+        "value": "Suzuki ID46 / smart key family - verify",
         "status": "high_confidence",
         "sources": [
+          "Auto Key Tool Pro",
           "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation where needed"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
+          "Auto Key Tool Pro",
           "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation where needed"
+        ]
       },
       "key_type": {
         "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
+          "Auto Key Tool Pro",
           "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
-      },
-      "buttons": {
-        "value": "2/3 button depending spec",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation where needed"
+        ]
       }
     },
     "locksmith_use": {
       "lockout": "Use SZ11 / HU133R Suzuki tool family where fitted",
-      "akl_blade_decode": "Decode/cut by SZ11 / HU133R depending year - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+      "akl_blade_decode": "Decode/cut by SZ11 / HU133R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
+        "Auto Key Tool Pro",
         "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Original Lishi family"
+        "Workshop confirmation where needed"
       ],
-      "last_checked": "2026-07-05",
-      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
         "name": "Transpondery",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi family",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "SUZUKI-SUV-RANGE",
+    "record_id": "SUZUKI-SWIFT-MK3-2010-2017-REMOTE-SMART-KEY",
     "make": "Suzuki",
-    "model": "Vitara/S-Cross",
-    "variant": "SUV range",
-    "generation": "SUV range",
-    "years": "2013-present",
+    "model": "Swift",
+    "variant": "Mk3",
+    "generation": "Mk3",
+    "years": "2010-2017",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Suzuki immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Suzuki immobiliser / smart key",
     "key_profile": {
-      "blade_profile": "SZ11 / HU133R emergency blade - verify",
+      "blade_profile": "SZ11 / HU133R by year - verify",
       "lishi_tool": "SZ11 / HU133R Suzuki tool family",
-      "transponder": "Suzuki smart key family - verify",
+      "transponder": "Suzuki ID46 / smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Suzuki immobiliser / BCM",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Suzuki immobiliser / smart key",
+      "oem_key": "Suzuki OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "SZ11 / HU133R by year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "SZ11 / HU133R Suzuki tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Suzuki ID46 / smart key family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use SZ11 / HU133R Suzuki tool family where fitted",
+      "akl_blade_decode": "Decode/cut by SZ11 / HU133R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "SUZUKI-SWIFT-MK4-2017-PRESENT-REMOTE-SMART-KEY",
+    "make": "Suzuki",
+    "model": "Swift",
+    "variant": "Mk4",
+    "generation": "Mk4",
+    "years": "2017-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Suzuki immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "SZ11 / HU133R by year - verify",
+      "lishi_tool": "SZ11 / HU133R Suzuki tool family",
+      "transponder": "Suzuki ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Suzuki immobiliser / smart key",
       "oem_key": "Suzuki OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
@@ -156,106 +294,512 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "SZ11 / HU133R emergency blade - verify",
+        "value": "SZ11 / HU133R by year - verify",
         "status": "needs_review",
         "sources": [
+          "Auto Key Tool Pro",
           "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation where needed"
+        ]
       },
       "lishi_tool": {
         "value": "SZ11 / HU133R Suzuki tool family",
         "status": "needs_review",
         "sources": [
+          "Auto Key Tool Pro",
           "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation where needed"
+        ]
       },
       "transponder": {
-        "value": "Suzuki smart key family - verify",
+        "value": "Suzuki ID46 / smart key family - verify",
         "status": "needs_review",
         "sources": [
+          "Auto Key Tool Pro",
           "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation where needed"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "needs_review",
         "sources": [
+          "Auto Key Tool Pro",
           "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation where needed"
+        ]
       },
       "key_type": {
-        "value": "Smart key",
+        "value": "Remote / smart key",
         "status": "needs_review",
         "sources": [
+          "Auto Key Tool Pro",
           "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
-      },
-      "buttons": {
-        "value": "2/3 button depending spec",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery",
-          "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation where needed"
+        ]
       }
     },
     "locksmith_use": {
       "lockout": "Use SZ11 / HU133R Suzuki tool family where fitted",
-      "akl_blade_decode": "Decode/cut by SZ11 / HU133R emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+      "akl_blade_decode": "Decode/cut by SZ11 / HU133R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "needs_review",
       "verified_by": [
+        "Auto Key Tool Pro",
         "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Original Lishi family"
+        "Workshop confirmation where needed"
       ],
-      "last_checked": "2026-07-05",
-      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
         "name": "Transpondery",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi family",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 55,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "SUZUKI-VITARA-VITARA-2015-PRESENT-REMOTE-SMART-KEY",
+    "make": "Suzuki",
+    "model": "Vitara",
+    "variant": "Vitara",
+    "generation": "Vitara",
+    "years": "2015-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Suzuki immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "SZ11 / HU133R by year - verify",
+      "lishi_tool": "SZ11 / HU133R Suzuki tool family",
+      "transponder": "Suzuki ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Suzuki immobiliser / smart key",
+      "oem_key": "Suzuki OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "SZ11 / HU133R by year - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "SZ11 / HU133R Suzuki tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Suzuki ID46 / smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use SZ11 / HU133R Suzuki tool family where fitted",
+      "akl_blade_decode": "Decode/cut by SZ11 / HU133R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "SUZUKI-SX4-S-CROSS-SX4-S-CROSS-2006-PRESENT-REMOTE-SMART-KEY",
+    "make": "Suzuki",
+    "model": "SX4/S-Cross",
+    "variant": "SX4/S-Cross",
+    "generation": "SX4/S-Cross",
+    "years": "2006-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Suzuki immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "SZ11 / HU133R by year - verify",
+      "lishi_tool": "SZ11 / HU133R Suzuki tool family",
+      "transponder": "Suzuki ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Suzuki immobiliser / smart key",
+      "oem_key": "Suzuki OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "SZ11 / HU133R by year - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "SZ11 / HU133R Suzuki tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Suzuki ID46 / smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use SZ11 / HU133R Suzuki tool family where fitted",
+      "akl_blade_decode": "Decode/cut by SZ11 / HU133R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "SUZUKI-JIMNY-JIMNY-1998-PRESENT-REMOTE-SMART-KEY",
+    "make": "Suzuki",
+    "model": "Jimny",
+    "variant": "Jimny",
+    "generation": "Jimny",
+    "years": "1998-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Suzuki immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "SZ11 / HU133R by year - verify",
+      "lishi_tool": "SZ11 / HU133R Suzuki tool family",
+      "transponder": "Suzuki ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Suzuki immobiliser / smart key",
+      "oem_key": "Suzuki OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Suzuki remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "SZ11 / HU133R by year - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "SZ11 / HU133R Suzuki tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Suzuki ID46 / smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use SZ11 / HU133R Suzuki tool family where fitted",
+      "akl_blade_decode": "Decode/cut by SZ11 / HU133R by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   }

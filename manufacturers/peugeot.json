@@ -1,23 +1,23 @@
 [
   {
-    "record_id": "PEUGEOT-SMALL-OLD-RANGE",
+    "record_id": "PEUGEOT-106-106-1991-2003-TRANSPONDER-REMOTE-KEY",
     "make": "Peugeot",
-    "model": "Small cars",
-    "variant": "106/107/108/206/207",
-    "generation": "106/107/108/206/207",
-    "years": "1991-2014",
+    "model": "106",
+    "variant": "106",
+    "generation": "106",
+    "years": "1991-2003",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "PSA/Toyota shared on 107/108",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
     "key_profile": {
-      "blade_profile": "NE72 / HU83 / VA2 / TOY shared by model",
-      "lishi_tool": "NE72 / HU83 / VA2 / TOY tool family",
-      "transponder": "ID33 / ID46 by generation",
+      "blade_profile": "NE72 / VA2 - verify",
+      "lishi_tool": "NE72 / VA2 PSA tool family",
+      "transponder": "ID33 / ID46 by year - verify",
       "remote_frequency_uk": "433 MHz",
       "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote key",
-      "smart_keyless": "No / optional",
-      "immobiliser_family": "PSA/Toyota shared on 107/108",
+      "key_type": "Transponder / remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
       "oem_key": "Peugeot OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
@@ -26,36 +26,36 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "NE72 / HU83 / VA2 / TOY shared by model",
+        "value": "NE72 / VA2 - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "NE72 / HU83 / VA2 / TOY tool family",
+        "value": "NE72 / VA2 PSA tool family",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID33 / ID46 by generation",
+        "value": "ID33 / ID46 by year - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
@@ -63,10 +63,144 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Transponder / remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use NE72 / VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by NE72 / VA2 - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-107-107-2005-2014-REMOTE-KEY",
+    "make": "Peugeot",
+    "model": "107",
+    "variant": "107",
+    "generation": "107",
+    "years": "2005-2014",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "TOY43 / VA2 - verify",
+      "lishi_tool": "TOY43 / VA2 tool family",
+      "transponder": "ID46 Toyota/PSA shared - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "TOY43 / VA2 - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "TOY43 / VA2 tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 Toyota/PSA shared - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
@@ -74,82 +208,82 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use NE72 / HU83 / VA2 / TOY tool family where fitted",
-      "akl_blade_decode": "Decode/cut by NE72 / HU83 / VA2 / TOY shared by model",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+      "lockout": "Use TOY43 / VA2 tool family where fitted",
+      "akl_blade_decode": "Decode/cut by TOY43 / VA2 - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
         "Auto Key Tool Pro",
-        "Transpondery PSA/Stellantis",
-        "Original Lishi HU83/VA2/SIP22",
+        "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Workshop confirmation needed"
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
         "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Transpondery PSA/Stellantis",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU83/VA2/SIP22",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "PEUGEOT-208-2008-RANGE",
+    "record_id": "PEUGEOT-108-108-2014-2021-REMOTE-KEY",
     "make": "Peugeot",
-    "model": "208 / 2008",
-    "variant": "Mk1/Mk2",
-    "generation": "Mk1/Mk2",
-    "years": "2012-present",
+    "model": "108",
+    "variant": "108",
+    "generation": "108",
+    "years": "2014-2021",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
+    "database_layer": "layer_1_vehicle_generation_key_system",
     "platform": "PSA/Stellantis BSI",
     "key_profile": {
-      "blade_profile": "VA2 / emergency blade by generation",
-      "lishi_tool": "VA2 PSA tool family",
-      "transponder": "ID46 / AES family by generation",
+      "blade_profile": "TOY48 / VA2 - verify",
+      "lishi_tool": "TOY48 / VA2 tool family",
+      "transponder": "ID46 Toyota/PSA shared - verify",
       "remote_frequency_uk": "433 MHz",
       "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
+      "key_type": "Remote key",
       "smart_keyless": "Yes / No depending spec",
       "immobiliser_family": "PSA/Stellantis BSI",
       "oem_key": "Peugeot OEM key family - verify by original key/VIN",
@@ -160,14 +294,684 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "VA2 / emergency blade by generation",
+        "value": "TOY48 / VA2 - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "TOY48 / VA2 tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 Toyota/PSA shared - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use TOY48 / VA2 tool family where fitted",
+      "akl_blade_decode": "Decode/cut by TOY48 / VA2 - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-206-206-1998-2009-REMOTE-KEY",
+    "make": "Peugeot",
+    "model": "206",
+    "variant": "206",
+    "generation": "206",
+    "years": "1998-2009",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "NE72 / HU83 by year - verify",
+      "lishi_tool": "NE72 / HU83 PSA tool family",
+      "transponder": "ID33 / ID46 by year - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "NE72 / HU83 by year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "NE72 / HU83 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID33 / ID46 by year - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use NE72 / HU83 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by NE72 / HU83 by year - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-207-207-2006-2014-FLIP-REMOTE",
+    "make": "Peugeot",
+    "model": "207",
+    "variant": "207",
+    "generation": "207",
+    "years": "2006-2014",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "HU83",
+      "lishi_tool": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+      "transponder": "ID46 / PCF7941 / PCF7946",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Flip remote",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / PCF7941 / PCF7946",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Flip remote",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU83 2-in-1 / 3-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU83",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-208-MK1-2012-2019-FLIP-REMOTE-PROXIMITY-KEY",
+    "make": "Peugeot",
+    "model": "208",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2012-2019",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "VA2",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "ID46 / PCF7941 / PCF7961",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / PCF7941 / PCF7961",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Flip remote / proximity key",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-208-MK2-2019-PRESENT-SMART-FLIP-REMOTE",
+    "make": "Peugeot",
+    "model": "208",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2019-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "VA2 emergency blade - verify",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "AES smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Smart / flip remote",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "AES smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Smart / flip remote",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-2008-MK1-2013-2019-FLIP-REMOTE-PROXIMITY-KEY",
+    "make": "Peugeot",
+    "model": "2008",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2013-2019",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "VA2",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "ID46 / PCF family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Flip remote / proximity key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
@@ -175,21 +979,21 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID46 / AES family by generation",
+        "value": "ID46 / PCF family",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
@@ -197,90 +1001,760 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Remote / smart key",
+        "value": "Flip remote / proximity key",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use VA2 PSA tool family where fitted",
-      "akl_blade_decode": "Decode/cut by VA2 / emergency blade by generation",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+      "akl_blade_decode": "Decode/cut by VA2",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
         "Auto Key Tool Pro",
-        "Transpondery PSA/Stellantis",
-        "Original Lishi HU83/VA2/SIP22",
+        "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Workshop confirmation needed"
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
         "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Transpondery PSA/Stellantis",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU83/VA2/SIP22",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "PEUGEOT-MID-SUV-RANGE",
+    "record_id": "PEUGEOT-2008-MK2-2019-PRESENT-SMART-FLIP-REMOTE",
     "make": "Peugeot",
-    "model": "308 / 3008 / 5008",
-    "variant": "Mk1/Mk2/Mk3",
-    "generation": "Mk1/Mk2/Mk3",
-    "years": "2007-present",
+    "model": "2008",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2019-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
+    "database_layer": "layer_1_vehicle_generation_key_system",
     "platform": "PSA/Stellantis BSI",
     "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade by generation",
-      "lishi_tool": "HU83 / VA2 PSA tool family",
-      "transponder": "ID46 / AES family by generation",
+      "blade_profile": "VA2 emergency blade - verify",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "AES smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Smart / flip remote",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "AES smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Smart / flip remote",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-307-307-2001-2008-FLIP-REMOTE",
+    "make": "Peugeot",
+    "model": "307",
+    "variant": "307",
+    "generation": "307",
+    "years": "2001-2008",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "HU83",
+      "lishi_tool": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+      "transponder": "ID46 / PCF family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Flip remote",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Flip remote",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU83 2-in-1 / 3-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU83",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-308-MK1-2007-2013-FLIP-REMOTE",
+    "make": "Peugeot",
+    "model": "308",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2007-2013",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "HU83",
+      "lishi_tool": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+      "transponder": "ID46 / PCF family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Flip remote",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Flip remote",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU83 2-in-1 / 3-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU83",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-308-MK2-2013-2021-FLIP-REMOTE-SMART-KEY",
+    "make": "Peugeot",
+    "model": "308",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2013-2021",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "VA2",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "ID46 / PCF family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Flip remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "verified",
+      "confidence": "verified"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Flip remote / smart key",
+        "status": "verified",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "verified",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 100,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-308-MK3-2021-PRESENT-SMART-KEY",
+    "make": "Peugeot",
+    "model": "308",
+    "variant": "Mk3",
+    "generation": "Mk3",
+    "years": "2021-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "VA2 emergency blade - verify",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "AES smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "AES smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-3008-MK1-2008-2016-REMOTE-SMART-KEY",
+    "make": "Peugeot",
+    "model": "3008",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2008-2016",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "VA2 / HU83 - verify",
+      "lishi_tool": "VA2 / HU83 PSA tool family",
+      "transponder": "ID46 / PCF family",
       "remote_frequency_uk": "433 MHz",
       "buttons": "2/3/4 button depending spec",
       "key_type": "Remote / smart key",
@@ -294,36 +1768,36 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HU83 / VA2 / emergency blade by generation",
+        "value": "VA2 / HU83 - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU83 / VA2 PSA tool family",
+        "value": "VA2 / HU83 PSA tool family",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID46 / AES family by generation",
+        "value": "ID46 / PCF family",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
@@ -331,10 +1805,10 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
@@ -342,84 +1816,84 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU83 / VA2 PSA tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade by generation",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+      "lockout": "Use VA2 / HU83 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / HU83 - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
         "Auto Key Tool Pro",
-        "Transpondery PSA/Stellantis",
-        "Original Lishi HU83/VA2/SIP22",
+        "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Workshop confirmation needed"
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
         "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Transpondery PSA/Stellantis",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU83/VA2/SIP22",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "PEUGEOT-PARTNER-RIFTER-RANGE",
+    "record_id": "PEUGEOT-3008-MK2-2016-PRESENT-SMART-KEY",
     "make": "Peugeot",
-    "model": "Partner / Rifter",
-    "variant": "commercial/MPV range",
-    "generation": "commercial/MPV range",
-    "years": "1996-present",
+    "model": "3008",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2016-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "PSA/Stellantis commercial",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
     "key_profile": {
-      "blade_profile": "HU83 / VA2 / emergency blade by generation",
-      "lishi_tool": "HU83 / VA2 PSA tool family",
-      "transponder": "ID46 / AES commercial family",
+      "blade_profile": "VA2",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "ID46 / AES family - verify",
       "remote_frequency_uk": "433 MHz",
       "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
+      "key_type": "Smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA/Stellantis commercial",
+      "immobiliser_family": "PSA/Stellantis BSI",
       "oem_key": "Peugeot OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
@@ -428,36 +1902,36 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HU83 / VA2 / emergency blade by generation",
+        "value": "VA2",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU83 / VA2 PSA tool family",
+        "value": "VA2 PSA tool family",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID46 / AES commercial family",
+        "value": "ID46 / AES family - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
@@ -465,10 +1939,144 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-5008-MK1-2009-2016-REMOTE-SMART-KEY",
+    "make": "Peugeot",
+    "model": "5008",
+    "variant": "Mk1",
+    "generation": "Mk1",
+    "years": "2009-2016",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "VA2 / HU83 - verify",
+      "lishi_tool": "VA2 / HU83 PSA tool family",
+      "transponder": "ID46 / PCF family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / HU83 - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "VA2 / HU83 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
@@ -476,84 +2084,754 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU83 / VA2 PSA tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / emergency blade by generation",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+      "lockout": "Use VA2 / HU83 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / HU83 - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
         "Auto Key Tool Pro",
-        "Transpondery PSA/Stellantis",
-        "Original Lishi HU83/VA2/SIP22",
+        "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Workshop confirmation needed"
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
         "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Transpondery PSA/Stellantis",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU83/VA2/SIP22",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "PEUGEOT-COMMERCIAL-RANGE-EXP",
+    "record_id": "PEUGEOT-5008-MK2-2017-PRESENT-SMART-KEY",
     "make": "Peugeot",
-    "model": "Expert / Traveller / Boxer",
-    "variant": "commercial range",
-    "generation": "commercial range",
+    "model": "5008",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2017-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "VA2",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "ID46 / AES family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / AES family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-PARTNER-MK1-MK2-1996-2018-REMOTE-KEY",
+    "make": "Peugeot",
+    "model": "Partner",
+    "variant": "Mk1/Mk2",
+    "generation": "Mk1/Mk2",
+    "years": "1996-2018",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "HU83 / VA2 by year",
+      "lishi_tool": "HU83 / VA2 PSA tool family",
+      "transponder": "ID46 / PCF family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83 / VA2 by year",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU83 / VA2 PSA tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU83 / VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HU83 / VA2 by year",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-PARTNER-MK3-RIFTER-2018-PRESENT-REMOTE-SMART-KEY",
+    "make": "Peugeot",
+    "model": "Partner",
+    "variant": "Mk3 / Rifter",
+    "generation": "Mk3 / Rifter",
+    "years": "2018-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "VA2 / emergency blade - verify",
+      "lishi_tool": "VA2 PSA tool family",
+      "transponder": "AES commercial family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "VA2 PSA tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "AES commercial family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-EXPERT-MK2-2007-2016-REMOTE-KEY",
+    "make": "Peugeot",
+    "model": "Expert",
+    "variant": "Mk2",
+    "generation": "Mk2",
+    "years": "2007-2016",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "HU83",
+      "lishi_tool": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+      "transponder": "ID46 / PCF family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HU83",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HU83 2-in-1 / 3-in-1 Pick & Decoder",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / PCF family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HU83 2-in-1 / 3-in-1 Pick & Decoder where fitted",
+      "akl_blade_decode": "Decode/cut by HU83",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-EXPERT-MK3-TRAVELLER-2016-PRESENT-REMOTE-SMART-KEY",
+    "make": "Peugeot",
+    "model": "Expert",
+    "variant": "Mk3 / Traveller",
+    "generation": "Mk3 / Traveller",
+    "years": "2016-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
+    "key_profile": {
+      "blade_profile": "VA2 / HU83 emergency blade - verify",
+      "lishi_tool": "VA2 / HU83 PSA tool family",
+      "transponder": "AES commercial family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "PSA/Stellantis BSI",
+      "oem_key": "Peugeot OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "VA2 / HU83 emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "VA2 / HU83 PSA tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "AES commercial family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use VA2 / HU83 PSA tool family where fitted",
+      "akl_blade_decode": "Decode/cut by VA2 / HU83 emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "PEUGEOT-BOXER-2006-PRESENT-2006-PRESENT-REMOTE-KEY",
+    "make": "Peugeot",
+    "model": "Boxer",
+    "variant": "2006-present",
+    "generation": "2006-present",
     "years": "2006-present",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "PSA/Stellantis commercial",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "PSA/Stellantis BSI",
     "key_profile": {
-      "blade_profile": "HU83 / VA2 / SIP22 by platform",
-      "lishi_tool": "HU83 / VA2 / SIP22 tool family",
-      "transponder": "ID46 / AES commercial family",
+      "blade_profile": "SIP22 / HU83 commercial - verify",
+      "lishi_tool": "SIP22 / HU83 commercial tool family",
+      "transponder": "ID46 / commercial family - verify",
       "remote_frequency_uk": "433 MHz",
       "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / smart key",
+      "key_type": "Remote key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "PSA/Stellantis commercial",
+      "immobiliser_family": "PSA/Stellantis BSI",
       "oem_key": "Peugeot OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Peugeot remote/prox profile - verify exact board/prox type",
@@ -562,36 +2840,36 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HU83 / VA2 / SIP22 by platform",
+        "value": "SIP22 / HU83 commercial - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
-        "value": "HU83 / VA2 / SIP22 tool family",
+        "value": "SIP22 / HU83 commercial tool family",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID46 / AES commercial family",
+        "value": "ID46 / commercial family - verify",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
@@ -599,73 +2877,73 @@
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Remote / smart key",
+        "value": "Remote key",
         "status": "high_confidence",
         "sources": [
           "Auto Key Tool Pro",
-          "Transpondery PSA/Stellantis",
-          "Original Lishi HU83/VA2/SIP22",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
-      "lockout": "Use HU83 / VA2 / SIP22 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU83 / VA2 / SIP22 by platform",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+      "lockout": "Use SIP22 / HU83 commercial tool family where fitted",
+      "akl_blade_decode": "Decode/cut by SIP22 / HU83 commercial - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
         "Auto Key Tool Pro",
-        "Transpondery PSA/Stellantis",
-        "Original Lishi HU83/VA2/SIP22",
+        "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Workshop confirmation needed"
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
         "name": "Auto Key Tool Pro",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Transpondery PSA/Stellantis",
-        "url": "source://bulk-v5-reference"
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi HU83/VA2/SIP22",
-        "url": "source://bulk-v5-reference"
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   }

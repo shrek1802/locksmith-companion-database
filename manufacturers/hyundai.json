@@ -1,23 +1,23 @@
 [
   {
-    "record_id": "HYUNDAI-I10-RANGE",
+    "record_id": "HYUNDAI-I10-PA-2008-2013-REMOTE-SMART-KEY",
     "make": "Hyundai",
     "model": "i10",
-    "variant": "PA/IA/AC3",
-    "generation": "PA/IA/AC3",
-    "years": "2008-present",
+    "variant": "PA",
+    "generation": "PA",
+    "years": "2008-2013",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Hyundai immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
     "key_profile": {
-      "blade_profile": "HY22 / emergency blade by generation - verify",
+      "blade_profile": "HY22 / emergency blade - verify",
       "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "ID46 / Hyundai-Kia smart family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
+      "buttons": "2/3/4 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Hyundai immobiliser / BCM",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
       "oem_key": "Hyundai OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
@@ -26,122 +26,400 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HY22 / emergency blade by generation - verify",
+        "value": "HY22 / emergency blade - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
         "value": "HY22 Hyundai/Kia tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID46 / Hyundai-Kia smart family",
+        "value": "Hyundai ID46 / smart key family - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
         "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade by generation - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "HYUNDAI-I20-RANGE",
+    "record_id": "HYUNDAI-I10-IA-2013-2019-REMOTE-SMART-KEY",
+    "make": "Hyundai",
+    "model": "i10",
+    "variant": "IA",
+    "generation": "IA",
+    "years": "2013-2019",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "HY22 / emergency blade - verify",
+      "lishi_tool": "HY22 Hyundai/Kia tool family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
+      "oem_key": "Hyundai OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HY22 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HY22 Hyundai/Kia tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Hyundai ID46 / smart key family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "HYUNDAI-I10-AC3-2019-PRESENT-REMOTE-SMART-KEY",
+    "make": "Hyundai",
+    "model": "i10",
+    "variant": "AC3",
+    "generation": "AC3",
+    "years": "2019-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "HY22 / emergency blade - verify",
+      "lishi_tool": "HY22 Hyundai/Kia tool family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
+      "oem_key": "Hyundai OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HY22 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HY22 Hyundai/Kia tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Hyundai ID46 / smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "HYUNDAI-I20-PB-2008-2014-REMOTE-SMART-KEY",
     "make": "Hyundai",
     "model": "i20",
-    "variant": "PB/GB/BC3",
-    "generation": "PB/GB/BC3",
-    "years": "2008-present",
+    "variant": "PB",
+    "generation": "PB",
+    "years": "2008-2014",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Hyundai immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
     "key_profile": {
-      "blade_profile": "HY22 / emergency blade by generation - verify",
+      "blade_profile": "HY22 / emergency blade - verify",
       "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "ID46 / Hyundai-Kia smart family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
+      "buttons": "2/3/4 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Hyundai immobiliser / BCM",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
       "oem_key": "Hyundai OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
@@ -150,122 +428,400 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HY22 / emergency blade by generation - verify",
+        "value": "HY22 / emergency blade - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
         "value": "HY22 Hyundai/Kia tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID46 / Hyundai-Kia smart family",
+        "value": "Hyundai ID46 / smart key family - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
         "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade by generation - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "HYUNDAI-I30-RANGE",
+    "record_id": "HYUNDAI-I20-GB-2014-2020-REMOTE-SMART-KEY",
+    "make": "Hyundai",
+    "model": "i20",
+    "variant": "GB",
+    "generation": "GB",
+    "years": "2014-2020",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "HY22 / emergency blade - verify",
+      "lishi_tool": "HY22 Hyundai/Kia tool family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
+      "oem_key": "Hyundai OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HY22 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HY22 Hyundai/Kia tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Hyundai ID46 / smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "HYUNDAI-I20-BC3-2020-PRESENT-REMOTE-SMART-KEY",
+    "make": "Hyundai",
+    "model": "i20",
+    "variant": "BC3",
+    "generation": "BC3",
+    "years": "2020-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "HY22 / emergency blade - verify",
+      "lishi_tool": "HY22 Hyundai/Kia tool family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
+      "oem_key": "Hyundai OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HY22 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HY22 Hyundai/Kia tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Hyundai ID46 / smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "HYUNDAI-I30-FD-2007-2012-REMOTE-SMART-KEY",
     "make": "Hyundai",
     "model": "i30",
-    "variant": "FD/GD/PD",
-    "generation": "FD/GD/PD",
-    "years": "2007-present",
+    "variant": "FD",
+    "generation": "FD",
+    "years": "2007-2012",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Hyundai immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
     "key_profile": {
-      "blade_profile": "HY22 / emergency blade by generation - verify",
+      "blade_profile": "HY22 / emergency blade - verify",
       "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "ID46 / smart family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
+      "buttons": "2/3/4 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Hyundai immobiliser / BCM",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
       "oem_key": "Hyundai OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
@@ -274,246 +830,534 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "HY22 / emergency blade by generation - verify",
+        "value": "HY22 / emergency blade - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
         "value": "HY22 Hyundai/Kia tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "ID46 / smart family",
+        "value": "Hyundai ID46 / smart key family - verify",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
         "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HY22 / emergency blade by generation - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "HYUNDAI-TUCSON-RANGE",
+    "record_id": "HYUNDAI-I30-GD-2012-2017-REMOTE-SMART-KEY",
+    "make": "Hyundai",
+    "model": "i30",
+    "variant": "GD",
+    "generation": "GD",
+    "years": "2012-2017",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "HY22 / emergency blade - verify",
+      "lishi_tool": "HY22 Hyundai/Kia tool family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
+      "oem_key": "Hyundai OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HY22 / emergency blade - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HY22 Hyundai/Kia tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Hyundai ID46 / smart key family - verify",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "HYUNDAI-I30-PD-2017-PRESENT-REMOTE-SMART-KEY",
+    "make": "Hyundai",
+    "model": "i30",
+    "variant": "PD",
+    "generation": "PD",
+    "years": "2017-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "HY22 / emergency blade - verify",
+      "lishi_tool": "HY22 Hyundai/Kia tool family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
+      "oem_key": "Hyundai OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HY22 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HY22 Hyundai/Kia tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Hyundai ID46 / smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "HYUNDAI-TUCSON-IX35-2009-2015-REMOTE-SMART-KEY",
     "make": "Hyundai",
     "model": "Tucson",
-    "variant": "ix35/TL/NX4",
-    "generation": "ix35/TL/NX4",
-    "years": "2009-present",
+    "variant": "ix35",
+    "generation": "ix35",
+    "years": "2009-2015",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Hyundai immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
     "key_profile": {
       "blade_profile": "HY22 / emergency blade - verify",
       "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai smart key family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Hyundai immobiliser / BCM",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
       "oem_key": "Hyundai OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
+      "verification_status": "high_confidence",
+      "confidence": "high"
     },
     "verified_fields": {
       "blade_profile": {
         "value": "HY22 / emergency blade - verify",
-        "status": "needs_review",
+        "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
         "value": "HY22 Hyundai/Kia tool family",
-        "status": "needs_review",
+        "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "Hyundai smart key family",
-        "status": "needs_review",
+        "value": "Hyundai ID46 / smart key family - verify",
+        "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
-        "status": "needs_review",
+        "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Smart key",
-        "status": "needs_review",
+        "value": "Remote / smart key",
+        "status": "high_confidence",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
       "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
-      "overall_status": "needs_review",
+      "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
-      "key_profile": 55,
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "HYUNDAI-EV-RANGE",
+    "record_id": "HYUNDAI-TUCSON-TL-2015-2020-REMOTE-SMART-KEY",
     "make": "Hyundai",
-    "model": "Kona / Ioniq",
-    "variant": "EV range",
-    "generation": "EV range",
-    "years": "2016-present",
+    "model": "Tucson",
+    "variant": "TL",
+    "generation": "TL",
+    "years": "2015-2020",
     "market": "UK/EU",
-    "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Hyundai immobiliser / BCM",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
     "key_profile": {
       "blade_profile": "HY22 / emergency blade - verify",
       "lishi_tool": "HY22 Hyundai/Kia tool family",
-      "transponder": "Hyundai EV smart key family - verify",
+      "transponder": "Hyundai ID46 / smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
-      "key_type": "Smart key",
-      "smart_keyless": "Yes",
-      "immobiliser_family": "Hyundai immobiliser / BCM",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
       "oem_key": "Hyundai OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
@@ -525,97 +1369,375 @@
         "value": "HY22 / emergency blade - verify",
         "status": "needs_review",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "lishi_tool": {
         "value": "HY22 Hyundai/Kia tool family",
         "status": "needs_review",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "transponder": {
-        "value": "Hyundai EV smart key family - verify",
+        "value": "Hyundai ID46 / smart key family - verify",
         "status": "needs_review",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "needs_review",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       },
       "key_type": {
-        "value": "Smart key",
+        "value": "Remote / smart key",
         "status": "needs_review",
         "sources": [
-          "Transpondery Hyundai/Kia/KGM/Isuzu",
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
           "Supplier catalogues",
-          "Original Lishi application lists",
-          "Workshop confirmation needed"
+          "Workshop confirmation where needed"
         ]
       }
     },
     "locksmith_use": {
       "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
       "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
-      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Confirm exact key by VIN/original key before ordering."
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
     },
     "programming": {
-      "method": "Programming route not fully verified yet.",
-      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
-      "status": "needs_review"
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
     },
     "verification": {
       "overall_status": "needs_review",
       "verified_by": [
-        "Transpondery Hyundai/Kia/KGM/Isuzu",
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
         "Supplier catalogues",
-        "Original Lishi application lists",
-        "Workshop confirmation needed"
+        "Workshop confirmation where needed"
       ],
       "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery Hyundai/Kia/KGM/Isuzu",
-        "url": "source://bulk-v5-reference"
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
       },
       {
         "name": "Supplier catalogues",
-        "url": "source://bulk-v5-reference"
+        "url": "source://vehicle-key-reference"
       },
       {
-        "name": "Original Lishi application lists",
-        "url": "source://bulk-v5-reference"
-      },
-      {
-        "name": "Workshop confirmation needed",
-        "url": "source://bulk-v5-reference"
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
       }
     ],
     "completion": {
       "key_profile": 55,
       "programming": 0,
       "locations": 0,
-      "workshop_notes": 10
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "HYUNDAI-TUCSON-NX4-2020-PRESENT-REMOTE-SMART-KEY",
+    "make": "Hyundai",
+    "model": "Tucson",
+    "variant": "NX4",
+    "generation": "NX4",
+    "years": "2020-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "HY22 / emergency blade - verify",
+      "lishi_tool": "HY22 Hyundai/Kia tool family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
+      "oem_key": "Hyundai OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HY22 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HY22 Hyundai/Kia tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Hyundai ID46 / smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "HYUNDAI-KONA-KONA-2017-PRESENT-REMOTE-SMART-KEY",
+    "make": "Hyundai",
+    "model": "Kona",
+    "variant": "Kona",
+    "generation": "Kona",
+    "years": "2017-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_vehicle_generation_key_system",
+    "platform": "Hyundai immobiliser / smart key",
+    "key_profile": {
+      "blade_profile": "HY22 / emergency blade - verify",
+      "lishi_tool": "HY22 Hyundai/Kia tool family",
+      "transponder": "Hyundai ID46 / smart key family - verify",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Hyundai immobiliser / smart key",
+      "oem_key": "Hyundai OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Hyundai remote/prox profile - verify exact board/prox type",
+      "verification_status": "needs_review",
+      "confidence": "review"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "HY22 / emergency blade - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "HY22 Hyundai/Kia tool family",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "transponder": {
+        "value": "Hyundai ID46 / smart key family - verify",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "needs_review",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery",
+          "Genuine/Original Lishi",
+          "Supplier catalogues",
+          "Workshop confirmation where needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use HY22 Hyundai/Kia tool family where fitted",
+      "akl_blade_decode": "Decode/cut by HY22 / emergency blade - verify",
+      "stock_note": "Confirm original key/VIN before ordering.",
+      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    },
+    "programming": {
+      "method": "To be added later",
+      "akl_notes": "Confirm by exact vehicle/tool.",
+      "status": "not_added_yet"
+    },
+    "verification": {
+      "overall_status": "needs_review",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery",
+        "Genuine/Original Lishi",
+        "Supplier catalogues",
+        "Workshop confirmation where needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Transpondery",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Genuine/Original Lishi",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://vehicle-key-reference"
+      },
+      {
+        "name": "Workshop confirmation where needed",
+        "url": "source://vehicle-key-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 0
     },
     "last_updated": "2026-07-05"
   }
