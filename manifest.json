@@ -1,7 +1,7 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.04-ford-v1.1",
-  "created": "2026-07-04",
+  "database_version": "2026.07.04-realrepo-vauxhall-v1.0",
+  "created": "2026-07-05",
   "pack_type": "verified_key_lishi_database",
   "packs": [
     {
@@ -276,11 +276,11 @@
     },
     {
       "id": "vauxhall_key_lishi_profiles",
-      "name": "VAUXHALL Key + Lishi Profiles",
+      "name": "VAUXHALL Verified Key + Lishi Profiles",
       "manufacturer": "vauxhall",
-      "version": "2026.07.04-batch2-lishi-1",
+      "version": "2026.07.04-vauxhall-v1.0",
       "file": "manufacturers/vauxhall.json",
-      "records": 24,
+      "records": 36,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/vauxhall.json"
     },
     {
@@ -303,10 +303,9 @@
     }
   ],
   "notes": [
-    "Ford v1.1 verified correction pack.",
-    "Tightens Ford records using Access Fobs, MR-Key, Auto-Keys and Transpondery references.",
-    "Generation/Mk based records retained.",
-    "Transit/Transit Custom/Transit Connect/Tourneo split into independent records.",
-    "2023+ platforms are marked needs_review until workshop-confirmed."
+    "Built from uploaded real locksmith-companion-database repository.",
+    "Adds Vauxhall/Opel v1.0 verified correction data to the real repo state.",
+    "Keeps existing Dacia, Renault and Ford v1.1 entries intact.",
+    "Vauxhall GM-era HU100/ID46 records are separated from PSA/Stellantis-era vehicles."
   ]
 }
