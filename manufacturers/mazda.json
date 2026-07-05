@@ -1,23 +1,23 @@
 [
   {
-    "record_id": "MAZDA-2-3",
+    "record_id": "MAZDA2-RANGE-EXP",
     "make": "Mazda",
-    "model": "Mazda2/3",
-    "variant": "Main hatch range",
-    "generation": "Main hatch range",
+    "model": "Mazda2",
+    "variant": "DE/DJ",
+    "generation": "DE/DJ",
     "years": "2007-present",
     "market": "UK/EU",
     "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Mazda immobiliser / BCM",
+    "platform": "Mazda immobiliser",
     "key_profile": {
-      "blade_profile": "MAZ24 / emergency blade - verify",
+      "blade_profile": "MAZ24 / emergency blade by generation",
       "lishi_tool": "MAZ24 Mazda tool family",
-      "transponder": "ID46 / Mazda smart family - verify",
+      "transponder": "ID46 / Mazda smart key family",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
+      "buttons": "2/3/4 button depending spec",
       "key_type": "Remote / smart key",
       "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "Mazda immobiliser / BCM",
+      "immobiliser_family": "Mazda immobiliser",
       "oem_key": "Mazda OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
@@ -26,71 +26,66 @@
     },
     "verified_fields": {
       "blade_profile": {
-        "value": "MAZ24 / emergency blade - verify",
+        "value": "MAZ24 / emergency blade by generation",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation needed"
+        ]
       },
       "lishi_tool": {
         "value": "MAZ24 Mazda tool family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation needed"
+        ]
       },
       "transponder": {
-        "value": "ID46 / Mazda smart family - verify",
+        "value": "ID46 / Mazda smart key family",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation needed"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation needed"
+        ]
       },
       "key_type": {
         "value": "Remote / smart key",
         "status": "high_confidence",
         "sources": [
-          "Transpondery",
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
-      },
-      "buttons": {
-        "value": "2/3 button depending spec",
-        "status": "high_confidence",
-        "sources": [
-          "Transpondery",
-          "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation needed"
+        ]
       }
     },
     "locksmith_use": {
       "lockout": "Use MAZ24 Mazda tool family where fitted",
-      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
+      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade by generation",
       "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
     },
     "programming": {
       "method": "Programming route not fully verified yet.",
@@ -100,16 +95,25 @@
     "verification": {
       "overall_status": "high_confidence",
       "verified_by": [
-        "Transpondery",
+        "Auto Key Tool Pro",
+        "Transpondery Ford/Mazda",
+        "Original Lishi HU101/FO21/MAZ24",
         "Supplier catalogues",
-        "Original Lishi family"
+        "Workshop confirmation needed"
       ],
-      "last_checked": "2026-07-05",
-      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery",
+        "name": "Auto Key Tool Pro",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery Ford/Mazda",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU101/FO21/MAZ24",
         "url": "source://bulk-v5-reference"
       },
       {
@@ -117,7 +121,7 @@
         "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Original Lishi family",
+        "name": "Workshop confirmation needed",
         "url": "source://bulk-v5-reference"
       }
     ],
@@ -130,24 +134,292 @@
     "last_updated": "2026-07-05"
   },
   {
-    "record_id": "MAZDA-SUV-RANGE",
+    "record_id": "MAZDA3-RANGE-EXP",
     "make": "Mazda",
-    "model": "CX-5/CX-30",
-    "variant": "SUV range",
-    "generation": "SUV range",
+    "model": "Mazda3",
+    "variant": "BK/BL/BM/BP",
+    "generation": "BK/BL/BM/BP",
+    "years": "2003-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Mazda immobiliser",
+    "key_profile": {
+      "blade_profile": "MAZ24 / emergency blade by generation",
+      "lishi_tool": "MAZ24 Mazda tool family",
+      "transponder": "ID46 / Mazda smart key family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Mazda immobiliser",
+      "oem_key": "Mazda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "MAZ24 / emergency blade by generation",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "MAZ24 Mazda tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / Mazda smart key family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use MAZ24 Mazda tool family where fitted",
+      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade by generation",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery Ford/Mazda",
+        "Original Lishi HU101/FO21/MAZ24",
+        "Supplier catalogues",
+        "Workshop confirmation needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery Ford/Mazda",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU101/FO21/MAZ24",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MAZDA6-RANGE-EXP",
+    "make": "Mazda",
+    "model": "Mazda6",
+    "variant": "GG/GH/GJ",
+    "generation": "GG/GH/GJ",
+    "years": "2002-2023",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Mazda immobiliser",
+    "key_profile": {
+      "blade_profile": "MAZ24 / emergency blade by generation",
+      "lishi_tool": "MAZ24 Mazda tool family",
+      "transponder": "ID46 / Mazda smart key family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Mazda immobiliser",
+      "oem_key": "Mazda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "MAZ24 / emergency blade by generation",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "MAZ24 Mazda tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / Mazda smart key family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use MAZ24 Mazda tool family where fitted",
+      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade by generation",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery Ford/Mazda",
+        "Original Lishi HU101/FO21/MAZ24",
+        "Supplier catalogues",
+        "Workshop confirmation needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery Ford/Mazda",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU101/FO21/MAZ24",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MAZDA-CX-RANGE-EXP",
+    "make": "Mazda",
+    "model": "CX range",
+    "variant": "CX-3/CX-5/CX-30",
+    "generation": "CX-3/CX-5/CX-30",
     "years": "2012-present",
     "market": "UK/EU",
     "database_layer": "layer_1_v5_key_lishi_profile",
-    "platform": "Mazda immobiliser / BCM",
+    "platform": "Mazda smart key",
     "key_profile": {
       "blade_profile": "MAZ24 / emergency blade - verify",
       "lishi_tool": "MAZ24 Mazda tool family",
       "transponder": "Mazda smart key family - verify",
       "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3 button depending spec",
+      "buttons": "2/3/4 button depending spec",
       "key_type": "Smart key",
       "smart_keyless": "Yes",
-      "immobiliser_family": "Mazda immobiliser / BCM",
+      "immobiliser_family": "Mazda smart key",
       "oem_key": "Mazda OEM key family - verify by original key/VIN",
       "xhorse_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
       "keydiy_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
@@ -159,68 +431,63 @@
         "value": "MAZ24 / emergency blade - verify",
         "status": "needs_review",
         "sources": [
-          "Transpondery",
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation needed"
+        ]
       },
       "lishi_tool": {
         "value": "MAZ24 Mazda tool family",
         "status": "needs_review",
         "sources": [
-          "Transpondery",
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation needed"
+        ]
       },
       "transponder": {
         "value": "Mazda smart key family - verify",
         "status": "needs_review",
         "sources": [
-          "Transpondery",
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation needed"
+        ]
       },
       "remote_frequency_uk": {
         "value": "433 MHz",
         "status": "needs_review",
         "sources": [
-          "Transpondery",
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation needed"
+        ]
       },
       "key_type": {
         "value": "Smart key",
         "status": "needs_review",
         "sources": [
-          "Transpondery",
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
           "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
-      },
-      "buttons": {
-        "value": "2/3 button depending spec",
-        "status": "needs_review",
-        "sources": [
-          "Transpondery",
-          "Supplier catalogues",
-          "Original Lishi family"
-        ],
-        "notes": ""
+          "Workshop confirmation needed"
+        ]
       }
     },
     "locksmith_use": {
       "lockout": "Use MAZ24 Mazda tool family where fitted",
       "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade - verify",
       "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
-      "notes": "Bulk v5 coverage record. Anything uncertain is marked high_confidence or needs_review."
+      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
     },
     "programming": {
       "method": "Programming route not fully verified yet.",
@@ -230,16 +497,25 @@
     "verification": {
       "overall_status": "needs_review",
       "verified_by": [
-        "Transpondery",
+        "Auto Key Tool Pro",
+        "Transpondery Ford/Mazda",
+        "Original Lishi HU101/FO21/MAZ24",
         "Supplier catalogues",
-        "Original Lishi family"
+        "Workshop confirmation needed"
       ],
-      "last_checked": "2026-07-05",
-      "source_notes": "Bulk v5 coverage pack. Designed for fast coverage with honest confidence levels."
+      "last_checked": "2026-07-05"
     },
     "sources": [
       {
-        "name": "Transpondery",
+        "name": "Auto Key Tool Pro",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery Ford/Mazda",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU101/FO21/MAZ24",
         "url": "source://bulk-v5-reference"
       },
       {
@@ -247,12 +523,146 @@
         "url": "source://bulk-v5-reference"
       },
       {
-        "name": "Original Lishi family",
+        "name": "Workshop confirmation needed",
         "url": "source://bulk-v5-reference"
       }
     ],
     "completion": {
       "key_profile": 55,
+      "programming": 0,
+      "locations": 0,
+      "workshop_notes": 10
+    },
+    "last_updated": "2026-07-05"
+  },
+  {
+    "record_id": "MAZDA-MX5-RANGE-EXP",
+    "make": "Mazda",
+    "model": "MX-5",
+    "variant": "NC/ND",
+    "generation": "NC/ND",
+    "years": "2005-present",
+    "market": "UK/EU",
+    "database_layer": "layer_1_v5_key_lishi_profile",
+    "platform": "Mazda immobiliser",
+    "key_profile": {
+      "blade_profile": "MAZ24 / emergency blade by generation",
+      "lishi_tool": "MAZ24 Mazda tool family",
+      "transponder": "ID46 / smart key family",
+      "remote_frequency_uk": "433 MHz",
+      "buttons": "2/3/4 button depending spec",
+      "key_type": "Remote / smart key",
+      "smart_keyless": "Yes / No depending spec",
+      "immobiliser_family": "Mazda immobiliser",
+      "oem_key": "Mazda OEM key family - verify by original key/VIN",
+      "xhorse_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
+      "keydiy_equivalent": "Mazda remote/prox profile - verify exact board/prox type",
+      "verification_status": "high_confidence",
+      "confidence": "high"
+    },
+    "verified_fields": {
+      "blade_profile": {
+        "value": "MAZ24 / emergency blade by generation",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "lishi_tool": {
+        "value": "MAZ24 Mazda tool family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "transponder": {
+        "value": "ID46 / smart key family",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "remote_frequency_uk": {
+        "value": "433 MHz",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      },
+      "key_type": {
+        "value": "Remote / smart key",
+        "status": "high_confidence",
+        "sources": [
+          "Auto Key Tool Pro",
+          "Transpondery Ford/Mazda",
+          "Original Lishi HU101/FO21/MAZ24",
+          "Supplier catalogues",
+          "Workshop confirmation needed"
+        ]
+      }
+    },
+    "locksmith_use": {
+      "lockout": "Use MAZ24 Mazda tool family where fitted",
+      "akl_blade_decode": "Decode/cut by MAZ24 / emergency blade by generation",
+      "stock_note": "Confirm blade, button count, flip/prox and part number by original key/VIN before ordering.",
+      "notes": "Bulk v5 expansion record. Confirm exact key by VIN/original key before ordering."
+    },
+    "programming": {
+      "method": "Programming route not fully verified yet.",
+      "akl_notes": "Confirm by exact year/tool. Use stable battery support.",
+      "status": "needs_review"
+    },
+    "verification": {
+      "overall_status": "high_confidence",
+      "verified_by": [
+        "Auto Key Tool Pro",
+        "Transpondery Ford/Mazda",
+        "Original Lishi HU101/FO21/MAZ24",
+        "Supplier catalogues",
+        "Workshop confirmation needed"
+      ],
+      "last_checked": "2026-07-05"
+    },
+    "sources": [
+      {
+        "name": "Auto Key Tool Pro",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Transpondery Ford/Mazda",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Original Lishi HU101/FO21/MAZ24",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Supplier catalogues",
+        "url": "source://bulk-v5-reference"
+      },
+      {
+        "name": "Workshop confirmation needed",
+        "url": "source://bulk-v5-reference"
+      }
+    ],
+    "completion": {
+      "key_profile": 85,
       "programming": 0,
       "locations": 0,
       "workshop_notes": 10
