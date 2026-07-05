@@ -1,4 +1,4 @@
-name: Install Database Pack
+name: Install Database Packs
 
 on:
   workflow_dispatch:
@@ -7,35 +7,39 @@ permissions:
   contents: write
 
 jobs:
-  install-pack:
+  install-packs:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Database Repo
         uses: actions/checkout@v4
 
-      - name: Check database_pack.zip exists
+      - name: Check database packs exist
         run: |
-          if [ ! -f database_pack.zip ]; then
-            echo "ERROR: database_pack.zip not found in repo root"
+          ls database_pack*.zip >/dev/null 2>&1 || {
+            echo "ERROR: No database_pack*.zip files found in repo root"
             exit 1
-          fi
+          }
 
-      - name: Extract database pack
+      - name: Extract all database packs
         run: |
-          rm -rf _pack
-          mkdir _pack
-          unzip -o database_pack.zip -d _pack
+          for pack in $(ls database_pack*.zip | sort -V); do
+            echo "Installing $pack"
 
-          echo "Pack contents:"
-          find _pack -maxdepth 4 -type f
+            rm -rf _pack
+            mkdir _pack
+            unzip -o "$pack" -d _pack
 
-          cp -R _pack/. .
+            echo "Pack contents:"
+            find _pack -maxdepth 4 -type f
 
-          rm -rf _pack
-          rm -f database_pack.zip
+            cp -R _pack/. .
 
-      - name: Commit database update
+            rm -rf _pack
+            rm -f "$pack"
+          done
+
+      - name: Commit database updates
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
@@ -45,6 +49,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No database changes to commit"
           else
-            git commit -m "Install database pack"
+            git commit -m "Install database packs"
             git push
           fi
