@@ -1,0 +1,22 @@
+- name: Extract all database packs
+  run: |
+    for pack in $(ls database_pack*.zip | sort -V); do
+      echo "Installing $pack"
+      
+      rm -rf _pack
+      mkdir _pack
+      unzip -o "$pack" -d _pack
+      
+      echo "Pack contents:"
+      find _pack -maxdepth 4 -type f
+      
+      # DON'T overwrite manifest.json from zip
+      rm -f _pack/manifest.json
+      rm -f _pack/CHANGELOG.md 
+      rm -f _pack/README.md
+      
+      cp -R _pack/..
+      
+      rm -rf _pack
+      rm -f "$pack"
+    done
