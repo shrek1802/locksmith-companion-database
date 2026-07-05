@@ -1,5 +1,15 @@
 # Database Changelog
 
+## 2026.07.05-cumulative-alliance-1
+
+- Expanded Renault generation/key-system records.
+- Expanded Dacia generation/key-system records.
+- Expanded Nissan generation/key-system records.
+- Expanded Mitsubishi generation/key-system records.
+- Rebuilt manifest from actual manufacturer files.
+- Single cumulative pack only.
+
+
 ## 2026.07.05-cumulative-mercedes-smart-1
 
 - Built from latest uploaded working repository.

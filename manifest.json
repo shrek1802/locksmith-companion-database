@@ -1,6 +1,6 @@
 {
   "title": "Locksmith Companion Database",
-  "database_version": "2026.07.05-cumulative-mercedes-smart-1",
+  "database_version": "2026.07.05-cumulative-alliance-1",
   "created": "2026-07-05",
   "pack_type": "single_cumulative_database_pack",
   "packs": [
@@ -89,9 +89,9 @@
       "id": "dacia_key_lishi_profiles",
       "name": "DACIA Key + Lishi Profiles",
       "manufacturer": "dacia",
-      "version": "existing",
+      "version": "2026.07.05-cumulative-alliance-1",
       "file": "manufacturers/dacia.json",
-      "records": 12,
+      "records": 21,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/dacia.json"
     },
     {
@@ -260,7 +260,7 @@
       "id": "mercedes_key_lishi_profiles",
       "name": "MERCEDES Key + Lishi Profiles",
       "manufacturer": "mercedes",
-      "version": "2026.07.05-cumulative-mercedes-smart-1",
+      "version": "existing",
       "file": "manufacturers/mercedes.json",
       "records": 34,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mercedes.json"
@@ -287,18 +287,18 @@
       "id": "mitsubishi_key_lishi_profiles",
       "name": "MITSUBISHI Key + Lishi Profiles",
       "manufacturer": "mitsubishi",
-      "version": "existing",
+      "version": "2026.07.05-cumulative-alliance-1",
       "file": "manufacturers/mitsubishi.json",
-      "records": 4,
+      "records": 14,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/mitsubishi.json"
     },
     {
       "id": "nissan_key_lishi_profiles",
       "name": "NISSAN Key + Lishi Profiles",
       "manufacturer": "nissan",
-      "version": "existing",
+      "version": "2026.07.05-cumulative-alliance-1",
       "file": "manufacturers/nissan.json",
-      "records": 7,
+      "records": 32,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/nissan.json"
     },
     {
@@ -350,9 +350,9 @@
       "id": "renault_key_lishi_profiles",
       "name": "RENAULT Key + Lishi Profiles",
       "manufacturer": "renault",
-      "version": "existing",
+      "version": "2026.07.05-cumulative-alliance-1",
       "file": "manufacturers/renault.json",
-      "records": 7,
+      "records": 31,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/renault.json"
     },
     {
@@ -404,7 +404,7 @@
       "id": "smart_key_lishi_profiles",
       "name": "SMART Key + Lishi Profiles",
       "manufacturer": "smart",
-      "version": "2026.07.05-cumulative-mercedes-smart-1",
+      "version": "existing",
       "file": "manufacturers/smart.json",
       "records": 9,
       "url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manufacturers/smart.json"
@@ -474,9 +474,9 @@
     }
   ],
   "notes": [
-    "Single cumulative database pack built from the latest uploaded working repo.",
-    "Adds expanded Mercedes-Benz and Smart generation/key-system records.",
-    "Manifest rebuilt from actual manufacturer files to avoid overwrite problems.",
-    "Only one database_pack.zip should be uploaded."
+    "Single cumulative database pack.",
+    "Adds expanded Renault, Dacia, Nissan and Mitsubishi generation/key-system records.",
+    "Manifest rebuilt from actual manufacturer files.",
+    "Only upload this one file as database_pack.zip."
   ]
 }
