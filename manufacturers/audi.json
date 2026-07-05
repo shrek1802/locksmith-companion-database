@@ -1,1342 +1,540 @@
 [
   {
-    "record_id": "AUDI-A1-8X-2010-2018-REMOTE-KESSY",
-    "make": "Audi",
-    "model": "A1",
-    "variant": "8X",
-    "generation": "8X",
-    "years": "2010-2018",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "VAG PQ/Immo",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66 2-in-1 Pick & Decoder",
-      "transponder": "ID48 / Megamos Crypto",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / KESSY",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ/Immo",
-      "oem_key": "Audi OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU66",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU66 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID48 / Megamos Crypto",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / KESSY",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "AUDI-A1-GB-2018-PRESENT-REMOTE-KESSY",
-    "make": "Audi",
-    "model": "A1",
-    "variant": "GB",
-    "generation": "GB",
-    "years": "2018-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "VAG MQB / MQB Evo",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant - verify",
-      "lishi_tool": "HU162T / HU66 tool family",
-      "transponder": "MQB AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / KESSY",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "Audi OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU162T / HU66 variant - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU162T / HU66 tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "MQB AES family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / KESSY",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "AUDI-A3-8P-2003-2013-REMOTE-KESSY",
+    "record_id": "AUDI-A3-8L-1996-2003-ID48",
     "make": "Audi",
     "model": "A3",
-    "variant": "8P",
+    "generation": "8L",
+    "years": "1996-2003",
+    "body": [
+      "3 Door",
+      "5 Door"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Remote Head Key",
+      "smart_key": false,
+      "blade": "HU66",
+      "emergency_blade": null,
+      "lishi": "HU66 2-in-1",
+      "transponder": "ID48 / Megamos",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 2,
+      "remote_part_numbers": [
+        "4D0837231"
+      ]
+    },
+    "immobiliser": {
+      "system": "Immobiliser",
+      "generation": "Immo 2",
+      "module": "Instrument Cluster",
+      "location": "Behind steering wheel",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM508",
+        "VCDS",
+        "VVDI2",
+        "AVDI"
+      ],
+      "procedure_notes": [
+        "Pin code via dump or OBD.",
+        "Login with VCDS.",
+        "Adapt key in channel 21."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "Instrument Cluster",
+      "location": "Behind steering wheel",
+      "removal_time": "20 Minutes",
+      "airbag_risk": true,
+      "photos": [
+        "audi_a3_8l_cluster_01.jpg"
+      ]
+    },
+    "diagnostics": {
+      "common_faults": [
+        "Cluster pixel failure",
+        "Immo coil failure"
+      ],
+      "related_dtc": [
+        "01176",
+        "01179"
+      ]
+    },
+    "parts": {
+      "key_shell": "Audi HU66",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XEAU01EN",
+        "OEM 4D0837231"
+      ]
+    },
+    "workshop_notes": [
+      "Pin code 4 digits.",
+      "VCDS login required.",
+      "Disconnect battery before cluster removal."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Silca HU66"
+      ],
+      "transponder": [
+        "VVDI2",
+        "VCDS"
+      ],
+      "programming": [
+        "VCDS tested",
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
+    }
+  },
+  {
+    "record_id": "AUDI-A3-8P-2003-2012-ID48",
+    "make": "Audi",
+    "model": "A3",
     "generation": "8P",
-    "years": "2003-2013",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "VAG PQ/Immo",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66 2-in-1 Pick & Decoder",
-      "transponder": "ID48 / Megamos Crypto",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / KESSY",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ/Immo",
-      "oem_key": "Audi OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "years": "2003-2012",
+    "body": [
+      "3 Door",
+      "5 Door",
+      "Sportback",
+      "Cabriolet"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": true,
+    "key": {
+      "key_type": "Flip Remote",
+      "smart_key": false,
+      "blade": "HU66",
+      "emergency_blade": null,
+      "lishi": "HU66 2-in-1",
+      "transponder": "ID48 / Megamos",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "8P0837231",
+        "8P0959753"
+      ]
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU66",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU66 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID48 / Megamos Crypto",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / KESSY",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    "immobiliser": {
+      "system": "Immobiliser",
+      "generation": "Immo 3",
+      "module": "Instrument Cluster",
+      "location": "Behind steering wheel",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608",
+        "VVDI2",
+        "AVDI",
+        "VCDS"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "Pin code 5 digits.",
+        "Login with VCDS.",
+        "Adapt key in instruments."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "Instrument Cluster",
+      "location": "Behind steering wheel",
+      "removal_time": "20 Minutes",
+      "airbag_risk": true,
+      "photos": [
+        "audi_a3_8p_cluster_01.jpg"
+      ]
+    },
+    "diagnostics": {
+      "common_faults": [
+        "Cluster failure",
+        "Key not in range"
+      ],
+      "related_dtc": [
+        "01176",
+        "001376"
+      ]
+    },
+    "parts": {
+      "key_shell": "Audi HU66 Flip",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XEAU01EN",
+        "OEM 8P0837231"
+      ]
+    },
+    "workshop_notes": [
+      "Pin code 5 digits.",
+      "Use VCDS for programming.",
+      "Disconnect battery before cluster work."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Lishi HU66"
+      ],
+      "transponder": [
+        "VVDI2",
+        "VCDS"
+      ],
+      "programming": [
+        "VVDI2 tested",
+        "Autel IM608 tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
+    }
   },
   {
-    "record_id": "AUDI-A3-8V-MQB-2012-2020-REMOTE-KESSY",
+    "record_id": "AUDI-A3-8V-2012-2020-MQB",
     "make": "Audi",
     "model": "A3",
-    "variant": "8V MQB",
-    "generation": "8V MQB",
+    "generation": "8V",
     "years": "2012-2020",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "VAG MQB / MQB Evo",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant - verify",
-      "lishi_tool": "HU162T / HU66 tool family",
-      "transponder": "MQB AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / KESSY",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "Audi OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "body": [
+      "3 Door",
+      "5 Door",
+      "Saloon",
+      "Cabriolet"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Flip Remote",
+      "smart_key": false,
+      "blade": "HU66",
+      "emergency_blade": null,
+      "lishi": "HU66 2-in-1",
+      "transponder": "ID48 / Megamos AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "8V0959752B",
+        "8V0837205"
+      ]
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU162T / HU66 variant - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU162T / HU66 tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "MQB AES family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / KESSY",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    "immobiliser": {
+      "system": "MQB",
+      "generation": "MQB",
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "security_delay": "5 Minutes"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": true,
+      "internet_required": true,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "VVDI2",
+        "AVDI",
+        "Xhorse Key Tool Plus"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "MQB system - need CS and PIN.",
+        "Online calculation required for AKL.",
+        "Battery support mandatory.",
+        "5 min security access."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind fuse box, driver side",
+      "removal_time": "25 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "audi_a3_8v_bcm_01.jpg"
+      ]
+    },
+    "diagnostics": {
+      "common_faults": [
+        "MQB sync failure",
+        "Component protection active"
+      ],
+      "related_dtc": [
+        "B200000",
+        "U101400"
+      ]
+    },
+    "parts": {
+      "key_shell": "Audi HU66 Flip",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XEMQB1EN",
+        "OEM 8V0959752B"
+      ]
+    },
+    "workshop_notes": [
+      "MQB requires online tokens for AKL.",
+      "CS can be read via OBD on some tools.",
+      "If component protection, need ODIS."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Lishi HU66"
+      ],
+      "transponder": [
+        "VVDI2",
+        "Autel IM608 Pro"
+      ],
+      "programming": [
+        "VVDI2 tested",
+        "Autel IM608 Pro tested",
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "last_updated": "2026-07-05"
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
+    }
   },
   {
-    "record_id": "AUDI-A3-8Y-MQB-EVO-2020-PRESENT-REMOTE-KESSY",
-    "make": "Audi",
-    "model": "A3",
-    "variant": "8Y MQB Evo",
-    "generation": "8Y MQB Evo",
-    "years": "2020-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "VAG MQB / MQB Evo",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant - verify",
-      "lishi_tool": "HU162T / HU66 tool family",
-      "transponder": "MQB AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / KESSY",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "Audi OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "verification_status": "needs_review",
-      "confidence": "review"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU162T / HU66 variant - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU162T / HU66 tool family",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "MQB AES family - verify",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / KESSY",
-        "status": "needs_review",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "needs_review",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
-      ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 55,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "AUDI-A4-B8-2008-2015-REMOTE-KESSY",
+    "record_id": "AUDI-A4-B8-2007-2015-ID48",
     "make": "Audi",
     "model": "A4",
-    "variant": "B8",
     "generation": "B8",
-    "years": "2008-2015",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "VAG PQ/Immo",
-    "key_profile": {
-      "blade_profile": "HU66",
-      "lishi_tool": "HU66 2-in-1 Pick & Decoder",
-      "transponder": "ID48 / Megamos Crypto",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / KESSY",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG PQ/Immo",
-      "oem_key": "Audi OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "years": "2007-2015",
+    "body": [
+      "Saloon",
+      "Avant",
+      "Allroad"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Flip Remote",
+      "smart_key": false,
+      "blade": "HU66",
+      "emergency_blade": null,
+      "lishi": "HU66 2-in-1",
+      "transponder": "ID48 / Megamos",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "8K0959753",
+        "8K0837231"
+      ]
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU66",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU66 2-in-1 Pick & Decoder",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "ID48 / Megamos Crypto",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / KESSY",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU66 2-in-1 Pick & Decoder where fitted",
-      "akl_blade_decode": "Decode/cut by HU66",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
+    "immobiliser": {
+      "system": "Immobiliser",
+      "generation": "Immo 4",
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "security_delay": "None"
     },
     "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": false,
+      "internet_required": false,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608",
+        "VVDI2",
+        "AVDI",
+        "VCDS"
       ],
-      "last_checked": "2026-07-05"
+      "procedure_notes": [
+        "Pin code required.",
+        "Login with VCDS.",
+        "Component protection possible."
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": true,
+      "service_mode": false
     },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "AUDI-A4-B9-2015-PRESENT-REMOTE-KESSY",
-    "make": "Audi",
-    "model": "A4",
-    "variant": "B9",
-    "generation": "B9",
-    "years": "2015-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "VAG MQB / MQB Evo",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant - verify",
-      "lishi_tool": "HU162T / HU66 tool family",
-      "transponder": "MQB AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / KESSY",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "Audi OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
     },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU162T / HU66 variant - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU162T / HU66 tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "MQB AES family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / KESSY",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
+    "module_location": {
+      "module": "BCM",
+      "location": "Behind fuse box, driver side",
+      "removal_time": "25 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "audi_a4_b8_bcm_01.jpg"
+      ]
     },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+    "diagnostics": {
+      "common_faults": [
+        "BCM failure",
+        "Component protection"
       ],
-      "last_checked": "2026-07-05"
+      "related_dtc": [
+        "B200000",
+        "U101400"
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "AUDI-Q2-Q2-2016-PRESENT-REMOTE-KESSY",
-    "make": "Audi",
-    "model": "Q2",
-    "variant": "Q2",
-    "generation": "Q2",
-    "years": "2016-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "VAG MQB / MQB Evo",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant - verify",
-      "lishi_tool": "HU162T / HU66 tool family",
-      "transponder": "MQB AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / KESSY",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "Audi OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU162T / HU66 variant - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU162T / HU66 tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "MQB AES family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / KESSY",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+    "parts": {
+      "key_shell": "Audi HU66 Flip",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
       ],
-      "last_checked": "2026-07-05"
+      "remote_options": [
+        "Xhorse XEAU01EN",
+        "OEM 8K0959753"
+      ]
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
+    "workshop_notes": [
+      "Pin code 5 digits.",
+      "Component protection = dealer.",
+      "Use VCDS for diagnostics."
     ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "AUDI-Q3-8U-F3-2011-PRESENT-REMOTE-KESSY",
-    "make": "Audi",
-    "model": "Q3",
-    "variant": "8U/F3",
-    "generation": "8U/F3",
-    "years": "2011-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "VAG MQB / MQB Evo",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant - verify",
-      "lishi_tool": "HU162T / HU66 tool family",
-      "transponder": "MQB AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / KESSY",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "Audi OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU162T / HU66 variant - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU162T / HU66 tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "MQB AES family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / KESSY",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
     "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Lishi HU66"
       ],
-      "last_checked": "2026-07-05"
-    },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
-    "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
-  },
-  {
-    "record_id": "AUDI-Q5-8R-FY-2008-PRESENT-REMOTE-KESSY",
-    "make": "Audi",
-    "model": "Q5",
-    "variant": "8R/FY",
-    "generation": "8R/FY",
-    "years": "2008-present",
-    "market": "UK/EU",
-    "database_layer": "layer_1_vehicle_generation_key_system",
-    "platform": "VAG MQB / MQB Evo",
-    "key_profile": {
-      "blade_profile": "HU162T / HU66 variant - verify",
-      "lishi_tool": "HU162T / HU66 tool family",
-      "transponder": "MQB AES family - verify",
-      "remote_frequency_uk": "433 MHz",
-      "buttons": "2/3/4 button depending spec",
-      "key_type": "Remote / KESSY",
-      "smart_keyless": "Yes / No depending spec",
-      "immobiliser_family": "VAG MQB / MQB Evo",
-      "oem_key": "Audi OEM key family - verify by original key/VIN",
-      "xhorse_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "keydiy_equivalent": "Audi remote/prox profile - verify exact board/prox type",
-      "verification_status": "high_confidence",
-      "confidence": "high"
-    },
-    "verified_fields": {
-      "blade_profile": {
-        "value": "HU162T / HU66 variant - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "lishi_tool": {
-        "value": "HU162T / HU66 tool family",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "transponder": {
-        "value": "MQB AES family - verify",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "remote_frequency_uk": {
-        "value": "433 MHz",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      },
-      "key_type": {
-        "value": "Remote / KESSY",
-        "status": "high_confidence",
-        "sources": [
-          "Auto Key Tool Pro",
-          "Transpondery",
-          "Genuine/Original Lishi",
-          "Supplier catalogues",
-          "Workshop confirmation where needed"
-        ]
-      }
-    },
-    "locksmith_use": {
-      "lockout": "Use HU162T / HU66 tool family where fitted",
-      "akl_blade_decode": "Decode/cut by HU162T / HU66 variant - verify",
-      "stock_note": "Confirm original key/VIN before ordering.",
-      "notes": "Vehicle/generation record. Exact key may vary by spec, facelift or keyless option."
-    },
-    "programming": {
-      "method": "To be added later",
-      "akl_notes": "Confirm by exact vehicle/tool.",
-      "status": "not_added_yet"
-    },
-    "verification": {
-      "overall_status": "high_confidence",
-      "verified_by": [
-        "Auto Key Tool Pro",
-        "Transpondery",
-        "Genuine/Original Lishi",
-        "Supplier catalogues",
-        "Workshop confirmation where needed"
+      "transponder": [
+        "VVDI2",
+        "VCDS"
       ],
-      "last_checked": "2026-07-05"
+      "programming": [
+        "VVDI2 tested",
+        "Autel IM608 tested"
+      ],
+      "last_verified": "2026-07-05"
     },
-    "sources": [
-      {
-        "name": "Auto Key Tool Pro",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Transpondery",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Genuine/Original Lishi",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Supplier catalogues",
-        "url": "source://vehicle-key-reference"
-      },
-      {
-        "name": "Workshop confirmation where needed",
-        "url": "source://vehicle-key-reference"
-      }
-    ],
     "completion": {
-      "key_profile": 85,
-      "programming": 0,
-      "locations": 0,
-      "workshop_notes": 0
-    },
-    "last_updated": "2026-07-05"
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
+    }
   }
 ]
