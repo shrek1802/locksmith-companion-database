@@ -3,7 +3,7 @@
     "record_id": "BYD-ATTO3-2022-2025-ID47",
     "make": "BYD",
     "model": "Atto 3",
-    "generation": "",
+    "generation": "Gen1",
     "years": "2022-2025",
     "body": [
       "SUV"
@@ -11,6 +11,28 @@
     "market": "UK",
     "vin_range": "",
     "facelift": false,
+    "platform_info": {
+      "platform_name": "BYD e-Platform 3.0",
+      "platform_type": "SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "BYD",
+      "original_model": "Atto 3",
+      "original_years": "2022-2025",
+      "shared_models": [
+        "BYD Atto 3 2022-2025",
+        "BYD Dolphin 2023-2025",
+        "BYD Seal 2023-2025",
+        "BYD Seal U 2024-2025",
+        "BYD Seal U DM-i 2024-2025",
+        "BYD Sealion 7 2024-2025",
+        "BYD Atto 2 2025-2025",
+        "BYD Dolphin Surf 2025-2025",
+        "BYD Tang 2023-2025",
+        "BYD Han 2023-2025"
+      ],
+      "notes": "Original BYD platform - not a rebadge. SGW system - AutoAuth does NOT work in UK, requires 12+8 bypass cable."
+    },
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
@@ -25,48 +47,72 @@
         "BYD-ATTO3-SMART"
       ]
     },
-    "immobiliser": {
-      "system": "SGW",
-      "generation": "SGW",
-      "module": "BCM",
-      "location": "Driver side, under dash",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": true,
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
       "internet_required": true,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Xhorse Key Tool Plus",
-        "OBDSTAR X300 DP Plus"
-      ],
-      "procedure_notes": [
-        "SGW requires bypass or online access.",
-        "Battery support mandatory.",
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "30-45 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "BYD Online Calculation - Internet required for AKL",
+      "method_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
         "ID47 precode required for aftermarket keys.",
-        "12V support must not drop below 13V."
+        "Internet required for online calculation on AKL.",
+        "ID47 cannot be cloned - must generate dealer key."
       ]
     },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": false,
-      "service_mode": false
-    },
-    "eeprom": {
-      "required": false,
-      "module": null,
-      "chip": null,
-      "adapter": null,
-      "read_method": null,
-      "boot_pin": null
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse Key Tool Plus Pad",
+        "OBDSTAR X300 DP Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
+        "ID47 precode required for aftermarket keys.",
+        "Internet required for online calculation on AKL."
+      ],
+      "common_faults": [
+        "SGW lockout",
+        "Key not detected"
+      ],
+      "related_dtc": [
+        "B10AA",
+        "U0423"
+      ]
     },
     "module_location": {
       "module": "BCM",
@@ -77,15 +123,13 @@
         "byd_atto3_bcm_01.jpg"
       ]
     },
-    "diagnostics": {
-      "common_faults": [
-        "SGW lockout",
-        "Key not detected"
-      ],
-      "related_dtc": [
-        "B10AA",
-        "U0423"
-      ]
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
     },
     "parts": {
       "key_shell": "BYD HYN17 Smart",
@@ -98,44 +142,22 @@
         "OEM BYD-ATTO3-SMART"
       ]
     },
-    "workshop_notes": [
-      "SGW system - use bypass cable or online.",
-      "ID47 cannot be cloned.",
-      "Battery stabiliser required.",
-      "If SGW locked, need dealer unlock."
-    ],
     "verification": {
       "status": "Verified",
-      "blade": [
+      "last_verified": "2026-07-05",
+      "sources": [
+        "Autel IM608 Pro tested",
+        "Workshop Tested",
         "Instacode",
         "Lishi HYN17"
-      ],
-      "transponder": [
-        "Autel IM608 Pro",
-        "Xhorse Key Tool Plus"
-      ],
-      "programming": [
-        "Autel IM608 Pro tested",
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 50,
-      "overall": 93
+      ]
     }
   },
   {
     "record_id": "BYD-DOLPHIN-2023-2025-ID47",
     "make": "BYD",
     "model": "Dolphin",
-    "generation": "",
+    "generation": "Gen1",
     "years": "2023-2025",
     "body": [
       "Hatchback"
@@ -143,6 +165,28 @@
     "market": "UK",
     "vin_range": "",
     "facelift": false,
+    "platform_info": {
+      "platform_name": "BYD e-Platform 3.0",
+      "platform_type": "SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "BYD",
+      "original_model": "Dolphin",
+      "original_years": "2023-2025",
+      "shared_models": [
+        "BYD Atto 3 2022-2025",
+        "BYD Dolphin 2023-2025",
+        "BYD Seal 2023-2025",
+        "BYD Seal U 2024-2025",
+        "BYD Seal U DM-i 2024-2025",
+        "BYD Sealion 7 2024-2025",
+        "BYD Atto 2 2025-2025",
+        "BYD Dolphin Surf 2025-2025",
+        "BYD Tang 2023-2025",
+        "BYD Han 2023-2025"
+      ],
+      "notes": "Original BYD platform - not a rebadge. SGW system - AutoAuth does NOT work in UK, requires 12+8 bypass cable."
+    },
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
@@ -157,38 +201,77 @@
         "BYD-DOLPHIN-SMART"
       ]
     },
-    "immobiliser": {
-      "system": "SGW",
-      "generation": "SGW",
-      "module": "BCM",
-      "location": "Driver side, under dash",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": true,
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
       "internet_required": true,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Xhorse Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "SGW requires bypass cable.",
-        "Online calculation for AKL.",
-        "Battery support mandatory."
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "30-45 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "BYD Online Calculation - Internet required for AKL",
+      "method_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
+        "ID47 precode required for aftermarket keys.",
+        "Internet required for online calculation on AKL.",
+        "ID47 cannot be cloned - must generate dealer key."
       ]
     },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": false,
-      "service_mode": false
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "OBDSTAR X300 DP Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Same procedure as Atto 3 - e-Platform 3.0",
+        "Battery support mandatory."
+      ],
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_atto3_bcm_01.jpg"
+      ]
     },
     "eeprom": {
       "required": false,
@@ -197,23 +280,6 @@
       "adapter": null,
       "read_method": null,
       "boot_pin": null
-    },
-    "module_location": {
-      "module": "BCM",
-      "location": "Driver side, under dash",
-      "removal_time": "30 Minutes",
-      "airbag_risk": false,
-      "photos": [
-        "byd_dolphin_bcm_01.jpg"
-      ]
-    },
-    "diagnostics": {
-      "common_faults": [
-        "SGW lockout"
-      ],
-      "related_dtc": [
-        "B10AA"
-      ]
     },
     "parts": {
       "key_shell": "BYD HYN17 Smart",
@@ -226,50 +292,49 @@
         "OEM BYD-DOLPHIN-SMART"
       ]
     },
-    "workshop_notes": [
-      "SGW bypass cable required for OBD.",
-      "ID47 precode required.",
-      "Use 12V+ battery support."
-    ],
     "verification": {
       "status": "Verified",
-      "blade": [
-        "Instacode",
-        "Lishi HYN17"
-      ],
-      "transponder": [
-        "Autel IM608 Pro",
-        "Xhorse"
-      ],
-      "programming": [
-        "Autel IM608 Pro tested",
-        "Workshop Tested"
-      ],
-      "last_verified": "2026-07-05"
-    },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 50,
-      "overall": 93
+      "last_verified": "2026-07-05",
+      "sources": [
+        "Workshop Tested",
+        "Same as Atto 3"
+      ]
     }
   },
   {
     "record_id": "BYD-SEAL-2023-2025-ID47",
     "make": "BYD",
     "model": "Seal",
-    "generation": "",
+    "generation": "Gen1",
     "years": "2023-2025",
     "body": [
-      "Saloon"
+      "Sedan"
     ],
     "market": "UK",
     "vin_range": "",
     "facelift": false,
+    "platform_info": {
+      "platform_name": "BYD e-Platform 3.0",
+      "platform_type": "SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "BYD",
+      "original_model": "Seal",
+      "original_years": "2023-2025",
+      "shared_models": [
+        "BYD Atto 3 2022-2025",
+        "BYD Dolphin 2023-2025",
+        "BYD Seal 2023-2025",
+        "BYD Seal U 2024-2025",
+        "BYD Seal U DM-i 2024-2025",
+        "BYD Sealion 7 2024-2025",
+        "BYD Atto 2 2025-2025",
+        "BYD Dolphin Surf 2025-2025",
+        "BYD Tang 2023-2025",
+        "BYD Han 2023-2025"
+      ],
+      "notes": "Original BYD platform - not a rebadge. SGW system - AutoAuth does NOT work in UK, requires 12+8 bypass cable."
+    },
     "key": {
       "key_type": "Smart Key",
       "smart_key": true,
@@ -284,38 +349,74 @@
         "BYD-SEAL-SMART"
       ]
     },
-    "immobiliser": {
-      "system": "SGW",
-      "generation": "SGW",
-      "module": "BCM",
-      "location": "Driver side, under dash",
-      "security_delay": "None"
-    },
-    "programming": {
-      "add_key": true,
-      "all_keys_lost": true,
-      "dealer_key_required": false,
-      "precode_required": true,
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
       "internet_required": true,
-      "obd_supported": true,
-      "bench_required": false,
-      "eeprom_required": false,
-      "working_key_required": false,
-      "supported_tools": [
-        "Autel IM608 Pro",
-        "Xhorse Key Tool Plus"
-      ],
-      "procedure_notes": [
-        "SGW requires bypass.",
-        "Online calculation for AKL.",
-        "Battery support mandatory."
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "30-45 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "BYD Online Calculation - Internet required for AKL",
+      "method_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
+        "ID47 precode required for aftermarket keys.",
+        "Internet required for online calculation on AKL.",
+        "ID47 cannot be cloned - must generate dealer key."
       ]
     },
-    "obd": {
-      "connector": "16 Pin OBD",
-      "location": "Driver side lower dash",
-      "ignition_required": false,
-      "service_mode": false
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Same as Atto 3 / Dolphin"
+      ],
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_atto3_bcm_01.jpg"
+      ]
     },
     "eeprom": {
       "required": false,
@@ -324,23 +425,6 @@
       "adapter": null,
       "read_method": null,
       "boot_pin": null
-    },
-    "module_location": {
-      "module": "BCM",
-      "location": "Driver side, under dash",
-      "removal_time": "30 Minutes",
-      "airbag_risk": false,
-      "photos": [
-        "byd_seal_bcm_01.jpg"
-      ]
-    },
-    "diagnostics": {
-      "common_faults": [
-        "SGW lockout"
-      ],
-      "related_dtc": [
-        "B10AA"
-      ]
     },
     "parts": {
       "key_shell": "BYD HYN17 Smart",
@@ -353,35 +437,1022 @@
         "OEM BYD-SEAL-SMART"
       ]
     },
-    "workshop_notes": [
-      "SGW bypass required.",
-      "ID47 precode needed.",
-      "Battery support critical."
-    ],
     "verification": {
       "status": "Verified",
-      "blade": [
-        "Instacode",
-        "Lishi HYN17"
-      ],
-      "transponder": [
-        "Autel IM608 Pro"
-      ],
-      "programming": [
-        "Autel IM608 Pro tested",
+      "last_verified": "2026-07-05",
+      "sources": [
         "Workshop Tested"
+      ]
+    }
+  },
+  {
+    "record_id": "BYD-SEAL-U-2024-2025-ID47",
+    "make": "BYD",
+    "model": "Seal U",
+    "generation": "Gen1",
+    "years": "2024-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "BYD e-Platform 3.0",
+      "platform_type": "SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "BYD",
+      "original_model": "Seal U",
+      "original_years": "2024-2025",
+      "shared_models": [
+        "BYD Atto 3 2022-2025",
+        "BYD Dolphin 2023-2025",
+        "BYD Seal 2023-2025",
+        "BYD Seal U 2024-2025",
+        "BYD Seal U DM-i 2024-2025",
+        "BYD Sealion 7 2024-2025",
+        "BYD Atto 2 2025-2025",
+        "BYD Dolphin Surf 2025-2025",
+        "BYD Tang 2023-2025",
+        "BYD Han 2023-2025"
       ],
-      "last_verified": "2026-07-05"
+      "notes": "Original BYD platform - not a rebadge. SGW system - AutoAuth does NOT work in UK, requires 12+8 bypass cable."
     },
-    "completion": {
-      "key_data": 100,
-      "programming": 100,
-      "obd": 100,
-      "eeprom": 100,
-      "module_location": 100,
-      "diagnostics": 100,
-      "photos": 50,
-      "overall": 93
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HYN17",
+      "emergency_blade": "HYN17",
+      "lishi": "HYN17 2-in-1",
+      "transponder": "ID47 / HITAG AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "BYD-SEAL-U-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "30-45 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "BYD Online Calculation - Internet required for AKL",
+      "method_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
+        "ID47 precode required for aftermarket keys.",
+        "Internet required for online calculation on AKL.",
+        "ID47 cannot be cloned - must generate dealer key."
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Same platform as Atto 3 / Seal"
+      ],
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_atto3_bcm_01.jpg"
+      ]
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "BYD HYN17 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XE47BYEN",
+        "OEM BYD-SEAL-U-SMART"
+      ]
+    },
+    "verification": {
+      "status": "Draft",
+      "last_verified": "2026-07-05",
+      "sources": [
+        "Expected same as Atto 3"
+      ]
+    }
+  },
+  {
+    "record_id": "BYD-SEAL-U-DMI-2024-2025-ID47",
+    "make": "BYD",
+    "model": "Seal U DM-i",
+    "generation": "Gen1",
+    "years": "2024-2025",
+    "body": [
+      "SUV",
+      "PHEV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "BYD e-Platform 3.0",
+      "platform_type": "SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "BYD",
+      "original_model": "Seal U DM-i",
+      "original_years": "2024-2025",
+      "shared_models": [
+        "BYD Atto 3 2022-2025",
+        "BYD Dolphin 2023-2025",
+        "BYD Seal 2023-2025",
+        "BYD Seal U 2024-2025",
+        "BYD Seal U DM-i 2024-2025",
+        "BYD Sealion 7 2024-2025",
+        "BYD Atto 2 2025-2025",
+        "BYD Dolphin Surf 2025-2025",
+        "BYD Tang 2023-2025",
+        "BYD Han 2023-2025"
+      ],
+      "notes": "Original BYD platform - not a rebadge. SGW system - AutoAuth does NOT work in UK, requires 12+8 bypass cable."
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HYN17",
+      "emergency_blade": "HYN17",
+      "lishi": "HYN17 2-in-1",
+      "transponder": "ID47 / HITAG AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "BYD-SEAL-U-DMI-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "30-45 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "BYD Online Calculation - Internet required for AKL",
+      "method_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
+        "ID47 precode required for aftermarket keys.",
+        "Internet required for online calculation on AKL.",
+        "ID47 cannot be cloned - must generate dealer key."
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "PHEV version of Seal U - same key system"
+      ],
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_atto3_bcm_01.jpg"
+      ]
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "BYD HYN17 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XE47BYEN",
+        "OEM BYD-SEAL-U-DMI-SMART"
+      ]
+    },
+    "verification": {
+      "status": "Draft",
+      "last_verified": "2026-07-05",
+      "sources": [
+        "Expected same as Seal U"
+      ]
+    }
+  },
+  {
+    "record_id": "BYD-SEALION-7-2024-2025-ID47",
+    "make": "BYD",
+    "model": "Sealion 7",
+    "generation": "Gen1",
+    "years": "2024-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "BYD e-Platform 3.0",
+      "platform_type": "SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "BYD",
+      "original_model": "Sealion 7",
+      "original_years": "2024-2025",
+      "shared_models": [
+        "BYD Atto 3 2022-2025",
+        "BYD Dolphin 2023-2025",
+        "BYD Seal 2023-2025",
+        "BYD Seal U 2024-2025",
+        "BYD Seal U DM-i 2024-2025",
+        "BYD Sealion 7 2024-2025",
+        "BYD Atto 2 2025-2025",
+        "BYD Dolphin Surf 2025-2025",
+        "BYD Tang 2023-2025",
+        "BYD Han 2023-2025"
+      ],
+      "notes": "Original BYD platform - not a rebadge. SGW system - AutoAuth does NOT work in UK, requires 12+8 bypass cable."
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HYN17",
+      "emergency_blade": "HYN17",
+      "lishi": "HYN17 2-in-1",
+      "transponder": "ID47 / HITAG AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "BYD-SEALION-7-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "30-45 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "BYD Online Calculation - Internet required for AKL",
+      "method_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
+        "ID47 precode required for aftermarket keys.",
+        "Internet required for online calculation on AKL.",
+        "ID47 cannot be cloned - must generate dealer key."
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "New 2024 model - same e-Platform 3.0 Evo"
+      ],
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_atto3_bcm_01.jpg"
+      ]
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "BYD HYN17 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XE47BYEN",
+        "OEM BYD-SEALION-7-SMART"
+      ]
+    },
+    "verification": {
+      "status": "Draft",
+      "last_verified": "2026-07-05",
+      "sources": [
+        "Expected same as Atto 3 / Seal"
+      ]
+    }
+  },
+  {
+    "record_id": "BYD-ATTO2-2025-2025-ID47",
+    "make": "BYD",
+    "model": "Atto 2",
+    "generation": "Gen1",
+    "years": "2025-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "BYD e-Platform 3.0",
+      "platform_type": "SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "BYD",
+      "original_model": "Atto 2",
+      "original_years": "2025-2025",
+      "shared_models": [
+        "BYD Atto 3 2022-2025",
+        "BYD Dolphin 2023-2025",
+        "BYD Seal 2023-2025",
+        "BYD Seal U 2024-2025",
+        "BYD Seal U DM-i 2024-2025",
+        "BYD Sealion 7 2024-2025",
+        "BYD Atto 2 2025-2025",
+        "BYD Dolphin Surf 2025-2025",
+        "BYD Tang 2023-2025",
+        "BYD Han 2023-2025"
+      ],
+      "notes": "Original BYD platform - not a rebadge. SGW system - AutoAuth does NOT work in UK, requires 12+8 bypass cable."
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HYN17",
+      "emergency_blade": "HYN17",
+      "lishi": "HYN17 2-in-1",
+      "transponder": "ID47 / HITAG AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "BYD-ATTO2-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "30-45 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "BYD Online Calculation - Internet required for AKL",
+      "method_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
+        "ID47 precode required for aftermarket keys.",
+        "Internet required for online calculation on AKL.",
+        "ID47 cannot be cloned - must generate dealer key."
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "2025 new model - Yuan Up - same key system"
+      ],
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_atto3_bcm_01.jpg"
+      ]
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "BYD HYN17 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XE47BYEN",
+        "OEM BYD-ATTO2-SMART"
+      ]
+    },
+    "verification": {
+      "status": "Draft",
+      "last_verified": "2026-07-05",
+      "sources": [
+        "Expected same as Atto 3 - to be verified"
+      ]
+    }
+  },
+  {
+    "record_id": "BYD-DOLPHIN-SURF-2025-2025-ID47",
+    "make": "BYD",
+    "model": "Dolphin Surf",
+    "generation": "Gen1",
+    "years": "2025-2025",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "BYD e-Platform 3.0",
+      "platform_type": "SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "BYD",
+      "original_model": "Dolphin Surf",
+      "original_years": "2025-2025",
+      "shared_models": [
+        "BYD Atto 3 2022-2025",
+        "BYD Dolphin 2023-2025",
+        "BYD Seal 2023-2025",
+        "BYD Seal U 2024-2025",
+        "BYD Seal U DM-i 2024-2025",
+        "BYD Sealion 7 2024-2025",
+        "BYD Atto 2 2025-2025",
+        "BYD Dolphin Surf 2025-2025",
+        "BYD Tang 2023-2025",
+        "BYD Han 2023-2025"
+      ],
+      "notes": "Original BYD platform - not a rebadge. SGW system - AutoAuth does NOT work in UK, requires 12+8 bypass cable."
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HYN17",
+      "emergency_blade": "HYN17",
+      "lishi": "HYN17 2-in-1",
+      "transponder": "ID47 / HITAG AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "BYD-DOLPHIN-SURF-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "30-45 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "BYD Online Calculation - Internet required for AKL",
+      "method_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
+        "ID47 precode required for aftermarket keys.",
+        "Internet required for online calculation on AKL.",
+        "ID47 cannot be cloned - must generate dealer key."
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Seagull / Dolphin Surf - entry level - same ID47 system"
+      ],
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_atto3_bcm_01.jpg"
+      ]
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "BYD HYN17 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XE47BYEN",
+        "OEM BYD-DOLPHIN-SURF-SMART"
+      ]
+    },
+    "verification": {
+      "status": "Draft",
+      "last_verified": "2026-07-05",
+      "sources": [
+        "Expected same as Dolphin"
+      ]
+    }
+  },
+  {
+    "record_id": "BYD-TANG-2023-2025-ID47",
+    "make": "BYD",
+    "model": "Tang",
+    "generation": "Gen2",
+    "years": "2023-2025",
+    "body": [
+      "SUV",
+      "7-Seater"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "BYD e-Platform 3.0",
+      "platform_type": "SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "BYD",
+      "original_model": "Tang",
+      "original_years": "2023-2025",
+      "shared_models": [
+        "BYD Atto 3 2022-2025",
+        "BYD Dolphin 2023-2025",
+        "BYD Seal 2023-2025",
+        "BYD Seal U 2024-2025",
+        "BYD Seal U DM-i 2024-2025",
+        "BYD Sealion 7 2024-2025",
+        "BYD Atto 2 2025-2025",
+        "BYD Dolphin Surf 2025-2025",
+        "BYD Tang 2023-2025",
+        "BYD Han 2023-2025"
+      ],
+      "notes": "Original BYD platform - not a rebadge. SGW system - AutoAuth does NOT work in UK, requires 12+8 bypass cable."
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HYN17",
+      "emergency_blade": "HYN17",
+      "lishi": "HYN17 2-in-1",
+      "transponder": "ID47 / HITAG AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "BYD-TANG-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "30-45 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "BYD Online Calculation - Internet required for AKL",
+      "method_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
+        "ID47 precode required for aftermarket keys.",
+        "Internet required for online calculation on AKL.",
+        "ID47 cannot be cloned - must generate dealer key."
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "7-seater flagship SUV"
+      ],
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_atto3_bcm_01.jpg"
+      ]
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "BYD HYN17 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XE47BYEN",
+        "OEM BYD-TANG-SMART"
+      ]
+    },
+    "verification": {
+      "status": "Draft",
+      "last_verified": "2026-07-05",
+      "sources": [
+        "Expected same as Atto 3"
+      ]
+    }
+  },
+  {
+    "record_id": "BYD-HAN-2023-2025-ID47",
+    "make": "BYD",
+    "model": "Han",
+    "generation": "Gen1",
+    "years": "2023-2025",
+    "body": [
+      "Sedan"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "BYD e-Platform 3.0",
+      "platform_type": "SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "BYD",
+      "original_model": "Han",
+      "original_years": "2023-2025",
+      "shared_models": [
+        "BYD Atto 3 2022-2025",
+        "BYD Dolphin 2023-2025",
+        "BYD Seal 2023-2025",
+        "BYD Seal U 2024-2025",
+        "BYD Seal U DM-i 2024-2025",
+        "BYD Sealion 7 2024-2025",
+        "BYD Atto 2 2025-2025",
+        "BYD Dolphin Surf 2025-2025",
+        "BYD Tang 2023-2025",
+        "BYD Han 2023-2025"
+      ],
+      "notes": "Original BYD platform - not a rebadge. SGW system - AutoAuth does NOT work in UK, requires 12+8 bypass cable."
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HYN17",
+      "emergency_blade": "HYN17",
+      "lishi": "HYN17 2-in-1",
+      "transponder": "ID47 / HITAG AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "BYD-HAN-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "30-45 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "BYD Online Calculation - Internet required for AKL",
+      "method_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Battery support mandatory - must stay above 13V.",
+        "ID47 precode required for aftermarket keys.",
+        "Internet required for online calculation on AKL.",
+        "ID47 cannot be cloned - must generate dealer key."
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass cable - AutoAuth does NOT work in UK.",
+        "Executive sedan"
+      ],
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_atto3_bcm_01.jpg"
+      ]
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "BYD HYN17 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XE47BYEN",
+        "OEM BYD-HAN-SMART"
+      ]
+    },
+    "verification": {
+      "status": "Draft",
+      "last_verified": "2026-07-05",
+      "sources": [
+        "Expected same as Seal"
+      ]
     }
   }
 ]
