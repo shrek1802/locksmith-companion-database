@@ -1,0 +1,175 @@
+[
+  {
+    "make": "Porsche",
+    "model": "911",
+    "years": "1997-2004",
+    "chip_type": "ID46",
+    "frequency": "433",
+    "im508s_compatible": "Yes - IM508S supports - OBD",
+    "keydiy_kdx4_compatible": "Yes - B13",
+    "can_do_obd": "Yes",
+    "process_if_not_obd": "N/A",
+    "bypass_cable": "No",
+    "tools": [
+      "Autel IM508S",
+      "KEYDIY KD-X4"
+    ]
+  },
+  {
+    "make": "Porsche",
+    "model": "911",
+    "years": "2005-2011",
+    "chip_type": "ID46",
+    "frequency": "433",
+    "im508s_compatible": "Yes - IM508S supports - OBD",
+    "keydiy_kdx4_compatible": "Yes - B13",
+    "can_do_obd": "Yes",
+    "process_if_not_obd": "N/A",
+    "bypass_cable": "No",
+    "tools": [
+      "Autel IM508S",
+      "KEYDIY KD-X4"
+    ]
+  },
+  {
+    "make": "Porsche",
+    "model": "911",
+    "years": "2012-2019",
+    "chip_type": "ID49",
+    "frequency": "433",
+    "im508s_compatible": "Limited - MQB based, 2018+ SFD requires SFD unlock via ODIS/Autel token",
+    "keydiy_kdx4_compatible": "Yes - NB13",
+    "can_do_obd": "Limited",
+    "process_if_not_obd": "SFD unlock required 2020+",
+    "bypass_cable": "No",
+    "tools": [
+      "Autel IM508S",
+      "KEYDIY KD-X4"
+    ]
+  },
+  {
+    "make": "Porsche",
+    "model": "911",
+    "years": "2020-2025",
+    "chip_type": "ID49",
+    "frequency": "433",
+    "im508s_compatible": "Limited - SFD protected, requires SFD unlock via ODIS/Autel token + bench",
+    "keydiy_kdx4_compatible": "Limited - SFD unlock 200 KD points",
+    "can_do_obd": "Limited",
+    "process_if_not_obd": "SFD unlock + bench",
+    "bypass_cable": "ODIS/SFD",
+    "tools": [
+      "Autel IM508S",
+      "KEYDIY KD-X4"
+    ]
+  },
+  {
+    "make": "Porsche",
+    "model": "Cayenne",
+    "years": "2002-2010",
+    "chip_type": "ID46",
+    "frequency": "433",
+    "im508s_compatible": "Yes - IM508S supports - OBD",
+    "keydiy_kdx4_compatible": "Yes - B13",
+    "can_do_obd": "Yes",
+    "process_if_not_obd": "N/A",
+    "bypass_cable": "No",
+    "tools": [
+      "Autel IM508S",
+      "KEYDIY KD-X4"
+    ]
+  },
+  {
+    "make": "Porsche",
+    "model": "Cayenne",
+    "years": "2011-2017",
+    "chip_type": "ID46",
+    "frequency": "433",
+    "im508s_compatible": "Yes - IM508S supports - OBD",
+    "keydiy_kdx4_compatible": "Yes - B13",
+    "can_do_obd": "Yes",
+    "process_if_not_obd": "N/A",
+    "bypass_cable": "No",
+    "tools": [
+      "Autel IM508S",
+      "KEYDIY KD-X4"
+    ]
+  },
+  {
+    "make": "Porsche",
+    "model": "Cayenne",
+    "years": "2018-2025",
+    "chip_type": "ID49",
+    "frequency": "433",
+    "im508s_compatible": "Limited - SFD protected 2020+ requires SFD unlock + bench",
+    "keydiy_kdx4_compatible": "Limited - SFD unlock",
+    "can_do_obd": "Limited",
+    "process_if_not_obd": "SFD unlock",
+    "bypass_cable": "ODIS/SFD",
+    "tools": [
+      "Autel IM508S"
+    ]
+  },
+  {
+    "make": "Porsche",
+    "model": "Macan",
+    "years": "2014-2024",
+    "chip_type": "ID49",
+    "frequency": "433",
+    "im508s_compatible": "Limited - MQB based, 2020+ SFD requires unlock",
+    "keydiy_kdx4_compatible": "Yes - NB13",
+    "can_do_obd": "Limited",
+    "process_if_not_obd": "SFD unlock 2020+",
+    "bypass_cable": "No",
+    "tools": [
+      "Autel IM508S",
+      "KEYDIY KD-X4"
+    ]
+  },
+  {
+    "make": "Porsche",
+    "model": "Panamera",
+    "years": "2009-2016",
+    "chip_type": "ID46",
+    "frequency": "433",
+    "im508s_compatible": "Yes - IM508S supports - OBD",
+    "keydiy_kdx4_compatible": "Yes - B13",
+    "can_do_obd": "Yes",
+    "process_if_not_obd": "N/A",
+    "bypass_cable": "No",
+    "tools": [
+      "Autel IM508S",
+      "KEYDIY KD-X4"
+    ]
+  },
+  {
+    "make": "Porsche",
+    "model": "Panamera",
+    "years": "2017-2025",
+    "chip_type": "ID49",
+    "frequency": "433",
+    "im508s_compatible": "Limited - SFD protected 2020+",
+    "keydiy_kdx4_compatible": "Limited - SFD",
+    "can_do_obd": "Limited",
+    "process_if_not_obd": "SFD unlock",
+    "bypass_cable": "ODIS/SFD",
+    "tools": [
+      "Autel IM508S"
+    ]
+  },
+  {
+    "make": "Porsche",
+    "model": "Taycan",
+    "years": "2019-2025",
+    "chip_type": "ID49",
+    "frequency": "433",
+    "im508s_compatible": "Limited - SFD protected MEB platform",
+    "keydiy_kdx4_compatible": "Limited - SFD",
+    "can_do_obd": "Limited",
+    "process_if_not_obd": "SFD unlock",
+    "bypass_cable": "ODIS/SFD",
+    "tools": [
+      "Autel IM508S"
+    ]
+  }
+]

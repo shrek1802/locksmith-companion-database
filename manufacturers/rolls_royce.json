@@ -1,0 +1,78 @@
+[
+  {
+    "make": "Rolls-Royce",
+    "model": "Ghost",
+    "years": "2010-2020",
+    "chip_type": "ID49",
+    "frequency": "433",
+    "im508s_compatible": "Limited - BMW FEM/BDC based, requires APB112+XP400 Pro",
+    "keydiy_kdx4_compatible": "Limited - G Function",
+    "can_do_obd": "Limited",
+    "process_if_not_obd": "APB112 bench",
+    "bypass_cable": "APB112",
+    "tools": [
+      "Autel IM508S"
+    ]
+  },
+  {
+    "make": "Rolls-Royce",
+    "model": "Ghost",
+    "years": "2021-2025",
+    "chip_type": "ID49",
+    "frequency": "433",
+    "im508s_compatible": "Limited - BMW BDC2/BDC3 based, G-Chassis subscription IMMO1YRUP + APB113",
+    "keydiy_kdx4_compatible": "Limited - G Function 180 KD Coins",
+    "can_do_obd": "Limited",
+    "process_if_not_obd": "APB113 bench",
+    "bypass_cable": "APB113",
+    "tools": [
+      "Autel IM508S"
+    ]
+  },
+  {
+    "make": "Rolls-Royce",
+    "model": "Phantom",
+    "years": "2003-2017",
+    "chip_type": "ID46",
+    "frequency": "433",
+    "im508s_compatible": "Yes - IM508S supports - OBD CAS3+",
+    "keydiy_kdx4_compatible": "Yes - FGB23",
+    "can_do_obd": "Yes",
+    "process_if_not_obd": "N/A",
+    "bypass_cable": "No",
+    "tools": [
+      "Autel IM508S",
+      "KEYDIY KD-X4"
+    ]
+  },
+  {
+    "make": "Rolls-Royce",
+    "model": "Phantom",
+    "years": "2018-2025",
+    "chip_type": "ID49",
+    "frequency": "433",
+    "im508s_compatible": "Limited - BMW BDC3 based, APB113 + G-Chassis subscription",
+    "keydiy_kdx4_compatible": "Limited - G Function",
+    "can_do_obd": "Limited",
+    "process_if_not_obd": "APB113 bench",
+    "bypass_cable": "APB113",
+    "tools": [
+      "Autel IM508S"
+    ]
+  },
+  {
+    "make": "Rolls-Royce",
+    "model": "Cullinan",
+    "years": "2018-2025",
+    "chip_type": "ID49",
+    "frequency": "433",
+    "im508s_compatible": "Limited - BMW BDC2/BDC3 based, APB113 + G-Chassis subscription",
+    "keydiy_kdx4_compatible": "Limited - G Function",
+    "can_do_obd": "Limited",
+    "process_if_not_obd": "APB113 bench",
+    "bypass_cable": "APB113",
+    "tools": [
+      "Autel IM508S"
+    ]
+  }
+]

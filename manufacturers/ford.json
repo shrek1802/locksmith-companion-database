@@ -1,0 +1,1699 @@
+[
+  {
+    "record_id": "FORD-KA-MK1-1996-2008-ID60",
+    "make": "Ford",
+    "model": "Ka",
+    "generation": "Mk1",
+    "years": "1996-2008",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Ford Ka",
+      "platform_type": "PATS 2",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "Ford",
+      "original_model": "Ka",
+      "original_years": "",
+      "shared_models": [],
+      "notes": "Early PATS2"
+    },
+    "key": {
+      "key_type": "Remote Key",
+      "smart_key": false,
+      "blade": "FO21",
+      "emergency_blade": "FO21",
+      "lishi": "FO21 2-in-1",
+      "transponder": "ID60 / 4D60",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-KA-REMOTE"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD Only",
+      "sgw_required": false,
+      "sgw_location": "None",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "None",
+      "battery_support_critical": false,
+      "internet_required": false,
+      "pin_code_required": false,
+      "precode_required": false,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None",
+      "dealer_only_parts": false,
+      "risk_level": "Low",
+      "time_estimate": "10 mins",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": true,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "Cloneable ID60"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse Key Tool Plus Pad",
+        "OBDSTAR X300 DP Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "PATS2 Add key via OBD"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "PATS Module",
+      "location": "Behind glovebox",
+      "removal_time": "20 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Ford FO21 Remote",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFO00EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-KA-MK2-2008-2016-ID46",
+    "make": "Ford",
+    "model": "Ka",
+    "generation": "Mk2",
+    "years": "2008-2016",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Fiat 500 Platform",
+      "platform_type": "Fiat",
+      "badge_engineered": true,
+      "is_rebadge": true,
+      "original_brand": "Fiat",
+      "original_model": "500 2007-2015",
+      "original_years": "2008-2016",
+      "shared_models": [
+        "Fiat 500",
+        "Ford Ka Mk2"
+      ],
+      "notes": "Fiat 500 rebadge - Marelli BCM"
+    },
+    "key": {
+      "key_type": "Remote Key",
+      "smart_key": false,
+      "blade": "SIP22",
+      "emergency_blade": "SIP22",
+      "lishi": "SIP22 2-in-1",
+      "transponder": "ID46 / PCF7941",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 2,
+      "remote_part_numbers": [
+        "FORD-KA-MK2-REMOTE"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD Only",
+      "sgw_required": false,
+      "sgw_location": "None",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "None",
+      "battery_support_critical": false,
+      "internet_required": false,
+      "pin_code_required": true,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None",
+      "dealer_only_parts": false,
+      "risk_level": "Low",
+      "time_estimate": "15 mins",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": "Fiat 500 2007-2015"
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "Rebadge Fiat 500 - select Fiat",
+        "Requires PIN"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse Key Tool Plus Pad",
+        "OBDSTAR X300 DP Plus",
+        "Keydiy KD-X4"
+      ],
+      "procedure_notes": [
+        "This is Fiat 500 - select Fiat 500 in tool"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM Marelli",
+      "location": "Driver side under dash",
+      "removal_time": "None",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Fiat SIP22 Flip",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFI00EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-FIESTA-MK7-2008-2017-ID63",
+    "make": "Ford",
+    "model": "Fiesta",
+    "generation": "Mk7",
+    "years": "2008-2017",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Ford Global B",
+      "platform_type": "Ford B",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "Ford",
+      "original_model": "Fiesta Mk7",
+      "original_years": "",
+      "shared_models": [
+        "Ford B-Max"
+      ],
+      "notes": "Most common UK Fiesta - ID63 80bit"
+    },
+    "key": {
+      "key_type": "Remote Key",
+      "smart_key": false,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 / 4D63 80bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-FIESTA-MK7-REMOTE"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD Only",
+      "sgw_required": false,
+      "sgw_location": "None",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "None",
+      "battery_support_critical": false,
+      "internet_required": false,
+      "pin_code_required": false,
+      "precode_required": false,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None",
+      "dealer_only_parts": false,
+      "risk_level": "Low",
+      "time_estimate": "10-15 mins",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "ID63 80bit cannot clone",
+        "No PIN"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "OBD add key - no PIN",
+        "AKL 10 min wait"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side under dash",
+      "removal_time": "None",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Ford HU101 Flip 3btn",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFO01EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested",
+        "Most common UK"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-FIESTA-MK8-2017-2023-ID47",
+    "make": "Ford",
+    "model": "Fiesta",
+    "generation": "Mk8",
+    "years": "2017-2023",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Ford Global B Facelift",
+      "platform_type": "Ford B + SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "Ford",
+      "original_model": "Fiesta Mk8",
+      "original_years": "",
+      "shared_models": [
+        "Ford Puma",
+        "Ford EcoSport"
+      ],
+      "notes": "ID47/ID49 - SGW from 2020"
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID47 / ID49 / HITAG Pro 128bit",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-FIESTA-MK8-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "20-30 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "2017-2019 No SGW",
+        "2020-2023 SGW requires 12+8 bypass - AutoAuth does NOT work in UK",
+        "ID47/ID49 cannot clone"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "2017-2019 OBD only",
+        "2020+ SGW requires 12+8 bypass - AutoAuth does NOT work in UK"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM + SGW",
+      "location": "Driver side + Behind glovebox",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Ford HU101 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFO02EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested",
+        "SGW verified"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-FOCUS-MK3-2011-2018-ID63-ID47",
+    "make": "Ford",
+    "model": "Focus",
+    "generation": "Mk3",
+    "years": "2011-2018",
+    "body": [
+      "Hatchback",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Ford Global C",
+      "platform_type": "Ford C",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "Ford",
+      "original_model": "Focus Mk3",
+      "original_years": "",
+      "shared_models": [
+        "Ford C-Max",
+        "Ford Kuga Mk2"
+      ],
+      "notes": "Focus Mk3 early ID63 late ID47"
+    },
+    "key": {
+      "key_type": "Remote Key / Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 80bit early / ID47 HITAG Pro late",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-FOCUS-MK3-REMOTE"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD Only",
+      "sgw_required": false,
+      "sgw_location": "None",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "None",
+      "battery_support_critical": false,
+      "internet_required": false,
+      "pin_code_required": false,
+      "precode_required": false,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None",
+      "dealer_only_parts": false,
+      "risk_level": "Low",
+      "time_estimate": "15 mins",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "2011-2014 ID63",
+        "2014-2018 ID47",
+        "No SGW"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "OBD add key - no PIN"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side under dash",
+      "removal_time": "None",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Ford HU101 Flip / Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFO01EN",
+        "XKFO02EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-FOCUS-MK4-2018-2025-ID49",
+    "make": "Ford",
+    "model": "Focus",
+    "generation": "Mk4",
+    "years": "2018-2025",
+    "body": [
+      "Hatchback",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Ford C2",
+      "platform_type": "Ford C2 + SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "Ford",
+      "original_model": "Focus Mk4",
+      "original_years": "",
+      "shared_models": [
+        "Ford Kuga Mk3",
+        "Ford Puma"
+      ],
+      "notes": "Focus Mk4 ID49 128bit AES SGW"
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID49 / 128bit AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-FOCUS-MK4-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "25-35 mins + 10 mins SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "ID49 128bit AES cannot clone",
+        "SGW requires 12+8 bypass - AutoAuth does NOT work in UK"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass - AutoAuth does NOT work in UK",
+        "Battery support mandatory"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM + SGW",
+      "location": "Driver side + Behind glovebox",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Ford HU101 Smart 3btn",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFO02EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested",
+        "SGW verified"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-KUGA-MK2-2012-2019-ID63-ID47",
+    "make": "Ford",
+    "model": "Kuga",
+    "generation": "Mk2",
+    "years": "2012-2019",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Ford Global C",
+      "platform_type": "Ford C",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "Ford",
+      "original_model": "Kuga Mk2",
+      "original_years": "",
+      "shared_models": [
+        "Ford Focus Mk3",
+        "Ford C-Max Mk2"
+      ],
+      "notes": "Kuga Mk2 ID63 early ID47 late"
+    },
+    "key": {
+      "key_type": "Remote Key / Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID63 80bit early / ID47 HITAG Pro late",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-KUGA-MK2-REMOTE"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD Only",
+      "sgw_required": false,
+      "sgw_location": "None",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "None",
+      "battery_support_critical": false,
+      "internet_required": false,
+      "pin_code_required": false,
+      "precode_required": false,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None",
+      "dealer_only_parts": false,
+      "risk_level": "Low",
+      "time_estimate": "15 mins",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "2012-2014 ID63",
+        "2015-2019 ID47"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "OBD add key"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side",
+      "removal_time": "None",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Ford HU101",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFO01EN",
+        "XKFO02EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-KUGA-MK3-2019-2025-ID49",
+    "make": "Ford",
+    "model": "Kuga",
+    "generation": "Mk3",
+    "years": "2019-2025",
+    "body": [
+      "SUV",
+      "PHEV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Ford C2",
+      "platform_type": "Ford C2 + SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "Ford",
+      "original_model": "Kuga Mk3",
+      "original_years": "",
+      "shared_models": [
+        "Ford Focus Mk4",
+        "Ford Puma"
+      ],
+      "notes": "Kuga Mk3 ID49 SGW PHEV same"
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID49 / 128bit AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-KUGA-MK3-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "25-35 mins + SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "ID49 128bit AES",
+        "SGW requires 12+8 bypass - AutoAuth does NOT work in UK",
+        "PHEV same"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass",
+        "Battery support mandatory"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM + SGW",
+      "location": "Driver side + Behind glovebox",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Ford HU101 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFO02EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested",
+        "SGW verified",
+        "PHEV verified"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-PUMA-2019-2025-ID49",
+    "make": "Ford",
+    "model": "Puma",
+    "generation": "Mk1",
+    "years": "2019-2025",
+    "body": [
+      "SUV",
+      "Crossover"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Ford B2E + SGW",
+      "platform_type": "Ford B2E + SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "Ford",
+      "original_model": "Puma",
+      "original_years": "",
+      "shared_models": [
+        "Ford Fiesta Mk8",
+        "Ford EcoSport"
+      ],
+      "notes": "Puma ID49 SGW very common UK"
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID49 / 128bit AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-PUMA-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "20-30 mins + SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "ID49",
+        "All years SGW requires 12+8 bypass - AutoAuth does NOT work in UK",
+        "Very common UK"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass - AutoAuth does NOT work in UK",
+        "Battery support mandatory"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM + SGW",
+      "location": "Behind glovebox",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Ford HU101 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFO02EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested",
+        "Very common UK"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-MONDEO-MK5-2014-2022-ID47",
+    "make": "Ford",
+    "model": "Mondeo",
+    "generation": "Mk5",
+    "years": "2014-2022",
+    "body": [
+      "Hatchback",
+      "Estate"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Ford CD4",
+      "platform_type": "Ford CD4 + SGW",
+      "badge_engineered": false,
+      "is_rebadge": false,
+      "original_brand": "Ford",
+      "original_model": "Mondeo Mk5",
+      "original_years": "",
+      "shared_models": [
+        "Ford S-Max Mk2",
+        "Ford Galaxy Mk3",
+        "Ford Edge"
+      ],
+      "notes": "Mondeo Mk5 ID47/ID49 SGW from 2020"
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID47 / ID49 early/late",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-MONDEO-MK5-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK - use 12+8 bypass",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "20-30 mins + SGW access",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "2014-2019 No SGW",
+        "2020-2022 SGW requires 12+8 bypass"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "Check SGW - 2020+ requires bypass"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM + SGW",
+      "location": "Driver side + Behind glovebox",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Ford HU101 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFO02EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-TOURNEO-CONNECT-MK3-2022-2025-ID88-MQB",
+    "make": "Ford",
+    "model": "Tourneo Connect",
+    "generation": "Mk3",
+    "years": "2022-2025",
+    "body": [
+      "MPV",
+      "Van"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "VW MQB A0",
+      "platform_type": "MQB37",
+      "badge_engineered": true,
+      "is_rebadge": true,
+      "original_brand": "Volkswagen",
+      "original_model": "Caddy Mk5",
+      "original_years": "2022-2025",
+      "shared_models": [
+        "Volkswagen Caddy Mk5 2021-2025",
+        "Ford Tourneo Connect Mk3 2022-2025"
+      ],
+      "notes": "This is a VW Caddy with a Ford badge. Use VW Caddy procedure, not Ford."
+    },
+    "key": {
+      "key_type": "Flip Key",
+      "smart_key": false,
+      "blade": "HU162T (9-cut)",
+      "emergency_blade": "HU162T",
+      "lishi": "HU162T 2-in-1",
+      "transponder": "ID88 / HITAG 3 / Megamos AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "2K0-837-202-AD"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD Only",
+      "sgw_required": false,
+      "sgw_location": "None",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "None",
+      "battery_support_critical": false,
+      "internet_required": true,
+      "pin_code_required": true,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None",
+      "dealer_only_parts": false,
+      "risk_level": "Low",
+      "time_estimate": "15-20 mins",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": "Volkswagen Caddy Mk5 2021-2025"
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "REBADGE - This is VW Caddy - select VW Caddy in tool menu, NOT Ford",
+        "Requires VW 5th gen precode",
+        "HU162T blade - not HU101"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "This is a VW Caddy - select VW Caddy in tool menu, NOT Ford",
+        "Requires VW 5th gen precode"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM - VW",
+      "location": "Driver side under dash - VW layout",
+      "removal_time": "None",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "VW HU162T Flip",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XEHP10EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested",
+        "Rebadge verified - VW Caddy"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-RANGER-2022-2025-ID47",
+    "make": "Ford",
+    "model": "Ranger",
+    "generation": "Mk4",
+    "years": "2022-2025",
+    "body": [
+      "Pickup"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "Ford T6.2 / VW Amarok Platform",
+      "platform_type": "Ford T6.2 + SGW",
+      "badge_engineered": true,
+      "is_rebadge": false,
+      "original_brand": "Ford",
+      "original_model": "Ranger",
+      "original_years": "",
+      "shared_models": [
+        "Volkswagen Amarok 2023-2025",
+        "Ford Ranger 2022-2025"
+      ],
+      "notes": "Ranger 2022+ shares platform with VW Amarok - but Ford system"
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU101",
+      "emergency_blade": "HU101",
+      "lishi": "HU101 2-in-1",
+      "transponder": "ID47 / ID49",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-RANGER-2022-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": true,
+      "connection_type": "OBD + SGW 12+8 Bypass Cable",
+      "sgw_required": true,
+      "sgw_location": "Behind glovebox - requires trim removal",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "SGW 12+8 Bypass Cable",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": true,
+      "dealer_key_required": false,
+      "tokens_required": false,
+      "subscription_required": "None - AutoAuth does NOT work in UK",
+      "dealer_only_parts": false,
+      "risk_level": "Medium",
+      "time_estimate": "20-30 mins + SGW",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": null
+    },
+    "key_methods": {
+      "add_key_obd": true,
+      "akl_obd": true,
+      "clone_possible": false,
+      "dealer_key_from_working_key": false,
+      "requires_working_key_dismantle": false,
+      "working_key_read_method": "",
+      "working_key_tools": [],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": false,
+      "server_calculation_type": "",
+      "method_notes": [
+        "Shares platform with VW Amarok but uses Ford system",
+        "ID47/ID49",
+        "SGW requires 12+8 bypass"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "SGW requires 12+8 bypass",
+        "Select Ford Ranger, not VW Amarok"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM + SGW",
+      "location": "Behind glovebox",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "Ford HU101 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XKFO02EN"
+      ]
+    },
+    "verification": {
+      "status": "Verified",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Workshop Tested",
+        "Amarok shared platform note"
+      ]
+    }
+  },
+  {
+    "record_id": "FORD-EXPLORER-EV-2024-2025-MEB",
+    "make": "Ford",
+    "model": "Explorer EV",
+    "generation": "Gen1",
+    "years": "2024-2025",
+    "body": [
+      "SUV",
+      "Electric"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "platform_info": {
+      "platform_name": "VW MEB",
+      "platform_type": "MEB",
+      "badge_engineered": true,
+      "is_rebadge": true,
+      "original_brand": "Volkswagen",
+      "original_model": "ID.4 / ID.5",
+      "original_years": "2024-2025",
+      "shared_models": [
+        "Volkswagen ID.4 2020-2025",
+        "Ford Explorer EV 2024-2025",
+        "Ford Capri EV 2024-2025"
+      ],
+      "notes": "This is a VW ID.4/ID.5 with Ford badge - MEB platform"
+    },
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HU162T (9-cut)",
+      "emergency_blade": "HU162T",
+      "lishi": "HU162T 2-in-1",
+      "transponder": "NXP - MEB / MQB48",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "FORD-EXPLORER-EV-SMART"
+      ]
+    },
+    "job_info": {
+      "can_do_obd": true,
+      "add_key_possible": true,
+      "all_keys_lost_possible": false,
+      "connection_type": "OBD Only - Working Key Read",
+      "sgw_required": false,
+      "sgw_location": "None",
+      "obd_location": "Driver side lower dash",
+      "special_cable_required": "None",
+      "battery_support_critical": true,
+      "internet_required": true,
+      "pin_code_required": false,
+      "precode_required": false,
+      "dealer_key_required": true,
+      "tokens_required": true,
+      "subscription_required": "VAG ODIS Online or Third-party Server",
+      "dealer_only_parts": false,
+      "risk_level": "Very High",
+      "time_estimate": "60-90 mins - working key dismantle",
+      "max_keys": 8,
+      "region_lock": "UK/EU Only",
+      "use_procedure_from": "Volkswagen ID.4 2020-2025"
+    },
+    "key_methods": {
+      "add_key_obd": false,
+      "akl_obd": false,
+      "clone_possible": false,
+      "dealer_key_from_working_key": true,
+      "requires_working_key_dismantle": true,
+      "working_key_read_method": "Dismantle working key, read NXP chip with VVDI2 / Key Tool Plus / Autel",
+      "working_key_tools": [
+        "Xhorse VVDI2",
+        "Xhorse Key Tool Plus",
+        "Autel IM608 Pro"
+      ],
+      "dealer_key_from_dump": false,
+      "dump_read_method": "",
+      "server_calculation_required": true,
+      "server_calculation_type": "MEB Dealer Key Calculation",
+      "method_notes": [
+        "REBADGE - VW MEB platform - This is VW ID.4 with Ford badge",
+        "MUST have working key - dismantle",
+        "AKL dealer only"
+      ]
+    },
+    "programming": {
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Autel IM508S",
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI2",
+        "Keydiy KD-X4",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "REBADGE - Select VW ID.4 in tool",
+        "MUST have working key - dismantle and read"
+      ],
+      "common_faults": [],
+      "related_dtc": []
+    },
+    "module_location": {
+      "module": "BCM2 / J519 - VW",
+      "location": "Under dash driver side - VW layout",
+      "removal_time": "45 Minutes",
+      "airbag_risk": false,
+      "photos": []
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "parts": {
+      "key_shell": "VW MEB Smart",
+      "transponder_supplier": [
+        "Xhorse XM38",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XM38"
+      ]
+    },
+    "verification": {
+      "status": "Draft",
+      "last_verified": "2026-07-07",
+      "sources": [
+        "Rebadge - VW MEB - to be verified"
+      ]
+    }
+  }
+]

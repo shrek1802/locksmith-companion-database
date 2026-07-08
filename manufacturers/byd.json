@@ -1,0 +1,387 @@
+[
+  {
+    "record_id": "BYD-ATTO3-2022-2025-ID47",
+    "make": "BYD",
+    "model": "Atto 3",
+    "generation": "",
+    "years": "2022-2025",
+    "body": [
+      "SUV"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HYN17",
+      "emergency_blade": "HYN17",
+      "lishi": "HYN17 2-in-1",
+      "transponder": "ID47 / HITAG AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "BYD-ATTO3-SMART"
+      ]
+    },
+    "immobiliser": {
+      "system": "SGW",
+      "generation": "SGW",
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": true,
+      "internet_required": true,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus",
+        "OBDSTAR X300 DP Plus"
+      ],
+      "procedure_notes": [
+        "SGW requires bypass or online access.",
+        "Battery support mandatory.",
+        "ID47 precode required for aftermarket keys.",
+        "12V support must not drop below 13V."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": false,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_atto3_bcm_01.jpg"
+      ]
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SGW lockout",
+        "Key not detected"
+      ],
+      "related_dtc": [
+        "B10AA",
+        "U0423"
+      ]
+    },
+    "parts": {
+      "key_shell": "BYD HYN17 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XE47BYEN",
+        "OEM BYD-ATTO3-SMART"
+      ]
+    },
+    "workshop_notes": [
+      "SGW system - use bypass cable or online.",
+      "ID47 cannot be cloned.",
+      "Battery stabiliser required.",
+      "If SGW locked, need dealer unlock."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Lishi HYN17"
+      ],
+      "transponder": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus"
+      ],
+      "programming": [
+        "Autel IM608 Pro tested",
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
+    }
+  },
+  {
+    "record_id": "BYD-DOLPHIN-2023-2025-ID47",
+    "make": "BYD",
+    "model": "Dolphin",
+    "generation": "",
+    "years": "2023-2025",
+    "body": [
+      "Hatchback"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HYN17",
+      "emergency_blade": "HYN17",
+      "lishi": "HYN17 2-in-1",
+      "transponder": "ID47 / HITAG AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "BYD-DOLPHIN-SMART"
+      ]
+    },
+    "immobiliser": {
+      "system": "SGW",
+      "generation": "SGW",
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": true,
+      "internet_required": true,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "SGW requires bypass cable.",
+        "Online calculation for AKL.",
+        "Battery support mandatory."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": false,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_dolphin_bcm_01.jpg"
+      ]
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "parts": {
+      "key_shell": "BYD HYN17 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XE47BYEN",
+        "OEM BYD-DOLPHIN-SMART"
+      ]
+    },
+    "workshop_notes": [
+      "SGW bypass cable required for OBD.",
+      "ID47 precode required.",
+      "Use 12V+ battery support."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Lishi HYN17"
+      ],
+      "transponder": [
+        "Autel IM608 Pro",
+        "Xhorse"
+      ],
+      "programming": [
+        "Autel IM608 Pro tested",
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
+    }
+  },
+  {
+    "record_id": "BYD-SEAL-2023-2025-ID47",
+    "make": "BYD",
+    "model": "Seal",
+    "generation": "",
+    "years": "2023-2025",
+    "body": [
+      "Saloon"
+    ],
+    "market": "UK",
+    "vin_range": "",
+    "facelift": false,
+    "key": {
+      "key_type": "Smart Key",
+      "smart_key": true,
+      "blade": "HYN17",
+      "emergency_blade": "HYN17",
+      "lishi": "HYN17 2-in-1",
+      "transponder": "ID47 / HITAG AES",
+      "frequency": "433MHz",
+      "battery": "CR2032",
+      "buttons": 3,
+      "remote_part_numbers": [
+        "BYD-SEAL-SMART"
+      ]
+    },
+    "immobiliser": {
+      "system": "SGW",
+      "generation": "SGW",
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "security_delay": "None"
+    },
+    "programming": {
+      "add_key": true,
+      "all_keys_lost": true,
+      "dealer_key_required": false,
+      "precode_required": true,
+      "internet_required": true,
+      "obd_supported": true,
+      "bench_required": false,
+      "eeprom_required": false,
+      "working_key_required": false,
+      "supported_tools": [
+        "Autel IM608 Pro",
+        "Xhorse Key Tool Plus"
+      ],
+      "procedure_notes": [
+        "SGW requires bypass.",
+        "Online calculation for AKL.",
+        "Battery support mandatory."
+      ]
+    },
+    "obd": {
+      "connector": "16 Pin OBD",
+      "location": "Driver side lower dash",
+      "ignition_required": false,
+      "service_mode": false
+    },
+    "eeprom": {
+      "required": false,
+      "module": null,
+      "chip": null,
+      "adapter": null,
+      "read_method": null,
+      "boot_pin": null
+    },
+    "module_location": {
+      "module": "BCM",
+      "location": "Driver side, under dash",
+      "removal_time": "30 Minutes",
+      "airbag_risk": false,
+      "photos": [
+        "byd_seal_bcm_01.jpg"
+      ]
+    },
+    "diagnostics": {
+      "common_faults": [
+        "SGW lockout"
+      ],
+      "related_dtc": [
+        "B10AA"
+      ]
+    },
+    "parts": {
+      "key_shell": "BYD HYN17 Smart",
+      "transponder_supplier": [
+        "Xhorse",
+        "OEM"
+      ],
+      "remote_options": [
+        "Xhorse XE47BYEN",
+        "OEM BYD-SEAL-SMART"
+      ]
+    },
+    "workshop_notes": [
+      "SGW bypass required.",
+      "ID47 precode needed.",
+      "Battery support critical."
+    ],
+    "verification": {
+      "status": "Verified",
+      "blade": [
+        "Instacode",
+        "Lishi HYN17"
+      ],
+      "transponder": [
+        "Autel IM608 Pro"
+      ],
+      "programming": [
+        "Autel IM608 Pro tested",
+        "Workshop Tested"
+      ],
+      "last_verified": "2026-07-05"
+    },
+    "completion": {
+      "key_data": 100,
+      "programming": 100,
+      "obd": 100,
+      "eeprom": 100,
+      "module_location": 100,
+      "diagnostics": 100,
+      "photos": 50,
+      "overall": 93
+    }
+  }
+]
