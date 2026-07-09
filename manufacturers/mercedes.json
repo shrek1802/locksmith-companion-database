@@ -1,1055 +1,394 @@
-[
-  {
-    "make": "Mercedes",
-    "model": "A-Class",
-    "years": "1997-2004",
-    "blade": "HU39 / HU64",
-    "lishi": "HU39 2-in-1 / HU64 2-in-1",
-    "transponder": "ID33 / PCF7935 - DAS2",
-    "can_do_obd": "Yes",
-    "connection": "OBD Only",
-    "bypass_cable": "N/A",
-    "battery_support": "No - Not critical but recommended",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "N/A",
-    "notes": "W168 - DAS2 - OBD Only - No PIN needed"
+{
+  "meta": {
+    "version": "2026.07",
+    "last_updated": "2026-07-09",
+    "source": "Autel IM608 Pro 2 v9.00 + MB dealer bulletins + 2023-2026 patch notes",
+    "warning": "Mercedes killed FBS4 aftermarket access in 2023. Any 2015+ is dealer-only for keys.",
+    "tools_tested": ["IM508S", "IM608 Pro 2", "VVDI MB", "CGDI MB"]
   },
-  {
-    "make": "Mercedes",
-    "model": "A-Class",
-    "years": "2004-2012",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC / BGA - DAS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter / CGDI MB EIS Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD with VVDI MB / CGDI MB, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter, generate working key",
-    "notes": "W169/W245 - NEC - Add key via OBD reading EIS | AKL requires EIS removal"
-  },
-  {
-    "make": "Mercedes",
-    "model": "A-Class",
-    "years": "2012-2018",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3 - NEC",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB BGA Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus",
-      "VVDI Prog + EIS Adapter"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD with VVDI MB / CGDI MB, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + BGA Adapter",
-    "notes": "W176 - BGA - Add key via OBD reading EIS | AKL requires EIS removal"
-  },
-  {
-    "make": "Mercedes",
-    "model": "A-Class",
-    "years": "2018-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module / VVDI MB FBS4 Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation with VVDI MB / CGDI MB / Autel (tokens required), generate dealer key, learn via OBD | AKL: Bench read EIS with ACDP FBS4 Module / VVDI Prog + FBS4 Adapter, server calculation, generate working key",
-    "notes": "W177 - FBS4 - Requires server calculation and tokens | Add key needs working key | AKL requires bench EIS | High Risk - Battery support mandatory"
-  },
-  {
-    "make": "Mercedes",
-    "model": "B-Class",
-    "years": "2005-2011",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC / BGA - DAS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter",
-    "notes": "W245 - NEC - Same as A-Class W169"
-  },
-  {
-    "make": "Mercedes",
-    "model": "B-Class",
-    "years": "2011-2018",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB BGA Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus",
-      "VVDI Prog + EIS Adapter"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + BGA Adapter",
-    "notes": "W246 - BGA - Add key via OBD reading EIS"
-  },
-  {
-    "make": "Mercedes",
-    "model": "B-Class",
-    "years": "2018-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS with ACDP FBS4 Module",
-    "notes": "W247 - FBS4 - Requires server calculation and tokens | High Risk"
-  },
-  {
-    "make": "Mercedes",
-    "model": "C-Class",
-    "years": "1993-2000",
-    "blade": "HU39 / HU64",
-    "lishi": "HU39 2-in-1 / HU64 2-in-1",
-    "transponder": "ID33 / PCF7935 - DAS2",
-    "can_do_obd": "Yes",
-    "connection": "OBD Only",
-    "bypass_cable": "N/A",
-    "battery_support": "No - Not critical but recommended",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "N/A",
-    "notes": "W202 - DAS2 - OBD Only"
-  },
-  {
-    "make": "Mercedes",
-    "model": "C-Class",
-    "years": "2000-2007",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC - DAS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter",
-    "notes": "W203 - NEC - Add key via OBD reading EIS"
-  },
-  {
-    "make": "Mercedes",
-    "model": "C-Class",
-    "years": "2007-2014",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB BGA Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus",
-      "VVDI Prog + EIS Adapter"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + BGA Adapter",
-    "notes": "W204 - BGA - Add key via OBD reading EIS | Most common C-Class"
-  },
-  {
-    "make": "Mercedes",
-    "model": "C-Class",
-    "years": "2014-2021",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation with VVDI MB / CGDI MB / Autel (tokens), generate dealer key, learn via OBD | AKL: Bench read EIS with ACDP FBS4 Module",
-    "notes": "W205 - FBS4 - Requires server calculation and tokens | High Risk"
-  },
-  {
-    "make": "Mercedes",
-    "model": "C-Class",
-    "years": "2021-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key / UWB",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS with ACDP FBS4 Module",
-    "notes": "W206 - FBS4 - Latest C-Class - Requires server calculation | UWB key option"
-  },
-  {
-    "make": "Mercedes",
-    "model": "E-Class",
-    "years": "1995-2002",
-    "blade": "HU39 / HU64",
-    "lishi": "HU39 2-in-1 / HU64 2-in-1",
-    "transponder": "ID33 / PCF7935 - DAS2",
-    "can_do_obd": "Yes",
-    "connection": "OBD Only",
-    "bypass_cable": "N/A",
-    "battery_support": "No - Not critical but recommended",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "N/A",
-    "notes": "W210 - DAS2 - OBD Only"
-  },
-  {
-    "make": "Mercedes",
-    "model": "E-Class",
-    "years": "2002-2009",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC - DAS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter",
-    "notes": "W211 - NEC"
-  },
-  {
-    "make": "Mercedes",
-    "model": "E-Class",
-    "years": "2009-2016",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB BGA Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus",
-      "VVDI Prog + EIS Adapter"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + BGA Adapter",
-    "notes": "W212 - BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "E-Class",
-    "years": "2016-2023",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS with ACDP FBS4 Module",
-    "notes": "W213 - FBS4 - Requires server calculation and tokens"
-  },
-  {
-    "make": "Mercedes",
-    "model": "E-Class",
-    "years": "2023-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key / UWB",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "W214 - FBS4 - Latest E-Class"
-  },
-  {
-    "make": "Mercedes",
-    "model": "S-Class",
-    "years": "1998-2005",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC - DAS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter",
-    "notes": "W220 - NEC"
-  },
-  {
-    "make": "Mercedes",
-    "model": "S-Class",
-    "years": "2005-2013",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB BGA Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus",
-      "VVDI Prog + EIS Adapter"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + BGA Adapter",
-    "notes": "W221 - BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "S-Class",
-    "years": "2013-2020",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS with ACDP FBS4 Module",
-    "notes": "W222 - FBS4 - Requires server calculation"
-  },
-  {
-    "make": "Mercedes",
-    "model": "S-Class",
-    "years": "2020-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key / UWB",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "W223 - FBS4 - Latest S-Class - UWB key"
-  },
-  {
-    "make": "Mercedes",
-    "model": "GLA",
-    "years": "2013-2019",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB BGA Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus",
-      "VVDI Prog + EIS Adapter"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + BGA Adapter",
-    "notes": "X156 - BGA - Same as A-Class W176"
-  },
-  {
-    "make": "Mercedes",
-    "model": "GLA",
-    "years": "2020-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "H247 - FBS4"
-  },
-  {
-    "make": "Mercedes",
-    "model": "GLB",
-    "years": "2019-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "X247 - FBS4 - Same as B-Class W247"
-  },
-  {
-    "make": "Mercedes",
-    "model": "GLC",
-    "years": "2015-2022",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "X253 - FBS4 - Same as C-Class W205"
-  },
-  {
-    "make": "Mercedes",
-    "model": "GLC",
-    "years": "2022-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key / UWB",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "X254 - FBS4 - Latest GLC"
-  },
-  {
-    "make": "Mercedes",
-    "model": "GLE",
-    "years": "2011-2019",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3 / FBS4 early",
-    "can_do_obd": "Yes early / No - Working key required late",
-    "connection": "OBD + EIS Removal early / Working Key + OBD + Server late",
-    "bypass_cable": "EIS Adapter early / FBS4 Adapter late",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Early W166 2011-2015 BGA - Add key via OBD reading EIS | Late W166 2015-2019 FBS4 - Working key + server calculation",
-    "notes": "W166 - Early BGA, Late FBS4 - Check year"
-  },
-  {
-    "make": "Mercedes",
-    "model": "GLE",
-    "years": "2019-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "V167 - FBS4"
-  },
-  {
-    "make": "Mercedes",
-    "model": "GLS",
-    "years": "2012-2019",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3 / FBS4 early",
-    "can_do_obd": "Yes early / No - Working key required late",
-    "connection": "OBD + EIS Removal early / Working Key + OBD + Server late",
-    "bypass_cable": "EIS Adapter early / FBS4 Adapter late",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Early X166 2012-2015 BGA - Add key via OBD | Late X166 2015-2019 FBS4 - Working key + server",
-    "notes": "X166 - Early BGA, Late FBS4"
-  },
-  {
-    "make": "Mercedes",
-    "model": "GLS",
-    "years": "2019-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "X167 - FBS4"
-  },
-  {
-    "make": "Mercedes",
-    "model": "CLA",
-    "years": "2013-2019",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB BGA Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus",
-      "VVDI Prog + EIS Adapter"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + BGA Adapter",
-    "notes": "C117 - BGA - Same as A-Class W176"
-  },
-  {
-    "make": "Mercedes",
-    "model": "CLA",
-    "years": "2019-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "C118 - FBS4"
-  },
-  {
-    "make": "Mercedes",
-    "model": "CLS",
-    "years": "2004-2010",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC / BGA",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter",
-    "notes": "C219 - NEC/BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "CLS",
-    "years": "2010-2018",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB BGA Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus",
-      "VVDI Prog + EIS Adapter"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + BGA Adapter",
-    "notes": "C218 - BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "CLS",
-    "years": "2018-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "C257 - FBS4"
-  },
-  {
-    "make": "Mercedes",
-    "model": "G-Class",
-    "years": "1990-2000",
-    "blade": "HU39 / HU64",
-    "lishi": "HU39 2-in-1 / HU64 2-in-1",
-    "transponder": "ID33 / PCF7935 - DAS2",
-    "can_do_obd": "Yes",
-    "connection": "OBD Only",
-    "bypass_cable": "N/A",
-    "battery_support": "No - Not critical but recommended",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "N/A",
-    "notes": "W460/W463 early - DAS2"
-  },
-  {
-    "make": "Mercedes",
-    "model": "G-Class",
-    "years": "2000-2012",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC / BGA",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter",
-    "notes": "W463 - NEC/BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "G-Class",
-    "years": "2012-2018",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB BGA Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus",
-      "VVDI Prog + EIS Adapter"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + BGA Adapter",
-    "notes": "W463 - BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "G-Class",
-    "years": "2018-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "W464 - FBS4 - New G-Class"
-  },
-  {
-    "make": "Mercedes",
-    "model": "SLK",
-    "years": "1996-2004",
-    "blade": "HU39 / HU64",
-    "lishi": "HU39 2-in-1 / HU64 2-in-1",
-    "transponder": "ID33 / PCF7935 - DAS2 / NEC",
-    "can_do_obd": "Yes",
-    "connection": "OBD Only / OBD + EIS Removal",
-    "bypass_cable": "N/A / EIS Adapter",
-    "battery_support": "No - Not critical but recommended",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "N/A",
-    "notes": "R170 - DAS2 - Early OBD Only | Late NEC requires EIS removal for AKL"
-  },
-  {
-    "make": "Mercedes",
-    "model": "SLK",
-    "years": "2004-2011",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC / BGA",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter",
-    "notes": "R171 - NEC/BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "SLK",
-    "years": "2011-2016",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB BGA Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus",
-      "VVDI Prog + EIS Adapter"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + BGA Adapter",
-    "notes": "R172 - BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "SLC",
-    "years": "2016-2020",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "R172 facelift - FBS4 - Same as SLK"
-  },
-  {
-    "make": "Mercedes",
-    "model": "SL",
-    "years": "2001-2012",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC / BGA",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter",
-    "notes": "R230 - NEC/BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "SL",
-    "years": "2012-2020",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "BGA / FBS3 / FBS4 early",
-    "can_do_obd": "Yes early / No - Working key required late",
-    "connection": "OBD + EIS Removal early / Working Key + OBD + Server late",
-    "bypass_cable": "EIS Adapter early / FBS4 Adapter late",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Early R231 2012-2015 BGA - Add key via OBD | Late R231 2015-2020 FBS4 - Working key + server",
-    "notes": "R231 - Early BGA, Late FBS4"
-  },
-  {
-    "make": "Mercedes",
-    "model": "Vito",
-    "years": "1996-2003",
-    "blade": "HU39 / HU64",
-    "lishi": "HU39 2-in-1 / HU64 2-in-1",
-    "transponder": "ID33 / PCF7935 - DAS2",
-    "can_do_obd": "Yes",
-    "connection": "OBD Only",
-    "bypass_cable": "N/A",
-    "battery_support": "No - Not critical but recommended",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "N/A",
-    "notes": "W638 - DAS2 - OBD Only"
-  },
-  {
-    "make": "Mercedes",
-    "model": "Vito",
-    "years": "2003-2014",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC / BGA",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter",
-    "notes": "W639 - NEC/BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "Vito",
-    "years": "2014-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "W447 - FBS4"
-  },
-  {
-    "make": "Mercedes",
-    "model": "Sprinter",
-    "years": "1995-2006",
-    "blade": "HU39 / HU64",
-    "lishi": "HU39 2-in-1 / HU64 2-in-1",
-    "transponder": "ID33 / PCF7935 - DAS2 / NEC",
-    "can_do_obd": "Yes",
-    "connection": "OBD Only / OBD + EIS Removal",
-    "bypass_cable": "N/A / EIS Adapter",
-    "battery_support": "No - Not critical but recommended",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "N/A",
-    "notes": "W901-W905 - DAS2 early, NEC late - Early OBD Only, Late EIS removal for AKL"
-  },
-  {
-    "make": "Mercedes",
-    "model": "Sprinter",
-    "years": "2006-2018",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "NEC / BGA",
-    "can_do_obd": "Yes",
-    "connection": "OBD + EIS Removal for AKL",
-    "bypass_cable": "EIS Adapter / VVDI MB NEC Adapter",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "CGDI MB",
-      "Autel IM608 Pro",
-      "Xhorse Key Tool Plus"
-    ],
-    "process_if_not_obd": "Add Key: Read EIS via OBD, generate key, write via IR / OBD | AKL: Remove EIS, read with VVDI Prog + EIS Adapter",
-    "notes": "W906 - NEC/BGA"
-  },
-  {
-    "make": "Mercedes",
-    "model": "Sprinter",
-    "years": "2018-2025",
-    "blade": "HU64",
-    "lishi": "HU64 2-in-1",
-    "transponder": "FBS4 - Long Key",
-    "can_do_obd": "No - Working key required + Server calculation",
-    "connection": "Working Key + OBD + Server / Bench EIS for AKL",
-    "bypass_cable": "FBS4 Adapter / Yanhua ACDP FBS4 Module",
-    "battery_support": "Yes - Required",
-    "tools": [
-      "VVDI MB",
-      "Autel IM608 Pro",
-      "CGDI MB",
-      "Xhorse Key Tool Plus",
-      "Yanhua ACDP FBS4 Module"
-    ],
-    "process_if_not_obd": "Add Key: Need working key, read EIS via OBD, server calculation, generate dealer key, learn via OBD | AKL: Bench read EIS",
-    "notes": "W907/W910 - FBS4 - New Sprinter"
-  }
-]
+  
+  "vehicles": [
+    {
+      "make": "Mercedes",
+      "model": "A-Class",
+      "chassis": ["W169"],
+      "years": "2004-2012",
+      "system": "FBS3",
+      "last_verified": "2026-07-09",
+      "add_key": {
+        "possible": true,
+        "tool_minimum": "IM508S",
+        "chip": "NEC",
+        "freq_mhz": 433,
+        "time_minutes": 10
+      },
+      "all_keys_lost": {
+        "obd_possible": true,
+        "tool_minimum": "IM508S",
+        "dealer_only": false,
+        "time_minutes": 20
+      }
+    },
+    {
+      "make": "Mercedes",
+      "model": "A-Class",
+      "chassis": ["W176"],
+      "years": "2012-2018",
+      "system": "FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {
+        "possible": false,
+        "dealer_only": true,
+        "reason": "FBS4 password calc blocked by MB 2023. All aftermarket tools fail"
+      },
+      "all_keys_lost": {
+        "obd_possible": false,
+        "dealer_only": true,
+        "tools_that_fail": ["IM608 Pro 2", "VVDI MB", "CGDI MB", "IM508S"],
+        "im608_pro_2_message": "Key programming functions unavailable for FBS4 systems",
+        "reason": "No aftermarket tool can pull password or write key to FBS4 EIS"
+      },
+      "warnings": ["DO NOT ATTEND AKL - DEALER ONLY", "Customer must order coded key via TRP"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "A-Class",
+      "chassis": ["W177"],
+      "years": "2018-2024",
+      "system": "FBS4 V2",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "B-Class",
+      "chassis": ["W245"],
+      "years": "2005-2011",
+      "system": "FBS3",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": true, "tool_minimum": "IM508S"},
+      "all_keys_lost": {"obd_possible": true, "tool_minimum": "IM508S", "dealer_only": false}
+    },
+    {
+      "make": "Mercedes",
+      "model": "B-Class",
+      "chassis": ["W246"],
+      "years": "2011-2018",
+      "system": "FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND AKL - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "C-Class",
+      "chassis": ["W203"],
+      "years": "2000-2007",
+      "system": "FBS3",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": true, "tool_minimum": "IM508S", "chip": "NEC", "freq_mhz": 315},
+      "all_keys_lost": {"obd_possible": true, "tool_minimum": "IM508S", "dealer_only": false, "time_minutes": 15}
+    },
+    {
+      "make": "Mercedes",
+      "model": "C-Class",
+      "chassis": ["W204"],
+      "years": "2007-2014",
+      "system": "FBS3",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": true, "tool_minimum": "IM508S", "chip": "NEC", "freq_mhz": 433, "time_minutes": 10},
+      "all_keys_lost": {"obd_possible": true, "tool_minimum": "IM508S", "dealer_only": false, "time_minutes": 20},
+      "notes": "Last C-Class you can do OBD. Everything after is dealer."
+    },
+    {
+      "make": "Mercedes",
+      "model": "C-Class",
+      "chassis": ["W205"],
+      "years": "2014-2021",
+      "system": "FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {
+        "possible": false,
+        "dealer_only": true,
+        "reason": "FBS4 locked 2023. IM608 Pro 2 reports functions unavailable"
+      },
+      "all_keys_lost": {
+        "obd_possible": false,
+        "dealer_only": true,
+        "tools_that_fail": ["IM608 Pro 2", "VVDI MB", "CGDI MB"],
+        "reason": "Cannot pull password or write key to FBS4 EIS/EIS205",
+        "im608_pro_2_message": "Key programming functions unavailable for FBS4 systems"
+      },
+      "warnings": ["DO NOT ATTEND AKL - DEALER ONLY", "IM508S menu stops at 2014"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "C-Class",
+      "chassis": ["W206"],
+      "years": "2021-2024",
+      "system": "FBS4 V2",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "CLA",
+      "chassis": ["C117"],
+      "years": "2013-2019",
+      "system": "FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND AKL - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "CLA",
+      "chassis": ["C118"],
+      "years": "2019-2024",
+      "system": "FBS4 V2",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "CLK",
+      "chassis": ["W209"],
+      "years": "2002-2009",
+      "system": "FBS3",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": true, "tool_minimum": "IM508S", "chip": "NEC", "freq_mhz": 315},
+      "all_keys_lost": {"obd_possible": true, "tool_minimum": "IM508S", "dealer_only": false, "time_minutes": 15},
+      "notes": "Old DAS3. Easy job."
+    },
+    {
+      "make": "Mercedes",
+      "model": "CLS",
+      "chassis": ["W219"],
+      "years": "2004-2010",
+      "system": "FBS3",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": true, "tool_minimum": "IM508S"},
+      "all_keys_lost": {"obd_possible": true, "tool_minimum": "IM508S", "dealer_only": false}
+    },
+    {
+      "make": "Mercedes",
+      "model": "CLS",
+      "chassis": ["W218"],
+      "years": "2010-2018",
+      "system": "FBS3/FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {
+        "possible": false,
+        "dealer_only": true,
+        "notes": "2010-2014 FBS3 works. 2015-2018 FBS4 dealer only. Check VIN"
+      },
+      "all_keys_lost": {
+        "obd_possible": false,
+        "dealer_only": true,
+        "notes": "2015+ FBS4 blocked. Assume dealer only unless confirmed 2014"
+      },
+      "warnings": ["CHECK YEAR: 2015+ = DO NOT ATTEND"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "E-Class",
+      "chassis": ["W211"],
+      "years": "2002-2009",
+      "system": "FBS3",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": true, "tool_minimum": "IM508S", "chip": "NEC", "freq_mhz": 315},
+      "all_keys_lost": {"obd_possible": true, "tool_minimum": "IM508S", "dealer_only": false}
+    },
+    {
+      "make": "Mercedes",
+      "model": "E-Class",
+      "chassis": ["W212"],
+      "years": "2009-2016",
+      "system": "FBS3/FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {
+        "possible": false,
+        "dealer_only": true,
+        "notes": "2009-2014 FBS3 works with IM508S. 2015-2016 FBS4 dealer only"
+      },
+      "all_keys_lost": {
+        "obd_possible": false,
+        "dealer_only": true,
+        "notes": "2015+ FBS4 blocked. If 2014-down, IM508S works"
+      },
+      "warnings": ["CHECK YEAR: 2015+ = DO NOT ATTEND"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "E-Class",
+      "chassis": ["W213"],
+      "years": "2016-2023",
+      "system": "FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND AKL - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "S-Class",
+      "chassis": ["W221"],
+      "years": "2005-2013",
+      "system": "FBS3",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": true, "tool_minimum": "IM508S"},
+      "all_keys_lost": {"obd_possible": true, "tool_minimum": "IM508S", "dealer_only": false}
+    },
+    {
+      "make": "Mercedes",
+      "model": "S-Class",
+      "chassis": ["W222"],
+      "years": "2013-2020",
+      "system": "FBS3/FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {
+        "possible": false,
+        "dealer_only": true,
+        "notes": "2013-2014 FBS3 works. 2015-2020 FBS4 dealer only"
+      },
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["2015+ = DO NOT ATTEND"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "S-Class",
+      "chassis": ["W223"],
+      "years": "2020-2024",
+      "system": "FBS4 V2",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "GLA",
+      "chassis": ["X156"],
+      "years": "2013-2019",
+      "system": "FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND AKL - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "GLA",
+      "chassis": ["H247"],
+      "years": "2020-2025",
+      "system": "FBS4 V2",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "GLC",
+      "chassis": ["X253"],
+      "years": "2015-2022",
+      "system": "FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND AKL - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "GLE",
+      "chassis": ["W166"],
+      "years": "2011-2018",
+      "system": "FBS3/FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {
+        "possible": false,
+        "dealer_only": true,
+        "notes": "2011-2014 FBS3 works. 2015-2018 FBS4 dealer only"
+      },
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["2015+ = DO NOT ATTEND"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "GLE",
+      "chassis": ["V167"],
+      "years": "2019-2024",
+      "system": "FBS4 V2",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "GLS",
+      "chassis": ["X166"],
+      "years": "2012-2019",
+      "system": "FBS3/FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {
+        "possible": false,
+        "dealer_only": true,
+        "notes": "2012-2014 FBS3 works. 2015-2019 FBS4 dealer only"
+      },
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["2015+ = DO NOT ATTEND"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "Vito/V-Class",
+      "chassis": ["W639"],
+      "years": "2003-2014",
+      "system": "FBS3",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": true, "tool_minimum": "IM508S", "chip": "NEC", "freq_mhz": 433},
+      "all_keys_lost": {"obd_possible": true, "tool_minimum": "IM508S", "dealer_only": false}
+    },
+    {
+      "make": "Mercedes",
+      "model": "Vito/V-Class",
+      "chassis": ["W447"],
+      "years": "2014-2024",
+      "system": "FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND AKL - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "AMG GT",
+      "chassis": ["C190"],
+      "years": "2014-2022",
+      "system": "FBS4",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": false, "dealer_only": true},
+      "all_keys_lost": {"obd_possible": false, "dealer_only": true},
+      "warnings": ["DO NOT ATTEND AKL - DEALER ONLY"]
+    },
+    {
+      "make": "Mercedes",
+      "model": "Sprinter",
+      "chassis": ["W906"],
+      "years": "2006-2018",
+      "system": "FBS3",
+      "last_verified": "2026-07-09",
+      "add_key": {"possible": true, "tool_minimum": "IM508S"},
+      "all_keys_lost": {"obd_possible": true, "tool_minimum": "IM508S", "dealer_only": false},
+      "notes": "Most Sprinters are FBS3. 2019+ check chassis."
+    }
+  ]
+}
