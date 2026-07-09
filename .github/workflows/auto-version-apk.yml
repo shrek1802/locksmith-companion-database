@@ -1,0 +1,54 @@
+name: Auto Version APK
+
+on:
+  push:
+    paths:
+      - 'APK/app-latest.apk'
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create or bump version.json
+        run: |
+          FILE=APK/version.json
+          mkdir -p APK
+          
+          if [ ! -f "$FILE" ]; then
+            echo "Creating new version.json"
+            cat > $FILE << EOF
+          {
+            "versionCode": 1,
+            "versionName": "1.0.0",
+            "apk": "app-latest.apk",
+            "releaseDate": "$(date -u +"%Y-%m-%dT%H:%M:%SZ")",
+            "notes": "Initial release"
+          }
+          EOF
+          else
+            echo "Bumping existing version.json"
+            OLD_CODE=$(jq -r '.versionCode' $FILE)
+            NEW_CODE=$((OLD_CODE + 1))
+            OLD_NAME=$(jq -r '.versionName' $FILE)
+            NEW_NAME=$(echo $OLD_NAME | awk -F. '{$NF = $NF + 1;} 1' OFS=. )
+            DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+            
+            jq ".versionCode = $NEW_CODE | .versionName = \"$NEW_NAME\" | .releaseDate = \"$DATE\"" $FILE > tmp.json
+            mv tmp.json $FILE
+          fi
+          
+          echo "Final version.json:"
+          cat $FILE
+
+      - name: Commit version.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add APK/version.json
+          git commit -m "Auto version APK to v$(jq -r .versionName APK/version.json)" || echo "No changes to commit"
+          git push
