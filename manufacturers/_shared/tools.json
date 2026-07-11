@@ -1,0 +1,287 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-11",
+  "market": "UK",
+
+  "tools": {
+    "autel_im508s_xp400_pro": {
+      "display_name": "Autel IM508S + XP400 Pro",
+      "short_name": "IM508S",
+      "manufacturer": "Autel",
+      "category": "immobiliser_programmer",
+      "uk_relevant": true,
+      "aliases": [
+        "Autel IM508S",
+        "IM508S",
+        "IM508S XP400 Pro"
+      ],
+      "included_hardware": [
+        "IM508S tablet",
+        "XP400 Pro programmer"
+      ],
+      "optional_accessories": [
+        "APB112",
+        "APB131",
+        "G-BOX2",
+        "G-BOX3"
+      ],
+      "supported_methods": [
+        "obd",
+        "bench",
+        "boot",
+        "eeprom",
+        "service_mode",
+        "transponder_clone"
+      ],
+      "internet_capable": true,
+      "subscription_based": true,
+      "notes": "Vehicle coverage and online requirements depend on software version, subscription status and vehicle system."
+    },
+
+    "autel_im608_pro": {
+      "display_name": "Autel IM608 Pro",
+      "short_name": "IM608 Pro",
+      "manufacturer": "Autel",
+      "category": "immobiliser_programmer",
+      "uk_relevant": true,
+      "aliases": [
+        "Autel IM608",
+        "Autel IM608 Pro",
+        "IM608",
+        "IM608 Pro"
+      ],
+      "included_hardware": [
+        "IM608 tablet",
+        "XP400 Pro programmer"
+      ],
+      "optional_accessories": [
+        "APB112",
+        "APB131",
+        "G-BOX2",
+        "G-BOX3"
+      ],
+      "supported_methods": [
+        "obd",
+        "bench",
+        "boot",
+        "eeprom",
+        "service_mode",
+        "transponder_clone"
+      ],
+      "internet_capable": true,
+      "subscription_based": true,
+      "notes": "Vehicle coverage and online requirements depend on software version, subscription status and vehicle system."
+    },
+
+    "keydiy_kd_x4": {
+      "display_name": "KEYDIY KD-X4",
+      "short_name": "KD-X4",
+      "manufacturer": "KEYDIY",
+      "category": "immobiliser_programmer",
+      "uk_relevant": true,
+      "aliases": [
+        "KEYDIY KD-X4",
+        "KD-X4",
+        "KDX4"
+      ],
+      "included_hardware": [
+        "KD-X4 tablet/programmer"
+      ],
+      "optional_accessories": [],
+      "supported_methods": [
+        "obd",
+        "transponder_clone",
+        "remote_generation"
+      ],
+      "internet_capable": true,
+      "subscription_based": false,
+      "notes": "Immobiliser coverage varies by vehicle. Remote generation and transponder functions may be available even when immobiliser programming is unsupported."
+    },
+
+    "xhorse_key_tool_plus": {
+      "display_name": "Xhorse Key Tool Plus",
+      "short_name": "Key Tool Plus",
+      "manufacturer": "Xhorse",
+      "category": "immobiliser_programmer",
+      "uk_relevant": true,
+      "aliases": [
+        "Xhorse Key Tool Plus",
+        "Key Tool Plus",
+        "KTP"
+      ],
+      "included_hardware": [
+        "Key Tool Plus tablet/programmer"
+      ],
+      "optional_accessories": [
+        "Xhorse adapters",
+        "Xhorse bench cables"
+      ],
+      "supported_methods": [
+        "obd",
+        "bench",
+        "boot",
+        "eeprom",
+        "service_mode",
+        "transponder_clone",
+        "remote_generation"
+      ],
+      "internet_capable": true,
+      "subscription_based": false,
+      "notes": "Some functions require tokens, points, additional adapters or an active internet connection."
+    },
+
+    "xhorse_vvdi2": {
+      "display_name": "Xhorse VVDI2",
+      "short_name": "VVDI2",
+      "manufacturer": "Xhorse",
+      "category": "immobiliser_programmer",
+      "uk_relevant": true,
+      "aliases": [
+        "Xhorse VVDI2",
+        "VVDI2"
+      ],
+      "included_hardware": [
+        "VVDI2 interface"
+      ],
+      "optional_accessories": [
+        "VVDI PROG",
+        "Xhorse adapters",
+        "Xhorse bench cables"
+      ],
+      "supported_methods": [
+        "obd",
+        "bench",
+        "eeprom",
+        "service_mode",
+        "transponder_clone"
+      ],
+      "internet_capable": true,
+      "subscription_based": false,
+      "notes": "Coverage depends on activated software packages, adapters and vehicle system."
+    },
+
+    "obdstar": {
+      "display_name": "OBDSTAR Key Programmer",
+      "short_name": "OBDSTAR",
+      "manufacturer": "OBDSTAR",
+      "category": "immobiliser_programmer",
+      "uk_relevant": true,
+      "aliases": [
+        "OBDSTAR",
+        "OBDSTAR X300 DP Plus",
+        "OBDSTAR X300 Classic G3",
+        "OBDSTAR G3"
+      ],
+      "included_hardware": [],
+      "optional_accessories": [
+        "OBDSTAR gateway cables",
+        "OBDSTAR CAN FD adapters",
+        "OBDSTAR bench cables"
+      ],
+      "supported_methods": [
+        "obd",
+        "bench",
+        "boot",
+        "eeprom",
+        "service_mode"
+      ],
+      "internet_capable": true,
+      "subscription_based": true,
+      "notes": "The exact OBDSTAR model must be stated in the vehicle record when coverage differs between devices."
+    },
+
+    "xtool": {
+      "display_name": "Xtool Key Programmer",
+      "short_name": "Xtool",
+      "manufacturer": "Xtool",
+      "category": "immobiliser_programmer",
+      "uk_relevant": true,
+      "aliases": [
+        "Xtool",
+        "Xtool X100 PAD",
+        "Xtool X100 PAD2",
+        "Xtool X100 PAD3",
+        "Xtool InPlus"
+      ],
+      "included_hardware": [],
+      "optional_accessories": [
+        "KC501",
+        "Xtool CAN FD adapters",
+        "Xtool gateway cables"
+      ],
+      "supported_methods": [
+        "obd",
+        "bench",
+        "eeprom",
+        "service_mode"
+      ],
+      "internet_capable": true,
+      "subscription_based": true,
+      "notes": "The exact Xtool model must be stated in the vehicle record when compatibility differs."
+    },
+
+    "lonsdor": {
+      "display_name": "Lonsdor K518 Pro",
+      "short_name": "K518 Pro",
+      "manufacturer": "Lonsdor",
+      "category": "immobiliser_programmer",
+      "uk_relevant": true,
+      "aliases": [
+        "Lonsdor",
+        "Lonsdor K518",
+        "Lonsdor K518ISE",
+        "Lonsdor K518 Pro"
+      ],
+      "included_hardware": [
+        "K518 programmer"
+      ],
+      "optional_accessories": [
+        "Lonsdor adapters",
+        "Lonsdor emulator",
+        "Lonsdor bench cables"
+      ],
+      "supported_methods": [
+        "obd",
+        "bench",
+        "eeprom",
+        "service_mode",
+        "transponder_clone"
+      ],
+      "internet_capable": true,
+      "subscription_based": true,
+      "notes": "Some functions require separate licences, adapters or online calculations."
+    },
+
+    "yanhua_acdp": {
+      "display_name": "Yanhua Mini ACDP",
+      "short_name": "Mini ACDP",
+      "manufacturer": "Yanhua",
+      "category": "module_programmer",
+      "uk_relevant": true,
+      "aliases": [
+        "Yanhua ACDP",
+        "Yanhua Mini ACDP",
+        "ACDP",
+        "ACDP2"
+      ],
+      "included_hardware": [
+        "Mini ACDP host"
+      ],
+      "optional_accessories": [
+        "Vehicle-specific ACDP modules",
+        "Bench interfaces",
+        "EEPROM adapters"
+      ],
+      "supported_methods": [
+        "bench",
+        "boot",
+        "eeprom",
+        "module_clone",
+        "service_mode"
+      ],
+      "internet_capable": true,
+      "subscription_based": false,
+      "notes": "Vehicle support depends heavily on which ACDP modules and licences are owned."
+    }
+  }
+}
