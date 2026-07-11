@@ -1,0 +1,575 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-11",
+  "market": "UK",
+
+  "accessory_categories": {
+    "key_chip_programmer": "Key, transponder, MCU and EEPROM programmer",
+    "smart_key_emulator": "Electronic key-chip or smart-key emulator",
+    "key_programming_adapter": "Accessory used during specific key-programming procedures",
+    "bench_interface": "Interface used to communicate with a removed module on the bench",
+    "eeprom_adapter": "Adapter used for reading or writing EEPROM devices",
+    "test_platform": "Bench platform used to power and communicate with a module",
+    "module_programmer": "Programmer used to read or write immobiliser, ECU or module data"
+  },
+
+  "accessories": {
+    "autel_xp400_pro": {
+      "display_name": "Autel XP400 Pro",
+      "short_name": "XP400 Pro",
+      "manufacturer": "Autel",
+      "category": "key_chip_programmer",
+      "status": "current",
+      "uk_relevant": true,
+
+      "compatible_tool_ids": [
+        "autel_im508s_xp400_pro",
+        "autel_im608_pro"
+      ],
+
+      "functions": [
+        "key_chip_read",
+        "key_chip_write",
+        "eeprom_read",
+        "eeprom_write",
+        "mcu_read",
+        "mcu_write",
+        "immo_ecu_read",
+        "immo_ecu_write",
+        "mercedes_ir_key_programming"
+      ],
+
+      "connection_types": [
+        "usb",
+        "programmer_socket",
+        "vehicle_specific_adapter"
+      ],
+
+      "requires_vehicle_specific_adapter": "conditional",
+
+      "description": "Advanced Autel key and chip programmer used with compatible MaxiIM tablets for key, transponder, EEPROM, MCU and immobiliser-module work.",
+
+      "vehicle_record_usage": "Reference this accessory only when the operation specifically requires XP400 Pro bench, EEPROM, MCU, infrared-key or chip work. Do not list it merely because it was supplied with the tablet.",
+
+      "aliases": [
+        "XP400PRO",
+        "MaxiProgrammer XP400 Pro"
+      ],
+
+      "notes": [
+        "Specific chip and module coverage depends on the Autel software version and the adapter used.",
+        "Normal OBD key programming does not always require the XP400 Pro to be physically connected."
+      ],
+
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "source_ids": [
+          "autel_xp400_pro_product",
+          "autel_xp400_pro_manual"
+        ]
+      }
+    },
+
+    "autel_apb112": {
+      "display_name": "Autel APB112 Smart Key Emulator",
+      "short_name": "APB112",
+      "manufacturer": "Autel",
+      "category": "smart_key_emulator",
+      "status": "current",
+      "uk_relevant": true,
+
+      "compatible_tool_ids": [
+        "autel_im508s_xp400_pro",
+        "autel_im608_pro"
+      ],
+
+      "functions": [
+        "ignition_coil_data_collection",
+        "key_chip_data_decoding",
+        "key_chip_emulation",
+        "selected_smart_key_all_keys_lost_support"
+      ],
+
+      "connection_types": [
+        "programmer_connection"
+      ],
+
+      "requires_vehicle_specific_adapter": false,
+
+      "description": "Smart-key emulator used to collect and decode ignition-coil/key-chip data and emulate supported vehicle key chips.",
+
+      "vehicle_record_usage": "Reference APB112 only where the selected Autel procedure explicitly requests the emulator.",
+
+      "aliases": [
+        "APB112 Smart Key Simulator",
+        "APB112 Smart Key Emulator"
+      ],
+
+      "notes": [
+        "It is not a general-purpose bypass cable.",
+        "Vehicle and function support must be confirmed in the relevant Autel procedure."
+      ],
+
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "source_ids": [
+          "autel_apb112_product"
+        ]
+      }
+    },
+
+    "autel_gbox2": {
+      "display_name": "Autel G-BOX2",
+      "short_name": "G-BOX2",
+      "manufacturer": "Autel",
+      "category": "key_programming_adapter",
+      "status": "legacy_supported",
+      "uk_relevant": true,
+
+      "compatible_tool_ids": [
+        "autel_im508s_xp400_pro",
+        "autel_im608_pro"
+      ],
+
+      "functions": [
+        "mercedes_das3_all_keys_lost",
+        "mercedes_eis_ezs_password_calculation",
+        "bmw_dme_dde_isn_read",
+        "bmw_dme_dde_isn_write",
+        "bench_mode_support",
+        "boot_mode_support"
+      ],
+
+      "connection_types": [
+        "vehicle",
+        "bench",
+        "boot"
+      ],
+
+      "requires_vehicle_specific_adapter": "conditional",
+
+      "description": "Autel programming adapter for selected Mercedes-Benz DAS3 all-keys-lost work and selected BMW DME/DDE ISN operations.",
+
+      "vehicle_record_usage": "Reference G-BOX2 only when the exact vehicle procedure requires it. Do not show it as a normal OBD bypass cable.",
+
+      "aliases": [
+        "GBOX2",
+        "G Box 2"
+      ],
+
+      "notes": [
+        "G-BOX3 is the newer replacement for many supported procedures.",
+        "The exact wiring and method depend on the ECU, EIS/EZS or vehicle system."
+      ],
+
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "source_ids": [
+          "autel_gbox2_product",
+          "autel_gbox2_quick_guide"
+        ]
+      }
+    },
+
+    "autel_gbox3": {
+      "display_name": "Autel G-BOX3",
+      "short_name": "G-BOX3",
+      "manufacturer": "Autel",
+      "category": "key_programming_adapter",
+      "status": "current",
+      "uk_relevant": true,
+
+      "compatible_tool_ids": [
+        "autel_im508s_xp400_pro",
+        "autel_im608_pro"
+      ],
+
+      "functions": [
+        "mercedes_das3_all_keys_lost",
+        "mercedes_eis_ezs_fast_mode",
+        "bmw_dme_dde_isn_read",
+        "bmw_dme_dde_isn_write",
+        "bosch_ecu_access",
+        "bench_mode_support",
+        "boot_mode_support"
+      ],
+
+      "connection_types": [
+        "vehicle",
+        "bench",
+        "boot"
+      ],
+
+      "requires_vehicle_specific_adapter": "conditional",
+
+      "description": "Current Autel key-programming adapter for selected Mercedes-Benz DAS3 all-keys-lost and BMW engine-ECU ISN procedures.",
+
+      "vehicle_record_usage": "Reference G-BOX3 only where required by the selected procedure. It belongs under Tool Accessories, not Bypass Cable.",
+
+      "aliases": [
+        "GBOX3",
+        "G Box 3"
+      ],
+
+      "notes": [
+        "Compatible procedure and wiring depend on the vehicle system and ECU family.",
+        "An XP400 Pro is required with applicable IM508S configurations."
+      ],
+
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "source_ids": [
+          "autel_gbox3_product",
+          "autel_gbox3_quick_guide"
+        ]
+      }
+    },
+
+    "xhorse_vvdi_prog": {
+      "display_name": "Xhorse VVDI PROG",
+      "short_name": "VVDI PROG",
+      "manufacturer": "Xhorse",
+      "category": "module_programmer",
+      "status": "current",
+      "uk_relevant": true,
+
+      "compatible_tool_ids": [
+        "xhorse_vvdi2",
+        "xhorse_key_tool_plus"
+      ],
+
+      "functions": [
+        "eeprom_read",
+        "eeprom_write",
+        "mcu_read",
+        "mcu_write",
+        "ecu_read",
+        "ecu_write",
+        "immobiliser_module_read",
+        "immobiliser_module_write"
+      ],
+
+      "connection_types": [
+        "usb",
+        "solder",
+        "clip",
+        "vehicle_specific_adapter"
+      ],
+
+      "requires_vehicle_specific_adapter": "conditional",
+
+      "description": "Xhorse EEPROM, MCU and ECU programmer used for module-data reading and writing, often alongside VVDI2 or Key Tool Plus procedures.",
+
+      "vehicle_record_usage": "Reference VVDI PROG only where a dump, EEPROM, MCU or ECU read/write is part of the procedure.",
+
+      "aliases": [
+        "VVDIProg",
+        "VVDI Programmer"
+      ],
+
+      "notes": [
+        "Optional adapters extend chip and module coverage.",
+        "It is not an OBD key programmer by itself."
+      ],
+
+      "verification": {
+        "status": "manufacturer_documented",
+        "source_ids": [
+          "xhorse_vvdi_prog_adapter_information"
+        ]
+      }
+    },
+
+    "xhorse_bmw_fem_bdc_8pin_adapter": {
+      "display_name": "Xhorse BMW FEM/BDC 95128/95256 8-Pin Adapter",
+      "short_name": "FEM/BDC 8-Pin Adapter",
+      "manufacturer": "Xhorse",
+      "category": "eeprom_adapter",
+      "status": "current",
+      "uk_relevant": true,
+
+      "compatible_tool_ids": [
+        "xhorse_vvdi2",
+        "xhorse_key_tool_plus"
+      ],
+
+      "parent_accessory_ids": [
+        "xhorse_vvdi_prog"
+      ],
+
+      "functions": [
+        "bmw_fem_eeprom_read",
+        "bmw_fem_eeprom_write",
+        "bmw_bdc_eeprom_read",
+        "bmw_bdc_eeprom_write",
+        "95128_read_write",
+        "95256_read_write"
+      ],
+
+      "connection_types": [
+        "eeprom_adapter"
+      ],
+
+      "requires_vehicle_specific_adapter": false,
+
+      "description": "Dedicated adapter for reading and writing supported BMW FEM/BDC 95128 and 95256 EEPROM devices with VVDI PROG.",
+
+      "vehicle_record_usage": "Reference this only for a method that explicitly requires a FEM/BDC EEPROM read or write.",
+
+      "aliases": [
+        "BMW FEM BDC 8Pin Adapter",
+        "FEM BDC 95128 95256 Adapter"
+      ],
+
+      "notes": [
+        "Use the exact wiring and software procedure provided for the module version."
+      ],
+
+      "verification": {
+        "status": "manufacturer_documented",
+        "source_ids": [
+          "xhorse_fem_bdc_8pin_adapter"
+        ]
+      }
+    },
+
+    "xhorse_bmw_fem_bdc_test_platform": {
+      "display_name": "Xhorse BMW FEM/BDC Test Platform",
+      "short_name": "FEM/BDC Test Platform",
+      "manufacturer": "Xhorse",
+      "category": "test_platform",
+      "status": "current",
+      "uk_relevant": true,
+
+      "compatible_tool_ids": [
+        "xhorse_vvdi2",
+        "xhorse_key_tool_plus"
+      ],
+
+      "functions": [
+        "bmw_fem_bench_connection",
+        "bmw_bdc_bench_connection",
+        "module_power",
+        "bench_communication"
+      ],
+
+      "connection_types": [
+        "bench"
+      ],
+
+      "requires_vehicle_specific_adapter": false,
+
+      "description": "Bench test platform used to power and communicate with supported BMW FEM/BDC modules away from the vehicle.",
+
+      "vehicle_record_usage": "Reference it only when the selected tool method is bench-based and requires the FEM/BDC test platform.",
+
+      "aliases": [
+        "BMW FEM Test Platform",
+        "BMW FEM BDC Platform Cable"
+      ],
+
+      "notes": [
+        "This is a bench accessory, not a vehicle security-gateway bypass."
+      ],
+
+      "verification": {
+        "status": "manufacturer_documented",
+        "source_ids": [
+          "xhorse_fem_bdc_test_platform"
+        ]
+      }
+    },
+
+    "obdstar_p004": {
+      "display_name": "OBDSTAR P004 Adapter",
+      "short_name": "P004",
+      "manufacturer": "OBDSTAR",
+      "category": "bench_interface",
+      "status": "current",
+      "uk_relevant": true,
+
+      "compatible_tool_ids": [
+        "obdstar"
+      ],
+
+      "functions": [
+        "bench_ecu_communication",
+        "eeprom_read",
+        "eeprom_write",
+        "flash_read",
+        "flash_write",
+        "canbus_termination_control",
+        "k_line_communication"
+      ],
+
+      "connection_types": [
+        "db15",
+        "obd16",
+        "bench"
+      ],
+
+      "requires_vehicle_specific_adapter": "conditional",
+
+      "description": "OBDSTAR bench interface used for ECU/module communication, programming and data reading or writing.",
+
+      "vehicle_record_usage": "Reference the P004 only where an OBDSTAR bench procedure requires it.",
+
+      "aliases": [
+        "P004 Adapter",
+        "OBDSTAR P004 ECU Adapter"
+      ],
+
+      "notes": [
+        "Some procedures also require the relevant P004 jumper harness.",
+        "It supports selectable CAN termination and multiple communication protocols."
+      ],
+
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "source_ids": [
+          "obdstar_p004_product"
+        ]
+      }
+    },
+
+    "xtool_kc501": {
+      "display_name": "Xtool KC501",
+      "short_name": "KC501",
+      "manufacturer": "Xtool",
+      "category": "key_chip_programmer",
+      "status": "current",
+      "uk_relevant": true,
+
+      "compatible_tool_ids": [
+        "xtool"
+      ],
+
+      "functions": [
+        "key_read",
+        "key_write",
+        "remote_frequency_read",
+        "dealer_key_generation",
+        "mcu_read",
+        "mcu_write",
+        "eeprom_read",
+        "eeprom_write",
+        "mercedes_ir_key_read",
+        "mercedes_ir_key_write"
+      ],
+
+      "connection_types": [
+        "usb",
+        "programmer_socket",
+        "vehicle_specific_adapter"
+      ],
+
+      "requires_vehicle_specific_adapter": "conditional",
+
+      "description": "Xtool key and chip programmer for supported key, transponder, EEPROM, MCU and Mercedes infrared-key procedures.",
+
+      "vehicle_record_usage": "Reference KC501 when the selected Xtool procedure requires key generation, EEPROM/MCU work or infrared-key functions.",
+
+      "aliases": [
+        "XTOOL KC501 Key Programmer"
+      ],
+
+      "notes": [
+        "KC501 alone reads and writes supported chip data but does not provide every vehicle key-learning function.",
+        "Vehicle key matching normally requires a compatible Xtool tablet such as an applicable X100-series device."
+      ],
+
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "source_ids": [
+          "xtool_kc501_product"
+        ]
+      }
+    }
+  },
+
+  "sources": {
+    "autel_xp400_pro_product": {
+      "publisher": "Autel",
+      "title": "XP400 Pro product information",
+      "type": "manufacturer",
+      "url": "https://autel.com/au/immo/xp400-pro/"
+    },
+
+    "autel_xp400_pro_manual": {
+      "publisher": "Autel",
+      "title": "XP400 Pro User Manual",
+      "type": "manufacturer_manual",
+      "url": "https://autel.com/au/wp-content/themes/autel/u/cms/www/202307/14112633lmor.pdf"
+    },
+
+    "autel_apb112_product": {
+      "publisher": "Autel",
+      "title": "APB112 Smart Key Emulator",
+      "type": "manufacturer",
+      "url": "https://autel.com/au/immo/apb112/"
+    },
+
+    "autel_gbox2_product": {
+      "publisher": "Autel",
+      "title": "G-BOX2 product information",
+      "type": "manufacturer",
+      "url": "https://autel.com/au/immo/g-box2/"
+    },
+
+    "autel_gbox2_quick_guide": {
+      "publisher": "Autel",
+      "title": "G-BOX2 Quick Reference Guide",
+      "type": "manufacturer_manual",
+      "url": "https://autel.com/au/wp-content/themes/autel/u/cms/www/202011/17200349d4eg.pdf"
+    },
+
+    "autel_gbox3_product": {
+      "publisher": "Autel",
+      "title": "G-BOX3 product information",
+      "type": "manufacturer",
+      "url": "https://store.autel.com/products/autel-g-box3"
+    },
+
+    "autel_gbox3_quick_guide": {
+      "publisher": "Autel",
+      "title": "G-BOX3 Quick Reference Guide",
+      "type": "manufacturer_manual",
+      "url": "https://www.autel.com/u/cms/www/202406/050609153tbj.pdf"
+    },
+
+    "xhorse_vvdi_prog_adapter_information": {
+      "publisher": "Xhorse VVDI",
+      "title": "VVDI PROG programmer and adapter information",
+      "type": "manufacturer_technical_information",
+      "url": "https://blog.xhorsevvdi.com/xhorse-vvdi-prog-programmer-eeprom-adapter-function-list/"
+    },
+
+    "xhorse_fem_bdc_8pin_adapter": {
+      "publisher": "Xhorse VVDI",
+      "title": "BMW FEM/BDC 95128/95256 8-Pin Adapter",
+      "type": "manufacturer_technical_information",
+      "url": "https://blog.xhorsevvdi.com/how-to-use-vvdi-prog-and-bmw-fem-bdc-95128-95256-chip-data-reading-8pin-adapter/"
+    },
+
+    "xhorse_fem_bdc_test_platform": {
+      "publisher": "Xhorse VVDI",
+      "title": "BMW FEM/BDC Test Platform",
+      "type": "manufacturer_technical_information",
+      "url": "https://blog.xhorsevvdi.com/how-to-use-vvdi2-bmw-fem-bdc-test-platform-cable/"
+    },
+
+    "obdstar_p004_product": {
+      "publisher": "OBDSTAR",
+      "title": "P004 adapter information",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_311.html"
+    },
+
+    "xtool_kc501_product": {
+      "publisher": "Xtool",
+      "title": "KC501 Key and Chip Programmer",
+      "type": "manufacturer",
+      "url": "https://www.xtoolglobal.com/products/xtool-kc501-professional-obd2-chip-and-key-programmer-ecu-reader-works-for-benz"
+    }
+  }
+}
