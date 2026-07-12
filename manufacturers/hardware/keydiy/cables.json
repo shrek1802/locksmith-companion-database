@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "keydiy",
+    "name": "KEYDIY"
+  },
+  "category": "vehicle_cables",
+  "items": {
+    "keydiy_toyota_30pin": {
+      "display_name": "KEYDIY Toyota/Lexus 30-Pin Cable",
+      "status": "current",
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus"
+      ],
+      "vehicle_connector_standard": "TOYOTA_30PIN_4A_8ABA",
+      "compatible_interfaces": [
+        "KEYDIY KD-Mate",
+        "KEYDIY KD-X4 where supported"
+      ],
+      "supported_security_families": [
+        "4A",
+        "8A-BA"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "password_free_matching"
+      ],
+      "universality": "vehicle_side_standard",
+      "notes": [
+        "The vehicle-side 30-pin standard is shared across several tool ecosystems.",
+        "This KEYDIY-branded version is documented for the KEYDIY workflow."
+      ],
+      "verification": {
+        "status": "supplier_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "keydiy_toyota30_abkeys"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "keydiy_kdx4_key4": {
+      "publisher": "Key4",
+      "title": "KEYDIY KD-X4 Professional Universal Key Programmer",
+      "type": "specialist_supplier",
+      "url": "https://www.key4.com/keydiy-kd-x4-professional-universal-key-programmer",
+      "checked_at": "2026-07-12"
+    },
+    "keydiy_kdmp_keyfirst": {
+      "publisher": "Keyfirst",
+      "title": "KEYDIY KD-MP MLB/MQB Tool",
+      "type": "specialist_supplier",
+      "url": "https://www.keyfirst.eu/en/machines-for-pre-coding-keydiy-remote-controls/7510-keydiy-kd-mp-tool-for-mlb-systems-key-programming-amp-adding-for-audi-porsche-lamborghini-bentley-touareg.html",
+      "checked_at": "2026-07-12"
+    },
+    "keydiy_kdmp_blog": {
+      "publisher": "KEYDIY Shop UK Blog",
+      "title": "KD-MP Tool",
+      "type": "uk_specialist_blog",
+      "url": "https://blog.keydiyshop.co.uk/category/kd-mp-tool/",
+      "checked_at": "2026-07-12"
+    },
+    "keydiy_clamp_guide": {
+      "publisher": "KEYDIY Europe Blog",
+      "title": "KEYDIY Clamp Adapters User Guide",
+      "type": "manufacturer_ecosystem_guide",
+      "url": "https://blog.keydiy.eu/keydiy-clamp-adapters-user-guide/",
+      "checked_at": "2026-07-12"
+    },
+    "keydiy_clamp_supplier": {
+      "publisher": "Auto Key Store",
+      "title": "KEYDIY BMW BDC2/BDC3/BCP and VAG MQB49/5C/5D Clamp Adapter Set",
+      "type": "specialist_supplier",
+      "url": "https://www.autokeystore.com/keydiy-bmw-bdc2-bdc3-bcp-vag-mqb49-5c-5d-clamp-adapter-solder-free-circuit-board-11-pieces-work-with-kd-x4-and-kd-max",
+      "checked_at": "2026-07-12"
+    },
+    "keydiy_toyota30_abkeys": {
+      "publisher": "ABKeys",
+      "title": "KEYDIY Toyota 30-Pin Cable for KD-Mate",
+      "type": "specialist_supplier",
+      "url": "https://abkeys.com/products/keydiy-toyota-30-pin-cable-supports-4a-8a-ba-akl-for-kd-mate-5314",
+      "checked_at": "2026-07-12"
+    },
+    "keydiy_toyota8a_akl": {
+      "publisher": "KEYDIY technical community",
+      "title": "KEYDIY Toyota 8A Blade AKL Adapter Procedure",
+      "type": "technical_procedure",
+      "url": "https://www.facebook.com/carkeyprogrammers/posts/1386835003448974/",
+      "checked_at": "2026-07-12"
+    },
+    "keydiy_audi_mlb_guide": {
+      "publisher": "KEYDIY Store Technical Blog",
+      "title": "Add Audi MLB Keys Using KEYDIY KD-X4 and KD-MP",
+      "type": "technical_guide",
+      "url": "https://blog.keydiystore.de/keydiy-device/how-to-add-audi-mlb-keys-using-keydiy-kd-x4-and-kd-mp/",
+      "checked_at": "2026-07-12"
+    }
+  }
+}
