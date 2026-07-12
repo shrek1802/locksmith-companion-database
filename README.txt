@@ -1,3 +1,3 @@
-#DATABASE FOR APP
+DATABASE FOR APP
 
 Database for the companion app are all stored here
