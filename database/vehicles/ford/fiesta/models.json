@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "fiesta",
+    "name": "Fiesta"
+  },
+  "category": "vehicles",
+  "items": {
+    "mk7_ui_test": {
+      "record_id": "ford_fiesta_mk7_ui_test",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Mk7 UI Test",
+        "generation": "Mk7",
+        "year_from": 2008,
+        "year_to": 2017,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "PATS",
+        "immobiliser_generation": "Verification pending",
+        "transponder_type": "Variant dependent — verification pending",
+        "frequency_mhz": "Variant dependent",
+        "blade_profile": "HU101 — confirm against exact vehicle",
+        "key_type": "Remote key or proximity key depending on variant",
+        "notes": "UI test record only. Exact year, trim, key system and transponder must be verified before workshop use."
+      },
+      "verification": {
+        "status": "ui_test_only",
+        "confidence": "low",
+        "last_verified": null,
+        "sources": [],
+        "notes": "This record exists to test the new nested database and app screens. It is not approved as workshop guidance."
+      }
+    }
+  },
+  "sources": {}
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "fiesta",
+    "name": "Fiesta"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "mk7_ui_test": {
+      "summary": "First nested Fiesta record for testing the app layout.",
+      "warnings": [
+        "Not approved for workshop use.",
+        "Verify exact year, ignition type, transponder and tool coverage before carrying out work."
+      ],
+      "testing_checks": [
+        "Ford manufacturer tile shows one model.",
+        "Fiesta model card opens.",
+        "Quick Job card displays both operations.",
+        "OBD and EEPROM custom icons render correctly.",
+        "Modules, Tools, Notes and Programming tiles open without errors."
+      ]
+    }
+  },
+  "sources": {}
+}

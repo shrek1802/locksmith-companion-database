@@ -1,0 +1,78 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "fiesta",
+    "name": "Fiesta"
+  },
+  "category": "vehicle_procedures",
+  "items": {
+    "mk7_ui_test": {
+      "add_key": {
+        "display_name": "Add Key",
+        "overall_status": "verification_pending",
+        "difficulty": "Not rated",
+        "estimated_minutes": {
+          "minimum": 15,
+          "typical": 20,
+          "maximum": 30
+        },
+        "method": [
+          "OBD"
+        ],
+        "obd_required": true,
+        "eeprom_required": false,
+        "working_key_required": true,
+        "dealer_key_required": "Variant dependent",
+        "battery_support_required": true,
+        "supported_tools": [
+          "Autel IM508S — compatibility to verify",
+          "Autel IM608 — compatibility to verify"
+        ],
+        "warnings": [
+          "UI test information only. Verify the exact vehicle and tool coverage before programming."
+        ],
+        "steps": [
+          "Confirm exact model year, ignition type and key system.",
+          "Connect stable battery support.",
+          "Follow the selected tool's current Ford PATS menu and on-screen instructions."
+        ]
+      },
+      "all_keys_lost": {
+        "display_name": "All Keys Lost",
+        "overall_status": "verification_pending",
+        "difficulty": "Not rated",
+        "estimated_minutes": {
+          "minimum": 25,
+          "typical": 35,
+          "maximum": 50
+        },
+        "method": [
+          "OBD"
+        ],
+        "obd_required": true,
+        "eeprom_required": false,
+        "working_key_required": false,
+        "dealer_key_required": "Variant dependent",
+        "battery_support_required": true,
+        "supported_tools": [
+          "Autel IM508S — compatibility to verify",
+          "Autel IM608 — compatibility to verify"
+        ],
+        "warnings": [
+          "UI test information only. Do not rely on this record for a customer vehicle until verified."
+        ],
+        "steps": [
+          "Confirm exact model year, ignition type and key system.",
+          "Connect stable battery support.",
+          "Confirm all required keys are present before starting the learning cycle."
+        ]
+      }
+    }
+  },
+  "sources": {}
+}

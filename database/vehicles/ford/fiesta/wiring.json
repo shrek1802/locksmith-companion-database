@@ -1,0 +1,29 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "fiesta",
+    "name": "Fiesta"
+  },
+  "category": "vehicle_wiring",
+  "items": {
+    "mk7_ui_test": {
+      "obd": {
+        "connector": "16-pin OBD-II",
+        "location": "Driver footwell area",
+        "battery_support": "Required for programming tests",
+        "gateway_bypass": "Not stated",
+        "notes": "No wiring or pinout data is approved yet."
+      },
+      "eeprom": {
+        "status": "No verified EEPROM procedure added",
+        "required_for_current_test_record": false
+      }
+    }
+  },
+  "sources": {}
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "fiesta",
+    "name": "Fiesta"
+  },
+  "category": "vehicle_modules",
+  "items": {
+    "mk7_ui_test": {
+      "obd_port": {
+        "display_name": "OBD-II diagnostic connector",
+        "location": "Driver footwell area",
+        "rhd_notes": "Exact UK RHD position and image still to be verified."
+      },
+      "immobiliser_control": {
+        "display_name": "PATS-related control module",
+        "location": "Variant dependent",
+        "notes": "Exact module responsibility and location must be verified by year and key system."
+      }
+    }
+  },
+  "sources": {}
+}
