@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "autel",
+    "name": "Autel"
+  },
+  "category": "active_interfaces",
+  "items": {
+    "autel_apb112": {
+      "display_name": "Autel APB112 Smart Key Emulator",
+      "short_name": "APB112",
+      "status": "current",
+      "compatible_tool_ids": [
+        "autel_im508s",
+        "autel_im608_pro_ii"
+      ],
+      "functions": [
+        "ignition_coil_data_collection",
+        "key_chip_data_decoding",
+        "key_chip_emulation",
+        "selected_smart_key_all_keys_lost_support"
+      ],
+      "notes": [
+        "Not a generic bypass cable.",
+        "Use only when the Autel procedure explicitly requests APB112."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "autel_apb112"
+        ]
+      }
+    },
+    "autel_apb300": {
+      "display_name": "Autel APB300 MLB/MQB Key Programmer",
+      "short_name": "APB300",
+      "status": "current",
+      "compatible_tool_ids": [
+        "autel_im508s",
+        "autel_im608_pro_ii"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "Porsche",
+        "SEAT",
+        "Skoda",
+        "Bentley",
+        "Lamborghini"
+      ],
+      "platforms": [
+        "MLB",
+        "MQB"
+      ],
+      "functions": [
+        "working_key_data_read",
+        "add_key",
+        "key_programming_without_cluster_removal"
+      ],
+      "notes": [
+        "Autel documents add-key capability from a working MLB/MQB key.",
+        "Not an all-keys-lost replacement for every MLB/MQB system."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "autel_apb300"
+        ]
+      }
+    },
+    "autel_gbox2": {
+      "display_name": "Autel G-BOX2",
+      "short_name": "G-BOX2",
+      "status": "legacy_supported",
+      "compatible_tool_ids": [
+        "autel_im508s",
+        "autel_im608_pro_ii"
+      ],
+      "functions": [
+        "mercedes_das3_all_keys_lost",
+        "mercedes_eis_ezs_password_calculation",
+        "bmw_dme_dde_isn_read",
+        "bmw_dme_dde_isn_write",
+        "bench_mode_support",
+        "boot_mode_support"
+      ],
+      "notes": [
+        "XP400 Pro is required with applicable IM508S configurations.",
+        "Superseded by G-BOX3 for many procedures."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "autel_gbox2"
+        ]
+      }
+    },
+    "autel_gbox3": {
+      "display_name": "Autel G-BOX3",
+      "short_name": "G-BOX3",
+      "status": "current",
+      "compatible_tool_ids": [
+        "autel_im508s",
+        "autel_im608_pro_ii"
+      ],
+      "functions": [
+        "mercedes_das3_all_keys_lost",
+        "mercedes_eis_ezs_fast_mode",
+        "bmw_dme_dde_isn_read",
+        "bmw_dme_dde_isn_write",
+        "bosch_ecu_access",
+        "bench_mode_support",
+        "boot_mode_support"
+      ],
+      "notes": [
+        "The G-BOX3 may connect through OBD, fuse, K-line, bench or boot depending on procedure.",
+        "Use only with the wiring specified by the selected Autel function."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "autel_gbox3"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "autel_immotool_catalogue": {
+      "publisher": "Autel",
+      "title": "Autel Key Programming Product Catalogue",
+      "type": "manufacturer_catalogue",
+      "url": "https://www.autel.com/immotool.jhtml",
+      "checked_at": "2026-07-12"
+    },
+    "autel_im508s_manual": {
+      "publisher": "Autel",
+      "title": "MaxiIM IM508S User Manual",
+      "type": "manufacturer_manual",
+      "url": "https://www.autel.com/u/cms/www/202307/14110353w4u4.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "autel_im608sii_manual": {
+      "publisher": "Autel",
+      "title": "MaxiIM IM608S II User Manual",
+      "type": "manufacturer_manual",
+      "url": "https://www.autel.com/u/cms/www/202604/20021220t0m3.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "autel_xp400pro_manual": {
+      "publisher": "Autel",
+      "title": "XP400 Pro User Manual",
+      "type": "manufacturer_manual",
+      "url": "https://autel.com/au/wp-content/themes/autel/u/cms/www/202307/14112633lmor.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "autel_imkpa": {
+      "publisher": "Autel",
+      "title": "MaxiIM IMKPA",
+      "type": "manufacturer_product",
+      "url": "https://autel.com/au/immo/maxiim-imkpa/",
+      "checked_at": "2026-07-12"
+    },
+    "autel_apb112": {
+      "publisher": "Autel",
+      "title": "APB112 Smart Key Emulator",
+      "type": "manufacturer_product",
+      "url": "https://store.autel.com/products/autel-apb112",
+      "checked_at": "2026-07-12"
+    },
+    "autel_apb300": {
+      "publisher": "Autel",
+      "title": "APB300 MLB/MQB Key Programmer Coverage",
+      "type": "manufacturer_document",
+      "url": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "autel_gbox2": {
+      "publisher": "Autel",
+      "title": "G-BOX2",
+      "type": "manufacturer_product",
+      "url": "https://autel.com/au/immo/g-box2/",
+      "checked_at": "2026-07-12"
+    },
+    "autel_gbox3": {
+      "publisher": "Autel",
+      "title": "G-BOX3 Quick Reference Guide",
+      "type": "manufacturer_manual",
+      "url": "https://www.autel.com/u/cms/www/202406/050609153tbj.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "autel_km100": {
+      "publisher": "Autel",
+      "title": "MaxiIM KM100",
+      "type": "manufacturer_product",
+      "url": "https://www.autel.com/us/product/maxiim-km100/",
+      "checked_at": "2026-07-12"
+    }
+  }
+}

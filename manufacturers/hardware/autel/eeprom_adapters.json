@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "autel",
+    "name": "Autel"
+  },
+  "category": "eeprom_mcu_accessories",
+  "items": {
+    "autel_soic8_clip": {
+      "display_name": "Autel SOIC8 EEPROM Clip",
+      "status": "current",
+      "compatible_programmer_ids": [
+        "autel_xp400_pro"
+      ],
+      "functions": [
+        "eeprom_read",
+        "eeprom_write"
+      ],
+      "universality": "passive_contact_tool",
+      "notes": [
+        "Exact Autel part number varies by kit and regional packaging.",
+        "Only use where in-circuit access is supported by the procedure."
+      ],
+      "verification": {
+        "status": "manual_and_package_confirmed",
+        "confidence": "medium_high",
+        "source_ids": [
+          "autel_xp400pro_manual"
+        ]
+      }
+    },
+    "autel_xp400pro_socket_set": {
+      "display_name": "Autel XP400 Pro EEPROM/MCU Socket Set",
+      "status": "current",
+      "compatible_programmer_ids": [
+        "autel_xp400_pro"
+      ],
+      "functions": [
+        "eeprom_read",
+        "eeprom_write",
+        "mcu_read",
+        "mcu_write"
+      ],
+      "verification": {
+        "status": "manufacturer_manual_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "autel_xp400pro_manual"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "autel_immotool_catalogue": {
+      "publisher": "Autel",
+      "title": "Autel Key Programming Product Catalogue",
+      "type": "manufacturer_catalogue",
+      "url": "https://www.autel.com/immotool.jhtml",
+      "checked_at": "2026-07-12"
+    },
+    "autel_im508s_manual": {
+      "publisher": "Autel",
+      "title": "MaxiIM IM508S User Manual",
+      "type": "manufacturer_manual",
+      "url": "https://www.autel.com/u/cms/www/202307/14110353w4u4.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "autel_im608sii_manual": {
+      "publisher": "Autel",
+      "title": "MaxiIM IM608S II User Manual",
+      "type": "manufacturer_manual",
+      "url": "https://www.autel.com/u/cms/www/202604/20021220t0m3.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "autel_xp400pro_manual": {
+      "publisher": "Autel",
+      "title": "XP400 Pro User Manual",
+      "type": "manufacturer_manual",
+      "url": "https://autel.com/au/wp-content/themes/autel/u/cms/www/202307/14112633lmor.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "autel_imkpa": {
+      "publisher": "Autel",
+      "title": "MaxiIM IMKPA",
+      "type": "manufacturer_product",
+      "url": "https://autel.com/au/immo/maxiim-imkpa/",
+      "checked_at": "2026-07-12"
+    },
+    "autel_apb112": {
+      "publisher": "Autel",
+      "title": "APB112 Smart Key Emulator",
+      "type": "manufacturer_product",
+      "url": "https://store.autel.com/products/autel-apb112",
+      "checked_at": "2026-07-12"
+    },
+    "autel_apb300": {
+      "publisher": "Autel",
+      "title": "APB300 MLB/MQB Key Programmer Coverage",
+      "type": "manufacturer_document",
+      "url": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "autel_gbox2": {
+      "publisher": "Autel",
+      "title": "G-BOX2",
+      "type": "manufacturer_product",
+      "url": "https://autel.com/au/immo/g-box2/",
+      "checked_at": "2026-07-12"
+    },
+    "autel_gbox3": {
+      "publisher": "Autel",
+      "title": "G-BOX3 Quick Reference Guide",
+      "type": "manufacturer_manual",
+      "url": "https://www.autel.com/u/cms/www/202406/050609153tbj.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "autel_km100": {
+      "publisher": "Autel",
+      "title": "MaxiIM KM100",
+      "type": "manufacturer_product",
+      "url": "https://www.autel.com/us/product/maxiim-km100/",
+      "checked_at": "2026-07-12"
+    }
+  }
+}
