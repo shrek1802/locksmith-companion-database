@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "market": "UK",
+  "classification": {
+    "scope": "Active interfaces and ecosystem-specific AKL/programming adapters.",
+    "excluded_items": [
+      "Passive bypass cables",
+      "Solder-free probe and clamp adapters",
+      "General programmers",
+      "Passive bench harnesses"
+    ]
+  },
+  "items": {
+    "obdstar_can_direct": {
+      "display_name": "OBDSTAR CAN DIRECT Kit",
+      "manufacturer": "OBDSTAR",
+      "category": "active_gateway_interface",
+      "compatible_tool_ids": [
+        "obdstar"
+      ],
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus"
+      ],
+      "functions": [
+        "direct_can_access",
+        "smart_key_data_read",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high"
+      }
+    },
+    "obdstar_can_direct_v2": {
+      "display_name": "OBDSTAR CAN DIRECT-V2",
+      "manufacturer": "OBDSTAR",
+      "category": "active_gateway_interface",
+      "compatible_tool_ids": [
+        "obdstar"
+      ],
+      "third_party_tool_compatible": true,
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus",
+        "Renault",
+        "Peugeot",
+        "Citroen",
+        "Vauxhall",
+        "Opel",
+        "Fiat",
+        "Alfa Romeo",
+        "Jeep",
+        "Chrysler",
+        "Dodge",
+        "Maserati"
+      ],
+      "functions": [
+        "gateway_bypass",
+        "direct_can_access",
+        "proximity_key_programming"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high"
+      }
+    },
+    "obdstar_toyota_30_v2": {
+      "display_name": "OBDSTAR Toyota-30 V2 Kit",
+      "manufacturer": "OBDSTAR",
+      "category": "active_akl_adapter",
+      "compatible_tool_ids": [
+        "obdstar"
+      ],
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus"
+      ],
+      "supported_security_families": [
+        "4A",
+        "8A-BA",
+        "8A-A9"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "smart_box_direct_access"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high"
+      }
+    },
+    "keydiy_toyota_8a_blade_akl": {
+      "display_name": "KEYDIY Toyota 8A Blade AKL Adapter",
+      "manufacturer": "KEYDIY",
+      "category": "active_akl_adapter",
+      "compatible_tool_ids": [
+        "keydiy_kd_x4"
+      ],
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus"
+      ],
+      "supported_security_families": [
+        "8A blade/non-smart"
+      ],
+      "functions": [
+        "all_keys_lost",
+        "immobiliser_data_collection"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "supplier_confirmed",
+        "confidence": "medium_high"
+      }
+    },
+    "keydiy_kd_mate": {
+      "display_name": "KEYDIY KD-Mate",
+      "manufacturer": "KEYDIY",
+      "category": "active_gateway_interface",
+      "compatible_tool_ids": [
+        "keydiy_kd_x4"
+      ],
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus"
+      ],
+      "functions": [
+        "smart_key_data_collection",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "supplier_confirmed",
+        "confidence": "medium"
+      }
+    },
+    "xhorse_toy8a_akl": {
+      "display_name": "Xhorse TOY8A AKL Adapter",
+      "manufacturer": "Xhorse",
+      "category": "active_akl_adapter",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus",
+        "xhorse_vvdi2"
+      ],
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus"
+      ],
+      "supported_security_families": [
+        "Toyota 8A smart key"
+      ],
+      "functions": [
+        "all_keys_lost",
+        "smart_authentication_data_collection"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_ecosystem_confirmed",
+        "confidence": "high"
+      }
+    },
+    "lonsdor_super_adp": {
+      "display_name": "Lonsdor Super ADP 8A/4A Adapter",
+      "manufacturer": "Lonsdor",
+      "category": "active_akl_adapter",
+      "compatible_tool_ids": [
+        "lonsdor"
+      ],
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus"
+      ],
+      "supported_security_families": [
+        "4A",
+        "8A"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "immo_data_backup"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_ecosystem_confirmed",
+        "confidence": "medium_high"
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "xhorse",
+    "name": "Xhorse"
+  },
+  "category": "mcu_adapters",
+  "items": {
+    "xhorse_eeprom_adapter_xdnp10": {
+      "display_name": "Xhorse EEPROM Adapter",
+      "part_number": "XDNP10",
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "functions": [
+        "eeprom_read",
+        "eeprom_write"
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "high"
+      }
+    },
+    "xhorse_db9_eis_ezs_cable_xdnp13": {
+      "display_name": "Xhorse DB9 Cable for Mercedes EIS/EZS Adapters",
+      "part_number": "XDNP13",
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "functions": [
+        "eis_ezs_adapter_connection"
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "high"
+      }
+    },
+    "xhorse_mcu_cable_xdnp34": {
+      "display_name": "Xhorse MCU Cable",
+      "part_number": "XDNP34",
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "functions": [
+        "mcu_read",
+        "mcu_write"
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "high"
+      }
+    },
+    "xhorse_9s12xe_cable_xdnp36": {
+      "display_name": "Xhorse 9S12XE Cable",
+      "part_number": "XDNP36",
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "supported_mcu_families": [
+        "MC9S12XE"
+      ],
+      "functions": [
+        "mcu_read",
+        "mcu_write"
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "high"
+      }
+    },
+    "xhorse_vw_tms370_adapter_xdnp47": {
+      "display_name": "Xhorse VW TMS370 Adapter",
+      "part_number": "XDNP47",
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "supported_mcu_families": [
+        "TMS370"
+      ],
+      "functions": [
+        "mcu_read",
+        "mcu_write",
+        "immo_data_access"
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high"
+      }
+    },
+    "xhorse_delphi_id48_adapter_xdnp48": {
+      "display_name": "Xhorse Delphi ID48 Adapter",
+      "part_number": "XDNP48",
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "functions": [
+        "id48_data_access",
+        "immobiliser_data_read"
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high"
+      }
+    }
+  }
+}

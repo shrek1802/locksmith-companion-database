@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "xhorse",
+    "name": "Xhorse"
+  },
+  "category": "accessories",
+  "items": {
+    "xhorse_multi_prog": {
+      "display_name": "Xhorse Multi-PROG",
+      "category": "ecu_tcu_mcu_programmer",
+      "functions": [
+        "ecu_read",
+        "ecu_write",
+        "ecu_clone",
+        "tcu_read",
+        "tcu_write",
+        "tcu_clone",
+        "mcu_read",
+        "mcu_write",
+        "immo_module_read",
+        "eeprom_read",
+        "dashboard_read"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "verified",
+        "confidence": "high"
+      }
+    },
+    "xhorse_mini_prog": {
+      "display_name": "Xhorse Mini PROG",
+      "category": "portable_chip_module_programmer",
+      "functions": [
+        "eeprom_read",
+        "eeprom_write",
+        "mcu_read",
+        "mcu_write",
+        "solder_free_adapter_host"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "verified",
+        "confidence": "high"
+      }
+    },
+    "xhorse_vvdi_prog": {
+      "display_name": "Xhorse VVDI PROG",
+      "category": "chip_module_programmer",
+      "functions": [
+        "eeprom_read",
+        "eeprom_write",
+        "mcu_read",
+        "mcu_write",
+        "ecu_read",
+        "ecu_write"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "verified",
+        "confidence": "high"
+      }
+    }
+  }
+}

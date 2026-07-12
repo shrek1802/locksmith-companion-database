@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "xhorse",
+    "name": "Xhorse"
+  },
+  "category": "ecu_boards",
+  "items": {
+    "xhorse_bmw_mevd17_tc17x_board": {
+      "display_name": "Xhorse BMW MEVD17/TC17x ECU Interface Board",
+      "manufacturer": "Xhorse",
+      "category": "ecu_interface_board",
+      "compatible_programmers": [
+        "Xhorse VVDI PROG",
+        "Xhorse Multi-PROG"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_engine_families": [
+        "N13",
+        "N20",
+        "N55",
+        "B38"
+      ],
+      "supported_ecu_families": [
+        "MEVD17.2.x",
+        "MEV17.2"
+      ],
+      "functions": [
+        "isn_read",
+        "eeprom_read",
+        "flash_read",
+        "bench_access"
+      ],
+      "verification": {
+        "status": "coverage_confirmed",
+        "confidence": "medium_high"
+      }
+    },
+    "xhorse_bmw_mg1_md1_board": {
+      "display_name": "Xhorse BMW MG1/MD1 ECU Interface Board",
+      "manufacturer": "Xhorse",
+      "category": "ecu_interface_board",
+      "compatible_programmers": [
+        "Xhorse Multi-PROG"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_engine_families": [
+        "B38",
+        "B48",
+        "B58",
+        "N55",
+        "S58"
+      ],
+      "supported_ecu_families": [
+        "MG1CS003",
+        "MG1CS201",
+        "MG1CS024",
+        "MD1CS001",
+        "MD1CP032"
+      ],
+      "functions": [
+        "isn_read",
+        "eeprom_read",
+        "flash_read",
+        "bench_access"
+      ],
+      "verification": {
+        "status": "coverage_confirmed",
+        "confidence": "high"
+      }
+    },
+    "xhorse_vag_mg1_md1_board": {
+      "display_name": "Xhorse VAG MG1/MD1 ECU Interface Board",
+      "manufacturer": "Xhorse",
+      "category": "ecu_interface_board",
+      "compatible_programmers": [
+        "Xhorse Multi-PROG"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "SEAT",
+        "Cupra",
+        "Skoda"
+      ],
+      "supported_ecu_families": [
+        "MG1CS001",
+        "MG1CS002",
+        "MG1CS008",
+        "MG1CS011",
+        "MG1CS111",
+        "MD1CP004",
+        "MD1CP014",
+        "MD1CS004"
+      ],
+      "functions": [
+        "eeprom_read",
+        "flash_read",
+        "clone_support",
+        "bench_access"
+      ],
+      "verification": {
+        "status": "coverage_confirmed",
+        "confidence": "high"
+      }
+    },
+    "xhorse_vag_med17_edc17_board": {
+      "display_name": "Xhorse VAG MED17/EDC17 ECU Interface Board",
+      "manufacturer": "Xhorse",
+      "category": "ecu_interface_board",
+      "compatible_programmers": [
+        "Xhorse VVDI PROG",
+        "Xhorse Multi-PROG"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "SEAT",
+        "Cupra",
+        "Skoda"
+      ],
+      "supported_ecu_families": [
+        "MED17",
+        "EDC17"
+      ],
+      "functions": [
+        "eeprom_read",
+        "flash_read",
+        "clone_support",
+        "bench_access",
+        "boot_access"
+      ],
+      "verification": {
+        "status": "coverage_confirmed",
+        "confidence": "high"
+      }
+    },
+    "xhorse_mercedes_crd3_med17_board": {
+      "display_name": "Xhorse Mercedes CRD3/MED17 ECU Interface Board",
+      "manufacturer": "Xhorse",
+      "category": "ecu_interface_board",
+      "compatible_programmers": [
+        "Xhorse Multi-PROG"
+      ],
+      "vehicle_brands": [
+        "Mercedes-Benz"
+      ],
+      "supported_ecu_families": [
+        "CRD3",
+        "MED17.7",
+        "ME17.7",
+        "MD1CP001",
+        "MG1CP002"
+      ],
+      "functions": [
+        "eeprom_read",
+        "flash_read",
+        "clone_support",
+        "bench_access"
+      ],
+      "verification": {
+        "status": "coverage_confirmed",
+        "confidence": "high"
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "market": "UK",
+  "classification": {
+    "scope": "Passive bench harnesses, test platforms and removed-module connection systems.",
+    "excluded_items": [
+      "Active interfaces",
+      "Solder-free probe adapters",
+      "Vehicle gateway bypass cables"
+    ]
+  },
+  "items": {
+    "bmw_fem_bench_platform": {
+      "display_name": "BMW FEM Bench/Test Platform",
+      "category": "test_platform",
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "FEM"
+      ],
+      "universality": "vehicle_side_standard_with_tool_specific_variants",
+      "functions": [
+        "module_power",
+        "bench_communication",
+        "key_programming_support"
+      ],
+      "verification": {
+        "status": "verified_with_variants",
+        "confidence": "medium_high"
+      }
+    },
+    "bmw_bdc_bench_platform": {
+      "display_name": "BMW BDC Bench/Test Platform",
+      "category": "test_platform",
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "BDC"
+      ],
+      "universality": "vehicle_side_standard_with_tool_specific_variants",
+      "functions": [
+        "module_power",
+        "bench_communication",
+        "key_programming_support"
+      ],
+      "verification": {
+        "status": "verified_with_variants",
+        "confidence": "medium_high"
+      }
+    },
+    "vag_bcm2_bench_harness": {
+      "display_name": "VAG BCM2 Bench Harness",
+      "category": "bench_harness",
+      "vehicle_brands": [
+        "Audi",
+        "Volkswagen",
+        "Lamborghini"
+      ],
+      "supported_modules": [
+        "BCM2"
+      ],
+      "universality": "passive_pinout_with_tool_specific_variants",
+      "functions": [
+        "module_power",
+        "bench_communication",
+        "immo_data_read"
+      ],
+      "verification": {
+        "status": "verified_with_variants",
+        "confidence": "medium_high"
+      }
+    },
+    "vag_mqb_cluster_bench_harness": {
+      "display_name": "VAG MQB Instrument Cluster Bench Harness",
+      "category": "bench_harness",
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "SEAT",
+        "Cupra",
+        "Skoda"
+      ],
+      "supported_modules": [
+        "MQB instrument cluster"
+      ],
+      "universality": "passive_pinout_with_tool_specific_variants",
+      "functions": [
+        "cluster_power",
+        "bench_communication",
+        "immo_data_read"
+      ],
+      "verification": {
+        "status": "verified_with_variants",
+        "confidence": "medium_high"
+      }
+    },
+    "mercedes_eis_ezs_bench_harness": {
+      "display_name": "Mercedes EIS/EZS Bench Harness",
+      "category": "bench_harness",
+      "vehicle_brands": [
+        "Mercedes-Benz"
+      ],
+      "supported_modules": [
+        "EIS",
+        "EZS"
+      ],
+      "universality": "module_family_specific",
+      "functions": [
+        "module_power",
+        "bench_communication",
+        "password_calculation_support"
+      ],
+      "verification": {
+        "status": "verified_with_variants",
+        "confidence": "medium_high"
+      }
+    },
+    "mercedes_esl_elv_bench_harness": {
+      "display_name": "Mercedes ESL/ELV Bench Harness",
+      "category": "bench_harness",
+      "vehicle_brands": [
+        "Mercedes-Benz"
+      ],
+      "supported_modules": [
+        "ESL",
+        "ELV"
+      ],
+      "universality": "module_family_specific",
+      "functions": [
+        "module_power",
+        "bench_communication",
+        "renewal_support"
+      ],
+      "verification": {
+        "status": "verified_with_variants",
+        "confidence": "medium"
+      }
+    },
+    "psa_bsi_bench_harness": {
+      "display_name": "PSA BSI Bench Harness",
+      "category": "bench_harness",
+      "vehicle_brands": [
+        "Peugeot",
+        "Citroen",
+        "DS",
+        "Vauxhall",
+        "Opel"
+      ],
+      "supported_modules": [
+        "BSI"
+      ],
+      "universality": "module_family_specific",
+      "functions": [
+        "module_power",
+        "bench_communication",
+        "eeprom_data_access"
+      ],
+      "verification": {
+        "status": "verified_with_variants",
+        "confidence": "medium"
+      }
+    }
+  }
+}

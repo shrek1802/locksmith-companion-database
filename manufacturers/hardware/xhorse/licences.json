@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "xhorse",
+    "name": "Xhorse"
+  },
+  "category": "licences",
+  "items": {
+    "xhorse_mqb48_license": {
+      "display_name": "Xhorse MQB48 Licence",
+      "applies_to": [
+        "Xhorse Key Tool Plus",
+        "Xhorse Multi-PROG"
+      ],
+      "functions": [
+        "mqb48_immo_data_read",
+        "mqb48_key_programming"
+      ],
+      "status": "current",
+      "notes": [
+        "Licence bundling varies by product and promotion."
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high"
+      }
+    },
+    "xhorse_bmw_isn_license": {
+      "display_name": "Xhorse BMW ISN Function",
+      "applies_to": [
+        "Xhorse Multi-PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "functions": [
+        "bmw_isn_read",
+        "bmw_isn_data_use"
+      ],
+      "status": "current",
+      "notes": [
+        "Data read by Multi-PROG can be used by Key Tool Plus on the same account where supported."
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high"
+      }
+    },
+    "xhorse_vvdi2_vag_authorisation": {
+      "display_name": "Xhorse VVDI2 VAG 4th/5th IMMO & MQB Authorisation",
+      "applies_to": [
+        "Xhorse VVDI2"
+      ],
+      "functions": [
+        "vag_4th_immo",
+        "vag_5th_immo",
+        "mqb_service"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high"
+      }
+    }
+  }
+}
