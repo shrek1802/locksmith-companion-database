@@ -1,0 +1,503 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "xhorse",
+    "name": "Xhorse"
+  },
+  "category": "solder_free_adapters",
+  "market": "UK",
+  "classification": {
+    "scope": "Verified Xhorse solder-free probe, clamp and interface-board adapters relevant to immobiliser, key programming and security-module data access.",
+    "excluded_items": [
+      "Mileage-only adapters with no documented locksmith function",
+      "General programmers",
+      "Passive gateway bypass cables",
+      "Conventional bench harnesses",
+      "ECU boards that require soldering or boot-pin wiring"
+    ]
+  },
+  "display_logic": {
+    "available_badge": "Solder-Free Adapter Available",
+    "required_badge": "Solder-Free Adapter Required",
+    "unknown_badge": "Solder-Free Availability Not Verified"
+  },
+  "items": {
+    "xhorse_mqb48_solder_free_set": {
+      "display_name": "Xhorse MQB48 Solder-Free Adapter Set",
+      "short_name": "MQB48 Solder-Free Set",
+      "part_number": "XDNPM3GL",
+      "status": "current",
+      "category": "solder_free_probe_set",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus",
+        "xhorse_vvdi2"
+      ],
+      "compatible_programmers": [
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI PROG",
+        "Xhorse Multi-PROG where supported by the exact adapter revision"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "SEAT",
+        "Cupra",
+        "Skoda"
+      ],
+      "supported_modules": [
+        "MQB48 instrument cluster"
+      ],
+      "supported_mcu_families": [
+        "D70F3532",
+        "D70F3535",
+        "D70F3536",
+        "D70F3537"
+      ],
+      "functions": [
+        "instrument_cluster_immo_data_read",
+        "nec35xx_data_read",
+        "solder_free_probe_connection"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "notes": [
+        "The exact probe board must match the cluster PCB.",
+        "MQB software authorisation may be required."
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "high",
+        "source_ids": [
+          "xhorse_adapter_full_list",
+          "xhorse_mqb48_intro"
+        ]
+      }
+    },
+    "xhorse_mqb_rh850_v850_key_tool_plus": {
+      "display_name": "Xhorse MQB RH850/V850 Adapter for Key Tool Plus",
+      "short_name": "MQB RH850/V850 KTP Adapter",
+      "part_number": null,
+      "status": "current",
+      "category": "solder_free_probe_adapter",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus"
+      ],
+      "compatible_programmers": [
+        "Xhorse Key Tool Plus"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "SEAT",
+        "Cupra",
+        "Skoda"
+      ],
+      "supported_modules": [
+        "MQB48 instrument cluster",
+        "MQB49 instrument cluster",
+        "MQB5C instrument cluster"
+      ],
+      "supported_mcu_families": [
+        "RH850",
+        "V850",
+        "R7F"
+      ],
+      "functions": [
+        "dashboard_immo_data_read",
+        "rh850_v850_data_access",
+        "solder_free_probe_connection"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "notes": [
+        "This is not the same product as the Multi-PROG-only XDMPR8GL adapter."
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "high",
+        "source_ids": [
+          "xhorse_rh850_ktp"
+        ]
+      }
+    },
+    "xhorse_mqb_rh850_v850_multiprog": {
+      "display_name": "Xhorse MQB RH850/V850 Adapter for Multi-PROG",
+      "short_name": "MQB RH850/V850 Multi-PROG Adapter",
+      "part_number": "XDMPR8GL",
+      "status": "current",
+      "category": "solder_free_probe_adapter",
+      "compatible_programmers": [
+        "Xhorse Multi-PROG"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "SEAT",
+        "Cupra",
+        "Skoda"
+      ],
+      "supported_modules": [
+        "MQB RH850/V850 instrument clusters"
+      ],
+      "supported_mcu_families": [
+        "RH850",
+        "V850",
+        "R7F"
+      ],
+      "functions": [
+        "dashboard_data_read",
+        "mcu_data_read",
+        "non_destructive_probe_connection"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "notes": [
+        "Not compatible with VVDI PROG or Key Tool Plus."
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "high",
+        "source_ids": [
+          "xhorse_rh850_multiprog"
+        ]
+      }
+    },
+    "xhorse_bmw_cas3_solder_free": {
+      "display_name": "Xhorse BMW CAS3/CAS3+ Solder-Free Adapter",
+      "short_name": "BMW CAS3 Adapter",
+      "part_number": "XDNP11",
+      "status": "current",
+      "category": "solder_free_module_adapter",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus",
+        "xhorse_vvdi2"
+      ],
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "CAS3",
+        "CAS3+"
+      ],
+      "functions": [
+        "eeprom_read",
+        "eeprom_write",
+        "immobiliser_data_access"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "verification": {
+        "status": "verified",
+        "confidence": "high",
+        "source_ids": [
+          "xhorse_adapter_full_list"
+        ]
+      }
+    },
+    "xhorse_bmw_cas4_solder_free": {
+      "display_name": "Xhorse BMW CAS4/CAS4+ Solder-Free Adapter",
+      "short_name": "BMW CAS4 Adapter",
+      "part_number": "XDNP12GL",
+      "status": "current",
+      "category": "solder_free_module_adapter",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus",
+        "xhorse_vvdi2"
+      ],
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "CAS4",
+        "CAS4+"
+      ],
+      "functions": [
+        "eeprom_read",
+        "eeprom_write",
+        "immobiliser_data_access"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "verification": {
+        "status": "verified",
+        "confidence": "high",
+        "source_ids": [
+          "xhorse_adapter_full_list"
+        ]
+      }
+    },
+    "xhorse_jlr_kvm_solder_free": {
+      "display_name": "Xhorse Jaguar/Land Rover KVM Solder-Free Adapter",
+      "short_name": "JLR KVM Adapter",
+      "part_number": "XDNP16",
+      "status": "current",
+      "category": "solder_free_module_adapter",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus"
+      ],
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "vehicle_brands": [
+        "Jaguar",
+        "Land Rover",
+        "Range Rover"
+      ],
+      "supported_modules": [
+        "KVM"
+      ],
+      "functions": [
+        "kvm_data_read",
+        "kvm_data_write",
+        "immobiliser_data_access"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high",
+        "source_ids": [
+          "xhorse_adapter_full_list"
+        ]
+      }
+    },
+    "xhorse_porsche_bcm_solder_free": {
+      "display_name": "Xhorse Porsche BCM Solder-Free Adapter",
+      "short_name": "Porsche BCM Adapter",
+      "part_number": "XDNP17",
+      "status": "current",
+      "category": "solder_free_module_adapter",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus"
+      ],
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "vehicle_brands": [
+        "Porsche"
+      ],
+      "supported_modules": [
+        "BCM"
+      ],
+      "functions": [
+        "bcm_data_read",
+        "bcm_data_write",
+        "immobiliser_data_access"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high",
+        "source_ids": [
+          "xhorse_adapter_full_list"
+        ]
+      }
+    },
+    "xhorse_volvo_kvm_solder_free": {
+      "display_name": "Xhorse Volvo KVM Solder-Free Adapter",
+      "short_name": "Volvo KVM Adapter",
+      "part_number": "XDNP27",
+      "status": "current",
+      "category": "solder_free_module_adapter",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus"
+      ],
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "vehicle_brands": [
+        "Volvo"
+      ],
+      "supported_modules": [
+        "KVM"
+      ],
+      "functions": [
+        "kvm_password_data_read",
+        "immobiliser_data_access"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high",
+        "source_ids": [
+          "xhorse_adapter_full_list"
+        ]
+      }
+    },
+    "xhorse_volvo_cem_v1_solder_free": {
+      "display_name": "Xhorse Volvo CEM Solder-Free Adapter V1",
+      "short_name": "Volvo CEM V1 Adapter",
+      "part_number": "XDNP28",
+      "status": "current",
+      "category": "solder_free_module_adapter",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus"
+      ],
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "vehicle_brands": [
+        "Volvo"
+      ],
+      "supported_modules": [
+        "CEM"
+      ],
+      "functions": [
+        "cem_password_data_read",
+        "immobiliser_data_access"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "notes": [
+        "V1 and V2 cover different CEM board layouts."
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high",
+        "source_ids": [
+          "xhorse_adapter_full_list"
+        ]
+      }
+    },
+    "xhorse_volvo_cem_v2_solder_free": {
+      "display_name": "Xhorse Volvo CEM Solder-Free Adapter V2",
+      "short_name": "Volvo CEM V2 Adapter",
+      "part_number": "XDNP29",
+      "status": "current",
+      "category": "solder_free_module_adapter",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus"
+      ],
+      "compatible_programmers": [
+        "Xhorse Mini PROG",
+        "Xhorse Key Tool Plus"
+      ],
+      "vehicle_brands": [
+        "Volvo"
+      ],
+      "supported_modules": [
+        "CEM"
+      ],
+      "functions": [
+        "cem_password_data_read",
+        "immobiliser_data_access"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "notes": [
+        "V1 and V2 cover different CEM board layouts."
+      ],
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high",
+        "source_ids": [
+          "xhorse_adapter_full_list"
+        ]
+      }
+    },
+    "xhorse_audi_vag_bcm2_solder_free": {
+      "display_name": "Xhorse Audi/VAG BCM2 Solder-Free Adapter",
+      "short_name": "BCM2 Solder-Free Adapter",
+      "part_number": "XDNPA2 family / revision dependent",
+      "status": "current",
+      "category": "solder_free_module_adapter",
+      "compatible_tool_ids": [
+        "xhorse_key_tool_plus",
+        "xhorse_vvdi2"
+      ],
+      "compatible_programmers": [
+        "Xhorse Key Tool Plus",
+        "Xhorse VVDI PROG + VVDI2"
+      ],
+      "vehicle_brands": [
+        "Audi",
+        "Volkswagen",
+        "Lamborghini"
+      ],
+      "supported_modules": [
+        "BCM2"
+      ],
+      "functions": [
+        "encrypted_bcm2_immo_data_read",
+        "key_generation_support",
+        "key_learning_support"
+      ],
+      "limitations": [
+        "Reads immobiliser data for key work; it is not a full BCM2 clone-data reader.",
+        "Encrypted/locked BCM2 procedures depend on supported module version."
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "verification": {
+        "status": "verified",
+        "confidence": "high",
+        "source_ids": [
+          "xhorse_bcm2_faq",
+          "xhorse_bcm2_tips",
+          "xhorse_bcm2_vvdi_prog"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "xhorse_adapter_full_list": {
+      "publisher": "Xhorse UK Technical Blog",
+      "title": "Xhorse Mini PROG and VVDI Key Tool Plus Adapters Full List",
+      "type": "manufacturer_ecosystem_technical_source",
+      "url": "https://blog.xhorse.co.uk/xhorse-mini-prog-vvdi-key-tool-plus-adapters-full-list/"
+    },
+    "xhorse_mqb48_intro": {
+      "publisher": "Xhorse UK Technical Blog",
+      "title": "Xhorse MQB48 Solder-Free Adapters Introduction",
+      "type": "manufacturer_ecosystem_technical_source",
+      "url": "https://blog.xhorse.co.uk/xhorse-mqb48-solder-free-adapters-introduction/"
+    },
+    "xhorse_rh850_ktp": {
+      "publisher": "Xhorse Technical Blog",
+      "title": "MQB RH850/V850 Adapter for Key Tool Plus",
+      "type": "manufacturer_ecosystem_technical_source",
+      "url": "https://blog.xhorsetool.com/xhorse-mqb-rh850-v850-adapter-for-key-tool-plus-is-coming-soon/"
+    },
+    "xhorse_rh850_multiprog": {
+      "publisher": "Access Fobs UK",
+      "title": "Xhorse XDMPR8GL MQB RH850/V850 Adapter",
+      "type": "uk_specialist_supplier",
+      "url": "https://accessfobs.co.uk/products/xhorse-xdmpr8gl-mqb-rh850-v850-adapter"
+    },
+    "xhorse_bcm2_faq": {
+      "publisher": "Xhorse VVDI Technical Blog",
+      "title": "Xhorse BCM2 Solder-Free Adapter for Audi FAQs",
+      "type": "manufacturer_ecosystem_technical_source",
+      "url": "https://blog.xhorsevvdi.com/xhorse-bcm2-solder-free-adapter-for-audi-faqs/"
+    },
+    "xhorse_bcm2_tips": {
+      "publisher": "Xhorse VVDI Technical Blog",
+      "title": "Tips for Xhorse Audi BCM2 Solder-Free Adapter",
+      "type": "manufacturer_ecosystem_technical_source",
+      "url": "https://blog.xhorsevvdi.com/tips-to-xhorse-vvdi-audi-bcm2-solder-free-adapter/"
+    },
+    "xhorse_bcm2_vvdi_prog": {
+      "publisher": "Xhorse VVDI Technical Blog",
+      "title": "Use Xhorse Audi BCM2 Adapter with VVDI PROG and VVDI2",
+      "type": "manufacturer_ecosystem_technical_source",
+      "url": "https://blog.xhorsevvdi.com/how-to-use-xhorse-audi-bcm2-adapter-with-vvdi-prog-vvdi2/"
+    }
+  }
+}
