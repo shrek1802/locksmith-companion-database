@@ -1,0 +1,515 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "market": "UK",
+
+  "classification": {
+    "scope": "Passive vehicle-side bypass and direct-connection cables only",
+    "excluded_items": [
+      "Active programming adapters",
+      "Programmer modules",
+      "Solder-free adapters",
+      "Bench harnesses",
+      "Test platforms",
+      "Tool-specific interface kits"
+    ]
+  },
+
+  "items": {
+    "fca_12_8_sgw": {
+      "display_name": "FCA 12+8 SGW Bypass Cable",
+      "short_name": "FCA 12+8",
+      "category": "security_gateway_bypass",
+      "connection_method": "vehicle_gateway_disconnect",
+
+      "vehicle_connector_standard": "FCA_12_PLUS_8",
+      "vehicle_side_connectors": [
+        "12-pin SGW connector",
+        "8-pin SGW connector"
+      ],
+      "tool_side_connector": "OBD16",
+
+      "universality": {
+        "status": "universal_passive_cable",
+        "basis": "Standard vehicle-side 12+8 SGW connection terminating in OBD16",
+        "tool_software_support_still_required": true
+      },
+
+      "vehicle_brands": [
+        "Abarth",
+        "Alfa Romeo",
+        "Chrysler",
+        "Dodge",
+        "Fiat",
+        "Jeep",
+        "Lancia",
+        "Maserati",
+        "RAM"
+      ],
+
+      "known_compatible_tool_families": [
+        "Autel",
+        "KEYDIY",
+        "Lonsdor",
+        "OBDSTAR",
+        "Xhorse",
+        "Xtool",
+        "Other OBD16 diagnostic and key-programming tools"
+      ],
+
+      "operations": [
+        "add_key",
+        "all_keys_lost",
+        "diagnostics",
+        "coding",
+        "active_tests"
+      ],
+
+      "purpose": "Connects the programming or diagnostic tool directly to the vehicle network after the factory Security Gateway module is disconnected.",
+
+      "vehicle_record_usage": "Reference this cable only where the UK vehicle is confirmed to use the FCA 12+8 Security Gateway connector.",
+
+      "aliases": [
+        "FCA 12+8 Cable",
+        "Chrysler 12+8 Cable",
+        "Fiat 12+8 SGW Cable",
+        "12+8 Gateway Bypass"
+      ],
+
+      "warnings": [
+        "The Security Gateway location varies by model.",
+        "The cable provides physical network access but does not add unsupported software coverage to the programming tool."
+      ],
+
+      "verification": {
+        "status": "verified",
+        "confidence": "high",
+        "source_ids": [
+          "obdstar_fca_12_8",
+          "astools_universal_fca_12_8"
+        ]
+      }
+    },
+
+    "renault_nissan_16_32_gateway": {
+      "display_name": "Renault/Nissan 16+32 Gateway Bypass Cable",
+      "short_name": "Renault/Nissan 16+32",
+      "category": "security_gateway_bypass",
+      "connection_method": "vehicle_gateway_direct_connection",
+
+      "vehicle_connector_standard": "RENAULT_NISSAN_16_PLUS_32",
+      "vehicle_side_connectors": [
+        "16-pin vehicle connector",
+        "32-pin vehicle connector"
+      ],
+      "tool_side_connector": "OBD16",
+
+      "universality": {
+        "status": "universal_vehicle_connector_standard",
+        "basis": "Passive 16+32 vehicle connection commonly sold with an OBD16 tool connection",
+        "tool_software_support_still_required": true,
+        "caveat": "Some branded versions may use a proprietary tool-side connector."
+      },
+
+      "vehicle_brands": [
+        "Nissan",
+        "Renault"
+      ],
+
+      "known_compatible_tool_families": [
+        "Autel",
+        "KEYDIY",
+        "Lonsdor",
+        "OBDSTAR",
+        "Xhorse",
+        "Xtool",
+        "Advanced Diagnostics"
+      ],
+
+      "operations": [
+        "add_key",
+        "all_keys_lost",
+        "ecu_programming",
+        "gateway_access"
+      ],
+
+      "purpose": "Provides direct communication around the security gateway on supported Renault and Nissan systems.",
+
+      "vehicle_record_usage": "The individual vehicle record must confirm whether the 16+32 cable or a later 40-pin BCM cable is required.",
+
+      "aliases": [
+        "Nissan 16+32 Cable",
+        "Renault 16+32 Cable",
+        "Nissan/Renault Gateway Cable",
+        "32+16 Gateway Cable"
+      ],
+
+      "warnings": [
+        "It is not interchangeable with the 40-pin BCM cable on every vehicle.",
+        "Tool support and PIN-code requirements depend on the exact model and programming software."
+      ],
+
+      "verification": {
+        "status": "verified",
+        "confidence": "high",
+        "source_ids": [
+          "obdstar_renault_nissan_16_32",
+          "advanced_diagnostics_adc2017"
+        ]
+      }
+    },
+
+    "renault_nissan_mitsubishi_40_bcm": {
+      "display_name": "Renault/Nissan/Mitsubishi 40-Pin BCM Bypass Cable",
+      "short_name": "40-Pin BCM Cable",
+      "category": "bcm_direct_connection",
+      "connection_method": "bcm_inline_bypass",
+
+      "vehicle_connector_standard": "RENAULT_NISSAN_MITSUBISHI_40PIN_BCM",
+      "vehicle_side_connectors": [
+        "40-pin BCM male connector",
+        "40-pin BCM female connector"
+      ],
+      "tool_side_connector": "OBD16",
+
+      "universality": {
+        "status": "universal_vehicle_connector_standard",
+        "basis": "Passive inline BCM connection sold for use across multiple programming-tool families",
+        "tool_software_support_still_required": true,
+        "caveat": "Connector pinout and supported applications must match the cable revision."
+      },
+
+      "vehicle_brands": [
+        "Mitsubishi",
+        "Nissan",
+        "Renault"
+      ],
+
+      "known_compatible_tool_families": [
+        "Advanced Diagnostics",
+        "Autel",
+        "KEYDIY",
+        "Lonsdor",
+        "OBDSTAR",
+        "Xhorse",
+        "Xtool"
+      ],
+
+      "operations": [
+        "add_key",
+        "all_keys_lost",
+        "bcm_direct_communication",
+        "gateway_bypass"
+      ],
+
+      "purpose": "Connects inline at the BCM to provide direct communication without cutting or piercing the vehicle wiring.",
+
+      "vehicle_record_usage": "Reference this cable only when the exact vehicle procedure specifies the 40-pin BCM connection. Do not assume it replaces the 16+32 cable on every vehicle.",
+
+      "aliases": [
+        "Nissan 40 BCM Cable",
+        "Nissan 40-Pin Cable",
+        "Renault 40-Pin Bypass Cable",
+        "Mitsubishi 40-Pin BCM Cable",
+        "ADC2017-Type Bypass Cable"
+      ],
+
+      "warnings": [
+        "The 40-pin cable replaces the 16+32 cable only on selected applications.",
+        "Renault, Nissan and Mitsubishi coverage differs by tool software and vehicle platform.",
+        "Always confirm the BCM connector before disconnecting it."
+      ],
+
+      "verification": {
+        "status": "verified_with_application_caveats",
+        "confidence": "medium_high",
+        "source_ids": [
+          "obdstar_nissan_40_bcm",
+          "advanced_diagnostics_adc2017",
+          "stardiag_renault_nissan_40_bcm"
+        ]
+      }
+    },
+
+    "toyota_24pin_smart_box": {
+      "display_name": "Toyota/Lexus 24-Pin Smart Box Cable",
+      "short_name": "Toyota 24-Pin",
+      "category": "smart_box_direct_connection",
+      "connection_method": "smart_box_direct_connection",
+
+      "vehicle_connector_standard": "TOYOTA_24PIN_SMART_BOX",
+      "vehicle_side_connectors": [
+        "24-pin smart-box connector"
+      ],
+      "tool_side_connector": "varies_by_cable_version",
+
+      "universality": {
+        "status": "universal_vehicle_connector_standard",
+        "basis": "The Toyota 24-pin vehicle-side connector is standardised, but the interface or tool-side termination can differ",
+        "tool_software_support_still_required": true,
+        "caveat": "Some versions connect through an active CAN Direct interface rather than directly to OBD16."
+      },
+
+      "vehicle_brands": [
+        "Lexus",
+        "Toyota"
+      ],
+
+      "known_compatible_tool_families": [
+        "Autel",
+        "Lonsdor",
+        "OBDSTAR",
+        "Xhorse",
+        "Other tools supporting the same Toyota direct-connection method"
+      ],
+
+      "operations": [
+        "add_key",
+        "all_keys_lost",
+        "smart_box_data_read",
+        "gateway_access"
+      ],
+
+      "purpose": "Provides direct access to supported Toyota/Lexus smart-box or gateway communication lines.",
+
+      "vehicle_record_usage": "The vehicle record must identify the 24-pin variant and whether a passive OBD16 cable or an active CAN Direct interface is also required.",
+
+      "aliases": [
+        "Toyota-24",
+        "Toyota 24-Pin Cable",
+        "Toyota 4A Smart Cable"
+      ],
+
+      "warnings": [
+        "Do not substitute the 27-pin or 30-pin cable without confirming the connector.",
+        "Some procedures require a separate active CAN Direct interface."
+      ],
+
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high",
+        "source_ids": [
+          "obdstar_can_direct",
+          "obdstar_toyota_24_27"
+        ]
+      }
+    },
+
+    "toyota_27pin_smart_box": {
+      "display_name": "Toyota/Lexus 27-Pin Smart Box Cable",
+      "short_name": "Toyota 27-Pin",
+      "category": "smart_box_direct_connection",
+      "connection_method": "smart_box_direct_connection",
+
+      "vehicle_connector_standard": "TOYOTA_27PIN_SMART_BOX",
+      "vehicle_side_connectors": [
+        "27-pin smart-box connector"
+      ],
+      "tool_side_connector": "varies_by_cable_version",
+
+      "universality": {
+        "status": "universal_vehicle_connector_standard",
+        "basis": "The Toyota 27-pin vehicle-side connection is shared across compatible programming methods",
+        "tool_software_support_still_required": true,
+        "caveat": "Some versions are designed to connect through an active CAN Direct interface."
+      },
+
+      "vehicle_brands": [
+        "Lexus",
+        "Toyota"
+      ],
+
+      "known_compatible_tool_families": [
+        "Autel",
+        "Lonsdor",
+        "OBDSTAR",
+        "Xhorse",
+        "Other tools supporting the same Toyota direct-connection method"
+      ],
+
+      "operations": [
+        "add_key",
+        "all_keys_lost",
+        "smart_box_data_read",
+        "gateway_access"
+      ],
+
+      "purpose": "Provides direct communication with supported Toyota/Lexus 27-pin smart-box systems.",
+
+      "vehicle_record_usage": "Reference only when the vehicle is confirmed to have the 27-pin smart-box connection.",
+
+      "aliases": [
+        "Toyota-27",
+        "Toyota 27-Pin Cable",
+        "Toyota 4A/8A Smart Cable"
+      ],
+
+      "warnings": [
+        "The 24-pin, 27-pin and 30-pin cables are distinct vehicle connections.",
+        "Some procedures require an active CAN Direct interface in addition to this cable."
+      ],
+
+      "verification": {
+        "status": "verified",
+        "confidence": "medium_high",
+        "source_ids": [
+          "obdstar_can_direct",
+          "obdstar_toyota_24_27"
+        ]
+      }
+    },
+
+    "toyota_lexus_30pin_4a_8aba": {
+      "display_name": "Toyota/Lexus 30-Pin 4A/8A-BA Cable",
+      "short_name": "Toyota 30-Pin",
+      "category": "smart_box_direct_connection",
+      "connection_method": "smart_box_direct_connection",
+
+      "vehicle_connector_standard": "TOYOTA_30PIN_4A_8ABA",
+      "vehicle_side_connectors": [
+        "30-pin smart-box connector"
+      ],
+      "tool_side_connector": "OBD16_or_compatible_interface",
+
+      "universality": {
+        "status": "universal_passive_cable",
+        "basis": "Commercial 30-pin passive cables are sold for use with several different tool families",
+        "tool_software_support_still_required": true,
+        "caveat": "Some branded products bundle the cable with proprietary licences, keys or active adapters."
+      },
+
+      "vehicle_brands": [
+        "Lexus",
+        "Toyota"
+      ],
+
+      "known_compatible_tool_families": [
+        "Autel",
+        "KEYDIY",
+        "Launch",
+        "Lonsdor",
+        "OBDSTAR",
+        "Xhorse"
+      ],
+
+      "operations": [
+        "add_key",
+        "all_keys_lost",
+        "smart_box_data_backup",
+        "password_free_matching"
+      ],
+
+      "supported_security_families": [
+        "4A",
+        "4A-BA",
+        "8A-BA"
+      ],
+
+      "purpose": "Provides direct smart-box communication on supported newer Toyota and Lexus 4A and 8A-BA systems.",
+
+      "vehicle_record_usage": "Reference the cable separately from any KEYDIY, Lonsdor, OBDSTAR or Xhorse active adapter, key licence or software requirement.",
+
+      "aliases": [
+        "Toyota-30",
+        "Toyota 30-Pin Cable",
+        "Lexus 30-Pin Cable",
+        "FP30 Cable",
+        "Toyota BA Cable"
+      ],
+
+      "warnings": [
+        "The cable alone does not provide software coverage, licences or password calculation.",
+        "Confirm whether the procedure needs only the passive cable or an additional manufacturer-specific adapter."
+      ],
+
+      "verification": {
+        "status": "verified",
+        "confidence": "high",
+        "source_ids": [
+          "obdstar_toyota_30",
+          "lonsdor_fp30_cross_tool",
+          "keydiy_toyota_30"
+        ]
+      }
+    }
+  },
+
+  "sources": {
+    "obdstar_fca_12_8": {
+      "publisher": "OBDSTAR",
+      "title": "FCA 12+8 Cable",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_297.html"
+    },
+
+    "astools_universal_fca_12_8": {
+      "publisher": "AsTools",
+      "title": "Universal FCA 12+8 SGW to OBD16 Cable",
+      "type": "professional_supplier",
+      "url": "https://www.astools.nl/products/universele-fca-secure-gateway-module-12-8-pins-16-pins-obd2-verloopkabel"
+    },
+
+    "obdstar_renault_nissan_16_32": {
+      "publisher": "OBDSTAR",
+      "title": "Nissan/Renault 16+32 Cable",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_279.html"
+    },
+
+    "advanced_diagnostics_adc2017": {
+      "publisher": "Advanced Diagnostics / 3D Group UK",
+      "title": "ADC2017 Renault/Nissan Bypass Cable",
+      "type": "manufacturer_and_uk_supplier",
+      "url": "https://3dgroupuk.com/product/view/SPH5"
+    },
+
+    "obdstar_nissan_40_bcm": {
+      "publisher": "OBDSTAR",
+      "title": "Nissan 40 BCM Cable",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_353.html"
+    },
+
+    "stardiag_renault_nissan_40_bcm": {
+      "publisher": "STARDIAG",
+      "title": "Renault/Nissan 40 BCM Gateway Bypass Cable",
+      "type": "professional_supplier",
+      "url": "https://electronic-fuchs.de/en/p/stardiag-sgw-bypass-cable-for-renault-nissan-40-bcm-gateway"
+    },
+
+    "obdstar_can_direct": {
+      "publisher": "OBDSTAR",
+      "title": "CAN Direct Kit",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_305.html"
+    },
+
+    "obdstar_toyota_24_27": {
+      "publisher": "OBDSTAR distributors and technical documentation",
+      "title": "Toyota 24-Pin and 27-Pin Direct Cables",
+      "type": "manufacturer_documentation",
+      "url": "https://www.obdstar.com/Products_305.html"
+    },
+
+    "obdstar_toyota_30": {
+      "publisher": "OBDSTAR",
+      "title": "Toyota-30 Cable",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/News_927.html"
+    },
+
+    "lonsdor_fp30_cross_tool": {
+      "publisher": "Lonsdor suppliers",
+      "title": "FP30 30-Pin Cable Cross-Tool Compatibility",
+      "type": "professional_supplier",
+      "url": "https://www.vxdas.com/en-de/products/lonsdor-fp30-30-pin-30-pin-cable"
+    },
+
+    "keydiy_toyota_30": {
+      "publisher": "KEYDIY suppliers",
+      "title": "KEYDIY Toyota 30-Pin Cable",
+      "type": "professional_supplier",
+      "url": "https://www.keydiyshop.co.uk/wholesale/keydiy-toyota-akl-adapter.html"
+    }
+  }
+}
