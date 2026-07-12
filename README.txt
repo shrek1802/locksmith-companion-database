@@ -1,49 +1,19 @@
-name: Validate Database
+DATABASE ROOT MIGRATION
 
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - "**/*.json"
-      - "scripts/validate_database.py"
-      - ".github/workflows/validate-database.yml"
-  pull_request:
-    paths:
-      - "**/*.json"
-      - "scripts/validate_database.py"
-      - ".github/workflows/validate-database.yml"
+Upload/replace these files in the database repository:
 
-permissions:
-  contents: read
+manifest.json
+database/vehicles/manifest.json
+database/vehicles/ford/manifest.json
 
-concurrency:
-  group: validate-database-${{ github.ref }}
-  cancel-in-progress: true
+IMPORTANT:
+- Keep manifest.json at the repository root.
+- The app can keep using:
+  https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/manifest.json
+- The root manifest now points into:
+  database/vehicles/ford/manifest.json
+- The Ford manifest uses the `models` object expected by the current app updater.
+- It is intentionally empty until the first verified Fiesta model JSON is ready.
 
-jobs:
-  validate:
-    name: Check JSON database
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Validate database
-        run: python scripts/validate_database.py
-
-      - name: Upload validation report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: database-validation-${{ github.run_number }}-${{ github.run_attempt }}
-          path: database-validation-report.txt
-          if-no-files-found: error
-          overwrite: true
+No app code needs changing just for moving the remote files into database/.
+The manifest path handles the move.
