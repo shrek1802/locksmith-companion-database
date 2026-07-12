@@ -1,0 +1,561 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "yanhua",
+    "name": "Yanhua"
+  },
+  "category": "modules_and_authorisations",
+  "scope": "Locksmith, immobiliser and directly related ECU/TCU modules relevant to UK auto-locksmith work.",
+  "items": {
+    "yanhua_module_01_cas": {
+      "display_name": "Yanhua ACDP Module 1 – BMW CAS",
+      "module_number": 1,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "CAS1",
+        "CAS2",
+        "CAS3",
+        "CAS3+",
+        "CAS4",
+        "CAS4+"
+      ],
+      "methods": [
+        "obd",
+        "icp",
+        "obp"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "eeprom_read",
+        "eeprom_write",
+        "flash_read",
+        "flash_write"
+      ],
+      "solder_free_available": true,
+      "notes": [
+        "CAS4/CAS4+ support uses in-circuit programming."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_02_fem_bdc": {
+      "display_name": "Yanhua ACDP Module 2 – BMW FEM/BDC",
+      "module_number": 2,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "FEM",
+        "BDC"
+      ],
+      "methods": [
+        "icp",
+        "obp"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "data_backup",
+        "data_recovery",
+        "eeprom_read",
+        "eeprom_write"
+      ],
+      "solder_free_available": true,
+      "notes": [
+        "The authorisation is Yanhua-specific; some passive clips/boards may be reusable with other compatible programmers."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue",
+          "yanhua_module2_technical"
+        ]
+      }
+    },
+    "yanhua_module_03_bmw_isn": {
+      "display_name": "Yanhua ACDP Module 3 – BMW DME/DDE ISN",
+      "module_number": 3,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_engine_ecu_families": [
+        "N20",
+        "N55",
+        "N13",
+        "MSV80",
+        "MSD85"
+      ],
+      "methods": [
+        "obd",
+        "bench",
+        "opened_ecu"
+      ],
+      "functions": [
+        "isn_read",
+        "isn_write"
+      ],
+      "solder_free_available": "conditional",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_09_jlr_kvm": {
+      "display_name": "Yanhua ACDP Module 9 – Jaguar/Land Rover KVM",
+      "module_number": 9,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "Jaguar",
+        "Land Rover",
+        "Range Rover"
+      ],
+      "supported_modules": [
+        "KVM"
+      ],
+      "coverage_summary": "Selected 2015+ applications",
+      "functions": [
+        "add_key",
+        "all_keys_lost"
+      ],
+      "solder_free_available": true,
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_10_porsche_bcm": {
+      "display_name": "Yanhua ACDP Module 10 – Porsche BCM",
+      "module_number": 10,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "Porsche"
+      ],
+      "supported_modules": [
+        "BCM"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "bcm_data_read",
+        "bcm_data_write"
+      ],
+      "solder_free_available": true,
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_12_volvo": {
+      "display_name": "Yanhua ACDP Module 12 – Volvo IMMO",
+      "module_number": 12,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "Volvo"
+      ],
+      "supported_modules": [
+        "CEM",
+        "KVM"
+      ],
+      "methods": [
+        "obd",
+        "icp"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "password_data_read"
+      ],
+      "solder_free_available": true,
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_20_new_volvo": {
+      "display_name": "Yanhua ACDP Module 20 – New Volvo Full-Keyless IMMO",
+      "module_number": 20,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "Volvo"
+      ],
+      "supported_modules": [
+        "CEM"
+      ],
+      "methods": [
+        "icp",
+        "obd"
+      ],
+      "functions": [
+        "cem_data_read",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "solder_free_available": true,
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_24_jlr_2018_plus": {
+      "display_name": "Yanhua ACDP Module 24 – New JLR 2018+ IMMO",
+      "module_number": 24,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "Jaguar",
+        "Land Rover",
+        "Range Rover"
+      ],
+      "supported_modules": [
+        "RFA"
+      ],
+      "coverage_summary": "Selected 2018+ applications",
+      "methods": [
+        "obd",
+        "module_replacement"
+      ],
+      "functions": [
+        "duplicate_key",
+        "program_key_by_rfa_replacement"
+      ],
+      "solder_free_available": "procedure_dependent",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_27_bmw_msv_msd": {
+      "display_name": "Yanhua ACDP Module 27 – BMW MSV/MSD ISN & Clone",
+      "module_number": 27,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_engine_ecu_families": [
+        "MSV80",
+        "MSD80",
+        "MSD81",
+        "MSD85",
+        "MSD87",
+        "MSV90"
+      ],
+      "functions": [
+        "isn_read",
+        "isn_write",
+        "ecu_clone"
+      ],
+      "solder_free_available": "adapter_dependent",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_29_audi_bcm2": {
+      "display_name": "Yanhua ACDP Module 29 – Audi Gen5 BCM2",
+      "module_number": 29,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "Audi"
+      ],
+      "supported_modules": [
+        "BCM2"
+      ],
+      "coverage_examples": [
+        {
+          "models": [
+            "A4",
+            "A5",
+            "Q5"
+          ],
+          "years": "2013-2018",
+          "operations": [
+            "add_key",
+            "all_keys_lost"
+          ]
+        },
+        {
+          "models": [
+            "A6",
+            "A7",
+            "A8"
+          ],
+          "years": "2013-2019",
+          "operations": [
+            "add_key"
+          ]
+        }
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "bcm2_data_read"
+      ],
+      "solder_free_available": true,
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_31_bmw_bdc_obd": {
+      "display_name": "Yanhua ACDP Module 31 – BMW F-Chassis BDC via OBD",
+      "module_number": 31,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "BDC"
+      ],
+      "methods": [
+        "obd_can",
+        "obd_doip"
+      ],
+      "functions": [
+        "add_key",
+        "key_programming"
+      ],
+      "solder_free_available": true,
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_33_mqb48": {
+      "display_name": "Yanhua ACDP Module 33 – MQB48/MQB 5A",
+      "module_number": 33,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "SEAT",
+        "Cupra",
+        "Skoda"
+      ],
+      "supported_modules": [
+        "4th/4.5th generation IMMO",
+        "MQB 5A instrument cluster"
+      ],
+      "functions": [
+        "immo_data_read",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "solder_free_available": true,
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_34_mqb_rh850": {
+      "display_name": "Yanhua ACDP Module 34 – MQB RH850",
+      "module_number": 34,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "SEAT",
+        "Cupra",
+        "Skoda"
+      ],
+      "supported_modules": [
+        "MQB RH850 instrument cluster"
+      ],
+      "supported_mcu_families": [
+        "RH850",
+        "R7F7xx0x"
+      ],
+      "functions": [
+        "immo_data_read",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "solder_free_available": true,
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_38_bmw_bdc2": {
+      "display_name": "Yanhua ACDP Module 38 – BMW BDC2 IMMO",
+      "module_number": 38,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "BDC2"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "refresh",
+        "copy_data_replacement"
+      ],
+      "solder_free_available": true,
+      "notes": [
+        "All-keys-lost requires the separate Keys Learning Bench Platform authorisation/hardware."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_module_44_vag_5c_5d": {
+      "display_name": "Yanhua ACDP Module 44 – VAG/Porsche 5C/5D IMMO",
+      "module_number": 44,
+      "status": "current",
+      "compatible_hosts": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "Porsche"
+      ],
+      "supported_modules": [
+        "5C IMMO",
+        "5D IMMO"
+      ],
+      "functions": [
+        "add_new_key",
+        "add_used_key",
+        "modify_original_key_id"
+      ],
+      "solder_free_available": "interface_board_dependent",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "acdpmaster_module_catalogue": {
+      "publisher": "Yanhua ACDP / ACDP Master",
+      "title": "Mini ACDP Programming Master Modules",
+      "type": "manufacturer_catalogue",
+      "url": "https://www.acdpmaster.com/en/Module.html",
+      "checked_at": "2026-07-12"
+    },
+    "yanhua_module2_technical": {
+      "publisher": "Yanhua ACDP",
+      "title": "BMW FEM/BDC programming without soldering",
+      "type": "manufacturer_technical_article",
+      "url": "https://blog.yanhuaacdp.com/yanhua-mini-acdp-program-bmw-fem-bdc-without-soldering/",
+      "checked_at": "2026-07-12"
+    }
+  }
+}

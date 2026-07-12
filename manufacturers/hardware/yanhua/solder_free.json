@@ -1,0 +1,294 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "yanhua",
+    "name": "Yanhua"
+  },
+  "category": "solder_free_adapters",
+  "items": {
+    "yanhua_cas4_interface_board": {
+      "display_name": "Yanhua BMW CAS4/CAS4+ Solder-Free Interface Board",
+      "compatible_module_ids": [
+        "yanhua_module_01_cas"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "CAS4",
+        "CAS4+"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "functions": [
+        "eeprom_read",
+        "eeprom_write",
+        "flash_read",
+        "flash_write",
+        "immo_data_access"
+      ],
+      "verification": {
+        "status": "manufacturer_catalogue_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_fem_bdc_interface_set": {
+      "display_name": "Yanhua BMW FEM/BDC Solder-Free Interface Set",
+      "compatible_module_ids": [
+        "yanhua_module_02_fem_bdc"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "FEM",
+        "BDC"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "functions": [
+        "data_backup",
+        "data_recovery",
+        "key_programming",
+        "eeprom_access"
+      ],
+      "verification": {
+        "status": "manufacturer_catalogue_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue",
+          "yanhua_module2_technical"
+        ]
+      }
+    },
+    "yanhua_jlr_kvm_interface_board": {
+      "display_name": "Yanhua JLR KVM Solder-Free Interface Board",
+      "compatible_module_ids": [
+        "yanhua_module_09_jlr_kvm"
+      ],
+      "vehicle_brands": [
+        "Jaguar",
+        "Land Rover",
+        "Range Rover"
+      ],
+      "supported_modules": [
+        "KVM"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "functions": [
+        "kvm_data_read",
+        "kvm_data_write",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "verification": {
+        "status": "manufacturer_catalogue_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_porsche_bcm_interface_set": {
+      "display_name": "Yanhua Porsche BCM Solder-Free Interface Set",
+      "compatible_module_ids": [
+        "yanhua_module_10_porsche_bcm"
+      ],
+      "vehicle_brands": [
+        "Porsche"
+      ],
+      "supported_modules": [
+        "BCM"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "functions": [
+        "bcm_data_read",
+        "bcm_data_write",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "verification": {
+        "status": "manufacturer_catalogue_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_volvo_cem_kvm_interface_set": {
+      "display_name": "Yanhua Volvo CEM/KVM Solder-Free Interface Set",
+      "compatible_module_ids": [
+        "yanhua_module_12_volvo",
+        "yanhua_module_20_new_volvo"
+      ],
+      "vehicle_brands": [
+        "Volvo"
+      ],
+      "supported_modules": [
+        "CEM",
+        "KVM"
+      ],
+      "soldering_required": false,
+      "module_removal_required": "conditional",
+      "functions": [
+        "password_data_read",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "verification": {
+        "status": "manufacturer_catalogue_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_audi_bcm2_interface_set": {
+      "display_name": "Yanhua Audi BCM2 Solder-Free Interface Set",
+      "compatible_module_ids": [
+        "yanhua_module_29_audi_bcm2"
+      ],
+      "vehicle_brands": [
+        "Audi"
+      ],
+      "supported_modules": [
+        "BCM2"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "functions": [
+        "bcm2_data_read",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "verification": {
+        "status": "manufacturer_catalogue_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_mqb48_module33_board_set": {
+      "display_name": "Yanhua MQB48 Module 33 Solder-Free Board Set",
+      "compatible_module_ids": [
+        "yanhua_module_33_mqb48"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "SEAT",
+        "Cupra",
+        "Skoda"
+      ],
+      "supported_modules": [
+        "MQB48/MQB 5A instrument cluster"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "functions": [
+        "cluster_data_read",
+        "immo_data_read",
+        "key_programming"
+      ],
+      "verification": {
+        "status": "manufacturer_catalogue_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_mqb_rh850_module34_board_set": {
+      "display_name": "Yanhua MQB RH850 Module 34 Solder-Free Board Set",
+      "compatible_module_ids": [
+        "yanhua_module_34_mqb_rh850"
+      ],
+      "vehicle_brands": [
+        "Volkswagen",
+        "Audi",
+        "SEAT",
+        "Cupra",
+        "Skoda"
+      ],
+      "supported_modules": [
+        "MQB RH850 instrument cluster"
+      ],
+      "supported_mcu_families": [
+        "R7F7xx0x",
+        "RH850"
+      ],
+      "soldering_required": false,
+      "module_removal_required": true,
+      "functions": [
+        "cluster_data_read",
+        "immo_data_read",
+        "key_programming"
+      ],
+      "verification": {
+        "status": "manufacturer_catalogue_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_bdc2_bdc3_bcp_key_copy_board": {
+      "display_name": "Yanhua BDC2/BDC3/BCP/LCD Key Copy Interface Board Kit",
+      "compatible_module_ids": [
+        "yanhua_module_38_bmw_bdc2"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "BDC2",
+        "BDC3",
+        "BCP",
+        "BMW LCD key"
+      ],
+      "soldering_required": false,
+      "module_removal_required": "key_or_module_dependent",
+      "functions": [
+        "encrypted_key_data_read",
+        "encrypted_key_data_write",
+        "key_data_clone"
+      ],
+      "notes": [
+        "Requires Module 38 authorisation according to the manufacturer catalogue."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "acdpmaster_module_catalogue": {
+      "publisher": "Yanhua ACDP / ACDP Master",
+      "title": "Mini ACDP Programming Master Modules",
+      "type": "manufacturer_catalogue",
+      "url": "https://www.acdpmaster.com/en/Module.html",
+      "checked_at": "2026-07-12"
+    },
+    "yanhua_module2_technical": {
+      "publisher": "Yanhua ACDP",
+      "title": "BMW FEM/BDC programming without soldering",
+      "type": "manufacturer_technical_article",
+      "url": "https://blog.yanhuaacdp.com/yanhua-mini-acdp-program-bmw-fem-bdc-without-soldering/",
+      "checked_at": "2026-07-12"
+    }
+  }
+}

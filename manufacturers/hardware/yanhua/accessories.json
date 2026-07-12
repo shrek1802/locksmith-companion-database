@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "yanhua",
+    "name": "Yanhua"
+  },
+  "category": "accessories",
+  "items": {
+    "yanhua_acdp2_host": {
+      "display_name": "Yanhua ACDP2 Host",
+      "category": "programmer_host",
+      "status": "current",
+      "functions": [
+        "module_host",
+        "wireless_programming",
+        "licence_host"
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_acdp_host": {
+      "display_name": "Yanhua Mini ACDP Host",
+      "category": "programmer_host",
+      "status": "legacy_supported",
+      "functions": [
+        "module_host",
+        "wireless_programming",
+        "licence_host"
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_programming_module_1_base": {
+      "display_name": "Yanhua ACDP Programming Module 1 Base",
+      "category": "base_programming_module",
+      "status": "current",
+      "supported_memories": [
+        "93 series",
+        "24 series",
+        "25 series",
+        "35 series",
+        "95 series"
+      ],
+      "supported_mcu_families": [
+        "9S12",
+        "SPC",
+        "TC1784",
+        "TC1793",
+        "V850-D70F34",
+        "RH850-R7F7014"
+      ],
+      "functions": [
+        "icp_programming",
+        "obp_programming",
+        "eeprom_read",
+        "eeprom_write",
+        "mcu_read",
+        "mcu_write"
+      ],
+      "notes": [
+        "Manufacturer describes this as a necessary basic configuration for other modules."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "acdpmaster_module_catalogue": {
+      "publisher": "Yanhua ACDP / ACDP Master",
+      "title": "Mini ACDP Programming Master Modules",
+      "type": "manufacturer_catalogue",
+      "url": "https://www.acdpmaster.com/en/Module.html",
+      "checked_at": "2026-07-12"
+    },
+    "yanhua_module2_technical": {
+      "publisher": "Yanhua ACDP",
+      "title": "BMW FEM/BDC programming without soldering",
+      "type": "manufacturer_technical_article",
+      "url": "https://blog.yanhuaacdp.com/yanhua-mini-acdp-program-bmw-fem-bdc-without-soldering/",
+      "checked_at": "2026-07-12"
+    }
+  }
+}

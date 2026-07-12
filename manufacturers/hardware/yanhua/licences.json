@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "yanhua",
+    "name": "Yanhua"
+  },
+  "category": "licences_and_authorisations",
+  "items": {
+    "yanhua_authorisation_01_cas": {
+      "display_name": "Yanhua ACDP Authorisation 1 – BMW CAS",
+      "module_number": 1,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "eeprom_read",
+        "eeprom_write",
+        "flash_read",
+        "flash_write"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_02_fem_bdc": {
+      "display_name": "Yanhua ACDP Authorisation 2 – BMW FEM/BDC",
+      "module_number": 2,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "data_backup",
+        "data_recovery",
+        "eeprom_read",
+        "eeprom_write"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue",
+          "yanhua_module2_technical"
+        ]
+      }
+    },
+    "yanhua_authorisation_03_bmw_isn": {
+      "display_name": "Yanhua ACDP Authorisation 3 – BMW DME/DDE ISN",
+      "module_number": 3,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "isn_read",
+        "isn_write"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_09_jlr_kvm": {
+      "display_name": "Yanhua ACDP Authorisation 9 – Jaguar/Land Rover KVM",
+      "module_number": 9,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_10_porsche_bcm": {
+      "display_name": "Yanhua ACDP Authorisation 10 – Porsche BCM",
+      "module_number": 10,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "bcm_data_read",
+        "bcm_data_write"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_12_volvo": {
+      "display_name": "Yanhua ACDP Authorisation 12 – Volvo IMMO",
+      "module_number": 12,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "password_data_read"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_20_new_volvo": {
+      "display_name": "Yanhua ACDP Authorisation 20 – New Volvo Full-Keyless IMMO",
+      "module_number": 20,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "cem_data_read",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_24_jlr_2018_plus": {
+      "display_name": "Yanhua ACDP Authorisation 24 – New JLR 2018+ IMMO",
+      "module_number": 24,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "duplicate_key",
+        "program_key_by_rfa_replacement"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_27_bmw_msv_msd": {
+      "display_name": "Yanhua ACDP Authorisation 27 – BMW MSV/MSD ISN & Clone",
+      "module_number": 27,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "isn_read",
+        "isn_write",
+        "ecu_clone"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_29_audi_bcm2": {
+      "display_name": "Yanhua ACDP Authorisation 29 – Audi Gen5 BCM2",
+      "module_number": 29,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "bcm2_data_read"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_31_bmw_bdc_obd": {
+      "display_name": "Yanhua ACDP Authorisation 31 – BMW F-Chassis BDC via OBD",
+      "module_number": 31,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "add_key",
+        "key_programming"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_33_mqb48": {
+      "display_name": "Yanhua ACDP Authorisation 33 – MQB48/MQB 5A",
+      "module_number": 33,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "immo_data_read",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_34_mqb_rh850": {
+      "display_name": "Yanhua ACDP Authorisation 34 – MQB RH850",
+      "module_number": 34,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "immo_data_read",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_38_bmw_bdc2": {
+      "display_name": "Yanhua ACDP Authorisation 38 – BMW BDC2 IMMO",
+      "module_number": 38,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "add_key",
+        "all_keys_lost",
+        "refresh",
+        "copy_data_replacement"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_authorisation_44_vag_5c_5d": {
+      "display_name": "Yanhua ACDP Authorisation 44 – VAG/Porsche 5C/5D IMMO",
+      "module_number": 44,
+      "applies_to": [
+        "Yanhua Mini ACDP",
+        "Yanhua ACDP2"
+      ],
+      "functions": [
+        "add_new_key",
+        "add_used_key",
+        "modify_original_key_id"
+      ],
+      "status": "current",
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "acdpmaster_module_catalogue": {
+      "publisher": "Yanhua ACDP / ACDP Master",
+      "title": "Mini ACDP Programming Master Modules",
+      "type": "manufacturer_catalogue",
+      "url": "https://www.acdpmaster.com/en/Module.html",
+      "checked_at": "2026-07-12"
+    },
+    "yanhua_module2_technical": {
+      "publisher": "Yanhua ACDP",
+      "title": "BMW FEM/BDC programming without soldering",
+      "type": "manufacturer_technical_article",
+      "url": "https://blog.yanhuaacdp.com/yanhua-mini-acdp-program-bmw-fem-bdc-without-soldering/",
+      "checked_at": "2026-07-12"
+    }
+  }
+}

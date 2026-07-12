@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "obdstar",
+    "name": "OBDSTAR"
+  },
+  "category": "active_interfaces",
+  "items": {
+    "obdstar_can_direct": {
+      "display_name": "OBDSTAR CAN DIRECT Kit",
+      "status": "current",
+      "category": "active_gateway_interface",
+      "compatible_tool_ids": [
+        "obdstar_keymaster_g3",
+        "obdstar_x300_classic_g3"
+      ],
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus"
+      ],
+      "functions": [
+        "gateway_direct_access",
+        "ecu_data_read",
+        "smart_key_data_access",
+        "add_key",
+        "all_keys_lost"
+      ],
+      "compatible_vehicle_cables": [
+        "toyota_24pin_smart_box",
+        "toyota_27pin_smart_box"
+      ],
+      "notes": [
+        "OBDSTAR describes the split design as allowing connection to multiple ECU cables such as Toyota-24 and Toyota-27."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "obdstar_can_direct"
+        ]
+      }
+    },
+    "obdstar_can_direct_v2": {
+      "display_name": "OBDSTAR CAN DIRECT-V2",
+      "status": "current",
+      "category": "active_direct_can_interface",
+      "third_party_tool_compatible": true,
+      "compatible_tool_ids": [
+        "obdstar_keymaster_g3",
+        "obdstar_x300_classic_g3"
+      ],
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus",
+        "Fiat",
+        "Alfa Romeo",
+        "Jeep",
+        "Chrysler",
+        "Dodge",
+        "Renault",
+        "Vauxhall",
+        "Opel"
+      ],
+      "functions": [
+        "gateway_bypass",
+        "direct_can_access",
+        "proximity_key_programming",
+        "can_frame_acquisition",
+        "cluster_calibration_support",
+        "vehicle_repair_support"
+      ],
+      "included_components": [
+        "CAN DIRECT-V2 main cable",
+        "back-probe or piercing leads",
+        "Jeep/Chrysler CAN-C connector"
+      ],
+      "notes": [
+        "The programming tool must still support the requested function.",
+        "A stable battery supply is recommended during direct-CAN work."
+      ],
+      "verification": {
+        "status": "distributor_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "obdstar_can_direct_v2_supplier",
+          "obdstar_can_direct_v2_akey"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "obdstar_keymaster_g3": {
+      "publisher": "OBDSTAR",
+      "title": "KEYMASTER G3 IMMO Tool",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_362.html",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_keymaster_g3_news": {
+      "publisher": "OBDSTAR",
+      "title": "KEYMASTER G3 Product Announcement",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/News_1018.html",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_dc706": {
+      "publisher": "OBDSTAR",
+      "title": "DC706 ECU Tool",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_327.html",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_can_direct": {
+      "publisher": "OBDSTAR",
+      "title": "CAN DIRECT KIT",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_305.html",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_can_direct_v2_supplier": {
+      "publisher": "AsTools",
+      "title": "OBDSTAR CAN DIRECT-V2",
+      "type": "official_distributor",
+      "url": "https://www.astools.eu/products/obdstar-can-direct-v2-accessories",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_can_direct_v2_akey": {
+      "publisher": "A-Key GmbH",
+      "title": "OBDSTAR C1022 CAN DIRECT-V2 Kit",
+      "type": "specialist_supplier",
+      "url": "https://a-key-gmbh.com/OBDSTAR-C1022-CAN-DIRECT-V2-Kit",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_p004": {
+      "publisher": "OBDSTAR",
+      "title": "P004 Adapter",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_311.html",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_g3_test_platform_license": {
+      "publisher": "AsTools",
+      "title": "KeyMaster G3 Test Platform Software Licence",
+      "type": "official_distributor",
+      "url": "https://www.astools.eu/products/obdstar-g3-test-platform-software-license",
+      "checked_at": "2026-07-12"
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "obdstar",
+    "name": "OBDSTAR"
+  },
+  "category": "tools",
+  "items": {
+    "obdstar_keymaster_g3": {
+      "display_name": "OBDSTAR KeyMaster G3",
+      "short_name": "KeyMaster G3",
+      "status": "current",
+      "category": "multi_vehicle_immobiliser_programmer",
+      "supported_vehicle_types": [
+        "car",
+        "heavy_duty",
+        "electric_vehicle",
+        "motorcycle",
+        "marine"
+      ],
+      "functions": [
+        "immobiliser_programming",
+        "key_programming",
+        "diagnostics",
+        "ecu_programming_extension",
+        "airbag_reset_extension",
+        "cluster_calibration_extension",
+        "test_platform_extension"
+      ],
+      "notes": [
+        "Software functions depend on the purchased package and licences.",
+        "OBDSTAR describes it as the newer-generation successor platform to the X300 DP Plus family."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "obdstar_keymaster_g3",
+          "obdstar_keymaster_g3_news"
+        ]
+      }
+    },
+    "obdstar_x300_classic_g3": {
+      "display_name": "OBDSTAR X300 Classic G3",
+      "short_name": "X300 Classic G3",
+      "status": "current",
+      "category": "multi_function_programmer",
+      "functions": [
+        "immobiliser_programming",
+        "key_programming",
+        "cluster_calibration",
+        "ecu_programming_extension",
+        "airbag_reset_extension",
+        "test_platform_extension"
+      ],
+      "notes": [
+        "Package contents and activated software vary.",
+        "Recorded separately from KeyMaster G3 because distributors sell different software packages."
+      ],
+      "verification": {
+        "status": "supplier_confirmed",
+        "confidence": "medium_high",
+        "source_ids": [
+          "obdstar_can_direct_v2_akey"
+        ]
+      }
+    },
+    "obdstar_dc706": {
+      "display_name": "OBDSTAR DC706",
+      "short_name": "DC706",
+      "status": "current",
+      "category": "ecu_tcu_bcm_programmer",
+      "supported_modes": [
+        "obd",
+        "bench",
+        "boot",
+        "bdm",
+        "jtag"
+      ],
+      "functions": [
+        "ecu_information_read",
+        "eeprom_read",
+        "eeprom_write",
+        "dflash_read",
+        "dflash_write",
+        "pflash_read",
+        "pflash_write",
+        "map_read",
+        "map_write",
+        "ecu_clone",
+        "ecu_virgin_reset",
+        "ecu_recovery",
+        "immo_pin_read"
+      ],
+      "supported_module_classes": [
+        "ECM",
+        "TCM",
+        "BCM",
+        "BSI",
+        "other_control_modules"
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "obdstar_dc706"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "obdstar_keymaster_g3": {
+      "publisher": "OBDSTAR",
+      "title": "KEYMASTER G3 IMMO Tool",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_362.html",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_keymaster_g3_news": {
+      "publisher": "OBDSTAR",
+      "title": "KEYMASTER G3 Product Announcement",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/News_1018.html",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_dc706": {
+      "publisher": "OBDSTAR",
+      "title": "DC706 ECU Tool",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_327.html",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_can_direct": {
+      "publisher": "OBDSTAR",
+      "title": "CAN DIRECT KIT",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_305.html",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_can_direct_v2_supplier": {
+      "publisher": "AsTools",
+      "title": "OBDSTAR CAN DIRECT-V2",
+      "type": "official_distributor",
+      "url": "https://www.astools.eu/products/obdstar-can-direct-v2-accessories",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_can_direct_v2_akey": {
+      "publisher": "A-Key GmbH",
+      "title": "OBDSTAR C1022 CAN DIRECT-V2 Kit",
+      "type": "specialist_supplier",
+      "url": "https://a-key-gmbh.com/OBDSTAR-C1022-CAN-DIRECT-V2-Kit",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_p004": {
+      "publisher": "OBDSTAR",
+      "title": "P004 Adapter",
+      "type": "manufacturer",
+      "url": "https://www.obdstar.com/Products_311.html",
+      "checked_at": "2026-07-12"
+    },
+    "obdstar_g3_test_platform_license": {
+      "publisher": "AsTools",
+      "title": "KeyMaster G3 Test Platform Software Licence",
+      "type": "official_distributor",
+      "url": "https://www.astools.eu/products/obdstar-g3-test-platform-software-license",
+      "checked_at": "2026-07-12"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "yanhua",
+    "name": "Yanhua"
+  },
+  "category": "bench_connections",
+  "items": {
+    "yanhua_bdc2_key_learning_bench_platform": {
+      "display_name": "Yanhua BMW BDC2 Key Learning Bench Platform",
+      "compatible_module_ids": [
+        "yanhua_module_38_bmw_bdc2"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "BDC2"
+      ],
+      "functions": [
+        "all_keys_lost",
+        "bench_key_learning",
+        "module_power",
+        "bench_communication"
+      ],
+      "notes": [
+        "Manufacturer lists this as including BDC2 AKL authorisation and for use with Module 38."
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    },
+    "yanhua_fem_bdc_test_platform": {
+      "display_name": "Yanhua BMW FEM/BDC Test Platform",
+      "compatible_module_ids": [
+        "yanhua_module_02_fem_bdc"
+      ],
+      "vehicle_brands": [
+        "BMW",
+        "Mini"
+      ],
+      "supported_modules": [
+        "FEM",
+        "BDC"
+      ],
+      "functions": [
+        "module_power",
+        "bench_communication",
+        "key_programming_support"
+      ],
+      "verification": {
+        "status": "manufacturer_package_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "yanhua_module2_technical"
+        ]
+      }
+    },
+    "yanhua_desktop_obd_transfer_board": {
+      "display_name": "Yanhua Desktop OBD Transfer Board",
+      "category": "bench_breakout_board",
+      "functions": [
+        "bench_obd_connection",
+        "module_communication"
+      ],
+      "universality": "yanhua_package_component",
+      "verification": {
+        "status": "manufacturer_package_confirmed",
+        "confidence": "medium_high",
+        "source_ids": [
+          "yanhua_module2_technical"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "acdpmaster_module_catalogue": {
+      "publisher": "Yanhua ACDP / ACDP Master",
+      "title": "Mini ACDP Programming Master Modules",
+      "type": "manufacturer_catalogue",
+      "url": "https://www.acdpmaster.com/en/Module.html",
+      "checked_at": "2026-07-12"
+    },
+    "yanhua_module2_technical": {
+      "publisher": "Yanhua ACDP",
+      "title": "BMW FEM/BDC programming without soldering",
+      "type": "manufacturer_technical_article",
+      "url": "https://blog.yanhuaacdp.com/yanhua-mini-acdp-program-bmw-fem-bdc-without-soldering/",
+      "checked_at": "2026-07-12"
+    }
+  }
+}

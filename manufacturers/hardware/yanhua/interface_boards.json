@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "yanhua",
+    "name": "Yanhua"
+  },
+  "category": "interface_boards_and_clips",
+  "items": {
+    "yanhua_95128_95256_clip": {
+      "display_name": "Yanhua 95128/95256 Solder-Free EEPROM Clip",
+      "category": "passive_chip_clip",
+      "supported_chips": [
+        "95128",
+        "95256"
+      ],
+      "known_compatible_ecosystems": [
+        "Yanhua ACDP",
+        "Other programmers where electrically compatible"
+      ],
+      "universality": "passive_contact_tool",
+      "functions": [
+        "eeprom_read",
+        "eeprom_write"
+      ],
+      "notes": [
+        "The clip itself may be cross-tool; Yanhua Module 2 software authorisation is not."
+      ],
+      "verification": {
+        "status": "verified_with_cross_tool_caveat",
+        "confidence": "medium_high",
+        "source_ids": [
+          "yanhua_module2_technical"
+        ]
+      }
+    },
+    "yanhua_fem_bridge": {
+      "display_name": "Yanhua BMW FEM Bridge/Interface Board",
+      "category": "module_interface_board",
+      "supported_modules": [
+        "FEM"
+      ],
+      "compatible_module_ids": [
+        "yanhua_module_02_fem_bdc"
+      ],
+      "functions": [
+        "module_contact",
+        "icp_access"
+      ],
+      "verification": {
+        "status": "manufacturer_package_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "yanhua_module2_technical"
+        ]
+      }
+    },
+    "yanhua_bdc_bridge": {
+      "display_name": "Yanhua BMW BDC Bridge/Interface Board",
+      "category": "module_interface_board",
+      "supported_modules": [
+        "BDC"
+      ],
+      "compatible_module_ids": [
+        "yanhua_module_02_fem_bdc"
+      ],
+      "functions": [
+        "module_contact",
+        "icp_access"
+      ],
+      "verification": {
+        "status": "manufacturer_package_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "yanhua_module2_technical"
+        ]
+      }
+    },
+    "yanhua_bdc3_bcp_original_key_board": {
+      "display_name": "Yanhua BDC3/BCP Original Key Copy Interface Board",
+      "category": "key_interface_board",
+      "supported_modules": [
+        "BDC3",
+        "BCP"
+      ],
+      "compatible_module_ids": [
+        "yanhua_module_38_bmw_bdc2"
+      ],
+      "functions": [
+        "original_key_data_read",
+        "original_key_data_write"
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "acdpmaster_module_catalogue"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "acdpmaster_module_catalogue": {
+      "publisher": "Yanhua ACDP / ACDP Master",
+      "title": "Mini ACDP Programming Master Modules",
+      "type": "manufacturer_catalogue",
+      "url": "https://www.acdpmaster.com/en/Module.html",
+      "checked_at": "2026-07-12"
+    },
+    "yanhua_module2_technical": {
+      "publisher": "Yanhua ACDP",
+      "title": "BMW FEM/BDC programming without soldering",
+      "type": "manufacturer_technical_article",
+      "url": "https://blog.yanhuaacdp.com/yanhua-mini-acdp-program-bmw-fem-bdc-without-soldering/",
+      "checked_at": "2026-07-12"
+    }
+  }
+}

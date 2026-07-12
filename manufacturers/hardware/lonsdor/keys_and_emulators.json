@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-12",
+  "manufacturer": {
+    "id": "lonsdor",
+    "name": "Lonsdor"
+  },
+  "category": "keys_and_emulators",
+  "items": {
+    "lonsdor_lt20": {
+      "display_name": "Lonsdor LT20 Toyota/Lexus/Subaru Universal Smart Key",
+      "short_name": "LT20",
+      "status": "current",
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus",
+        "Subaru"
+      ],
+      "category": "programmable_smart_key",
+      "functions": [
+        "smart_key_generation",
+        "replacement_key_use"
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "lonsdor_lt20"
+        ]
+      }
+    },
+    "lonsdor_lt30": {
+      "display_name": "Lonsdor LT30 Toyota/Lexus Smart Key",
+      "short_name": "LT30",
+      "status": "current",
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus"
+      ],
+      "category": "programmable_smart_key",
+      "functions": [
+        "smart_key_generation",
+        "replacement_key_use"
+      ],
+      "verification": {
+        "status": "manufacturer_confirmed",
+        "confidence": "high",
+        "source_ids": [
+          "lonsdor_lt30"
+        ]
+      }
+    },
+    "lonsdor_lke_emulator": {
+      "display_name": "Lonsdor LKE Smart Key Emulator",
+      "short_name": "LKE",
+      "status": "legacy_supported",
+      "category": "smart_key_emulator",
+      "vehicle_brands": [
+        "Toyota",
+        "Lexus",
+        "Mitsubishi",
+        "Porsche"
+      ],
+      "functions": [
+        "selected_all_keys_lost_emulation",
+        "emergency_start",
+        "smart_key_data_assistance"
+      ],
+      "notes": [
+        "Exact supported emulator profiles depend on vehicle and procedure."
+      ],
+      "verification": {
+        "status": "manufacturer_product_line_confirmed",
+        "confidence": "medium_high",
+        "source_ids": [
+          "lonsdor_k518ise"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "lonsdor_home": {
+      "publisher": "Lonsdor",
+      "title": "Lonsdor Product Catalogue",
+      "type": "manufacturer_catalogue",
+      "url": "https://www.lonsdor.com/",
+      "checked_at": "2026-07-12"
+    },
+    "lonsdor_k518pro_manual": {
+      "publisher": "Lonsdor",
+      "title": "K518 PRO User Manual",
+      "type": "manufacturer_manual",
+      "url": "https://xdn-product.cdn.lonsdor.com/instructions4106ba572da5e8a482520bc3d5924cfb.pdf",
+      "checked_at": "2026-07-12"
+    },
+    "lonsdor_k518ise": {
+      "publisher": "Lonsdor",
+      "title": "K518ISE Product Information",
+      "type": "manufacturer_product",
+      "url": "https://en.lonsdor.com/html/K518ISE/203",
+      "checked_at": "2026-07-12"
+    },
+    "lonsdor_kh100plus": {
+      "publisher": "Lonsdor",
+      "title": "KH100+ Product Information",
+      "type": "manufacturer_product",
+      "url": "https://en.lonsdor.com/html/KH100E/322",
+      "checked_at": "2026-07-12"
+    },
+    "lonsdor_lt20": {
+      "publisher": "Lonsdor",
+      "title": "LT20 Toyota/Lexus Smart Key",
+      "type": "manufacturer_product",
+      "url": "https://en.lonsdor.com/html/LT20",
+      "checked_at": "2026-07-12"
+    },
+    "lonsdor_lt30": {
+      "publisher": "Lonsdor",
+      "title": "LT30 Toyota/Lexus Smart Key",
+      "type": "manufacturer_product",
+      "url": "https://en.lonsdor.com/html/LT30",
+      "checked_at": "2026-07-12"
+    },
+    "lonsdor_super_adp": {
+      "publisher": "Lonsdor",
+      "title": "ADP / Super ADP Product Information",
+      "type": "manufacturer_product",
+      "url": "https://en.lonsdor.com/html/ADP",
+      "checked_at": "2026-07-12"
+    },
+    "lonsdor_jlr_immo": {
+      "publisher": "Lonsdor",
+      "title": "JLR-IMMO Product Information",
+      "type": "manufacturer_product",
+      "url": "https://en.lonsdor.com/html/JLR-IMMO/236",
+      "checked_at": "2026-07-12"
+    },
+    "lonsdor_kprog_volvo": {
+      "publisher": "Lonsdor",
+      "title": "KPROG Volvo CEM/KVM Technical Case",
+      "type": "manufacturer_technical_case",
+      "url": "https://en.lonsdor.com/html/KPROG_Video/101",
+      "checked_at": "2026-07-12"
+    },
+    "lonsdor_subscription_faq": {
+      "publisher": "Lonsdor",
+      "title": "K518 Subscription FAQ",
+      "type": "manufacturer_faq",
+      "url": "https://en.lonsdor.com/html/K518%20FAQ/257",
+      "checked_at": "2026-07-12"
+    },
+    "lonsdor_2025_solder_free": {
+      "publisher": "Lonsdor",
+      "title": "2025 Automechanika Shanghai Highlights",
+      "type": "manufacturer_news",
+      "url": "https://en.lonsdor.com/html/gongsi/573",
+      "checked_at": "2026-07-12"
+    }
+  }
+}
