@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-13",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -11,35 +11,127 @@
   },
   "category": "vehicles",
   "items": {
-    "mk7_ui_test": {
-      "record_id": "ford_fiesta_mk7_ui_test",
+    "mk8_flip_key": {
+      "record_id": "ford_fiesta_mk8_flip_key_uk",
       "vehicle": {
         "make": "Ford",
         "model": "Fiesta",
-        "variant": "Mk7 UI Test",
-        "generation": "Mk7",
-        "year_from": 2008,
-        "year_to": 2017,
+        "variant": "Mk8 Remote Flip Key",
+        "generation": "Mk8 / CE1",
+        "year_from": 2017,
+        "year_to": 2023,
         "market": "UK",
         "drive_side": "RHD"
       },
       "vehicle_information": {
-        "immobiliser_system": "PATS",
-        "immobiliser_generation": "Verification pending",
-        "transponder_type": "Variant dependent — verification pending",
-        "frequency_mhz": "Variant dependent",
-        "blade_profile": "HU101 — confirm against exact vehicle",
-        "key_type": "Remote key or proximity key depending on variant",
-        "notes": "UI test record only. Exact year, trim, key system and transponder must be verified before workshop use."
+        "immobiliser_system": "Ford Passive Anti-Theft System (PATS)",
+        "immobiliser_generation": "Not verified from a public primary source",
+        "transponder_type": "Not verified",
+        "frequency_mhz": "Not verified",
+        "blade_profile": "Not verified",
+        "key_type": "Remote flip key with mechanical ignition blade",
+        "smart_key": false,
+        "notes": "Ford's UK owner manual documents a remote flip-key configuration and states that the key blade is used to start the vehicle. Exact key electronics, frequency and blade profile must be confirmed against VIN and the original key."
       },
       "verification": {
-        "status": "ui_test_only",
-        "confidence": "low",
-        "last_verified": null,
-        "sources": [],
-        "notes": "This record exists to test the new nested database and app screens. It is not approved as workshop guidance."
+        "status": "partially_verified",
+        "confidence": "high_for_vehicle_configuration",
+        "last_verified": "2026-07-13",
+        "verified_fields": [
+          "generation family",
+          "UK market",
+          "remote flip-key configuration",
+          "mechanical ignition blade",
+          "PATS terminology"
+        ],
+        "unverified_fields": [
+          "transponder type",
+          "remote frequency",
+          "blade profile",
+          "tool coverage",
+          "programming procedure"
+        ],
+        "sources": [
+          "ford_owner_manual_2020_uk",
+          "ford_fiesta_2017_2023_support"
+        ]
+      }
+    },
+    "mk8_passive_key": {
+      "record_id": "ford_fiesta_mk8_passive_key_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Mk8 Passive Key / Push Button Start",
+        "generation": "Mk8 / CE1",
+        "year_from": 2017,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford Passive Anti-Theft System (PATS)",
+        "immobiliser_generation": "Not verified from a public primary source",
+        "transponder_type": "Not verified",
+        "frequency_mhz": "Not verified",
+        "blade_profile": "Emergency blade profile not verified",
+        "key_type": "Passive key with removable emergency blade",
+        "smart_key": true,
+        "backup_start": "Place the passive key in the documented backup position with the buttons facing upward, then use the push-button ignition.",
+        "notes": "Ford's UK owner manual documents passive-key, keyless-entry and push-button-start configurations. Exact key electronics, frequency and emergency blade profile must be confirmed against VIN and the original key."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "confidence": "high_for_vehicle_configuration",
+        "last_verified": "2026-07-13",
+        "verified_fields": [
+          "generation family",
+          "UK market",
+          "passive-key configuration",
+          "push-button start",
+          "removable emergency blade",
+          "backup key position",
+          "PATS terminology"
+        ],
+        "unverified_fields": [
+          "transponder type",
+          "remote frequency",
+          "emergency blade profile",
+          "tool coverage",
+          "programming procedure"
+        ],
+        "sources": [
+          "ford_owner_manual_2020_uk",
+          "ford_fiesta_2017_2023_support"
+        ]
       }
     }
   },
-  "sources": {}
+  "sources": {
+    "ford_owner_manual_2020_uk": {
+      "publisher": "Ford Motor Company",
+      "title": "Fiesta (CE1) Owner's Manual, en-GBR, edition 201909",
+      "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3654en-201909-20200128135830.pdf",
+      "accessed": "2026-07-13",
+      "scope": [
+        "remote flip key",
+        "passive key",
+        "removable key blade",
+        "passive key backup position",
+        "push-button start",
+        "PATS / passive anti-theft system",
+        "data link connector"
+      ]
+    },
+    "ford_fiesta_2017_2023_support": {
+      "publisher": "Ford UK",
+      "title": "Fiesta (2017) owner manuals and vehicle support pages",
+      "url": "https://www.ford.co.uk/support/vehicle/fiesta-2017/2022/owner-manuals",
+      "accessed": "2026-07-13",
+      "scope": [
+        "Ford UK identifies the generation as Fiesta (2017)",
+        "owner manuals are published for later model years including 2022"
+      ]
+    }
+  }
 }
