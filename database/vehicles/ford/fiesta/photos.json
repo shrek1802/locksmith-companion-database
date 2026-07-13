@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-13",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -11,10 +11,40 @@
   },
   "category": "vehicle_photos",
   "items": {
-    "mk7_ui_test": {
+    "mk8_flip_key": {
       "images": [],
-      "notes": "Verified UK RHD photos will be added later."
+      "notes": "No redistributable workshop photos have been added."
+    },
+    "mk8_passive_key": {
+      "images": [],
+      "notes": "No redistributable workshop photos have been added. Use the cited Ford owner manual for the backup-position illustration."
     }
   },
-  "sources": {}
+  "sources": {
+    "ford_owner_manual_2020_uk": {
+      "publisher": "Ford Motor Company",
+      "title": "Fiesta (CE1) Owner's Manual, en-GBR, edition 201909",
+      "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3654en-201909-20200128135830.pdf",
+      "accessed": "2026-07-13",
+      "scope": [
+        "remote flip key",
+        "passive key",
+        "removable key blade",
+        "passive key backup position",
+        "push-button start",
+        "PATS / passive anti-theft system",
+        "data link connector"
+      ]
+    },
+    "ford_fiesta_2017_2023_support": {
+      "publisher": "Ford UK",
+      "title": "Fiesta (2017) owner manuals and vehicle support pages",
+      "url": "https://www.ford.co.uk/support/vehicle/fiesta-2017/2022/owner-manuals",
+      "accessed": "2026-07-13",
+      "scope": [
+        "Ford UK identifies the generation as Fiesta (2017)",
+        "owner manuals are published for later model years including 2022"
+      ]
+    }
+  }
 }
