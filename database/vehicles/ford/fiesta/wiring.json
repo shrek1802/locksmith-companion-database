@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-13",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -11,19 +11,56 @@
   },
   "category": "vehicle_wiring",
   "items": {
-    "mk7_ui_test": {
+    "mk8_flip_key": {
       "obd": {
-        "connector": "16-pin OBD-II",
-        "location": "Driver footwell area",
-        "battery_support": "Required for programming tests",
-        "gateway_bypass": "Not stated",
-        "notes": "No wiring or pinout data is approved yet."
+        "connector": "16-pin data link connector",
+        "pinout": "Standard connector existence verified; vehicle-specific programming pin usage not verified",
+        "battery_support": "Use stable support during programming as professional practice",
+        "gateway_bypass": "Not verified"
       },
       "eeprom": {
-        "status": "No verified EEPROM procedure added",
-        "required_for_current_test_record": false
+        "status": "No verified EEPROM / MCU procedure",
+        "required_for_current_record": "Not verified"
+      }
+    },
+    "mk8_passive_key": {
+      "obd": {
+        "connector": "16-pin data link connector",
+        "pinout": "Standard connector existence verified; vehicle-specific programming pin usage not verified",
+        "battery_support": "Use stable support during programming as professional practice",
+        "gateway_bypass": "Not verified"
+      },
+      "eeprom": {
+        "status": "No verified EEPROM / MCU procedure",
+        "required_for_current_record": "Not verified"
       }
     }
   },
-  "sources": {}
+  "sources": {
+    "ford_owner_manual_2020_uk": {
+      "publisher": "Ford Motor Company",
+      "title": "Fiesta (CE1) Owner's Manual, en-GBR, edition 201909",
+      "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3654en-201909-20200128135830.pdf",
+      "accessed": "2026-07-13",
+      "scope": [
+        "remote flip key",
+        "passive key",
+        "removable key blade",
+        "passive key backup position",
+        "push-button start",
+        "PATS / passive anti-theft system",
+        "data link connector"
+      ]
+    },
+    "ford_fiesta_2017_2023_support": {
+      "publisher": "Ford UK",
+      "title": "Fiesta (2017) owner manuals and vehicle support pages",
+      "url": "https://www.ford.co.uk/support/vehicle/fiesta-2017/2022/owner-manuals",
+      "accessed": "2026-07-13",
+      "scope": [
+        "Ford UK identifies the generation as Fiesta (2017)",
+        "owner manuals are published for later model years including 2022"
+      ]
+    }
+  }
 }
