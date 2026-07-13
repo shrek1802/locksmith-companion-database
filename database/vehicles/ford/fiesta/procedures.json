@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-13",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -11,68 +11,106 @@
   },
   "category": "vehicle_procedures",
   "items": {
-    "mk7_ui_test": {
+    "mk8_flip_key": {
       "add_key": {
         "display_name": "Add Key",
-        "overall_status": "verification_pending",
+        "overall_status": "not_verified",
         "difficulty": "Not rated",
-        "estimated_minutes": {
-          "minimum": 15,
-          "typical": 20,
-          "maximum": 30
-        },
-        "method": [
-          "OBD"
-        ],
-        "obd_required": true,
-        "eeprom_required": false,
-        "working_key_required": true,
-        "dealer_key_required": "Variant dependent",
-        "battery_support_required": true,
-        "supported_tools": [
-          "Autel IM508S — compatibility to verify",
-          "Autel IM608 — compatibility to verify"
-        ],
+        "estimated_minutes": "Not verified",
+        "method": [],
+        "obd_required": "Not verified",
+        "eeprom_required": "Not verified",
+        "working_key_required": "Not verified",
+        "dealer_key_required": "Not verified",
+        "battery_support_required": "Recommended as professional practice; vehicle-specific requirement not verified",
+        "supported_tools": [],
         "warnings": [
-          "UI test information only. Verify the exact vehicle and tool coverage before programming."
+          "No public primary source was found that safely verifies the aftermarket programming method, security access, wait time or tool coverage for this exact configuration.",
+          "Confirm the vehicle by VIN, ignition type and existing key before selecting a programming path."
         ],
-        "steps": [
-          "Confirm exact model year, ignition type and key system.",
-          "Connect stable battery support.",
-          "Follow the selected tool's current Ford PATS menu and on-screen instructions."
-        ]
+        "steps": []
       },
       "all_keys_lost": {
         "display_name": "All Keys Lost",
-        "overall_status": "verification_pending",
+        "overall_status": "not_verified",
         "difficulty": "Not rated",
-        "estimated_minutes": {
-          "minimum": 25,
-          "typical": 35,
-          "maximum": 50
-        },
-        "method": [
-          "OBD"
-        ],
-        "obd_required": true,
-        "eeprom_required": false,
+        "estimated_minutes": "Not verified",
+        "method": [],
+        "obd_required": "Not verified",
+        "eeprom_required": "Not verified",
         "working_key_required": false,
-        "dealer_key_required": "Variant dependent",
-        "battery_support_required": true,
-        "supported_tools": [
-          "Autel IM508S — compatibility to verify",
-          "Autel IM608 — compatibility to verify"
-        ],
+        "dealer_key_required": "Not verified",
+        "battery_support_required": "Recommended as professional practice; vehicle-specific requirement not verified",
+        "supported_tools": [],
         "warnings": [
-          "UI test information only. Do not rely on this record for a customer vehicle until verified."
+          "Do not treat this record as an approved AKL procedure until tool-specific coverage and security requirements are verified from current official documentation."
         ],
-        "steps": [
-          "Confirm exact model year, ignition type and key system.",
-          "Connect stable battery support.",
-          "Confirm all required keys are present before starting the learning cycle."
-        ]
+        "steps": []
+      }
+    },
+    "mk8_passive_key": {
+      "add_key": {
+        "display_name": "Add Passive Key",
+        "overall_status": "not_verified",
+        "difficulty": "Not rated",
+        "estimated_minutes": "Not verified",
+        "method": [],
+        "obd_required": "Not verified",
+        "eeprom_required": "Not verified",
+        "working_key_required": "Not verified",
+        "dealer_key_required": "Not verified",
+        "battery_support_required": "Recommended as professional practice; vehicle-specific requirement not verified",
+        "supported_tools": [],
+        "warnings": [
+          "Passive-key programming coverage and security access were not verified from a public primary source.",
+          "Confirm the vehicle has push-button start and identify the exact key part number before programming."
+        ],
+        "steps": []
+      },
+      "all_keys_lost": {
+        "display_name": "All Passive Keys Lost",
+        "overall_status": "not_verified",
+        "difficulty": "Not rated",
+        "estimated_minutes": "Not verified",
+        "method": [],
+        "obd_required": "Not verified",
+        "eeprom_required": "Not verified",
+        "working_key_required": false,
+        "dealer_key_required": "Not verified",
+        "battery_support_required": "Recommended as professional practice; vehicle-specific requirement not verified",
+        "supported_tools": [],
+        "warnings": [
+          "Do not treat this record as an approved AKL procedure until current official tool coverage and security requirements are verified."
+        ],
+        "steps": []
       }
     }
   },
-  "sources": {}
+  "sources": {
+    "ford_owner_manual_2020_uk": {
+      "publisher": "Ford Motor Company",
+      "title": "Fiesta (CE1) Owner's Manual, en-GBR, edition 201909",
+      "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3654en-201909-20200128135830.pdf",
+      "accessed": "2026-07-13",
+      "scope": [
+        "remote flip key",
+        "passive key",
+        "removable key blade",
+        "passive key backup position",
+        "push-button start",
+        "PATS / passive anti-theft system",
+        "data link connector"
+      ]
+    },
+    "ford_fiesta_2017_2023_support": {
+      "publisher": "Ford UK",
+      "title": "Fiesta (2017) owner manuals and vehicle support pages",
+      "url": "https://www.ford.co.uk/support/vehicle/fiesta-2017/2022/owner-manuals",
+      "accessed": "2026-07-13",
+      "scope": [
+        "Ford UK identifies the generation as Fiesta (2017)",
+        "owner manuals are published for later model years including 2022"
+      ]
+    }
+  }
 }
