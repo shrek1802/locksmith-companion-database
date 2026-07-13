@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-13",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -9,8 +9,8 @@
     "id": "fiesta",
     "name": "Fiesta"
   },
-  "version": 1,
-  "status": "ui_test",
+  "version": 2,
+  "status": "partially_verified",
   "files": {
     "models": "models.json",
     "procedures": "procedures.json",
@@ -19,5 +19,10 @@
     "service_functions": "service_functions.json",
     "notes": "notes.json",
     "photos": "photos.json"
+  },
+  "verification": {
+    "scope": "Verified vehicle/key configuration foundation only",
+    "programming_status": "Not verified",
+    "last_verified": "2026-07-13"
   }
 }
