@@ -1,14 +1,20 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-12",
-  "market": "UK",
-  "drive_side": "RHD",
-  "manufacturers": {
-    "ford": {
-      "name": "Ford",
-      "version": 1,
-      "manifest": "ford/manifest.json",
-      "status": "in_development"
+  "updated_at": "2026-07-13",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford",
+    "market": "UK",
+    "drive_side": "RHD"
+  },
+  "version": 3,
+  "models": {
+    "fiesta": {
+      "name": "Fiesta",
+      "version": 2,
+      "manifest": "fiesta/manifest.json",
+      "status": "partially_verified"
     }
-  }
+  },
+  "status": "in_development"
 }
