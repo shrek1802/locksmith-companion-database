@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-13",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -11,18 +11,62 @@
   },
   "category": "vehicle_modules",
   "items": {
-    "mk7_ui_test": {
-      "obd_port": {
-        "display_name": "OBD-II diagnostic connector",
-        "location": "Driver footwell area",
-        "rhd_notes": "Exact UK RHD position and image still to be verified."
+    "mk8_flip_key": {
+      "data_link_connector": {
+        "display_name": "16-pin data link connector",
+        "location": "Exact physical location not verified in the public owner-manual text",
+        "notes": "The Ford owner manual confirms the vehicle has a data link connector and identifies protected fuse circuits for it."
       },
-      "immobiliser_control": {
-        "display_name": "PATS-related control module",
-        "location": "Variant dependent",
-        "notes": "Exact module responsibility and location must be verified by year and key system."
+      "body_control_module": {
+        "display_name": "Body Control Module",
+        "location": "Not verified",
+        "notes": "The owner manual lists a body control module in the fuse chart, but does not provide a locksmith service location."
+      }
+    },
+    "mk8_passive_key": {
+      "passive_key_backup_position": {
+        "display_name": "Passive key backup position",
+        "location": "Under the removable rubber mat in the centre-console storage area shown in the Ford manual",
+        "orientation": "Buttons facing upward",
+        "notes": "Used when the passive-key battery is depleted or the passive-key frequencies are jammed."
+      },
+      "data_link_connector": {
+        "display_name": "16-pin data link connector",
+        "location": "Exact physical location not verified in the public owner-manual text",
+        "notes": "The Ford owner manual confirms the vehicle has a data link connector and identifies protected fuse circuits for it."
+      },
+      "body_control_module": {
+        "display_name": "Body Control Module",
+        "location": "Not verified",
+        "notes": "The owner manual lists a body control module in the fuse chart, but does not provide a locksmith service location."
       }
     }
   },
-  "sources": {}
+  "sources": {
+    "ford_owner_manual_2020_uk": {
+      "publisher": "Ford Motor Company",
+      "title": "Fiesta (CE1) Owner's Manual, en-GBR, edition 201909",
+      "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3654en-201909-20200128135830.pdf",
+      "accessed": "2026-07-13",
+      "scope": [
+        "remote flip key",
+        "passive key",
+        "removable key blade",
+        "passive key backup position",
+        "push-button start",
+        "PATS / passive anti-theft system",
+        "data link connector"
+      ]
+    },
+    "ford_fiesta_2017_2023_support": {
+      "publisher": "Ford UK",
+      "title": "Fiesta (2017) owner manuals and vehicle support pages",
+      "url": "https://www.ford.co.uk/support/vehicle/fiesta-2017/2022/owner-manuals",
+      "accessed": "2026-07-13",
+      "scope": [
+        "Ford UK identifies the generation as Fiesta (2017)",
+        "owner manuals are published for later model years including 2022"
+      ]
+    }
+  }
 }
