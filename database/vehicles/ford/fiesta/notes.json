@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-13",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -11,20 +11,57 @@
   },
   "category": "vehicle_notes",
   "items": {
-    "mk7_ui_test": {
-      "summary": "First nested Fiesta record for testing the app layout.",
-      "warnings": [
-        "Not approved for workshop use.",
-        "Verify exact year, ignition type, transponder and tool coverage before carrying out work."
+    "mk8_flip_key": {
+      "summary": "Verified foundation record for UK Fiesta Mk8 / CE1 with remote flip key.",
+      "verified_notes": [
+        "Ford documents a remote flip-key configuration.",
+        "The key blade is used to start this configuration.",
+        "The vehicle uses Ford's Passive Anti-Theft System terminology."
       ],
-      "testing_checks": [
-        "Ford manufacturer tile shows one model.",
-        "Fiesta model card opens.",
-        "Quick Job card displays both operations.",
-        "OBD and EEPROM custom icons render correctly.",
-        "Modules, Tools, Notes and Programming tiles open without errors."
+      "warnings": [
+        "Transponder, frequency, blade profile and aftermarket programming coverage remain unverified.",
+        "Do not use unverified values for ordering or programming a customer key."
+      ]
+    },
+    "mk8_passive_key": {
+      "summary": "Verified foundation record for UK Fiesta Mk8 / CE1 with passive key and push-button start.",
+      "verified_notes": [
+        "The passive key contains a removable emergency blade.",
+        "The key must be inside the vehicle to switch on the ignition and start the engine.",
+        "The backup position is beneath a rubber mat and the key is placed buttons-up.",
+        "The backup position can be used when the key battery is flat or frequencies are jammed."
+      ],
+      "warnings": [
+        "Transponder, frequency, blade profile and aftermarket programming coverage remain unverified.",
+        "Do not use unverified values for ordering or programming a customer key."
       ]
     }
   },
-  "sources": {}
+  "sources": {
+    "ford_owner_manual_2020_uk": {
+      "publisher": "Ford Motor Company",
+      "title": "Fiesta (CE1) Owner's Manual, en-GBR, edition 201909",
+      "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3654en-201909-20200128135830.pdf",
+      "accessed": "2026-07-13",
+      "scope": [
+        "remote flip key",
+        "passive key",
+        "removable key blade",
+        "passive key backup position",
+        "push-button start",
+        "PATS / passive anti-theft system",
+        "data link connector"
+      ]
+    },
+    "ford_fiesta_2017_2023_support": {
+      "publisher": "Ford UK",
+      "title": "Fiesta (2017) owner manuals and vehicle support pages",
+      "url": "https://www.ford.co.uk/support/vehicle/fiesta-2017/2022/owner-manuals",
+      "accessed": "2026-07-13",
+      "scope": [
+        "Ford UK identifies the generation as Fiesta (2017)",
+        "owner manuals are published for later model years including 2022"
+      ]
+    }
+  }
 }
