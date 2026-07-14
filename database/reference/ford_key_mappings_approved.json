@@ -3,7 +3,7 @@
   "updated_at": "2026-07-14",
   "manufacturer": "ford",
   "market": "UK",
-  "version": 1,
+  "version": 2,
   "status": "approved",
   "rules": {
     "minimum_independent_sources": 2,
@@ -16,40 +16,74 @@
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "mhz_433_92",
-      "key_type_id": "remote_head_key",
-      "remote_type_id": "remote_3_button",
-      "immobiliser_id": "ford_pats_crypto_4d",
-      "approval": {
-        "blade": "approved",
-        "transponder": "approved",
-        "frequency": "approved",
-        "key_type": "approved",
-        "remote_type": "approved",
-        "immobiliser": "approved"
-      },
-      "sources": [
-        "SRC-TRANSPONDERY-FORD-FIESTA",
-        "SRC-KEYSTATION-FORD-ID63-HU101-433"
-      ],
-      "notes": "Transpondery gives Fiesta 2008-2012 as Texas 4D63. KeyStation UK lists Ford Fiesta-compatible 3-button remote-head/non-flip keys at 433 MHz with ID63 80-bit and HU101/FO-24."
+      "tool_ids": [],
+      "approval": {"blade":"approved","transponder":"approved","frequency":"approved","tools":"pending"},
+      "sources": ["SRC-TRANSPONDERY-FORD-FIESTA","SRC-KEYSTATION-FORD-ID63-HU101-433"]
+    },
+    "ford_b_max_2012_2017_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "mhz_433_92",
+      "tool_ids": [],
+      "approval": {"blade":"approved","transponder":"approved","frequency":"approved","tools":"pending"},
+      "sources": ["SRC-TRANSPONDERY-FORD-BMAX","SRC-KEYSTATION-BMAX-CMAX-FIESTA"]
+    },
+    "ford_b_max_2012_2017_passive_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "mhz_433_92",
+      "tool_ids": [],
+      "approval": {"blade":"approved","transponder":"approved","frequency":"approved","tools":"pending"},
+      "sources": ["SRC-TRANSPONDERY-FORD-BMAX","SRC-KEYSTATION-BMAX-CMAX-FIESTA"]
+    },
+    "ford_c_max_2007_2010_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "mhz_433_92",
+      "tool_ids": [],
+      "approval": {"blade":"approved","transponder":"approved","frequency":"approved","tools":"pending"},
+      "sources": ["SRC-TRANSPONDERY-FORD-CMAX","SRC-KEYSTATION-CMAX-ID63-HU101-433"]
+    },
+    "ford_c_max_2010_2014_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "mhz_433_92",
+      "tool_ids": [],
+      "approval": {"blade":"approved","transponder":"approved","frequency":"approved","tools":"pending"},
+      "sources": ["SRC-TRANSPONDERY-FORD-CMAX","SRC-KEYSTATION-CMAX-ID63-HU101-433"]
+    },
+    "ford_c_max_2010_2014_passive_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "mhz_433_92",
+      "tool_ids": [],
+      "approval": {"blade":"approved","transponder":"approved","frequency":"approved","tools":"pending"},
+      "sources": ["SRC-TRANSPONDERY-FORD-CMAX","SRC-KEYSTATION-BMAX-CMAX-FIESTA"]
+    },
+    "ford_c_max_2015_2019_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "frequency_unknown",
+      "tool_ids": [],
+      "approval": {"blade":"approved","transponder":"approved","frequency":"hold","tools":"pending"},
+      "sources": ["SRC-TRANSPONDERY-FORD-CMAX","SRC-KEYSTATION-CMAX-ID49-HU101"]
+    },
+    "ford_c_max_2015_2019_passive_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "frequency_unknown",
+      "tool_ids": [],
+      "approval": {"blade":"approved","transponder":"approved","frequency":"hold","tools":"pending"},
+      "sources": ["SRC-TRANSPONDERY-FORD-CMAX","SRC-KEYSTATION-CMAX-ID49-HU101"]
     }
   },
   "sources": {
-    "SRC-TRANSPONDERY-FORD-FIESTA": {
-      "publisher": "Transpondery",
-      "title": "Ford Transponder Catalog — Fiesta",
-      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
-      "type": "professional_catalogue",
-      "accessed": "2026-07-14",
-      "evidence": "Fiesta 2008-2012: Texas Crypto 4D63 / ID63"
-    },
-    "SRC-KEYSTATION-FORD-ID63-HU101-433": {
-      "publisher": "KeyStation UK",
-      "title": "Ford remote key catalogue",
-      "url": "https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys",
-      "type": "uk_professional_supplier_catalogue",
-      "accessed": "2026-07-14",
-      "evidence": "Fiesta-compatible 3-button remote-head/non-flip keys listed as 433 MHz, ID63 80-bit and HU101/FO-24"
-    }
+    "SRC-TRANSPONDERY-FORD-FIESTA": {"publisher":"Transpondery","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-14","evidence":"Fiesta 2008-2012 Texas 4D63 / ID63"},
+    "SRC-KEYSTATION-FORD-ID63-HU101-433": {"publisher":"KeyStation UK","url":"https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys","accessed":"2026-07-14","evidence":"Fiesta-compatible 433 MHz ID63 80-bit HU101/FO-24 keys"},
+    "SRC-TRANSPONDERY-FORD-BMAX": {"publisher":"Transpondery","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-14","evidence":"B-Max 2012-2018 DST80 / ID63-6F / 80-bit"},
+    "SRC-KEYSTATION-BMAX-CMAX-FIESTA": {"publisher":"KeyStation UK","url":"https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys","accessed":"2026-07-14","evidence":"B-Max/C-Max/Fiesta 3-button keyless remote listed at 433 MHz, ID63 80-bit, HU101"},
+    "SRC-TRANSPONDERY-FORD-CMAX": {"publisher":"Transpondery","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-14","evidence":"C-Max 2003-2010 4D63; 2010-2015 DST80; 2015-2020 Hitag Pro ID47"},
+    "SRC-KEYSTATION-CMAX-ID63-HU101-433": {"publisher":"KeyStation UK","url":"https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys","accessed":"2026-07-14","evidence":"C-Max keys listed at 433 MHz, ID63 80-bit, HU101"},
+    "SRC-KEYSTATION-CMAX-ID49-HU101": {"publisher":"KeyStation UK","url":"https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys","accessed":"2026-07-14","evidence":"C-Max/Focus/Grand C-Max keyless remote listed as ID49 with HU101"}
   }
 }
