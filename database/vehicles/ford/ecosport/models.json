@@ -1,0 +1,12 @@
+{
+  "schema_version":"2.1",
+  "updated_at":"2026-07-14",
+  "manufacturer":{"id":"ford","name":"Ford"},
+  "model":{"id":"ecosport","name":"EcoSport"},
+  "category":"vehicles",
+  "items":{
+    "ecosport_2014_2023_keyed":{"record_id":"ford_ecosport_2014_2023_keyed_uk","vehicle":{"make":"Ford","model":"EcoSport","variant":"Keyed Ignition","generation":"UK second-generation family","year_from":2014,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"Keep facelift changes within this range unless technical evidence proves a locksmith-relevant security breakpoint."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_ecosport_split_audit"]}},
+    "ecosport_2014_2023_passive":{"record_id":"ford_ecosport_2014_2023_passive_uk","vehicle":{"make":"Ford","model":"EcoSport","variant":"Passive Key / Push Button Start","generation":"UK second-generation family","year_from":2014,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Emergency blade verification required","key_type":"Passive key with emergency blade","smart_key":true,"notes":"Use only where passive start is confirmed. Exact UK introduction and trim/build availability remain under audit."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_ecosport_split_audit"]}}
+  },
+  "sources":{"ford_ecosport_split_audit":{"publisher":"Locksmith Companion Database","title":"Ford MPV and SUV Security Split Audit","path":"Docs/FORD_MPV_SUV_SPLIT_AUDIT.md","accessed":"2026-07-14","scope":["EcoSport UK inventory boundary","keyed/passive separation","facelift handling"]}}
+}
