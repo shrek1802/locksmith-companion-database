@@ -140,25 +140,62 @@ The generation boundaries and the need for a 2008–2011 passive-start record ar
 
 | Badge/model | Inventory range | Split audit status | Current decision |
 |---|---:|---|---|
-| Transit | 1994–2000 | verification_required | Verify transponder introduction and Mk5 PATS split. |
-| Transit | 2000–2006 | verification_required | Verify Mk6 security generation. |
-| Transit | 2006–2014 | verification_required | Verify whether one Mk7 keyed record is sufficient. |
-| Transit | 2014–2023 | split_required | Audit exact security/ignition/build splits; do not use one broad record without evidence. |
-| Transit | 2024–present | split_required | Current range needs separate security/FDRS audit, including E-Transit where relevant. |
-| Transit Custom | 2012–2023 | split_required | Broad inventory range is not locked. Verify exact security breakpoints and ignition variants before technical audit. |
-| Transit Custom | 2023–present | split_required | New generation; verify keyed/passive/electric variants and FDRS. |
-| Tourneo Custom | 2012–2023 | split_required | Verify ignition variants and whether splits mirror Transit Custom. |
-| Tourneo Custom | 2023–present | split_required | New generation; verify smart-key and online security. |
-| Transit Connect | 2002–2013 | verification_required | Verify Mk1 security generation and key changes. |
-| Transit Connect | 2013–2024 | split_required | Verify ignition variants and exact security breakpoints. |
-| Tourneo Connect | 2002–2013 | verification_required | Verify Mk1 passenger derivative. |
-| Tourneo Connect | 2013–2022 | split_required | Verify keyed/passive variants and generation end date. |
+| Transit | 1994–2000 | verification_required | Mk5 generation; verify transponder introduction and any PATS breakpoint. |
+| Transit | 2000–2006 | verification_required | Mk6/all-new 2000 generation; verify one security generation across pre-facelift production. |
+| Transit | 2006–2014 | split_required | 2006 facelift introduced CAN-bus electronics. Treat as a separate security-era record from 2000–2006; verify whether later changes require another split. |
+| Transit | 2014–present | split_required | All-new large Transit generation. Do not split at 2024 merely because of model-year updates; verify exact FDRS/security and E-Transit breakpoints by operation. |
+| Transit Custom | 2012–2023 | split_required | First generation. Do not invent 2016/2017/2020 security splits without technical evidence. Separate keyed/passive variants where fitted and verify facelift effects. |
+| Transit Custom | 2023–present | split_required | Second generation produced from 2023. Separate diesel/PHEV/electric only where security or key workflow differs; verify FDRS. |
+| Tourneo Custom | 2012–2023 | split_required | First generation passenger derivative; verify whether ignition/security splits mirror Transit Custom. |
+| Tourneo Custom | 2023–present | split_required | Second generation passenger derivative; verify smart-key and online security. |
+| Transit Connect | 2002–2013 | verification_required | First generation Ford C170-derived. Verify security and key changes. |
+| Transit Connect | 2013–2024 | split_required | Second Ford-developed generation. Verify keyed/passive variants and exact security breakpoints. |
+| Transit Connect | 2024–present | shared_platform | Volkswagen Caddy V/MQB-based generation. Keep under Ford badge and use verified VAG architecture. |
+| Tourneo Connect | 2002–2013 | verification_required | First generation passenger derivative. |
+| Tourneo Connect | 2013–2022 | split_required | Second Ford-developed generation; verify keyed/passive variants. |
+| Tourneo Connect | 2022–present | shared_platform | Volkswagen Caddy V/MQB-based generation. Keep under Ford badge and use verified VAG architecture. |
 | Transit Courier | 2014–2023 | verification_required | Verify keyed/passive and facelift security changes. |
 | Transit Courier | 2023–present | split_required | New generation; verify ICE/EV and online requirements. |
 | Tourneo Courier | 2014–2023 | verification_required | Verify whether record boundaries mirror Transit Courier. |
 | Tourneo Courier | 2023–present | split_required | New generation; verify ICE/EV and smart-key variants. |
 | Ranger | 2012–2022 | split_required | Separate keyed/passive records and verify facelift/security changes. |
 | Ranger | 2023–present | split_required | T6.2/current generation; verify FDRS and exact tool support by operation. |
+
+## Transit Family Split Findings — Pass 1
+
+### Confirmed generation boundaries
+
+- Full-size Transit: 2000 introduced an all-new generation.
+- The July 2006 facelift introduced CAN-bus electronics, making 2000–2006 and 2006–2014 separate locksmith-relevant audit eras even before key data is approved.
+- The large Transit introduced for 2014 is a separate generation. A blanket 2024 split is not justified until a security/programming change is proven.
+- Transit Custom first generation runs from 2012 to 2023.
+- Transit Custom second generation was unveiled in 2022 and entered production in 2023.
+- Tourneo Custom follows the same first/second-generation boundary but requires its own badge records.
+- Transit Connect 2024+ and Tourneo Connect 2022+ are separate Volkswagen Caddy/MQB-derived generations.
+
+### Corrected provisional record plan
+
+| Proposed record | Status | Reason |
+|---|---|---|
+| Transit 1994–2000 | verification_required | Verify transponder introduction and Mk5 PATS. |
+| Transit 2000–2006 | verification_required | All-new generation before CAN-bus facelift. |
+| Transit 2006–2014 | split_required | CAN-bus electronics introduced with 2006 facelift. |
+| Transit 2014–present | split_required | One all-new generation; split only on proven security/FDRS or powertrain-key workflow changes. |
+| Transit Custom 2012–2023 keyed | split_required | First generation; verify facelift/security continuity. |
+| Transit Custom 2012–2023 passive start | split_required | Separate only where passive start was fitted. |
+| Transit Custom 2023–present | split_required | Second generation; verify keyed/passive and online/FDRS differences. |
+| Tourneo Custom 2012–2023 | split_required | Passenger badge; verify whether same security splits apply. |
+| Tourneo Custom 2023–present | split_required | Second generation passenger badge. |
+| Transit Connect 2002–2013 | verification_required | First Ford-developed generation. |
+| Transit Connect 2013–2024 | split_required | Second Ford-developed generation; verify ignition variants. |
+| Transit Connect 2024–present | shared_platform | Volkswagen MQB-derived. |
+| Tourneo Connect 2002–2013 | verification_required | First passenger generation. |
+| Tourneo Connect 2013–2022 | split_required | Second Ford-developed passenger generation. |
+| Tourneo Connect 2022–present | shared_platform | Volkswagen MQB-derived. |
+
+### Transit evidence quality note
+
+The generation boundaries and the 2006 CAN-bus breakpoint are supported. Exact transponder families, passive-start availability, FDRS requirements, tool coverage and operation-specific breakpoints remain unapproved until the technical audit.
 
 ## Remaining and Low-Priority Models
 
@@ -187,7 +224,7 @@ Allowed released values are:
 1. Verify the technical/security breakpoint within Fiesta 2008–2017 and exact UK passive-start availability.
 2. Verify whether the 2022 Fiesta facelift changed locksmith-relevant security.
 3. Verify Focus PATS/key changes at the 2001, 2008, 2014/2015 and 2022 facelifts.
-4. Audit Transit, Transit Custom and Transit Connect breakpoints.
+4. Verify Transit passive-start availability and operation-specific FDRS breakpoints.
 5. Audit Ranger, Kuga and Mondeo.
 6. Finish shared-platform records.
 7. Complete all remaining/low-priority Ford models.
