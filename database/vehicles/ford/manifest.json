@@ -1,19 +1,25 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-12",
+  "updated_at": "2026-07-14",
   "manufacturer": {
     "id": "ford",
     "name": "Ford",
     "market": "UK",
     "drive_side": "RHD"
   },
-  "version": 2,
+  "version": 3,
   "models": {
     "fiesta": {
       "name": "Fiesta",
-      "version": 1,
+      "version": 3,
       "manifest": "fiesta/manifest.json",
-      "status": "ui_test"
+      "status": "partially_verified"
+    },
+    "focus": {
+      "name": "Focus",
+      "version": 1,
+      "manifest": "focus/manifest.json",
+      "status": "partially_verified"
     }
   },
   "status": "in_development"
