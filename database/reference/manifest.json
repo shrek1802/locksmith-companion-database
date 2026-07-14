@@ -1,0 +1,17 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "version": 1,
+  "scope": "UK automotive locksmith reference data",
+  "files": {
+    "blades": "blades.json",
+    "transponders": "transponders.json",
+    "frequencies": "frequencies.json"
+  },
+  "rules": {
+    "vehicle_mapping_source": "Ford master research workbook",
+    "approved_only_for_export": true,
+    "unknown_values_must_remain_unknown": true,
+    "regional_scope": "UK"
+  }
+}
