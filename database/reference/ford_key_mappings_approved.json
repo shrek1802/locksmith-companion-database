@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": "ford",
+  "market": "UK",
+  "version": 1,
+  "status": "approved",
+  "rules": {
+    "minimum_independent_sources": 2,
+    "vehicle_year_match_required": true,
+    "uk_relevance_required": true,
+    "unknown_values_must_remain_unknown": true
+  },
+  "items": {
+    "ford_fiesta_2008_2012_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "mhz_433_92",
+      "key_type_id": "remote_head_key",
+      "remote_type_id": "remote_3_button",
+      "immobiliser_id": "ford_pats_crypto_4d",
+      "approval": {
+        "blade": "approved",
+        "transponder": "approved",
+        "frequency": "approved",
+        "key_type": "approved",
+        "remote_type": "approved",
+        "immobiliser": "approved"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD-FIESTA",
+        "SRC-KEYSTATION-FORD-ID63-HU101-433"
+      ],
+      "notes": "Transpondery gives Fiesta 2008-2012 as Texas 4D63. KeyStation UK lists Ford Fiesta-compatible 3-button remote-head/non-flip keys at 433 MHz with ID63 80-bit and HU101/FO-24."
+    }
+  },
+  "sources": {
+    "SRC-TRANSPONDERY-FORD-FIESTA": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog — Fiesta",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "type": "professional_catalogue",
+      "accessed": "2026-07-14",
+      "evidence": "Fiesta 2008-2012: Texas Crypto 4D63 / ID63"
+    },
+    "SRC-KEYSTATION-FORD-ID63-HU101-433": {
+      "publisher": "KeyStation UK",
+      "title": "Ford remote key catalogue",
+      "url": "https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys",
+      "type": "uk_professional_supplier_catalogue",
+      "accessed": "2026-07-14",
+      "evidence": "Fiesta-compatible 3-button remote-head/non-flip keys listed as 433 MHz, ID63 80-bit and HU101/FO-24"
+    }
+  }
+}
