@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "category": "remote_frequencies",
+  "market": "UK",
+  "version": 1,
+  "items": {
+    "mhz_433_92": {
+      "id": "mhz_433_92",
+      "display_name": "433.92 MHz",
+      "frequency_mhz": 433.92,
+      "band": "433 MHz ISM/SRD",
+      "region": ["UK", "Europe"],
+      "status": "catalogue_entry",
+      "notes": "Vehicle compatibility and modulation must be approved separately."
+    },
+    "mhz_434_42": {
+      "id": "mhz_434_42",
+      "display_name": "434.42 MHz",
+      "frequency_mhz": 434.42,
+      "band": "434 MHz SRD",
+      "region": ["UK", "Europe"],
+      "status": "catalogue_entry",
+      "notes": "Do not normalise to 433.92 MHz where the exact remote specification is 434.42 MHz."
+    },
+    "mhz_868": {
+      "id": "mhz_868",
+      "display_name": "868 MHz family",
+      "frequency_mhz": 868,
+      "band": "868 MHz SRD",
+      "region": ["UK", "Europe"],
+      "status": "catalogue_entry",
+      "notes": "Exact centre frequency and function must be stored in the vehicle mapping."
+    },
+    "passive_multi_band": {
+      "id": "passive_multi_band",
+      "display_name": "Passive key — multi-band system",
+      "frequency_mhz": null,
+      "band": "LF wake-up plus UHF response",
+      "region": ["UK"],
+      "status": "catalogue_entry",
+      "notes": "Use when a passive system cannot be accurately represented by one UHF number alone."
+    },
+    "frequency_unknown": {
+      "id": "frequency_unknown",
+      "display_name": "Frequency — verification required",
+      "frequency_mhz": null,
+      "band": "unknown",
+      "region": ["UK"],
+      "status": "placeholder",
+      "notes": "Use instead of inferring frequency from appearance or a non-UK listing."
+    }
+  }
+}
