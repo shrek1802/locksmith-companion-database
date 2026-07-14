@@ -42,10 +42,10 @@ A record is split only when a locksmith-relevant change affects key choice, secu
 | Fiesta | 2002–2008 | verification_required | Verify whether one keyed security generation covers the full UK range. |
 | Fiesta | 2008–2017 | split_required | One B299/B409 generation across pre-facelift and facelift. Do not split at 2013 merely for facelift. Separate keyed and passive-start variants where fitted; verify whether technical/security breakpoints exist within the generation. |
 | Fiesta | 2017–2023 | split_required | New seventh-generation model. Separate keyed and passive-start variants; verify whether the 2022 facelift changed locksmith-relevant security before adding another split. |
-| Focus | 1998–2004 | verification_required | Verify early/late PATS, blade and transponder breakpoints. |
-| Focus | 2004–2011 | split_required | Verify keyed/passive availability and whether a security breakpoint is required. |
-| Focus | 2011–2018 | split_required | Keyed and passive-start records required; check facelift/build changes. |
-| Focus | 2018–2025 | split_required | Keyed and passive-start records required; verify 2022 facelift/security effects and FDRS by operation. |
+| Focus | 1998–2004 | verification_required | One first-generation platform with a 2001 facelift. Do not split at facelift unless PATS/key evidence proves a change. |
+| Focus | 2004–2011 | split_required | Keep one keyed generation unless technical evidence proves otherwise. Add a separate passive-start record from the 2008 facelift because Ford Power Button was introduced then. |
+| Focus | 2011–2018 | split_required | New third generation. Separate keyed and passive-start records; the 2014/2015 facelift is not automatically a security split. |
+| Focus | 2018–2025 | split_required | New C2 generation. Separate keyed and passive-start records; verify whether the 2022 refresh changed locksmith-relevant security and FDRS by operation. |
 | Mondeo | 1996–2000 | verification_required | Verify early transponder/PATS generation. |
 | Mondeo | 2000–2007 | verification_required | Confirm security generation and any passive-start introduction. |
 | Mondeo | 2007–2014 | split_required | Verify keyed/passive records and any facelift security change. |
@@ -84,6 +84,37 @@ A record is split only when a locksmith-relevant change affects key choice, secu
 ### Evidence quality note
 
 The generation and feature-existence findings are sufficient to remove the unsupported 2008–2012/2013–2017 facelift split from the master plan. They are not yet sufficient to approve transponder, tool support, FDRS or exact passive-start build ranges.
+
+## Focus Split Findings — Pass 1
+
+### Confirmed generation boundaries
+
+- First generation: 1998–2004/2005 in Europe, with a 2001 facelift.
+- Second European generation: late 2004–2011, with the UK facelift on sale from February 2008.
+- Third generation: 2011–2018 in Europe.
+- Fourth generation: 2018–2025 on Ford C2 architecture, with a 2022 refresh.
+
+### Confirmed ignition-variant finding
+
+- The second-generation Focus offered KeyFree technology.
+- The 2008 UK facelift specifically introduced a Ford Power Button.
+- A passive-start record is therefore required for the applicable 2008–2011 vehicles, rather than treating all 2004–2011 cars as one keyed record.
+
+### Provisional Focus record plan
+
+| Proposed record | Status | Reason |
+|---|---|---|
+| Focus 1998–2004 keyed | verification_required | Generation boundary is clear; verify whether the 2001 facelift changed PATS/key technology. |
+| Focus 2004–2011 keyed | split_required | Keyed variant spans the second generation; confirm no security breakpoint at the 2008 facelift. |
+| Focus 2008–2011 passive start | split_required | Ford Power Button introduced with the 2008 UK facelift. Exact trim/build availability still needs confirmation. |
+| Focus 2011–2018 keyed | split_required | New generation; verify whether the facelift changes security. |
+| Focus 2011–2018 passive start | split_required | Passive-start option requires separate key/programming data. |
+| Focus 2018–2025 keyed | split_required | C2 generation; verify 2022 refresh and FDRS impact. |
+| Focus 2018–2025 passive start | split_required | C2 passive-start record; verify 2022 refresh and FDRS impact. |
+
+### Focus evidence quality note
+
+The generation boundaries and the need for a 2008–2011 passive-start record are supported. Exact PATS generations, transponders, facelift breakpoints and tool/FDRS coverage remain unapproved until the technical audit.
 
 ## MPV and SUV Models
 
@@ -155,7 +186,7 @@ Allowed released values are:
 
 1. Verify the technical/security breakpoint within Fiesta 2008–2017 and exact UK passive-start availability.
 2. Verify whether the 2022 Fiesta facelift changed locksmith-relevant security.
-3. Lock the Focus record splits.
+3. Verify Focus PATS/key changes at the 2001, 2008, 2014/2015 and 2022 facelifts.
 4. Audit Transit, Transit Custom and Transit Connect breakpoints.
 5. Audit Ranger, Kuga and Mondeo.
 6. Finish shared-platform records.
