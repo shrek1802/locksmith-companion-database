@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {"id":"ford","name":"Ford"},
+  "model": {"id":"transit_connect","name":"Transit Connect"},
+  "category": "vehicles",
+  "items": {
+    "transit_connect_2002_2013_keyed": {
+      "record_id": "ford_transit_connect_2002_2013_keyed_uk",
+      "vehicle": {"make":"Ford","model":"Transit Connect","variant":"Keyed Ignition","generation":"First generation","year_from":2002,"year_to":2013,"market":"UK","drive_side":"RHD"},
+      "vehicle_information": {"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"First Ford-developed generation. Verify exact key and security changes across the full range."},
+      "verification": {"status":"verification_required","last_verified":"2026-07-14","sources":["ford_transit_connect_split_audit"]}
+    },
+    "transit_connect_2013_2024_keyed": {
+      "record_id": "ford_transit_connect_2013_2024_keyed_uk",
+      "vehicle": {"make":"Ford","model":"Transit Connect","variant":"Keyed Ignition","generation":"Second generation","year_from":2013,"year_to":2024,"market":"UK","drive_side":"RHD"},
+      "vehicle_information": {"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"Second Ford-developed generation. Confirm any facelift or build-date security breakpoints before programming."},
+      "verification": {"status":"verification_required","last_verified":"2026-07-14","sources":["ford_transit_connect_split_audit"]}
+    },
+    "transit_connect_2013_2024_passive": {
+      "record_id": "ford_transit_connect_2013_2024_passive_uk",
+      "vehicle": {"make":"Ford","model":"Transit Connect","variant":"Passive Key / Push Button Start","generation":"Second generation","year_from":2013,"year_to":2024,"market":"UK","drive_side":"RHD"},
+      "vehicle_information": {"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Emergency blade verification required","key_type":"Passive key with emergency blade","smart_key":true,"notes":"Use only where passive start is confirmed. Exact UK fitment remains under technical audit."},
+      "verification": {"status":"verification_required","last_verified":"2026-07-14","sources":["ford_transit_connect_split_audit"]}
+    },
+    "transit_connect_2024_present_mqb": {
+      "record_id": "ford_transit_connect_2024_present_mqb_uk",
+      "vehicle": {"make":"Ford","model":"Transit Connect","variant":"Volkswagen MQB-derived generation","generation":"Third generation / Caddy V-derived","year_from":2024,"year_to":null,"market":"UK","drive_side":"RHD"},
+      "vehicle_information": {"immobiliser_system":"Volkswagen MQB-derived security architecture","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Emergency blade verification required","key_type":"Keyed or passive configuration verification required","smart_key":"Verification required","notes":"Keep under Ford Transit Connect. Do not apply Ford PATS assumptions; verify VAG/MQB security, online and tool requirements."},
+      "verification": {"status":"shared_platform","last_verified":"2026-07-14","sources":["ford_transit_connect_split_audit"]}
+    }
+  },
+  "sources": {
+    "ford_transit_connect_split_audit": {"publisher":"Locksmith Companion Database","title":"Ford Security Generation Split Audit","path":"Docs/FORD_SECURITY_SPLIT_AUDIT.md","accessed":"2026-07-14","scope":["Transit Connect generation boundaries","keyed/passive separation","Volkswagen MQB shared-platform handling"]}
+  }
+}
