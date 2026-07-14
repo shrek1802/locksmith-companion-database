@@ -1,0 +1,97 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "category": "transponders",
+  "market": "UK",
+  "version": 1,
+  "items": {
+    "texas_4c": {
+      "id": "texas_4c",
+      "display_name": "Texas 4C",
+      "family": "Texas fixed code",
+      "aliases": ["ID4C", "T5/4C family"],
+      "status": "catalogue_entry",
+      "notes": "Vehicle/year compatibility must be approved separately."
+    },
+    "texas_4d60": {
+      "id": "texas_4d60",
+      "display_name": "Texas 4D-60",
+      "family": "Texas Crypto 4D",
+      "aliases": ["ID4D-60", "4D60"],
+      "status": "catalogue_entry",
+      "notes": "Legacy Ford-family transponder reference."
+    },
+    "texas_4d63_40bit": {
+      "id": "texas_4d63_40bit",
+      "display_name": "Texas 4D-63 40-bit",
+      "family": "Texas Crypto 4D",
+      "aliases": ["ID4D-63 40-bit", "4D63 40-bit"],
+      "status": "catalogue_entry",
+      "notes": "Keep separate from 80-bit 4D-63."
+    },
+    "texas_4d63_80bit": {
+      "id": "texas_4d63_80bit",
+      "display_name": "Texas 4D-63 80-bit",
+      "family": "Texas Crypto 4D 80-bit",
+      "aliases": ["ID4D-63 80-bit", "4D63 80-bit"],
+      "status": "catalogue_entry",
+      "notes": "Do not collapse into generic 4D63 where bit length matters."
+    },
+    "texas_4d83_80bit": {
+      "id": "texas_4d83_80bit",
+      "display_name": "Texas 4D-83 80-bit",
+      "family": "Texas Crypto 4D 80-bit",
+      "aliases": ["ID4D-83", "4D83"],
+      "status": "catalogue_entry",
+      "notes": "Vehicle/year compatibility must be approved separately."
+    },
+    "nxp_hitag2_id46": {
+      "id": "nxp_hitag2_id46",
+      "display_name": "NXP Hitag2 ID46",
+      "family": "NXP Hitag2",
+      "aliases": ["ID46", "PCF7936 family"],
+      "status": "catalogue_entry",
+      "notes": "Used on some shared-platform vehicles; mapping must be independently approved."
+    },
+    "nxp_hitag_pro": {
+      "id": "nxp_hitag_pro",
+      "display_name": "NXP Hitag Pro",
+      "family": "NXP Hitag Pro",
+      "aliases": ["Hitag Pro", "ID49 family"],
+      "status": "catalogue_entry",
+      "notes": "Exact chip/remote implementation must be stored in vehicle mapping."
+    },
+    "nxp_hitag_aes": {
+      "id": "nxp_hitag_aes",
+      "display_name": "NXP Hitag AES",
+      "family": "NXP Hitag AES",
+      "aliases": ["Hitag AES"],
+      "status": "catalogue_entry",
+      "notes": "Modern passive-key family; exact application requires vehicle-level approval."
+    },
+    "megamos_crypto_id48": {
+      "id": "megamos_crypto_id48",
+      "display_name": "Megamos Crypto ID48",
+      "family": "Megamos Crypto",
+      "aliases": ["ID48", "Megamos 48"],
+      "status": "catalogue_entry",
+      "notes": "Relevant to some VAG/Fiat-derived Ford-badged platforms only where approved."
+    },
+    "megamos_aes": {
+      "id": "megamos_aes",
+      "display_name": "Megamos AES",
+      "family": "Megamos AES",
+      "aliases": ["MQB AES", "VAG AES"],
+      "status": "catalogue_entry",
+      "notes": "Shared VAG platform reference; do not apply Ford PATS assumptions."
+    },
+    "transponder_unknown": {
+      "id": "transponder_unknown",
+      "display_name": "Transponder — verification required",
+      "family": "unknown",
+      "aliases": [],
+      "status": "placeholder",
+      "notes": "Use instead of guessing."
+    }
+  }
+}
