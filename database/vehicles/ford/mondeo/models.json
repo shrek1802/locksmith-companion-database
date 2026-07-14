@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {"id":"ford","name":"Ford"},
+  "model": {"id":"mondeo","name":"Mondeo"},
+  "category": "vehicles",
+  "items": {
+    "mondeo_1996_2000_keyed": {
+      "record_id": "ford_mondeo_1996_2000_keyed_uk",
+      "vehicle": {"make":"Ford","model":"Mondeo","variant":"Keyed Ignition","generation":"Mk2 / facelifted first-generation family","year_from":1996,"year_to":2000,"market":"UK","drive_side":"RHD"},
+      "vehicle_information": {"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Mechanical ignition key / remote configuration varies","smart_key":false,"notes":"Verify exact PATS and transponder breakpoint before programming."},
+      "verification": {"status":"verification_required","last_verified":"2026-07-14","sources":["ford_mondeo_split_audit"]}
+    },
+    "mondeo_2000_2007_keyed": {
+      "record_id": "ford_mondeo_2000_2007_keyed_uk",
+      "vehicle": {"make":"Ford","model":"Mondeo","variant":"Keyed Ignition","generation":"Mk3","year_from":2000,"year_to":2007,"market":"UK","drive_side":"RHD"},
+      "vehicle_information": {"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"Separate generation; verify whether one keyed security system covers the full UK range."},
+      "verification": {"status":"verification_required","last_verified":"2026-07-14","sources":["ford_mondeo_split_audit"]}
+    },
+    "mondeo_2007_2014_keyed": {
+      "record_id": "ford_mondeo_2007_2014_keyed_uk",
+      "vehicle": {"make":"Ford","model":"Mondeo","variant":"Keyed Ignition","generation":"Mk4","year_from":2007,"year_to":2014,"market":"UK","drive_side":"RHD"},
+      "vehicle_information": {"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"The 2010 facelift remains within this generation unless security evidence proves otherwise."},
+      "verification": {"status":"verification_required","last_verified":"2026-07-14","sources":["ford_mondeo_split_audit"]}
+    },
+    "mondeo_2007_2014_passive": {
+      "record_id": "ford_mondeo_2007_2014_passive_uk",
+      "vehicle": {"make":"Ford","model":"Mondeo","variant":"Passive Key / Push Button Start","generation":"Mk4","year_from":2007,"year_to":2014,"market":"UK","drive_side":"RHD"},
+      "vehicle_information": {"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Emergency blade verification required","key_type":"Passive key with emergency blade","smart_key":true,"notes":"Use only where passive start is confirmed. Exact introduction and UK fitment remain under audit."},
+      "verification": {"status":"verification_required","last_verified":"2026-07-14","sources":["ford_mondeo_split_audit"]}
+    },
+    "mondeo_2014_2022_keyed": {
+      "record_id": "ford_mondeo_2014_2022_keyed_uk",
+      "vehicle": {"make":"Ford","model":"Mondeo","variant":"Keyed Ignition","generation":"Mk5 / global generation","year_from":2014,"year_to":2022,"market":"UK","drive_side":"RHD"},
+      "vehicle_information": {"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"Verify keyed UK availability and operation-specific FDRS requirements."},
+      "verification": {"status":"verification_required","last_verified":"2026-07-14","sources":["ford_mondeo_split_audit"]}
+    },
+    "mondeo_2014_2022_passive": {
+      "record_id": "ford_mondeo_2014_2022_passive_uk",
+      "vehicle": {"make":"Ford","model":"Mondeo","variant":"Passive Key / Push Button Start","generation":"Mk5 / global generation","year_from":2014,"year_to":2022,"market":"UK","drive_side":"RHD"},
+      "vehicle_information": {"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Emergency blade verification required","key_type":"Passive key with emergency blade","smart_key":true,"notes":"Verify online/FDRS requirements by exact operation and build."},
+      "verification": {"status":"verification_required","last_verified":"2026-07-14","sources":["ford_mondeo_split_audit"]}
+    }
+  },
+  "sources": {
+    "ford_mondeo_split_audit": {"publisher":"Locksmith Companion Database","title":"Ford Kuga, Mondeo and Ranger Security Split Audit","path":"Docs/FORD_KUGA_MONDEO_RANGER_SPLIT_AUDIT.md","accessed":"2026-07-14","scope":["Mondeo generation boundaries","keyed/passive separation","facelift handling"]}
+  }
+}
