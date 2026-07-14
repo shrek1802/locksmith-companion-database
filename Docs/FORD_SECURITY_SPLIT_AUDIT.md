@@ -40,9 +40,8 @@ A record is split only when a locksmith-relevant change affects key choice, secu
 |---|---:|---|---|
 | Fiesta | 1995–2001 | verification_required | Verify early PATS/transponder breakpoints. |
 | Fiesta | 2002–2008 | verification_required | Verify whether one keyed security generation covers the full UK range. |
-| Fiesta | 2008–2012 | verification_required | Keyed record expected; confirm any passive-start UK variant before locking. |
-| Fiesta | 2013–2017 | split_required | Separate keyed and passive-start records where fitted. Exact technical data remains unapproved. |
-| Fiesta | 2017–2023 | split_required | Separate keyed and passive-start records; check later build/security changes before locking. |
+| Fiesta | 2008–2017 | split_required | One B299/B409 generation across pre-facelift and facelift. Do not split at 2013 merely for facelift. Separate keyed and passive-start variants where fitted; verify whether technical/security breakpoints exist within the generation. |
+| Fiesta | 2017–2023 | split_required | New seventh-generation model. Separate keyed and passive-start variants; verify whether the 2022 facelift changed locksmith-relevant security before adding another split. |
 | Focus | 1998–2004 | verification_required | Verify early/late PATS, blade and transponder breakpoints. |
 | Focus | 2004–2011 | split_required | Verify keyed/passive availability and whether a security breakpoint is required. |
 | Focus | 2011–2018 | split_required | Keyed and passive-start records required; check facelift/build changes. |
@@ -56,6 +55,35 @@ A record is split only when a locksmith-relevant change affects key choice, secu
 | Kuga | 2020–present | split_required | Current C2 generation; verify hybrid/PHEV/security differences and FDRS by operation. |
 | Puma | 1997–2002 | verification_required | Verify one Ford PATS generation. |
 | Puma | 2019–present | split_required | Separate keyed/passive where applicable; verify facelift and current security access. |
+
+## Fiesta Split Findings — Pass 1
+
+### Confirmed generation boundaries
+
+- The sixth-generation Fiesta was produced from 2008 and continued through its facelifted form to 2017.
+- The seventh-generation Fiesta is a separate vehicle generation produced from 2017 to July 2023.
+- The 2013 change is therefore a facelift boundary, not automatically a security-generation boundary.
+- The seventh-generation car received a facelift for 2022, but this does not yet justify a separate locksmith record without evidence of a security/programming change.
+
+### Confirmed ignition-variant requirement
+
+- Keyless entry with a Ford Power starter button existed within the 2008–2017 generation.
+- Keyed and passive-start variants must therefore be audited separately across the applicable UK ranges.
+
+### Provisional Fiesta record plan
+
+| Proposed record | Status | Reason |
+|---|---|---|
+| Fiesta 1995–2001 keyed | verification_required | Early PATS/transponder breakpoint still needs evidence. |
+| Fiesta 2002–2008 keyed | verification_required | Generation boundary is clear; exact security continuity still needs proof. |
+| Fiesta 2008–2017 keyed | split_required | Same vehicle generation across facelift; technical/security breakpoint must be checked before lock. |
+| Fiesta 2008–2017 passive start | split_required | Passive-start option existed; exact UK availability and technical breakpoint must be checked. |
+| Fiesta 2017–2023 keyed | split_required | New generation; verify whether 2022 facelift changes security. |
+| Fiesta 2017–2023 passive start | split_required | New generation; verify whether 2022 facelift changes security. |
+
+### Evidence quality note
+
+The generation and feature-existence findings are sufficient to remove the unsupported 2008–2012/2013–2017 facelift split from the master plan. They are not yet sufficient to approve transponder, tool support, FDRS or exact passive-start build ranges.
 
 ## MPV and SUV Models
 
@@ -125,10 +153,11 @@ Allowed released values are:
 
 ## Next Audit Actions
 
-1. Lock the Fiesta record splits using current evidence.
-2. Lock the Focus record splits.
-3. Audit Transit, Transit Custom and Transit Connect breakpoints.
-4. Audit Ranger, Kuga and Mondeo.
-5. Finish shared-platform records.
-6. Complete all remaining/low-priority Ford models.
-7. Only then begin the field-by-field technical audit and Ford JSON generation.
+1. Verify the technical/security breakpoint within Fiesta 2008–2017 and exact UK passive-start availability.
+2. Verify whether the 2022 Fiesta facelift changed locksmith-relevant security.
+3. Lock the Focus record splits.
+4. Audit Transit, Transit Custom and Transit Connect breakpoints.
+5. Audit Ranger, Kuga and Mondeo.
+6. Finish shared-platform records.
+7. Complete all remaining/low-priority Ford models.
+8. Only then begin the field-by-field technical audit and Ford JSON generation.
