@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "category": "blade_profiles",
+  "market": "UK",
+  "version": 1,
+  "items": {
+    "hu101": {
+      "id": "hu101",
+      "display_name": "HU101",
+      "type": "laser_track",
+      "sides": 2,
+      "aliases": ["Ford HU101"],
+      "status": "catalogue_entry",
+      "notes": "Common Ford profile. Vehicle/year compatibility must be approved in the vehicle master before export."
+    },
+    "fo21": {
+      "id": "fo21",
+      "display_name": "FO21",
+      "type": "tibbe",
+      "sides": 1,
+      "aliases": ["Ford Tibbe", "6-cut Tibbe"],
+      "status": "catalogue_entry",
+      "notes": "Legacy Ford Tibbe family. Cut count and vehicle compatibility must be stored at vehicle-record level."
+    },
+    "hu66": {
+      "id": "hu66",
+      "display_name": "HU66",
+      "type": "laser_track",
+      "sides": 2,
+      "aliases": ["VAG HU66"],
+      "status": "catalogue_entry",
+      "notes": "Used only on Ford-badged shared Volkswagen platforms where independently approved."
+    },
+    "sip22": {
+      "id": "sip22",
+      "display_name": "SIP22",
+      "type": "laser_track",
+      "sides": 2,
+      "aliases": ["Fiat SIP22"],
+      "status": "catalogue_entry",
+      "notes": "Used only on Ford-badged Fiat-derived platforms where independently approved."
+    },
+    "hu162t": {
+      "id": "hu162t",
+      "display_name": "HU162T",
+      "type": "laser_track",
+      "sides": 2,
+      "aliases": ["VAG HU162T"],
+      "status": "catalogue_entry",
+      "notes": "Current VAG-family profile. Exact variant such as T9/T10 must be held in the vehicle mapping."
+    },
+    "emergency_blade_unknown": {
+      "id": "emergency_blade_unknown",
+      "display_name": "Emergency blade — verification required",
+      "type": "unknown",
+      "aliases": [],
+      "status": "placeholder",
+      "notes": "Use instead of guessing a blade profile for passive-key vehicles."
+    }
+  }
+}
