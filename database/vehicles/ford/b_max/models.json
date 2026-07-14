@@ -1,0 +1,12 @@
+{
+  "schema_version":"2.1",
+  "updated_at":"2026-07-14",
+  "manufacturer":{"id":"ford","name":"Ford"},
+  "model":{"id":"b_max","name":"B-Max"},
+  "category":"vehicles",
+  "items":{
+    "b_max_2012_2017_keyed":{"record_id":"ford_b_max_2012_2017_keyed_uk","vehicle":{"make":"Ford","model":"B-Max","variant":"Keyed Ignition","generation":"First and only generation","year_from":2012,"year_to":2017,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"One generation on Fiesta-derived architecture. Verify exact security and key continuity before programming."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_b_max_split_audit"]}},
+    "b_max_2012_2017_passive":{"record_id":"ford_b_max_2012_2017_passive_uk","vehicle":{"make":"Ford","model":"B-Max","variant":"Passive Key / Push Button Start","generation":"First and only generation","year_from":2012,"year_to":2017,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Emergency blade verification required","key_type":"Passive key with emergency blade","smart_key":true,"notes":"Use only where passive start is confirmed. Exact UK trim and build availability remains under audit."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_b_max_split_audit"]}}
+  },
+  "sources":{"ford_b_max_split_audit":{"publisher":"Locksmith Companion Database","title":"Ford MPV and SUV Security Split Audit","path":"Docs/FORD_MPV_SUV_SPLIT_AUDIT.md","accessed":"2026-07-14","scope":["B-Max generation boundary","Fiesta-derived architecture","keyed/passive separation"]}}
+}
