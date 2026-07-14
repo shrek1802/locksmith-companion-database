@@ -7,7 +7,7 @@
     "market": "UK",
     "drive_side": "RHD"
   },
-  "version": 4,
+  "version": 5,
   "models": {
     "fiesta": {
       "name": "Fiesta",
@@ -25,6 +25,12 @@
       "name": "Transit",
       "version": 1,
       "manifest": "transit/manifest.json",
+      "status": "partially_verified"
+    },
+    "transit_custom": {
+      "name": "Transit Custom",
+      "version": 1,
+      "manifest": "transit_custom/manifest.json",
       "status": "partially_verified"
     }
   },
