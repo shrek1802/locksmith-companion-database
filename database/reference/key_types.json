@@ -1,0 +1,17 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "category": "key_types",
+  "market": "UK",
+  "version": 1,
+  "items": {
+    "mechanical_transponder_key": {"id":"mechanical_transponder_key","display_name":"Mechanical transponder key","smart_key":false,"integrated_remote":false,"emergency_blade":false,"status":"catalogue_entry"},
+    "remote_head_key": {"id":"remote_head_key","display_name":"Remote-head key","smart_key":false,"integrated_remote":true,"emergency_blade":false,"status":"catalogue_entry"},
+    "flip_remote_key": {"id":"flip_remote_key","display_name":"Flip remote key","smart_key":false,"integrated_remote":true,"emergency_blade":false,"status":"catalogue_entry"},
+    "separate_remote_and_key": {"id":"separate_remote_and_key","display_name":"Separate remote and ignition key","smart_key":false,"integrated_remote":false,"emergency_blade":false,"status":"catalogue_entry"},
+    "passive_proximity_key": {"id":"passive_proximity_key","display_name":"Passive proximity key","smart_key":true,"integrated_remote":true,"emergency_blade":true,"status":"catalogue_entry"},
+    "smart_key_with_emergency_blade": {"id":"smart_key_with_emergency_blade","display_name":"Smart key with emergency blade","smart_key":true,"integrated_remote":true,"emergency_blade":true,"status":"catalogue_entry"},
+    "connected_phone_key": {"id":"connected_phone_key","display_name":"Connected / phone-as-key system","smart_key":true,"integrated_remote":false,"emergency_blade":null,"status":"catalogue_entry","notes":"Physical backup-key provision must be recorded at vehicle level."},
+    "key_type_unknown": {"id":"key_type_unknown","display_name":"Key type — verification required","smart_key":null,"integrated_remote":null,"emergency_blade":null,"status":"placeholder"}
+  }
+}
