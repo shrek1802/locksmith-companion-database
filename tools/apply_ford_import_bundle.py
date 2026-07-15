@@ -13,7 +13,8 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 IMPORT_DIR = ROOT / "imports"
-REPORT = ROOT / "database" / "vehicles" / "ford" / "FORD_IMPORT_REPORT.json"
+FORD_DIR = ROOT / "database" / "vehicles" / "ford"
+REPORT = FORD_DIR / "FORD_IMPORT_REPORT.json"
 EMPTY_STRINGS = {"", "verification required", "unknown", "n/a", "not available"}
 
 
@@ -74,6 +75,21 @@ def load_bundles(explicit: Path | None) -> tuple[list[str], dict[str, Any]]:
     return names, combined
 
 
+def bump_model_manifest(model_dir: Path) -> bool:
+    manifest_path = model_dir / "manifest.json"
+    if not manifest_path.exists():
+        return False
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest["version"] = int(manifest.get("version", 0)) + 1
+    manifest["updated_at"] = "2026-07-15"
+    manifest["status"] = "ford_master_import_applied"
+    verification = manifest.setdefault("verification", {})
+    verification["last_verified"] = "2026-07-15"
+    verification["scope"] = "Ford master workbook data merged; richer existing technical values preserved"
+    manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return True
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--bundle", type=Path)
@@ -85,11 +101,20 @@ def main() -> int:
         "bundles": bundle_names,
         "apply": args.apply,
         "files": [],
-        "totals": {"bundle_files": len(files), "new_files": 0, "updated_files": 0, "new_records": 0, "conflicts": 0},
+        "totals": {
+            "bundle_files": len(files),
+            "new_files": 0,
+            "updated_files": 0,
+            "new_records": 0,
+            "conflicts": 0,
+            "model_manifests_bumped": 0,
+        },
     }
+    model_dirs: set[Path] = set()
 
     for rel_path, generated in sorted(files.items()):
         target = ROOT / rel_path
+        model_dirs.add(target.parent)
         conflicts: list[dict[str, Any]] = []
         if target.exists():
             existing = json.loads(target.read_text(encoding="utf-8"))
@@ -111,15 +136,33 @@ def main() -> int:
 
         report["totals"]["new_records"] += new_records
         report["totals"]["conflicts"] += len(conflicts)
-        report["files"].append({"path": rel_path, "state": state, "new_records": new_records, "conflict_count": len(conflicts), "conflicts": conflicts})
+        report["files"].append({
+            "path": rel_path,
+            "state": state,
+            "new_records": new_records,
+            "conflict_count": len(conflicts),
+            "conflicts": conflicts,
+        })
 
-    manifest_path = ROOT / "database" / "vehicles" / "ford" / "manifest.json"
-    if args.apply and manifest_path.exists():
-        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-        manifest["version"] = int(manifest.get("version", 0)) + 1
-        manifest["updated_at"] = "2026-07-15"
-        manifest["status"] = "ford_master_import_applied"
-        manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if args.apply:
+        for model_dir in sorted(model_dirs):
+            if bump_model_manifest(model_dir):
+                report["totals"]["model_manifests_bumped"] += 1
+
+        manifest_path = FORD_DIR / "manifest.json"
+        if manifest_path.exists():
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+            manifest["version"] = int(manifest.get("version", 0)) + 1
+            manifest["updated_at"] = "2026-07-15"
+            manifest["status"] = "ford_master_import_applied"
+            for model_id in sorted(path.name for path in model_dirs):
+                model_entry = manifest.get("models", {}).get(model_id)
+                model_manifest = FORD_DIR / model_id / "manifest.json"
+                if model_entry is not None and model_manifest.exists():
+                    model_data = json.loads(model_manifest.read_text(encoding="utf-8"))
+                    model_entry["version"] = model_data.get("version", model_entry.get("version", 1))
+                    model_entry["status"] = model_data.get("status", "ford_master_import_applied")
+            manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps(report["totals"], indent=2))
