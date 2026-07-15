@@ -5,7 +5,9 @@ on:
     branches: [main]
     paths:
       - 'imports/ford_import_ready_v4_part*.json'
+      - 'imports/ford_import_ready_v4_part*.zlib.b64'
       - 'tools/apply_ford_import_bundle.py'
+      - '.github/workflows/apply-ford-import.yml'
   workflow_dispatch:
 
 permissions:
