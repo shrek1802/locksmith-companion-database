@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import copy
 import json
+import zlib
 from pathlib import Path
 from typing import Any
 
@@ -45,14 +47,25 @@ def merge(existing: Any, generated: Any, path: str, conflicts: list[dict[str, An
     return copy.deepcopy(existing)
 
 
+def read_bundle(path: Path) -> dict[str, Any]:
+    if path.name.endswith(".zlib.b64"):
+        compressed = base64.b64decode(path.read_text(encoding="ascii").strip())
+        return json.loads(zlib.decompress(compressed).decode("utf-8"))
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def load_bundles(explicit: Path | None) -> tuple[list[str], dict[str, Any]]:
-    paths = [explicit] if explicit else sorted(IMPORT_DIR.glob("ford_import_ready_v4_part*.json"))
+    if explicit:
+        paths = [explicit]
+    else:
+        paths = sorted(IMPORT_DIR.glob("ford_import_ready_v4_part*.json"))
+        paths += sorted(IMPORT_DIR.glob("ford_import_ready_v4_part*.zlib.b64"))
     if not paths:
         raise FileNotFoundError("No Ford import bundle parts found")
     combined: dict[str, Any] = {}
     names: list[str] = []
     for path in paths:
-        bundle = json.loads(path.read_text(encoding="utf-8"))
+        bundle = read_bundle(path)
         names.append(str(path.relative_to(ROOT)))
         for rel_path, payload in bundle.get("files", {}).items():
             if rel_path in combined:
@@ -84,7 +97,8 @@ def main() -> int:
             merged = merge(existing, generated, "", conflicts)
             new_records = len(set(merged.get("items", {})) - before)
             state = "updated" if merged != existing else "unchanged"
-            if state == "updated": report["totals"]["updated_files"] += 1
+            if state == "updated":
+                report["totals"]["updated_files"] += 1
         else:
             merged = generated
             state = "new"
