@@ -1,1 +1,125 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"mustang_mach_e","name":"Mustang Mach-E"},"category":"vehicles","items":{"mustang_mach_e_2021_present_passive":{"record_id":"ford_mustang_mach_e_2021_present_passive_uk","vehicle":{"make":"Ford","model":"Mustang Mach-E","variant":"Passive Key / Phone As A Key","generation":"First generation EV","year_from":2021,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford connected passive-entry security architecture","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Emergency access method verification required","key_type":"Passive key with connected/phone-as-key features","smart_key":true,"notes":"EV-specific connected security. Verify physical key provision, Phone As A Key, online/FDRS and account requirements by build and operation."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_mach_e_split_audit"]}}},"sources":{"ford_mach_e_split_audit":{"publisher":"Locksmith Companion Database","title":"Ford Performance and EV Security Split Audit","path":"Docs/FORD_PERFORMANCE_EV_SPLIT_AUDIT.md","accessed":"2026-07-14","scope":["Mustang Mach-E UK generation","passive key and phone-as-key handling"]}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "mustang_mach_e",
+    "name": "Mustang Mach-E"
+  },
+  "category": "vehicles",
+  "items": {
+    "mustang_mach_e_2021_present_passive": {
+      "record_id": "ford_mustang_mach_e_2021_present_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mustang Mach-E",
+        "variant": "Passive Key / Phone As A Key",
+        "generation": "First generation EV",
+        "year_from": 2021,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford connected passive-entry security architecture",
+        "immobiliser_generation": "Verification required",
+        "transponder_type": "Verification required",
+        "frequency_mhz": "Verification required",
+        "blade_profile": "Emergency access method verification required",
+        "key_type": "Passive key with connected/phone-as-key features",
+        "smart_key": true,
+        "notes": "EV-specific connected security. Verify physical key provision, Phone As A Key, online/FDRS and account requirements by build and operation."
+      },
+      "verification": {
+        "status": "verification_required",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_mach_e_split_audit"
+        ]
+      }
+    },
+    "mustang_mach_e_2020_present_passive": {
+      "record_id": "ford_mustang_mach_e_2020_present_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mustang Mach-E",
+        "variant": "Smart Proximity Key",
+        "generation": "Current generation",
+        "year_from": 2020,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Hitag AES",
+        "transponder_type": "Hitag AES",
+        "transponder_id": "hitag_aes",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Smart Proximity Key",
+        "button_count": "3 Buttons / Phone-as-Key",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "LJ8T-15K601-BC"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — exact coverage + online/security access",
+          "route": "OBD + online/FDRS/security access",
+          "online_requirement": "Yes / operation dependent"
+        },
+        "tool_or_cable_required": "Ford security access/bypass as required by build",
+        "emergency_blade": "HU101",
+        "notes": "Electric vehicle diagnostic setup. Program via high-end diagnostic tools or FDRS."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "ford_mach_e_split_audit": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford Performance and EV Security Split Audit",
+      "path": "Docs/FORD_PERFORMANCE_EV_SPLIT_AUDIT.md",
+      "accessed": "2026-07-14",
+      "scope": [
+        "Mustang Mach-E UK generation",
+        "passive key and phone-as-key handling"
+      ]
+    },
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
+}

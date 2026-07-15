@@ -1,16 +1,499 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-15",
-  "manufacturer":{"id":"ford","name":"Ford"},
-  "model":{"id":"ranger","name":"Ranger"},
-  "category":"vehicles",
-  "items":{
-    "ranger_1999_2000_keyed":{"record_id":"ford_ranger_1999_2000_keyed_uk","vehicle":{"make":"Ford","model":"Ranger","variant":"Keyed Ignition","generation":"Mazda B-Series-derived early generation","year_from":1999,"year_to":2000,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Mazda/Ford shared legacy immobiliser","immobiliser_generation":"Texas 4C / ID4C","transponder_type":"Texas 4C","transponder_id":"texas_4c","frequency_mhz":"Confirm original remote and market application","frequency_id":"frequency_unknown","blade_profile":"Mazda-derived profile — exact application confirmation required","blade_id":"emergency_blade_unknown","key_type":"Mechanical ignition key / remote configuration varies","button_count":null,"battery_type":"Confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":[],"tool_ids":[],"programming":{"add_key":"Use exact Mazda/Ford shared-platform coverage","all_keys_lost":"Exact immobiliser and tool coverage required","route":"Legacy diagnostic/immobiliser route","online_requirement":"No"},"notes":"Transpondery confirms Texas 4C for 1999-2000. The early UK Ranger is Mazda-derived, so the blade and remote must not be inferred from later HU101 Ford applications."},"verification":{"status":"locksmith_card_core_partially_verified","last_verified":"2026-07-15","sources":["transpondery_ranger"]}},
-    "ranger_2001_2010_keyed":{"record_id":"ford_ranger_2001_2010_keyed_uk","vehicle":{"make":"Ford","model":"Ranger","variant":"Keyed Ignition","generation":"Mazda-derived Ranger / BT-50-related family","year_from":2001,"year_to":2010,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Mazda/Ford shared Texas Crypto architecture","immobiliser_generation":"ID63","transponder_type":"Texas 4D-63","transponder_id":"texas_4d63_80bit","frequency_mhz":"Confirm exact UK remote application","frequency_id":"frequency_unknown","blade_profile":"Mazda-derived profile — exact application confirmation required","blade_id":"emergency_blade_unknown","key_type":"Remote key with mechanical blade","button_count":null,"battery_type":"Confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":[],"tool_ids":[],"programming":{"add_key":"Use exact Mazda/Ford shared-platform tool coverage","all_keys_lost":"Exact immobiliser and tool coverage required","route":"OBD diagnostic programming where supported","online_requirement":"No"},"notes":"Transpondery confirms Texas 4D63 for 2001-2010. Because this is a Mazda-derived UK platform, blade and frequency remain tied to the exact application rather than later Ford T6 data."},"verification":{"status":"locksmith_card_core_partially_verified","last_verified":"2026-07-15","sources":["transpondery_ranger"]}},
-    "ranger_2011_2014_keyed":{"record_id":"ford_ranger_2011_2014_keyed_uk","vehicle":{"make":"Ford","model":"Ranger","variant":"Keyed Ignition","generation":"T6 / P375 early","year_from":2011,"year_to":2014,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit DST80","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote key with mechanical blade","button_count":3,"battery_type":"Confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Silca HU101AR24 Ranger TKE application","Ranger HU101 433 MHz DST80 family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access may apply","route":"OBD diagnostic programming","online_requirement":"Normally no for this early T6 range"},"notes":"Transpondery lists Ranger 2011+ as DST80. Silca independently lists Ranger TKE 2011-2015 with HU101 and 433 MHz; this record stops before the separately catalogued 2015 Hitag Pro application."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-15","sources":["transpondery_ranger","silca_ranger"]}},
-    "ranger_2015_2022_keyed":{"record_id":"ford_ranger_2015_2022_keyed_uk","vehicle":{"make":"Ford","model":"Ranger","variant":"Keyed Ignition","generation":"T6 / P375 facelift and late family","year_from":2015,"year_to":2022,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47","transponder_type":"NXP Hitag Pro / PCF7939FA-PCF7953P family","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote key with mechanical blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Silca HU101R15 Ranger P375 application","Ranger HU101 433 MHz ID47 family"],"tool_ids":[],"programming":{"add_key":"Supported only where exact Ranger build coverage is explicit","all_keys_lost":"Exact-build coverage required; later vehicles may require online Ford security access","route":"OBD diagnostic programming","online_requirement":"Build and operation dependent"},"notes":"Silca explicitly lists Ranger P375 from 2015 with HU101, 433 MHz and ID47. This provides a locksmith-relevant security breakpoint from the earlier DST80 application."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-15","sources":["transpondery_ranger","silca_ranger"]}},
-    "ranger_2015_2022_passive":{"record_id":"ford_ranger_2015_2022_passive_uk","vehicle":{"make":"Ford","model":"Ranger","variant":"Passive Key / Push Button Start","generation":"T6 / P375 facelift and late family","year_from":2015,"year_to":2022,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47","transponder_type":"NXP Hitag Pro / PCF7939FA-PCF7953P family","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"Passive key with emergency blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":true,"oem_part_numbers":[],"aftermarket_references":["Ranger P375 HU101 433 MHz ID47 passive-key family"],"tool_ids":[],"programming":{"add_key":"Supported only where exact Ranger passive-key coverage is explicit","all_keys_lost":"Exact-build coverage required; online Ford security access may apply","route":"OBD diagnostic programming","online_requirement":"Build and operation dependent"},"notes":"Use only where passive start is physically confirmed. Blade, frequency and Hitag Pro family are supported by the 2015-on Silca Ranger application."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-15","sources":["transpondery_ranger","silca_ranger"]}},
-    "ranger_2023_present":{"record_id":"ford_ranger_2023_present_uk","vehicle":{"make":"Ford","model":"Ranger","variant":"Current generation — keyed/passive by build","generation":"P703","year_from":2023,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford connected security / PATS","immobiliser_generation":"Exact P703 implementation requires current tool/OEM confirmation","transponder_type":"Exact build verification required","transponder_id":"transponder_unknown","frequency_mhz":"Verification required","frequency_id":"frequency_unknown","blade_profile":"HU101 family likely; exact physical key must be confirmed","blade_id":"hu101","key_type":"Keyed or passive configuration by build","button_count":null,"battery_type":"Confirm against physical remote","smart_key":"Verification required","oem_part_numbers":[],"aftermarket_references":[],"tool_ids":[],"programming":{"add_key":"Current Ford tool/FDRS coverage required","all_keys_lost":"Do not accept without explicit P703 support and online-authorisation check","route":"Ford diagnostic/FDRS workflow","online_requirement":"Likely operation dependent; verify before booking"},"notes":"Current P703 Ranger is intentionally isolated from the 2015-2022 T6 data. Do not inherit the older key or programming route without exact VIN/build confirmation."},"verification":{"status":"current_generation_research_required","last_verified":"2026-07-15","sources":["ford_ranger_split_audit"]}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-15",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
   },
-  "sources":{"transpondery_ranger":{"publisher":"Transpondery","title":"Ford Transponder Catalog — Ranger","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-15","evidence":"1999-2000 Texas 4C; 2001-2010 Texas 4D63; 2011+ DST80 family"},"silca_ranger":{"publisher":"Silca","title":"Proximity / Slot / Remote Car Keys Catalogue 2025 — Ranger","url":"https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf","accessed":"2026-07-15","evidence":"Ranger TKE 2011-2015 HU101 433 MHz ID63-6E family; Ranger P375 from 2015 HU101 433 MHz ID47"},"ford_ranger_split_audit":{"publisher":"Locksmith Companion Database","title":"Ford Kuga, Mondeo and Ranger Security Split Audit","path":"Docs/FORD_KUGA_MONDEO_RANGER_SPLIT_AUDIT.md","accessed":"2026-07-14"}}
+  "model": {
+    "id": "ranger",
+    "name": "Ranger"
+  },
+  "category": "vehicles",
+  "items": {
+    "ranger_1999_2000_keyed": {
+      "record_id": "ford_ranger_1999_2000_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ranger",
+        "variant": "Keyed Ignition",
+        "generation": "Mazda B-Series-derived early generation",
+        "year_from": 1999,
+        "year_to": 2000,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Mazda/Ford shared legacy immobiliser",
+        "immobiliser_generation": "Texas 4C / ID4C",
+        "transponder_type": "Texas 4C",
+        "transponder_id": "texas_4c",
+        "frequency_mhz": "Confirm original remote and market application",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "Mazda-derived profile — exact application confirmation required",
+        "blade_id": "emergency_blade_unknown",
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "button_count": null,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Use exact Mazda/Ford shared-platform coverage",
+          "all_keys_lost": "Exact immobiliser and tool coverage required",
+          "route": "Legacy diagnostic/immobiliser route",
+          "online_requirement": "No"
+        },
+        "notes": "Transpondery confirms Texas 4C for 1999-2000. The early UK Ranger is Mazda-derived, so the blade and remote must not be inferred from later HU101 Ford applications."
+      },
+      "verification": {
+        "status": "locksmith_card_core_partially_verified",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_ranger"
+        ]
+      }
+    },
+    "ranger_2001_2010_keyed": {
+      "record_id": "ford_ranger_2001_2010_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ranger",
+        "variant": "Keyed Ignition",
+        "generation": "Mazda-derived Ranger / BT-50-related family",
+        "year_from": 2001,
+        "year_to": 2010,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Mazda/Ford shared Texas Crypto architecture",
+        "immobiliser_generation": "ID63",
+        "transponder_type": "Texas 4D-63",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "Confirm exact UK remote application",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "Mazda-derived profile — exact application confirmation required",
+        "blade_id": "emergency_blade_unknown",
+        "key_type": "Remote key with mechanical blade",
+        "button_count": null,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Use exact Mazda/Ford shared-platform tool coverage",
+          "all_keys_lost": "Exact immobiliser and tool coverage required",
+          "route": "OBD diagnostic programming where supported",
+          "online_requirement": "No"
+        },
+        "notes": "Transpondery confirms Texas 4D63 for 2001-2010. Because this is a Mazda-derived UK platform, blade and frequency remain tied to the exact application rather than later Ford T6 data."
+      },
+      "verification": {
+        "status": "locksmith_card_core_partially_verified",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_ranger"
+        ]
+      }
+    },
+    "ranger_2011_2014_keyed": {
+      "record_id": "ford_ranger_2011_2014_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ranger",
+        "variant": "Keyed Ignition",
+        "generation": "T6 / P375 early",
+        "year_from": 2011,
+        "year_to": 2014,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit DST80",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Silca HU101AR24 Ranger TKE application",
+          "Ranger HU101 433 MHz DST80 family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no for this early T6 range"
+        },
+        "notes": "Transpondery lists Ranger 2011+ as DST80. Silca independently lists Ranger TKE 2011-2015 with HU101 and 433 MHz; this record stops before the separately catalogued 2015 Hitag Pro application."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_ranger",
+          "silca_ranger"
+        ]
+      }
+    },
+    "ranger_2015_2022_keyed": {
+      "record_id": "ford_ranger_2015_2022_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ranger",
+        "variant": "Keyed Ignition",
+        "generation": "T6 / P375 facelift and late family",
+        "year_from": 2015,
+        "year_to": 2022,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47",
+        "transponder_type": "NXP Hitag Pro / PCF7939FA-PCF7953P family",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1919602",
+          "2230771"
+        ],
+        "aftermarket_references": [
+          "Silca HU101R15 Ranger P375 application",
+          "Ranger HU101 433 MHz ID47 family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported only where exact Ranger build coverage is explicit",
+          "all_keys_lost": "Exact-build coverage required; later vehicles may require online Ford security access",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "notes": "Silca explicitly lists Ranger P375 from 2015 with HU101, 433 MHz and ID47. This provides a locksmith-relevant security breakpoint from the earlier DST80 application.",
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade"
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_ranger",
+          "silca_ranger",
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "ranger_2015_2022_passive": {
+      "record_id": "ford_ranger_2015_2022_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ranger",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "T6 / P375 facelift and late family",
+        "year_from": 2015,
+        "year_to": 2022,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47",
+        "transponder_type": "NXP Hitag Pro / PCF7939FA-PCF7953P family",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "Passive key with emergency blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "2198266",
+          "2180633"
+        ],
+        "aftermarket_references": [
+          "Ranger P375 HU101 433 MHz ID47 passive-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported only where exact Ranger passive-key coverage is explicit",
+          "all_keys_lost": "Exact-build coverage required; online Ford security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "notes": "Use only where passive start is physically confirmed. Blade, frequency and Hitag Pro family are supported by the 2015-on Silca Ranger application.",
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "HU101"
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_ranger",
+          "silca_ranger",
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "ranger_2023_present": {
+      "record_id": "ford_ranger_2023_present_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ranger",
+        "variant": "Current generation — keyed/passive by build",
+        "generation": "P703",
+        "year_from": 2023,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford connected security / PATS",
+        "immobiliser_generation": "Exact P703 implementation requires current tool/OEM confirmation",
+        "transponder_type": "Exact build verification required",
+        "transponder_id": "transponder_unknown",
+        "frequency_mhz": "Verification required",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "HU101 family likely; exact physical key must be confirmed",
+        "blade_id": "hu101",
+        "key_type": "Keyed or passive configuration by build",
+        "button_count": null,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": "Verification required",
+        "oem_part_numbers": [],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Current Ford tool/FDRS coverage required",
+          "all_keys_lost": "Do not accept without explicit P703 support and online-authorisation check",
+          "route": "Ford diagnostic/FDRS workflow",
+          "online_requirement": "Likely operation dependent; verify before booking"
+        },
+        "notes": "Current P703 Ranger is intentionally isolated from the 2015-2022 T6 data. Do not inherit the older key or programming route without exact VIN/build confirmation."
+      },
+      "verification": {
+        "status": "current_generation_research_required",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_ranger_split_audit"
+        ]
+      }
+    },
+    "ranger_1998_2011_keyed": {
+      "record_id": "ford_ranger_1998_2011_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ranger",
+        "variant": "Standard Key / Separate Fob",
+        "generation": "Mazda-derived pre-T6 generations",
+        "year_from": 1998,
+        "year_to": 2011,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "TEMIC Crypto ID8C / Texas 4D-63",
+        "transponder_type": "TEMIC Crypto ID8C / Texas 4D-63",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "MIT11 / FO38",
+        "blade_id": "mit11",
+        "key_type": "Standard Key / Separate Fob",
+        "button_count": "2 Buttons (Fob)",
+        "battery_type": "N/A / separate remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "4152821",
+          "Fob (separate)"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Confirm",
+          "all_keys_lost": "Confirm exact build/tool",
+          "route": "Confirm exact tool route",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Mazda-based system. Check chip type carefully, especially ID8C which is highly specific."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "ranger_2011_2015_keyed": {
+      "record_id": "ford_ranger_2011_2015_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ranger",
+        "variant": "Flip Remote Key",
+        "generation": "T6 / P375 early",
+        "year_from": 2011,
+        "year_to": 2015,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-63 (80-Bit)",
+        "transponder_type": "Texas 4D-63 (80-Bit)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Flip Remote Key",
+        "button_count": "3 Buttons",
+        "battery_type": "Confirm physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1756409",
+          "1720983"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Classic 4D-63 system, quick OBD programming."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "ranger_2022_present_passive": {
+      "record_id": "ford_ranger_2022_present_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ranger",
+        "variant": "Smart Proximity Key",
+        "generation": "Current generation",
+        "year_from": 2022,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Hitag AES (ID49)",
+        "transponder_type": "Hitag AES (ID49)",
+        "transponder_id": "hitag_aes",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU198",
+        "blade_id": "hu198",
+        "key_type": "Smart Proximity Key",
+        "button_count": "3 Buttons / 4 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "N1BT-15K601-AA",
+          "AM5T-15K601-AD"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Confirm",
+          "all_keys_lost": "Confirm exact build/tool",
+          "route": "Confirm exact tool route",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "HU198 (Laser)",
+        "notes": "Next-gen Ranger. Shares architecture with VW Amarok (hybrid vehicle electronics)."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "transpondery_ranger": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog — Ranger",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15",
+      "evidence": "1999-2000 Texas 4C; 2001-2010 Texas 4D63; 2011+ DST80 family"
+    },
+    "silca_ranger": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025 — Ranger",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15",
+      "evidence": "Ranger TKE 2011-2015 HU101 433 MHz ID63-6E family; Ranger P375 from 2015 HU101 433 MHz ID47"
+    },
+    "ford_ranger_split_audit": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford Kuga, Mondeo and Ranger Security Split Audit",
+      "path": "Docs/FORD_KUGA_MONDEO_RANGER_SPLIT_AUDIT.md",
+      "accessed": "2026-07-14"
+    },
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
 }

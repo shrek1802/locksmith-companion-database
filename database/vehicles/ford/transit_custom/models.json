@@ -1,15 +1,407 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-15",
-  "manufacturer":{"id":"ford","name":"Ford"},
-  "model":{"id":"transit_custom","name":"Transit Custom"},
-  "category":"vehicles",
-  "items":{
-    "transit_custom_2012_2016_keyed":{"record_id":"ford_transit_custom_2012_2016_keyed_uk","vehicle":{"make":"Ford","model":"Transit Custom","variant":"Keyed Ignition","generation":"First generation early","year_from":2012,"year_to":2016,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote key with mechanical blade","button_count":3,"battery_type":"Confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Transit Custom V362/V363 HU101 433 MHz DST80 family","Silca HU101BR38 application"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access/wait may apply","route":"OBD diagnostic programming","online_requirement":"Normally no for this early DST80 range"},"notes":"Transpondery lists Transit Custom 2012-2017 as DST80/ID63-6F. Silca independently lists Transit Custom V362/V363 2012-2016 with HU101 and 433 MHz."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-15","sources":["transpondery_transit_custom","silca_transit_custom"]}},
-    "transit_custom_2017_2018_keyed":{"record_id":"ford_transit_custom_2017_2018_keyed_uk","vehicle":{"make":"Ford","model":"Transit Custom","variant":"Keyed Ignition","generation":"First generation transition","year_from":2017,"year_to":2018,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS transition range","immobiliser_generation":"DST80 to Hitag Pro build transition","transponder_type":"Confirm by VIN/original key before supply","transponder_id":"transponder_unknown","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"Remote key with mechanical blade","button_count":3,"battery_type":"Confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Transit Custom HU101 433 MHz transition family"],"tool_ids":[],"programming":{"add_key":"Supported where exact-build coverage is confirmed","all_keys_lost":"Do not accept without VIN/build and exact tool coverage","route":"OBD diagnostic programming","online_requirement":"Build dependent"},"notes":"The checked professional catalogues leave a gap between the 2012-2017 DST80 range and the 2019+ Hitag Pro range. Keep 2017-2018 as a genuine build transition requiring VIN/original-key confirmation rather than guessing one chip across both years."},"verification":{"status":"transition_build_verification_required","last_verified":"2026-07-15","sources":["transpondery_transit_custom","silca_transit_custom"]}},
-    "transit_custom_2019_2023_keyed":{"record_id":"ford_transit_custom_2019_2023_keyed_uk","vehicle":{"make":"Ford","model":"Transit Custom","variant":"Keyed Ignition","generation":"First generation late","year_from":2019,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47","transponder_type":"NXP Hitag Pro / PCF7939FA-PCF7945F family","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"Remote key with mechanical blade","button_count":3,"battery_type":"Confirm against physical remote","smart_key":false,"oem_part_numbers":["GK2T-15K601-AA","GK2T-15K601-AB","A2C94379403"],"aftermarket_references":["Transit Custom HU101 433 MHz Hitag Pro family","Silca HU101TR15 application"],"tool_ids":[],"programming":{"add_key":"Supported only where exact-build tool coverage is explicit","all_keys_lost":"Exact-build coverage required; later security/online access may apply","route":"OBD diagnostic programming","online_requirement":"Build and operation dependent"},"notes":"Transpondery lists Transit Custom 2019+ as Hitag Pro and provides the OEM proximity references shown. Silca lists Transit Custom V362 from 2016 with HU101, 433 MHz and ID47-family remote applications."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-15","sources":["transpondery_transit_custom","silca_transit_custom"]}},
-    "transit_custom_2019_2023_passive":{"record_id":"ford_transit_custom_2019_2023_passive_uk","vehicle":{"make":"Ford","model":"Transit Custom","variant":"Passive Key / Push Button Start","generation":"First generation late","year_from":2019,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47","transponder_type":"NXP Hitag Pro / PCF7939FA-PCF7945F family","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"Passive key with emergency blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":true,"oem_part_numbers":["GK2T-15K601-AA","GK2T-15K601-AB","A2C94379403"],"aftermarket_references":["Transit Custom 433 MHz Hitag Pro proximity-key family"],"tool_ids":[],"programming":{"add_key":"Supported only where exact-build tool coverage is explicit","all_keys_lost":"Exact-build coverage required; later security/online access may apply","route":"OBD diagnostic programming","online_requirement":"Build and operation dependent"},"notes":"Use only where passive start is physically confirmed. OEM references and transponder family are source-backed; operation-level tool IDs remain to be mapped."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-15","sources":["transpondery_transit_custom","silca_transit_custom"]}},
-    "transit_custom_2023_present":{"record_id":"ford_transit_custom_2023_present_uk","vehicle":{"make":"Ford","model":"Transit Custom","variant":"Second generation — keyed/passive by build","generation":"Second generation","year_from":2023,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford connected security / PATS","immobiliser_generation":"Exact current-generation implementation requires tool/OEM confirmation","transponder_type":"Exact build verification required","transponder_id":"transponder_unknown","frequency_mhz":"Verification required","frequency_id":"frequency_unknown","blade_profile":"HU101 family likely; exact physical key must be confirmed","blade_id":"hu101","key_type":"Keyed or passive configuration by build","button_count":null,"battery_type":"Confirm against physical remote","smart_key":"Verification required","oem_part_numbers":[],"aftermarket_references":[],"tool_ids":[],"programming":{"add_key":"Exact Ford FDRS/tool coverage required","all_keys_lost":"Do not accept without explicit current-generation coverage and online-authorisation check","route":"Ford diagnostic/FDRS workflow","online_requirement":"Likely operation dependent; verify before booking"},"notes":"Current second-generation Transit Custom is retained as an explicit current-platform record. Do not inherit the 2019-2023 key or procedure without exact VIN/build confirmation."},"verification":{"status":"current_generation_research_required","last_verified":"2026-07-15","sources":["ford_transit_custom_split_audit"]}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-15",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
   },
-  "sources":{"transpondery_transit_custom":{"publisher":"Transpondery","title":"Ford Transponder Catalog — Transit Custom","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-15","evidence":"2012-2017 DST80; 2019+ Hitag Pro; OEM GK2T-15K601-AA, GK2T-15K601-AB, A2C94379403"},"silca_transit_custom":{"publisher":"Silca","title":"Proximity / Slot / Remote Car Keys Catalogue 2025 — Transit Custom","url":"https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf","accessed":"2026-07-15","evidence":"Transit Custom V362/V363 2012-2016 HU101 433 MHz; Transit Custom V362 2016 HU101 433 MHz ID47-family"},"ford_transit_custom_split_audit":{"publisher":"Locksmith Companion Database","title":"Ford Security Generation Split Audit","path":"Docs/FORD_SECURITY_SPLIT_AUDIT.md","accessed":"2026-07-14"}}
+  "model": {
+    "id": "transit_custom",
+    "name": "Transit Custom"
+  },
+  "category": "vehicles",
+  "items": {
+    "transit_custom_2012_2016_keyed": {
+      "record_id": "ford_transit_custom_2012_2016_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Custom",
+        "variant": "Keyed Ignition",
+        "generation": "First generation early",
+        "year_from": 2012,
+        "year_to": 2016,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
+        "aftermarket_references": [
+          "Transit Custom V362/V363 HU101 433 MHz DST80 family",
+          "Silca HU101BR38 application"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no for this early DST80 range"
+        },
+        "notes": "Transpondery lists Transit Custom 2012-2017 as DST80/ID63-6F. Silca independently lists Transit Custom V362/V363 2012-2016 with HU101 and 433 MHz.",
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade"
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_transit_custom",
+          "silca_transit_custom",
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "transit_custom_2017_2018_keyed": {
+      "record_id": "ford_transit_custom_2017_2018_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Custom",
+        "variant": "Keyed Ignition",
+        "generation": "First generation transition",
+        "year_from": 2017,
+        "year_to": 2018,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS transition range",
+        "immobiliser_generation": "DST80 to Hitag Pro build transition",
+        "transponder_type": "Confirm by VIN/original key before supply",
+        "transponder_id": "transponder_unknown",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Custom HU101 433 MHz transition family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported where exact-build coverage is confirmed",
+          "all_keys_lost": "Do not accept without VIN/build and exact tool coverage",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build dependent"
+        },
+        "notes": "The checked professional catalogues leave a gap between the 2012-2017 DST80 range and the 2019+ Hitag Pro range. Keep 2017-2018 as a genuine build transition requiring VIN/original-key confirmation rather than guessing one chip across both years."
+      },
+      "verification": {
+        "status": "transition_build_verification_required",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_transit_custom",
+          "silca_transit_custom"
+        ]
+      }
+    },
+    "transit_custom_2019_2023_keyed": {
+      "record_id": "ford_transit_custom_2019_2023_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Custom",
+        "variant": "Keyed Ignition",
+        "generation": "First generation late",
+        "year_from": 2019,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47",
+        "transponder_type": "NXP Hitag Pro / PCF7939FA-PCF7945F family",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "GK2T-15K601-AA",
+          "GK2T-15K601-AB",
+          "A2C94379403"
+        ],
+        "aftermarket_references": [
+          "Transit Custom HU101 433 MHz Hitag Pro family",
+          "Silca HU101TR15 application"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported only where exact-build tool coverage is explicit",
+          "all_keys_lost": "Exact-build coverage required; later security/online access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "notes": "Transpondery lists Transit Custom 2019+ as Hitag Pro and provides the OEM proximity references shown. Silca lists Transit Custom V362 from 2016 with HU101, 433 MHz and ID47-family remote applications."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_transit_custom",
+          "silca_transit_custom"
+        ]
+      }
+    },
+    "transit_custom_2019_2023_passive": {
+      "record_id": "ford_transit_custom_2019_2023_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Custom",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "First generation late",
+        "year_from": 2019,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47",
+        "transponder_type": "NXP Hitag Pro / PCF7939FA-PCF7945F family",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "Passive key with emergency blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "GK2T-15K601-AA",
+          "GK2T-15K601-AB",
+          "A2C94379403"
+        ],
+        "aftermarket_references": [
+          "Transit Custom 433 MHz Hitag Pro proximity-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported only where exact-build tool coverage is explicit",
+          "all_keys_lost": "Exact-build coverage required; later security/online access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "notes": "Use only where passive start is physically confirmed. OEM references and transponder family are source-backed; operation-level tool IDs remain to be mapped."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_transit_custom",
+          "silca_transit_custom"
+        ]
+      }
+    },
+    "transit_custom_2023_present": {
+      "record_id": "ford_transit_custom_2023_present_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Custom",
+        "variant": "Second generation — keyed/passive by build",
+        "generation": "Second generation",
+        "year_from": 2023,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford connected security / PATS",
+        "immobiliser_generation": "Exact current-generation implementation requires tool/OEM confirmation",
+        "transponder_type": "Exact build verification required",
+        "transponder_id": "transponder_unknown",
+        "frequency_mhz": "Verification required",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "HU101 family likely; exact physical key must be confirmed",
+        "blade_id": "hu101",
+        "key_type": "Keyed or passive configuration by build",
+        "button_count": null,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": "Verification required",
+        "oem_part_numbers": [],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Exact Ford FDRS/tool coverage required",
+          "all_keys_lost": "Do not accept without explicit current-generation coverage and online-authorisation check",
+          "route": "Ford diagnostic/FDRS workflow",
+          "online_requirement": "Likely operation dependent; verify before booking"
+        },
+        "notes": "Current second-generation Transit Custom is retained as an explicit current-platform record. Do not inherit the 2019-2023 key or procedure without exact VIN/build confirmation."
+      },
+      "verification": {
+        "status": "current_generation_research_required",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_transit_custom_split_audit"
+        ]
+      }
+    },
+    "transit_custom_2016_2023_keyed": {
+      "record_id": "ford_transit_custom_2016_2023_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Custom",
+        "variant": "Flip Remote Key (Hitag Pro)",
+        "generation": "MK8",
+        "year_from": 2016,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "HITAG Pro - ID47 (reads as ID49)",
+        "transponder_type": "HITAG Pro - ID47 (reads as ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Flip Remote Key (Hitag Pro)",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "2149959",
+          "2013328",
+          "2510975"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Diagnostically via OBD. Select ID47 / Hitag Pro in diagnostic machine."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "transit_custom_2023_present_passive": {
+      "record_id": "ford_transit_custom_2023_present_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Custom",
+        "variant": "Proximity Smart Key",
+        "generation": "MK9",
+        "year_from": 2023,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Hitag 128-Bit AES",
+        "transponder_type": "Hitag 128-Bit AES",
+        "transponder_id": "hitag_aes",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU198",
+        "blade_id": "hu198",
+        "key_type": "Proximity Smart Key",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "NZ6T-15K601-BA"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — exact coverage + online/security access",
+          "route": "OBD + online/FDRS/security access",
+          "online_requirement": "Yes / operation dependent"
+        },
+        "tool_or_cable_required": "Ford security access/bypass as required by build",
+        "emergency_blade": "HU198 (Laser)",
+        "notes": "Requires active secure gateway bypass and online system. Push button start."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "transpondery_transit_custom": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog — Transit Custom",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15",
+      "evidence": "2012-2017 DST80; 2019+ Hitag Pro; OEM GK2T-15K601-AA, GK2T-15K601-AB, A2C94379403"
+    },
+    "silca_transit_custom": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025 — Transit Custom",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15",
+      "evidence": "Transit Custom V362/V363 2012-2016 HU101 433 MHz; Transit Custom V362 2016 HU101 433 MHz ID47-family"
+    },
+    "ford_transit_custom_split_audit": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford Security Generation Split Audit",
+      "path": "Docs/FORD_SECURITY_SPLIT_AUDIT.md",
+      "accessed": "2026-07-14"
+    },
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
 }

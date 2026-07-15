@@ -1,18 +1,445 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-14",
-  "manufacturer":{"id":"ford","name":"Ford"},
-  "model":{"id":"mondeo","name":"Mondeo"},
-  "category":"vehicles",
-  "items":{
-    "mondeo_1996_2000_keyed":{"record_id":"ford_mondeo_1996_2000_keyed_uk","vehicle":{"make":"Ford","model":"Mondeo","variant":"Keyed Ignition","generation":"Mk2 / facelifted first-generation family","year_from":1996,"year_to":2000,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS legacy fixed-code","immobiliser_generation":"Texas 4C / ID4C","transponder_type":"Texas 4C","transponder_id":"texas_4c","frequency_mhz":"Verification required","frequency_id":"frequency_unknown","blade_profile":"Verification required","blade_id":"emergency_blade_unknown","key_type":"Mechanical ignition key / remote configuration varies","smart_key":false,"tool_ids":[],"notes":"Transponder family is verified by Transpondery for Mondeo 1995-2001. Blade and UK remote frequency remain unresolved because the checked Silca proximity/remote catalogue starts at the 2001 Mondeo application."},"verification":{"status":"partially_verified","last_verified":"2026-07-14","sources":["transpondery_mondeo"]}},
-    "mondeo_2000_transition_keyed":{"record_id":"ford_mondeo_2000_transition_keyed_uk","vehicle":{"make":"Ford","model":"Mondeo","variant":"Keyed Ignition — transition build","generation":"Mk3 introduction","year_from":2000,"year_to":2000,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","transponder_id":"transponder_unknown","frequency_mhz":"Verification required","frequency_id":"frequency_unknown","blade_profile":"Verification required","blade_id":"emergency_blade_unknown","key_type":"Remote key with mechanical ignition blade","smart_key":false,"tool_ids":[],"notes":"The professional catalogues checked begin the Mk3 application at 2001. Verify VIN/build before choosing the 2001-2006 mapping."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":[]}},
-    "mondeo_2001_2006_keyed":{"record_id":"ford_mondeo_2001_2006_keyed_uk","vehicle":{"make":"Ford","model":"Mondeo","variant":"Keyed Ignition","generation":"Mk3","year_from":2001,"year_to":2006,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"4D60 / ID60","transponder_type":"Texas 4D-60","transponder_id":"texas_4d60","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"FO21","blade_id":"fo21","key_type":"3-button remote key with mechanical blade","smart_key":false,"tool_ids":[],"notes":"Blade and 433 MHz application are confirmed by Silca for Mondeo B4Y/B5Y/BWY 2001-2006; Transpondery confirms 4D60 for Mondeo 2001-2007. Tool compatibility remains pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_mondeo","silca_mondeo"]}},
-    "mondeo_2007_2010_keyed":{"record_id":"ford_mondeo_2007_2010_keyed_uk","vehicle":{"make":"Ford","model":"Mondeo","variant":"Keyed Ignition","generation":"Mk4 pre-facelift","year_from":2007,"year_to":2010,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63","transponder_type":"Texas 4D-63 80-bit","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote key with mechanical blade","smart_key":false,"tool_ids":[],"notes":"Transpondery confirms 4D63 for 2007-2010. Silca lists Mondeo BA7/CA2 HU101 at 433 MHz across this range. Tool compatibility remains pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_mondeo","silca_mondeo"]}},
-    "mondeo_2007_2010_passive":{"record_id":"ford_mondeo_2007_2010_passive_uk","vehicle":{"make":"Ford","model":"Mondeo","variant":"Passive Key / Push Button Start","generation":"Mk4 pre-facelift","year_from":2007,"year_to":2010,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63","transponder_type":"Texas 4D-63 80-bit","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"Passive key with emergency blade","smart_key":true,"tool_ids":[],"notes":"Use only where passive start is confirmed. Key family, HU101 emergency blade and 433 MHz application are verified for this range."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_mondeo","silca_mondeo"]}},
-    "mondeo_2011_2014_keyed":{"record_id":"ford_mondeo_2011_2014_keyed_uk","vehicle":{"make":"Ford","model":"Mondeo","variant":"Keyed Ignition","generation":"Mk4 facelift","year_from":2011,"year_to":2014,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote key with mechanical blade","smart_key":false,"tool_ids":[],"notes":"Transpondery confirms DST80 for 2011-2014. Silca lists Mondeo CA2 HU101 at 433 MHz for 2011-2014. Tool compatibility remains pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_mondeo","silca_mondeo"]}},
-    "mondeo_2011_2014_passive":{"record_id":"ford_mondeo_2011_2014_passive_uk","vehicle":{"make":"Ford","model":"Mondeo","variant":"Passive Key / Push Button Start","generation":"Mk4 facelift","year_from":2011,"year_to":2014,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"Passive key with emergency blade","smart_key":true,"tool_ids":[],"notes":"Use only where passive start is confirmed. Blade, transponder and frequency are verified for the facelift range."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_mondeo","silca_mondeo"]}},
-    "mondeo_2014_2022_passive":{"record_id":"ford_mondeo_2014_2022_passive_uk","vehicle":{"make":"Ford","model":"Mondeo","variant":"Passive Key / Push Button Start","generation":"Mk5 / CD391","year_from":2014,"year_to":2022,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47","transponder_type":"NXP Hitag Pro","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"3-button passive key with emergency blade","smart_key":true,"tool_ids":[],"notes":"Transpondery lists Mondeo 2014+ as Hitag Pro. Silca lists CD391 2014-2020 and 2017-2022 with HU101 and 433 MHz. Tool and FDRS requirements remain to be mapped separately."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_mondeo","silca_mondeo"]}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
   },
-  "sources":{"transpondery_mondeo":{"publisher":"Transpondery","title":"Ford Transponder Catalog — Mondeo","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-14","evidence":"1995-2001 4C; 2001-2007 4D60; 2007-2010 4D63; 2011-2014 DST80; 2014+ Hitag Pro"},"silca_mondeo":{"publisher":"Silca","title":"Proximity / Slot / Remote Car Keys Catalogue 2025","url":"https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf","accessed":"2026-07-14","evidence":"Mondeo 2001-2006 FO21 433AM; 2007-2014 HU101 433AM/FM; CD391 2014-2022 HU101 433AM"}}
+  "model": {
+    "id": "mondeo",
+    "name": "Mondeo"
+  },
+  "category": "vehicles",
+  "items": {
+    "mondeo_1996_2000_keyed": {
+      "record_id": "ford_mondeo_1996_2000_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mondeo",
+        "variant": "Keyed Ignition",
+        "generation": "Mk2 / facelifted first-generation family",
+        "year_from": 1996,
+        "year_to": 2000,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS legacy fixed-code",
+        "immobiliser_generation": "Texas 4C / ID4C",
+        "transponder_type": "Texas 4C",
+        "transponder_id": "texas_4c",
+        "frequency_mhz": "Verification required",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "Verification required",
+        "blade_id": "emergency_blade_unknown",
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Transponder family is verified by Transpondery for Mondeo 1995-2001. Blade and UK remote frequency remain unresolved because the checked Silca proximity/remote catalogue starts at the 2001 Mondeo application."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_mondeo"
+        ]
+      }
+    },
+    "mondeo_2000_transition_keyed": {
+      "record_id": "ford_mondeo_2000_transition_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mondeo",
+        "variant": "Keyed Ignition — transition build",
+        "generation": "Mk3 introduction",
+        "year_from": 2000,
+        "year_to": 2000,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS",
+        "immobiliser_generation": "Verification required",
+        "transponder_type": "Verification required",
+        "transponder_id": "transponder_unknown",
+        "frequency_mhz": "Verification required",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "Verification required",
+        "blade_id": "emergency_blade_unknown",
+        "key_type": "Remote key with mechanical ignition blade",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "The professional catalogues checked begin the Mk3 application at 2001. Verify VIN/build before choosing the 2001-2006 mapping."
+      },
+      "verification": {
+        "status": "verification_required",
+        "last_verified": "2026-07-14",
+        "sources": []
+      }
+    },
+    "mondeo_2001_2006_keyed": {
+      "record_id": "ford_mondeo_2001_2006_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mondeo",
+        "variant": "Keyed Ignition",
+        "generation": "Mk3",
+        "year_from": 2001,
+        "year_to": 2006,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "4D60 / ID60",
+        "transponder_type": "Texas 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "FO21",
+        "blade_id": "fo21",
+        "key_type": "3-button remote key with mechanical blade",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Blade and 433 MHz application are confirmed by Silca for Mondeo B4Y/B5Y/BWY 2001-2006; Transpondery confirms 4D60 for Mondeo 2001-2007. Tool compatibility remains pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_mondeo",
+          "silca_mondeo"
+        ]
+      }
+    },
+    "mondeo_2007_2010_keyed": {
+      "record_id": "ford_mondeo_2007_2010_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mondeo",
+        "variant": "Keyed Ignition",
+        "generation": "Mk4 pre-facelift",
+        "year_from": 2007,
+        "year_to": 2010,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63",
+        "transponder_type": "Texas 4D-63 80-bit",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote key with mechanical blade",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Transpondery confirms 4D63 for 2007-2010. Silca lists Mondeo BA7/CA2 HU101 at 433 MHz across this range. Tool compatibility remains pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_mondeo",
+          "silca_mondeo"
+        ]
+      }
+    },
+    "mondeo_2007_2010_passive": {
+      "record_id": "ford_mondeo_2007_2010_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mondeo",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Mk4 pre-facelift",
+        "year_from": 2007,
+        "year_to": 2010,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63",
+        "transponder_type": "Texas 4D-63 80-bit",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "Passive key with emergency blade",
+        "smart_key": true,
+        "tool_ids": [],
+        "notes": "Use only where passive start is confirmed. Key family, HU101 emergency blade and 433 MHz application are verified for this range."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_mondeo",
+          "silca_mondeo"
+        ]
+      }
+    },
+    "mondeo_2011_2014_keyed": {
+      "record_id": "ford_mondeo_2011_2014_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mondeo",
+        "variant": "Keyed Ignition",
+        "generation": "Mk4 facelift",
+        "year_from": 2011,
+        "year_to": 2014,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote key with mechanical blade",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Transpondery confirms DST80 for 2011-2014. Silca lists Mondeo CA2 HU101 at 433 MHz for 2011-2014. Tool compatibility remains pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_mondeo",
+          "silca_mondeo"
+        ]
+      }
+    },
+    "mondeo_2011_2014_passive": {
+      "record_id": "ford_mondeo_2011_2014_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mondeo",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Mk4 facelift",
+        "year_from": 2011,
+        "year_to": 2014,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "Passive key with emergency blade",
+        "smart_key": true,
+        "tool_ids": [],
+        "notes": "Use only where passive start is confirmed. Blade, transponder and frequency are verified for the facelift range."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_mondeo",
+          "silca_mondeo"
+        ]
+      }
+    },
+    "mondeo_2014_2022_passive": {
+      "record_id": "ford_mondeo_2014_2022_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mondeo",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Mk5 / CD391",
+        "year_from": 2014,
+        "year_to": 2022,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47",
+        "transponder_type": "NXP Hitag Pro",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "3-button passive key with emergency blade",
+        "smart_key": true,
+        "tool_ids": [],
+        "notes": "Transpondery lists Mondeo 2014+ as Hitag Pro. Silca lists CD391 2014-2020 and 2017-2022 with HU101 and 433 MHz. Tool and FDRS requirements remain to be mapped separately.",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "oem_part_numbers": [
+          "1919602",
+          "2230771"
+        ],
+        "aftermarket_references": [],
+        "programming": {
+          "add_key": "Confirm",
+          "all_keys_lost": "Confirm exact build/tool",
+          "route": "Confirm exact tool route",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "HU101"
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_mondeo",
+          "silca_mondeo",
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "mondeo_2000_2007_keyed": {
+      "record_id": "ford_mondeo_2000_2007_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mondeo",
+        "variant": "3 Button Remote Head",
+        "generation": "MK3",
+        "year_from": 2000,
+        "year_to": 2007,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-60",
+        "transponder_type": "Texas 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "FO21",
+        "blade_id": "fo21",
+        "key_type": "3 Button Remote Head",
+        "button_count": "3 Buttons",
+        "battery_type": "Confirm physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1337641",
+          "1753886"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD immobiliser + manual remote matching",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Classic Tibbe setup. Remote manuals x8 ignition cycles."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "mondeo_2007_2014_passive": {
+      "record_id": "ford_mondeo_2007_2014_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Mondeo",
+        "variant": "Smart Key / Flip Key Options",
+        "generation": "MK4",
+        "year_from": 2007,
+        "year_to": 2014,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-63 (80-Bit)",
+        "transponder_type": "Texas 4D-63 (80-Bit)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Smart Key / Flip Key Options",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "1713499",
+          "1756409"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "HU101",
+        "notes": "Standard OBD programming with pincode calculation via diagnostic."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "transpondery_mondeo": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog — Mondeo",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-14",
+      "evidence": "1995-2001 4C; 2001-2007 4D60; 2007-2010 4D63; 2011-2014 DST80; 2014+ Hitag Pro"
+    },
+    "silca_mondeo": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-14",
+      "evidence": "Mondeo 2001-2006 FO21 433AM; 2007-2014 HU101 433AM/FM; CD391 2014-2022 HU101 433AM"
+    },
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
 }

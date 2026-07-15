@@ -1,17 +1,378 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-14",
-  "manufacturer":{"id":"ford","name":"Ford"},
-  "model":{"id":"kuga","name":"Kuga"},
-  "category":"vehicles",
-  "items":{
-    "kuga_2008_2012_keyed":{"record_id":"ford_kuga_2008_2012_keyed_uk","vehicle":{"make":"Ford","model":"Kuga","variant":"Keyed Ignition","generation":"First generation","year_from":2008,"year_to":2012,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63","transponder_type":"Texas 4D-63 80-bit","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote key with mechanical blade","smart_key":false,"tool_ids":[],"notes":"Blade, transponder and frequency verified against Transpondery and the 2025 Silca catalogue. Tool compatibility still pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_kuga","silca_kuga"]}},
-    "kuga_2008_2012_passive":{"record_id":"ford_kuga_2008_2012_passive_uk","vehicle":{"make":"Ford","model":"Kuga","variant":"Passive Key / Push Button Start","generation":"First generation","year_from":2008,"year_to":2012,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63","transponder_type":"Texas 4D-63 80-bit","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"Passive key with emergency blade","smart_key":true,"tool_ids":[],"notes":"Use only where passive start is confirmed. Blade, transponder and frequency verified; tool compatibility still pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_kuga","silca_kuga"]}},
-    "kuga_2013_2015_keyed":{"record_id":"ford_kuga_2013_2015_keyed_uk","vehicle":{"make":"Ford","model":"Kuga","variant":"Keyed Ignition","generation":"Second generation pre-facelift","year_from":2013,"year_to":2015,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote key with mechanical blade","smart_key":false,"tool_ids":[],"notes":"Verified within the 2012-2016 DST80 security range. Tool compatibility still pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_kuga","silca_kuga"]}},
-    "kuga_2013_2015_passive":{"record_id":"ford_kuga_2013_2015_passive_uk","vehicle":{"make":"Ford","model":"Kuga","variant":"Passive Key / Push Button Start","generation":"Second generation pre-facelift","year_from":2013,"year_to":2015,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"Passive key with emergency blade","smart_key":true,"tool_ids":[],"notes":"Verified within the 2012-2016 DST80 security range. Tool compatibility still pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_kuga","silca_kuga"]}},
-    "kuga_2016_2019_keyed":{"record_id":"ford_kuga_2016_2019_keyed_uk","vehicle":{"make":"Ford","model":"Kuga","variant":"Keyed Ignition","generation":"Second generation facelift","year_from":2016,"year_to":2019,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47","transponder_type":"NXP Hitag Pro","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"Remote key with mechanical blade","smart_key":false,"tool_ids":[],"notes":"Blade, transponder and 433 MHz frequency verified against Transpondery and Silca. Tool compatibility still pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_kuga","silca_kuga"]}},
-    "kuga_2016_2019_passive":{"record_id":"ford_kuga_2016_2019_passive_uk","vehicle":{"make":"Ford","model":"Kuga","variant":"Passive Key / Push Button Start","generation":"Second generation facelift","year_from":2016,"year_to":2019,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47","transponder_type":"NXP Hitag Pro","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"Passive key with emergency blade","smart_key":true,"tool_ids":[],"notes":"Blade, transponder and 433 MHz frequency verified against Transpondery and Silca. Tool compatibility still pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_kuga","silca_kuga"]}},
-    "kuga_2020_present_passive":{"record_id":"ford_kuga_2020_present_passive_uk","vehicle":{"make":"Ford","model":"Kuga","variant":"Passive Key / Push Button Start","generation":"Third generation / C2","year_from":2020,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","transponder_id":"transponder_unknown","frequency_mhz":"Verification required","frequency_id":"frequency_unknown","blade_profile":"Verification required","blade_id":"emergency_blade_unknown","key_type":"Passive key with emergency blade","smart_key":true,"tool_ids":[],"notes":"Current C2 generation needs an exact UK professional application source before mapping."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":[]}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
   },
-  "sources":{"transpondery_kuga":{"publisher":"Transpondery","title":"Ford Transponder Catalog — Kuga","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-14"},"silca_kuga":{"publisher":"Silca","title":"Proximity / Slot / Remote Car Keys Catalogue 2025","url":"https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf","accessed":"2026-07-14","evidence":"Kuga 2008-2012 HU101 433AM; Kuga CBS 2011-2016 HU101 433FM; Kuga CBS 2016 HU101 433FM ID47"}}
+  "model": {
+    "id": "kuga",
+    "name": "Kuga"
+  },
+  "category": "vehicles",
+  "items": {
+    "kuga_2008_2012_keyed": {
+      "record_id": "ford_kuga_2008_2012_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Kuga",
+        "variant": "Keyed Ignition",
+        "generation": "First generation",
+        "year_from": 2008,
+        "year_to": 2012,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63",
+        "transponder_type": "Texas 4D-63 80-bit",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote key with mechanical blade",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Blade, transponder and frequency verified against Transpondery and the 2025 Silca catalogue. Tool compatibility still pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_kuga",
+          "silca_kuga"
+        ]
+      }
+    },
+    "kuga_2008_2012_passive": {
+      "record_id": "ford_kuga_2008_2012_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Kuga",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "First generation",
+        "year_from": 2008,
+        "year_to": 2012,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63",
+        "transponder_type": "Texas 4D-63 80-bit",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "Passive key with emergency blade",
+        "smart_key": true,
+        "tool_ids": [],
+        "notes": "Use only where passive start is confirmed. Blade, transponder and frequency verified; tool compatibility still pending.",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "oem_part_numbers": [
+          "1698112",
+          "1713499"
+        ],
+        "aftermarket_references": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "HU101"
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_kuga",
+          "silca_kuga",
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "kuga_2013_2015_keyed": {
+      "record_id": "ford_kuga_2013_2015_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Kuga",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation pre-facelift",
+        "year_from": 2013,
+        "year_to": 2015,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote key with mechanical blade",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Verified within the 2012-2016 DST80 security range. Tool compatibility still pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_kuga",
+          "silca_kuga"
+        ]
+      }
+    },
+    "kuga_2013_2015_passive": {
+      "record_id": "ford_kuga_2013_2015_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Kuga",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Second generation pre-facelift",
+        "year_from": 2013,
+        "year_to": 2015,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "Passive key with emergency blade",
+        "smart_key": true,
+        "tool_ids": [],
+        "notes": "Verified within the 2012-2016 DST80 security range. Tool compatibility still pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_kuga",
+          "silca_kuga"
+        ]
+      }
+    },
+    "kuga_2016_2019_keyed": {
+      "record_id": "ford_kuga_2016_2019_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Kuga",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation facelift",
+        "year_from": 2016,
+        "year_to": 2019,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47",
+        "transponder_type": "NXP Hitag Pro",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Remote key with mechanical blade",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Blade, transponder and 433 MHz frequency verified against Transpondery and Silca. Tool compatibility still pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_kuga",
+          "silca_kuga"
+        ]
+      }
+    },
+    "kuga_2016_2019_passive": {
+      "record_id": "ford_kuga_2016_2019_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Kuga",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Second generation facelift",
+        "year_from": 2016,
+        "year_to": 2019,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47",
+        "transponder_type": "NXP Hitag Pro",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "Passive key with emergency blade",
+        "smart_key": true,
+        "tool_ids": [],
+        "notes": "Blade, transponder and 433 MHz frequency verified against Transpondery and Silca. Tool compatibility still pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_kuga",
+          "silca_kuga"
+        ]
+      }
+    },
+    "kuga_2020_present_passive": {
+      "record_id": "ford_kuga_2020_present_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Kuga",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Third generation / C2",
+        "year_from": 2020,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS",
+        "immobiliser_generation": "Hitag AES (ID49)",
+        "transponder_type": "Hitag AES (ID49)",
+        "transponder_id": "transponder_unknown",
+        "frequency_mhz": 433,
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "HU101",
+        "blade_id": "emergency_blade_unknown",
+        "key_type": "Passive key with emergency blade",
+        "smart_key": true,
+        "tool_ids": [],
+        "notes": "Current C2 generation needs an exact UK professional application source before mapping.",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "oem_part_numbers": [
+          "2441951",
+          "2596954"
+        ],
+        "aftermarket_references": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — exact coverage + online/security access",
+          "route": "OBD + online/FDRS/security access",
+          "online_requirement": "Yes / operation dependent"
+        },
+        "tool_or_cable_required": "Ford security access/bypass as required by build",
+        "emergency_blade": "HU101"
+      },
+      "verification": {
+        "status": "verification_required",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "kuga_2013_2020_passive": {
+      "record_id": "ford_kuga_2013_2020_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Kuga",
+        "variant": "Pear / Teardrop Keyless Smart Key",
+        "generation": "Second generation",
+        "year_from": 2013,
+        "year_to": 2020,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "HITAG Pro - ID47",
+        "transponder_type": "HITAG Pro - ID47",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Pear / Teardrop Keyless Smart Key",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "2027592",
+          "2178773"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "HU101",
+        "notes": "Standard pear style keyless. Diagnostics required."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "transpondery_kuga": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog — Kuga",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-14"
+    },
+    "silca_kuga": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-14",
+      "evidence": "Kuga 2008-2012 HU101 433AM; Kuga CBS 2011-2016 HU101 433FM; Kuga CBS 2016 HU101 433FM ID47"
+    },
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
 }

@@ -1,16 +1,555 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-14",
-  "manufacturer":{"id":"ford","name":"Ford"},
-  "model":{"id":"transit_connect","name":"Transit Connect"},
-  "category":"vehicles",
-  "items":{
-    "transit_connect_2002_2008_keyed":{"record_id":"ford_transit_connect_2002_2008_keyed_uk","vehicle":{"make":"Ford","model":"Transit Connect","variant":"Keyed Ignition","generation":"First generation early","year_from":2002,"year_to":2008,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"4D60 / ID60","transponder_type":"Texas 4D-60","transponder_id":"texas_4d60","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"Remote key with mechanical blade","button_count":3,"battery_type":"Confirm against physical remote before supply","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Transit Connect HU101 433 MHz 4D60 remote-key family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access/wait may apply","route":"OBD diagnostic programming","online_requirement":"Not normally expected for this generation"},"notes":"Early first-generation Transit Connect. Core blade, transponder and frequency are mapped for UK stock lookup; exact OEM remote part numbers and tool IDs remain to be added."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_transit_connect","silca_transit_connect"]}},
-    "transit_connect_2009_2012_keyed":{"record_id":"ford_transit_connect_2009_2012_keyed_uk","vehicle":{"make":"Ford","model":"Transit Connect","variant":"Keyed Ignition","generation":"First generation facelift","year_from":2009,"year_to":2012,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63","transponder_type":"Texas 4D-63 80-bit","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"Remote key with mechanical blade","button_count":3,"battery_type":"Confirm against physical remote before supply","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Transit Connect HU101 433 MHz ID63 80-bit remote-key family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access/wait may apply","route":"OBD diagnostic programming","online_requirement":"Not normally expected for this generation"},"notes":"The first-generation facelift changes from 4D60 to 4D63. Exact OEM remote part numbers and tool IDs remain to be added."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_transit_connect","silca_transit_connect","keystation_transit_connect"]}},
-    "transit_connect_2013_2015_keyed":{"record_id":"ford_transit_connect_2013_2015_keyed_uk","vehicle":{"make":"Ford","model":"Transit Connect","variant":"Keyed Ignition","generation":"Second generation early","year_from":2013,"year_to":2015,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"Remote key with mechanical blade","button_count":3,"battery_type":"Confirm against physical remote before supply","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Transit Connect HU101 433 MHz DST80 / ID63-6F family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access may apply","route":"OBD diagnostic programming","online_requirement":"Tool/build dependent but normally offline-capable on this early second-generation range"},"notes":"Second-generation early range uses DST80 before the later Hitag Pro change. OEM part numbers and exact tool coverage remain to be mapped."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_transit_connect","silca_transit_connect","keystation_transit_connect"]}},
-    "transit_connect_2016_2023_keyed":{"record_id":"ford_transit_connect_2016_2023_keyed_uk","vehicle":{"make":"Ford","model":"Transit Connect","variant":"Keyed Ignition","generation":"Second generation late","year_from":2016,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47-ID49 family","transponder_type":"NXP Hitag Pro","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"Remote key with mechanical blade","button_count":3,"battery_type":"Confirm against physical remote before supply","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Transit Connect HU101 433 MHz Hitag Pro remote-key family"],"tool_ids":[],"programming":{"add_key":"Supported where the selected diagnostic tool explicitly covers the exact build","all_keys_lost":"Supported only with exact-build coverage; later vehicles may require online/security access","route":"OBD diagnostic programming","online_requirement":"Build and operation dependent; verify before accepting AKL"},"notes":"Late second-generation Transit Connect uses Hitag Pro. Exact OEM remote part numbers and operation-level tool IDs remain to be added."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_transit_connect","silca_transit_connect","keystation_transit_connect"]}},
-    "transit_connect_2016_2023_passive":{"record_id":"ford_transit_connect_2016_2023_passive_uk","vehicle":{"make":"Ford","model":"Transit Connect","variant":"Passive Key / Push Button Start","generation":"Second generation late","year_from":2016,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47-ID49 family","transponder_type":"NXP Hitag Pro","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"Passive key with emergency blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote before supply","smart_key":true,"oem_part_numbers":[],"aftermarket_references":["Transit Connect 433 MHz Hitag Pro HU101 passive-key family"],"tool_ids":[],"programming":{"add_key":"Supported where the selected diagnostic tool explicitly covers the exact build","all_keys_lost":"Supported only with exact-build coverage; later vehicles may require online/security access","route":"OBD diagnostic programming","online_requirement":"Build and operation dependent; verify before accepting AKL"},"notes":"Use only where passive start is physically confirmed. Exact OEM part numbers and tool IDs remain to be added."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_transit_connect","silca_transit_connect","keystation_transit_connect"]}},
-    "transit_connect_2024_present_mqb":{"record_id":"ford_transit_connect_2024_present_mqb_uk","vehicle":{"make":"Ford","model":"Transit Connect","variant":"Volkswagen MQB-derived generation","generation":"Third generation / Caddy V-derived","year_from":2024,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Volkswagen MQB-derived security architecture","immobiliser_generation":"MQB AES / exact implementation verification required","transponder_type":"Megamos AES family — exact application verification required","transponder_id":"megamos_aes","frequency_mhz":"Verification required","frequency_id":"frequency_unknown","blade_profile":"HU162T family — exact T variant verification required","blade_id":"hu162t","key_type":"Keyed or passive configuration must be confirmed","button_count":null,"battery_type":"Confirm against physical remote","smart_key":"Verification required","oem_part_numbers":[],"aftermarket_references":["Volkswagen Caddy V-derived Ford Transit Connect key family"],"tool_ids":[],"programming":{"add_key":"Do not use Ford PATS route; requires exact VAG/MQB tool coverage","all_keys_lost":"Advanced MQB workflow; online/component-security restrictions may apply","route":"VAG/MQB diagnostic or authorised online workflow","online_requirement":"Likely operation-dependent; verify exact build and tool"},"notes":"Shared Volkswagen platform. Never apply earlier Ford Transit Connect PATS procedures. Exact blade variant, frequency, part numbers and tool coverage require VAG-specific confirmation."},"verification":{"status":"shared_platform_core_identified","last_verified":"2026-07-14","sources":["ford_transit_connect_split_audit"]}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
   },
-  "sources":{"transpondery_transit_connect":{"publisher":"Transpondery","title":"Ford Transponder Catalog — Transit Connect","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-14","evidence":"2002-2008 4D60; 2009-2013 4D63; 2013-2016 DST80; 2016 onward Hitag Pro"},"silca_transit_connect":{"publisher":"Silca","title":"Proximity / Slot / Remote Car Keys Catalogue 2025 — Transit Connect","url":"https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf","accessed":"2026-07-14","evidence":"Transit Connect generations use HU101 and UK/European 433 MHz remote applications"},"keystation_transit_connect":{"publisher":"KeyStation UK","title":"Ford Transit Connect remote-key catalogue","url":"https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys","accessed":"2026-07-14","evidence":"Transit Connect-compatible HU101 433 MHz ID63 and later Ford remote families"},"ford_transit_connect_split_audit":{"publisher":"Locksmith Companion Database","title":"Ford Security Generation Split Audit","path":"Docs/FORD_SECURITY_SPLIT_AUDIT.md","accessed":"2026-07-14","scope":["Transit Connect generation boundaries","Volkswagen MQB shared-platform handling"]}}
+  "model": {
+    "id": "transit_connect",
+    "name": "Transit Connect"
+  },
+  "category": "vehicles",
+  "items": {
+    "transit_connect_2002_2008_keyed": {
+      "record_id": "ford_transit_connect_2002_2008_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Connect",
+        "variant": "Keyed Ignition",
+        "generation": "First generation early",
+        "year_from": 2002,
+        "year_to": 2008,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "4D60 / ID60",
+        "transponder_type": "Texas 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "Confirm against physical remote before supply",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Connect HU101 433 MHz 4D60 remote-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Not normally expected for this generation"
+        },
+        "notes": "Early first-generation Transit Connect. Core blade, transponder and frequency are mapped for UK stock lookup; exact OEM remote part numbers and tool IDs remain to be added."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_transit_connect",
+          "silca_transit_connect"
+        ]
+      }
+    },
+    "transit_connect_2009_2012_keyed": {
+      "record_id": "ford_transit_connect_2009_2012_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Connect",
+        "variant": "Keyed Ignition",
+        "generation": "First generation facelift",
+        "year_from": 2009,
+        "year_to": 2012,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63",
+        "transponder_type": "Texas 4D-63 80-bit",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "Confirm against physical remote before supply",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Connect HU101 433 MHz ID63 80-bit remote-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Not normally expected for this generation"
+        },
+        "notes": "The first-generation facelift changes from 4D60 to 4D63. Exact OEM remote part numbers and tool IDs remain to be added."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_transit_connect",
+          "silca_transit_connect",
+          "keystation_transit_connect"
+        ]
+      }
+    },
+    "transit_connect_2013_2015_keyed": {
+      "record_id": "ford_transit_connect_2013_2015_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Connect",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation early",
+        "year_from": 2013,
+        "year_to": 2015,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "Confirm against physical remote before supply",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Connect HU101 433 MHz DST80 / ID63-6F family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Tool/build dependent but normally offline-capable on this early second-generation range"
+        },
+        "notes": "Second-generation early range uses DST80 before the later Hitag Pro change. OEM part numbers and exact tool coverage remain to be mapped."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_transit_connect",
+          "silca_transit_connect",
+          "keystation_transit_connect"
+        ]
+      }
+    },
+    "transit_connect_2016_2023_keyed": {
+      "record_id": "ford_transit_connect_2016_2023_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Connect",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation late",
+        "year_from": 2016,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47-ID49 family",
+        "transponder_type": "NXP Hitag Pro",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "Confirm against physical remote before supply",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Connect HU101 433 MHz Hitag Pro remote-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported where the selected diagnostic tool explicitly covers the exact build",
+          "all_keys_lost": "Supported only with exact-build coverage; later vehicles may require online/security access",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent; verify before accepting AKL"
+        },
+        "notes": "Late second-generation Transit Connect uses Hitag Pro. Exact OEM remote part numbers and operation-level tool IDs remain to be added."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_transit_connect",
+          "silca_transit_connect",
+          "keystation_transit_connect"
+        ]
+      }
+    },
+    "transit_connect_2016_2023_passive": {
+      "record_id": "ford_transit_connect_2016_2023_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Connect",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Second generation late",
+        "year_from": 2016,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47-ID49 family",
+        "transponder_type": "NXP Hitag Pro",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "Passive key with emergency blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote before supply",
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Connect 433 MHz Hitag Pro HU101 passive-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported where the selected diagnostic tool explicitly covers the exact build",
+          "all_keys_lost": "Supported only with exact-build coverage; later vehicles may require online/security access",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent; verify before accepting AKL"
+        },
+        "notes": "Use only where passive start is physically confirmed. Exact OEM part numbers and tool IDs remain to be added."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_transit_connect",
+          "silca_transit_connect",
+          "keystation_transit_connect"
+        ]
+      }
+    },
+    "transit_connect_2024_present_mqb": {
+      "record_id": "ford_transit_connect_2024_present_mqb_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Connect",
+        "variant": "Volkswagen MQB-derived generation",
+        "generation": "Third generation / Caddy V-derived",
+        "year_from": 2024,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Volkswagen MQB-derived security architecture",
+        "immobiliser_generation": "MQB AES / exact implementation verification required",
+        "transponder_type": "Megamos AES family — exact application verification required",
+        "transponder_id": "megamos_aes",
+        "frequency_mhz": "Verification required",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "HU162T family — exact T variant verification required",
+        "blade_id": "hu162t",
+        "key_type": "Keyed or passive configuration must be confirmed",
+        "button_count": null,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": "Verification required",
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Volkswagen Caddy V-derived Ford Transit Connect key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Do not use Ford PATS route; requires exact VAG/MQB tool coverage",
+          "all_keys_lost": "Advanced MQB workflow; online/component-security restrictions may apply",
+          "route": "VAG/MQB diagnostic or authorised online workflow",
+          "online_requirement": "Likely operation-dependent; verify exact build and tool"
+        },
+        "notes": "Shared Volkswagen platform. Never apply earlier Ford Transit Connect PATS procedures. Exact blade variant, frequency, part numbers and tool coverage require VAG-specific confirmation."
+      },
+      "verification": {
+        "status": "shared_platform_core_identified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_transit_connect_split_audit"
+        ]
+      }
+    },
+    "transit_connect_2002_2007_keyed": {
+      "record_id": "ford_transit_connect_2002_2007_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Connect",
+        "variant": "Remote Key (Tibbe / Blue Cap)",
+        "generation": "First generation early",
+        "year_from": 2002,
+        "year_to": 2007,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-60",
+        "transponder_type": "Texas 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "FO21",
+        "blade_id": "fo21",
+        "key_type": "Remote Key (Tibbe / Blue Cap)",
+        "button_count": "3 Buttons",
+        "battery_type": "Confirm physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "4622489",
+          "4354151"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD immobiliser + manual remote matching",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Manual remote matching. Transponder diagnostically."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "transit_connect_2007_2013_keyed": {
+      "record_id": "ford_transit_connect_2007_2013_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Connect",
+        "variant": "Remote Head Key",
+        "generation": "First generation facelift",
+        "year_from": 2007,
+        "year_to": 2013,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-63 (80-Bit)",
+        "transponder_type": "Texas 4D-63 (80-Bit)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Remote Head Key",
+        "button_count": "3 Buttons",
+        "battery_type": "Confirm physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "164-R8042",
+          "5913139"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Remote automatic with transponder OBD coding."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "transit_connect_2013_2018_keyed": {
+      "record_id": "ford_transit_connect_2013_2018_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Connect",
+        "variant": "Flip Remote Key",
+        "generation": "Second generation early",
+        "year_from": 2013,
+        "year_to": 2018,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-63 (80-Bit) DST+",
+        "transponder_type": "Texas 4D-63 (80-Bit) DST+",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Flip Remote Key",
+        "button_count": "3 Buttons",
+        "battery_type": "Confirm physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "2026900",
+          "1756409",
+          "2179611"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "OBD diagnostic programming."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "transit_connect_2018_2024_keyed": {
+      "record_id": "ford_transit_connect_2018_2024_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Transit Connect",
+        "variant": "Flip Remote Key (Hitag AES)",
+        "generation": "Second generation late",
+        "year_from": 2018,
+        "year_to": 2024,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Hitag AES / ID47 (High Security)",
+        "transponder_type": "Hitag AES / ID47 (High Security)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Flip Remote Key (Hitag AES)",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "2243974"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — exact coverage + online/security access",
+          "route": "OBD + online/FDRS/security access",
+          "online_requirement": "Yes / operation dependent"
+        },
+        "tool_or_cable_required": "Ford security access/bypass as required by build",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Diagnostic OBD programming. Requires active internet connection / bypass on newer software."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "transpondery_transit_connect": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog — Transit Connect",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-14",
+      "evidence": "2002-2008 4D60; 2009-2013 4D63; 2013-2016 DST80; 2016 onward Hitag Pro"
+    },
+    "silca_transit_connect": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025 — Transit Connect",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-14",
+      "evidence": "Transit Connect generations use HU101 and UK/European 433 MHz remote applications"
+    },
+    "keystation_transit_connect": {
+      "publisher": "KeyStation UK",
+      "title": "Ford Transit Connect remote-key catalogue",
+      "url": "https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys",
+      "accessed": "2026-07-14",
+      "evidence": "Transit Connect-compatible HU101 433 MHz ID63 and later Ford remote families"
+    },
+    "ford_transit_connect_split_audit": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford Security Generation Split Audit",
+      "path": "Docs/FORD_SECURITY_SPLIT_AUDIT.md",
+      "accessed": "2026-07-14",
+      "scope": [
+        "Transit Connect generation boundaries",
+        "Volkswagen MQB shared-platform handling"
+      ]
+    },
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
 }
