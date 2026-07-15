@@ -1,0 +1,56 @@
+name: Promote Ford Tool Data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/promote_ford_tool_data.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  promote-ford-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Promote tool data
+        run: python tools/promote_ford_tool_data.py
+
+      - name: Validate Ford JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          errors = []
+          for path in Path('database/vehicles/ford').rglob('*.json'):
+              try:
+                  json.loads(path.read_text(encoding='utf-8'))
+              except Exception as exc:
+                  errors.append(f'{path}: {exc}')
+          if errors:
+              raise SystemExit('\n'.join(errors))
+          print('Ford JSON validation passed')
+          PY
+
+      - name: Commit promoted tool data
+        run: |
+          if git diff --quiet; then
+            echo 'No Ford tool-data changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '4189823+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford manifest.json
+          git commit -m 'ford: expose tool compatibility in app-visible records'
+          git push
