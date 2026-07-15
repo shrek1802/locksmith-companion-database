@@ -1,15 +1,372 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-15",
-  "manufacturer":{"id":"ford","name":"Ford"},
-  "model":{"id":"c_max","name":"C-Max"},
-  "category":"vehicles",
-  "items":{
-    "c_max_2003_2010_keyed":{"record_id":"ford_c_max_2003_2010_keyed_uk","vehicle":{"make":"Ford","model":"C-Max","variant":"Keyed Ignition","generation":"First generation / Focus C-Max and renamed C-Max","year_from":2003,"year_to":2010,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63 40-bit family","transponder_type":"Texas 4D-63 40-bit family","transponder_id":"texas_4d63_40bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote/flip key with mechanical blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":false,"oem_part_numbers":["1756409","1337641"],"aftermarket_references":["C-Max HU101 433 MHz ID63 40-bit family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access may apply","route":"OBD diagnostic programming","online_requirement":"No"},"notes":"The Ford master workbook covers the full 2003-2010 first-generation family with HU101, 433 MHz and the ID63 40-bit family. Confirm exact remote shell against the original key."},"verification":{"status":"locksmith_card_core_verified_from_master_workbook","last_verified":"2026-07-15","sources":["transpondery_cmax","ford_master_workbook_cmax"]}},
-    "c_max_2010_2014_keyed":{"record_id":"ford_c_max_2010_2014_keyed_uk","vehicle":{"make":"Ford","model":"C-Max","variant":"Keyed Ignition","generation":"Second generation pre-facelift","year_from":2010,"year_to":2014,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button flip remote key","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":false,"oem_part_numbers":["1756409","2026900"],"aftermarket_references":["C-Max Mk2 HU101 433 MHz DST80 family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access may apply","route":"OBD diagnostic programming","online_requirement":"Normally no"},"notes":"Uses the standard Focus Mk3/C-Max DST80 programming family. The Ford master workbook records OEM references 1756409 and 2026900."},"verification":{"status":"locksmith_card_core_verified_from_master_workbook","last_verified":"2026-07-15","sources":["transpondery_cmax","keystation_cmax_id63","ford_master_workbook_cmax"]}},
-    "c_max_2010_2014_passive":{"record_id":"ford_c_max_2010_2014_passive_uk","vehicle":{"make":"Ford","model":"C-Max","variant":"Passive Key / Push Button Start","generation":"Second generation pre-facelift","year_from":2010,"year_to":2014,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"3-button passive key with emergency blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":true,"oem_part_numbers":["1713499"],"aftermarket_references":["C-Max / B-Max / Fiesta HU101 433 MHz ID63 80-bit passive-key family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access may apply","route":"OBD diagnostic programming","online_requirement":"Normally no"},"notes":"Use only where push-button start is confirmed. Exact smart-key OEM number varies by build; 1713499 is a common matching Ford oval smart-key reference in this family."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-15","sources":["transpondery_cmax","keystation_cmax_id63","ford_master_workbook_cmax"]}},
-    "c_max_2015_2019_keyed":{"record_id":"ford_c_max_2015_2019_keyed_uk","vehicle":{"make":"Ford","model":"C-Max","variant":"Keyed Ignition","generation":"Second generation facelift","year_from":2015,"year_to":2019,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47-ID49 family","transponder_type":"NXP Hitag Pro","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote key with mechanical blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":false,"oem_part_numbers":["2027592"],"aftermarket_references":["C-Max HU101 433 MHz Hitag Pro family"],"tool_ids":[],"programming":{"add_key":"Supported where the selected Ford PATS tool explicitly covers the exact build","all_keys_lost":"Exact-build coverage required; online security access may apply","route":"OBD diagnostic programming","online_requirement":"Build and operation dependent"},"notes":"The Ford master workbook confirms 433 MHz and OEM reference 2027592 for the 2015-2019 Hitag Pro family."},"verification":{"status":"locksmith_card_core_verified_from_master_workbook","last_verified":"2026-07-15","sources":["transpondery_cmax","keystation_cmax_id49","ford_master_workbook_cmax"]}},
-    "c_max_2015_2019_passive":{"record_id":"ford_c_max_2015_2019_passive_uk","vehicle":{"make":"Ford","model":"C-Max","variant":"Passive Key / Push Button Start","generation":"Second generation facelift","year_from":2015,"year_to":2019,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47-ID49 family","transponder_type":"NXP Hitag Pro","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"3-button pear-style proximity key with emergency blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":true,"oem_part_numbers":["2027592"],"aftermarket_references":["C-Max / Grand C-Max pear-style HU101 433 MHz Hitag Pro keyless family"],"tool_ids":[],"programming":{"add_key":"Supported where the selected Ford PATS tool explicitly covers the exact build","all_keys_lost":"Exact-build coverage required; online security access may apply","route":"OBD diagnostic programming","online_requirement":"Build and operation dependent"},"notes":"Keyless start family. The Ford master workbook identifies the pear-style 433 MHz Hitag Pro key and OEM reference 2027592; backup slot is normally around the steering-column shroud area."},"verification":{"status":"locksmith_card_core_verified_from_master_workbook","last_verified":"2026-07-15","sources":["transpondery_cmax","keystation_cmax_id49","ford_master_workbook_cmax"]}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-15",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
   },
-  "sources":{"transpondery_cmax":{"publisher":"Transpondery","title":"Ford Transponder Catalog — C-Max","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-14"},"keystation_cmax_id63":{"publisher":"KeyStation UK","title":"Ford C-Max ID63 HU101 433 MHz keys","url":"https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys","accessed":"2026-07-14"},"keystation_cmax_id49":{"publisher":"KeyStation UK","title":"Ford C-Max ID49 HU101 keyless remote","url":"https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys","accessed":"2026-07-14"},"ford_master_workbook_cmax":{"publisher":"Locksmith Companion Ford Master Database","title":"Ford UK Master Database — C-Max / Grand C-Max","path":"Ford_Master_Database_v2.xlsx","accessed":"2026-07-15","evidence":"2003-2010 ID63 40-bit OEM 1756409 / 1337641; 2010-2015 ID63 80-bit OEM 1756409 / 2026900; 2015-2019 Hitag Pro 433 MHz OEM 2027592"}}
+  "model": {
+    "id": "c_max",
+    "name": "C-Max"
+  },
+  "category": "vehicles",
+  "items": {
+    "c_max_2003_2010_keyed": {
+      "record_id": "ford_c_max_2003_2010_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "C-Max",
+        "variant": "Keyed Ignition",
+        "generation": "First generation / Focus C-Max and renamed C-Max",
+        "year_from": 2003,
+        "year_to": 2010,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63 40-bit family",
+        "transponder_type": "Texas 4D-63 40-bit family",
+        "transponder_id": "texas_4d63_40bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote/flip key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1756409",
+          "1337641"
+        ],
+        "aftermarket_references": [
+          "C-Max HU101 433 MHz ID63 40-bit family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "notes": "The Ford master workbook covers the full 2003-2010 first-generation family with HU101, 433 MHz and the ID63 40-bit family. Confirm exact remote shell against the original key.",
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade"
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified_from_master_workbook",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_cmax",
+          "ford_master_workbook_cmax",
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "c_max_2010_2014_keyed": {
+      "record_id": "ford_c_max_2010_2014_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "C-Max",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation pre-facelift",
+        "year_from": 2010,
+        "year_to": 2014,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button flip remote key",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1756409",
+          "2026900"
+        ],
+        "aftermarket_references": [
+          "C-Max Mk2 HU101 433 MHz DST80 family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "notes": "Uses the standard Focus Mk3/C-Max DST80 programming family. The Ford master workbook records OEM references 1756409 and 2026900."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified_from_master_workbook",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_cmax",
+          "keystation_cmax_id63",
+          "ford_master_workbook_cmax"
+        ]
+      }
+    },
+    "c_max_2010_2014_passive": {
+      "record_id": "ford_c_max_2010_2014_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "C-Max",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Second generation pre-facelift",
+        "year_from": 2010,
+        "year_to": 2014,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "3-button passive key with emergency blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "1713499"
+        ],
+        "aftermarket_references": [
+          "C-Max / B-Max / Fiesta HU101 433 MHz ID63 80-bit passive-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "notes": "Use only where push-button start is confirmed. Exact smart-key OEM number varies by build; 1713499 is a common matching Ford oval smart-key reference in this family."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_cmax",
+          "keystation_cmax_id63",
+          "ford_master_workbook_cmax"
+        ]
+      }
+    },
+    "c_max_2015_2019_keyed": {
+      "record_id": "ford_c_max_2015_2019_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "C-Max",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation facelift",
+        "year_from": 2015,
+        "year_to": 2019,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47-ID49 family",
+        "transponder_type": "NXP Hitag Pro",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "2027592"
+        ],
+        "aftermarket_references": [
+          "C-Max HU101 433 MHz Hitag Pro family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported where the selected Ford PATS tool explicitly covers the exact build",
+          "all_keys_lost": "Exact-build coverage required; online security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "notes": "The Ford master workbook confirms 433 MHz and OEM reference 2027592 for the 2015-2019 Hitag Pro family."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified_from_master_workbook",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_cmax",
+          "keystation_cmax_id49",
+          "ford_master_workbook_cmax"
+        ]
+      }
+    },
+    "c_max_2015_2019_passive": {
+      "record_id": "ford_c_max_2015_2019_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "C-Max",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Second generation facelift",
+        "year_from": 2015,
+        "year_to": 2019,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47-ID49 family",
+        "transponder_type": "NXP Hitag Pro",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "3-button pear-style proximity key with emergency blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "2027592"
+        ],
+        "aftermarket_references": [
+          "C-Max / Grand C-Max pear-style HU101 433 MHz Hitag Pro keyless family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported where the selected Ford PATS tool explicitly covers the exact build",
+          "all_keys_lost": "Exact-build coverage required; online security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "notes": "Keyless start family. The Ford master workbook identifies the pear-style 433 MHz Hitag Pro key and OEM reference 2027592; backup slot is normally around the steering-column shroud area.",
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "HU101"
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified_from_master_workbook",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "transpondery_cmax",
+          "keystation_cmax_id49",
+          "ford_master_workbook_cmax",
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "c_max_2010_2015_keyed": {
+      "record_id": "ford_c_max_2010_2015_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "C-Max",
+        "variant": "Flip Remote Key",
+        "generation": "Second generation pre-facelift",
+        "year_from": 2010,
+        "year_to": 2015,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-63 (80-Bit)",
+        "transponder_type": "Texas 4D-63 (80-Bit)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Flip Remote Key",
+        "button_count": "3 Buttons",
+        "battery_type": "Confirm physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1756409",
+          "2026900"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Diagnostics via standard Focus MK3 protocols."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "transpondery_cmax": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog — C-Max",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-14"
+    },
+    "keystation_cmax_id63": {
+      "publisher": "KeyStation UK",
+      "title": "Ford C-Max ID63 HU101 433 MHz keys",
+      "url": "https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys",
+      "accessed": "2026-07-14"
+    },
+    "keystation_cmax_id49": {
+      "publisher": "KeyStation UK",
+      "title": "Ford C-Max ID49 HU101 keyless remote",
+      "url": "https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys",
+      "accessed": "2026-07-14"
+    },
+    "ford_master_workbook_cmax": {
+      "publisher": "Locksmith Companion Ford Master Database",
+      "title": "Ford UK Master Database — C-Max / Grand C-Max",
+      "path": "Ford_Master_Database_v2.xlsx",
+      "accessed": "2026-07-15",
+      "evidence": "2003-2010 ID63 40-bit OEM 1756409 / 1337641; 2010-2015 ID63 80-bit OEM 1756409 / 2026900; 2015-2019 Hitag Pro 433 MHz OEM 2027592"
+    },
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
 }

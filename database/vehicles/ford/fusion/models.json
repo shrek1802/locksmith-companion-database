@@ -1,0 +1,86 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-15",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "fusion",
+    "name": "Fusion"
+  },
+  "category": "vehicles",
+  "items": {
+    "fusion_2002_2012_keyed": {
+      "record_id": "ford_fusion_2002_2012_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fusion",
+        "variant": "3 Button Remote Head",
+        "generation": "First and only European generation",
+        "year_from": 2002,
+        "year_to": 2012,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-63 (40-Bit)",
+        "transponder_type": "Texas 4D-63 (40-Bit)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "FO21",
+        "blade_id": "fo21",
+        "key_type": "3 Button Remote Head",
+        "button_count": "3 Buttons",
+        "battery_type": "Confirm physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1337641",
+          "164-R8042"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Fiesta MK6 equivalent. Diagnostics via OBD."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
+}

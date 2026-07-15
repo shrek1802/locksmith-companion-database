@@ -1,40 +1,170 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-14",
+  "updated_at": "2026-07-15",
   "manufacturer": {
     "id": "ford",
     "name": "Ford",
     "market": "UK",
     "drive_side": "RHD"
   },
-  "version": 27,
+  "version": 28,
   "models": {
-    "fiesta": {"name":"Fiesta","version":3,"manifest":"fiesta/manifest.json","status":"partially_verified"},
-    "focus": {"name":"Focus","version":1,"manifest":"focus/manifest.json","status":"partially_verified"},
-    "transit": {"name":"Transit","version":1,"manifest":"transit/manifest.json","status":"partially_verified"},
-    "transit_custom": {"name":"Transit Custom","version":1,"manifest":"transit_custom/manifest.json","status":"partially_verified"},
-    "transit_connect": {"name":"Transit Connect","version":1,"manifest":"transit_connect/manifest.json","status":"partially_verified"},
-    "mondeo": {"name":"Mondeo","version":1,"manifest":"mondeo/manifest.json","status":"partially_verified"},
-    "kuga": {"name":"Kuga","version":1,"manifest":"kuga/manifest.json","status":"partially_verified"},
-    "ranger": {"name":"Ranger","version":1,"manifest":"ranger/manifest.json","status":"partially_verified"},
-    "galaxy": {"name":"Galaxy","version":1,"manifest":"galaxy/manifest.json","status":"partially_verified"},
-    "s_max": {"name":"S-Max","version":1,"manifest":"s_max/manifest.json","status":"partially_verified"},
-    "c_max": {"name":"C-Max","version":1,"manifest":"c_max/manifest.json","status":"partially_verified"},
-    "grand_c_max": {"name":"Grand C-Max","version":1,"manifest":"grand_c_max/manifest.json","status":"partially_verified"},
-    "b_max": {"name":"B-Max","version":1,"manifest":"b_max/manifest.json","status":"partially_verified"},
-    "ecosport": {"name":"EcoSport","version":1,"manifest":"ecosport/manifest.json","status":"partially_verified"},
-    "edge": {"name":"Edge","version":1,"manifest":"edge/manifest.json","status":"partially_verified"},
-    "tourneo_custom": {"name":"Tourneo Custom","version":1,"manifest":"tourneo_custom/manifest.json","status":"partially_verified"},
-    "tourneo_connect": {"name":"Tourneo Connect","version":1,"manifest":"tourneo_connect/manifest.json","status":"partially_verified"},
-    "transit_courier": {"name":"Transit Courier","version":1,"manifest":"transit_courier/manifest.json","status":"partially_verified"},
-    "tourneo_courier": {"name":"Tourneo Courier","version":1,"manifest":"tourneo_courier/manifest.json","status":"partially_verified"},
-    "puma": {"name":"Puma","version":1,"manifest":"puma/manifest.json","status":"partially_verified"},
-    "ka": {"name":"Ka","version":1,"manifest":"ka/manifest.json","status":"partially_verified"},
-    "ka_plus": {"name":"Ka+","version":1,"manifest":"ka_plus/manifest.json","status":"partially_verified"},
-    "mustang": {"name":"Mustang","version":1,"manifest":"mustang/manifest.json","status":"partially_verified"},
-    "mustang_mach_e": {"name":"Mustang Mach-E","version":1,"manifest":"mustang_mach_e/manifest.json","status":"partially_verified"},
-    "explorer": {"name":"Explorer","version":1,"manifest":"explorer/manifest.json","status":"partially_verified"},
-    "fiesta_van": {"name":"Fiesta Van","version":1,"manifest":"fiesta_van/manifest.json","status":"partially_verified"}
+    "fiesta": {
+      "name": "Fiesta",
+      "version": 3,
+      "manifest": "fiesta/manifest.json",
+      "status": "partially_verified"
+    },
+    "focus": {
+      "name": "Focus",
+      "version": 1,
+      "manifest": "focus/manifest.json",
+      "status": "partially_verified"
+    },
+    "transit": {
+      "name": "Transit",
+      "version": 1,
+      "manifest": "transit/manifest.json",
+      "status": "partially_verified"
+    },
+    "transit_custom": {
+      "name": "Transit Custom",
+      "version": 1,
+      "manifest": "transit_custom/manifest.json",
+      "status": "partially_verified"
+    },
+    "transit_connect": {
+      "name": "Transit Connect",
+      "version": 1,
+      "manifest": "transit_connect/manifest.json",
+      "status": "partially_verified"
+    },
+    "mondeo": {
+      "name": "Mondeo",
+      "version": 1,
+      "manifest": "mondeo/manifest.json",
+      "status": "partially_verified"
+    },
+    "kuga": {
+      "name": "Kuga",
+      "version": 1,
+      "manifest": "kuga/manifest.json",
+      "status": "partially_verified"
+    },
+    "ranger": {
+      "name": "Ranger",
+      "version": 1,
+      "manifest": "ranger/manifest.json",
+      "status": "partially_verified"
+    },
+    "galaxy": {
+      "name": "Galaxy",
+      "version": 1,
+      "manifest": "galaxy/manifest.json",
+      "status": "partially_verified"
+    },
+    "s_max": {
+      "name": "S-Max",
+      "version": 1,
+      "manifest": "s_max/manifest.json",
+      "status": "partially_verified"
+    },
+    "c_max": {
+      "name": "C-Max",
+      "version": 1,
+      "manifest": "c_max/manifest.json",
+      "status": "partially_verified"
+    },
+    "grand_c_max": {
+      "name": "Grand C-Max",
+      "version": 1,
+      "manifest": "grand_c_max/manifest.json",
+      "status": "partially_verified"
+    },
+    "b_max": {
+      "name": "B-Max",
+      "version": 1,
+      "manifest": "b_max/manifest.json",
+      "status": "partially_verified"
+    },
+    "ecosport": {
+      "name": "EcoSport",
+      "version": 1,
+      "manifest": "ecosport/manifest.json",
+      "status": "partially_verified"
+    },
+    "edge": {
+      "name": "Edge",
+      "version": 1,
+      "manifest": "edge/manifest.json",
+      "status": "partially_verified"
+    },
+    "tourneo_custom": {
+      "name": "Tourneo Custom",
+      "version": 1,
+      "manifest": "tourneo_custom/manifest.json",
+      "status": "partially_verified"
+    },
+    "tourneo_connect": {
+      "name": "Tourneo Connect",
+      "version": 1,
+      "manifest": "tourneo_connect/manifest.json",
+      "status": "partially_verified"
+    },
+    "transit_courier": {
+      "name": "Transit Courier",
+      "version": 1,
+      "manifest": "transit_courier/manifest.json",
+      "status": "partially_verified"
+    },
+    "tourneo_courier": {
+      "name": "Tourneo Courier",
+      "version": 1,
+      "manifest": "tourneo_courier/manifest.json",
+      "status": "partially_verified"
+    },
+    "puma": {
+      "name": "Puma",
+      "version": 1,
+      "manifest": "puma/manifest.json",
+      "status": "partially_verified"
+    },
+    "ka": {
+      "name": "Ka",
+      "version": 1,
+      "manifest": "ka/manifest.json",
+      "status": "partially_verified"
+    },
+    "ka_plus": {
+      "name": "Ka+",
+      "version": 1,
+      "manifest": "ka_plus/manifest.json",
+      "status": "partially_verified"
+    },
+    "mustang": {
+      "name": "Mustang",
+      "version": 1,
+      "manifest": "mustang/manifest.json",
+      "status": "partially_verified"
+    },
+    "mustang_mach_e": {
+      "name": "Mustang Mach-E",
+      "version": 1,
+      "manifest": "mustang_mach_e/manifest.json",
+      "status": "partially_verified"
+    },
+    "explorer": {
+      "name": "Explorer",
+      "version": 1,
+      "manifest": "explorer/manifest.json",
+      "status": "partially_verified"
+    },
+    "fiesta_van": {
+      "name": "Fiesta Van",
+      "version": 1,
+      "manifest": "fiesta_van/manifest.json",
+      "status": "partially_verified"
+    }
   },
-  "status": "in_development"
+  "status": "ford_master_import_applied"
 }

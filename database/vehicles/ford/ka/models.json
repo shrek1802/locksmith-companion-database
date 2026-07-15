@@ -1,13 +1,300 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-14",
-  "manufacturer":{"id":"ford","name":"Ford"},
-  "model":{"id":"ka","name":"Ka"},
-  "category":"vehicles",
-  "items":{
-    "ka_1996_2001_keyed":{"record_id":"ford_ka_1996_2001_keyed_uk","vehicle":{"make":"Ford","model":"Ka","variant":"Keyed Ignition","generation":"First generation early","year_from":1996,"year_to":2001,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS legacy fixed-code","immobiliser_generation":"Texas 4C / ID4C","transponder_type":"Texas 4C","transponder_id":"texas_4c","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"FO21","blade_id":"fo21","key_type":"Mechanical ignition key; remote configuration varies","button_count":null,"battery_type":"Confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Ford Ka FO21 Texas 4C family"],"tool_ids":[],"programming":{"add_key":"Legacy Ford PATS procedure/tool dependent","all_keys_lost":"Legacy PATS diagnostic or code-based route depending build","route":"OBD or legacy PATS procedure","online_requirement":"No"},"notes":"Early first-generation Ka uses the legacy Ford key family. Remote style varies, so verify the original key before supply."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_ka","silca_ka"]}},
-    "ka_2002_2008_keyed":{"record_id":"ford_ka_2002_2008_keyed_uk","vehicle":{"make":"Ford","model":"Ka","variant":"Keyed Ignition","generation":"First generation late","year_from":2002,"year_to":2008,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"4D60 / ID60","transponder_type":"Texas 4D-60","transponder_id":"texas_4d60","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"FO21","blade_id":"fo21","key_type":"Remote key with mechanical blade","button_count":3,"battery_type":"Confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Ford Ka FO21 433 MHz ID60 remote-key family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access/wait may apply","route":"OBD diagnostic programming","online_requirement":"No"},"notes":"Later first-generation Ka changes to 4D60 while retaining the FO21 blade family."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_ka","silca_ka"]}},
-    "ka_2009_2016_fiat_keyed":{"record_id":"ford_ka_2009_2016_fiat_keyed_uk","vehicle":{"make":"Ford","model":"Ka","variant":"Fiat-derived keyed generation","generation":"Second generation","year_from":2009,"year_to":2016,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Fiat CODE-derived architecture","immobiliser_generation":"Hitag2 ID46 / PCF7946 family","transponder_type":"NXP Hitag2 ID46","transponder_id":"nxp_hitag2_id46","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"SIP22","blade_id":"sip22","key_type":"2-button or 3-button flip remote key","button_count":null,"battery_type":"CR2032 — confirm against physical remote","smart_key":false,"oem_part_numbers":["71765697 — listed on compatible 3-button SIP22 remote family"],"aftermarket_references":["Fiat 500 / Ford Ka 433 MHz ID46 PCF7946 SIP22 remote family"],"tool_ids":[],"programming":{"add_key":"Use Fiat-derived immobiliser route, not Ford PATS","all_keys_lost":"Supported by compatible Fiat CODE tools; PIN/security data may be required","route":"OBD diagnostic programming","online_requirement":"Normally no, tool/security-code dependent"},"notes":"This generation shares the Fiat 500 platform. KeyStation lists compatible Ford/Fiat 433 MHz ID46 PCF7946 SIP22 remotes, including OEM reference 71765697 on the 3-button family. Never select the Ford PATS menu solely because the badge is Ford."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_ka","keystation_ka_fiat","silca_ka"]}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
   },
-  "sources":{"transpondery_ka":{"publisher":"Transpondery","title":"Ford Transponder Catalog — Ka","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-14","evidence":"Ka 1996-2002 4C; 2002-2008 4D60; Fiat-derived Ka ID46 family"},"silca_ka":{"publisher":"Silca","title":"Proximity / Slot / Remote Car Keys Catalogue 2025 — Ka","url":"https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf","accessed":"2026-07-14","evidence":"Ford and Fiat-derived Ka blade/remote applications"},"keystation_ka_fiat":{"publisher":"KeyStation UK","title":"Fiat 500 / Ford Ka compatible remote keys","url":"https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys","accessed":"2026-07-14","evidence":"433 MHz ID46 PCF7946 SIP22 compatible keys; 71765697 shown on 3-button family"}}
+  "model": {
+    "id": "ka",
+    "name": "Ka"
+  },
+  "category": "vehicles",
+  "items": {
+    "ka_1996_2001_keyed": {
+      "record_id": "ford_ka_1996_2001_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ka",
+        "variant": "Keyed Ignition",
+        "generation": "First generation early",
+        "year_from": 1996,
+        "year_to": 2001,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS legacy fixed-code",
+        "immobiliser_generation": "Texas 4C / ID4C",
+        "transponder_type": "Texas 4C",
+        "transponder_id": "texas_4c",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "FO21",
+        "blade_id": "fo21",
+        "key_type": "Mechanical ignition key; remote configuration varies",
+        "button_count": null,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Ford Ka FO21 Texas 4C family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Legacy Ford PATS procedure/tool dependent",
+          "all_keys_lost": "Legacy PATS diagnostic or code-based route depending build",
+          "route": "OBD or legacy PATS procedure",
+          "online_requirement": "No"
+        },
+        "notes": "Early first-generation Ka uses the legacy Ford key family. Remote style varies, so verify the original key before supply."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_ka",
+          "silca_ka"
+        ]
+      }
+    },
+    "ka_2002_2008_keyed": {
+      "record_id": "ford_ka_2002_2008_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ka",
+        "variant": "Keyed Ignition",
+        "generation": "First generation late",
+        "year_from": 2002,
+        "year_to": 2008,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "4D60 / ID60",
+        "transponder_type": "Texas 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "FO21",
+        "blade_id": "fo21",
+        "key_type": "Remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Ford Ka FO21 433 MHz ID60 remote-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "notes": "Later first-generation Ka changes to 4D60 while retaining the FO21 blade family."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_ka",
+          "silca_ka"
+        ]
+      }
+    },
+    "ka_2009_2016_fiat_keyed": {
+      "record_id": "ford_ka_2009_2016_fiat_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ka",
+        "variant": "Fiat-derived keyed generation",
+        "generation": "Second generation",
+        "year_from": 2009,
+        "year_to": 2016,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Fiat CODE-derived architecture",
+        "immobiliser_generation": "Hitag2 ID46 / PCF7946 family",
+        "transponder_type": "NXP Hitag2 ID46",
+        "transponder_id": "nxp_hitag2_id46",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "SIP22",
+        "blade_id": "sip22",
+        "key_type": "2-button or 3-button flip remote key",
+        "button_count": null,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "71765697 — listed on compatible 3-button SIP22 remote family"
+        ],
+        "aftermarket_references": [
+          "Fiat 500 / Ford Ka 433 MHz ID46 PCF7946 SIP22 remote family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Use Fiat-derived immobiliser route, not Ford PATS",
+          "all_keys_lost": "Supported by compatible Fiat CODE tools; PIN/security data may be required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no, tool/security-code dependent"
+        },
+        "notes": "This generation shares the Fiat 500 platform. KeyStation lists compatible Ford/Fiat 433 MHz ID46 PCF7946 SIP22 remotes, including OEM reference 71765697 on the 3-button family. Never select the Ford PATS menu solely because the badge is Ford."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_ka",
+          "keystation_ka_fiat",
+          "silca_ka"
+        ]
+      }
+    },
+    "ka_mk1_1996_2008_keyed": {
+      "record_id": "ford_ka_mk1_1996_2008_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ka",
+        "variant": "Standard Non-Remote Key",
+        "generation": "MK1",
+        "year_from": 1996,
+        "year_to": 2008,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4C / 4D-60",
+        "transponder_type": "Texas 4C / 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": "Verification required",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "FO21",
+        "blade_id": "fo21",
+        "key_type": "Standard Non-Remote Key",
+        "button_count": "None",
+        "battery_type": "N/A / separate remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1112441"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Confirm",
+          "all_keys_lost": "Confirm exact build/tool",
+          "route": "Clone or diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Immobiliser diagnostically or cloning. Red key master system on very early models."
+      },
+      "verification": {
+        "status": "needs_targeted_verification",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "ka_mk2_2008_2016_keyed": {
+      "record_id": "ford_ka_mk2_2008_2016_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Ka",
+        "variant": "Fiat Style Flip Key",
+        "generation": "MK2",
+        "year_from": 2008,
+        "year_to": 2016,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Megamos Crypto ID48 / PCF7946",
+        "transponder_type": "Megamos Crypto ID48 / PCF7946",
+        "transponder_id": "nxp_hitag2_id46",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "SIP22",
+        "blade_id": "sip22",
+        "key_type": "Fiat Style Flip Key",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1838586 (Delphi System)"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — EEPROM/OBD route",
+          "route": "EEPROM / OBD pre-code",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Fiat-compatible pre-code/EEPROM setup if OBD route fails",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Requires pre-coding via EEPROM/OBD before writing. Uses Fiat system, not standard Ford protocols."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "transpondery_ka": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog — Ka",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-14",
+      "evidence": "Ka 1996-2002 4C; 2002-2008 4D60; Fiat-derived Ka ID46 family"
+    },
+    "silca_ka": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025 — Ka",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-14",
+      "evidence": "Ford and Fiat-derived Ka blade/remote applications"
+    },
+    "keystation_ka_fiat": {
+      "publisher": "KeyStation UK",
+      "title": "Fiat 500 / Ford Ka compatible remote keys",
+      "url": "https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys",
+      "accessed": "2026-07-14",
+      "evidence": "433 MHz ID46 PCF7946 SIP22 compatible keys; 71765697 shown on 3-button family"
+    },
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
 }

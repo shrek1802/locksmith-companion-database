@@ -1,0 +1,565 @@
+{
+  "bundles": [
+    "imports/ford_import_ready_v4_part1.json",
+    "imports/ford_import_ready_v4_part2.json"
+  ],
+  "apply": true,
+  "files": [
+    {
+      "path": "database/vehicles/ford/b_max/models.json",
+      "state": "updated",
+      "new_records": 0,
+      "conflict_count": 14,
+      "conflicts": [
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle.variant",
+          "kept": "Passive Key / Push Button Start",
+          "generated": "Flip Key / Smart Key Options"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.immobiliser_system",
+          "kept": "Ford PATS DST80",
+          "generated": "Ford PATS / shared-platform system as applicable"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.immobiliser_generation",
+          "kept": "DST80 / ID63-6F",
+          "generated": "Texas 4D-63 (80-Bit)"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.transponder_type",
+          "kept": "Texas 4D-63 80-bit (DST80)",
+          "generated": "Texas 4D-63 (80-Bit)"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.frequency_mhz",
+          "kept": "433.92",
+          "generated": 433
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.blade_profile",
+          "kept": "HU101 emergency blade",
+          "generated": "HU101"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.key_type",
+          "kept": "3-button passive key with emergency blade",
+          "generated": "Flip Key / Smart Key Options"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.button_count",
+          "kept": 3,
+          "generated": "3 Buttons"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.battery_type",
+          "kept": "CR2032 — confirm against physical remote",
+          "generated": "CR2032 (confirm physical key)"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.programming.add_key",
+          "kept": "Supported by compatible Ford PATS diagnostic tools",
+          "generated": "Confirm"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.programming.all_keys_lost",
+          "kept": "Supported by compatible Ford PATS tools; security access may apply",
+          "generated": "Confirm exact build/tool"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.programming.route",
+          "kept": "OBD diagnostic programming",
+          "generated": "Confirm exact tool route"
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.vehicle_information.notes",
+          "kept": "Use only where push-button start is physically confirmed. The Ford master workbook records OEM reference 1713499 for the smart-key family.",
+          "generated": "Relies on Fiesta MK7 electronics architecture."
+        },
+        {
+          "path": "items.b_max_2012_2017_passive.verification.status",
+          "kept": "locksmith_card_core_verified_from_master_workbook",
+          "generated": "core_data_complete"
+        }
+      ]
+    },
+    {
+      "path": "database/vehicles/ford/c_max/models.json",
+      "state": "updated",
+      "new_records": 1,
+      "conflict_count": 30,
+      "conflicts": [
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle.variant",
+          "kept": "Keyed Ignition",
+          "generated": "Flip Remote / Standard Head"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle.generation",
+          "kept": "First generation / Focus C-Max and renamed C-Max",
+          "generated": "First generation"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.immobiliser_system",
+          "kept": "Ford PATS Texas Crypto 4D",
+          "generated": "Ford PATS / shared-platform system as applicable"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.immobiliser_generation",
+          "kept": "ID63 40-bit family",
+          "generated": "Texas 4D-63 (40-Bit)"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.transponder_type",
+          "kept": "Texas 4D-63 40-bit family",
+          "generated": "Texas 4D-63 (40-Bit)"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.transponder_id",
+          "kept": "texas_4d63_40bit",
+          "generated": "texas_4d63_80bit"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.frequency_mhz",
+          "kept": "433.92",
+          "generated": 433
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.key_type",
+          "kept": "3-button remote/flip key with mechanical blade",
+          "generated": "Flip Remote / Standard Head"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.button_count",
+          "kept": 3,
+          "generated": "3 Buttons"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.battery_type",
+          "kept": "CR2032 — confirm against physical remote",
+          "generated": "Confirm physical remote"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.programming.add_key",
+          "kept": "Supported by compatible Ford PATS diagnostic tools",
+          "generated": "Yes — OBD"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.programming.all_keys_lost",
+          "kept": "Supported by compatible Ford PATS tools; security access may apply",
+          "generated": "Yes — tool coverage/security access required"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.programming.online_requirement",
+          "kept": "No",
+          "generated": "Normally no"
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.vehicle_information.notes",
+          "kept": "The Ford master workbook covers the full 2003-2010 first-generation family with HU101, 433 MHz and the ID63 40-bit family. Confirm exact remote shell against the original key.",
+          "generated": "Standard diagnostic key pairing."
+        },
+        {
+          "path": "items.c_max_2003_2010_keyed.verification.status",
+          "kept": "locksmith_card_core_verified_from_master_workbook",
+          "generated": "core_data_complete"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle.variant",
+          "kept": "Passive Key / Push Button Start",
+          "generated": "Proximity Smart Key (Pear)"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.immobiliser_system",
+          "kept": "Ford PATS Hitag Pro",
+          "generated": "Ford PATS / shared-platform system as applicable"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.immobiliser_generation",
+          "kept": "Hitag Pro / ID47-ID49 family",
+          "generated": "HITAG Pro - ID47"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.transponder_type",
+          "kept": "NXP Hitag Pro",
+          "generated": "HITAG Pro - ID47"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.frequency_mhz",
+          "kept": "433.92",
+          "generated": 433
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.blade_profile",
+          "kept": "HU101 emergency blade",
+          "generated": "HU101"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.key_type",
+          "kept": "3-button pear-style proximity key with emergency blade",
+          "generated": "Proximity Smart Key (Pear)"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.button_count",
+          "kept": 3,
+          "generated": "3 Buttons"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.battery_type",
+          "kept": "CR2032 — confirm against physical remote",
+          "generated": "CR2032 (confirm physical key)"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.programming.add_key",
+          "kept": "Supported where the selected Ford PATS tool explicitly covers the exact build",
+          "generated": "Confirm"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.programming.all_keys_lost",
+          "kept": "Exact-build coverage required; online security access may apply",
+          "generated": "Confirm exact build/tool"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.programming.route",
+          "kept": "OBD diagnostic programming",
+          "generated": "Confirm exact tool route"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.programming.online_requirement",
+          "kept": "Build and operation dependent",
+          "generated": "Normally no"
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.vehicle_information.notes",
+          "kept": "Keyless start family. The Ford master workbook identifies the pear-style 433 MHz Hitag Pro key and OEM reference 2027592; backup slot is normally around the steering-column shroud area.",
+          "generated": "Keyless start systems. Slot is in the steering column shroud."
+        },
+        {
+          "path": "items.c_max_2015_2019_passive.verification.status",
+          "kept": "locksmith_card_core_verified_from_master_workbook",
+          "generated": "core_data_complete"
+        }
+      ]
+    },
+    {
+      "path": "database/vehicles/ford/ecosport/models.json",
+      "state": "updated",
+      "new_records": 2,
+      "conflict_count": 1,
+      "conflicts": [
+        {
+          "path": "updated_at",
+          "kept": "2026-07-14",
+          "generated": "2026-07-15"
+        }
+      ]
+    },
+    {
+      "path": "database/vehicles/ford/edge/models.json",
+      "state": "updated",
+      "new_records": 0,
+      "conflict_count": 16,
+      "conflicts": [
+        {
+          "path": "items.edge_2016_2021_passive.vehicle.variant",
+          "kept": "Passive Key / Push Button Start",
+          "generated": "Proximity Smart Key (Slim)"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle.generation",
+          "kept": "UK second-generation family",
+          "generated": "Second generation UK model"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.immobiliser_system",
+          "kept": "Ford PATS Hitag Pro",
+          "generated": "Ford PATS / shared-platform system as applicable"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.immobiliser_generation",
+          "kept": "Hitag Pro / ID47 family",
+          "generated": "HITAG Pro - ID47"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.transponder_type",
+          "kept": "NXP Hitag Pro / ID47 family",
+          "generated": "HITAG Pro - ID47"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.frequency_mhz",
+          "kept": "433.92",
+          "generated": 433
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.blade_profile",
+          "kept": "HU101 emergency blade",
+          "generated": "HU101"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.key_type",
+          "kept": "3-button slim proximity smart key with emergency blade",
+          "generated": "Proximity Smart Key (Slim)"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.button_count",
+          "kept": 3,
+          "generated": "3 Buttons"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.battery_type",
+          "kept": "CR2032 — confirm against physical remote",
+          "generated": "CR2032 (confirm physical key)"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.programming.add_key",
+          "kept": "Supported only where the selected Ford PATS tool explicitly covers the exact UK Edge build",
+          "generated": "Yes — OBD"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.programming.all_keys_lost",
+          "kept": "Exact-build coverage required; online Ford security access may apply",
+          "generated": "Yes — tool coverage/security access required"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.programming.route",
+          "kept": "OBD diagnostic programming or FDRS by operation/build",
+          "generated": "OBD diagnostic programming"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.programming.online_requirement",
+          "kept": "Build and operation dependent",
+          "generated": "Normally no"
+        },
+        {
+          "path": "items.edge_2016_2021_passive.vehicle_information.notes",
+          "kept": "The UK Edge was principally supplied with passive start. Use a European 433 MHz application, not a North American 315 MHz key. The Ford master workbook records OEM references 1919602 and 2230771 for the UK 2016-2021 slim smart-key family.",
+          "generated": "US-imported architecture but uses UK 433MHz frequency. Standard OBD matching."
+        },
+        {
+          "path": "items.edge_2016_2021_passive.verification.status",
+          "kept": "locksmith_card_core_verified_from_master_workbook",
+          "generated": "core_data_complete"
+        }
+      ]
+    },
+    {
+      "path": "database/vehicles/ford/fiesta/models.json",
+      "state": "updated",
+      "new_records": 6,
+      "conflict_count": 1,
+      "conflicts": [
+        {
+          "path": "updated_at",
+          "kept": "2026-07-14",
+          "generated": "2026-07-15"
+        }
+      ]
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "state": "updated",
+      "new_records": 6,
+      "conflict_count": 1,
+      "conflicts": [
+        {
+          "path": "updated_at",
+          "kept": "2026-07-14",
+          "generated": "2026-07-15"
+        }
+      ]
+    },
+    {
+      "path": "database/vehicles/ford/fusion/models.json",
+      "state": "new",
+      "new_records": 1,
+      "conflict_count": 0,
+      "conflicts": []
+    },
+    {
+      "path": "database/vehicles/ford/galaxy/models.json",
+      "state": "updated",
+      "new_records": 1,
+      "conflict_count": 12,
+      "conflicts": [
+        {
+          "path": "updated_at",
+          "kept": "2026-07-14",
+          "generated": "2026-07-15"
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.vehicle.variant",
+          "kept": "Passive Key / Push Button Start",
+          "generated": "Proximity Smart Key (Slim)"
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.vehicle.generation",
+          "kept": "Third generation / CD390",
+          "generated": "Second / third-generation shared security family"
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.vehicle_information.immobiliser_system",
+          "kept": "Ford PATS Hitag Pro",
+          "generated": "Ford PATS / shared-platform system as applicable"
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.vehicle_information.immobiliser_generation",
+          "kept": "Hitag Pro / ID47",
+          "generated": "HITAG Pro - ID47"
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.vehicle_information.transponder_type",
+          "kept": "NXP Hitag Pro",
+          "generated": "HITAG Pro - ID47"
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.vehicle_information.frequency_mhz",
+          "kept": "433.92",
+          "generated": 433
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.vehicle_information.blade_profile",
+          "kept": "HU101 emergency blade",
+          "generated": "HU101"
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.vehicle_information.key_type",
+          "kept": "3-button passive key with emergency blade",
+          "generated": "Proximity Smart Key (Slim)"
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.vehicle_information.notes",
+          "kept": "Transpondery lists Galaxy 2015+ as Hitag Pro. Silca lists CD390 2015-2022 with HU101 and 433 MHz. Tool and online requirements remain to be mapped separately.",
+          "generated": "Standard Slim Smart key. Diagnostics via OBD."
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.verification.status",
+          "kept": "key_data_verified",
+          "generated": "core_data_complete"
+        },
+        {
+          "path": "items.galaxy_2015_2023_passive.verification.last_verified",
+          "kept": "2026-07-14",
+          "generated": "2026-07-15"
+        }
+      ]
+    },
+    {
+      "path": "database/vehicles/ford/grand_c_max/models.json",
+      "state": "updated",
+      "new_records": 2,
+      "conflict_count": 18,
+      "conflicts": [
+        {
+          "path": "updated_at",
+          "kept": "2026-07-14",
+          "generated": "2026-07-15"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle.variant",
+          "kept": "Passive Key / Push Button Start",
+          "generated": "Proximity Smart Key (Pear)"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle.generation",
+          "kept": "First generation facelift",
+          "generated": "Second generation facelift"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.immobiliser_system",
+          "kept": "Ford PATS Hitag Pro",
+          "generated": "Ford PATS / shared-platform system as applicable"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.immobiliser_generation",
+          "kept": "Hitag Pro / ID47-ID49 family",
+          "generated": "HITAG Pro - ID47"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.transponder_type",
+          "kept": "NXP Hitag Pro",
+          "generated": "HITAG Pro - ID47"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.frequency_mhz",
+          "kept": "433.92",
+          "generated": 433
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.blade_profile",
+          "kept": "HU101 emergency blade",
+          "generated": "HU101"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.key_type",
+          "kept": "3-button passive key with emergency blade",
+          "generated": "Proximity Smart Key (Pear)"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.button_count",
+          "kept": 3,
+          "generated": "3 Buttons"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.battery_type",
+          "kept": "CR2032 — confirm against physical remote before supply",
+          "generated": "CR2032 (confirm physical key)"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.programming.add_key",
+          "kept": "Supported by compatible late Ford PATS diagnostic tools; exact tool IDs pending mapping",
+          "generated": "Confirm"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.programming.all_keys_lost",
+          "kept": "Supported only where the selected tool explicitly covers the exact build/security route",
+          "generated": "Confirm exact build/tool"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.programming.route",
+          "kept": "OBD diagnostic programming",
+          "generated": "Confirm exact tool route"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.programming.online_requirement",
+          "kept": "Tool/build dependent; verify before accepting AKL",
+          "generated": "Normally no"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.vehicle_information.notes",
+          "kept": "This exact Grand C-Max keyless application is listed by a UK professional supplier as 433 MHz ID49 with HU101. Transponder family and C-Max CEU blade/frequency are independently supported by Transpondery and Silca. OEM part number remains to be added.",
+          "generated": "Keyless start systems. Slot is in the steering column shroud."
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.verification.status",
+          "kept": "locksmith_card_core_verified",
+          "generated": "core_data_complete"
+        },
+        {
+          "path": "items.grand_c_max_2015_2019_passive.verification.last_verified",
+          "kept": "2026-07-14",
+          "generated": "2026-07-15"
+        }
+      ]
+    },
+    {
+      "path": "database/vehicles/ford/ka/models.json",
+      "state": "updated",
+      "new_records": 2,
+      "conflict_count": 1,
+      "conflicts": [
+        {
+          "path": "updated_at",
+          "kept": "2026-07-14",
+          "generated": "2026-07-15"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "bundle_files": 10,
+    "new_files": 1,
+    "updated_files": 9,
+    "new_records": 21,
+    "conflicts": 94
+  }
+}

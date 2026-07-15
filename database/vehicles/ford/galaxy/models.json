@@ -1,18 +1,395 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-14",
-  "manufacturer":{"id":"ford","name":"Ford"},
-  "model":{"id":"galaxy","name":"Galaxy"},
-  "category":"vehicles",
-  "items":{
-    "galaxy_1995_1998_vag":{"record_id":"ford_galaxy_1995_1998_vag_uk","vehicle":{"make":"Ford","model":"Galaxy","variant":"VAG-derived keyed generation","generation":"Mk1 pre-facelift early","year_from":1995,"year_to":1998,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Volkswagen Group legacy immobiliser","immobiliser_generation":"Philips fixed-code ID33","transponder_type":"Philips ID33","transponder_id":"philips_id33","frequency_mhz":"Verification required","frequency_id":"frequency_unknown","blade_profile":"Verification required","blade_id":"emergency_blade_unknown","key_type":"Mechanical ignition key / remote configuration varies","smart_key":false,"tool_ids":[],"notes":"Transponder year split is verified. Exact UK blade and remote frequency still require a dedicated Mk1 Galaxy application source; do not apply Ford PATS assumptions."},"verification":{"status":"partially_verified","last_verified":"2026-07-14","sources":["transpondery_galaxy"]}},
-    "galaxy_1998_2000_vag":{"record_id":"ford_galaxy_1998_2000_vag_uk","vehicle":{"make":"Ford","model":"Galaxy","variant":"VAG-derived keyed generation","generation":"Mk1 pre-facelift late","year_from":1998,"year_to":2000,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Volkswagen Group legacy immobiliser","immobiliser_generation":"Philips Crypto ID42","transponder_type":"Philips Crypto ID42","transponder_id":"philips_crypto_id42","frequency_mhz":"Verification required","frequency_id":"frequency_unknown","blade_profile":"Verification required","blade_id":"emergency_blade_unknown","key_type":"Mechanical ignition key / remote configuration varies","smart_key":false,"tool_ids":[],"notes":"Transponder year split is verified. Exact UK blade and remote frequency remain to be confirmed from a dedicated Mk1 application source."},"verification":{"status":"partially_verified","last_verified":"2026-07-14","sources":["transpondery_galaxy"]}},
-    "galaxy_2000_2006_vag":{"record_id":"ford_galaxy_2000_2006_vag_uk","vehicle":{"make":"Ford","model":"Galaxy","variant":"VAG-derived keyed generation","generation":"Mk1 facelift","year_from":2000,"year_to":2006,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Volkswagen Group legacy immobiliser","immobiliser_generation":"Philips Crypto ID44","transponder_type":"Philips Crypto ID44","transponder_id":"philips_crypto_id44","frequency_mhz":"Verification required","frequency_id":"frequency_unknown","blade_profile":"Verification required","blade_id":"emergency_blade_unknown","key_type":"Remote key with mechanical ignition blade","smart_key":false,"tool_ids":[],"notes":"Transponder family is verified for 2000-2006. Exact UK blade and frequency remain pending a VAG/Galaxy-specific application source."},"verification":{"status":"partially_verified","last_verified":"2026-07-14","sources":["transpondery_galaxy"]}},
-    "galaxy_2006_2009_keyed":{"record_id":"ford_galaxy_2006_2009_keyed_uk","vehicle":{"make":"Ford","model":"Galaxy","variant":"Keyed Ignition","generation":"Second generation pre-facelift","year_from":2006,"year_to":2009,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63","transponder_type":"Texas 4D-63 80-bit","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote key with mechanical blade","smart_key":false,"tool_ids":[],"notes":"Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_galaxy","silca_galaxy"]}},
-    "galaxy_2006_2009_passive":{"record_id":"ford_galaxy_2006_2009_passive_uk","vehicle":{"make":"Ford","model":"Galaxy","variant":"Passive Key / Push Button Start","generation":"Second generation pre-facelift","year_from":2006,"year_to":2009,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63","transponder_type":"Texas 4D-63 80-bit","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"Passive key with emergency blade","smart_key":true,"tool_ids":[],"notes":"Use only where passive start is confirmed. Key data verified for the 2006-2009 security family."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_galaxy","silca_galaxy"]}},
-    "galaxy_2010_2014_keyed":{"record_id":"ford_galaxy_2010_2014_keyed_uk","vehicle":{"make":"Ford","model":"Galaxy","variant":"Keyed Ignition","generation":"Second generation facelift","year_from":2010,"year_to":2014,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote key with mechanical blade","smart_key":false,"tool_ids":[],"notes":"Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_galaxy","silca_galaxy"]}},
-    "galaxy_2010_2014_passive":{"record_id":"ford_galaxy_2010_2014_passive_uk","vehicle":{"make":"Ford","model":"Galaxy","variant":"Passive Key / Push Button Start","generation":"Second generation facelift","year_from":2010,"year_to":2014,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"Passive key with emergency blade","smart_key":true,"tool_ids":[],"notes":"Blade, transponder and frequency verified for the facelift security family. Tool compatibility still pending."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_galaxy","silca_galaxy"]}},
-    "galaxy_2015_2023_passive":{"record_id":"ford_galaxy_2015_2023_passive_uk","vehicle":{"make":"Ford","model":"Galaxy","variant":"Passive Key / Push Button Start","generation":"Third generation / CD390","year_from":2015,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47","transponder_type":"NXP Hitag Pro","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"3-button passive key with emergency blade","smart_key":true,"tool_ids":[],"notes":"Transpondery lists Galaxy 2015+ as Hitag Pro. Silca lists CD390 2015-2022 with HU101 and 433 MHz. Tool and online requirements remain to be mapped separately."},"verification":{"status":"key_data_verified","last_verified":"2026-07-14","sources":["transpondery_galaxy","silca_galaxy"]}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
   },
-  "sources":{"transpondery_galaxy":{"publisher":"Transpondery","title":"Ford Transponder Catalog — Galaxy","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-14","evidence":"1995-1998 ID33; 1998-2000 ID42; 2000-2006 ID44; 2006-2010 4D63; 2010-2014 DST80; 2015+ Hitag Pro"},"silca_galaxy":{"publisher":"Silca","title":"Proximity / Slot / Remote Car Keys Catalogue 2025","url":"https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf","accessed":"2026-07-14","evidence":"Galaxy WA6 2006-2011 HU101 433AM; CA1 2010-2015 HU101 433FM; CD390 2015-2022 HU101 433AM"}}
+  "model": {
+    "id": "galaxy",
+    "name": "Galaxy"
+  },
+  "category": "vehicles",
+  "items": {
+    "galaxy_1995_1998_vag": {
+      "record_id": "ford_galaxy_1995_1998_vag_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Galaxy",
+        "variant": "VAG-derived keyed generation",
+        "generation": "Mk1 pre-facelift early",
+        "year_from": 1995,
+        "year_to": 1998,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Volkswagen Group legacy immobiliser",
+        "immobiliser_generation": "Philips fixed-code ID33",
+        "transponder_type": "Philips ID33",
+        "transponder_id": "philips_id33",
+        "frequency_mhz": "Verification required",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "Verification required",
+        "blade_id": "emergency_blade_unknown",
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Transponder year split is verified. Exact UK blade and remote frequency still require a dedicated Mk1 Galaxy application source; do not apply Ford PATS assumptions."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_galaxy"
+        ]
+      }
+    },
+    "galaxy_1998_2000_vag": {
+      "record_id": "ford_galaxy_1998_2000_vag_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Galaxy",
+        "variant": "VAG-derived keyed generation",
+        "generation": "Mk1 pre-facelift late",
+        "year_from": 1998,
+        "year_to": 2000,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Volkswagen Group legacy immobiliser",
+        "immobiliser_generation": "Philips Crypto ID42",
+        "transponder_type": "Philips Crypto ID42",
+        "transponder_id": "philips_crypto_id42",
+        "frequency_mhz": "Verification required",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "Verification required",
+        "blade_id": "emergency_blade_unknown",
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Transponder year split is verified. Exact UK blade and remote frequency remain to be confirmed from a dedicated Mk1 application source."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_galaxy"
+        ]
+      }
+    },
+    "galaxy_2000_2006_vag": {
+      "record_id": "ford_galaxy_2000_2006_vag_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Galaxy",
+        "variant": "VAG-derived keyed generation",
+        "generation": "Mk1 facelift",
+        "year_from": 2000,
+        "year_to": 2006,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Volkswagen Group legacy immobiliser",
+        "immobiliser_generation": "Philips Crypto ID44",
+        "transponder_type": "Philips Crypto ID44",
+        "transponder_id": "philips_crypto_id44",
+        "frequency_mhz": "Verification required",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "Verification required",
+        "blade_id": "emergency_blade_unknown",
+        "key_type": "Remote key with mechanical ignition blade",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Transponder family is verified for 2000-2006. Exact UK blade and frequency remain pending a VAG/Galaxy-specific application source."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_galaxy"
+        ]
+      }
+    },
+    "galaxy_2006_2009_keyed": {
+      "record_id": "ford_galaxy_2006_2009_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Galaxy",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation pre-facelift",
+        "year_from": 2006,
+        "year_to": 2009,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63",
+        "transponder_type": "Texas 4D-63 80-bit",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote key with mechanical blade",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_galaxy",
+          "silca_galaxy"
+        ]
+      }
+    },
+    "galaxy_2006_2009_passive": {
+      "record_id": "ford_galaxy_2006_2009_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Galaxy",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Second generation pre-facelift",
+        "year_from": 2006,
+        "year_to": 2009,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63",
+        "transponder_type": "Texas 4D-63 80-bit",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "Passive key with emergency blade",
+        "smart_key": true,
+        "tool_ids": [],
+        "notes": "Use only where passive start is confirmed. Key data verified for the 2006-2009 security family."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_galaxy",
+          "silca_galaxy"
+        ]
+      }
+    },
+    "galaxy_2010_2014_keyed": {
+      "record_id": "ford_galaxy_2010_2014_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Galaxy",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation facelift",
+        "year_from": 2010,
+        "year_to": 2014,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote key with mechanical blade",
+        "smart_key": false,
+        "tool_ids": [],
+        "notes": "Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_galaxy",
+          "silca_galaxy"
+        ]
+      }
+    },
+    "galaxy_2010_2014_passive": {
+      "record_id": "ford_galaxy_2010_2014_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Galaxy",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Second generation facelift",
+        "year_from": 2010,
+        "year_to": 2014,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "Passive key with emergency blade",
+        "smart_key": true,
+        "tool_ids": [],
+        "notes": "Blade, transponder and frequency verified for the facelift security family. Tool compatibility still pending."
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_galaxy",
+          "silca_galaxy"
+        ]
+      }
+    },
+    "galaxy_2015_2023_passive": {
+      "record_id": "ford_galaxy_2015_2023_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Galaxy",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Third generation / CD390",
+        "year_from": 2015,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47",
+        "transponder_type": "NXP Hitag Pro",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "3-button passive key with emergency blade",
+        "smart_key": true,
+        "tool_ids": [],
+        "notes": "Transpondery lists Galaxy 2015+ as Hitag Pro. Silca lists CD390 2015-2022 with HU101 and 433 MHz. Tool and online requirements remain to be mapped separately.",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "oem_part_numbers": [
+          "1919602",
+          "2230771"
+        ],
+        "aftermarket_references": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "HU101"
+      },
+      "verification": {
+        "status": "key_data_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_galaxy",
+          "silca_galaxy",
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "galaxy_2006_2015_keyed": {
+      "record_id": "ford_galaxy_2006_2015_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Galaxy",
+        "variant": "Flip Remote / Smart Key (Oval)",
+        "generation": "First / second-generation shared security family",
+        "year_from": 2006,
+        "year_to": 2015,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-63 (80-Bit)",
+        "transponder_type": "Texas 4D-63 (80-Bit)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Flip Remote / Smart Key (Oval)",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1713499",
+          "1756409"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Consistent with Mondeo MK4 protocols."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "transpondery_galaxy": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog — Galaxy",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-14",
+      "evidence": "1995-1998 ID33; 1998-2000 ID42; 2000-2006 ID44; 2006-2010 4D63; 2010-2014 DST80; 2015+ Hitag Pro"
+    },
+    "silca_galaxy": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-14",
+      "evidence": "Galaxy WA6 2006-2011 HU101 433AM; CA1 2010-2015 HU101 433FM; CD390 2015-2022 HU101 433AM"
+    },
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
 }

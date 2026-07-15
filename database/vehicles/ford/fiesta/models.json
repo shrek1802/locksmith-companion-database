@@ -1,18 +1,755 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-14",
-  "manufacturer":{"id":"ford","name":"Ford"},
-  "model":{"id":"fiesta","name":"Fiesta"},
-  "category":"vehicles",
-  "items":{
-    "fiesta_1995_2001_keyed":{"record_id":"ford_fiesta_1995_2001_keyed_uk","vehicle":{"make":"Ford","model":"Fiesta","variant":"Keyed Ignition","generation":"Mk4 / Mk5 family","year_from":1995,"year_to":2001,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS legacy","immobiliser_generation":"Verification required","transponder_type":"Verification required","transponder_id":"transponder_unknown","frequency_mhz":"Verification required","frequency_id":"frequency_unknown","blade_profile":"FO21 family — exact build verification required","blade_id":"fo21","key_type":"Mechanical ignition key / separate or integrated remote varies","button_count":null,"battery_type":"Confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":[],"tool_ids":[],"programming":{"add_key":"Vehicle/build dependent; legacy PATS route","all_keys_lost":"Legacy PATS diagnostic or code-based route depending build","route":"OBD or legacy PATS procedure","online_requirement":"No"},"notes":"Retained as legacy research-required because the range crosses early PATS changes. Do not use a single chip assumption across the whole range."},"verification":{"status":"legacy_review_required","last_verified":"2026-07-14","sources":["ford_fiesta_split_audit"]}},
-    "fiesta_2002_2008_keyed":{"record_id":"ford_fiesta_2002_2008_keyed_uk","vehicle":{"make":"Ford","model":"Fiesta","variant":"Keyed Ignition","generation":"Mk6","year_from":2002,"year_to":2008,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63 family — build split verification required","transponder_type":"Texas 4D-63 family","transponder_id":"texas_4d63_40bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"Remote key with mechanical blade","button_count":3,"battery_type":"Confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Fiesta HU101 433 MHz ID63 remote-key family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access/wait may apply","route":"OBD diagnostic programming","online_requirement":"No"},"notes":"Useful stock mapping is HU101/433 MHz/ID63 family. Exact 40-bit versus later 80-bit build breakpoint must be checked before chip generation or ordering."},"verification":{"status":"locksmith_card_core_partially_verified","last_verified":"2026-07-14","sources":["transpondery_fiesta","silca_fiesta","keystation_fiesta"]}},
-    "fiesta_2008_2012_keyed":{"record_id":"ford_fiesta_2008_2012_keyed_uk","vehicle":{"make":"Ford","model":"Fiesta","variant":"Remote Key / Mechanical Ignition","generation":"Mk7 early","year_from":2008,"year_to":2012,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63 80-bit","transponder_type":"Texas 4D-63 80-bit","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote head or flip key with mechanical blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Ford C-Max / Fiesta / Focus 3-button 433 MHz ID63 80-bit HU101 remote family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; timed security access may apply","route":"OBD diagnostic programming","online_requirement":"No"},"notes":"Core key-stock data is independently supported by Transpondery and UK supplier catalogues. Exact OEM part number varies by remote style and build."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_fiesta","keystation_fiesta","silca_fiesta"]}},
-    "fiesta_2008_2012_passive":{"record_id":"ford_fiesta_2008_2012_passive_uk","vehicle":{"make":"Ford","model":"Fiesta","variant":"Passive Key / Ford Power Start","generation":"Mk7 early","year_from":2008,"year_to":2012,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Texas Crypto 4D","immobiliser_generation":"ID63 80-bit","transponder_type":"Texas 4D-63 80-bit","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"3-button passive key with emergency blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":true,"oem_part_numbers":[],"aftermarket_references":["Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; timed security access may apply","route":"OBD diagnostic programming","online_requirement":"No"},"notes":"Use only where push-button start is physically confirmed. KeyStation explicitly lists the Fiesta-compatible 433 MHz ID63 80-bit HU101 keyless family."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_fiesta","keystation_fiesta","silca_fiesta"]}},
-    "fiesta_2013_2017_keyed":{"record_id":"ford_fiesta_2013_2017_keyed_uk","vehicle":{"make":"Ford","model":"Fiesta","variant":"Remote Flip Key / Mechanical Ignition","generation":"Mk7 facelift","year_from":2013,"year_to":2017,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button flip remote key","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Fiesta HU101 433 MHz DST80 / ID63-6F flip-key family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access may apply","route":"OBD diagnostic programming","online_requirement":"Normally no"},"notes":"The facelift remains on the Mk7 platform but uses the later DST80 security family. Exact OEM remote number varies by build."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_fiesta","silca_fiesta","keystation_fiesta"]}},
-    "fiesta_2013_2017_passive":{"record_id":"ford_fiesta_2013_2017_passive_uk","vehicle":{"make":"Ford","model":"Fiesta","variant":"Passive Key / Ford Power Start","generation":"Mk7 facelift","year_from":2013,"year_to":2017,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS DST80","immobiliser_generation":"DST80 / ID63-6F","transponder_type":"Texas 4D-63 80-bit (DST80)","transponder_id":"texas_4d63_80bit","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"3-button passive key with emergency blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":true,"oem_part_numbers":[],"aftermarket_references":["Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"],"tool_ids":[],"programming":{"add_key":"Supported by compatible Ford PATS diagnostic tools","all_keys_lost":"Supported by compatible Ford PATS tools; security access may apply","route":"OBD diagnostic programming","online_requirement":"Normally no"},"notes":"Use only where push-button start is confirmed. Exact OEM part number varies by trim/build."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["transpondery_fiesta","silca_fiesta","keystation_fiesta"]}},
-    "fiesta_2017_2023_keyed":{"record_id":"ford_fiesta_2017_2023_keyed_uk","vehicle":{"make":"Ford","model":"Fiesta","variant":"Mk8 Remote Flip Key","generation":"Mk8 / CE1","year_from":2017,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47-ID49 family","transponder_type":"NXP Hitag Pro","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101","blade_id":"hu101","key_type":"3-button remote flip key","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":false,"oem_part_numbers":[],"aftermarket_references":["Mk8 Fiesta HU101 433 MHz Hitag Pro remote family"],"tool_ids":[],"programming":{"add_key":"Supported only where the selected tool explicitly covers the exact build","all_keys_lost":"Exact-build coverage required; later vehicles may require online Ford security access","route":"OBD diagnostic programming","online_requirement":"Build and operation dependent"},"notes":"Ford UK documents the flip-key configuration. Core blade/frequency/chip family follows professional Mk8 application listings; exact OEM remote number and tool IDs still need mapping."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["ford_owner_manual_2020_uk","silca_fiesta","keystation_fiesta"]}},
-    "fiesta_2017_2023_passive":{"record_id":"ford_fiesta_2017_2023_passive_uk","vehicle":{"make":"Ford","model":"Fiesta","variant":"Mk8 Passive Key / Push Button Start","generation":"Mk8 / CE1","year_from":2017,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS Hitag Pro","immobiliser_generation":"Hitag Pro / ID47-ID49 family","transponder_type":"NXP Hitag Pro","transponder_id":"nxp_hitag_pro","frequency_mhz":"433.92","frequency_id":"mhz_433_92","blade_profile":"HU101 emergency blade","blade_id":"hu101","key_type":"3-button passive key with removable emergency blade","button_count":3,"battery_type":"CR2032 — confirm against physical remote","smart_key":true,"oem_part_numbers":[],"aftermarket_references":["Mk8 Fiesta HU101 433 MHz Hitag Pro passive-key family"],"tool_ids":[],"programming":{"add_key":"Supported only where the selected tool explicitly covers the exact build","all_keys_lost":"Exact-build coverage required; later vehicles may require online Ford security access","route":"OBD diagnostic programming","online_requirement":"Build and operation dependent"},"backup_start":"Use the Ford-documented passive-key backup position, buttons facing upward, then operate the push-button ignition.","notes":"Ford UK documents passive key, removable emergency blade and backup start. Exact OEM remote number and tool IDs remain to be mapped."},"verification":{"status":"locksmith_card_core_verified","last_verified":"2026-07-14","sources":["ford_owner_manual_2020_uk","silca_fiesta","keystation_fiesta"]}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
   },
-  "sources":{"ford_fiesta_split_audit":{"publisher":"Locksmith Companion Database","title":"Ford Security Generation Split Audit","path":"Docs/FORD_SECURITY_SPLIT_AUDIT.md","accessed":"2026-07-14"},"transpondery_fiesta":{"publisher":"Transpondery","title":"Ford Transponder Catalog — Fiesta","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","accessed":"2026-07-14","evidence":"Fiesta chip-family and year breakpoints"},"silca_fiesta":{"publisher":"Silca","title":"Proximity / Slot / Remote Car Keys Catalogue 2025 — Fiesta","url":"https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf","accessed":"2026-07-14","evidence":"Fiesta HU101 and European 433 MHz applications across modern generations"},"keystation_fiesta":{"publisher":"KeyStation UK","title":"Ford Fiesta remote-key catalogue","url":"https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys","accessed":"2026-07-14","evidence":"Fiesta-compatible 433 MHz ID63 80-bit HU101 remote and keyless families"},"ford_owner_manual_2020_uk":{"publisher":"Ford Motor Company","title":"Fiesta CE1 Owner's Manual, en-GBR","url":"https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3654en-201909-20200128135830.pdf","accessed":"2026-07-13"}}
+  "model": {
+    "id": "fiesta",
+    "name": "Fiesta"
+  },
+  "category": "vehicles",
+  "items": {
+    "fiesta_1995_2001_keyed": {
+      "record_id": "ford_fiesta_1995_2001_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Keyed Ignition",
+        "generation": "Mk4 / Mk5 family",
+        "year_from": 1995,
+        "year_to": 2001,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS legacy",
+        "immobiliser_generation": "Verification required",
+        "transponder_type": "Verification required",
+        "transponder_id": "transponder_unknown",
+        "frequency_mhz": "Verification required",
+        "frequency_id": "frequency_unknown",
+        "blade_profile": "FO21 family — exact build verification required",
+        "blade_id": "fo21",
+        "key_type": "Mechanical ignition key / separate or integrated remote varies",
+        "button_count": null,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Vehicle/build dependent; legacy PATS route",
+          "all_keys_lost": "Legacy PATS diagnostic or code-based route depending build",
+          "route": "OBD or legacy PATS procedure",
+          "online_requirement": "No"
+        },
+        "notes": "Retained as legacy research-required because the range crosses early PATS changes. Do not use a single chip assumption across the whole range."
+      },
+      "verification": {
+        "status": "legacy_review_required",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_fiesta_split_audit"
+        ]
+      }
+    },
+    "fiesta_2002_2008_keyed": {
+      "record_id": "ford_fiesta_2002_2008_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Keyed Ignition",
+        "generation": "Mk6",
+        "year_from": 2002,
+        "year_to": 2008,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63 family — build split verification required",
+        "transponder_type": "Texas 4D-63 family",
+        "transponder_id": "texas_4d63_40bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Remote key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "Confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Fiesta HU101 433 MHz ID63 remote-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "notes": "Useful stock mapping is HU101/433 MHz/ID63 family. Exact 40-bit versus later 80-bit build breakpoint must be checked before chip generation or ordering."
+      },
+      "verification": {
+        "status": "locksmith_card_core_partially_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_fiesta",
+          "silca_fiesta",
+          "keystation_fiesta"
+        ]
+      }
+    },
+    "fiesta_2008_2012_keyed": {
+      "record_id": "ford_fiesta_2008_2012_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Remote Key / Mechanical Ignition",
+        "generation": "Mk7 early",
+        "year_from": 2008,
+        "year_to": 2012,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63 80-bit",
+        "transponder_type": "Texas 4D-63 80-bit",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote head or flip key with mechanical blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Ford C-Max / Fiesta / Focus 3-button 433 MHz ID63 80-bit HU101 remote family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; timed security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "notes": "Core key-stock data is independently supported by Transpondery and UK supplier catalogues. Exact OEM part number varies by remote style and build."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_fiesta",
+          "keystation_fiesta",
+          "silca_fiesta"
+        ]
+      }
+    },
+    "fiesta_2008_2012_passive": {
+      "record_id": "ford_fiesta_2008_2012_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Passive Key / Ford Power Start",
+        "generation": "Mk7 early",
+        "year_from": 2008,
+        "year_to": 2012,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Texas Crypto 4D",
+        "immobiliser_generation": "ID63 80-bit",
+        "transponder_type": "Texas 4D-63 80-bit",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "3-button passive key with emergency blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; timed security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "notes": "Use only where push-button start is physically confirmed. KeyStation explicitly lists the Fiesta-compatible 433 MHz ID63 80-bit HU101 keyless family."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_fiesta",
+          "keystation_fiesta",
+          "silca_fiesta"
+        ]
+      }
+    },
+    "fiesta_2013_2017_keyed": {
+      "record_id": "ford_fiesta_2013_2017_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Remote Flip Key / Mechanical Ignition",
+        "generation": "Mk7 facelift",
+        "year_from": 2013,
+        "year_to": 2017,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button flip remote key",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Fiesta HU101 433 MHz DST80 / ID63-6F flip-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "notes": "The facelift remains on the Mk7 platform but uses the later DST80 security family. Exact OEM remote number varies by build."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_fiesta",
+          "silca_fiesta",
+          "keystation_fiesta"
+        ]
+      }
+    },
+    "fiesta_2013_2017_passive": {
+      "record_id": "ford_fiesta_2013_2017_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Passive Key / Ford Power Start",
+        "generation": "Mk7 facelift",
+        "year_from": 2013,
+        "year_to": 2017,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS DST80",
+        "immobiliser_generation": "DST80 / ID63-6F",
+        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "3-button passive key with emergency blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported by compatible Ford PATS diagnostic tools",
+          "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "notes": "Use only where push-button start is confirmed. Exact OEM part number varies by trim/build."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "transpondery_fiesta",
+          "silca_fiesta",
+          "keystation_fiesta"
+        ]
+      }
+    },
+    "fiesta_2017_2023_keyed": {
+      "record_id": "ford_fiesta_2017_2023_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Mk8 Remote Flip Key",
+        "generation": "Mk8 / CE1",
+        "year_from": 2017,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47-ID49 family",
+        "transponder_type": "NXP Hitag Pro",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "3-button remote flip key",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Mk8 Fiesta HU101 433 MHz Hitag Pro remote family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported only where the selected tool explicitly covers the exact build",
+          "all_keys_lost": "Exact-build coverage required; later vehicles may require online Ford security access",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "notes": "Ford UK documents the flip-key configuration. Core blade/frequency/chip family follows professional Mk8 application listings; exact OEM remote number and tool IDs still need mapping."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_owner_manual_2020_uk",
+          "silca_fiesta",
+          "keystation_fiesta"
+        ]
+      }
+    },
+    "fiesta_2017_2023_passive": {
+      "record_id": "ford_fiesta_2017_2023_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Mk8 Passive Key / Push Button Start",
+        "generation": "Mk8 / CE1",
+        "year_from": 2017,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS Hitag Pro",
+        "immobiliser_generation": "Hitag Pro / ID47-ID49 family",
+        "transponder_type": "NXP Hitag Pro",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101 emergency blade",
+        "blade_id": "hu101",
+        "key_type": "3-button passive key with removable emergency blade",
+        "button_count": 3,
+        "battery_type": "CR2032 — confirm against physical remote",
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Mk8 Fiesta HU101 433 MHz Hitag Pro passive-key family"
+        ],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Supported only where the selected tool explicitly covers the exact build",
+          "all_keys_lost": "Exact-build coverage required; later vehicles may require online Ford security access",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "backup_start": "Use the Ford-documented passive-key backup position, buttons facing upward, then operate the push-button ignition.",
+        "notes": "Ford UK documents passive key, removable emergency blade and backup start. Exact OEM remote number and tool IDs remain to be mapped."
+      },
+      "verification": {
+        "status": "locksmith_card_core_verified",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_owner_manual_2020_uk",
+          "silca_fiesta",
+          "keystation_fiesta"
+        ]
+      }
+    },
+    "fiesta_1998_2002_keyed": {
+      "record_id": "ford_fiesta_1998_2002_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "3 Button Remote Head (Red Glass)",
+        "generation": "Mk4 / Mk5 family",
+        "year_from": 1998,
+        "year_to": 2002,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4C (Glass / Carbon)",
+        "transponder_type": "Texas 4C (Glass / Carbon)",
+        "transponder_id": "texas_4c",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "FO21",
+        "blade_id": "fo21",
+        "key_type": "3 Button Remote Head (Red Glass)",
+        "button_count": "3 Buttons",
+        "battery_type": "Confirm physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1337641",
+          "1753886"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD immobiliser + manual remote matching",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Uses 4C chip. Manual remote. Immo requires OBD coding or clone onto CN1/TPX1."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "fiesta_mk6_2002_2008_keyed": {
+      "record_id": "ford_fiesta_mk6_2002_2008_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "3 Button Remote Head",
+        "generation": "MK6",
+        "year_from": 2002,
+        "year_to": 2008,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-63 (40-Bit)",
+        "transponder_type": "Texas 4D-63 (40-Bit)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "FO21",
+        "blade_id": "fo21",
+        "key_type": "3 Button Remote Head",
+        "button_count": "3 Buttons",
+        "battery_type": "Confirm physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "164-R8042",
+          "5913139 (Head)"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Easy programming diagnostically, remote is manual or OBD depending on tool."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "fiesta_mk7_2008_2017_keyed": {
+      "record_id": "ford_fiesta_mk7_2008_2017_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Flip Remote Key",
+        "generation": "MK7",
+        "year_from": 2008,
+        "year_to": 2017,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-63 (80-Bit)",
+        "transponder_type": "Texas 4D-63 (80-Bit)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Flip Remote Key",
+        "button_count": "3 Buttons",
+        "battery_type": "Confirm physical remote",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1756409",
+          "2179611",
+          "2520983"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "Bread and butter job. OBD program instantly. Fast and highly compatible."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "fiesta_mk7_keyless_2008_2017_passive": {
+      "record_id": "ford_fiesta_mk7_keyless_2008_2017_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Oval Smart Key",
+        "generation": "MK7",
+        "year_from": 2008,
+        "year_to": 2017,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Texas 4D-63 (80-Bit)",
+        "transponder_type": "Texas 4D-63 (80-Bit)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Oval Smart Key",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "1713499"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Confirm",
+          "all_keys_lost": "Confirm exact build/tool",
+          "route": "Confirm exact tool route",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "HU101",
+        "notes": "Emergency key slot under steering column cover if smart battery is dead."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "fiesta_mk8_2017_2023_keyed": {
+      "record_id": "ford_fiesta_mk8_2017_2023_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Flip Remote Key (Hitag Pro)",
+        "generation": "MK8",
+        "year_from": 2017,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "HITAG Pro - ID47",
+        "transponder_type": "HITAG Pro - ID47",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Flip Remote Key (Hitag Pro)",
+        "button_count": "2 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1919602",
+          "2230771"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Yes — OBD",
+          "all_keys_lost": "Yes — tool coverage/security access required",
+          "route": "OBD diagnostic programming",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "Same as ignition blade",
+        "notes": "OBD diagnostic. Watch for active alarm systems requiring bypass/ignition trick."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    },
+    "fiesta_mk8_keyless_2017_2023_passive": {
+      "record_id": "ford_fiesta_mk8_keyless_2017_2023_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta",
+        "variant": "Proximity Smart Key",
+        "generation": "MK8",
+        "year_from": 2017,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS / shared-platform system as applicable",
+        "immobiliser_generation": "Hitag 3 (reads as ID47 / 49)",
+        "transponder_type": "Hitag 3 (reads as ID47 / 49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": 433,
+        "frequency_id": "mhz_433_92",
+        "blade_profile": "HU101",
+        "blade_id": "hu101",
+        "key_type": "Proximity Smart Key",
+        "button_count": "3 Buttons",
+        "battery_type": "CR2032 (confirm physical key)",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "2441951",
+          "2180633"
+        ],
+        "aftermarket_references": [],
+        "tool_ids": [],
+        "programming": {
+          "add_key": "Confirm",
+          "all_keys_lost": "Confirm exact build/tool",
+          "route": "Confirm exact tool route",
+          "online_requirement": "Normally no"
+        },
+        "tool_or_cable_required": "Standard OBD; battery support recommended",
+        "emergency_blade": "HU101",
+        "notes": "Smart key configuration. Remote slot located in cupholder area."
+      },
+      "verification": {
+        "status": "core_data_complete",
+        "last_verified": "2026-07-15",
+        "sources": [
+          "ford_master_workbook",
+          "transpondery_ford",
+          "silca_ford"
+        ]
+      }
+    }
+  },
+  "sources": {
+    "ford_fiesta_split_audit": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford Security Generation Split Audit",
+      "path": "Docs/FORD_SECURITY_SPLIT_AUDIT.md",
+      "accessed": "2026-07-14"
+    },
+    "transpondery_fiesta": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog — Fiesta",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-14",
+      "evidence": "Fiesta chip-family and year breakpoints"
+    },
+    "silca_fiesta": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025 — Fiesta",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-14",
+      "evidence": "Fiesta HU101 and European 433 MHz applications across modern generations"
+    },
+    "keystation_fiesta": {
+      "publisher": "KeyStation UK",
+      "title": "Ford Fiesta remote-key catalogue",
+      "url": "https://keystation.co.uk/vehicle-makes/ford-keys-parts/ford-remote-keys",
+      "accessed": "2026-07-14",
+      "evidence": "Fiesta-compatible 433 MHz ID63 80-bit HU101 remote and keyless families"
+    },
+    "ford_owner_manual_2020_uk": {
+      "publisher": "Ford Motor Company",
+      "title": "Fiesta CE1 Owner's Manual, en-GBR",
+      "url": "https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3654en-201909-20200128135830.pdf",
+      "accessed": "2026-07-13"
+    },
+    "ford_master_workbook": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford UK Master Database v5",
+      "path": "Ford_Master_Database_v5.xlsx",
+      "accessed": "2026-07-15"
+    },
+    "transpondery_ford": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "accessed": "2026-07-15"
+    },
+    "silca_ford": {
+      "publisher": "Silca",
+      "title": "Proximity / Slot / Remote Car Keys Catalogue 2025",
+      "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
+      "accessed": "2026-07-15"
+    }
+  }
 }
