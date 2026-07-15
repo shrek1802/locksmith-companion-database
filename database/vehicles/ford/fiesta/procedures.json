@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-13",
+  "updated_at": "2026-07-15",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -11,78 +11,349 @@
   },
   "category": "vehicle_procedures",
   "items": {
-    "mk8_flip_key": {
+    "fiesta_1995_2001_keyed": {
+      "record_id": "ford_fiesta_1995_2001_keyed_uk",
       "add_key": {
         "display_name": "Add Key",
-        "overall_status": "not_verified",
-        "difficulty": "Not rated",
-        "estimated_minutes": "Not verified",
-        "method": [],
-        "obd_required": "Not verified",
-        "eeprom_required": "Not verified",
-        "working_key_required": "Not verified",
-        "dealer_key_required": "Not verified",
-        "battery_support_required": "Recommended as professional practice; vehicle-specific requirement not verified",
-        "supported_tools": [],
-        "warnings": [
-          "No public primary source was found that safely verifies the aftermarket programming method, security access, wait time or tool coverage for this exact configuration.",
-          "Confirm the vehicle by VIN, ignition type and existing key before selecting a programming path."
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS programming on supported builds; cloning may also be possible",
+        "programming_route": "OBD diagnostic or legacy PATS procedure",
+        "online_requirement": "No",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
         ],
-        "steps": []
+        "warnings": [
+          "Confirm exact year, ignition type, key frequency and transponder before programming."
+        ]
       },
       "all_keys_lost": {
         "display_name": "All Keys Lost",
-        "overall_status": "not_verified",
-        "difficulty": "Not rated",
-        "estimated_minutes": "Not verified",
-        "method": [],
-        "obd_required": "Not verified",
-        "eeprom_required": "Not verified",
-        "working_key_required": false,
-        "dealer_key_required": "Not verified",
-        "battery_support_required": "Recommended as professional practice; vehicle-specific requirement not verified",
-        "supported_tools": [],
-        "warnings": [
-          "Do not treat this record as an approved AKL procedure until tool-specific coverage and security requirements are verified from current official documentation."
+        "overall_status": "supported_with_conditions",
+        "method": "OBD/legacy PATS security-access route; confirm exact model year",
+        "programming_route": "OBD diagnostic or legacy PATS procedure",
+        "online_requirement": "No",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
         ],
-        "steps": []
+        "warnings": [
+          "Maintain stable vehicle voltage and confirm tool coverage before erasing or learning keys."
+        ]
       }
     },
-    "mk8_passive_key": {
+    "fiesta_2002_2008_keyed": {
+      "record_id": "ford_fiesta_2002_2008_keyed_uk",
       "add_key": {
-        "display_name": "Add Passive Key",
-        "overall_status": "not_verified",
-        "difficulty": "Not rated",
-        "estimated_minutes": "Not verified",
-        "method": [],
-        "obd_required": "Not verified",
-        "eeprom_required": "Not verified",
-        "working_key_required": "Not verified",
-        "dealer_key_required": "Not verified",
-        "battery_support_required": "Recommended as professional practice; vehicle-specific requirement not verified",
-        "supported_tools": [],
-        "warnings": [
-          "Passive-key programming coverage and security access were not verified from a public primary source.",
-          "Confirm the vehicle has push-button start and identify the exact key part number before programming."
+        "display_name": "Add Key",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS programming with a compatible Ford immobiliser tool",
+        "programming_route": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
+        "online_requirement": "No",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
         ],
-        "steps": []
+        "warnings": [
+          "Confirm exact year, ignition type, key frequency and transponder before programming."
+        ]
       },
       "all_keys_lost": {
-        "display_name": "All Passive Keys Lost",
-        "overall_status": "not_verified",
-        "difficulty": "Not rated",
-        "estimated_minutes": "Not verified",
-        "method": [],
-        "obd_required": "Not verified",
-        "eeprom_required": "Not verified",
-        "working_key_required": false,
-        "dealer_key_required": "Not verified",
-        "battery_support_required": "Recommended as professional practice; vehicle-specific requirement not verified",
+        "display_name": "All Keys Lost",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS AKL supported; timed/security access may be required",
+        "programming_route": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
+        "online_requirement": "No",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "warnings": [
+          "Maintain stable vehicle voltage and confirm tool coverage before erasing or learning keys."
+        ]
+      }
+    },
+    "fiesta_2008_2012_keyed": {
+      "record_id": "ford_fiesta_2008_2012_keyed_uk",
+      "add_key": {
+        "display_name": "Add Key",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS programming with a compatible Ford immobiliser tool",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "No",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "warnings": [
+          "Confirm exact year, ignition type, key frequency and transponder before programming."
+        ]
+      },
+      "all_keys_lost": {
+        "display_name": "All Keys Lost",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS AKL supported; timed security access may apply",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "No",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "warnings": [
+          "Maintain stable vehicle voltage and confirm tool coverage before erasing or learning keys."
+        ]
+      }
+    },
+    "fiesta_2008_2012_passive": {
+      "record_id": "ford_fiesta_2008_2012_passive_uk",
+      "add_key": {
+        "display_name": "Add Key",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS programming with a compatible Ford immobiliser tool",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "No",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "warnings": [
+          "Confirm exact year, ignition type, key frequency and transponder before programming."
+        ]
+      },
+      "all_keys_lost": {
+        "display_name": "All Keys Lost",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS AKL supported; timed security access may apply",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "No",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "warnings": [
+          "Maintain stable vehicle voltage and confirm tool coverage before erasing or learning keys."
+        ]
+      }
+    },
+    "fiesta_2013_2017_keyed": {
+      "record_id": "ford_fiesta_2013_2017_keyed_uk",
+      "add_key": {
+        "display_name": "Add Key",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS programming with a compatible Ford immobiliser tool",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "Normally no",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "warnings": [
+          "Confirm exact year, ignition type, key frequency and transponder before programming."
+        ]
+      },
+      "all_keys_lost": {
+        "display_name": "All Keys Lost",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS AKL supported; security access may apply",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "Normally no",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "warnings": [
+          "Maintain stable vehicle voltage and confirm tool coverage before erasing or learning keys."
+        ]
+      }
+    },
+    "fiesta_2013_2017_passive": {
+      "record_id": "ford_fiesta_2013_2017_passive_uk",
+      "add_key": {
+        "display_name": "Add Key",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS programming with a compatible Ford immobiliser tool",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "Normally no",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "warnings": [
+          "Confirm exact year, ignition type, key frequency and transponder before programming."
+        ]
+      },
+      "all_keys_lost": {
+        "display_name": "All Keys Lost",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD PATS AKL supported; security access may apply",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "Normally no",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "warnings": [
+          "Maintain stable vehicle voltage and confirm tool coverage before erasing or learning keys."
+        ]
+      }
+    },
+    "fiesta_2017_2023_keyed": {
+      "record_id": "ford_fiesta_2017_2023_keyed_uk",
+      "add_key": {
+        "display_name": "Add Key",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD programming where the selected tool explicitly supports the exact Fiesta build",
+        "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
+        "online_requirement": "Build and operation dependent",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2",
+          "lonsdor_k518"
+        ],
+        "warnings": [
+          "Confirm exact year, ignition type, key frequency and transponder before programming."
+        ]
+      },
+      "all_keys_lost": {
+        "display_name": "All Keys Lost",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD AKL where exact-build coverage is confirmed; later builds may require Ford online/security access",
+        "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
+        "online_requirement": "Build and operation dependent",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2",
+          "lonsdor_k518"
+        ],
+        "warnings": [
+          "Maintain stable vehicle voltage and confirm tool coverage before erasing or learning keys."
+        ]
+      }
+    },
+    "fiesta_2017_2023_passive": {
+      "record_id": "ford_fiesta_2017_2023_passive_uk",
+      "add_key": {
+        "display_name": "Add Key",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD programming where the selected tool explicitly supports the exact Fiesta build",
+        "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
+        "online_requirement": "Build and operation dependent",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2",
+          "lonsdor_k518"
+        ],
+        "warnings": [
+          "Confirm exact year, ignition type, key frequency and transponder before programming."
+        ]
+      },
+      "all_keys_lost": {
+        "display_name": "All Keys Lost",
+        "overall_status": "supported_with_conditions",
+        "method": "OBD AKL where exact-build coverage is confirmed; later builds may require Ford online/security access",
+        "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
+        "online_requirement": "Build and operation dependent",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [
+          "autel_im508s",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2",
+          "lonsdor_k518"
+        ],
+        "warnings": [
+          "Maintain stable vehicle voltage and confirm tool coverage before erasing or learning keys."
+        ]
+      }
+    },
+    "fiesta_mk8_keyless_2017_2023_passive": {
+      "record_id": "ford_fiesta_mk8_keyless_2017_2023_passive_uk",
+      "add_key": {
+        "display_name": "Add Key",
+        "overall_status": "supported_with_conditions",
+        "method": "Confirm",
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no",
+        "obd_required": true,
+        "battery_support_required": true,
         "supported_tools": [],
         "warnings": [
-          "Do not treat this record as an approved AKL procedure until current official tool coverage and security requirements are verified."
-        ],
-        "steps": []
+          "Confirm exact year, ignition type, key frequency and transponder before programming."
+        ]
+      },
+      "all_keys_lost": {
+        "display_name": "All Keys Lost",
+        "overall_status": "supported_with_conditions",
+        "method": "Confirm exact build/tool",
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no",
+        "obd_required": true,
+        "battery_support_required": true,
+        "supported_tools": [],
+        "warnings": [
+          "Maintain stable vehicle voltage and confirm tool coverage before erasing or learning keys."
+        ]
       }
     }
   },
