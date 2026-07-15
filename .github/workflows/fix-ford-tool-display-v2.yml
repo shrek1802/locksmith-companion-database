@@ -1,0 +1,51 @@
+name: Fix Ford Tool Display V2
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/fix_ford_tool_display_v2.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-ford-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Populate Ford tool display
+        run: python tools/fix_ford_tool_display_v2.py
+
+      - name: Validate JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path('database/vehicles/ford').rglob('*.json'):
+              json.loads(path.read_text(encoding='utf-8'))
+          json.loads(Path('manifest.json').read_text(encoding='utf-8'))
+          print('Ford tool JSON validation passed')
+          PY
+
+      - name: Commit database changes
+        run: |
+          if git diff --quiet; then
+            echo 'No Ford tool changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford manifest.json
+          git commit -m 'ford: populate tool display and owned-tool matches'
+          git push
