@@ -1,0 +1,57 @@
+name: Apply Ford Import
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'imports/ford_import_ready_v4_part*.json'
+      - 'tools/apply_ford_import_bundle.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-ford-import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply merge-safe Ford import
+        run: python tools/apply_ford_import_bundle.py --apply
+
+      - name: Validate generated JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          errors = []
+          for path in Path('database/vehicles/ford').rglob('*.json'):
+              try:
+                  json.loads(path.read_text(encoding='utf-8'))
+              except Exception as exc:
+                  errors.append(f'{path}: {exc}')
+          if errors:
+              raise SystemExit('\n'.join(errors))
+          print('Ford JSON validation passed')
+          PY
+
+      - name: Commit merged Ford data
+        run: |
+          if git diff --quiet; then
+            echo 'No Ford data changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford
+          git commit -m 'ford: merge generated master workbook data'
+          git push
