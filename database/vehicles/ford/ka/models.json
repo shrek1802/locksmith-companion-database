@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-14",
+  "updated_at": "2026-07-15",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -56,6 +56,11 @@
           "transpondery_ka",
           "silca_ka"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD or legacy PATS procedure",
+        "Online / FDRS": "No",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ka_2002_2008_keyed": {
@@ -103,6 +108,11 @@
           "transpondery_ka",
           "silca_ka"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "No",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ka_2009_2016_fiat_keyed": {
@@ -153,6 +163,11 @@
           "keystation_ka_fiat",
           "silca_ka"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no, tool/security-code dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ka_mk1_1996_2008_keyed": {
@@ -203,6 +218,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "Clone or diagnostic programming",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ka_mk2_2008_2016_keyed": {
@@ -253,6 +274,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Fiat-compatible pre-code/EEPROM setup if OBD route fails",
+        "Programming route": "EEPROM / OBD pre-code",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     }
   },

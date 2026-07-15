@@ -55,6 +55,11 @@
         "sources": [
           "transpondery_transit"
         ]
+      },
+      "tools": {
+        "Programming route": "Legacy PATS / OBD where supported",
+        "Online / FDRS": "No",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_2000_2006_keyed": {
@@ -112,6 +117,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "No",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_2007_2013_keyed": {
@@ -160,6 +171,11 @@
           "transpondery_transit",
           "silca_transit"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "No",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_2013_2016_keyed": {
@@ -208,6 +224,11 @@
           "transpondery_transit",
           "silca_transit"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no for this early V363 range",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_2016_present_keyed": {
@@ -260,6 +281,11 @@
           "transpondery_transit",
           "silca_transit"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming or FDRS by operation/build",
+        "Online / FDRS": "Build and operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_2016_present_passive": {
@@ -311,6 +337,11 @@
           "transpondery_transit",
           "silca_transit"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming or FDRS by operation/build",
+        "Online / FDRS": "Build and operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_2006_2014_keyed": {
@@ -362,6 +393,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_2012_2016_keyed": {
@@ -413,6 +450,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_2016_2023_keyed": {
@@ -465,6 +508,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_2023_present_passive": {
@@ -515,6 +564,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Ford security access/bypass as required by build",
+        "Programming route": "OBD + online/FDRS/security access",
+        "Online / FDRS": "Yes / operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     }
   },

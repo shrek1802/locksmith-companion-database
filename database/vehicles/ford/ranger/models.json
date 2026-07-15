@@ -53,6 +53,11 @@
         "sources": [
           "transpondery_ranger"
         ]
+      },
+      "tools": {
+        "Programming route": "Legacy diagnostic/immobiliser route",
+        "Online / FDRS": "No",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ranger_2001_2010_keyed": {
@@ -97,6 +102,11 @@
         "sources": [
           "transpondery_ranger"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming where supported",
+        "Online / FDRS": "No",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ranger_2011_2014_keyed": {
@@ -145,6 +155,11 @@
           "transpondery_ranger",
           "silca_ranger"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no for this early T6 range",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ranger_2015_2022_keyed": {
@@ -201,6 +216,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Build and operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ranger_2015_2022_passive": {
@@ -256,6 +277,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Build and operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ranger_2023_present": {
@@ -300,6 +327,11 @@
         "sources": [
           "ford_ranger_split_audit"
         ]
+      },
+      "tools": {
+        "Programming route": "Ford diagnostic/FDRS workflow",
+        "Online / FDRS": "Likely operation dependent; verify before booking",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ranger_1998_2011_keyed": {
@@ -351,6 +383,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "Confirm exact tool route",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ranger_2011_2015_keyed": {
@@ -402,6 +440,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "ranger_2022_present_passive": {
@@ -453,6 +497,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "Confirm exact tool route",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     }
   },

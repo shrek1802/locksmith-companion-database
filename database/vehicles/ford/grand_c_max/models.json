@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-14",
+  "updated_at": "2026-07-15",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -57,6 +57,11 @@
           "silca_cmax_cb7",
           "keystation_cmax_family"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Not normally expected for this DST80 generation; confirm by tool and operation",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "grand_c_max_2010_2014_passive": {
@@ -105,6 +110,11 @@
           "silca_cmax_cb7",
           "keystation_cmax_family"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Not normally expected for this DST80 generation; confirm by tool and operation",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "grand_c_max_2015_2019_keyed": {
@@ -153,6 +163,11 @@
           "silca_cmax_ceu",
           "keystation_grand_cmax_id49"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Tool/build dependent; verify before accepting AKL",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "grand_c_max_2015_2019_passive": {
@@ -208,6 +223,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Tool/build dependent; verify before accepting AKL",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "grand_c_max_2003_2010_keyed": {
@@ -259,6 +280,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "grand_c_max_2010_2015_keyed": {
@@ -310,6 +337,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     }
   },

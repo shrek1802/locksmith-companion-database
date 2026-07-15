@@ -57,6 +57,11 @@
           "silca_mustang_s550",
           "ford_mustang_split_audit"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Build and operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "mustang_2024_present_passive": {
@@ -101,6 +106,11 @@
         "sources": [
           "ford_mustang_split_audit"
         ]
+      },
+      "tools": {
+        "Programming route": "Ford diagnostic/FDRS workflow",
+        "Online / FDRS": "Likely operation dependent; verify before booking",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "mustang_2015_2021_passive": {
@@ -152,6 +162,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     }
   },

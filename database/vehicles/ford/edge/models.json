@@ -65,6 +65,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming or FDRS by operation/build",
+        "Online / FDRS": "Build and operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "edge_2016_2021_keyed": {
@@ -109,6 +115,11 @@
         "sources": [
           "ford_edge_split_audit"
         ]
+      },
+      "tools": {
+        "Programming route": "Ford PATS diagnostic route if genuine keyed variant is confirmed",
+        "Online / FDRS": "Build and operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     }
   },

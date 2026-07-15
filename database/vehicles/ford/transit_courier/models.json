@@ -57,6 +57,11 @@
           "transpondery_transit_courier_family",
           "silca_transit_courier_family"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no for this early range",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_courier_2018_2023_keyed": {
@@ -104,6 +109,11 @@
           "transpondery_transit_courier_family",
           "silca_transit_courier_family"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Build and operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_courier_2018_2023_passive": {
@@ -151,6 +161,11 @@
           "transpondery_transit_courier_family",
           "silca_transit_courier_family"
         ]
+      },
+      "tools": {
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Build and operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_courier_2023_present": {
@@ -195,6 +210,11 @@
         "sources": [
           "ford_transit_courier_split_audit"
         ]
+      },
+      "tools": {
+        "Programming route": "Ford diagnostic/FDRS workflow",
+        "Online / FDRS": "Likely operation dependent; verify before booking",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_courier_2014_2023_keyed": {
@@ -246,6 +266,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Standard OBD; battery support recommended",
+        "Programming route": "OBD diagnostic programming",
+        "Online / FDRS": "Normally no",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     },
     "transit_courier_2023_present_passive": {
@@ -296,6 +322,12 @@
           "transpondery_ford",
           "silca_ford"
         ]
+      },
+      "tools": {
+        "Connection / cable": "Ford security access/bypass as required by build",
+        "Programming route": "OBD + online/FDRS/security access",
+        "Online / FDRS": "Yes / operation dependent",
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
       }
     }
   },
