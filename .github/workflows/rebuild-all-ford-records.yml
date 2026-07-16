@@ -3,8 +3,12 @@ name: Rebuild all Ford records
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
-      - tools/rebuild_all_ford_records.py
+      - 'tools/rebuild_all_ford_records.py'
+      - 'tools/run_ford_completion.py'
+      - 'manufacturers/_shared/tools.json'
+      - '.github/workflows/rebuild-all-ford-records.yml'
 
 permissions:
   contents: write
@@ -15,16 +19,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Rebuild all Ford records
-        run: python tools/rebuild_all_ford_records.py
+      - name: Rebuild and publish all Ford records
+        run: python tools/run_ford_completion.py
 
-      - name: Validate all Ford JSON
+      - name: Validate all Ford JSON and app sections
         run: |
           python - <<'PY'
           import json
@@ -49,8 +55,14 @@ jobs:
               except Exception as exc:
                   errors.append(f'{path}: {exc}')
 
+          report = json.loads(Path('reports/ford_full_rebuild_report.json').read_text(encoding='utf-8'))
+          if report.get('shared_tool_catalogue', {}).get('status') != 'pass':
+              errors.append('Ford tool IDs do not match the shared tools catalogue')
+
           print(f'JSON files checked: {len(files)}')
           print(f'Ford records checked: {records}')
+          print(f"Complete for app: {report.get('records_complete_for_app', 0)}")
+          print(f"Need targeted verification: {report.get('records_needing_targeted_verification', 0)}")
           if errors:
               print('\n'.join(errors))
               raise SystemExit(1)
@@ -65,5 +77,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add database/vehicles/ford manifest.json reports/ford_full_rebuild_report.json
-          git commit -m 'ford: rebuild all records into complete app schema'
+          git commit -m 'ford: rebuild all records and publish completion report'
           git push
