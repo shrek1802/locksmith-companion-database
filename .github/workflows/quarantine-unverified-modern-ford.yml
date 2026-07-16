@@ -1,0 +1,61 @@
+name: Quarantine unverified modern Ford tool claims
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/quarantine_unverified_modern_ford.py'
+      - '.github/workflows/quarantine-unverified-modern-ford.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  quarantine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Quarantine unsafe claims
+        run: python tools/quarantine_unverified_modern_ford.py
+
+      - name: Validate JSON and safety policy
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path('database/vehicles/ford').rglob('*.json'):
+              json.loads(path.read_text(encoding='utf-8'))
+          report = json.loads(Path('reports/ford_modern_safety_quarantine.json').read_text(encoding='utf-8'))
+          assert report['touched_records'] > 0
+          for path in Path('database/vehicles/ford').glob('*/models.json'):
+              data = json.loads(path.read_text(encoding='utf-8'))
+              for rid, record in data.get('items', {}).items():
+                  completion = record.get('record_completion', {})
+                  if completion.get('safety_quarantined_at'):
+                      for op_id in ('add_key', 'all_keys_lost'):
+                          op = record.get('operations', {}).get(op_id, {})
+                          assert op.get('overall_status') == 'verification_required' or op.get('tools')
+          print(json.dumps(report, indent=2))
+          PY
+
+      - name: Commit safety quarantine
+        run: |
+          if git diff --quiet; then
+            echo 'No changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford reports/ford_modern_safety_quarantine.json
+          git commit -m 'ford: quarantine unverified modern operation claims'
+          git push
