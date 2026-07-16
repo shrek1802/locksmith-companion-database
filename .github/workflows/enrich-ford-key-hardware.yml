@@ -1,0 +1,55 @@
+name: Enrich Ford key hardware
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/enrich_ford_key_hardware.py'
+      - '.github/workflows/enrich-ford-key-hardware.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Enrich deterministic key hardware fields
+        run: python tools/enrich_ford_key_hardware.py
+
+      - name: Rebuild Ford app records and report
+        run: python tools/run_ford_completion.py
+
+      - name: Validate Ford JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path('database/vehicles/ford').rglob('*.json'):
+              json.loads(path.read_text(encoding='utf-8'))
+          report = json.loads(Path('reports/ford_full_rebuild_report.json').read_text(encoding='utf-8'))
+          print(json.dumps(report.get('missing_field_counts', {}), indent=2))
+          PY
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo 'No deterministic Ford hardware changes found.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford manifest.json reports/ford_full_rebuild_report.json
+          git commit -m 'ford: enrich key hardware from existing verified record data'
+          git push
