@@ -1,0 +1,56 @@
+name: Complete Ford non-applicable hardware
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/complete_ford_non_applicable_hardware.py'
+      - '.github/workflows/complete-ford-non-applicable-hardware.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  complete:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Resolve non-applicable hardware fields
+        run: python tools/complete_ford_non_applicable_hardware.py
+
+      - name: Rebuild and validate Ford records
+        run: python tools/run_ford_completion.py
+
+      - name: Validate JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path('database/vehicles/ford').rglob('*.json'):
+              json.loads(path.read_text(encoding='utf-8'))
+          report = json.loads(Path('reports/ford_full_rebuild_report.json').read_text(encoding='utf-8'))
+          assert report.get('shared_tool_catalogue', {}).get('status') == 'pass'
+          print(json.dumps(report.get('missing_field_counts', {}), indent=2))
+          PY
+
+      - name: Commit completed Ford data
+        run: |
+          if git diff --quiet; then
+            echo 'No changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford manifest.json reports/
+          git commit -m 'ford: resolve non-applicable hardware fields'
+          git push
