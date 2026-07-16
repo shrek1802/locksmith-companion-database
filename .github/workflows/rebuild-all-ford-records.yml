@@ -1,0 +1,69 @@
+name: Rebuild all Ford records
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - tools/rebuild_all_ford_records.py
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild all Ford records
+        run: python tools/rebuild_all_ford_records.py
+
+      - name: Validate all Ford JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          files = list(Path('database/vehicles/ford').rglob('*.json'))
+          errors = []
+          records = 0
+          for path in files:
+              try:
+                  data = json.loads(path.read_text(encoding='utf-8'))
+                  if path.name == 'models.json':
+                      items = data.get('items', {})
+                      if not isinstance(items, dict):
+                          errors.append(f'{path}: items is not an object')
+                          continue
+                      for key, record in items.items():
+                          records += 1
+                          for required in ('vehicle', 'vehicle_information', 'key_information', 'operations', 'security', 'tools', 'notes', 'record_completion'):
+                              if required not in record:
+                                  errors.append(f'{path}:{key} missing {required}')
+              except Exception as exc:
+                  errors.append(f'{path}: {exc}')
+
+          print(f'JSON files checked: {len(files)}')
+          print(f'Ford records checked: {records}')
+          if errors:
+              print('\n'.join(errors))
+              raise SystemExit(1)
+          PY
+
+      - name: Commit rebuilt Ford database
+        run: |
+          if git diff --quiet; then
+            echo 'No Ford record changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford manifest.json reports/ford_full_rebuild_report.json
+          git commit -m 'ford: rebuild all records into complete app schema'
+          git push
