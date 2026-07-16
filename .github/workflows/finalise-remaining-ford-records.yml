@@ -1,0 +1,57 @@
+name: Finalise remaining Ford records
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/finalise_remaining_ford_records.py'
+      - '.github/workflows/finalise-remaining-ford-records.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  finalise:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Resolve remaining Ford card fields conservatively
+        run: python tools/finalise_remaining_ford_records.py
+
+      - name: Rebuild and validate Ford records
+        run: python tools/run_ford_completion.py
+
+      - name: Require all Ford cards complete
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('reports/ford_full_rebuild_report.json').read_text(encoding='utf-8'))
+          assert report['records'] == 158, report
+          assert report['records_needing_targeted_verification'] == 0, report
+          assert report['records_complete_for_app'] == report['records'], report
+          assert report.get('shared_tool_catalogue', {}).get('status') == 'pass', report
+          print(json.dumps(report, indent=2))
+          PY
+
+      - name: Commit completed Ford database
+        run: |
+          if git diff --quiet; then
+            echo 'No changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford manifest.json reports/
+          git commit -m 'ford: complete all remaining app records'
+          git push
