@@ -1,0 +1,66 @@
+name: Enrich Ford programming data
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/enrich_ford_programming.py'
+      - '.github/workflows/enrich-ford-programming.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Complete missing Ford programming fields
+        run: python tools/enrich_ford_programming.py
+
+      - name: Rebuild Ford app sections and report
+        run: python tools/run_ford_completion.py
+
+      - name: Validate programming batch
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          report = json.loads(Path('reports/ford_full_rebuild_report.json').read_text(encoding='utf-8'))
+          missing = report.get('missing_field_counts', {})
+          programming_fields = (
+              'programming.add_key',
+              'programming.all_keys_lost',
+              'programming.route',
+              'programming.online_requirement',
+          )
+          unresolved = {field: missing.get(field, 0) for field in programming_fields if missing.get(field, 0)}
+          print('Ford records:', report.get('records'))
+          print('Complete for app:', report.get('records_complete_for_app'))
+          print('Programming gaps:', unresolved)
+          if unresolved:
+              raise SystemExit('Programming batch did not remove every missing programming field')
+          PY
+
+      - name: Commit Ford programming completion
+        run: |
+          if git diff --quiet; then
+            echo 'No Ford programming changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford manifest.json reports/ford_full_rebuild_report.json
+          git commit -m 'ford: complete missing programming fields'
+          git push
