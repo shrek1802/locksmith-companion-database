@@ -1,1 +1,295 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"fiesta_van","name":"Fiesta Van"},"category":"vehicles","items":{"fiesta_van_2002_2008_keyed":{"record_id":"ford_fiesta_van_2002_2008_keyed_uk","vehicle":{"make":"Ford","model":"Fiesta Van","variant":"Keyed Ignition","generation":"2002 generation commercial derivative","year_from":2002,"year_to":2008,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"Commercial derivative of Fiesta. Share technical records only after VIN/build and security equivalence are verified."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_fiesta_van_split_audit"]}},"fiesta_van_2009_2018_keyed":{"record_id":"ford_fiesta_van_2009_2018_keyed_uk","vehicle":{"make":"Ford","model":"Fiesta Van","variant":"Keyed Ignition","generation":"Mk7 commercial derivative","year_from":2009,"year_to":2018,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote flip key with mechanical ignition blade","smart_key":false,"notes":"Verify exact production boundary and whether passenger-Fiesta technical records can be shared."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_fiesta_van_split_audit"]}},"fiesta_van_2018_2023_keyed":{"record_id":"ford_fiesta_van_2018_2023_keyed_uk","vehicle":{"make":"Ford","model":"Fiesta Van","variant":"Keyed Ignition","generation":"Mk8 commercial derivative","year_from":2018,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"Verify exact UK security specification and online/FDRS requirements by operation."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_fiesta_van_split_audit"]}}},"sources":{"ford_fiesta_van_split_audit":{"publisher":"Locksmith Companion Database","title":"Ford Small Commercial Security Split Audit","path":"Docs/FORD_SMALL_COMMERCIAL_SPLIT_AUDIT.md","accessed":"2026-07-14","scope":["Fiesta Van UK generation boundaries","passenger-vehicle derivative handling"]}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-16",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "fiesta_van",
+    "name": "Fiesta Van"
+  },
+  "category": "vehicles",
+  "items": {
+    "fiesta_van_2002_2008_keyed": {
+      "record_id": "ford_fiesta_van_2002_2008_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta Van",
+        "variant": "Keyed Ignition",
+        "generation": "2002 generation commercial derivative",
+        "year_from": 2002,
+        "year_to": 2008,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS",
+        "immobiliser_generation": "Verification required",
+        "transponder_type": "Verification required",
+        "frequency_mhz": "Verification required",
+        "blade_profile": "Verification required",
+        "key_type": "Remote key with mechanical ignition blade",
+        "smart_key": false,
+        "notes": "Commercial derivative of Fiesta. Share technical records only after VIN/build and security equivalence are verified."
+      },
+      "verification": {
+        "status": "verification_required",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_fiesta_van_split_audit"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "blade_profile": "Verification required",
+        "transponder_type": "Verification required",
+        "transponder_id": null,
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Commercial derivative of Fiesta. Share technical records only after VIN/build and security equivalence are verified.",
+        "data_gaps": [
+          "blade_profile",
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "blade_profile",
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
+      }
+    },
+    "fiesta_van_2009_2018_keyed": {
+      "record_id": "ford_fiesta_van_2009_2018_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta Van",
+        "variant": "Keyed Ignition",
+        "generation": "Mk7 commercial derivative",
+        "year_from": 2009,
+        "year_to": 2018,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS",
+        "immobiliser_generation": "Verification required",
+        "transponder_type": "Verification required",
+        "frequency_mhz": "Verification required",
+        "blade_profile": "Verification required",
+        "key_type": "Remote flip key with mechanical ignition blade",
+        "smart_key": false,
+        "notes": "Verify exact production boundary and whether passenger-Fiesta technical records can be shared."
+      },
+      "verification": {
+        "status": "verification_required",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_fiesta_van_split_audit"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Remote flip key with mechanical ignition blade",
+        "blade_profile": "Verification required",
+        "transponder_type": "Verification required",
+        "transponder_id": null,
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Verify exact production boundary and whether passenger-Fiesta technical records can be shared.",
+        "data_gaps": [
+          "blade_profile",
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "blade_profile",
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
+      }
+    },
+    "fiesta_van_2018_2023_keyed": {
+      "record_id": "ford_fiesta_van_2018_2023_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Fiesta Van",
+        "variant": "Keyed Ignition",
+        "generation": "Mk8 commercial derivative",
+        "year_from": 2018,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS",
+        "immobiliser_generation": "Verification required",
+        "transponder_type": "Verification required",
+        "frequency_mhz": "Verification required",
+        "blade_profile": "Verification required",
+        "key_type": "Remote key with mechanical ignition blade",
+        "smart_key": false,
+        "notes": "Verify exact UK security specification and online/FDRS requirements by operation."
+      },
+      "verification": {
+        "status": "verification_required",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_fiesta_van_split_audit"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "blade_profile": "Verification required",
+        "transponder_type": "Verification required",
+        "transponder_id": null,
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Verify exact UK security specification and online/FDRS requirements by operation.",
+        "data_gaps": [
+          "blade_profile",
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "blade_profile",
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
+      }
+    }
+  },
+  "sources": {
+    "ford_fiesta_van_split_audit": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford Small Commercial Security Split Audit",
+      "path": "Docs/FORD_SMALL_COMMERCIAL_SPLIT_AUDIT.md",
+      "accessed": "2026-07-14",
+      "scope": [
+        "Fiesta Van UK generation boundaries",
+        "passenger-vehicle derivative handling"
+      ]
+    }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
+}

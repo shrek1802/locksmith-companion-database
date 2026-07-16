@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -25,8 +25,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Hitag Pro",
-        "immobiliser_generation": "Hitag Pro / ID47",
-        "transponder_type": "NXP Hitag Pro / ID47 family",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -56,12 +56,70 @@
         "sources": [
           "silca_mustang_s550",
           "ford_mustang_split_audit"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Build and operation dependent",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button passive key with emergency blade",
+        "blade_profile": "HU101 emergency blade",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Silca HU101AP05 S550 433 MHz ID47 application",
+          "Mustang S550 HU101 433 MHz Hitag Pro passive-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported only where the selected Ford PATS tool explicitly covers the exact S550 build",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "all_keys_lost": {
+          "method": "Exact-build coverage required; later vehicles may require online Ford security access",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent"
+      },
+      "security": {
+        "family": "Ford PATS Hitag Pro",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent"
+      },
+      "notes": {
+        "job_notes": "Silca explicitly lists Ford Mustang S550 from 2017 with HU101, 433 MHz and ID47. The UK S550 generation began in 2015, so 2015-2016 vehicles must still be checked against VIN/original key before supply, but the principal UK S550 key family is now mapped.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "mustang_2024_present_passive": {
@@ -105,12 +163,71 @@
         "last_verified": "2026-07-15",
         "sources": [
           "ford_mustang_split_audit"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "Ford diagnostic/FDRS workflow",
         "Online / FDRS": "Likely operation dependent; verify before booking",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "Ford diagnostic/FDRS workflow",
+        "online_requirement": "Likely operation dependent; verify before booking",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Passive key with emergency blade",
+        "blade_profile": "Emergency blade requires exact physical-key confirmation",
+        "transponder_type": "Exact build verification required",
+        "transponder_id": "transponder_unknown",
+        "frequency_mhz": "Verification required",
+        "battery": "Confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Current Ford tool/FDRS coverage required",
+          "programming_method": "Ford diagnostic/FDRS workflow",
+          "online_requirement": "Likely operation dependent; verify before booking"
+        },
+        "all_keys_lost": {
+          "method": "Do not accept without explicit S650 support and online-authorisation check",
+          "programming_method": "Ford diagnostic/FDRS workflow",
+          "online_requirement": "Likely operation dependent; verify before booking"
+        },
+        "programming_route": "Ford diagnostic/FDRS workflow",
+        "online_requirement": "Likely operation dependent; verify before booking"
+      },
+      "security": {
+        "family": "Ford connected security / PATS",
+        "generation": "Exact S650 implementation requires current tool/OEM confirmation",
+        "transponder_family": "Exact build verification required",
+        "programming_route": "Ford diagnostic/FDRS workflow",
+        "online_requirement": "Likely operation dependent; verify before booking"
+      },
+      "notes": {
+        "job_notes": "The current S650 is isolated from S550 data. Do not inherit the older key or programming route without an exact current-generation application source.",
+        "data_gaps": [
+          "frequency_mhz",
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "frequency_mhz",
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "mustang_2015_2021_passive": {
@@ -127,8 +244,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "HITAG Pro - ID47",
-        "transponder_type": "HITAG Pro - ID47",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -161,13 +278,72 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Proximity Smart Key (Pony Logo)",
+        "blade_profile": "HU101",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": 433,
+        "battery": "CR2032 (confirm physical key)",
+        "buttons": "3 Buttons",
+        "emergency_blade": "HU101",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "5929317",
+          "JR3T-15K601-BB"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Yes — tool coverage/security access required",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Has the custom pony logo on back. Program diagnostically via OBD.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     }
   },
@@ -203,5 +379,6 @@
       "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
       "accessed": "2026-07-15"
     }
-  }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }

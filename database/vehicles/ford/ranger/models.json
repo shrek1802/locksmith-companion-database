@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -25,7 +25,7 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Mazda/Ford shared legacy immobiliser",
-        "immobiliser_generation": "Texas 4C / ID4C",
+        "immobiliser_generation": "Texas 4C",
         "transponder_type": "Texas 4C",
         "transponder_id": "texas_4c",
         "frequency_mhz": "Confirm original remote and market application",
@@ -52,12 +52,69 @@
         "last_verified": "2026-07-15",
         "sources": [
           "transpondery_ranger"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "Legacy diagnostic/immobiliser route",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "Legacy diagnostic/immobiliser route",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "blade_profile": "Mazda-derived profile — exact application confirmation required",
+        "transponder_type": "Texas 4C",
+        "transponder_id": "texas_4c",
+        "frequency_mhz": "Confirm original remote and market application",
+        "battery": "Confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Use exact Mazda/Ford shared-platform coverage",
+          "programming_method": "Legacy diagnostic/immobiliser route",
+          "online_requirement": "No"
+        },
+        "all_keys_lost": {
+          "method": "Exact immobiliser and tool coverage required",
+          "programming_method": "Legacy diagnostic/immobiliser route",
+          "online_requirement": "No"
+        },
+        "programming_route": "Legacy diagnostic/immobiliser route",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Mazda/Ford shared legacy immobiliser",
+        "generation": "Texas 4C",
+        "transponder_family": "Texas 4C",
+        "programming_route": "Legacy diagnostic/immobiliser route",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "Transpondery confirms Texas 4C for 1999-2000. The early UK Ranger is Mazda-derived, so the blade and remote must not be inferred from later HU101 Ford applications.",
+        "data_gaps": [
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ranger_2001_2010_keyed": {
@@ -74,8 +131,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Mazda/Ford shared Texas Crypto architecture",
-        "immobiliser_generation": "ID63",
-        "transponder_type": "Texas 4D-63",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "Confirm exact UK remote application",
         "frequency_id": "frequency_unknown",
@@ -101,12 +158,69 @@
         "last_verified": "2026-07-15",
         "sources": [
           "transpondery_ranger"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming where supported",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming where supported",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical blade",
+        "blade_profile": "Mazda-derived profile — exact application confirmation required",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "Confirm exact UK remote application",
+        "battery": "Confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Use exact Mazda/Ford shared-platform tool coverage",
+          "programming_method": "OBD diagnostic programming where supported",
+          "online_requirement": "No"
+        },
+        "all_keys_lost": {
+          "method": "Exact immobiliser and tool coverage required",
+          "programming_method": "OBD diagnostic programming where supported",
+          "online_requirement": "No"
+        },
+        "programming_route": "OBD diagnostic programming where supported",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Mazda/Ford shared Texas Crypto architecture",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming where supported",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "Transpondery confirms Texas 4D63 for 2001-2010. Because this is a Mazda-derived UK platform, blade and frequency remain tied to the exact application rather than later Ford T6 data.",
+        "data_gaps": [
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ranger_2011_2014_keyed": {
@@ -123,8 +237,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS DST80",
-        "immobiliser_generation": "DST80 / ID63-6F",
-        "transponder_type": "Texas 4D-63 80-bit DST80",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -154,12 +268,70 @@
         "sources": [
           "transpondery_ranger",
           "silca_ranger"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Normally no for this early T6 range",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no for this early T6 range",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button remote key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": "Confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Silca HU101AR24 Ranger TKE application",
+          "Ranger HU101 433 MHz DST80 family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported by compatible Ford PATS diagnostic tools",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no for this early T6 range"
+        },
+        "all_keys_lost": {
+          "method": "Supported by compatible Ford PATS tools; security access may apply",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no for this early T6 range"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no for this early T6 range"
+      },
+      "security": {
+        "family": "Ford PATS DST80",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no for this early T6 range"
+      },
+      "notes": {
+        "job_notes": "Transpondery lists Ranger 2011+ as DST80. Silca independently lists Ranger TKE 2011-2015 with HU101 and 433 MHz; this record stops before the separately catalogued 2015 Hitag Pro application.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ranger_2015_2022_keyed": {
@@ -176,8 +348,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Hitag Pro",
-        "immobiliser_generation": "Hitag Pro / ID47",
-        "transponder_type": "NXP Hitag Pro / PCF7939FA-PCF7953P family",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -215,13 +387,75 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Build and operation dependent",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button remote key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1919602",
+          "2230771"
+        ],
+        "aftermarket_references": [
+          "Silca HU101R15 Ranger P375 application",
+          "Ranger HU101 433 MHz ID47 family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported only where exact Ranger build coverage is explicit",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Exact-build coverage required; later vehicles may require online Ford security access",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent"
+      },
+      "security": {
+        "family": "Ford PATS Hitag Pro",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent"
+      },
+      "notes": {
+        "job_notes": "Silca explicitly lists Ranger P375 from 2015 with HU101, 433 MHz and ID47. This provides a locksmith-relevant security breakpoint from the earlier DST80 application.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ranger_2015_2022_passive": {
@@ -238,8 +472,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Hitag Pro",
-        "immobiliser_generation": "Hitag Pro / ID47",
-        "transponder_type": "NXP Hitag Pro / PCF7939FA-PCF7953P family",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -276,13 +510,74 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Build and operation dependent",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Passive key with emergency blade",
+        "blade_profile": "HU101 emergency blade",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": "HU101",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "2198266",
+          "2180633"
+        ],
+        "aftermarket_references": [
+          "Ranger P375 HU101 433 MHz ID47 passive-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported only where exact Ranger passive-key coverage is explicit",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Exact-build coverage required; online Ford security access may apply",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent"
+      },
+      "security": {
+        "family": "Ford PATS Hitag Pro",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent"
+      },
+      "notes": {
+        "job_notes": "Use only where passive start is physically confirmed. Blade, frequency and Hitag Pro family are supported by the 2015-on Silca Ranger application.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ranger_2023_present": {
@@ -326,12 +621,71 @@
         "last_verified": "2026-07-15",
         "sources": [
           "ford_ranger_split_audit"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "Ford diagnostic/FDRS workflow",
         "Online / FDRS": "Likely operation dependent; verify before booking",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "Ford diagnostic/FDRS workflow",
+        "online_requirement": "Likely operation dependent; verify before booking",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Keyed or passive configuration by build",
+        "blade_profile": "HU101 family likely; exact physical key must be confirmed",
+        "transponder_type": "Exact build verification required",
+        "transponder_id": "transponder_unknown",
+        "frequency_mhz": "Verification required",
+        "battery": "Confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": "Verification required",
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Current Ford tool/FDRS coverage required",
+          "programming_method": "Ford diagnostic/FDRS workflow",
+          "online_requirement": "Likely operation dependent; verify before booking"
+        },
+        "all_keys_lost": {
+          "method": "Do not accept without explicit P703 support and online-authorisation check",
+          "programming_method": "Ford diagnostic/FDRS workflow",
+          "online_requirement": "Likely operation dependent; verify before booking"
+        },
+        "programming_route": "Ford diagnostic/FDRS workflow",
+        "online_requirement": "Likely operation dependent; verify before booking"
+      },
+      "security": {
+        "family": "Ford connected security / PATS",
+        "generation": "Exact P703 implementation requires current tool/OEM confirmation",
+        "transponder_family": "Exact build verification required",
+        "programming_route": "Ford diagnostic/FDRS workflow",
+        "online_requirement": "Likely operation dependent; verify before booking"
+      },
+      "notes": {
+        "job_notes": "Current P703 Ranger is intentionally isolated from the 2015-2022 T6 data. Do not inherit the older key or programming route without exact VIN/build confirmation.",
+        "data_gaps": [
+          "frequency_mhz",
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "frequency_mhz",
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ranger_1998_2011_keyed": {
@@ -348,8 +702,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "TEMIC Crypto ID8C / Texas 4D-63",
-        "transponder_type": "TEMIC Crypto ID8C / Texas 4D-63",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -382,13 +736,72 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "Confirm exact tool route",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Standard Key / Separate Fob",
+        "blade_profile": "MIT11 / FO38",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "battery": "N/A / separate remote",
+        "buttons": "2 Buttons (Fob)",
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "4152821",
+          "Fob (separate)"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Confirm",
+          "programming_method": "Confirm exact tool route",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Confirm exact build/tool",
+          "programming_method": "Confirm exact tool route",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Mazda-based system. Check chip type carefully, especially ID8C which is highly specific.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ranger_2011_2015_keyed": {
@@ -405,8 +818,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Texas 4D-63 (80-Bit)",
-        "transponder_type": "Texas 4D-63 (80-Bit)",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -439,13 +852,72 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Flip Remote Key",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "battery": "Confirm physical remote",
+        "buttons": "3 Buttons",
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1756409",
+          "1720983"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Yes — tool coverage/security access required",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Classic 4D-63 system, quick OBD programming.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ranger_2022_present_passive": {
@@ -462,8 +934,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Hitag AES (ID49)",
-        "transponder_type": "Hitag AES (ID49)",
+        "immobiliser_generation": "NXP HITAG AES 128-Bit",
+        "transponder_type": "NXP HITAG AES 128-Bit",
         "transponder_id": "hitag_aes",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -496,13 +968,72 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "Confirm exact tool route",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Smart Proximity Key",
+        "blade_profile": "HU198",
+        "transponder_type": "NXP HITAG AES 128-Bit",
+        "transponder_id": "hitag_aes",
+        "frequency_mhz": 433,
+        "battery": "CR2032 (confirm physical key)",
+        "buttons": "3 Buttons / 4 Buttons",
+        "emergency_blade": "HU198 (Laser)",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "N1BT-15K601-AA",
+          "AM5T-15K601-AD"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Confirm",
+          "programming_method": "Confirm exact tool route",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Confirm exact build/tool",
+          "programming_method": "Confirm exact tool route",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "NXP HITAG AES 128-Bit",
+        "transponder_family": "NXP HITAG AES 128-Bit",
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Next-gen Ranger. Shares architecture with VW Amarok (hybrid vehicle electronics).",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     }
   },
@@ -545,5 +1076,6 @@
       "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
       "accessed": "2026-07-15"
     }
-  }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -25,8 +25,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Texas 4D-63 (40-Bit)",
-        "transponder_type": "Texas 4D-63 (40-Bit)",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -59,13 +59,72 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3 Button Remote Head",
+        "blade_profile": "FO21",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "battery": "Confirm physical remote",
+        "buttons": "3 Buttons",
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1337641",
+          "164-R8042"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Yes — tool coverage/security access required",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Fiesta MK6 equivalent. Diagnostics via OBD.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     }
   },
@@ -88,5 +147,6 @@
       "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
       "accessed": "2026-07-15"
     }
-  }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }

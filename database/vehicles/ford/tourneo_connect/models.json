@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -25,7 +25,7 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
-        "immobiliser_generation": "4D60 / ID60",
+        "immobiliser_generation": "Texas 4D-60",
         "transponder_type": "Texas 4D-60",
         "transponder_id": "texas_4d60",
         "frequency_mhz": "433.92",
@@ -56,12 +56,70 @@
         "sources": [
           "silca_tourneo_connect",
           "transpondery_connect_family"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button remote key with mechanical blade",
+        "blade_profile": "FO21",
+        "transponder_type": "Texas 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": "433.92",
+        "battery": "Confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Silca FO21R10 Tourneo Connect 2002-2008 application",
+          "Tourneo Connect FO21 433 MHz ID60 family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported by compatible Ford PATS diagnostic tools",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "all_keys_lost": {
+          "method": "Supported by compatible Ford PATS tools; security access may apply",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Ford PATS Texas Crypto 4D",
+        "generation": "Texas 4D-60",
+        "transponder_family": "Texas 4D-60",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "Passenger derivative of the first-generation Transit Connect. Silca explicitly lists Tourneo Connect 2002-2008 with FO21 and 433 MHz; the chip family follows the matching early Connect security range.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "tourneo_connect_2009_2012_keyed": {
@@ -78,8 +136,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
-        "immobiliser_generation": "ID63",
-        "transponder_type": "Texas 4D-63 80-bit",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -109,12 +167,70 @@
         "sources": [
           "silca_tourneo_connect",
           "transpondery_connect_family"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button remote key with mechanical blade",
+        "blade_profile": "FO21",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": "Confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Silca FO21R10 Tourneo Connect 2009-2013 application",
+          "Tourneo Connect FO21 433 MHz ID63 family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported by compatible Ford PATS diagnostic tools",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "all_keys_lost": {
+          "method": "Supported by compatible Ford PATS tools; timed security access may apply",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Ford PATS Texas Crypto 4D",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "The facelift shares the later first-generation Transit Connect ID63 security range. Exact OEM remote number remains to be added.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "tourneo_connect_2013_2015_keyed": {
@@ -131,8 +247,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS DST80",
-        "immobiliser_generation": "DST80 / ID63-6F",
-        "transponder_type": "Texas 4D-63 80-bit DST80",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -162,12 +278,70 @@
         "sources": [
           "silca_tourneo_connect",
           "transpondery_connect_family"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Normally no for this early second-generation range",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no for this early second-generation range",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button remote key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": "Confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Silca HU101AR24 Tourneo Connect CHC 2013 433 MHz family",
+          "Tourneo Connect HU101 DST80 family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported by compatible Ford PATS diagnostic tools",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no for this early second-generation range"
+        },
+        "all_keys_lost": {
+          "method": "Supported by compatible Ford PATS tools; security access may apply",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no for this early second-generation range"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no for this early second-generation range"
+      },
+      "security": {
+        "family": "Ford PATS DST80",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no for this early second-generation range"
+      },
+      "notes": {
+        "job_notes": "Silca explicitly lists Tourneo Connect CHC from 2013 with HU101 and 433 MHz. The chip family follows the matching Transit Connect DST80 range.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "tourneo_connect_2016_2021_keyed": {
@@ -184,8 +358,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Hitag Pro",
-        "immobiliser_generation": "Hitag Pro / ID47-ID49 family",
-        "transponder_type": "NXP Hitag Pro",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -214,12 +388,69 @@
         "sources": [
           "transpondery_connect_family",
           "silca_tourneo_connect"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Build and operation dependent",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Tourneo/Transit Connect HU101 433 MHz Hitag Pro family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported where the selected Ford PATS tool explicitly covers the exact build",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "all_keys_lost": {
+          "method": "Exact-build coverage required; later vehicles may require online security access",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent"
+      },
+      "security": {
+        "family": "Ford PATS Hitag Pro",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent"
+      },
+      "notes": {
+        "job_notes": "Late second-generation Tourneo Connect shares the matching Transit Connect Hitag Pro security family. Exact OEM part number and tool IDs remain to be mapped.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "tourneo_connect_2016_2021_passive": {
@@ -236,8 +467,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Hitag Pro",
-        "immobiliser_generation": "Hitag Pro / ID47-ID49 family",
-        "transponder_type": "NXP Hitag Pro",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -266,12 +497,69 @@
         "sources": [
           "transpondery_connect_family",
           "silca_tourneo_connect"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Build and operation dependent",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Passive key with emergency blade",
+        "blade_profile": "HU101 emergency blade",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Tourneo/Transit Connect HU101 433 MHz Hitag Pro passive-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported where the selected Ford PATS tool explicitly covers the exact build",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "all_keys_lost": {
+          "method": "Exact-build coverage required; later vehicles may require online security access",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent"
+      },
+      "security": {
+        "family": "Ford PATS Hitag Pro",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent"
+      },
+      "notes": {
+        "job_notes": "Use only where push-button start is physically confirmed. Exact OEM part number and tool IDs remain to be mapped.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "tourneo_connect_2022_present_mqb": {
@@ -317,12 +605,73 @@
         "last_verified": "2026-07-15",
         "sources": [
           "ford_tourneo_connect_split_audit"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "VAG/MQB diagnostic or authorised online workflow",
         "Online / FDRS": "Operation dependent; verify exact build and tool",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "VAG/MQB diagnostic or authorised online workflow",
+        "online_requirement": "Operation dependent; verify exact build and tool",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Keyed or passive configuration must be confirmed",
+        "blade_profile": "HU162T family — exact T variant verification required",
+        "transponder_type": "Megamos AES family — exact application verification required",
+        "transponder_id": "megamos_aes",
+        "frequency_mhz": "Verification required",
+        "battery": "Confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": "Verification required",
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Volkswagen Caddy V-derived Ford Tourneo Connect key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Do not use Ford PATS route; requires exact VAG/MQB tool coverage",
+          "programming_method": "VAG/MQB diagnostic or authorised online workflow",
+          "online_requirement": "Operation dependent; verify exact build and tool"
+        },
+        "all_keys_lost": {
+          "method": "Advanced MQB workflow; online/component-security restrictions may apply",
+          "programming_method": "VAG/MQB diagnostic or authorised online workflow",
+          "online_requirement": "Operation dependent; verify exact build and tool"
+        },
+        "programming_route": "VAG/MQB diagnostic or authorised online workflow",
+        "online_requirement": "Operation dependent; verify exact build and tool"
+      },
+      "security": {
+        "family": "Volkswagen MQB-derived security architecture",
+        "generation": "MQB AES / exact implementation verification required",
+        "transponder_family": "Megamos AES family — exact application verification required",
+        "programming_route": "VAG/MQB diagnostic or authorised online workflow",
+        "online_requirement": "Operation dependent; verify exact build and tool"
+      },
+      "notes": {
+        "job_notes": "Shared Volkswagen platform. Never apply earlier Tourneo Connect PATS procedures. Exact blade variant, frequency, part numbers and tool coverage require VAG-specific confirmation.",
+        "data_gaps": [
+          "frequency_mhz",
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "frequency_mhz",
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     }
   },
@@ -347,5 +696,6 @@
       "path": "Docs/FORD_SECURITY_SPLIT_AUDIT.md",
       "accessed": "2026-07-14"
     }
-  }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }

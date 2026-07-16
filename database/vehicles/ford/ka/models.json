@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -25,7 +25,7 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS legacy fixed-code",
-        "immobiliser_generation": "Texas 4C / ID4C",
+        "immobiliser_generation": "Texas 4C",
         "transponder_type": "Texas 4C",
         "transponder_id": "texas_4c",
         "frequency_mhz": "433.92",
@@ -55,12 +55,71 @@
         "sources": [
           "transpondery_ka",
           "silca_ka"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD or legacy PATS procedure",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD or legacy PATS procedure",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Mechanical ignition key; remote configuration varies",
+        "blade_profile": "FO21",
+        "transponder_type": "Texas 4C",
+        "transponder_id": "texas_4c",
+        "frequency_mhz": "433.92",
+        "battery": "Confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Ford Ka FO21 Texas 4C family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Legacy Ford PATS procedure/tool dependent",
+          "programming_method": "OBD or legacy PATS procedure",
+          "online_requirement": "No"
+        },
+        "all_keys_lost": {
+          "method": "Legacy PATS diagnostic or code-based route depending build",
+          "programming_method": "OBD or legacy PATS procedure",
+          "online_requirement": "No"
+        },
+        "programming_route": "OBD or legacy PATS procedure",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Ford PATS legacy fixed-code",
+        "generation": "Texas 4C",
+        "transponder_family": "Texas 4C",
+        "programming_route": "OBD or legacy PATS procedure",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "Early first-generation Ka uses the legacy Ford key family. Remote style varies, so verify the original key before supply.",
+        "data_gaps": [
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ka_2002_2008_keyed": {
@@ -77,7 +136,7 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
-        "immobiliser_generation": "4D60 / ID60",
+        "immobiliser_generation": "Texas 4D-60",
         "transponder_type": "Texas 4D-60",
         "transponder_id": "texas_4d60",
         "frequency_mhz": "433.92",
@@ -107,12 +166,69 @@
         "sources": [
           "transpondery_ka",
           "silca_ka"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical blade",
+        "blade_profile": "FO21",
+        "transponder_type": "Texas 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": "433.92",
+        "battery": "Confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Ford Ka FO21 433 MHz ID60 remote-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported by compatible Ford PATS diagnostic tools",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "all_keys_lost": {
+          "method": "Supported by compatible Ford PATS tools; security access/wait may apply",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "No"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Ford PATS Texas Crypto 4D",
+        "generation": "Texas 4D-60",
+        "transponder_family": "Texas 4D-60",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "Later first-generation Ka changes to 4D60 while retaining the FO21 blade family.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ka_2009_2016_fiat_keyed": {
@@ -129,7 +245,7 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Fiat CODE-derived architecture",
-        "immobiliser_generation": "Hitag2 ID46 / PCF7946 family",
+        "immobiliser_generation": "NXP Hitag2 ID46",
         "transponder_type": "NXP Hitag2 ID46",
         "transponder_id": "nxp_hitag2_id46",
         "frequency_mhz": "433.92",
@@ -162,12 +278,71 @@
           "transpondery_ka",
           "keystation_ka_fiat",
           "silca_ka"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Normally no, tool/security-code dependent",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no, tool/security-code dependent",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "2-button or 3-button flip remote key",
+        "blade_profile": "SIP22",
+        "transponder_type": "NXP Hitag2 ID46",
+        "transponder_id": "nxp_hitag2_id46",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [
+          "71765697 — listed on compatible 3-button SIP22 remote family"
+        ],
+        "aftermarket_references": [
+          "Fiat 500 / Ford Ka 433 MHz ID46 PCF7946 SIP22 remote family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Use Fiat-derived immobiliser route, not Ford PATS",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no, tool/security-code dependent"
+        },
+        "all_keys_lost": {
+          "method": "Supported by compatible Fiat CODE tools; PIN/security data may be required",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no, tool/security-code dependent"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no, tool/security-code dependent"
+      },
+      "security": {
+        "family": "Fiat CODE-derived architecture",
+        "generation": "NXP Hitag2 ID46",
+        "transponder_family": "NXP Hitag2 ID46",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no, tool/security-code dependent"
+      },
+      "notes": {
+        "job_notes": "This generation shares the Fiat 500 platform. KeyStation lists compatible Ford/Fiat 433 MHz ID46 PCF7946 SIP22 remotes, including OEM reference 71765697 on the 3-button family. Never select the Ford PATS menu solely because the badge is Ford.",
+        "data_gaps": [
+          "button_count",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "button_count",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ka_mk1_1996_2008_keyed": {
@@ -184,8 +359,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Texas 4C / 4D-60",
-        "transponder_type": "Texas 4C / 4D-60",
+        "immobiliser_generation": "Texas 4D-60",
+        "transponder_type": "Texas 4D-60",
         "transponder_id": "texas_4d60",
         "frequency_mhz": "Verification required",
         "frequency_id": "frequency_unknown",
@@ -217,13 +392,73 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "Clone or diagnostic programming",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "Clone or diagnostic programming",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Standard Non-Remote Key",
+        "blade_profile": "FO21",
+        "transponder_type": "Texas 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": "Verification required",
+        "battery": "N/A / separate remote",
+        "buttons": "None",
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1112441"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Confirm",
+          "programming_method": "Clone or diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Confirm exact build/tool",
+          "programming_method": "Clone or diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "Clone or diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "Texas 4D-60",
+        "transponder_family": "Texas 4D-60",
+        "programming_route": "Clone or diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Immobiliser diagnostically or cloning. Red key master system on very early models.",
+        "data_gaps": [
+          "frequency_mhz",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "frequency_mhz",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "ka_mk2_2008_2016_keyed": {
@@ -240,8 +475,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Megamos Crypto ID48 / PCF7946",
-        "transponder_type": "Megamos Crypto ID48 / PCF7946",
+        "immobiliser_generation": "NXP Hitag2 ID46",
+        "transponder_type": "NXP Hitag2 ID46",
         "transponder_id": "nxp_hitag2_id46",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -273,13 +508,71 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Fiat-compatible pre-code/EEPROM setup if OBD route fails",
         "Programming route": "EEPROM / OBD pre-code",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Fiat-compatible pre-code/EEPROM setup if OBD route fails",
+        "programming_route": "EEPROM / OBD pre-code",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Fiat Style Flip Key",
+        "blade_profile": "SIP22",
+        "transponder_type": "NXP Hitag2 ID46",
+        "transponder_id": "nxp_hitag2_id46",
+        "frequency_mhz": 433,
+        "battery": "CR2032 (confirm physical key)",
+        "buttons": "3 Buttons",
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1838586 (Delphi System)"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "EEPROM / OBD pre-code",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Fiat-compatible pre-code/EEPROM setup if OBD route fails"
+        },
+        "all_keys_lost": {
+          "method": "Yes — EEPROM/OBD route",
+          "programming_method": "EEPROM / OBD pre-code",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Fiat-compatible pre-code/EEPROM setup if OBD route fails"
+        },
+        "programming_route": "EEPROM / OBD pre-code",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "NXP Hitag2 ID46",
+        "transponder_family": "NXP Hitag2 ID46",
+        "programming_route": "EEPROM / OBD pre-code",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Requires pre-coding via EEPROM/OBD before writing. Uses Fiat system, not standard Ford protocols.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     }
   },
@@ -323,5 +616,6 @@
       "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
       "accessed": "2026-07-15"
     }
-  }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }

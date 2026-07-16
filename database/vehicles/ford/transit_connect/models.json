@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -25,7 +25,7 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
-        "immobiliser_generation": "4D60 / ID60",
+        "immobiliser_generation": "Texas 4D-60",
         "transponder_type": "Texas 4D-60",
         "transponder_id": "texas_4d60",
         "frequency_mhz": "433.92",
@@ -55,12 +55,69 @@
         "sources": [
           "transpondery_transit_connect",
           "silca_transit_connect"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Not normally expected for this generation",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Not normally expected for this generation",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": "433.92",
+        "battery": "Confirm against physical remote before supply",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Connect HU101 433 MHz 4D60 remote-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported by compatible Ford PATS diagnostic tools",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Not normally expected for this generation"
+        },
+        "all_keys_lost": {
+          "method": "Supported by compatible Ford PATS tools; security access/wait may apply",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Not normally expected for this generation"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Not normally expected for this generation"
+      },
+      "security": {
+        "family": "Ford PATS Texas Crypto 4D",
+        "generation": "Texas 4D-60",
+        "transponder_family": "Texas 4D-60",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Not normally expected for this generation"
+      },
+      "notes": {
+        "job_notes": "Early first-generation Transit Connect. Core blade, transponder and frequency are mapped for UK stock lookup; exact OEM remote part numbers and tool IDs remain to be added.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "transit_connect_2009_2012_keyed": {
@@ -77,8 +134,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
-        "immobiliser_generation": "ID63",
-        "transponder_type": "Texas 4D-63 80-bit",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -108,12 +165,69 @@
           "transpondery_transit_connect",
           "silca_transit_connect",
           "keystation_transit_connect"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Not normally expected for this generation",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Not normally expected for this generation",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": "Confirm against physical remote before supply",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Connect HU101 433 MHz ID63 80-bit remote-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported by compatible Ford PATS diagnostic tools",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Not normally expected for this generation"
+        },
+        "all_keys_lost": {
+          "method": "Supported by compatible Ford PATS tools; security access/wait may apply",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Not normally expected for this generation"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Not normally expected for this generation"
+      },
+      "security": {
+        "family": "Ford PATS Texas Crypto 4D",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Not normally expected for this generation"
+      },
+      "notes": {
+        "job_notes": "The first-generation facelift changes from 4D60 to 4D63. Exact OEM remote part numbers and tool IDs remain to be added.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "transit_connect_2013_2015_keyed": {
@@ -130,8 +244,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS DST80",
-        "immobiliser_generation": "DST80 / ID63-6F",
-        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -161,12 +275,69 @@
           "transpondery_transit_connect",
           "silca_transit_connect",
           "keystation_transit_connect"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Tool/build dependent but normally offline-capable on this early second-generation range",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Tool/build dependent but normally offline-capable on this early second-generation range",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": "Confirm against physical remote before supply",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Connect HU101 433 MHz DST80 / ID63-6F family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported by compatible Ford PATS diagnostic tools",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Tool/build dependent but normally offline-capable on this early second-generation range"
+        },
+        "all_keys_lost": {
+          "method": "Supported by compatible Ford PATS tools; security access may apply",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Tool/build dependent but normally offline-capable on this early second-generation range"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Tool/build dependent but normally offline-capable on this early second-generation range"
+      },
+      "security": {
+        "family": "Ford PATS DST80",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Tool/build dependent but normally offline-capable on this early second-generation range"
+      },
+      "notes": {
+        "job_notes": "Second-generation early range uses DST80 before the later Hitag Pro change. OEM part numbers and exact tool coverage remain to be mapped.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "transit_connect_2016_2023_keyed": {
@@ -183,8 +354,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Hitag Pro",
-        "immobiliser_generation": "Hitag Pro / ID47-ID49 family",
-        "transponder_type": "NXP Hitag Pro",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -214,12 +385,69 @@
           "transpondery_transit_connect",
           "silca_transit_connect",
           "keystation_transit_connect"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Build and operation dependent; verify before accepting AKL",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent; verify before accepting AKL",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "battery": "Confirm against physical remote before supply",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Connect HU101 433 MHz Hitag Pro remote-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported where the selected diagnostic tool explicitly covers the exact build",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent; verify before accepting AKL"
+        },
+        "all_keys_lost": {
+          "method": "Supported only with exact-build coverage; later vehicles may require online/security access",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent; verify before accepting AKL"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent; verify before accepting AKL"
+      },
+      "security": {
+        "family": "Ford PATS Hitag Pro",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent; verify before accepting AKL"
+      },
+      "notes": {
+        "job_notes": "Late second-generation Transit Connect uses Hitag Pro. Exact OEM remote part numbers and operation-level tool IDs remain to be added.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "transit_connect_2016_2023_passive": {
@@ -236,8 +464,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Hitag Pro",
-        "immobiliser_generation": "Hitag Pro / ID47-ID49 family",
-        "transponder_type": "NXP Hitag Pro",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -267,12 +495,69 @@
           "transpondery_transit_connect",
           "silca_transit_connect",
           "keystation_transit_connect"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Build and operation dependent; verify before accepting AKL",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent; verify before accepting AKL",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Passive key with emergency blade",
+        "blade_profile": "HU101 emergency blade",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote before supply",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Transit Connect 433 MHz Hitag Pro HU101 passive-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Supported where the selected diagnostic tool explicitly covers the exact build",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent; verify before accepting AKL"
+        },
+        "all_keys_lost": {
+          "method": "Supported only with exact-build coverage; later vehicles may require online/security access",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Build and operation dependent; verify before accepting AKL"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent; verify before accepting AKL"
+      },
+      "security": {
+        "family": "Ford PATS Hitag Pro",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Build and operation dependent; verify before accepting AKL"
+      },
+      "notes": {
+        "job_notes": "Use only where passive start is physically confirmed. Exact OEM part numbers and tool IDs remain to be added.",
+        "data_gaps": [
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "transit_connect_2024_present_mqb": {
@@ -318,12 +603,73 @@
         "last_verified": "2026-07-14",
         "sources": [
           "ford_transit_connect_split_audit"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "VAG/MQB diagnostic or authorised online workflow",
         "Online / FDRS": "Likely operation-dependent; verify exact build and tool",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "VAG/MQB diagnostic or authorised online workflow",
+        "online_requirement": "Likely operation-dependent; verify exact build and tool",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Keyed or passive configuration must be confirmed",
+        "blade_profile": "HU162T family — exact T variant verification required",
+        "transponder_type": "Megamos AES family — exact application verification required",
+        "transponder_id": "megamos_aes",
+        "frequency_mhz": "Verification required",
+        "battery": "Confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": "Verification required",
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Volkswagen Caddy V-derived Ford Transit Connect key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Do not use Ford PATS route; requires exact VAG/MQB tool coverage",
+          "programming_method": "VAG/MQB diagnostic or authorised online workflow",
+          "online_requirement": "Likely operation-dependent; verify exact build and tool"
+        },
+        "all_keys_lost": {
+          "method": "Advanced MQB workflow; online/component-security restrictions may apply",
+          "programming_method": "VAG/MQB diagnostic or authorised online workflow",
+          "online_requirement": "Likely operation-dependent; verify exact build and tool"
+        },
+        "programming_route": "VAG/MQB diagnostic or authorised online workflow",
+        "online_requirement": "Likely operation-dependent; verify exact build and tool"
+      },
+      "security": {
+        "family": "Volkswagen MQB-derived security architecture",
+        "generation": "MQB AES / exact implementation verification required",
+        "transponder_family": "Megamos AES family — exact application verification required",
+        "programming_route": "VAG/MQB diagnostic or authorised online workflow",
+        "online_requirement": "Likely operation-dependent; verify exact build and tool"
+      },
+      "notes": {
+        "job_notes": "Shared Volkswagen platform. Never apply earlier Ford Transit Connect PATS procedures. Exact blade variant, frequency, part numbers and tool coverage require VAG-specific confirmation.",
+        "data_gaps": [
+          "frequency_mhz",
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "frequency_mhz",
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "transit_connect_2002_2007_keyed": {
@@ -374,13 +720,72 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "OBD immobiliser + manual remote matching",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "OBD immobiliser + manual remote matching",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Remote Key (Tibbe / Blue Cap)",
+        "blade_profile": "FO21",
+        "transponder_type": "Texas 4D-60",
+        "transponder_id": "texas_4d60",
+        "frequency_mhz": 433,
+        "battery": "Confirm physical remote",
+        "buttons": "3 Buttons",
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "4622489",
+          "4354151"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "OBD immobiliser + manual remote matching",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Yes — tool coverage/security access required",
+          "programming_method": "OBD immobiliser + manual remote matching",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "OBD immobiliser + manual remote matching",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "Texas 4D-60",
+        "transponder_family": "Texas 4D-60",
+        "programming_route": "OBD immobiliser + manual remote matching",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Manual remote matching. Transponder diagnostically.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "transit_connect_2007_2013_keyed": {
@@ -397,8 +802,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Texas 4D-63 (80-Bit)",
-        "transponder_type": "Texas 4D-63 (80-Bit)",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -431,13 +836,72 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Remote Head Key",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "battery": "Confirm physical remote",
+        "buttons": "3 Buttons",
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "164-R8042",
+          "5913139"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Yes — tool coverage/security access required",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Remote automatic with transponder OBD coding.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "transit_connect_2013_2018_keyed": {
@@ -454,8 +918,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Texas 4D-63 (80-Bit) DST+",
-        "transponder_type": "Texas 4D-63 (80-Bit) DST+",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -489,13 +953,73 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Flip Remote Key",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "battery": "Confirm physical remote",
+        "buttons": "3 Buttons",
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "2026900",
+          "1756409",
+          "2179611"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Yes — tool coverage/security access required",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "OBD diagnostic programming.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "transit_connect_2018_2024_keyed": {
@@ -512,8 +1036,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Hitag AES / ID47 (High Security)",
-        "transponder_type": "Hitag AES / ID47 (High Security)",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -545,13 +1069,71 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Ford security access/bypass as required by build",
         "Programming route": "OBD + online/FDRS/security access",
         "Online / FDRS": "Yes / operation dependent",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Ford security access/bypass as required by build",
+        "programming_route": "OBD + online/FDRS/security access",
+        "online_requirement": "Yes / operation dependent",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Flip Remote Key (Hitag AES)",
+        "blade_profile": "HU101",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": 433,
+        "battery": "CR2032 (confirm physical key)",
+        "buttons": "3 Buttons",
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "2243974"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "OBD + online/FDRS/security access",
+          "online_requirement": "Yes / operation dependent",
+          "connection_or_adapter": "Ford security access/bypass as required by build"
+        },
+        "all_keys_lost": {
+          "method": "Yes — exact coverage + online/security access",
+          "programming_method": "OBD + online/FDRS/security access",
+          "online_requirement": "Yes / operation dependent",
+          "connection_or_adapter": "Ford security access/bypass as required by build"
+        },
+        "programming_route": "OBD + online/FDRS/security access",
+        "online_requirement": "Yes / operation dependent"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD + online/FDRS/security access",
+        "online_requirement": "Yes / operation dependent"
+      },
+      "notes": {
+        "job_notes": "Diagnostic OBD programming. Requires active internet connection / bypass on newer software.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     }
   },
@@ -605,5 +1187,6 @@
       "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
       "accessed": "2026-07-15"
     }
-  }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }

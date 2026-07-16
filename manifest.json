@@ -1,13 +1,15 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "database_root": "database",
   "manufacturers": {
     "ford": {
       "name": "Ford",
-      "version": 34,
+      "version": 35,
       "manifest": "database/vehicles/ford/manifest.json",
-      "status": "tool_data_promoted"
+      "status": "ford_full_record_rebuild",
+      "updated_at": "2026-07-16"
     }
-  }
+  },
+  "status": "ford_full_record_rebuild"
 }

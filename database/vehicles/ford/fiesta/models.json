@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -25,8 +25,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS legacy (Texas 4C family on later builds)",
-        "immobiliser_generation": "Early PATS; confirm exact build before generating chip",
-        "transponder_type": "Texas 4C on commonly encountered later Mk4/Mk5 builds — verify vehicle",
+        "immobiliser_generation": "Texas 4C",
+        "transponder_type": "Texas 4C",
         "transponder_id": "texas_4c",
         "frequency_mhz": "433.92 where factory remote fitted",
         "frequency_id": "mhz_433_92",
@@ -42,7 +42,7 @@
         ],
         "aftermarket_references": [],
         "tool_ids": [
-          "autel_im508s",
+          "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
           "xtool_x100_pad2"
@@ -61,7 +61,9 @@
         "last_verified": "2026-07-15",
         "sources": [
           "ford_fiesta_split_audit"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -71,7 +73,92 @@
         "Connection / cable": "Standard OBD connection; stable battery support recommended",
         "Programming route": "OBD diagnostic or legacy PATS procedure",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "connection_or_adapter": "Standard OBD connection; stable battery support recommended",
+        "programming_route": "OBD diagnostic or legacy PATS procedure",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Mechanical ignition key / separate or integrated remote varies",
+        "blade_profile": "FO21",
+        "transponder_type": "Texas 4C",
+        "transponder_id": "texas_4c",
+        "frequency_mhz": "433.92 where factory remote fitted",
+        "battery": "Confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1337641",
+          "1753886"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "OBD PATS programming on supported builds; cloning may also be possible",
+          "programming_method": "OBD diagnostic or legacy PATS procedure",
+          "online_requirement": "No",
+          "connection_or_adapter": "Standard OBD connection; stable battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "OBD/legacy PATS security-access route; confirm exact model year",
+          "programming_method": "OBD diagnostic or legacy PATS procedure",
+          "online_requirement": "No",
+          "connection_or_adapter": "Standard OBD connection; stable battery support recommended"
+        },
+        "programming_route": "OBD diagnostic or legacy PATS procedure",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Ford PATS legacy (Texas 4C family on later builds)",
+        "generation": "Texas 4C",
+        "transponder_family": "Texas 4C",
+        "programming_route": "OBD diagnostic or legacy PATS procedure",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "Confirm the exact build and chip before cutting or generating because this range crosses early PATS changes.",
+        "data_gaps": [
+          "button_count"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "button_count"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "fiesta_2002_2008_keyed": {
@@ -88,8 +175,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
-        "immobiliser_generation": "Texas 4D-63 40-bit",
-        "transponder_type": "Texas 4D-63 40-Bit (ID63)",
+        "immobiliser_generation": "Texas 4D-63 40-Bit",
+        "transponder_type": "Texas 4D-63 40-Bit",
         "transponder_id": "texas_4d63_40bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -107,7 +194,7 @@
           "Fiesta HU101 433 MHz ID63 remote-key family"
         ],
         "tool_ids": [
-          "autel_im508s",
+          "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
           "xtool_x100_pad2"
@@ -128,7 +215,9 @@
           "transpondery_fiesta",
           "silca_fiesta",
           "keystation_fiesta"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -138,7 +227,89 @@
         "Connection / cable": "Standard OBD connection; battery support recommended",
         "Programming route": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "connection_or_adapter": "Standard OBD connection; battery support recommended",
+        "programming_route": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button remote head key",
+        "blade_profile": "FO21",
+        "transponder_type": "Texas 4D-63 40-Bit",
+        "transponder_id": "texas_4d63_40bit",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [
+          "164-R8042",
+          "5913139"
+        ],
+        "aftermarket_references": [
+          "Fiesta HU101 433 MHz ID63 remote-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "OBD PATS programming with a compatible Ford immobiliser tool",
+          "programming_method": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
+          "online_requirement": "No",
+          "connection_or_adapter": "Standard OBD connection; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "OBD PATS AKL supported; timed/security access may be required",
+          "programming_method": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
+          "online_requirement": "No",
+          "connection_or_adapter": "Standard OBD connection; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Ford PATS Texas Crypto 4D",
+        "generation": "Texas 4D-63 40-Bit",
+        "transponder_family": "Texas 4D-63 40-Bit",
+        "programming_route": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "Use FO21 and Texas 4D-63 40-bit for this UK Mk6 record. Do not also show the conflicting HU101 duplicate."
+      },
+      "record_completion": {
+        "status": "complete_for_app",
+        "missing_fields": [],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "fiesta_2008_2012_keyed": {
@@ -155,8 +326,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
-        "immobiliser_generation": "ID63 80-bit",
-        "transponder_type": "Texas 4D-63 80-bit",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -171,7 +342,7 @@
           "Ford C-Max / Fiesta / Focus 3-button 433 MHz ID63 80-bit HU101 remote family"
         ],
         "tool_ids": [
-          "autel_im508s",
+          "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
           "xtool_x100_pad2"
@@ -192,7 +363,9 @@
           "transpondery_fiesta",
           "keystation_fiesta",
           "silca_fiesta"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -202,7 +375,91 @@
         "Connection / cable": "Standard OBD connection; battery support recommended",
         "Programming route": "OBD diagnostic immobiliser programming",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "connection_or_adapter": "Standard OBD connection; battery support recommended",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button remote head or flip key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Ford C-Max / Fiesta / Focus 3-button 433 MHz ID63 80-bit HU101 remote family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "OBD PATS programming with a compatible Ford immobiliser tool",
+          "programming_method": "OBD diagnostic immobiliser programming",
+          "online_requirement": "No",
+          "connection_or_adapter": "Standard OBD connection; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "OBD PATS AKL supported; timed security access may apply",
+          "programming_method": "OBD diagnostic immobiliser programming",
+          "online_requirement": "No",
+          "connection_or_adapter": "Standard OBD connection; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Ford PATS Texas Crypto 4D",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "Core key-stock data is independently supported by Transpondery and UK supplier catalogues. Exact OEM part number varies by remote style and build.",
+        "data_gaps": [
+          "oem_part_numbers"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "fiesta_2008_2012_passive": {
@@ -219,8 +476,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
-        "immobiliser_generation": "ID63 80-bit",
-        "transponder_type": "Texas 4D-63 80-bit",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -235,7 +492,7 @@
           "Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"
         ],
         "tool_ids": [
-          "autel_im508s",
+          "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
           "xtool_x100_pad2"
@@ -256,7 +513,9 @@
           "transpondery_fiesta",
           "keystation_fiesta",
           "silca_fiesta"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -266,7 +525,91 @@
         "Connection / cable": "Standard OBD connection; battery support recommended",
         "Programming route": "OBD diagnostic immobiliser programming",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "connection_or_adapter": "Standard OBD connection; battery support recommended",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button passive key with emergency blade",
+        "blade_profile": "HU101 emergency blade",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "OBD PATS programming with a compatible Ford immobiliser tool",
+          "programming_method": "OBD diagnostic immobiliser programming",
+          "online_requirement": "No",
+          "connection_or_adapter": "Standard OBD connection; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "OBD PATS AKL supported; timed security access may apply",
+          "programming_method": "OBD diagnostic immobiliser programming",
+          "online_requirement": "No",
+          "connection_or_adapter": "Standard OBD connection; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Ford PATS Texas Crypto 4D",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "Use only where push-button start is physically confirmed. KeyStation explicitly lists the Fiesta-compatible 433 MHz ID63 80-bit HU101 keyless family.",
+        "data_gaps": [
+          "oem_part_numbers"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "fiesta_2013_2017_keyed": {
@@ -283,7 +626,7 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS DST80",
-        "immobiliser_generation": "DST80 / ID63-6F",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
@@ -299,7 +642,7 @@
           "Fiesta HU101 433 MHz DST80 / ID63-6F flip-key family"
         ],
         "tool_ids": [
-          "autel_im508s",
+          "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
           "xtool_x100_pad2"
@@ -320,7 +663,9 @@
           "transpondery_fiesta",
           "silca_fiesta",
           "keystation_fiesta"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -330,7 +675,91 @@
         "Connection / cable": "Standard OBD connection; battery support recommended",
         "Programming route": "OBD diagnostic immobiliser programming",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "connection_or_adapter": "Standard OBD connection; battery support recommended",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button flip remote key",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Fiesta HU101 433 MHz DST80 / ID63-6F flip-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "OBD PATS programming with a compatible Ford immobiliser tool",
+          "programming_method": "OBD diagnostic immobiliser programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD connection; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "OBD PATS AKL supported; security access may apply",
+          "programming_method": "OBD diagnostic immobiliser programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD connection; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS DST80",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "The facelift remains on the Mk7 platform but uses the later DST80 security family. Exact OEM remote number varies by build.",
+        "data_gaps": [
+          "oem_part_numbers"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "fiesta_2013_2017_passive": {
@@ -347,7 +776,7 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS DST80",
-        "immobiliser_generation": "DST80 / ID63-6F",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
@@ -363,7 +792,7 @@
           "Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"
         ],
         "tool_ids": [
-          "autel_im508s",
+          "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
           "xtool_x100_pad2"
@@ -384,7 +813,9 @@
           "transpondery_fiesta",
           "silca_fiesta",
           "keystation_fiesta"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -394,7 +825,91 @@
         "Connection / cable": "Standard OBD connection; battery support recommended",
         "Programming route": "OBD diagnostic immobiliser programming",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2"
+        ],
+        "connection_or_adapter": "Standard OBD connection; battery support recommended",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button passive key with emergency blade",
+        "blade_profile": "HU101 emergency blade",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "OBD PATS programming with a compatible Ford immobiliser tool",
+          "programming_method": "OBD diagnostic immobiliser programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD connection; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "OBD PATS AKL supported; security access may apply",
+          "programming_method": "OBD diagnostic immobiliser programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD connection; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS DST80",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic immobiliser programming",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Use only where push-button start is confirmed. Exact OEM part number varies by trim/build.",
+        "data_gaps": [
+          "oem_part_numbers"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "fiesta_2017_2023_keyed": {
@@ -427,11 +942,11 @@
           "Mk8 Fiesta HU101 433 MHz Hitag Pro remote family"
         ],
         "tool_ids": [
-          "autel_im508s",
+          "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
           "xtool_x100_pad2",
-          "lonsdor_k518"
+          "lonsdor_k518_pro"
         ],
         "programming": {
           "add_key": "OBD programming where the selected tool explicitly supports the exact Fiesta build",
@@ -450,7 +965,9 @@
           "ford_owner_manual_2020_uk",
           "silca_fiesta",
           "keystation_fiesta"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -461,7 +978,97 @@
         "Connection / cable": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement.",
         "Programming route": "OBD diagnostic programming — select exact year, ignition type and build",
         "Online / FDRS": "Build and operation dependent",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "lonsdor_k518_pro",
+            "name": "Lonsdor K518 Pro",
+            "status": "listed_supported"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2",
+          "lonsdor_k518_pro"
+        ],
+        "connection_or_adapter": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement.",
+        "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
+        "online_requirement": "Build and operation dependent",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button remote flip key",
+        "blade_profile": "HU101",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro_pcf7939fa",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Mk8 Fiesta HU101 433 MHz Hitag Pro remote family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "OBD programming where the selected tool explicitly supports the exact Fiesta build",
+          "programming_method": "OBD diagnostic programming — select exact year, ignition type and build",
+          "online_requirement": "Build and operation dependent",
+          "connection_or_adapter": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement."
+        },
+        "all_keys_lost": {
+          "method": "OBD AKL where exact-build coverage is confirmed; later builds may require Ford online/security access",
+          "programming_method": "OBD diagnostic programming — select exact year, ignition type and build",
+          "online_requirement": "Build and operation dependent",
+          "connection_or_adapter": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement."
+        },
+        "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
+        "online_requirement": "Build and operation dependent"
+      },
+      "security": {
+        "family": "Ford PATS Hitag Pro",
+        "generation": "NXP 128-bit Hitag Pro / ID47-ID49 family",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
+        "online_requirement": "Build and operation dependent"
+      },
+      "notes": {
+        "job_notes": "Ford UK documents the flip-key configuration. Core blade/frequency/chip family follows professional Mk8 application listings; exact OEM remote number and tool IDs still need mapping.",
+        "data_gaps": [
+          "oem_part_numbers"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "fiesta_2017_2023_passive": {
@@ -494,11 +1101,11 @@
           "Mk8 Fiesta HU101 433 MHz Hitag Pro passive-key family"
         ],
         "tool_ids": [
-          "autel_im508s",
+          "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
           "xtool_x100_pad2",
-          "lonsdor_k518"
+          "lonsdor_k518_pro"
         ],
         "programming": {
           "add_key": "OBD programming where the selected tool explicitly supports the exact Fiesta build",
@@ -518,7 +1125,9 @@
           "ford_owner_manual_2020_uk",
           "silca_fiesta",
           "keystation_fiesta"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -529,7 +1138,97 @@
         "Connection / cable": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement.",
         "Programming route": "OBD diagnostic programming — select exact year, ignition type and build",
         "Online / FDRS": "Build and operation dependent",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "lonsdor_k518_pro",
+            "name": "Lonsdor K518 Pro",
+            "status": "listed_supported"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "xtool_x100_pad2",
+          "lonsdor_k518_pro"
+        ],
+        "connection_or_adapter": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement.",
+        "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
+        "online_requirement": "Build and operation dependent",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button passive key with removable emergency blade",
+        "blade_profile": "HU101 emergency blade",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro_pcf7939fa",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 — confirm against physical remote",
+        "buttons": 3,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Mk8 Fiesta HU101 433 MHz Hitag Pro passive-key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "OBD programming where the selected tool explicitly supports the exact Fiesta build",
+          "programming_method": "OBD diagnostic programming — select exact year, ignition type and build",
+          "online_requirement": "Build and operation dependent",
+          "connection_or_adapter": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement."
+        },
+        "all_keys_lost": {
+          "method": "OBD AKL where exact-build coverage is confirmed; later builds may require Ford online/security access",
+          "programming_method": "OBD diagnostic programming — select exact year, ignition type and build",
+          "online_requirement": "Build and operation dependent",
+          "connection_or_adapter": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement."
+        },
+        "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
+        "online_requirement": "Build and operation dependent"
+      },
+      "security": {
+        "family": "Ford PATS Hitag Pro",
+        "generation": "NXP 128-bit Hitag Pro / ID47-ID49 family",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
+        "online_requirement": "Build and operation dependent"
+      },
+      "notes": {
+        "job_notes": "Ford UK documents passive key, removable emergency blade and backup start. Exact OEM remote number and tool IDs remain to be mapped.",
+        "data_gaps": [
+          "oem_part_numbers"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "oem_part_numbers"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "fiesta_mk8_keyless_2017_2023_passive": {
@@ -546,8 +1245,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Hitag 3 (reads as ID47 / 49)",
-        "transponder_type": "Hitag 3 (reads as ID47 / 49)",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -580,13 +1279,72 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "Confirm exact tool route",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Proximity Smart Key",
+        "blade_profile": "HU101",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": 433,
+        "battery": "CR2032 (confirm physical key)",
+        "buttons": "3 Buttons",
+        "emergency_blade": "HU101",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "2441951",
+          "2180633"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Confirm",
+          "programming_method": "Confirm exact tool route",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Confirm exact build/tool",
+          "programming_method": "Confirm exact tool route",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "Confirm exact tool route",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Smart key configuration. Remote slot located in cupholder area.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     }
   },
@@ -642,5 +1400,7 @@
       "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
       "accessed": "2026-07-15"
     }
-  }
+  },
+  "tool_catalogue_normalised": true,
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }

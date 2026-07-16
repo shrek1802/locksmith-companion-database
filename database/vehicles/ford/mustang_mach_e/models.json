@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -38,7 +38,64 @@
         "last_verified": "2026-07-14",
         "sources": [
           "ford_mach_e_split_audit"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Passive key with connected/phone-as-key features",
+        "blade_profile": "Emergency access method verification required",
+        "transponder_type": "Verification required",
+        "transponder_id": null,
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford connected passive-entry security architecture"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "EV-specific connected security. Verify physical key provision, Phone As A Key, online/FDRS and account requirements by build and operation.",
+        "data_gaps": [
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
         ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "mustang_mach_e_2020_present_passive": {
@@ -55,8 +112,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Hitag AES",
-        "transponder_type": "Hitag AES",
+        "immobiliser_generation": "NXP HITAG AES 128-Bit",
+        "transponder_type": "NXP HITAG AES 128-Bit",
         "transponder_id": "hitag_aes",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -88,13 +145,71 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Ford security access/bypass as required by build",
         "Programming route": "OBD + online/FDRS/security access",
         "Online / FDRS": "Yes / operation dependent",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Ford security access/bypass as required by build",
+        "programming_route": "OBD + online/FDRS/security access",
+        "online_requirement": "Yes / operation dependent",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Smart Proximity Key",
+        "blade_profile": "HU101",
+        "transponder_type": "NXP HITAG AES 128-Bit",
+        "transponder_id": "hitag_aes",
+        "frequency_mhz": 433,
+        "battery": "CR2032 (confirm physical key)",
+        "buttons": "3 Buttons / Phone-as-Key",
+        "emergency_blade": "HU101",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "LJ8T-15K601-BC"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "OBD + online/FDRS/security access",
+          "online_requirement": "Yes / operation dependent",
+          "connection_or_adapter": "Ford security access/bypass as required by build"
+        },
+        "all_keys_lost": {
+          "method": "Yes — exact coverage + online/security access",
+          "programming_method": "OBD + online/FDRS/security access",
+          "online_requirement": "Yes / operation dependent",
+          "connection_or_adapter": "Ford security access/bypass as required by build"
+        },
+        "programming_route": "OBD + online/FDRS/security access",
+        "online_requirement": "Yes / operation dependent"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "NXP HITAG AES 128-Bit",
+        "transponder_family": "NXP HITAG AES 128-Bit",
+        "programming_route": "OBD + online/FDRS/security access",
+        "online_requirement": "Yes / operation dependent"
+      },
+      "notes": {
+        "job_notes": "Electric vehicle diagnostic setup. Program via high-end diagnostic tools or FDRS.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     }
   },
@@ -127,5 +242,6 @@
       "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
       "accessed": "2026-07-15"
     }
-  }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }

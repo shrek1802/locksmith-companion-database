@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -42,7 +42,66 @@
         "last_verified": "2026-07-14",
         "sources": [
           "transpondery_galaxy"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "blade_profile": "Verification required",
+        "transponder_type": "Philips ID33",
+        "transponder_id": "philips_id33",
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Volkswagen Group legacy immobiliser",
+        "generation": "Philips fixed-code ID33",
+        "transponder_family": "Philips ID33"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Transponder year split is verified. Exact UK blade and remote frequency still require a dedicated Mk1 Galaxy application source; do not apply Ford PATS assumptions.",
+        "data_gaps": [
+          "blade_profile",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
         ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "blade_profile",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "galaxy_1998_2000_vag": {
@@ -76,7 +135,66 @@
         "last_verified": "2026-07-14",
         "sources": [
           "transpondery_galaxy"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "blade_profile": "Verification required",
+        "transponder_type": "Philips Crypto ID42",
+        "transponder_id": "philips_crypto_id42",
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Volkswagen Group legacy immobiliser",
+        "generation": "Philips Crypto ID42",
+        "transponder_family": "Philips Crypto ID42"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Transponder year split is verified. Exact UK blade and remote frequency remain to be confirmed from a dedicated Mk1 application source.",
+        "data_gaps": [
+          "blade_profile",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
         ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "blade_profile",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "galaxy_2000_2006_vag": {
@@ -110,7 +228,66 @@
         "last_verified": "2026-07-14",
         "sources": [
           "transpondery_galaxy"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "blade_profile": "Verification required",
+        "transponder_type": "Philips Crypto ID44",
+        "transponder_id": "philips_crypto_id44",
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Volkswagen Group legacy immobiliser",
+        "generation": "Philips Crypto ID44",
+        "transponder_family": "Philips Crypto ID44"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Transponder family is verified for 2000-2006. Exact UK blade and frequency remain pending a VAG/Galaxy-specific application source.",
+        "data_gaps": [
+          "blade_profile",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
         ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "blade_profile",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "galaxy_2006_2009_keyed": {
@@ -127,8 +304,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
-        "immobiliser_generation": "ID63",
-        "transponder_type": "Texas 4D-63 80-bit",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -145,7 +322,62 @@
         "sources": [
           "transpondery_galaxy",
           "silca_galaxy"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "3-button remote key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS Texas Crypto 4D",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending.",
+        "data_gaps": [
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
         ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "galaxy_2006_2009_passive": {
@@ -162,8 +394,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
-        "immobiliser_generation": "ID63",
-        "transponder_type": "Texas 4D-63 80-bit",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -180,7 +412,62 @@
         "sources": [
           "transpondery_galaxy",
           "silca_galaxy"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Passive key with emergency blade",
+        "blade_profile": "HU101 emergency blade",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS Texas Crypto 4D",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Use only where passive start is confirmed. Key data verified for the 2006-2009 security family.",
+        "data_gaps": [
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
         ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "galaxy_2010_2014_keyed": {
@@ -197,8 +484,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS DST80",
-        "immobiliser_generation": "DST80 / ID63-6F",
-        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -215,7 +502,62 @@
         "sources": [
           "transpondery_galaxy",
           "silca_galaxy"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "3-button remote key with mechanical blade",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS DST80",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending.",
+        "data_gaps": [
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
         ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "galaxy_2010_2014_passive": {
@@ -232,8 +574,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS DST80",
-        "immobiliser_generation": "DST80 / ID63-6F",
-        "transponder_type": "Texas 4D-63 80-bit (DST80)",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -250,7 +592,62 @@
         "sources": [
           "transpondery_galaxy",
           "silca_galaxy"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Passive key with emergency blade",
+        "blade_profile": "HU101 emergency blade",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": "433.92",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS DST80",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Blade, transponder and frequency verified for the facelift security family. Tool compatibility still pending.",
+        "data_gaps": [
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
         ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "galaxy_2015_2023_passive": {
@@ -267,8 +664,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS Hitag Pro",
-        "immobiliser_generation": "Hitag Pro / ID47",
-        "transponder_type": "NXP Hitag Pro",
+        "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -303,13 +700,72 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "3-button passive key with emergency blade",
+        "blade_profile": "HU101 emergency blade",
+        "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_id": "nxp_hitag_pro",
+        "frequency_mhz": "433.92",
+        "battery": "CR2032 (confirm physical key)",
+        "buttons": "3 Buttons",
+        "emergency_blade": "HU101",
+        "smart_key": true,
+        "oem_part_numbers": [
+          "1919602",
+          "2230771"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Yes — tool coverage/security access required",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS Hitag Pro",
+        "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Transpondery lists Galaxy 2015+ as Hitag Pro. Silca lists CD390 2015-2022 with HU101 and 433 MHz. Tool and online requirements remain to be mapped separately.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "galaxy_2006_2015_keyed": {
@@ -326,8 +782,8 @@
       },
       "vehicle_information": {
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
-        "immobiliser_generation": "Texas 4D-63 (80-Bit)",
-        "transponder_type": "Texas 4D-63 (80-Bit)",
+        "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
@@ -360,13 +816,72 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
         "Programming route": "OBD diagnostic programming",
         "Online / FDRS": "Normally no",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "connection_or_adapter": "Standard OBD; battery support recommended",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Flip Remote / Smart Key (Oval)",
+        "blade_profile": "HU101",
+        "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_id": "texas_4d63_80bit",
+        "frequency_mhz": 433,
+        "battery": "CR2032 (confirm physical key)",
+        "buttons": "3 Buttons",
+        "emergency_blade": "Same as ignition blade",
+        "smart_key": false,
+        "oem_part_numbers": [
+          "1713499",
+          "1756409"
+        ],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {
+          "method": "Yes — OBD",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "all_keys_lost": {
+          "method": "Yes — tool coverage/security access required",
+          "programming_method": "OBD diagnostic programming",
+          "online_requirement": "Normally no",
+          "connection_or_adapter": "Standard OBD; battery support recommended"
+        },
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "security": {
+        "family": "Ford PATS / shared-platform system as applicable",
+        "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "OBD diagnostic programming",
+        "online_requirement": "Normally no"
+      },
+      "notes": {
+        "job_notes": "Consistent with Mondeo MK4 protocols.",
+        "data_gaps": [
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     }
   },
@@ -403,5 +918,6 @@
       "url": "https://www.aldridgesecurity.co.uk/media/wysiwyg/Downloads/Files/SilcaProxSlot.pdf",
       "accessed": "2026-07-15"
     }
-  }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }

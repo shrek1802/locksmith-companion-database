@@ -1,14 +1,381 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-14",
-  "manufacturer":{"id":"ford","name":"Ford"},
-  "model":{"id":"tourneo_courier","name":"Tourneo Courier"},
-  "category":"vehicles",
-  "items":{
-    "tourneo_courier_2014_2023_keyed":{"record_id":"ford_tourneo_courier_2014_2023_keyed_uk","vehicle":{"make":"Ford","model":"Tourneo Courier","variant":"Keyed Ignition","generation":"First generation","year_from":2014,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"Passenger derivative of first-generation Transit Courier. Verify whether all technical security data can be shared before linking records."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_tourneo_courier_split_audit"]}},
-    "tourneo_courier_2014_2023_passive":{"record_id":"ford_tourneo_courier_2014_2023_passive_uk","vehicle":{"make":"Ford","model":"Tourneo Courier","variant":"Passive Key / Push Button Start","generation":"First generation","year_from":2014,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Emergency blade verification required","key_type":"Passive key with emergency blade","smart_key":true,"notes":"Use only where passive start is confirmed. Exact UK trim and build availability remains under audit."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_tourneo_courier_split_audit"]}},
-    "tourneo_courier_2023_present_keyed":{"record_id":"ford_tourneo_courier_2023_present_keyed_uk","vehicle":{"make":"Ford","model":"Tourneo Courier","variant":"Keyed Ignition","generation":"Second generation","year_from":2023,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Verification required","key_type":"Remote key with mechanical ignition blade","smart_key":false,"notes":"New Ford generation related to Puma architecture. Verify keyed UK availability and FDRS requirements by operation."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_tourneo_courier_split_audit"]}},
-    "tourneo_courier_2023_present_passive":{"record_id":"ford_tourneo_courier_2023_present_passive_uk","vehicle":{"make":"Ford","model":"Tourneo Courier","variant":"Passive Key / Push Button Start","generation":"Second generation","year_from":2023,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"immobiliser_system":"Ford PATS","immobiliser_generation":"Verification required","transponder_type":"Verification required","frequency_mhz":"Verification required","blade_profile":"Emergency blade verification required","key_type":"Passive key with emergency blade","smart_key":true,"notes":"Verify online/FDRS requirements by exact operation and build. EV and ICE only split where key/security workflow differs."},"verification":{"status":"verification_required","last_verified":"2026-07-14","sources":["ford_tourneo_courier_split_audit"]}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-16",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
   },
-  "sources":{"ford_tourneo_courier_split_audit":{"publisher":"Locksmith Companion Database","title":"Ford Courier Security Split Audit","path":"Docs/FORD_COURIER_SPLIT_AUDIT.md","accessed":"2026-07-14","scope":["Tourneo Courier first/second-generation boundaries","keyed/passive separation","Puma-related second generation"]}}
+  "model": {
+    "id": "tourneo_courier",
+    "name": "Tourneo Courier"
+  },
+  "category": "vehicles",
+  "items": {
+    "tourneo_courier_2014_2023_keyed": {
+      "record_id": "ford_tourneo_courier_2014_2023_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Tourneo Courier",
+        "variant": "Keyed Ignition",
+        "generation": "First generation",
+        "year_from": 2014,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS",
+        "immobiliser_generation": "Verification required",
+        "transponder_type": "Verification required",
+        "frequency_mhz": "Verification required",
+        "blade_profile": "Verification required",
+        "key_type": "Remote key with mechanical ignition blade",
+        "smart_key": false,
+        "notes": "Passenger derivative of first-generation Transit Courier. Verify whether all technical security data can be shared before linking records."
+      },
+      "verification": {
+        "status": "verification_required",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_tourneo_courier_split_audit"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "blade_profile": "Verification required",
+        "transponder_type": "Verification required",
+        "transponder_id": null,
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Passenger derivative of first-generation Transit Courier. Verify whether all technical security data can be shared before linking records.",
+        "data_gaps": [
+          "blade_profile",
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "blade_profile",
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
+      }
+    },
+    "tourneo_courier_2014_2023_passive": {
+      "record_id": "ford_tourneo_courier_2014_2023_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Tourneo Courier",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "First generation",
+        "year_from": 2014,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS",
+        "immobiliser_generation": "Verification required",
+        "transponder_type": "Verification required",
+        "frequency_mhz": "Verification required",
+        "blade_profile": "Emergency blade verification required",
+        "key_type": "Passive key with emergency blade",
+        "smart_key": true,
+        "notes": "Use only where passive start is confirmed. Exact UK trim and build availability remains under audit."
+      },
+      "verification": {
+        "status": "verification_required",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_tourneo_courier_split_audit"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Passive key with emergency blade",
+        "blade_profile": "Emergency blade verification required",
+        "transponder_type": "Verification required",
+        "transponder_id": null,
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Use only where passive start is confirmed. Exact UK trim and build availability remains under audit.",
+        "data_gaps": [
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
+      }
+    },
+    "tourneo_courier_2023_present_keyed": {
+      "record_id": "ford_tourneo_courier_2023_present_keyed_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Tourneo Courier",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation",
+        "year_from": 2023,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS",
+        "immobiliser_generation": "Verification required",
+        "transponder_type": "Verification required",
+        "frequency_mhz": "Verification required",
+        "blade_profile": "Verification required",
+        "key_type": "Remote key with mechanical ignition blade",
+        "smart_key": false,
+        "notes": "New Ford generation related to Puma architecture. Verify keyed UK availability and FDRS requirements by operation."
+      },
+      "verification": {
+        "status": "verification_required",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_tourneo_courier_split_audit"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "blade_profile": "Verification required",
+        "transponder_type": "Verification required",
+        "transponder_id": null,
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "New Ford generation related to Puma architecture. Verify keyed UK availability and FDRS requirements by operation.",
+        "data_gaps": [
+          "blade_profile",
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "blade_profile",
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
+      }
+    },
+    "tourneo_courier_2023_present_passive": {
+      "record_id": "ford_tourneo_courier_2023_present_passive_uk",
+      "vehicle": {
+        "make": "Ford",
+        "model": "Tourneo Courier",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Second generation",
+        "year_from": 2023,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "immobiliser_system": "Ford PATS",
+        "immobiliser_generation": "Verification required",
+        "transponder_type": "Verification required",
+        "frequency_mhz": "Verification required",
+        "blade_profile": "Emergency blade verification required",
+        "key_type": "Passive key with emergency blade",
+        "smart_key": true,
+        "notes": "Verify online/FDRS requirements by exact operation and build. EV and ICE only split where key/security workflow differs."
+      },
+      "verification": {
+        "status": "verification_required",
+        "last_verified": "2026-07-14",
+        "sources": [
+          "ford_tourneo_courier_split_audit"
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
+      },
+      "key_information": {
+        "key_type": "Passive key with emergency blade",
+        "blade_profile": "Emergency blade verification required",
+        "transponder_type": "Verification required",
+        "transponder_id": null,
+        "frequency_mhz": "Verification required",
+        "battery": null,
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": []
+      },
+      "operations": {
+        "add_key": {},
+        "all_keys_lost": {}
+      },
+      "security": {
+        "family": "Ford PATS"
+      },
+      "tools": {
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "notes": {
+        "job_notes": "Verify online/FDRS requirements by exact operation and build. EV and ICE only split where key/security workflow differs.",
+        "data_gaps": [
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "transponder_type",
+          "frequency_mhz",
+          "battery_type",
+          "button_count",
+          "oem_part_numbers",
+          "programming.add_key",
+          "programming.all_keys_lost",
+          "programming.route",
+          "programming.online_requirement",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
+      }
+    }
+  },
+  "sources": {
+    "ford_tourneo_courier_split_audit": {
+      "publisher": "Locksmith Companion Database",
+      "title": "Ford Courier Security Split Audit",
+      "path": "Docs/FORD_COURIER_SPLIT_AUDIT.md",
+      "accessed": "2026-07-14",
+      "scope": [
+        "Tourneo Courier first/second-generation boundaries",
+        "keyed/passive separation",
+        "Puma-related second generation"
+      ]
+    }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }

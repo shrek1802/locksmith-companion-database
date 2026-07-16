@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-15",
+  "updated_at": "2026-07-16",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -55,12 +55,71 @@
         "sources": [
           "ford_explorer_split_audit",
           "ford_securilock_history"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "OBD diagnostic or legacy PATS procedure",
         "Online / FDRS": "No",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "OBD diagnostic or legacy PATS procedure",
+        "online_requirement": "No",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Mechanical ignition key with separate or integrated remote depending build",
+        "blade_profile": "North American Ford 8-cut family — exact profile confirmation required",
+        "transponder_type": "Texas fixed-code / early Ford transponder family — exact build confirmation required",
+        "transponder_id": "transponder_unknown",
+        "frequency_mhz": "European/UK remote application must be confirmed from original remote",
+        "battery": "Confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": false,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "1997-2001 UK RHD Explorer legacy Ford/SecuriLock key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Legacy SecuriLock/PATS route; exact build and available working-key count matter",
+          "programming_method": "OBD diagnostic or legacy PATS procedure",
+          "online_requirement": "No"
+        },
+        "all_keys_lost": {
+          "method": "Legacy Ford PATS diagnostic route with exact-build coverage required",
+          "programming_method": "OBD diagnostic or legacy PATS procedure",
+          "online_requirement": "No"
+        },
+        "programming_route": "OBD diagnostic or legacy PATS procedure",
+        "online_requirement": "No"
+      },
+      "security": {
+        "family": "Ford SecuriLock / PATS North American-derived architecture",
+        "generation": "PATS I to PATS II transition by build",
+        "transponder_family": "Texas fixed-code / early Ford transponder family — exact build confirmation required",
+        "programming_route": "OBD diagnostic or legacy PATS procedure",
+        "online_requirement": "No"
+      },
+      "notes": {
+        "job_notes": "This UK RHD Explorer is based on the North American platform and spans the PATS I/PATS II era. Do not apply European Fiesta/Mondeo blade assumptions. Confirm the physical blade, original remote frequency and transponder before supply.",
+        "data_gaps": [
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     },
     "explorer_2024_present_meb": {
@@ -107,12 +166,73 @@
         "sources": [
           "ford_explorer_split_audit",
           "ford_explorer_meb_platform"
-        ]
+        ],
+        "last_checked": "2026-07-16",
+        "app_schema_rebuilt": true
       },
       "tools": {
         "Programming route": "Authorised Ford/VAG connected diagnostic workflow",
         "Online / FDRS": "Expected for security-sensitive operations; confirm exact procedure",
-        "Battery support": "Use a regulated vehicle support supply during immobiliser programming"
+        "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
+        "programming_route": "Authorised Ford/VAG connected diagnostic workflow",
+        "online_requirement": "Expected for security-sensitive operations; confirm exact procedure",
+        "battery_support": "Recommended for immobiliser programming"
+      },
+      "key_information": {
+        "key_type": "Passive key with connected EV access features",
+        "blade_profile": "Emergency access method and blade profile require exact vehicle/key confirmation",
+        "transponder_type": "Megamos AES family or platform-specific passive credential — exact application verification required",
+        "transponder_id": "megamos_aes",
+        "frequency_mhz": "Verification required",
+        "battery": "Confirm against physical remote",
+        "buttons": null,
+        "emergency_blade": null,
+        "smart_key": true,
+        "oem_part_numbers": [],
+        "aftermarket_references": [
+          "Volkswagen MEB-derived Ford Explorer EV key family"
+        ]
+      },
+      "operations": {
+        "add_key": {
+          "method": "Do not use Ford PATS route; exact MEB/Ford authorised tool coverage required",
+          "programming_method": "Authorised Ford/VAG connected diagnostic workflow",
+          "online_requirement": "Expected for security-sensitive operations; confirm exact procedure"
+        },
+        "all_keys_lost": {
+          "method": "Advanced connected-platform workflow; online authorisation and component-security restrictions likely apply",
+          "programming_method": "Authorised Ford/VAG connected diagnostic workflow",
+          "online_requirement": "Expected for security-sensitive operations; confirm exact procedure"
+        },
+        "programming_route": "Authorised Ford/VAG connected diagnostic workflow",
+        "online_requirement": "Expected for security-sensitive operations; confirm exact procedure"
+      },
+      "security": {
+        "family": "Volkswagen MEB-derived connected security architecture",
+        "generation": "MEB/MQB-AES-derived implementation — exact Ford application verification required",
+        "transponder_family": "Megamos AES family or platform-specific passive credential — exact application verification required",
+        "programming_route": "Authorised Ford/VAG connected diagnostic workflow",
+        "online_requirement": "Expected for security-sensitive operations; confirm exact procedure"
+      },
+      "notes": {
+        "job_notes": "The European Explorer EV is built on Volkswagen's MEB platform. Never inherit the legacy Explorer or normal Ford PATS procedure. Exact key part number, blade, frequency and supported tools remain current-platform research items.",
+        "data_gaps": [
+          "frequency_mhz",
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ]
+      },
+      "record_completion": {
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "frequency_mhz",
+          "button_count",
+          "oem_part_numbers",
+          "tool_ids"
+        ],
+        "rebuilt_at": "2026-07-16",
+        "pipeline": "rebuild_all_ford_records_v1"
       }
     }
   },
@@ -135,5 +255,6 @@
       "accessed": "2026-07-15",
       "evidence": "2024 European Explorer is based on Volkswagen Group MEB architecture"
     }
-  }
+  },
+  "rebuild_pipeline": "rebuild_all_ford_records_v1"
 }
