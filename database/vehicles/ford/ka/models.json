@@ -369,7 +369,7 @@
         "blade_profile": "SIP22",
         "blade_id": "sip22",
         "key_type": "2-button or 3-button flip remote key",
-        "button_count": null,
+        "button_count": 2,
         "battery_type": "CR2032 — confirm against physical remote",
         "smart_key": false,
         "oem_part_numbers": [
@@ -408,7 +408,8 @@
           "silca_ka"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_enrichment": "derived_from_existing_record_data"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -487,7 +488,7 @@
         "transponder_id": "nxp_hitag2_id46",
         "frequency_mhz": "433.92",
         "battery": "CR2032 — confirm against physical remote",
-        "buttons": null,
+        "buttons": 2,
         "emergency_blade": null,
         "smart_key": false,
         "oem_part_numbers": [
@@ -525,10 +526,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "button_count"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

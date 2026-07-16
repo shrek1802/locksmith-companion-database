@@ -56,7 +56,8 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "button_count": 3
       },
       "verification": {
         "status": "key_data_verified",
@@ -66,7 +67,8 @@
           "silca_kuga"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_enrichment": "derived_from_existing_record_data"
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -75,7 +77,7 @@
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "battery": null,
-        "buttons": null,
+        "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
         "oem_part_numbers": [],
@@ -173,7 +175,6 @@
         "job_notes": "Blade, transponder and frequency verified against Transpondery and the 2025 Silca catalogue. Tool compatibility still pending.",
         "data_gaps": [
           "battery_type",
-          "button_count",
           "oem_part_numbers"
         ],
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
@@ -182,7 +183,6 @@
         "status": "needs_targeted_verification",
         "missing_fields": [
           "battery_type",
-          "button_count",
           "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
@@ -424,7 +424,8 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "button_count": 3
       },
       "verification": {
         "status": "key_data_verified",
@@ -434,7 +435,8 @@
           "silca_kuga"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_enrichment": "derived_from_existing_record_data"
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -443,7 +445,7 @@
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
         "battery": null,
-        "buttons": null,
+        "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
         "oem_part_numbers": [],
@@ -541,7 +543,6 @@
         "job_notes": "Verified within the 2012-2016 DST80 security range. Tool compatibility still pending.",
         "data_gaps": [
           "battery_type",
-          "button_count",
           "oem_part_numbers"
         ],
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
@@ -550,7 +551,6 @@
         "status": "needs_targeted_verification",
         "missing_fields": [
           "battery_type",
-          "button_count",
           "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
