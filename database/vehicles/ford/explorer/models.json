@@ -40,14 +40,24 @@
         "aftermarket_references": [
           "1997-2001 UK RHD Explorer legacy Ford/SecuriLock key family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Legacy SecuriLock/PATS route; exact build and available working-key count matter",
           "all_keys_lost": "Legacy Ford PATS diagnostic route with exact-build coverage required",
           "route": "OBD diagnostic or legacy PATS procedure",
           "online_requirement": "No"
         },
-        "notes": "This UK RHD Explorer is based on the North American platform and spans the PATS I/PATS II era. Do not apply European Fiesta/Mondeo blade assumptions. Confirm the physical blade, original remote frequency and transponder before supply."
+        "notes": "This UK RHD Explorer is based on the North American platform and spans the PATS I/PATS II era. Do not apply European Fiesta/Mondeo blade assumptions. Confirm the physical blade, original remote frequency and transponder before supply.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "legacy_platform_core_identified",
@@ -65,7 +75,57 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "OBD diagnostic or legacy PATS procedure",
         "online_requirement": "No",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Mechanical ignition key with separate or integrated remote depending build",
@@ -107,16 +167,14 @@
         "job_notes": "This UK RHD Explorer is based on the North American platform and spans the PATS I/PATS II era. Do not apply European Fiesta/Mondeo blade assumptions. Confirm the physical blade, original remote frequency and transponder before supply.",
         "data_gaps": [
           "button_count",
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
           "button_count",
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -151,14 +209,24 @@
         "aftermarket_references": [
           "Volkswagen MEB-derived Ford Explorer EV key family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Do not use Ford PATS route; exact MEB/Ford authorised tool coverage required",
           "all_keys_lost": "Advanced connected-platform workflow; online authorisation and component-security restrictions likely apply",
           "route": "Authorised Ford/VAG connected diagnostic workflow",
           "online_requirement": "Expected for security-sensitive operations; confirm exact procedure"
         },
-        "notes": "The European Explorer EV is built on Volkswagen's MEB platform. Never inherit the legacy Explorer or normal Ford PATS procedure. Exact key part number, blade, frequency and supported tools remain current-platform research items."
+        "notes": "The European Explorer EV is built on Volkswagen's MEB platform. Never inherit the legacy Explorer or normal Ford PATS procedure. Exact key part number, blade, frequency and supported tools remain current-platform research items.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "shared_platform_core_identified",
@@ -176,7 +244,57 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "Authorised Ford/VAG connected diagnostic workflow",
         "online_requirement": "Expected for security-sensitive operations; confirm exact procedure",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Passive key with connected EV access features",
@@ -219,8 +337,7 @@
         "data_gaps": [
           "frequency_mhz",
           "button_count",
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
@@ -228,8 +345,7 @@
         "missing_fields": [
           "frequency_mhz",
           "button_count",
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"

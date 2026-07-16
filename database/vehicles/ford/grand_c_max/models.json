@@ -40,14 +40,26 @@
         "aftermarket_references": [
           "Ford C-Max/Grand C-Max HU101 433 MHz ID63 80-bit family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Supported by compatible Ford PATS diagnostic tools; exact tool IDs pending mapping",
           "all_keys_lost": "Supported by compatible Ford PATS diagnostic tools; security access/wait procedure may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Not normally expected for this DST80 generation; confirm by tool and operation"
         },
-        "notes": "The Grand C-Max shares the C-Max CB7 security family. The professional Ford transponder catalogue places C-Max 2010-2015 in DST80/ID63-6F. Silca lists C-Max CB7 2010-2015 with HU101 and 433 MHz. Tool IDs and exact OEM remote part numbers remain to be mapped."
+        "notes": "The Grand C-Max shares the C-Max CB7 security family. The professional Ford transponder catalogue places C-Max 2010-2015 in DST80/ID63-6F. Silca lists C-Max CB7 2010-2015 with HU101 and 433 MHz. Tool IDs and exact OEM remote part numbers remain to be mapped.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -66,7 +78,69 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Not normally expected for this DST80 generation; confirm by tool and operation",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "lonsdor_k518_pro",
+            "name": "Lonsdor K518 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -107,15 +181,13 @@
       "notes": {
         "job_notes": "The Grand C-Max shares the C-Max CB7 security family. The professional Ford transponder catalogue places C-Max 2010-2015 in DST80/ID63-6F. Silca lists C-Max CB7 2010-2015 with HU101 and 433 MHz. Tool IDs and exact OEM remote part numbers remain to be mapped.",
         "data_gaps": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -150,14 +222,26 @@
         "aftermarket_references": [
           "Ford B-Max/C-Max/Fiesta 433 MHz ID63 80-bit HU101 passive-key family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Supported by compatible Ford PATS diagnostic tools; exact tool IDs pending mapping",
           "all_keys_lost": "Supported by compatible Ford PATS diagnostic tools; security access/wait procedure may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Not normally expected for this DST80 generation; confirm by tool and operation"
         },
-        "notes": "Use only where passive start is physically confirmed. Core blade, transponder and frequency are supported by C-Max family application catalogues. Exact OEM part number remains to be added."
+        "notes": "Use only where passive start is physically confirmed. Core blade, transponder and frequency are supported by C-Max family application catalogues. Exact OEM part number remains to be added.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -176,7 +260,69 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Not normally expected for this DST80 generation; confirm by tool and operation",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "lonsdor_k518_pro",
+            "name": "Lonsdor K518 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button passive key with emergency blade",
@@ -217,15 +363,13 @@
       "notes": {
         "job_notes": "Use only where passive start is physically confirmed. Core blade, transponder and frequency are supported by C-Max family application catalogues. Exact OEM part number remains to be added.",
         "data_gaps": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -260,14 +404,26 @@
         "aftermarket_references": [
           "Ford C-Max/Focus/Grand C-Max 433 MHz ID49 HU101 family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Supported by compatible late Ford PATS diagnostic tools; exact tool IDs pending mapping",
           "all_keys_lost": "Supported only where the selected tool explicitly covers the exact build/security route",
           "route": "OBD diagnostic programming",
           "online_requirement": "Tool/build dependent; verify before accepting AKL"
         },
-        "notes": "Transpondery places C-Max 2015-2020 in Hitag Pro. Silca lists C-Max CEU 2015-on with HU101 and 433 MHz; KeyStation explicitly lists a C-Max/Focus/Grand C-Max 433 MHz ID49 HU101 keyless family. Exact keyed remote OEM part number remains to be added."
+        "notes": "Transpondery places C-Max 2015-2020 in Hitag Pro. Silca lists C-Max CEU 2015-on with HU101 and 433 MHz; KeyStation explicitly lists a C-Max/Focus/Grand C-Max 433 MHz ID49 HU101 keyless family. Exact keyed remote OEM part number remains to be added.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -286,7 +442,69 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Tool/build dependent; verify before accepting AKL",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "lonsdor_k518_pro",
+            "name": "Lonsdor K518 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Remote key with mechanical blade",
@@ -327,15 +545,13 @@
       "notes": {
         "job_notes": "Transpondery places C-Max 2015-2020 in Hitag Pro. Silca lists C-Max CEU 2015-on with HU101 and 433 MHz; KeyStation explicitly lists a C-Max/Focus/Grand C-Max 433 MHz ID49 HU101 keyless family. Exact keyed remote OEM part number remains to be added.",
         "data_gaps": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -372,7 +588,14 @@
         "aftermarket_references": [
           "Ford C-Max/Focus/Grand C-Max aftermarket 3-button keyless remote 433 MHz ID49 HU101"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Supported by compatible late Ford PATS diagnostic tools; exact tool IDs pending mapping",
           "all_keys_lost": "Supported only where the selected tool explicitly covers the exact build/security route",
@@ -381,7 +604,12 @@
         },
         "notes": "This exact Grand C-Max keyless application is listed by a UK professional supplier as 433 MHz ID49 with HU101. Transponder family and C-Max CEU blade/frequency are independently supported by Transpondery and Silca. OEM part number remains to be added.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
-        "emergency_blade": "HU101"
+        "emergency_blade": "HU101",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -405,7 +633,69 @@
         "connection_or_adapter": "Standard OBD; battery support recommended",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Tool/build dependent; verify before accepting AKL",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "lonsdor_k518_pro",
+            "name": "Lonsdor K518 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button passive key with emergency blade",
@@ -454,10 +744,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "tool_ids"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -492,7 +780,12 @@
           "1337641"
         ],
         "aftermarket_references": [],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
@@ -501,7 +794,12 @@
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
-        "notes": "Standard diagnostic key pairing."
+        "notes": "Standard diagnostic key pairing.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "core_data_complete",
@@ -522,7 +820,57 @@
         "connection_or_adapter": "Standard OBD; battery support recommended",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Normally no",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Flip Remote / Standard Head",
@@ -570,10 +918,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "tool_ids"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -608,7 +954,14 @@
           "2026900"
         ],
         "aftermarket_references": [],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
@@ -617,7 +970,12 @@
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
-        "notes": "Diagnostics via standard Focus MK3 protocols."
+        "notes": "Diagnostics via standard Focus MK3 protocols.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "core_data_complete",
@@ -638,7 +996,69 @@
         "connection_or_adapter": "Standard OBD; battery support recommended",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Normally no",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "lonsdor_k518_pro",
+            "name": "Lonsdor K518 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Flip Remote Key",
@@ -686,10 +1106,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "tool_ids"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

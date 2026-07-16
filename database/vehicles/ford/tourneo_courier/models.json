@@ -31,7 +31,18 @@
         "blade_profile": "Verification required",
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
-        "notes": "Passenger derivative of first-generation Transit Courier. Verify whether all technical security data can be shared before linking records."
+        "notes": "Passenger derivative of first-generation Transit Courier. Verify whether all technical security data can be shared before linking records.",
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "verification_required",
@@ -63,7 +74,57 @@
         "family": "Ford PATS"
       },
       "tools": {
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "notes": {
         "job_notes": "Passenger derivative of first-generation Transit Courier. Verify whether all technical security data can be shared before linking records.",
@@ -77,8 +138,7 @@
           "programming.add_key",
           "programming.all_keys_lost",
           "programming.route",
-          "programming.online_requirement",
-          "tool_ids"
+          "programming.online_requirement"
         ]
       },
       "record_completion": {
@@ -93,8 +153,7 @@
           "programming.add_key",
           "programming.all_keys_lost",
           "programming.route",
-          "programming.online_requirement",
-          "tool_ids"
+          "programming.online_requirement"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -120,7 +179,18 @@
         "blade_profile": "Emergency blade verification required",
         "key_type": "Passive key with emergency blade",
         "smart_key": true,
-        "notes": "Use only where passive start is confirmed. Exact UK trim and build availability remains under audit."
+        "notes": "Use only where passive start is confirmed. Exact UK trim and build availability remains under audit.",
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "verification_required",
@@ -152,7 +222,57 @@
         "family": "Ford PATS"
       },
       "tools": {
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "notes": {
         "job_notes": "Use only where passive start is confirmed. Exact UK trim and build availability remains under audit.",
@@ -165,8 +285,7 @@
           "programming.add_key",
           "programming.all_keys_lost",
           "programming.route",
-          "programming.online_requirement",
-          "tool_ids"
+          "programming.online_requirement"
         ]
       },
       "record_completion": {
@@ -180,8 +299,7 @@
           "programming.add_key",
           "programming.all_keys_lost",
           "programming.route",
-          "programming.online_requirement",
-          "tool_ids"
+          "programming.online_requirement"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -207,7 +325,18 @@
         "blade_profile": "Verification required",
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
-        "notes": "New Ford generation related to Puma architecture. Verify keyed UK availability and FDRS requirements by operation."
+        "notes": "New Ford generation related to Puma architecture. Verify keyed UK availability and FDRS requirements by operation.",
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "verification_required",
@@ -239,7 +368,57 @@
         "family": "Ford PATS"
       },
       "tools": {
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "notes": {
         "job_notes": "New Ford generation related to Puma architecture. Verify keyed UK availability and FDRS requirements by operation.",
@@ -253,8 +432,7 @@
           "programming.add_key",
           "programming.all_keys_lost",
           "programming.route",
-          "programming.online_requirement",
-          "tool_ids"
+          "programming.online_requirement"
         ]
       },
       "record_completion": {
@@ -269,8 +447,7 @@
           "programming.add_key",
           "programming.all_keys_lost",
           "programming.route",
-          "programming.online_requirement",
-          "tool_ids"
+          "programming.online_requirement"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -296,7 +473,18 @@
         "blade_profile": "Emergency blade verification required",
         "key_type": "Passive key with emergency blade",
         "smart_key": true,
-        "notes": "Verify online/FDRS requirements by exact operation and build. EV and ICE only split where key/security workflow differs."
+        "notes": "Verify online/FDRS requirements by exact operation and build. EV and ICE only split where key/security workflow differs.",
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "verification_required",
@@ -328,7 +516,57 @@
         "family": "Ford PATS"
       },
       "tools": {
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "notes": {
         "job_notes": "Verify online/FDRS requirements by exact operation and build. EV and ICE only split where key/security workflow differs.",
@@ -341,8 +579,7 @@
           "programming.add_key",
           "programming.all_keys_lost",
           "programming.route",
-          "programming.online_requirement",
-          "tool_ids"
+          "programming.online_requirement"
         ]
       },
       "record_completion": {
@@ -356,8 +593,7 @@
           "programming.add_key",
           "programming.all_keys_lost",
           "programming.route",
-          "programming.online_requirement",
-          "tool_ids"
+          "programming.online_requirement"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"

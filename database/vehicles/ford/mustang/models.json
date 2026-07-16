@@ -41,14 +41,24 @@
           "Silca HU101AP05 S550 433 MHz ID47 application",
           "Mustang S550 HU101 433 MHz Hitag Pro passive-key family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Supported only where the selected Ford PATS tool explicitly covers the exact S550 build",
           "all_keys_lost": "Exact-build coverage required; later vehicles may require online Ford security access",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent"
         },
-        "notes": "Silca explicitly lists Ford Mustang S550 from 2017 with HU101, 433 MHz and ID47. The UK S550 generation began in 2015, so 2015-2016 vehicles must still be checked against VIN/original key before supply, but the principal UK S550 key family is now mapped."
+        "notes": "Silca explicitly lists Ford Mustang S550 from 2017 with HU101, 433 MHz and ID47. The UK S550 generation began in 2015, so 2015-2016 vehicles must still be checked against VIN/original key before supply, but the principal UK S550 key family is now mapped.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified_with_early_build_check",
@@ -66,7 +76,57 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Build and operation dependent",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button passive key with emergency blade",
@@ -108,15 +168,13 @@
       "notes": {
         "job_notes": "Silca explicitly lists Ford Mustang S550 from 2017 with HU101, 433 MHz and ID47. The UK S550 generation began in 2015, so 2015-2016 vehicles must still be checked against VIN/original key before supply, but the principal UK S550 key family is now mapped.",
         "data_gaps": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -149,14 +207,24 @@
         "smart_key": true,
         "oem_part_numbers": [],
         "aftermarket_references": [],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Current Ford tool/FDRS coverage required",
           "all_keys_lost": "Do not accept without explicit S650 support and online-authorisation check",
           "route": "Ford diagnostic/FDRS workflow",
           "online_requirement": "Likely operation dependent; verify before booking"
         },
-        "notes": "The current S650 is isolated from S550 data. Do not inherit the older key or programming route without an exact current-generation application source."
+        "notes": "The current S650 is isolated from S550 data. Do not inherit the older key or programming route without an exact current-generation application source.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "current_generation_research_required",
@@ -173,7 +241,57 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "Ford diagnostic/FDRS workflow",
         "online_requirement": "Likely operation dependent; verify before booking",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Passive key with emergency blade",
@@ -214,8 +332,7 @@
         "data_gaps": [
           "frequency_mhz",
           "button_count",
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
@@ -223,8 +340,7 @@
         "missing_fields": [
           "frequency_mhz",
           "button_count",
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -260,7 +376,12 @@
           "JR3T-15K601-BB"
         ],
         "aftermarket_references": [],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
@@ -269,7 +390,12 @@
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "HU101",
-        "notes": "Has the custom pony logo on back. Program diagnostically via OBD."
+        "notes": "Has the custom pony logo on back. Program diagnostically via OBD.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "core_data_complete",
@@ -290,7 +416,57 @@
         "connection_or_adapter": "Standard OBD; battery support recommended",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Normally no",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Proximity Smart Key (Pony Logo)",
@@ -338,10 +514,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "tool_ids"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

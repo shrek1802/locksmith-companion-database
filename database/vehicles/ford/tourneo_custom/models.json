@@ -41,14 +41,26 @@
           "Tourneo Custom HU101 433 MHz DST80 family",
           "Transit Custom V362/V363 shared key family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no for this early DST80 range"
         },
-        "notes": "Passenger derivative of the first-generation Transit Custom. Core key data follows the matching V362/V363 Transit Custom security family."
+        "notes": "Passenger derivative of the first-generation Transit Custom. Core key data follows the matching V362/V363 Transit Custom security family.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -66,7 +78,69 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Normally no for this early DST80 range",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "lonsdor_k518_pro",
+            "name": "Lonsdor K518 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -108,15 +182,13 @@
       "notes": {
         "job_notes": "Passenger derivative of the first-generation Transit Custom. Core key data follows the matching V362/V363 Transit Custom security family.",
         "data_gaps": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -151,14 +223,26 @@
         "aftermarket_references": [
           "Tourneo Custom HU101 433 MHz transition family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Supported where exact-build coverage is confirmed",
           "all_keys_lost": "Do not accept without VIN/build and exact tool coverage",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build dependent"
         },
-        "notes": "Retained as a real transition range because the checked catalogues leave a gap between the early DST80 and later Hitag Pro applications. Confirm the original key or VIN/build before ordering."
+        "notes": "Retained as a real transition range because the checked catalogues leave a gap between the early DST80 and later Hitag Pro applications. Confirm the original key or VIN/build before ordering.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "transition_build_verification_required",
@@ -176,7 +260,69 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Build dependent",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xtool_x100_pad2",
+            "name": "Xtool X100 Pad 2",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "lonsdor_k518_pro",
+            "name": "Lonsdor K518 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2",
+          "obdstar_g3",
+          "lonsdor_k518_pro",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Remote key with mechanical blade",
@@ -217,15 +363,13 @@
       "notes": {
         "job_notes": "Retained as a real transition range because the checked catalogues leave a gap between the early DST80 and later Hitag Pro applications. Confirm the original key or VIN/build before ordering.",
         "data_gaps": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -265,14 +409,24 @@
           "Tourneo Custom HU101 433 MHz Hitag Pro family",
           "Transit Custom shared OEM remote family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Supported only where exact-build tool coverage is explicit",
           "all_keys_lost": "Exact-build coverage required; later security/online access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent"
         },
-        "notes": "Late Tourneo Custom shares the Transit Custom Hitag Pro key family and OEM references. Exact operation-level tool IDs still need mapping."
+        "notes": "Late Tourneo Custom shares the Transit Custom Hitag Pro key family and OEM references. Exact operation-level tool IDs still need mapping.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -290,7 +444,57 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Build and operation dependent",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -340,10 +544,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "tool_ids"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -381,14 +583,24 @@
         "aftermarket_references": [
           "Tourneo Custom HU101 433 MHz Hitag Pro proximity-key family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Supported only where exact-build tool coverage is explicit",
           "all_keys_lost": "Exact-build coverage required; later security/online access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent"
         },
-        "notes": "Use only where passive start is physically confirmed. Core key family and OEM references follow the matching Transit Custom application."
+        "notes": "Use only where passive start is physically confirmed. Core key family and OEM references follow the matching Transit Custom application.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -406,7 +618,57 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "OBD diagnostic programming",
         "online_requirement": "Build and operation dependent",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button passive key with emergency blade",
@@ -455,10 +717,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "tool_ids"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -490,14 +750,24 @@
         "smart_key": "Verification required",
         "oem_part_numbers": [],
         "aftermarket_references": [],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Exact Ford FDRS/tool coverage required",
           "all_keys_lost": "Do not accept without explicit current-generation support and online-authorisation check",
           "route": "Ford diagnostic/FDRS workflow",
           "online_requirement": "Likely operation dependent; verify before booking"
         },
-        "notes": "Current second-generation Tourneo Custom is isolated from the 2019-2023 data. Do not inherit the older key or procedure without exact VIN/build confirmation."
+        "notes": "Current second-generation Tourneo Custom is isolated from the 2019-2023 data. Do not inherit the older key or procedure without exact VIN/build confirmation.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "current_generation_research_required",
@@ -514,7 +784,57 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "Ford diagnostic/FDRS workflow",
         "online_requirement": "Likely operation dependent; verify before booking",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Keyed or passive configuration by build",
@@ -555,8 +875,7 @@
         "data_gaps": [
           "frequency_mhz",
           "button_count",
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
@@ -564,8 +883,7 @@
         "missing_fields": [
           "frequency_mhz",
           "button_count",
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"

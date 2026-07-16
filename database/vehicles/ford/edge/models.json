@@ -44,7 +44,12 @@
           "Ford Edge European 433 MHz Hitag Pro passive-key family",
           "HU101 emergency-blade family"
         ],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Supported only where the selected Ford PATS tool explicitly covers the exact UK Edge build",
           "all_keys_lost": "Exact-build coverage required; online Ford security access may apply",
@@ -53,7 +58,12 @@
         },
         "notes": "The UK Edge was principally supplied with passive start. Use a European 433 MHz application, not a North American 315 MHz key. The Ford master workbook records OEM references 1919602 and 2230771 for the UK 2016-2021 slim smart-key family.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
-        "emergency_blade": "HU101"
+        "emergency_blade": "HU101",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified_from_master_workbook",
@@ -76,7 +86,57 @@
         "connection_or_adapter": "Standard OBD; battery support recommended",
         "programming_route": "OBD diagnostic programming or FDRS by operation/build",
         "online_requirement": "Build and operation dependent",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button slim proximity smart key with emergency blade",
@@ -127,10 +187,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "tool_ids"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -162,14 +220,24 @@
         "smart_key": false,
         "oem_part_numbers": [],
         "aftermarket_references": [],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Do not use this record until keyed ignition is physically confirmed",
           "all_keys_lost": "Exact configuration and tool coverage required",
           "route": "Ford PATS diagnostic route if genuine keyed variant is confirmed",
           "online_requirement": "Build and operation dependent"
         },
-        "notes": "Retained only to prevent a keyed vehicle being forced into the passive record. The normal UK Edge record is passive start; verify the actual ignition before ordering."
+        "notes": "Retained only to prevent a keyed vehicle being forced into the passive record. The normal UK Edge record is passive start; verify the actual ignition before ordering.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "configuration_confirmation_required",
@@ -186,7 +254,57 @@
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
         "programming_route": "Ford PATS diagnostic route if genuine keyed variant is confirmed",
         "online_requirement": "Build and operation dependent",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Mechanical ignition configuration not established as a normal UK application",
@@ -226,16 +344,14 @@
         "job_notes": "Retained only to prevent a keyed vehicle being forced into the passive record. The normal UK Edge record is passive start; verify the actual ignition before ordering.",
         "data_gaps": [
           "button_count",
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ]
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
           "button_count",
-          "oem_part_numbers",
-          "tool_ids"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"

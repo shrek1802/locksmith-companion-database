@@ -54,7 +54,12 @@
           "online_requirement": "No"
         },
         "notes": "Confirm the exact build and chip before cutting or generating because this range crosses early PATS changes.",
-        "tool_or_cable_required": "Standard OBD connection; stable battery support recommended"
+        "tool_or_cable_required": "Standard OBD connection; stable battery support recommended",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "legacy_review_required",
@@ -94,18 +99,40 @@
             "id": "xtool_x100_pad2",
             "name": "Xtool X100 Pad 2",
             "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
           }
         ],
         "tool_ids": [
           "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
-          "xtool_x100_pad2"
+          "xtool_x100_pad2",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
         ],
         "connection_or_adapter": "Standard OBD connection; stable battery support recommended",
         "programming_route": "OBD diagnostic or legacy PATS procedure",
         "online_requirement": "No",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Mechanical ignition key / separate or integrated remote varies",
@@ -206,7 +233,12 @@
           "online_requirement": "No"
         },
         "notes": "Use FO21 and Texas 4D-63 40-bit for this UK Mk6 record. Do not also show the conflicting HU101 duplicate.",
-        "tool_or_cable_required": "Standard OBD connection; battery support recommended"
+        "tool_or_cable_required": "Standard OBD connection; battery support recommended",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_partially_verified",
@@ -248,18 +280,40 @@
             "id": "xtool_x100_pad2",
             "name": "Xtool X100 Pad 2",
             "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
           }
         ],
         "tool_ids": [
           "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
-          "xtool_x100_pad2"
+          "xtool_x100_pad2",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
         ],
         "connection_or_adapter": "Standard OBD connection; battery support recommended",
         "programming_route": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
         "online_requirement": "No",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button remote head key",
@@ -354,7 +408,12 @@
           "online_requirement": "No"
         },
         "notes": "Core key-stock data is independently supported by Transpondery and UK supplier catalogues. Exact OEM part number varies by remote style and build.",
-        "tool_or_cable_required": "Standard OBD connection; battery support recommended"
+        "tool_or_cable_required": "Standard OBD connection; battery support recommended",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -396,18 +455,40 @@
             "id": "xtool_x100_pad2",
             "name": "Xtool X100 Pad 2",
             "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
           }
         ],
         "tool_ids": [
           "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
-          "xtool_x100_pad2"
+          "xtool_x100_pad2",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
         ],
         "connection_or_adapter": "Standard OBD connection; battery support recommended",
         "programming_route": "OBD diagnostic immobiliser programming",
         "online_requirement": "No",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button remote head or flip key with mechanical blade",
@@ -504,7 +585,12 @@
           "online_requirement": "No"
         },
         "notes": "Use only where push-button start is physically confirmed. KeyStation explicitly lists the Fiesta-compatible 433 MHz ID63 80-bit HU101 keyless family.",
-        "tool_or_cable_required": "Standard OBD connection; battery support recommended"
+        "tool_or_cable_required": "Standard OBD connection; battery support recommended",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -546,18 +632,40 @@
             "id": "xtool_x100_pad2",
             "name": "Xtool X100 Pad 2",
             "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
           }
         ],
         "tool_ids": [
           "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
-          "xtool_x100_pad2"
+          "xtool_x100_pad2",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
         ],
         "connection_or_adapter": "Standard OBD connection; battery support recommended",
         "programming_route": "OBD diagnostic immobiliser programming",
         "online_requirement": "No",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button passive key with emergency blade",
@@ -654,7 +762,12 @@
           "online_requirement": "Normally no"
         },
         "notes": "The facelift remains on the Mk7 platform but uses the later DST80 security family. Exact OEM remote number varies by build.",
-        "tool_or_cable_required": "Standard OBD connection; battery support recommended"
+        "tool_or_cable_required": "Standard OBD connection; battery support recommended",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -696,18 +809,40 @@
             "id": "xtool_x100_pad2",
             "name": "Xtool X100 Pad 2",
             "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
           }
         ],
         "tool_ids": [
           "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
-          "xtool_x100_pad2"
+          "xtool_x100_pad2",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
         ],
         "connection_or_adapter": "Standard OBD connection; battery support recommended",
         "programming_route": "OBD diagnostic immobiliser programming",
         "online_requirement": "Normally no",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button flip remote key",
@@ -804,7 +939,12 @@
           "online_requirement": "Normally no"
         },
         "notes": "Use only where push-button start is confirmed. Exact OEM part number varies by trim/build.",
-        "tool_or_cable_required": "Standard OBD connection; battery support recommended"
+        "tool_or_cable_required": "Standard OBD connection; battery support recommended",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -846,18 +986,40 @@
             "id": "xtool_x100_pad2",
             "name": "Xtool X100 Pad 2",
             "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
           }
         ],
         "tool_ids": [
           "autel_im508s_xp400_pro",
           "xhorse_key_tool_plus",
           "obdstar_g3",
-          "xtool_x100_pad2"
+          "xtool_x100_pad2",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
         ],
         "connection_or_adapter": "Standard OBD connection; battery support recommended",
         "programming_route": "OBD diagnostic immobiliser programming",
         "online_requirement": "Normally no",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button passive key with emergency blade",
@@ -956,7 +1118,12 @@
         },
         "notes": "Ford UK documents the flip-key configuration. Core blade/frequency/chip family follows professional Mk8 application listings; exact OEM remote number and tool IDs still need mapping.",
         "tool_or_cable_required": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement.",
-        "chip_stock_note": "Standalone/common chip reference: NXP PCF7939FA. Integrated remote boards can use related NXP Hitag Pro variants; confirm the physical key/part number."
+        "chip_stock_note": "Standalone/common chip reference: NXP PCF7939FA. Integrated remote boards can use related NXP Hitag Pro variants; confirm the physical key/part number.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -1004,6 +1171,24 @@
             "id": "lonsdor_k518_pro",
             "name": "Lonsdor K518 Pro",
             "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
           }
         ],
         "tool_ids": [
@@ -1011,12 +1196,16 @@
           "xhorse_key_tool_plus",
           "obdstar_g3",
           "xtool_x100_pad2",
-          "lonsdor_k518_pro"
+          "lonsdor_k518_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
         ],
         "connection_or_adapter": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement.",
         "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
         "online_requirement": "Build and operation dependent",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button remote flip key",
@@ -1116,7 +1305,12 @@
         "backup_start": "Use the Ford-documented passive-key backup position, buttons facing upward, then operate the push-button ignition.",
         "notes": "Ford UK documents passive key, removable emergency blade and backup start. Exact OEM remote number and tool IDs remain to be mapped.",
         "tool_or_cable_required": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement.",
-        "chip_stock_note": "Standalone/common chip reference: NXP PCF7939FA. Integrated remote boards can use related NXP Hitag Pro variants; confirm the physical key/part number."
+        "chip_stock_note": "Standalone/common chip reference: NXP PCF7939FA. Integrated remote boards can use related NXP Hitag Pro variants; confirm the physical key/part number.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -1164,6 +1358,24 @@
             "id": "lonsdor_k518_pro",
             "name": "Lonsdor K518 Pro",
             "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
           }
         ],
         "tool_ids": [
@@ -1171,12 +1383,16 @@
           "xhorse_key_tool_plus",
           "obdstar_g3",
           "xtool_x100_pad2",
-          "lonsdor_k518_pro"
+          "lonsdor_k518_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
         ],
         "connection_or_adapter": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement.",
         "programming_route": "OBD diagnostic programming — select exact year, ignition type and build",
         "online_requirement": "Build and operation dependent",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "3-button passive key with removable emergency blade",
@@ -1261,7 +1477,12 @@
           "2180633"
         ],
         "aftermarket_references": [],
-        "tool_ids": [],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro"
+        ],
         "programming": {
           "add_key": "Confirm",
           "all_keys_lost": "Confirm exact build/tool",
@@ -1270,7 +1491,12 @@
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "HU101",
-        "notes": "Smart key configuration. Remote slot located in cupholder area."
+        "notes": "Smart key configuration. Remote slot located in cupholder area.",
+        "generation_tool_ids": [
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ]
       },
       "verification": {
         "status": "core_data_complete",
@@ -1291,7 +1517,57 @@
         "connection_or_adapter": "Standard OBD; battery support recommended",
         "programming_route": "Confirm exact tool route",
         "online_requirement": "Normally no",
-        "battery_support": "Recommended for immobiliser programming"
+        "battery_support": "Recommended for immobiliser programming",
+        "supported_tools": [
+          {
+            "id": "autel_im508s_xp400_pro",
+            "name": "Autel IM508S + XP400 Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "xhorse_key_tool_plus",
+            "name": "Xhorse Key Tool Plus",
+            "status": "listed_supported"
+          },
+          {
+            "id": "obdstar_g3",
+            "name": "OBDSTAR G3",
+            "status": "listed_supported"
+          },
+          {
+            "id": "smart_pro",
+            "name": "Advanced Diagnostics Smart Pro",
+            "status": "listed_supported"
+          },
+          {
+            "id": "autel_km100x",
+            "name": "Autel KM100 / KM100X",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "xhorse_key_tool_max_pro",
+            "name": "Xhorse Key Tool Max Pro",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          },
+          {
+            "id": "keydiy_kd_x4",
+            "name": "KEYDIY KD-X4",
+            "role": "remote_or_transponder_generation",
+            "status": "generation_only_not_akl_claim"
+          }
+        ],
+        "tool_ids": [
+          "autel_im508s_xp400_pro",
+          "xhorse_key_tool_plus",
+          "obdstar_g3",
+          "smart_pro",
+          "autel_km100x",
+          "xhorse_key_tool_max_pro",
+          "keydiy_kd_x4"
+        ],
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
       },
       "key_information": {
         "key_type": "Proximity Smart Key",
@@ -1339,10 +1615,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "tool_ids"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
