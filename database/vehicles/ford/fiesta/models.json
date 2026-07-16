@@ -33,7 +33,7 @@
         "blade_profile": "FO21",
         "blade_id": "fo21",
         "key_type": "Mechanical ignition key / separate or integrated remote varies",
-        "button_count": null,
+        "button_count": "Varies by separate/original remote configuration",
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
         "oem_part_numbers": [
@@ -68,7 +68,9 @@
           "ford_fiesta_split_audit"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "non_applicable_hardware_resolved_at": "2026-07-16",
+        "non_applicable_hardware_basis": "existing key/remote description"
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -141,7 +143,7 @@
         "transponder_id": "texas_4c",
         "frequency_mhz": "433.92 where factory remote fitted",
         "battery": "Confirm against physical remote",
-        "buttons": null,
+        "buttons": "Varies by separate/original remote configuration",
         "emergency_blade": null,
         "smart_key": false,
         "oem_part_numbers": [
@@ -180,10 +182,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "button_count"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

@@ -33,7 +33,7 @@
         "blade_profile": "North American Ford 8-cut family — exact profile confirmation required",
         "blade_id": "emergency_blade_unknown",
         "key_type": "Mechanical ignition key with separate or integrated remote depending build",
-        "button_count": null,
+        "button_count": "Varies by separate/original remote configuration",
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
         "oem_part_numbers": [],
@@ -67,7 +67,9 @@
           "ford_securilock_history"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "non_applicable_hardware_resolved_at": "2026-07-16",
+        "non_applicable_hardware_basis": "existing key/remote description"
       },
       "tools": {
         "Programming route": "OBD diagnostic or legacy PATS procedure",
@@ -134,7 +136,7 @@
         "transponder_id": "transponder_unknown",
         "frequency_mhz": "European/UK remote application must be confirmed from original remote",
         "battery": "Confirm against physical remote",
-        "buttons": null,
+        "buttons": "Varies by separate/original remote configuration",
         "emergency_blade": null,
         "smart_key": false,
         "oem_part_numbers": [],
@@ -166,14 +168,12 @@
       "notes": {
         "job_notes": "This UK RHD Explorer is based on the North American platform and spans the PATS I/PATS II era. Do not apply European Fiesta/Mondeo blade assumptions. Confirm the physical blade, original remote frequency and transponder before supply.",
         "data_gaps": [
-          "button_count",
           "oem_part_numbers"
         ]
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
-          "button_count",
           "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
