@@ -1,0 +1,59 @@
+name: Enrich Ford tool support
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/enrich_ford_tool_support.py'
+      - '.github/workflows/enrich-ford-tool-support.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Add Ford tool support and generation roles
+        run: python tools/enrich_ford_tool_support.py
+
+      - name: Rebuild Ford app sections and completion report
+        run: python tools/run_ford_completion.py
+
+      - name: Validate JSON
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path('database/vehicles/ford').rglob('*.json'):
+              json.loads(path.read_text(encoding='utf-8'))
+          report = json.loads(Path('reports/ford_full_rebuild_report.json').read_text(encoding='utf-8'))
+          assert report['shared_tool_catalogue']['status'] == 'pass'
+          print('Ford enrichment validation passed')
+          print('Complete:', report['records_complete_for_app'])
+          print('Need verification:', report['records_needing_targeted_verification'])
+          print('Missing fields:', report['missing_field_counts'])
+          PY
+
+      - name: Commit enriched Ford records
+        run: |
+          if git diff --quiet; then
+            echo 'No Ford enrichment changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford manifest.json reports/ford_full_rebuild_report.json
+          git commit -m 'ford: populate programmer and key-generation tool roles'
+          git push
