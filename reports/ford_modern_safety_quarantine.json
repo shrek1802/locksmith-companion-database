@@ -1,0 +1,553 @@
+{
+  "generated_at": "2026-07-16",
+  "touched_records": 35,
+  "removed_programmer_claims": 158,
+  "preserved_generation_tool_references": 105,
+  "quarantined_operations": 70,
+  "policy": "Modern/restricted Ford support must be operation-specific and evidence-backed.",
+  "affected": [
+    {
+      "model_folder": "ecosport",
+      "record_id": "ecosport_2018_2021_keyed",
+      "model": "EcoSport",
+      "variant": "Keyed Ignition",
+      "year_from": 2018,
+      "year_to": 2021,
+      "platform_text": "uk second-generation facelift keyed ignition ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) obd programming through the bcm/ipc pats; confirm platform, can/can-fd connection and current tool coverage",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "ecosport",
+      "record_id": "ecosport_2018_2021_passive",
+      "model": "EcoSport",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2018,
+      "year_to": 2021,
+      "platform_text": "uk second-generation facelift passive key / push button start ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) obd programming through the kvm/bcm; confirm platform, can/can-fd connection and current t",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "ecosport",
+      "record_id": "ecosport_2022_2023_keyed",
+      "model": "EcoSport",
+      "variant": "Keyed Ignition",
+      "year_from": 2022,
+      "year_to": 2023,
+      "platform_text": "late uk production keyed ignition ford pats verification required build-dependent — identify the original transponder before key generation late ford secured obd route through the bcm/ipc pats; confirm can-fd, gateway and online requirements before accepting the job. online/fdrs commonly applies; co",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "edge",
+      "record_id": "edge_2016_2021_passive",
+      "model": "Edge",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2016,
+      "year_to": 2021,
+      "platform_text": "uk second-generation family passive key / push button start ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) obd diagnostic programming or fdrs by operation/build build and operation dependent the uk e",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "explorer",
+      "record_id": "explorer_2024_present_meb",
+      "model": "Explorer",
+      "variant": "Volkswagen MEB-derived EV / Passive Key",
+      "year_from": 2024,
+      "year_to": null,
+      "platform_text": "european electric explorer / cx740 volkswagen meb-derived ev / passive key volkswagen meb-derived connected security architecture meb/mqb-aes-derived implementation — exact ford application verification required megamos aes family or platform-specific passive credential — exact application verificat",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "fiesta_van",
+      "record_id": "fiesta_van_2018_2023_keyed",
+      "model": "Fiesta Van",
+      "variant": "Keyed Ignition",
+      "year_from": 2018,
+      "year_to": 2023,
+      "platform_text": "mk8 commercial derivative keyed ignition ford pats verification required build-dependent — identify the original transponder before key generation late ford secured obd route through the bcm/ipc pats; confirm can-fd, gateway and online requirements before accepting the job. online/fdrs commonly appl",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "focus",
+      "record_id": "focus_2018_2025_passive",
+      "model": "Focus",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2018,
+      "year_to": 2025,
+      "platform_text": "mk4 / c2 passive key / push button start ford pats verification required build-dependent — identify the original transponder before key generation late ford secured obd route through the kvm/bcm; confirm can-fd, gateway and online requirements before accepting the job. online/fdrs commonly applies; ",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "focus",
+      "record_id": "focus_mk4_keyless_2020_present_passive",
+      "model": "Focus",
+      "variant": "Proximity Smart Key (Slim Black)",
+      "year_from": 2020,
+      "year_to": null,
+      "platform_text": "mk4 proximity smart key (slim black) ford pats / shared-platform system as applicable nxp hitag aes 128-bit nxp hitag aes 128-bit obd + online/fdrs/security access yes / operation dependent requires newer software or dealer bypass for security access. fast programming once bypassed.",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "lonsdor_k518_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus",
+        "xtool_x100_pad2"
+      ]
+    },
+    {
+      "model_folder": "kuga",
+      "record_id": "kuga_2016_2019_keyed",
+      "model": "Kuga",
+      "variant": "Keyed Ignition",
+      "year_from": 2016,
+      "year_to": 2019,
+      "platform_text": "second generation facelift keyed ignition ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) obd programming through the bcm/ipc pats; confirm platform, can/can-fd connection and current tool coverage be",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "lonsdor_k518_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus",
+        "xtool_x100_pad2"
+      ]
+    },
+    {
+      "model_folder": "kuga",
+      "record_id": "kuga_2016_2019_passive",
+      "model": "Kuga",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2016,
+      "year_to": 2019,
+      "platform_text": "second generation facelift passive key / push button start ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) obd programming through the kvm/bcm; confirm platform, can/can-fd connection and current tool",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "lonsdor_k518_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus",
+        "xtool_x100_pad2"
+      ]
+    },
+    {
+      "model_folder": "kuga",
+      "record_id": "kuga_2020_present_passive",
+      "model": "Kuga",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2020,
+      "year_to": null,
+      "platform_text": "third generation / c2 passive key / push button start ford pats hitag aes (id49) hitag aes (id49) obd + online/fdrs/security access yes / operation dependent current c2 generation needs an exact uk professional application source before mapping.",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "lonsdor_k518_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus",
+        "xtool_x100_pad2"
+      ]
+    },
+    {
+      "model_folder": "mondeo",
+      "record_id": "mondeo_2014_2022_passive",
+      "model": "Mondeo",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2014,
+      "year_to": 2022,
+      "platform_text": "mk5 / cd391 passive key / push button start ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) confirm exact tool route normally no transpondery lists mondeo 2014+ as hitag pro. silca lists cd391 2014-20",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "mustang",
+      "record_id": "mustang_2024_present_passive",
+      "model": "Mustang",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2024,
+      "year_to": null,
+      "platform_text": "s650 uk generation passive key / push button start ford connected security / pats exact s650 implementation requires current tool/oem confirmation exact build verification required ford diagnostic/fdrs workflow likely operation dependent; verify before booking the current s650 is isolated from s550 ",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "mustang_mach_e",
+      "record_id": "mustang_mach_e_2021_present_passive",
+      "model": "Mustang Mach-E",
+      "variant": "Passive Key / Phone As A Key",
+      "year_from": 2021,
+      "year_to": null,
+      "platform_text": "first generation ev passive key / phone as a key ford connected passive-entry security architecture verification required build-dependent — identify the original transponder before key generation obd programming through the kvm/bcm; confirm platform, can/can-fd connection and current tool coverage b",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "mustang_mach_e",
+      "record_id": "mustang_mach_e_2020_present_passive",
+      "model": "Mustang Mach-E",
+      "variant": "Smart Proximity Key",
+      "year_from": 2020,
+      "year_to": null,
+      "platform_text": "current generation smart proximity key ford pats / shared-platform system as applicable nxp hitag aes 128-bit nxp hitag aes 128-bit obd + online/fdrs/security access yes / operation dependent electric vehicle diagnostic setup. program via high-end diagnostic tools or fdrs.",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "lonsdor_k518_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus",
+        "xtool_x100_pad2"
+      ]
+    },
+    {
+      "model_folder": "puma",
+      "record_id": "puma_2019_present_keyed",
+      "model": "Puma",
+      "variant": "Remote Key / Mechanical Ignition",
+      "year_from": 2019,
+      "year_to": null,
+      "platform_text": "second generation crossover remote key / mechanical ignition ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) obd diagnostic programming or fdrs by operation/build build and operation dependent silca e",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "lonsdor_k518_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus",
+        "xtool_x100_pad2"
+      ]
+    },
+    {
+      "model_folder": "puma",
+      "record_id": "puma_2019_present_passive",
+      "model": "Puma",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2019,
+      "year_to": null,
+      "platform_text": "second generation crossover passive key / push button start ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) obd diagnostic programming or fdrs by operation/build build and operation dependent use wher",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "lonsdor_k518_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus",
+        "xtool_x100_pad2"
+      ]
+    },
+    {
+      "model_folder": "ranger",
+      "record_id": "ranger_2023_present",
+      "model": "Ranger",
+      "variant": "Current generation — keyed/passive by build",
+      "year_from": 2023,
+      "year_to": null,
+      "platform_text": "p703 current generation — keyed/passive by build ford connected security / pats exact p703 implementation requires current tool/oem confirmation exact build verification required ford diagnostic/fdrs workflow likely operation dependent; verify before booking current p703 ranger is intentionally isol",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "ranger",
+      "record_id": "ranger_2022_present_passive",
+      "model": "Ranger",
+      "variant": "Smart Proximity Key",
+      "year_from": 2022,
+      "year_to": null,
+      "platform_text": "current generation smart proximity key ford pats / shared-platform system as applicable nxp hitag aes 128-bit nxp hitag aes 128-bit confirm exact tool route normally no next-gen ranger. shares architecture with vw amarok (hybrid vehicle electronics).",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "s_max",
+      "record_id": "s_max_2015_2023_keyed",
+      "model": "S-Max",
+      "variant": "Keyed Ignition",
+      "year_from": 2015,
+      "year_to": 2023,
+      "platform_text": "second generation keyed ignition ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) late ford secured obd route through the bcm/ipc pats; confirm can-fd, gateway and online requirements before accepting ",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "tourneo_connect",
+      "record_id": "tourneo_connect_2022_present_mqb",
+      "model": "Tourneo Connect",
+      "variant": "Volkswagen MQB-derived generation",
+      "year_from": 2022,
+      "year_to": null,
+      "platform_text": "caddy v-derived volkswagen mqb-derived generation volkswagen mqb-derived security architecture mqb aes / exact implementation verification required megamos aes family — exact application verification required vag/mqb diagnostic or authorised online workflow operation dependent; verify exact build an",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "tourneo_courier",
+      "record_id": "tourneo_courier_2014_2023_keyed",
+      "model": "Tourneo Courier",
+      "variant": "Keyed Ignition",
+      "year_from": 2014,
+      "year_to": 2023,
+      "platform_text": "first generation keyed ignition ford pats verification required build-dependent — identify the original transponder before key generation late ford secured obd route through the bcm/ipc pats; confirm can-fd, gateway and online requirements before accepting the job. online/fdrs commonly applies; conf",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "tourneo_courier",
+      "record_id": "tourneo_courier_2014_2023_passive",
+      "model": "Tourneo Courier",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2014,
+      "year_to": 2023,
+      "platform_text": "first generation passive key / push button start ford pats verification required build-dependent — identify the original transponder before key generation late ford secured obd route through the kvm/bcm; confirm can-fd, gateway and online requirements before accepting the job. online/fdrs commonly a",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "tourneo_courier",
+      "record_id": "tourneo_courier_2023_present_keyed",
+      "model": "Tourneo Courier",
+      "variant": "Keyed Ignition",
+      "year_from": 2023,
+      "year_to": null,
+      "platform_text": "second generation keyed ignition ford pats verification required build-dependent — identify the original transponder before key generation late ford secured obd route through the bcm/ipc pats; confirm can-fd, gateway and online requirements before accepting the job. online/fdrs commonly applies; con",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "tourneo_courier",
+      "record_id": "tourneo_courier_2023_present_passive",
+      "model": "Tourneo Courier",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2023,
+      "year_to": null,
+      "platform_text": "second generation passive key / push button start ford pats verification required build-dependent — identify the original transponder before key generation late ford secured obd route through the kvm/bcm; confirm can-fd, gateway and online requirements before accepting the job. online/fdrs commonly ",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "tourneo_custom",
+      "record_id": "tourneo_custom_2023_present",
+      "model": "Tourneo Custom",
+      "variant": "Second generation — keyed/passive by build",
+      "year_from": 2023,
+      "year_to": null,
+      "platform_text": "second generation second generation — keyed/passive by build ford connected security / pats exact current-generation implementation requires tool/oem confirmation exact build verification required ford diagnostic/fdrs workflow likely operation dependent; verify before booking current second-generati",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "transit",
+      "record_id": "transit_2016_present_keyed",
+      "model": "Transit",
+      "variant": "Keyed Ignition",
+      "year_from": 2016,
+      "year_to": null,
+      "platform_text": "mk8 / v363 late keyed ignition ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) obd diagnostic programming or fdrs by operation/build build and operation dependent transpondery lists transit 2016+ as h",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "lonsdor_k518_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus",
+        "xtool_x100_pad2"
+      ]
+    },
+    {
+      "model_folder": "transit",
+      "record_id": "transit_2016_present_passive",
+      "model": "Transit",
+      "variant": "Passive Key / Push Button Start",
+      "year_from": 2016,
+      "year_to": null,
+      "platform_text": "mk8 / v363 late passive key / push button start ford pats hitag pro nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) obd diagnostic programming or fdrs by operation/build build and operation dependent use only where passi",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "lonsdor_k518_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus",
+        "xtool_x100_pad2"
+      ]
+    },
+    {
+      "model_folder": "transit",
+      "record_id": "transit_2023_present_passive",
+      "model": "Transit",
+      "variant": "Proximity Smart Key",
+      "year_from": 2023,
+      "year_to": null,
+      "platform_text": "mk9 proximity smart key ford pats / shared-platform system as applicable nxp hitag aes 128-bit nxp hitag aes 128-bit obd + online/fdrs/security access yes / operation dependent requires active secure gateway bypass and online system. push button start.",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "transit_connect",
+      "record_id": "transit_connect_2024_present_mqb",
+      "model": "Transit Connect",
+      "variant": "Volkswagen MQB-derived generation",
+      "year_from": 2024,
+      "year_to": null,
+      "platform_text": "third generation / caddy v-derived volkswagen mqb-derived generation volkswagen mqb-derived security architecture mqb aes / exact implementation verification required megamos aes family — exact application verification required vag/mqb diagnostic or authorised online workflow likely operation-depend",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "transit_connect",
+      "record_id": "transit_connect_2018_2024_keyed",
+      "model": "Transit Connect",
+      "variant": "Flip Remote Key (Hitag AES)",
+      "year_from": 2018,
+      "year_to": 2024,
+      "platform_text": "second generation late flip remote key (hitag aes) ford pats / shared-platform system as applicable nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) nxp original pcf7939fa 128-bit hitag pro (id47 / may read id49) obd + online/fdrs/security access yes / operation dependent diagnostic o",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "transit_courier",
+      "record_id": "transit_courier_2023_present",
+      "model": "Transit Courier",
+      "variant": "Second generation — keyed/passive by build",
+      "year_from": 2023,
+      "year_to": null,
+      "platform_text": "second generation / puma-related architecture second generation — keyed/passive by build ford connected security / pats exact current-generation implementation requires tool/oem confirmation exact build verification required ford diagnostic/fdrs workflow likely operation dependent; verify before boo",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "transit_courier",
+      "record_id": "transit_courier_2023_present_passive",
+      "model": "Transit Courier",
+      "variant": "Proximity / Smart Key",
+      "year_from": 2023,
+      "year_to": null,
+      "platform_text": "current generation proximity / smart key ford pats / shared-platform system as applicable nxp hitag aes 128-bit nxp hitag aes 128-bit obd + online/fdrs/security access yes / operation dependent requires ford fdsrs/dealer tool or updated aftermarket programmer with fd bypass.",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "transit_custom",
+      "record_id": "transit_custom_2023_present",
+      "model": "Transit Custom",
+      "variant": "Second generation — keyed/passive by build",
+      "year_from": 2023,
+      "year_to": null,
+      "platform_text": "second generation second generation — keyed/passive by build ford connected security / pats exact current-generation implementation requires tool/oem confirmation exact build verification required ford diagnostic/fdrs workflow likely operation dependent; verify before booking current second-generati",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    },
+    {
+      "model_folder": "transit_custom",
+      "record_id": "transit_custom_2023_present_passive",
+      "model": "Transit Custom",
+      "variant": "Proximity Smart Key",
+      "year_from": 2023,
+      "year_to": null,
+      "platform_text": "mk9 proximity smart key ford pats / shared-platform system as applicable nxp hitag aes 128-bit nxp hitag aes 128-bit obd + online/fdrs/security access yes / operation dependent requires active secure gateway bypass and online system. push button start.",
+      "unverified_programmer_candidates": [
+        "autel_im508s_xp400_pro",
+        "obdstar_g3",
+        "smart_pro",
+        "xhorse_key_tool_plus"
+      ]
+    }
+  ]
+}

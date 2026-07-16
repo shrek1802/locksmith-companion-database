@@ -225,27 +225,28 @@
           "Silca HU101R15 Ford Puma 2019 433 MHz ID47 application",
           "Puma HU101 433 MHz Hitag Pro remote family"
         ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "xtool_x100_pad2",
-          "obdstar_g3",
-          "lonsdor_k518_pro",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "programming": {
-          "add_key": "Supported only where the selected Ford PATS tool explicitly covers the exact build",
-          "all_keys_lost": "Exact-build coverage required; online Ford security access may apply",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD diagnostic programming or FDRS by operation/build",
           "online_requirement": "Build and operation dependent"
         },
         "notes": "Silca explicitly lists the Ford Puma from 2019 with HU101, 433 MHz and ID47. Use this keyed record only where mechanical ignition is physically confirmed.",
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
         ],
-        "emergency_blade": "Same as ignition blade"
+        "emergency_blade": "Same as ignition blade",
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "lonsdor_k518_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -256,7 +257,8 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "modern_tool_claims_quarantined": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming or FDRS by operation/build",
@@ -265,68 +267,10 @@
         "programming_route": "OBD diagnostic programming or FDRS by operation/build",
         "online_requirement": "Build and operation dependent",
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xtool_x100_pad2",
-            "name": "Xtool X100 Pad 2",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "lonsdor_k518_pro",
-            "name": "Lonsdor K518 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "xtool_x100_pad2",
-          "obdstar_g3",
-          "lonsdor_k518_pro",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
+        "job_acceptance": "verification_required"
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -353,14 +297,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Supported only where the selected Ford PATS tool explicitly covers the exact build",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD diagnostic programming or FDRS by operation/build",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Exact-build coverage required; online Ford security access may apply",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD diagnostic programming or FDRS by operation/build",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "OBD diagnostic programming or FDRS by operation/build",
         "online_requirement": "Build and operation dependent"
@@ -370,7 +322,9 @@
         "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "programming_route": "OBD diagnostic programming or FDRS by operation/build",
-        "online_requirement": "Build and operation dependent"
+        "online_requirement": "Build and operation dependent",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Silca explicitly lists the Ford Puma from 2019 with HU101, 433 MHz and ID47. Use this keyed record only where mechanical ignition is physically confirmed.",
@@ -379,10 +333,15 @@
         ]
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     },
     "puma_2019_present_passive": {
@@ -417,17 +376,10 @@
         "aftermarket_references": [
           "Ford Puma 2019 HU101 433 MHz ID47 passive-key family"
         ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "xtool_x100_pad2",
-          "obdstar_g3",
-          "lonsdor_k518_pro",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "programming": {
-          "add_key": "Supported only where the selected Ford PATS tool explicitly covers the exact build",
-          "all_keys_lost": "Exact-build coverage required; online Ford security access may apply",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD diagnostic programming or FDRS by operation/build",
           "online_requirement": "Build and operation dependent"
         },
@@ -436,8 +388,16 @@
         "emergency_blade": "HU101",
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
+        ],
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "lonsdor_k518_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2"
         ]
       },
       "verification": {
@@ -450,7 +410,8 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "modern_tool_claims_quarantined": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -461,68 +422,10 @@
         "programming_route": "OBD diagnostic programming or FDRS by operation/build",
         "online_requirement": "Build and operation dependent",
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xtool_x100_pad2",
-            "name": "Xtool X100 Pad 2",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "lonsdor_k518_pro",
-            "name": "Lonsdor K518 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "xtool_x100_pad2",
-          "obdstar_g3",
-          "lonsdor_k518_pro",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
+        "job_acceptance": "verification_required"
       },
       "key_information": {
         "key_type": "3-button passive key with emergency blade",
@@ -544,16 +447,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Supported only where the selected Ford PATS tool explicitly covers the exact build",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD diagnostic programming or FDRS by operation/build",
           "online_requirement": "Build and operation dependent",
-          "connection_or_adapter": "Standard OBD; battery support recommended"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Exact-build coverage required; online Ford security access may apply",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD diagnostic programming or FDRS by operation/build",
           "online_requirement": "Build and operation dependent",
-          "connection_or_adapter": "Standard OBD; battery support recommended"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "OBD diagnostic programming or FDRS by operation/build",
         "online_requirement": "Build and operation dependent"
@@ -563,7 +472,9 @@
         "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "programming_route": "OBD diagnostic programming or FDRS by operation/build",
-        "online_requirement": "Build and operation dependent"
+        "online_requirement": "Build and operation dependent",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Use where push-button start is confirmed. The Silca 2019 Puma application independently confirms HU101, 433 MHz and ID47 for the modern generation.",
@@ -572,10 +483,15 @@
         ]
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     }
   },

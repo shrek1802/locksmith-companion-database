@@ -934,23 +934,24 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "aftermarket_references": [],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "programming": {
-          "add_key": "Current Ford tool/FDRS coverage required",
-          "all_keys_lost": "Do not accept without explicit P703 support and online-authorisation check",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Ford diagnostic/FDRS workflow",
           "online_requirement": "Likely operation dependent; verify before booking"
         },
         "notes": "Current P703 Ranger is intentionally isolated from the 2015-2022 T6 data. Do not inherit the older key or programming route without exact VIN/build confirmation.",
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
+        ],
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
         ]
       },
       "verification": {
@@ -967,7 +968,8 @@
           "oem_part_numbers",
           "button_count",
           "frequency_mhz"
-        ]
+        ],
+        "modern_tool_claims_quarantined": true
       },
       "tools": {
         "Programming route": "Ford diagnostic/FDRS workflow",
@@ -976,56 +978,10 @@
         "programming_route": "Ford diagnostic/FDRS workflow",
         "online_requirement": "Likely operation dependent; verify before booking",
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
+        "job_acceptance": "verification_required"
       },
       "key_information": {
         "key_type": "Keyed or passive configuration by build",
@@ -1044,14 +1000,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Current Ford tool/FDRS coverage required",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Ford diagnostic/FDRS workflow",
-          "online_requirement": "Likely operation dependent; verify before booking"
+          "online_requirement": "Likely operation dependent; verify before booking",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Do not accept without explicit P703 support and online-authorisation check",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Ford diagnostic/FDRS workflow",
-          "online_requirement": "Likely operation dependent; verify before booking"
+          "online_requirement": "Likely operation dependent; verify before booking",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "Ford diagnostic/FDRS workflow",
         "online_requirement": "Likely operation dependent; verify before booking"
@@ -1061,7 +1025,9 @@
         "generation": "Exact P703 implementation requires current tool/OEM confirmation",
         "transponder_family": "Exact build verification required",
         "programming_route": "Ford diagnostic/FDRS workflow",
-        "online_requirement": "Likely operation dependent; verify before booking"
+        "online_requirement": "Likely operation dependent; verify before booking",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Current P703 Ranger is intentionally isolated from the 2015-2022 T6 data. Do not inherit the older key or programming route without exact VIN/build confirmation. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
@@ -1072,10 +1038,15 @@
         ]
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     },
     "ranger_1998_2011_keyed": {
@@ -1484,15 +1455,10 @@
           "AM5T-15K601-AD"
         ],
         "aftermarket_references": [],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "programming": {
-          "add_key": "Confirm",
-          "all_keys_lost": "Confirm exact build/tool",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Confirm exact tool route",
           "online_requirement": "Normally no"
         },
@@ -1501,8 +1467,14 @@
         "notes": "Next-gen Ranger. Shares architecture with VW Amarok (hybrid vehicle electronics).",
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
+        ],
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
         ]
       },
       "verification": {
@@ -1514,7 +1486,8 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "modern_tool_claims_quarantined": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -1525,56 +1498,10 @@
         "programming_route": "Confirm exact tool route",
         "online_requirement": "Normally no",
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
+        "job_acceptance": "verification_required"
       },
       "key_information": {
         "key_type": "Smart Proximity Key",
@@ -1594,16 +1521,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Confirm",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Confirm exact tool route",
           "online_requirement": "Normally no",
-          "connection_or_adapter": "Standard OBD; battery support recommended"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Confirm exact build/tool",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Confirm exact tool route",
           "online_requirement": "Normally no",
-          "connection_or_adapter": "Standard OBD; battery support recommended"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "Confirm exact tool route",
         "online_requirement": "Normally no"
@@ -1613,7 +1546,9 @@
         "generation": "NXP HITAG AES 128-Bit",
         "transponder_family": "NXP HITAG AES 128-Bit",
         "programming_route": "Confirm exact tool route",
-        "online_requirement": "Normally no"
+        "online_requirement": "Normally no",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Next-gen Ranger. Shares architecture with VW Amarok (hybrid vehicle electronics).",
@@ -1622,10 +1557,15 @@
         ]
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     }
   },

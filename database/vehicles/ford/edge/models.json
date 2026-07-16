@@ -44,15 +44,10 @@
           "Ford Edge European 433 MHz Hitag Pro passive-key family",
           "HU101 emergency-blade family"
         ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "programming": {
-          "add_key": "Supported only where the selected Ford PATS tool explicitly covers the exact UK Edge build",
-          "all_keys_lost": "Exact-build coverage required; online Ford security access may apply",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD diagnostic programming or FDRS by operation/build",
           "online_requirement": "Build and operation dependent"
         },
@@ -61,8 +56,14 @@
         "emergency_blade": "HU101",
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
+        ],
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
         ]
       },
       "verification": {
@@ -76,7 +77,8 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "modern_tool_claims_quarantined": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -87,56 +89,10 @@
         "programming_route": "OBD diagnostic programming or FDRS by operation/build",
         "online_requirement": "Build and operation dependent",
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
+        "job_acceptance": "verification_required"
       },
       "key_information": {
         "key_type": "3-button slim proximity smart key with emergency blade",
@@ -159,16 +115,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Supported only where the selected Ford PATS tool explicitly covers the exact UK Edge build",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD diagnostic programming or FDRS by operation/build",
           "online_requirement": "Build and operation dependent",
-          "connection_or_adapter": "Standard OBD; battery support recommended"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Exact-build coverage required; online Ford security access may apply",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD diagnostic programming or FDRS by operation/build",
           "online_requirement": "Build and operation dependent",
-          "connection_or_adapter": "Standard OBD; battery support recommended"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "OBD diagnostic programming or FDRS by operation/build",
         "online_requirement": "Build and operation dependent"
@@ -178,7 +140,9 @@
         "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "programming_route": "OBD diagnostic programming or FDRS by operation/build",
-        "online_requirement": "Build and operation dependent"
+        "online_requirement": "Build and operation dependent",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "The UK Edge was principally supplied with passive start. Use a European 433 MHz application, not a North American 315 MHz key. The Ford master workbook records OEM references 1919602 and 2230771 for the UK 2016-2021 slim smart-key family.",
@@ -187,10 +151,15 @@
         ]
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     },
     "edge_2016_2021_keyed": {

@@ -598,23 +598,24 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "aftermarket_references": [],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "programming": {
-          "add_key": "Exact Ford FDRS/tool coverage required",
-          "all_keys_lost": "Do not accept without explicit current-generation support and online-authorisation check",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Ford diagnostic/FDRS workflow",
           "online_requirement": "Likely operation dependent; verify before booking"
         },
         "notes": "Second-generation Transit Courier is isolated from the 2018-2023 data. Do not inherit the older key or programming route without exact VIN/build confirmation.",
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
+        ],
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
         ]
       },
       "verification": {
@@ -631,7 +632,8 @@
           "oem_part_numbers",
           "button_count",
           "frequency_mhz"
-        ]
+        ],
+        "modern_tool_claims_quarantined": true
       },
       "tools": {
         "Programming route": "Ford diagnostic/FDRS workflow",
@@ -640,56 +642,10 @@
         "programming_route": "Ford diagnostic/FDRS workflow",
         "online_requirement": "Likely operation dependent; verify before booking",
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
+        "job_acceptance": "verification_required"
       },
       "key_information": {
         "key_type": "Keyed or passive configuration by build",
@@ -708,14 +664,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Exact Ford FDRS/tool coverage required",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Ford diagnostic/FDRS workflow",
-          "online_requirement": "Likely operation dependent; verify before booking"
+          "online_requirement": "Likely operation dependent; verify before booking",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Do not accept without explicit current-generation support and online-authorisation check",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Ford diagnostic/FDRS workflow",
-          "online_requirement": "Likely operation dependent; verify before booking"
+          "online_requirement": "Likely operation dependent; verify before booking",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "Ford diagnostic/FDRS workflow",
         "online_requirement": "Likely operation dependent; verify before booking"
@@ -725,7 +689,9 @@
         "generation": "Exact current-generation implementation requires tool/OEM confirmation",
         "transponder_family": "Exact build verification required",
         "programming_route": "Ford diagnostic/FDRS workflow",
-        "online_requirement": "Likely operation dependent; verify before booking"
+        "online_requirement": "Likely operation dependent; verify before booking",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Second-generation Transit Courier is isolated from the 2018-2023 data. Do not inherit the older key or programming route without exact VIN/build confirmation. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
@@ -736,10 +702,15 @@
         ]
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     },
     "transit_courier_2014_2023_keyed": {
@@ -945,15 +916,10 @@
           "N1BT-15K601-AA"
         ],
         "aftermarket_references": [],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "programming": {
-          "add_key": "Yes — OBD",
-          "all_keys_lost": "Yes — exact coverage + online/security access",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD + online/FDRS/security access",
           "online_requirement": "Yes / operation dependent"
         },
@@ -962,8 +928,14 @@
         "notes": "Requires Ford FDSRS/dealer tool or updated aftermarket programmer with FD Bypass.",
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
+        ],
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
         ]
       },
       "verification": {
@@ -975,7 +947,8 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "modern_tool_claims_quarantined": true
       },
       "tools": {
         "Connection / cable": "Ford security access/bypass as required by build",
@@ -986,56 +959,10 @@
         "programming_route": "OBD + online/FDRS/security access",
         "online_requirement": "Yes / operation dependent",
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
+        "job_acceptance": "verification_required"
       },
       "key_information": {
         "key_type": "Proximity / Smart Key",
@@ -1054,16 +981,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Yes — OBD",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD + online/FDRS/security access",
           "online_requirement": "Yes / operation dependent",
-          "connection_or_adapter": "Ford security access/bypass as required by build"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Yes — exact coverage + online/security access",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD + online/FDRS/security access",
           "online_requirement": "Yes / operation dependent",
-          "connection_or_adapter": "Ford security access/bypass as required by build"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "OBD + online/FDRS/security access",
         "online_requirement": "Yes / operation dependent"
@@ -1073,7 +1006,9 @@
         "generation": "NXP HITAG AES 128-Bit",
         "transponder_family": "NXP HITAG AES 128-Bit",
         "programming_route": "OBD + online/FDRS/security access",
-        "online_requirement": "Yes / operation dependent"
+        "online_requirement": "Yes / operation dependent",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Requires Ford FDSRS/dealer tool or updated aftermarket programmer with FD Bypass.",
@@ -1082,10 +1017,15 @@
         ]
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     }
   },

@@ -32,20 +32,15 @@
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
         "notes": "Passenger derivative of first-generation Transit Courier. Verify whether all technical security data can be shared before linking records.",
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
         ],
         "programming": {
-          "add_key": "Use current supported coverage for the BCM/IPC PATS. Online security authorisation/FDRS may be required on this generation.",
-          "all_keys_lost": "AKL requires current confirmed coverage for the BCM/IPC PATS; online Ford security access, FDRS or dealer-level authorisation may apply.",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
           "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
           "data_status": "uk_baseline_guidance_not_personally_verified",
@@ -56,7 +51,13 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
-        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
+        ]
       },
       "verification": {
         "status": "verification_required",
@@ -75,7 +76,8 @@
           "frequency_mhz",
           "blade_profile",
           "transponder_type"
-        ]
+        ],
+        "modern_tool_claims_quarantined": true
       },
       "key_information": {
         "key_type": "Remote key with mechanical ignition blade",
@@ -94,14 +96,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Use current supported coverage for the BCM/IPC PATS. Online security authorisation/FDRS may be required on this generation.",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
-          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "AKL requires current confirmed coverage for the BCM/IPC PATS; online Ford security access, FDRS or dealer-level authorisation may apply.",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
-          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
@@ -111,62 +121,18 @@
         "programming_route": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
         "fdrs_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
-        "transponder_family": "Build-dependent — identify the original transponder before key generation"
+        "transponder_family": "Build-dependent — identify the original transponder before key generation",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
         "programming_route": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
-        "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+        "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Passenger derivative of first-generation Transit Courier. Verify whether all technical security data can be shared before linking records. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
@@ -181,10 +147,15 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     },
     "tourneo_courier_2014_2023_passive": {
@@ -208,20 +179,15 @@
         "key_type": "Passive key with emergency blade",
         "smart_key": true,
         "notes": "Use only where passive start is confirmed. Exact UK trim and build availability remains under audit.",
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
         ],
         "programming": {
-          "add_key": "Use current supported coverage for the KVM/BCM. Online security authorisation/FDRS may be required on this generation.",
-          "all_keys_lost": "AKL requires current confirmed coverage for the KVM/BCM; online Ford security access, FDRS or dealer-level authorisation may apply.",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
           "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
           "data_status": "uk_baseline_guidance_not_personally_verified",
@@ -232,7 +198,13 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
-        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
+        ]
       },
       "verification": {
         "status": "verification_required",
@@ -250,7 +222,8 @@
           "battery_type",
           "frequency_mhz",
           "transponder_type"
-        ]
+        ],
+        "modern_tool_claims_quarantined": true
       },
       "key_information": {
         "key_type": "Passive key with emergency blade",
@@ -269,14 +242,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Use current supported coverage for the KVM/BCM. Online security authorisation/FDRS may be required on this generation.",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
-          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "AKL requires current confirmed coverage for the KVM/BCM; online Ford security access, FDRS or dealer-level authorisation may apply.",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
-          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
@@ -286,62 +267,18 @@
         "programming_route": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
         "fdrs_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
-        "transponder_family": "Build-dependent — identify the original transponder before key generation"
+        "transponder_family": "Build-dependent — identify the original transponder before key generation",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
         "programming_route": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
-        "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+        "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Use only where passive start is confirmed. Exact UK trim and build availability remains under audit. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
@@ -355,10 +292,15 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     },
     "tourneo_courier_2023_present_keyed": {
@@ -382,20 +324,15 @@
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
         "notes": "New Ford generation related to Puma architecture. Verify keyed UK availability and FDRS requirements by operation.",
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
         ],
         "programming": {
-          "add_key": "Use current supported coverage for the BCM/IPC PATS. Online security authorisation/FDRS may be required on this generation.",
-          "all_keys_lost": "AKL requires current confirmed coverage for the BCM/IPC PATS; online Ford security access, FDRS or dealer-level authorisation may apply.",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
           "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
           "data_status": "uk_baseline_guidance_not_personally_verified",
@@ -406,7 +343,13 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
-        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
+        ]
       },
       "verification": {
         "status": "verification_required",
@@ -425,7 +368,8 @@
           "frequency_mhz",
           "blade_profile",
           "transponder_type"
-        ]
+        ],
+        "modern_tool_claims_quarantined": true
       },
       "key_information": {
         "key_type": "Remote key with mechanical ignition blade",
@@ -444,14 +388,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Use current supported coverage for the BCM/IPC PATS. Online security authorisation/FDRS may be required on this generation.",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
-          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "AKL requires current confirmed coverage for the BCM/IPC PATS; online Ford security access, FDRS or dealer-level authorisation may apply.",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
-          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
@@ -461,62 +413,18 @@
         "programming_route": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
         "fdrs_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
-        "transponder_family": "Build-dependent — identify the original transponder before key generation"
+        "transponder_family": "Build-dependent — identify the original transponder before key generation",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
         "programming_route": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
-        "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+        "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "New Ford generation related to Puma architecture. Verify keyed UK availability and FDRS requirements by operation. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
@@ -531,10 +439,15 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     },
     "tourneo_courier_2023_present_passive": {
@@ -558,20 +471,15 @@
         "key_type": "Passive key with emergency blade",
         "smart_key": true,
         "notes": "Verify online/FDRS requirements by exact operation and build. EV and ICE only split where key/security workflow differs.",
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
         ],
         "programming": {
-          "add_key": "Use current supported coverage for the KVM/BCM. Online security authorisation/FDRS may be required on this generation.",
-          "all_keys_lost": "AKL requires current confirmed coverage for the KVM/BCM; online Ford security access, FDRS or dealer-level authorisation may apply.",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
           "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
           "data_status": "uk_baseline_guidance_not_personally_verified",
@@ -582,7 +490,13 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
-        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
+        ]
       },
       "verification": {
         "status": "verification_required",
@@ -600,7 +514,8 @@
           "battery_type",
           "frequency_mhz",
           "transponder_type"
-        ]
+        ],
+        "modern_tool_claims_quarantined": true
       },
       "key_information": {
         "key_type": "Passive key with emergency blade",
@@ -619,14 +534,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Use current supported coverage for the KVM/BCM. Online security authorisation/FDRS may be required on this generation.",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
-          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "AKL requires current confirmed coverage for the KVM/BCM; online Ford security access, FDRS or dealer-level authorisation may apply.",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
-          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+          "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
@@ -636,62 +559,18 @@
         "programming_route": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
         "fdrs_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
-        "transponder_family": "Build-dependent — identify the original transponder before key generation"
+        "transponder_family": "Build-dependent — identify the original transponder before key generation",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
         "programming_route": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
-        "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+        "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Verify online/FDRS requirements by exact operation and build. EV and ICE only split where key/security workflow differs. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
@@ -705,10 +584,15 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     }
   },

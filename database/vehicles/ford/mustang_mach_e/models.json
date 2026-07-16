@@ -32,20 +32,15 @@
         "key_type": "Passive key with connected/phone-as-key features",
         "smart_key": true,
         "notes": "EV-specific connected security. Verify physical key provision, Phone As A Key, online/FDRS and account requirements by build and operation.",
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
         ],
         "programming": {
-          "add_key": "Use the supported Ford KVM/BCM OBD immobiliser menu. Platform security access and an internet connection may be tool-dependent.",
-          "all_keys_lost": "Use the supported KVM/BCM AKL route by OBD where covered. Later platforms may need online calculation, server access or a platform-specific cable.",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
           "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
           "data_status": "uk_baseline_guidance_not_personally_verified",
@@ -56,7 +51,13 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
-        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
+        ]
       },
       "verification": {
         "status": "verification_required",
@@ -74,7 +75,8 @@
           "battery_type",
           "frequency_mhz",
           "transponder_type"
-        ]
+        ],
+        "modern_tool_claims_quarantined": true
       },
       "key_information": {
         "key_type": "Passive key with connected/phone-as-key features",
@@ -93,14 +95,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Use the supported Ford KVM/BCM OBD immobiliser menu. Platform security access and an internet connection may be tool-dependent.",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
-          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Use the supported KVM/BCM AKL route by OBD where covered. Later platforms may need online calculation, server access or a platform-specific cable.",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
-          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
         "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
@@ -110,62 +120,18 @@
         "programming_route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
         "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
         "fdrs_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
-        "transponder_family": "Build-dependent — identify the original transponder before key generation"
+        "transponder_family": "Build-dependent — identify the original transponder before key generation",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
         "programming_route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
-        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
+        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "EV-specific connected security. Verify physical key provision, Phone As A Key, online/FDRS and account requirements by build and operation. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
@@ -179,10 +145,15 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     },
     "mustang_mach_e_2020_present_passive": {
@@ -214,17 +185,10 @@
           "LJ8T-15K601-BC"
         ],
         "aftermarket_references": [],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "xtool_x100_pad2",
-          "obdstar_g3",
-          "lonsdor_k518_pro",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "programming": {
-          "add_key": "Yes — OBD",
-          "all_keys_lost": "Yes — exact coverage + online/security access",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD + online/FDRS/security access",
           "online_requirement": "Yes / operation dependent"
         },
@@ -233,8 +197,16 @@
         "notes": "Electric vehicle diagnostic setup. Program via high-end diagnostic tools or FDRS.",
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
+        ],
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "lonsdor_k518_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus",
+          "xtool_x100_pad2"
         ]
       },
       "verification": {
@@ -246,7 +218,8 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "modern_tool_claims_quarantined": true
       },
       "tools": {
         "Connection / cable": "Ford security access/bypass as required by build",
@@ -257,68 +230,10 @@
         "programming_route": "OBD + online/FDRS/security access",
         "online_requirement": "Yes / operation dependent",
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xtool_x100_pad2",
-            "name": "Xtool X100 Pad 2",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "lonsdor_k518_pro",
-            "name": "Lonsdor K518 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "xtool_x100_pad2",
-          "obdstar_g3",
-          "lonsdor_k518_pro",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
+        "job_acceptance": "verification_required"
       },
       "key_information": {
         "key_type": "Smart Proximity Key",
@@ -337,16 +252,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Yes — OBD",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD + online/FDRS/security access",
           "online_requirement": "Yes / operation dependent",
-          "connection_or_adapter": "Ford security access/bypass as required by build"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Yes — exact coverage + online/security access",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "OBD + online/FDRS/security access",
           "online_requirement": "Yes / operation dependent",
-          "connection_or_adapter": "Ford security access/bypass as required by build"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "OBD + online/FDRS/security access",
         "online_requirement": "Yes / operation dependent"
@@ -356,7 +277,9 @@
         "generation": "NXP HITAG AES 128-Bit",
         "transponder_family": "NXP HITAG AES 128-Bit",
         "programming_route": "OBD + online/FDRS/security access",
-        "online_requirement": "Yes / operation dependent"
+        "online_requirement": "Yes / operation dependent",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Electric vehicle diagnostic setup. Program via high-end diagnostic tools or FDRS.",
@@ -365,10 +288,15 @@
         ]
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     }
   },

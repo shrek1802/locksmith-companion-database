@@ -1349,12 +1349,7 @@
         "blade_id": "hu101",
         "key_type": "3-button passive key with emergency blade",
         "smart_key": true,
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "notes": "Transpondery lists Mondeo 2014+ as Hitag Pro. Silca lists CD391 2014-2020 and 2017-2022 with HU101 and 433 MHz. Tool and FDRS requirements remain to be mapped separately.",
         "button_count": "3 Buttons",
         "battery_type": "CR2032 (confirm physical key)",
@@ -1371,8 +1366,8 @@
           "Transit Courier HU101 433 MHz Hitag Pro passive-key family"
         ],
         "programming": {
-          "add_key": "Confirm",
-          "all_keys_lost": "Confirm exact build/tool",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Confirm exact tool route",
           "online_requirement": "Normally no"
         },
@@ -1380,8 +1375,14 @@
         "emergency_blade": "HU101",
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
+        ],
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
         ]
       },
       "verification": {
@@ -1397,7 +1398,8 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "modern_tool_claims_quarantined": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -1408,56 +1410,10 @@
         "programming_route": "Confirm exact tool route",
         "online_requirement": "Normally no",
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
+        "job_acceptance": "verification_required"
       },
       "key_information": {
         "key_type": "3-button passive key with emergency blade",
@@ -1484,16 +1440,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Confirm",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Confirm exact tool route",
           "online_requirement": "Normally no",
-          "connection_or_adapter": "Standard OBD; battery support recommended"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Confirm exact build/tool",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "Confirm exact tool route",
           "online_requirement": "Normally no",
-          "connection_or_adapter": "Standard OBD; battery support recommended"
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "Confirm exact tool route",
         "online_requirement": "Normally no"
@@ -1503,7 +1465,9 @@
         "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "programming_route": "Confirm exact tool route",
-        "online_requirement": "Normally no"
+        "online_requirement": "Normally no",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Transpondery lists Mondeo 2014+ as Hitag Pro. Silca lists CD391 2014-2020 and 2017-2022 with HU101 and 433 MHz. Tool and FDRS requirements remain to be mapped separately.",
@@ -1512,10 +1476,15 @@
         ]
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     },
     "mondeo_2000_2007_keyed": {

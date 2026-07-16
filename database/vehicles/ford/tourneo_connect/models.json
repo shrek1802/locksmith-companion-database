@@ -955,23 +955,24 @@
         "aftermarket_references": [
           "Volkswagen Caddy V-derived Ford Tourneo Connect key family"
         ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro"
-        ],
+        "tool_ids": [],
         "programming": {
-          "add_key": "Do not use Ford PATS route; requires exact VAG/MQB tool coverage",
-          "all_keys_lost": "Advanced MQB workflow; online/component-security restrictions may apply",
+          "add_key": "Verification required — operation-specific tool evidence missing",
+          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "VAG/MQB diagnostic or authorised online workflow",
           "online_requirement": "Operation dependent; verify exact build and tool"
         },
         "notes": "Shared Volkswagen platform. Never apply earlier Tourneo Connect PATS procedures. Exact blade variant, frequency, part numbers and tool coverage require VAG-specific confirmation.",
         "generation_tool_ids": [
           "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
+          "keydiy_kd_x4",
+          "xhorse_key_tool_max_pro"
+        ],
+        "unverified_programmer_candidates": [
+          "autel_im508s_xp400_pro",
+          "obdstar_g3",
+          "smart_pro",
+          "xhorse_key_tool_plus"
         ]
       },
       "verification": {
@@ -988,7 +989,8 @@
           "oem_part_numbers",
           "button_count",
           "frequency_mhz"
-        ]
+        ],
+        "modern_tool_claims_quarantined": true
       },
       "tools": {
         "Programming route": "VAG/MQB diagnostic or authorised online workflow",
@@ -997,56 +999,10 @@
         "programming_route": "VAG/MQB diagnostic or authorised online workflow",
         "online_requirement": "Operation dependent; verify exact build and tool",
         "battery_support": "Recommended for immobiliser programming",
-        "supported_tools": [
-          {
-            "id": "autel_im508s_xp400_pro",
-            "name": "Autel IM508S + XP400 Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "xhorse_key_tool_plus",
-            "name": "Xhorse Key Tool Plus",
-            "status": "listed_supported"
-          },
-          {
-            "id": "obdstar_g3",
-            "name": "OBDSTAR G3",
-            "status": "listed_supported"
-          },
-          {
-            "id": "smart_pro",
-            "name": "Advanced Diagnostics Smart Pro",
-            "status": "listed_supported"
-          },
-          {
-            "id": "autel_km100x",
-            "name": "Autel KM100 / KM100X",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "xhorse_key_tool_max_pro",
-            "name": "Xhorse Key Tool Max Pro",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          },
-          {
-            "id": "keydiy_kd_x4",
-            "name": "KEYDIY KD-X4",
-            "role": "remote_or_transponder_generation",
-            "status": "generation_only_not_akl_claim"
-          }
-        ],
-        "tool_ids": [
-          "autel_im508s_xp400_pro",
-          "xhorse_key_tool_plus",
-          "obdstar_g3",
-          "smart_pro",
-          "autel_km100x",
-          "xhorse_key_tool_max_pro",
-          "keydiy_kd_x4"
-        ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "supported_tools": [],
+        "tool_ids": [],
+        "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
+        "job_acceptance": "verification_required"
       },
       "key_information": {
         "key_type": "Keyed or passive configuration must be confirmed",
@@ -1067,14 +1023,22 @@
       },
       "operations": {
         "add_key": {
-          "method": "Do not use Ford PATS route; requires exact VAG/MQB tool coverage",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "VAG/MQB diagnostic or authorised online workflow",
-          "online_requirement": "Operation dependent; verify exact build and tool"
+          "online_requirement": "Operation dependent; verify exact build and tool",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "all_keys_lost": {
-          "method": "Advanced MQB workflow; online/component-security restrictions may apply",
+          "overall_status": "verification_required",
+          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
+          "method_text": "Exact-build and operation-specific verification required",
           "programming_method": "VAG/MQB diagnostic or authorised online workflow",
-          "online_requirement": "Operation dependent; verify exact build and tool"
+          "online_requirement": "Operation dependent; verify exact build and tool",
+          "tools": {},
+          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
         },
         "programming_route": "VAG/MQB diagnostic or authorised online workflow",
         "online_requirement": "Operation dependent; verify exact build and tool"
@@ -1084,7 +1048,9 @@
         "generation": "MQB AES / exact implementation verification required",
         "transponder_family": "Megamos AES family — exact application verification required",
         "programming_route": "VAG/MQB diagnostic or authorised online workflow",
-        "online_requirement": "Operation dependent; verify exact build and tool"
+        "online_requirement": "Operation dependent; verify exact build and tool",
+        "security_access": "Exact-build verification required",
+        "job_acceptance": "verification_required"
       },
       "notes": {
         "job_notes": "Shared Volkswagen platform. Never apply earlier Tourneo Connect PATS procedures. Exact blade variant, frequency, part numbers and tool coverage require VAG-specific confirmation. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
@@ -1095,10 +1061,15 @@
         ]
       },
       "record_completion": {
-        "status": "complete_for_app",
-        "missing_fields": [],
+        "status": "needs_targeted_verification",
+        "missing_fields": [
+          "operations.add_key.tools",
+          "operations.all_keys_lost.tools",
+          "security_access"
+        ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1"
+        "pipeline": "rebuild_all_ford_records_v1",
+        "safety_quarantined_at": "2026-07-16"
       }
     }
   },
