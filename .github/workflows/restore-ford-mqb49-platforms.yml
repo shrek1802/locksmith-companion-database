@@ -1,0 +1,68 @@
+name: Restore Ford MQB49 platforms
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/restore_ford_mqb49_platforms.py'
+      - '.github/workflows/restore-ford-mqb49-platforms.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Restore MQB49 records
+        run: python tools/restore_ford_mqb49_platforms.py
+
+      - name: Validate restored records
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          targets = [
+              ('database/vehicles/ford/tourneo_connect/models.json', 'tourneo_connect_2022_present_mqb'),
+              ('database/vehicles/ford/transit_connect/models.json', 'transit_connect_2024_present_mqb'),
+          ]
+          for filename, record_id in targets:
+              payload = json.loads(Path(filename).read_text(encoding='utf-8'))
+              record = payload['items'][record_id]
+              assert record['vehicle_information']['platform'] == 'Volkswagen MQB49'
+              assert 'MQB49 5C / 5D' in record['vehicle_information']['immobiliser_generation']
+              assert record['security']['ford_pats_incode_outcode'] == 'Not applicable'
+              for operation in ('read_original_key', 'dealer_key_generation', 'add_key', 'all_keys_lost'):
+                  item = record['operations'][operation]
+                  assert item['overall_status'] == 'verification_required'
+                  assert item['tools'] == {}
+              assert record['tools']['tool_ids'] == []
+              assert record['record_completion']['status'] == 'needs_targeted_verification'
+          print('MQB49 restore validation passed')
+          PY
+
+      - name: Commit restored MQB49 data
+        run: |
+          if git diff --quiet; then
+            echo 'No changes required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford/tourneo_connect/models.json \
+                  database/vehicles/ford/transit_connect/models.json \
+                  reports/ford_mqb49_restore_report.json
+          git commit -m 'ford: restore MQB49 5C/5D platform records'
+          git push
