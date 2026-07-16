@@ -47,7 +47,16 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "programming": {
+          "add_key": "Program through the BCM/IPC PATS using a supported Ford immobiliser OBD menu. Keep an existing key available when adding.",
+          "all_keys_lost": "AKL is normally completed through the BCM/IPC PATS by OBD. Timed security access or an erase-and-program sequence may apply.",
+          "route": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+          "online_requirement": "Normally no for supported aftermarket-tool programming.",
+          "data_status": "uk_baseline_guidance_not_personally_verified",
+          "last_baseline_update": "2026-07-16",
+          "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
+        }
       },
       "verification": {
         "status": "key_data_verified",
@@ -73,13 +82,25 @@
         "aftermarket_references": []
       },
       "operations": {
-        "add_key": {},
-        "all_keys_lost": {}
+        "add_key": {
+          "method": "Program through the BCM/IPC PATS using a supported Ford immobiliser OBD menu. Keep an existing key available when adding.",
+          "programming_method": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+          "online_requirement": "Normally no for supported aftermarket-tool programming."
+        },
+        "all_keys_lost": {
+          "method": "AKL is normally completed through the BCM/IPC PATS by OBD. Timed security access or an erase-and-program sequence may apply.",
+          "programming_method": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+          "online_requirement": "Normally no for supported aftermarket-tool programming."
+        },
+        "programming_route": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+        "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "security": {
         "family": "Ford PATS Texas Crypto 4D",
         "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)"
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+        "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -144,30 +165,25 @@
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
         ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "programming_route": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+        "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "notes": {
         "job_notes": "Blade, transponder and frequency verified against Transpondery and the 2025 Silca catalogue. Tool compatibility still pending.",
         "data_gaps": [
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
-        ]
+          "oem_part_numbers"
+        ],
+        "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -399,7 +415,16 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "programming": {
+          "add_key": "Program through the BCM/IPC PATS using a supported Ford immobiliser OBD menu. Keep an existing key available when adding.",
+          "all_keys_lost": "AKL is normally completed through the BCM/IPC PATS by OBD. Timed security access or an erase-and-program sequence may apply.",
+          "route": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+          "online_requirement": "Normally no for supported aftermarket-tool programming.",
+          "data_status": "uk_baseline_guidance_not_personally_verified",
+          "last_baseline_update": "2026-07-16",
+          "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
+        }
       },
       "verification": {
         "status": "key_data_verified",
@@ -425,13 +450,25 @@
         "aftermarket_references": []
       },
       "operations": {
-        "add_key": {},
-        "all_keys_lost": {}
+        "add_key": {
+          "method": "Program through the BCM/IPC PATS using a supported Ford immobiliser OBD menu. Keep an existing key available when adding.",
+          "programming_method": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+          "online_requirement": "Normally no for supported aftermarket-tool programming."
+        },
+        "all_keys_lost": {
+          "method": "AKL is normally completed through the BCM/IPC PATS by OBD. Timed security access or an erase-and-program sequence may apply.",
+          "programming_method": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+          "online_requirement": "Normally no for supported aftermarket-tool programming."
+        },
+        "programming_route": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+        "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "security": {
         "family": "Ford PATS DST80",
         "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)"
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+        "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -496,30 +533,25 @@
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
         ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "programming_route": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
+        "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "notes": {
         "job_notes": "Verified within the 2012-2016 DST80 security range. Tool compatibility still pending.",
         "data_gaps": [
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
-        ]
+          "oem_part_numbers"
+        ],
+        "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -561,7 +593,16 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "programming": {
+          "add_key": "Program through the KVM/BCM using a supported Ford immobiliser OBD menu. Keep an existing key available when adding.",
+          "all_keys_lost": "AKL is normally completed through the KVM/BCM by OBD. Timed security access or an erase-and-program sequence may apply.",
+          "route": "Standard OBD Ford PATS programming through the KVM/BCM; use regulated battery support.",
+          "online_requirement": "Normally no for supported aftermarket-tool programming.",
+          "data_status": "uk_baseline_guidance_not_personally_verified",
+          "last_baseline_update": "2026-07-16",
+          "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
+        }
       },
       "verification": {
         "status": "key_data_verified",
@@ -587,13 +628,25 @@
         "aftermarket_references": []
       },
       "operations": {
-        "add_key": {},
-        "all_keys_lost": {}
+        "add_key": {
+          "method": "Program through the KVM/BCM using a supported Ford immobiliser OBD menu. Keep an existing key available when adding.",
+          "programming_method": "Standard OBD Ford PATS programming through the KVM/BCM; use regulated battery support.",
+          "online_requirement": "Normally no for supported aftermarket-tool programming."
+        },
+        "all_keys_lost": {
+          "method": "AKL is normally completed through the KVM/BCM by OBD. Timed security access or an erase-and-program sequence may apply.",
+          "programming_method": "Standard OBD Ford PATS programming through the KVM/BCM; use regulated battery support.",
+          "online_requirement": "Normally no for supported aftermarket-tool programming."
+        },
+        "programming_route": "Standard OBD Ford PATS programming through the KVM/BCM; use regulated battery support.",
+        "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "security": {
         "family": "Ford PATS DST80",
         "generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)"
+        "transponder_family": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "programming_route": "Standard OBD Ford PATS programming through the KVM/BCM; use regulated battery support.",
+        "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -658,30 +711,25 @@
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
         ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "programming_route": "Standard OBD Ford PATS programming through the KVM/BCM; use regulated battery support.",
+        "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "notes": {
         "job_notes": "Verified within the 2012-2016 DST80 security range. Tool compatibility still pending.",
         "data_gaps": [
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
-        ]
+          "oem_part_numbers"
+        ],
+        "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -723,7 +771,16 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "programming": {
+          "add_key": "Use the supported Ford BCM/IPC PATS OBD immobiliser menu. Platform security access and an internet connection may be tool-dependent.",
+          "all_keys_lost": "Use the supported BCM/IPC PATS AKL route by OBD where covered. Later platforms may need online calculation, server access or a platform-specific cable.",
+          "route": "OBD programming through the BCM/IPC PATS; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
+          "data_status": "uk_baseline_guidance_not_personally_verified",
+          "last_baseline_update": "2026-07-16",
+          "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
+        }
       },
       "verification": {
         "status": "key_data_verified",
@@ -749,13 +806,26 @@
         "aftermarket_references": []
       },
       "operations": {
-        "add_key": {},
-        "all_keys_lost": {}
+        "add_key": {
+          "method": "Use the supported Ford BCM/IPC PATS OBD immobiliser menu. Platform security access and an internet connection may be tool-dependent.",
+          "programming_method": "OBD programming through the BCM/IPC PATS; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
+        },
+        "all_keys_lost": {
+          "method": "Use the supported BCM/IPC PATS AKL route by OBD where covered. Later platforms may need online calculation, server access or a platform-specific cable.",
+          "programming_method": "OBD programming through the BCM/IPC PATS; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
+        },
+        "programming_route": "OBD programming through the BCM/IPC PATS; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "security": {
         "family": "Ford PATS Hitag Pro",
         "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)"
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD programming through the BCM/IPC PATS; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
+        "fdrs_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -820,30 +890,25 @@
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
         ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "programming_route": "OBD programming through the BCM/IPC PATS; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "notes": {
         "job_notes": "Blade, transponder and 433 MHz frequency verified against Transpondery and Silca. Tool compatibility still pending.",
         "data_gaps": [
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
-        ]
+          "oem_part_numbers"
+        ],
+        "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
@@ -885,7 +950,16 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "programming": {
+          "add_key": "Use the supported Ford KVM/BCM OBD immobiliser menu. Platform security access and an internet connection may be tool-dependent.",
+          "all_keys_lost": "Use the supported KVM/BCM AKL route by OBD where covered. Later platforms may need online calculation, server access or a platform-specific cable.",
+          "route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
+          "data_status": "uk_baseline_guidance_not_personally_verified",
+          "last_baseline_update": "2026-07-16",
+          "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
+        }
       },
       "verification": {
         "status": "key_data_verified",
@@ -911,13 +985,26 @@
         "aftermarket_references": []
       },
       "operations": {
-        "add_key": {},
-        "all_keys_lost": {}
+        "add_key": {
+          "method": "Use the supported Ford KVM/BCM OBD immobiliser menu. Platform security access and an internet connection may be tool-dependent.",
+          "programming_method": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
+        },
+        "all_keys_lost": {
+          "method": "Use the supported KVM/BCM AKL route by OBD where covered. Later platforms may need online calculation, server access or a platform-specific cable.",
+          "programming_method": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
+        },
+        "programming_route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "security": {
         "family": "Ford PATS Hitag Pro",
         "generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)"
+        "transponder_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "programming_route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
+        "fdrs_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -982,30 +1069,25 @@
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
         ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "programming_route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "notes": {
         "job_notes": "Blade, transponder and 433 MHz frequency verified against Transpondery and Silca. Tool compatibility still pending.",
         "data_gaps": [
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
-        ]
+          "oem_part_numbers"
+        ],
+        "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"

@@ -42,7 +42,16 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "programming": {
+          "add_key": "Use the supported Ford KVM/BCM OBD immobiliser menu. Platform security access and an internet connection may be tool-dependent.",
+          "all_keys_lost": "Use the supported KVM/BCM AKL route by OBD where covered. Later platforms may need online calculation, server access or a platform-specific cable.",
+          "route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
+          "data_status": "uk_baseline_guidance_not_personally_verified",
+          "last_baseline_update": "2026-07-16",
+          "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
+        }
       },
       "verification": {
         "status": "verification_required",
@@ -67,11 +76,24 @@
         "aftermarket_references": []
       },
       "operations": {
-        "add_key": {},
-        "all_keys_lost": {}
+        "add_key": {
+          "method": "Use the supported Ford KVM/BCM OBD immobiliser menu. Platform security access and an internet connection may be tool-dependent.",
+          "programming_method": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
+        },
+        "all_keys_lost": {
+          "method": "Use the supported KVM/BCM AKL route by OBD where covered. Later platforms may need online calculation, server access or a platform-specific cable.",
+          "programming_method": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+          "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
+        },
+        "programming_route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "security": {
-        "family": "Ford connected passive-entry security architecture"
+        "family": "Ford connected passive-entry security architecture",
+        "programming_route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS.",
+        "fdrs_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -124,7 +146,9 @@
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
         ],
-        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support."
+        "Important": "Programming coverage varies by exact year, ignition type and current tool software. Generation tools do not automatically mean Add Key or AKL support.",
+        "programming_route": "OBD programming through the KVM/BCM; confirm platform, CAN/CAN-FD connection and current tool coverage before starting.",
+        "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "notes": {
         "job_notes": "EV-specific connected security. Verify physical key provision, Phone As A Key, online/FDRS and account requirements by build and operation.",
@@ -133,12 +157,9 @@
           "frequency_mhz",
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
-        ]
+          "oem_part_numbers"
+        ],
+        "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
         "status": "needs_targeted_verification",
@@ -147,11 +168,7 @@
           "frequency_mhz",
           "battery_type",
           "button_count",
-          "oem_part_numbers",
-          "programming.add_key",
-          "programming.all_keys_lost",
-          "programming.route",
-          "programming.online_requirement"
+          "oem_part_numbers"
         ],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
