@@ -36,7 +36,10 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote before supply",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
         "aftermarket_references": [
           "Ford C-Max/Grand C-Max HU101 433 MHz ID63 80-bit family"
         ],
@@ -59,7 +62,8 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "Same as ignition blade"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -67,10 +71,12 @@
         "sources": [
           "transpondery_cmax_family",
           "silca_cmax_cb7",
-          "keystation_cmax_family"
+          "keystation_cmax_family",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -150,9 +156,12 @@
         "frequency_mhz": "433.92",
         "battery": "CR2032 — confirm against physical remote before supply",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "Same as ignition blade",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
         "aftermarket_references": [
           "Ford C-Max/Grand C-Max HU101 433 MHz ID63 80-bit family"
         ]
@@ -185,10 +194,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -218,7 +225,10 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote before supply",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "1713499",
+          "1756409"
+        ],
         "aftermarket_references": [
           "Ford B-Max/C-Max/Fiesta 433 MHz ID63 80-bit HU101 passive-key family"
         ],
@@ -241,7 +251,8 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "HU101 (Laser)"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -249,10 +260,12 @@
         "sources": [
           "transpondery_cmax_family",
           "silca_cmax_cb7",
-          "keystation_cmax_family"
+          "keystation_cmax_family",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -332,9 +345,12 @@
         "frequency_mhz": "433.92",
         "battery": "CR2032 — confirm against physical remote before supply",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "HU101 (Laser)",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "1713499",
+          "1756409"
+        ],
         "aftermarket_references": [
           "Ford B-Max/C-Max/Fiesta 433 MHz ID63 80-bit HU101 passive-key family"
         ]
@@ -367,10 +383,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -400,7 +414,11 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote before supply",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "GK2T-15K601-AA",
+          "GK2T-15K601-AB",
+          "A2C94379403"
+        ],
         "aftermarket_references": [
           "Ford C-Max/Focus/Grand C-Max 433 MHz ID49 HU101 family"
         ],
@@ -431,10 +449,12 @@
         "sources": [
           "transpondery_cmax_family",
           "silca_cmax_ceu",
-          "keystation_grand_cmax_id49"
+          "keystation_grand_cmax_id49",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -516,7 +536,11 @@
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "GK2T-15K601-AA",
+          "GK2T-15K601-AB",
+          "A2C94379403"
+        ],
         "aftermarket_references": [
           "Ford C-Max/Focus/Grand C-Max 433 MHz ID49 HU101 family"
         ]
@@ -549,10 +573,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

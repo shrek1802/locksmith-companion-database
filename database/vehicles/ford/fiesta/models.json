@@ -568,7 +568,10 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "1713499",
+          "1756409"
+        ],
         "aftermarket_references": [
           "Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"
         ],
@@ -590,7 +593,8 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "HU101 (Laser)"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -598,10 +602,12 @@
         "sources": [
           "transpondery_fiesta",
           "keystation_fiesta",
-          "silca_fiesta"
+          "silca_fiesta",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -675,9 +681,12 @@
         "frequency_mhz": "433.92",
         "battery": "CR2032 — confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "HU101 (Laser)",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "1713499",
+          "1756409"
+        ],
         "aftermarket_references": [
           "Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"
         ]
@@ -712,10 +721,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -745,7 +752,10 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "1756409",
+          "2026900"
+        ],
         "aftermarket_references": [
           "Fiesta HU101 433 MHz DST80 / ID63-6F flip-key family"
         ],
@@ -775,10 +785,12 @@
         "sources": [
           "transpondery_fiesta",
           "silca_fiesta",
-          "keystation_fiesta"
+          "keystation_fiesta",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -854,7 +866,10 @@
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "1756409",
+          "2026900"
+        ],
         "aftermarket_references": [
           "Fiesta HU101 433 MHz DST80 / ID63-6F flip-key family"
         ]
@@ -889,10 +904,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -922,7 +935,10 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "1713499",
+          "1756409"
+        ],
         "aftermarket_references": [
           "Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"
         ],
@@ -944,7 +960,8 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "HU101 (Laser)"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -952,10 +969,12 @@
         "sources": [
           "transpondery_fiesta",
           "silca_fiesta",
-          "keystation_fiesta"
+          "keystation_fiesta",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -1029,9 +1048,12 @@
         "frequency_mhz": "433.92",
         "battery": "CR2032 — confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "HU101 (Laser)",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "1713499",
+          "1756409"
+        ],
         "aftermarket_references": [
           "Ford B-Max / C-Max / Fiesta 3-button keyless 433 MHz ID63 80-bit HU101 family"
         ]
@@ -1066,10 +1088,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

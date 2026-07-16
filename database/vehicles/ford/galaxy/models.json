@@ -558,18 +558,41 @@
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
         },
-        "button_count": 3
+        "button_count": 3,
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
+        "battery_type": "Confirm against physical remote",
+        "emergency_blade": "Same as ignition blade",
+        "aftermarket_references": [
+          "Ford C-Max/Grand C-Max HU101 433 MHz ID63 80-bit family",
+          "Silca HU101AR24 Ranger TKE application",
+          "Ranger HU101 433 MHz DST80 family",
+          "Silca HU101AR24 Tourneo Connect CHC 2013 433 MHz family",
+          "Tourneo Connect HU101 DST80 family",
+          "Tourneo Custom HU101 433 MHz DST80 family",
+          "Transit Custom V362/V363 shared key family",
+          "Silca HU101BR38 Transit 2013-2016 application",
+          "Transit HU101 433 MHz DST80 family",
+          "Transit Courier HU101 433 MHz DST80 family",
+          "Fiesta/B-Max-derived Ford small-van key family",
+          "Transit Custom V362/V363 HU101 433 MHz DST80 family",
+          "Silca HU101BR38 application"
+        ]
       },
       "verification": {
         "status": "key_data_verified",
         "last_verified": "2026-07-14",
         "sources": [
           "transpondery_galaxy",
-          "silca_galaxy"
+          "silca_galaxy",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_enrichment": "derived_from_existing_record_data"
+        "hardware_enrichment": "derived_from_existing_record_data",
+        "hardware_consensus_applied": true
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -577,12 +600,29 @@
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
-        "battery": null,
+        "battery": "Confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "Same as ignition blade",
         "smart_key": false,
-        "oem_part_numbers": [],
-        "aftermarket_references": []
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
+        "aftermarket_references": [
+          "Ford C-Max/Grand C-Max HU101 433 MHz ID63 80-bit family",
+          "Silca HU101AR24 Ranger TKE application",
+          "Ranger HU101 433 MHz DST80 family",
+          "Silca HU101AR24 Tourneo Connect CHC 2013 433 MHz family",
+          "Tourneo Connect HU101 DST80 family",
+          "Tourneo Custom HU101 433 MHz DST80 family",
+          "Transit Custom V362/V363 shared key family",
+          "Silca HU101BR38 Transit 2013-2016 application",
+          "Transit HU101 433 MHz DST80 family",
+          "Transit Courier HU101 433 MHz DST80 family",
+          "Fiesta/B-Max-derived Ford small-van key family",
+          "Transit Custom V362/V363 HU101 433 MHz DST80 family",
+          "Silca HU101BR38 application"
+        ]
       },
       "operations": {
         "add_key": {
@@ -669,11 +709,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "battery_type",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -721,17 +758,26 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "oem_part_numbers": [
+          "1698112",
+          "1713499"
+        ],
+        "battery_type": "CR2032 (confirm physical key)",
+        "button_count": "3 Buttons",
+        "emergency_blade": "HU101"
       },
       "verification": {
         "status": "key_data_verified",
         "last_verified": "2026-07-14",
         "sources": [
           "transpondery_galaxy",
-          "silca_galaxy"
+          "silca_galaxy",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "key_information": {
         "key_type": "Passive key with emergency blade",
@@ -739,11 +785,14 @@
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
-        "battery": null,
-        "buttons": null,
-        "emergency_blade": null,
+        "battery": "CR2032 (confirm physical key)",
+        "buttons": "3 Buttons",
+        "emergency_blade": "HU101",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "1698112",
+          "1713499"
+        ],
         "aftermarket_references": []
       },
       "operations": {
@@ -832,12 +881,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "battery_type",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -888,18 +933,41 @@
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
         },
-        "button_count": 3
+        "button_count": 3,
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
+        "battery_type": "Confirm against physical remote",
+        "emergency_blade": "Same as ignition blade",
+        "aftermarket_references": [
+          "Ford C-Max/Grand C-Max HU101 433 MHz ID63 80-bit family",
+          "Silca HU101AR24 Ranger TKE application",
+          "Ranger HU101 433 MHz DST80 family",
+          "Silca HU101AR24 Tourneo Connect CHC 2013 433 MHz family",
+          "Tourneo Connect HU101 DST80 family",
+          "Tourneo Custom HU101 433 MHz DST80 family",
+          "Transit Custom V362/V363 shared key family",
+          "Silca HU101BR38 Transit 2013-2016 application",
+          "Transit HU101 433 MHz DST80 family",
+          "Transit Courier HU101 433 MHz DST80 family",
+          "Fiesta/B-Max-derived Ford small-van key family",
+          "Transit Custom V362/V363 HU101 433 MHz DST80 family",
+          "Silca HU101BR38 application"
+        ]
       },
       "verification": {
         "status": "key_data_verified",
         "last_verified": "2026-07-14",
         "sources": [
           "transpondery_galaxy",
-          "silca_galaxy"
+          "silca_galaxy",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_enrichment": "derived_from_existing_record_data"
+        "hardware_enrichment": "derived_from_existing_record_data",
+        "hardware_consensus_applied": true
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -907,12 +975,29 @@
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
-        "battery": null,
+        "battery": "Confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "Same as ignition blade",
         "smart_key": false,
-        "oem_part_numbers": [],
-        "aftermarket_references": []
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
+        "aftermarket_references": [
+          "Ford C-Max/Grand C-Max HU101 433 MHz ID63 80-bit family",
+          "Silca HU101AR24 Ranger TKE application",
+          "Ranger HU101 433 MHz DST80 family",
+          "Silca HU101AR24 Tourneo Connect CHC 2013 433 MHz family",
+          "Tourneo Connect HU101 DST80 family",
+          "Tourneo Custom HU101 433 MHz DST80 family",
+          "Transit Custom V362/V363 shared key family",
+          "Silca HU101BR38 Transit 2013-2016 application",
+          "Transit HU101 433 MHz DST80 family",
+          "Transit Courier HU101 433 MHz DST80 family",
+          "Fiesta/B-Max-derived Ford small-van key family",
+          "Transit Custom V362/V363 HU101 433 MHz DST80 family",
+          "Silca HU101BR38 application"
+        ]
       },
       "operations": {
         "add_key": {
@@ -1011,11 +1096,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "battery_type",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -1065,17 +1147,26 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "oem_part_numbers": [
+          "1698112",
+          "1713499"
+        ],
+        "battery_type": "CR2032 (confirm physical key)",
+        "button_count": "3 Buttons",
+        "emergency_blade": "HU101"
       },
       "verification": {
         "status": "key_data_verified",
         "last_verified": "2026-07-14",
         "sources": [
           "transpondery_galaxy",
-          "silca_galaxy"
+          "silca_galaxy",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "key_information": {
         "key_type": "Passive key with emergency blade",
@@ -1083,11 +1174,14 @@
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "433.92",
-        "battery": null,
-        "buttons": null,
-        "emergency_blade": null,
+        "battery": "CR2032 (confirm physical key)",
+        "buttons": "3 Buttons",
+        "emergency_blade": "HU101",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "1698112",
+          "1713499"
+        ],
         "aftermarket_references": []
       },
       "operations": {
@@ -1188,12 +1282,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "battery_type",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -1234,7 +1324,14 @@
           "1919602",
           "2230771"
         ],
-        "aftermarket_references": [],
+        "aftermarket_references": [
+          "Ford C-Max/Focus/Grand C-Max aftermarket 3-button keyless remote 433 MHz ID49 HU101",
+          "Silca HU101AP05 S550 433 MHz ID47 application",
+          "Mustang S550 HU101 433 MHz Hitag Pro passive-key family",
+          "Ford Puma 2019 HU101 433 MHz ID47 passive-key family",
+          "Tourneo Custom HU101 433 MHz Hitag Pro proximity-key family",
+          "Transit Courier HU101 433 MHz Hitag Pro passive-key family"
+        ],
         "programming": {
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
@@ -1257,10 +1354,12 @@
           "silca_galaxy",
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -1336,7 +1435,14 @@
           "1919602",
           "2230771"
         ],
-        "aftermarket_references": []
+        "aftermarket_references": [
+          "Ford C-Max/Focus/Grand C-Max aftermarket 3-button keyless remote 433 MHz ID49 HU101",
+          "Silca HU101AP05 S550 433 MHz ID47 application",
+          "Mustang S550 HU101 433 MHz Hitag Pro passive-key family",
+          "Ford Puma 2019 HU101 433 MHz ID47 passive-key family",
+          "Tourneo Custom HU101 433 MHz Hitag Pro proximity-key family",
+          "Transit Courier HU101 433 MHz Hitag Pro passive-key family"
+        ]
       },
       "operations": {
         "add_key": {

@@ -427,7 +427,8 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "HU101 (Laser)"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -435,10 +436,12 @@
         "sources": [
           "transpondery_cmax",
           "keystation_cmax_id63",
-          "ford_master_workbook_cmax"
+          "ford_master_workbook_cmax",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -518,7 +521,7 @@
         "frequency_mhz": "433.92",
         "battery": "CR2032 — confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "HU101 (Laser)",
         "smart_key": true,
         "oem_part_numbers": [
           "1713499"
@@ -611,7 +614,8 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "Same as ignition blade"
       },
       "verification": {
         "status": "locksmith_card_core_verified_from_master_workbook",
@@ -619,10 +623,12 @@
         "sources": [
           "transpondery_cmax",
           "keystation_cmax_id49",
-          "ford_master_workbook_cmax"
+          "ford_master_workbook_cmax",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -702,7 +708,7 @@
         "frequency_mhz": "433.92",
         "battery": "CR2032 — confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "Same as ignition blade",
         "smart_key": false,
         "oem_part_numbers": [
           "2027592"

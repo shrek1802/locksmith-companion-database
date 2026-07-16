@@ -1,0 +1,1113 @@
+{
+  "generated_at": "2026-07-16",
+  "records": 48,
+  "updates_applied": {
+    "emergency_blade": 50,
+    "oem_part_numbers": 50,
+    "battery_type": 26,
+    "aftermarket_references": 21,
+    "button_count": 17
+  },
+  "touched_records": 62,
+  "queue": [
+    {
+      "model_folder": "ecosport",
+      "record_id": "ecosport_2018_2021_keyed",
+      "vehicle": {
+        "model": "EcoSport",
+        "variant": "Keyed Ignition",
+        "generation": "UK second-generation facelift",
+        "year_from": 2018,
+        "year_to": 2021
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "blade": "HU101",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz"
+      ]
+    },
+    {
+      "model_folder": "ecosport",
+      "record_id": "ecosport_2018_2021_passive",
+      "vehicle": {
+        "model": "EcoSport",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "UK second-generation facelift",
+        "year_from": 2018,
+        "year_to": 2021
+      },
+      "known_signature": {
+        "key_type": "Passive key with emergency blade",
+        "transponder": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "blade": "HU101 emergency blade",
+        "frequency": "Verification required",
+        "smart_key": true
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz"
+      ]
+    },
+    {
+      "model_folder": "ecosport",
+      "record_id": "ecosport_2022_2023_keyed",
+      "vehicle": {
+        "model": "EcoSport",
+        "variant": "Keyed Ignition",
+        "generation": "Late UK production",
+        "year_from": 2022,
+        "year_to": 2023
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "Verification required",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "edge",
+      "record_id": "edge_2016_2021_keyed",
+      "vehicle": {
+        "model": "Edge",
+        "variant": "Keyed Ignition",
+        "generation": "UK second-generation family",
+        "year_from": 2016,
+        "year_to": 2021
+      },
+      "known_signature": {
+        "key_type": "Mechanical ignition configuration not established as a normal UK application",
+        "transponder": "Do not order until keyed ignition is physically confirmed",
+        "blade": "HU101 family",
+        "frequency": "433.92 if a genuine European remote-key variant is confirmed",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count"
+      ]
+    },
+    {
+      "model_folder": "explorer",
+      "record_id": "explorer_1997_2001_keyed",
+      "vehicle": {
+        "model": "Explorer",
+        "variant": "Keyed Ignition",
+        "generation": "Second-generation UK RHD model",
+        "year_from": 1997,
+        "year_to": 2001
+      },
+      "known_signature": {
+        "key_type": "Mechanical ignition key with separate or integrated remote depending build",
+        "transponder": "Texas fixed-code / early Ford transponder family — exact build confirmation required",
+        "blade": "North American Ford 8-cut family — exact profile confirmation required",
+        "frequency": "European/UK remote application must be confirmed from original remote",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count"
+      ]
+    },
+    {
+      "model_folder": "explorer",
+      "record_id": "explorer_2024_present_meb",
+      "vehicle": {
+        "model": "Explorer",
+        "variant": "Volkswagen MEB-derived EV / Passive Key",
+        "generation": "European electric Explorer / CX740",
+        "year_from": 2024,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Passive key with connected EV access features",
+        "transponder": "Megamos AES family or platform-specific passive credential — exact application verification required",
+        "blade": "Emergency access method and blade profile require exact vehicle/key confirmation",
+        "frequency": "Verification required",
+        "smart_key": true
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "frequency_mhz"
+      ]
+    },
+    {
+      "model_folder": "fiesta",
+      "record_id": "fiesta_1995_2001_keyed",
+      "vehicle": {
+        "model": "Fiesta",
+        "variant": "Keyed Ignition",
+        "generation": "Mk4 / Mk5 family",
+        "year_from": 1995,
+        "year_to": 2001
+      },
+      "known_signature": {
+        "key_type": "Mechanical ignition key / separate or integrated remote varies",
+        "transponder": "Texas 4C",
+        "blade": "FO21",
+        "frequency": "433.92 where factory remote fitted",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "button_count"
+      ]
+    },
+    {
+      "model_folder": "fiesta",
+      "record_id": "fiesta_2008_2012_keyed",
+      "vehicle": {
+        "model": "Fiesta",
+        "variant": "Remote Key / Mechanical Ignition",
+        "generation": "Mk7 early",
+        "year_from": 2008,
+        "year_to": 2012
+      },
+      "known_signature": {
+        "key_type": "3-button remote head or flip key with mechanical blade",
+        "transponder": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "blade": "HU101",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "fiesta",
+      "record_id": "fiesta_2017_2023_keyed",
+      "vehicle": {
+        "model": "Fiesta",
+        "variant": "Mk8 Remote Flip Key",
+        "generation": "Mk8 / CE1",
+        "year_from": 2017,
+        "year_to": 2023
+      },
+      "known_signature": {
+        "key_type": "3-button remote flip key",
+        "transponder": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "blade": "HU101",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "fiesta",
+      "record_id": "fiesta_2017_2023_passive",
+      "vehicle": {
+        "model": "Fiesta",
+        "variant": "Mk8 Passive Key / Push Button Start",
+        "generation": "Mk8 / CE1",
+        "year_from": 2017,
+        "year_to": 2023
+      },
+      "known_signature": {
+        "key_type": "3-button passive key with removable emergency blade",
+        "transponder": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "blade": "HU101 emergency blade",
+        "frequency": "433.92",
+        "smart_key": true
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "fiesta_van",
+      "record_id": "fiesta_van_2002_2008_keyed",
+      "vehicle": {
+        "model": "Fiesta Van",
+        "variant": "Keyed Ignition",
+        "generation": "2002 generation commercial derivative",
+        "year_from": 2002,
+        "year_to": 2008
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "transponder": "Verification required",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "fiesta_van",
+      "record_id": "fiesta_van_2009_2018_keyed",
+      "vehicle": {
+        "model": "Fiesta Van",
+        "variant": "Keyed Ignition",
+        "generation": "Mk7 commercial derivative",
+        "year_from": 2009,
+        "year_to": 2018
+      },
+      "known_signature": {
+        "key_type": "Remote flip key with mechanical ignition blade",
+        "transponder": "Verification required",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "fiesta_van",
+      "record_id": "fiesta_van_2018_2023_keyed",
+      "vehicle": {
+        "model": "Fiesta Van",
+        "variant": "Keyed Ignition",
+        "generation": "Mk8 commercial derivative",
+        "year_from": 2018,
+        "year_to": 2023
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "transponder": "Verification required",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "focus",
+      "record_id": "focus_1998_2004_keyed",
+      "vehicle": {
+        "model": "Focus",
+        "variant": "Keyed Ignition",
+        "generation": "Mk1",
+        "year_from": 1998,
+        "year_to": 2004
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "Texas 4D-60",
+        "blade": "FO21",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "focus",
+      "record_id": "focus_2015_2018_keyed",
+      "vehicle": {
+        "model": "Focus",
+        "variant": "Keyed Ignition",
+        "generation": "Mk3 facelift",
+        "year_from": 2015,
+        "year_to": 2018
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "blade": "HU101",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "battery_type"
+      ]
+    },
+    {
+      "model_folder": "focus",
+      "record_id": "focus_2018_2025_passive",
+      "vehicle": {
+        "model": "Focus",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Mk4 / C2",
+        "year_from": 2018,
+        "year_to": 2025
+      },
+      "known_signature": {
+        "key_type": "Passive key with emergency blade",
+        "transponder": "Verification required",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": true
+      },
+      "missing_fields": [
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "galaxy",
+      "record_id": "galaxy_1995_1998_vag",
+      "vehicle": {
+        "model": "Galaxy",
+        "variant": "VAG-derived keyed generation",
+        "generation": "Mk1 pre-facelift early",
+        "year_from": 1995,
+        "year_to": 1998
+      },
+      "known_signature": {
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "transponder": "Philips ID33",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile"
+      ]
+    },
+    {
+      "model_folder": "galaxy",
+      "record_id": "galaxy_1998_2000_vag",
+      "vehicle": {
+        "model": "Galaxy",
+        "variant": "VAG-derived keyed generation",
+        "generation": "Mk1 pre-facelift late",
+        "year_from": 1998,
+        "year_to": 2000
+      },
+      "known_signature": {
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "transponder": "Philips Crypto ID42",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile"
+      ]
+    },
+    {
+      "model_folder": "galaxy",
+      "record_id": "galaxy_2000_2006_vag",
+      "vehicle": {
+        "model": "Galaxy",
+        "variant": "VAG-derived keyed generation",
+        "generation": "Mk1 facelift",
+        "year_from": 2000,
+        "year_to": 2006
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "transponder": "Philips Crypto ID44",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile"
+      ]
+    },
+    {
+      "model_folder": "ka",
+      "record_id": "ka_1996_2001_keyed",
+      "vehicle": {
+        "model": "Ka",
+        "variant": "Keyed Ignition",
+        "generation": "First generation early",
+        "year_from": 1996,
+        "year_to": 2001
+      },
+      "known_signature": {
+        "key_type": "Mechanical ignition key; remote configuration varies",
+        "transponder": "Texas 4C",
+        "blade": "FO21",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count"
+      ]
+    },
+    {
+      "model_folder": "ka",
+      "record_id": "ka_2002_2008_keyed",
+      "vehicle": {
+        "model": "Ka",
+        "variant": "Keyed Ignition",
+        "generation": "First generation late",
+        "year_from": 2002,
+        "year_to": 2008
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "Texas 4D-60",
+        "blade": "FO21",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "ka",
+      "record_id": "ka_mk1_1996_2008_keyed",
+      "vehicle": {
+        "model": "Ka",
+        "variant": "Standard Non-Remote Key",
+        "generation": "MK1",
+        "year_from": 1996,
+        "year_to": 2008
+      },
+      "known_signature": {
+        "key_type": "Standard Non-Remote Key",
+        "transponder": "Texas 4D-60",
+        "blade": "FO21",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "frequency_mhz"
+      ]
+    },
+    {
+      "model_folder": "kuga",
+      "record_id": "kuga_2016_2019_keyed",
+      "vehicle": {
+        "model": "Kuga",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation facelift",
+        "year_from": 2016,
+        "year_to": 2019
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "blade": "HU101",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "battery_type"
+      ]
+    },
+    {
+      "model_folder": "mondeo",
+      "record_id": "mondeo_1996_2000_keyed",
+      "vehicle": {
+        "model": "Mondeo",
+        "variant": "Keyed Ignition",
+        "generation": "Mk2 / facelifted first-generation family",
+        "year_from": 1996,
+        "year_to": 2000
+      },
+      "known_signature": {
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "transponder": "Texas 4C",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "frequency_mhz",
+        "blade_profile"
+      ]
+    },
+    {
+      "model_folder": "mondeo",
+      "record_id": "mondeo_2000_transition_keyed",
+      "vehicle": {
+        "model": "Mondeo",
+        "variant": "Keyed Ignition — transition build",
+        "generation": "Mk3 introduction",
+        "year_from": 2000,
+        "year_to": 2000
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "transponder": "Verification required",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "mustang",
+      "record_id": "mustang_2024_present_passive",
+      "vehicle": {
+        "model": "Mustang",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "S650 UK generation",
+        "year_from": 2024,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Passive key with emergency blade",
+        "transponder": "Exact build verification required",
+        "blade": "Emergency blade requires exact physical-key confirmation",
+        "frequency": "Verification required",
+        "smart_key": true
+      },
+      "missing_fields": [
+        "frequency_mhz"
+      ]
+    },
+    {
+      "model_folder": "mustang_mach_e",
+      "record_id": "mustang_mach_e_2021_present_passive",
+      "vehicle": {
+        "model": "Mustang Mach-E",
+        "variant": "Passive Key / Phone As A Key",
+        "generation": "First generation EV",
+        "year_from": 2021,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Passive key with connected/phone-as-key features",
+        "transponder": "Verification required",
+        "blade": "Emergency access method verification required",
+        "frequency": "Verification required",
+        "smart_key": true
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "ranger",
+      "record_id": "ranger_1999_2000_keyed",
+      "vehicle": {
+        "model": "Ranger",
+        "variant": "Keyed Ignition",
+        "generation": "Mazda B-Series-derived early generation",
+        "year_from": 1999,
+        "year_to": 2000
+      },
+      "known_signature": {
+        "key_type": "Mechanical ignition key / remote configuration varies",
+        "transponder": "Texas 4C",
+        "blade": "Mazda-derived profile — exact application confirmation required",
+        "frequency": "Confirm original remote and market application",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count"
+      ]
+    },
+    {
+      "model_folder": "ranger",
+      "record_id": "ranger_2001_2010_keyed",
+      "vehicle": {
+        "model": "Ranger",
+        "variant": "Keyed Ignition",
+        "generation": "Mazda-derived Ranger / BT-50-related family",
+        "year_from": 2001,
+        "year_to": 2010
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "blade": "Mazda-derived profile — exact application confirmation required",
+        "frequency": "Confirm exact UK remote application",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count"
+      ]
+    },
+    {
+      "model_folder": "ranger",
+      "record_id": "ranger_2023_present",
+      "vehicle": {
+        "model": "Ranger",
+        "variant": "Current generation — keyed/passive by build",
+        "generation": "P703",
+        "year_from": 2023,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Keyed or passive configuration by build",
+        "transponder": "Exact build verification required",
+        "blade": "HU101 family likely; exact physical key must be confirmed",
+        "frequency": "Verification required",
+        "smart_key": "Verification required"
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "frequency_mhz"
+      ]
+    },
+    {
+      "model_folder": "s_max",
+      "record_id": "s_max_2015_2023_keyed",
+      "vehicle": {
+        "model": "S-Max",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation",
+        "year_from": 2015,
+        "year_to": 2023
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "blade": "HU101",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "battery_type"
+      ]
+    },
+    {
+      "model_folder": "tourneo_connect",
+      "record_id": "tourneo_connect_2009_2012_keyed",
+      "vehicle": {
+        "model": "Tourneo Connect",
+        "variant": "Keyed Ignition",
+        "generation": "First generation facelift",
+        "year_from": 2009,
+        "year_to": 2012
+      },
+      "known_signature": {
+        "key_type": "3-button remote key with mechanical blade",
+        "transponder": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "blade": "FO21",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "tourneo_connect",
+      "record_id": "tourneo_connect_2022_present_mqb",
+      "vehicle": {
+        "model": "Tourneo Connect",
+        "variant": "Volkswagen MQB-derived generation",
+        "generation": "Caddy V-derived",
+        "year_from": 2022,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Keyed or passive configuration must be confirmed",
+        "transponder": "Megamos AES family — exact application verification required",
+        "blade": "HU162T family — exact T variant verification required",
+        "frequency": "Verification required",
+        "smart_key": "Verification required"
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "frequency_mhz"
+      ]
+    },
+    {
+      "model_folder": "tourneo_courier",
+      "record_id": "tourneo_courier_2014_2023_keyed",
+      "vehicle": {
+        "model": "Tourneo Courier",
+        "variant": "Keyed Ignition",
+        "generation": "First generation",
+        "year_from": 2014,
+        "year_to": 2023
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "transponder": "Verification required",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "tourneo_courier",
+      "record_id": "tourneo_courier_2014_2023_passive",
+      "vehicle": {
+        "model": "Tourneo Courier",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "First generation",
+        "year_from": 2014,
+        "year_to": 2023
+      },
+      "known_signature": {
+        "key_type": "Passive key with emergency blade",
+        "transponder": "Verification required",
+        "blade": "Emergency blade verification required",
+        "frequency": "Verification required",
+        "smart_key": true
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "tourneo_courier",
+      "record_id": "tourneo_courier_2023_present_keyed",
+      "vehicle": {
+        "model": "Tourneo Courier",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation",
+        "year_from": 2023,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical ignition blade",
+        "transponder": "Verification required",
+        "blade": "Verification required",
+        "frequency": "Verification required",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "blade_profile",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "tourneo_courier",
+      "record_id": "tourneo_courier_2023_present_passive",
+      "vehicle": {
+        "model": "Tourneo Courier",
+        "variant": "Passive Key / Push Button Start",
+        "generation": "Second generation",
+        "year_from": 2023,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Passive key with emergency blade",
+        "transponder": "Verification required",
+        "blade": "Emergency blade verification required",
+        "frequency": "Verification required",
+        "smart_key": true
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "battery_type",
+        "frequency_mhz",
+        "transponder_type"
+      ]
+    },
+    {
+      "model_folder": "tourneo_custom",
+      "record_id": "tourneo_custom_2017_2018_keyed",
+      "vehicle": {
+        "model": "Tourneo Custom",
+        "variant": "Keyed Ignition",
+        "generation": "First generation transition",
+        "year_from": 2017,
+        "year_to": 2018
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "Confirm by VIN/original key before supply",
+        "blade": "HU101",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "tourneo_custom",
+      "record_id": "tourneo_custom_2023_present",
+      "vehicle": {
+        "model": "Tourneo Custom",
+        "variant": "Second generation — keyed/passive by build",
+        "generation": "Second generation",
+        "year_from": 2023,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Keyed or passive configuration by build",
+        "transponder": "Exact build verification required",
+        "blade": "HU101 family likely; exact physical key must be confirmed",
+        "frequency": "Verification required",
+        "smart_key": "Verification required"
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "frequency_mhz"
+      ]
+    },
+    {
+      "model_folder": "transit",
+      "record_id": "transit_1995_1999_keyed",
+      "vehicle": {
+        "model": "Transit",
+        "variant": "Keyed Ignition",
+        "generation": "Mk5",
+        "year_from": 1995,
+        "year_to": 1999
+      },
+      "known_signature": {
+        "key_type": "Mechanical ignition key; remote configuration varies",
+        "transponder": "Texas 4C",
+        "blade": "FO21 family",
+        "frequency": "Remote configuration varies; confirm original key",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count"
+      ]
+    },
+    {
+      "model_folder": "transit",
+      "record_id": "transit_2007_2013_keyed",
+      "vehicle": {
+        "model": "Transit",
+        "variant": "Keyed Ignition",
+        "generation": "Mk7 / V347 CAN-bus era",
+        "year_from": 2007,
+        "year_to": 2013
+      },
+      "known_signature": {
+        "key_type": "3-button remote key with mechanical blade",
+        "transponder": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "blade": "FO21",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "transit_connect",
+      "record_id": "transit_connect_2002_2008_keyed",
+      "vehicle": {
+        "model": "Transit Connect",
+        "variant": "Keyed Ignition",
+        "generation": "First generation early",
+        "year_from": 2002,
+        "year_to": 2008
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "Texas 4D-60",
+        "blade": "HU101",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "transit_connect",
+      "record_id": "transit_connect_2009_2012_keyed",
+      "vehicle": {
+        "model": "Transit Connect",
+        "variant": "Keyed Ignition",
+        "generation": "First generation facelift",
+        "year_from": 2009,
+        "year_to": 2012
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "blade": "HU101",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "transit_connect",
+      "record_id": "transit_connect_2013_2015_keyed",
+      "vehicle": {
+        "model": "Transit Connect",
+        "variant": "Keyed Ignition",
+        "generation": "Second generation early",
+        "year_from": 2013,
+        "year_to": 2015
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
+        "blade": "HU101",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "transit_connect",
+      "record_id": "transit_connect_2024_present_mqb",
+      "vehicle": {
+        "model": "Transit Connect",
+        "variant": "Volkswagen MQB-derived generation",
+        "generation": "Third generation / Caddy V-derived",
+        "year_from": 2024,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Keyed or passive configuration must be confirmed",
+        "transponder": "Megamos AES family — exact application verification required",
+        "blade": "HU162T family — exact T variant verification required",
+        "frequency": "Verification required",
+        "smart_key": "Verification required"
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "frequency_mhz"
+      ]
+    },
+    {
+      "model_folder": "transit_courier",
+      "record_id": "transit_courier_2023_present",
+      "vehicle": {
+        "model": "Transit Courier",
+        "variant": "Second generation — keyed/passive by build",
+        "generation": "Second generation / Puma-related architecture",
+        "year_from": 2023,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Keyed or passive configuration by build",
+        "transponder": "Exact build verification required",
+        "blade": "HU101 family likely; exact physical key must be confirmed",
+        "frequency": "Verification required",
+        "smart_key": "Verification required"
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "frequency_mhz"
+      ]
+    },
+    {
+      "model_folder": "transit_custom",
+      "record_id": "transit_custom_2017_2018_keyed",
+      "vehicle": {
+        "model": "Transit Custom",
+        "variant": "Keyed Ignition",
+        "generation": "First generation transition",
+        "year_from": 2017,
+        "year_to": 2018
+      },
+      "known_signature": {
+        "key_type": "Remote key with mechanical blade",
+        "transponder": "Confirm by VIN/original key before supply",
+        "blade": "HU101",
+        "frequency": "433.92",
+        "smart_key": false
+      },
+      "missing_fields": [
+        "oem_part_numbers"
+      ]
+    },
+    {
+      "model_folder": "transit_custom",
+      "record_id": "transit_custom_2023_present",
+      "vehicle": {
+        "model": "Transit Custom",
+        "variant": "Second generation — keyed/passive by build",
+        "generation": "Second generation",
+        "year_from": 2023,
+        "year_to": null
+      },
+      "known_signature": {
+        "key_type": "Keyed or passive configuration by build",
+        "transponder": "Exact build verification required",
+        "blade": "HU101 family likely; exact physical key must be confirmed",
+        "frequency": "Verification required",
+        "smart_key": "Verification required"
+      },
+      "missing_fields": [
+        "oem_part_numbers",
+        "button_count",
+        "frequency_mhz"
+      ]
+    }
+  ]
+}

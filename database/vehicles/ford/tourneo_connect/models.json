@@ -36,7 +36,11 @@
         "button_count": 3,
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "4152821",
+          "4152822",
+          "4354151"
+        ],
         "aftermarket_references": [
           "Silca FO21R10 Tourneo Connect 2002-2008 application",
           "Tourneo Connect FO21 433 MHz ID60 family"
@@ -58,17 +62,20 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "Same as ignition blade"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
         "last_verified": "2026-07-15",
         "sources": [
           "silca_tourneo_connect",
-          "transpondery_connect_family"
+          "transpondery_connect_family",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -136,9 +143,13 @@
         "frequency_mhz": "433.92",
         "battery": "Confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "Same as ignition blade",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "4152821",
+          "4152822",
+          "4354151"
+        ],
         "aftermarket_references": [
           "Silca FO21R10 Tourneo Connect 2002-2008 application",
           "Tourneo Connect FO21 433 MHz ID60 family"
@@ -172,10 +183,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -388,7 +397,10 @@
         "button_count": 3,
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
         "aftermarket_references": [
           "Silca HU101AR24 Tourneo Connect CHC 2013 433 MHz family",
           "Tourneo Connect HU101 DST80 family"
@@ -412,17 +424,20 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "Same as ignition blade"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
         "last_verified": "2026-07-15",
         "sources": [
           "silca_tourneo_connect",
-          "transpondery_connect_family"
+          "transpondery_connect_family",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -502,9 +517,12 @@
         "frequency_mhz": "433.92",
         "battery": "Confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "Same as ignition blade",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
         "aftermarket_references": [
           "Silca HU101AR24 Tourneo Connect CHC 2013 433 MHz family",
           "Tourneo Connect HU101 DST80 family"
@@ -538,10 +556,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -571,7 +587,11 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "GK2T-15K601-AA",
+          "GK2T-15K601-AB",
+          "A2C94379403"
+        ],
         "aftermarket_references": [
           "Tourneo/Transit Connect HU101 433 MHz Hitag Pro family"
         ],
@@ -599,10 +619,12 @@
         "last_verified": "2026-07-15",
         "sources": [
           "transpondery_connect_family",
-          "silca_tourneo_connect"
+          "silca_tourneo_connect",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -672,7 +694,11 @@
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "GK2T-15K601-AA",
+          "GK2T-15K601-AB",
+          "A2C94379403"
+        ],
         "aftermarket_references": [
           "Tourneo/Transit Connect HU101 433 MHz Hitag Pro family"
         ]
@@ -705,10 +731,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -738,7 +762,13 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "2198266",
+          "2180633",
+          "GK2T-15K601-AA",
+          "GK2T-15K601-AB",
+          "A2C94379403"
+        ],
         "aftermarket_references": [
           "Tourneo/Transit Connect HU101 433 MHz Hitag Pro passive-key family"
         ],
@@ -759,17 +789,20 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "HU101"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
         "last_verified": "2026-07-15",
         "sources": [
           "transpondery_connect_family",
-          "silca_tourneo_connect"
+          "silca_tourneo_connect",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -837,9 +870,15 @@
         "frequency_mhz": "433.92",
         "battery": "CR2032 — confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "HU101",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "2198266",
+          "2180633",
+          "GK2T-15K601-AA",
+          "GK2T-15K601-AB",
+          "A2C94379403"
+        ],
         "aftermarket_references": [
           "Tourneo/Transit Connect HU101 433 MHz Hitag Pro passive-key family"
         ]
@@ -872,10 +911,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

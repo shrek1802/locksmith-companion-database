@@ -613,17 +613,20 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "HU101"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
         "last_verified": "2026-07-15",
         "sources": [
           "transpondery_transit_custom",
-          "silca_transit_custom"
+          "silca_transit_custom",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -691,7 +694,7 @@
         "frequency_mhz": "433.92",
         "battery": "CR2032 — confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "HU101",
         "smart_key": true,
         "oem_part_numbers": [
           "GK2T-15K601-AA",

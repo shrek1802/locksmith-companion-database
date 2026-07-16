@@ -571,7 +571,10 @@
         "button_count": 3,
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
         "aftermarket_references": [
           "Silca HU101BR38 Transit 2013-2016 application",
           "Transit HU101 433 MHz DST80 family"
@@ -595,17 +598,20 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "Same as ignition blade"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
         "last_verified": "2026-07-15",
         "sources": [
           "transpondery_transit",
-          "silca_transit"
+          "silca_transit",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -685,9 +691,12 @@
         "frequency_mhz": "433.92",
         "battery": "Confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "Same as ignition blade",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "2040178",
+          "2515710"
+        ],
         "aftermarket_references": [
           "Silca HU101BR38 Transit 2013-2016 application",
           "Transit HU101 433 MHz DST80 family"
@@ -721,10 +730,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -782,17 +789,20 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "Same as ignition blade"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
         "last_verified": "2026-07-15",
         "sources": [
           "transpondery_transit",
-          "silca_transit"
+          "silca_transit",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming or FDRS by operation/build",
@@ -872,7 +882,7 @@
         "frequency_mhz": "433.92",
         "battery": "Confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "Same as ignition blade",
         "smart_key": false,
         "oem_part_numbers": [
           "GK2T-15K601-AA",
@@ -970,17 +980,20 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "emergency_blade": "HU101"
       },
       "verification": {
         "status": "locksmith_card_core_verified",
         "last_verified": "2026-07-15",
         "sources": [
           "transpondery_transit",
-          "silca_transit"
+          "silca_transit",
+          "equivalent_key_signature_consensus"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "hardware_consensus_applied": true
       },
       "tools": {
         "Programming route": "OBD diagnostic programming or FDRS by operation/build",
@@ -1060,7 +1073,7 @@
         "frequency_mhz": "433.92",
         "battery": "CR2032 — confirm against physical remote",
         "buttons": 3,
-        "emergency_blade": null,
+        "emergency_blade": "HU101",
         "smart_key": true,
         "oem_part_numbers": [
           "GK2T-15K601-AA",
