@@ -933,8 +933,8 @@
         "drive_side": "RHD"
       },
       "vehicle_information": {
-        "immobiliser_system": "Volkswagen MQB-derived security architecture",
-        "immobiliser_generation": "MQB AES / exact implementation verification required",
+        "immobiliser_system": "Volkswagen MQB49 security architecture",
+        "immobiliser_generation": "MQB49 5C / 5D — identify exact key type before accepting job",
         "transponder_type": "Megamos AES family — exact application verification required",
         "transponder_id": "megamos_aes",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
@@ -953,12 +953,15 @@
         ],
         "tool_ids": [],
         "programming": {
-          "add_key": "Verification required — operation-specific tool evidence missing",
-          "all_keys_lost": "Verification required — operation-specific tool evidence missing",
-          "route": "VAG/MQB diagnostic or authorised online workflow",
-          "online_requirement": "Likely operation-dependent; verify exact build and tool"
+          "add_key": "Verification required — do not infer support from a general vehicle tool list",
+          "all_keys_lost": "Verification required — no AKL claim without exact evidence",
+          "route": "VAG MQB49 operation-specific workflow",
+          "online_requirement": "Operation/build/tool dependent; verify SFD and online requirements",
+          "security_access": "MQB49 5C / 5D",
+          "read_original_key": "Required workflow stage where specified by the selected 5C/5D tool solution",
+          "dealer_key_generation": "Requires operation-specific verified tool support"
         },
-        "notes": "Shared Volkswagen platform. Never apply earlier Ford Transit Connect PATS procedures. Exact blade variant, frequency, part numbers and tool coverage require VAG-specific confirmation.",
+        "notes": "VW Caddy V-derived Ford application. Do not use Ford PATS/Incode-Outcode. Identify whether the original key is MQB49 5C or 5D before quoting. A tool being able to generate a remote does not prove it can read original-key data, prepare a dealer key, perform Add Key or complete AKL.",
         "generation_tool_ids": [
           "autel_km100x",
           "keydiy_kd_x4",
@@ -969,14 +972,19 @@
           "obdstar_g3",
           "smart_pro",
           "xhorse_key_tool_plus"
-        ]
+        ],
+        "platform": "Volkswagen MQB49",
+        "security_access": "MQB49 5C / 5D operation-specific workflow",
+        "programming_module": "VAG immobiliser / body-access system as fitted",
+        "tool_or_cable_required": "Operation-specific MQB49 licence, key-reading hardware and vehicle connection; verify exact tool workflow"
       },
       "verification": {
-        "status": "shared_platform_core_identified",
+        "status": "mqb49_platform_restored_tool_matrix_pending",
         "last_verified": "2026-07-14",
         "sources": [
           "ford_transit_connect_split_audit",
-          "ford_final_conservative_resolution"
+          "ford_final_conservative_resolution",
+          "ford_mqb49_platform_restore"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
@@ -986,19 +994,22 @@
           "button_count",
           "frequency_mhz"
         ],
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "platform_restored": true,
+        "tool_claims_quarantined": true
       },
       "tools": {
         "Programming route": "VAG/MQB diagnostic or authorised online workflow",
         "Online / FDRS": "Likely operation-dependent; verify exact build and tool",
         "Battery support": "Use a regulated vehicle support supply during immobiliser programming",
-        "programming_route": "VAG/MQB diagnostic or authorised online workflow",
-        "online_requirement": "Likely operation-dependent; verify exact build and tool",
+        "programming_route": "VAG MQB49 operation-specific workflow",
+        "online_requirement": "Operation/build/tool dependent; verify SFD and online requirements",
         "battery_support": "Recommended for immobiliser programming",
         "supported_tools": [],
         "tool_ids": [],
         "Important": "No programmer is confirmed by model/year alone for this restricted record. Use the operation-specific matrix only; verify current software, exact build and required online access.",
-        "job_acceptance": "verification_required"
+        "job_acceptance": "verification_required",
+        "compatibility_policy": "Operation-specific evidence only; general Ford or VAG compatibility is not sufficient."
       },
       "key_information": {
         "key_type": "Keyed or passive configuration must be confirmed",
@@ -1020,33 +1031,73 @@
       "operations": {
         "add_key": {
           "overall_status": "verification_required",
-          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
-          "method_text": "Exact-build and operation-specific verification required",
-          "programming_method": "VAG/MQB diagnostic or authorised online workflow",
-          "online_requirement": "Likely operation-dependent; verify exact build and tool",
+          "summary": "Do not book until exact vehicle build, 5C/5D key type and tool workflow are confirmed.",
+          "programming_method": "VAG MQB49 workflow",
+          "online_requirement": "Tool, key type, software version and vehicle build dependent",
           "tools": {},
-          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
+          "evidence_required": [
+            "official tool coverage for the exact operation",
+            "exact 5C or 5D key identification",
+            "working-key requirement",
+            "SFD/online requirement",
+            "required licence and adapter"
+          ]
         },
         "all_keys_lost": {
           "overall_status": "verification_required",
-          "method": "Do not accept this job from model/year alone. Confirm the exact build, security platform and current tool coverage before booking.",
-          "method_text": "Exact-build and operation-specific verification required",
-          "programming_method": "VAG/MQB diagnostic or authorised online workflow",
-          "online_requirement": "Likely operation-dependent; verify exact build and tool",
+          "summary": "No general AKL claim. Requires a separately verified exact-build solution.",
+          "programming_method": "VAG MQB49 workflow",
+          "online_requirement": "Tool, key type, software version and vehicle build dependent",
           "tools": {},
-          "job_acceptance": "DO_NOT_CONFIRM_UNTIL_TOOL_MENU_OR_PRIMARY_COVERAGE_IS_VERIFIED"
+          "evidence_required": [
+            "official tool coverage for the exact operation",
+            "exact 5C or 5D key identification",
+            "working-key requirement",
+            "SFD/online requirement",
+            "required licence and adapter"
+          ]
         },
         "programming_route": "VAG/MQB diagnostic or authorised online workflow",
-        "online_requirement": "Likely operation-dependent; verify exact build and tool"
+        "online_requirement": "Likely operation-dependent; verify exact build and tool",
+        "read_original_key": {
+          "overall_status": "verification_required",
+          "summary": "Identify 5C/5D and use a tool with explicit original-key data-reading support.",
+          "programming_method": "VAG MQB49 workflow",
+          "online_requirement": "Tool, key type, software version and vehicle build dependent",
+          "tools": {},
+          "evidence_required": [
+            "official tool coverage for the exact operation",
+            "exact 5C or 5D key identification",
+            "working-key requirement",
+            "SFD/online requirement",
+            "required licence and adapter"
+          ]
+        },
+        "dealer_key_generation": {
+          "overall_status": "verification_required",
+          "summary": "Requires verified MQB49 dealer-key preparation support for the exact key type.",
+          "programming_method": "VAG MQB49 workflow",
+          "online_requirement": "Tool, key type, software version and vehicle build dependent",
+          "tools": {},
+          "evidence_required": [
+            "official tool coverage for the exact operation",
+            "exact 5C or 5D key identification",
+            "working-key requirement",
+            "SFD/online requirement",
+            "required licence and adapter"
+          ]
+        }
       },
       "security": {
-        "family": "Volkswagen MQB-derived security architecture",
-        "generation": "MQB AES / exact implementation verification required",
+        "family": "Volkswagen MQB49",
+        "generation": "MQB49 5C / 5D",
         "transponder_family": "Megamos AES family — exact application verification required",
-        "programming_route": "VAG/MQB diagnostic or authorised online workflow",
-        "online_requirement": "Likely operation-dependent; verify exact build and tool",
-        "security_access": "Exact-build verification required",
-        "job_acceptance": "verification_required"
+        "programming_route": "VAG MQB49 operation-specific workflow",
+        "online_requirement": "Operation/build/tool dependent; verify SFD and online requirements",
+        "security_access": "MQB49 5C / 5D operation-specific workflow",
+        "job_acceptance": "verification_required",
+        "platform": "Volkswagen MQB49",
+        "ford_pats_incode_outcode": "Not applicable"
       },
       "notes": {
         "job_notes": "Shared Volkswagen platform. Never apply earlier Ford Transit Connect PATS procedures. Exact blade variant, frequency, part numbers and tool coverage require VAG-specific confirmation. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
@@ -1059,13 +1110,16 @@
       "record_completion": {
         "status": "needs_targeted_verification",
         "missing_fields": [
+          "mqb49_exact_5c_or_5d",
+          "operations.read_original_key.tools",
+          "operations.dealer_key_generation.tools",
           "operations.add_key.tools",
           "operations.all_keys_lost.tools",
-          "security_access"
+          "sfd_requirement",
+          "working_key_requirement"
         ],
         "rebuilt_at": "2026-07-16",
-        "pipeline": "rebuild_all_ford_records_v1",
-        "safety_quarantined_at": "2026-07-16"
+        "pipeline": "restore_ford_mqb49_platforms_v1"
       }
     },
     "transit_connect_2002_2007_keyed": {
