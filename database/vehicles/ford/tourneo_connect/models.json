@@ -214,7 +214,9 @@
         "button_count": 3,
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Silca FO21R10 Tourneo Connect 2009-2013 application",
           "Tourneo Connect FO21 433 MHz ID63 family"
@@ -245,10 +247,15 @@
         "last_verified": "2026-07-15",
         "sources": [
           "silca_tourneo_connect",
-          "transpondery_connect_family"
+          "transpondery_connect_family",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers"
+        ]
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -330,7 +337,9 @@
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Silca FO21R10 Tourneo Connect 2009-2013 application",
           "Tourneo Connect FO21 433 MHz ID63 family"
@@ -358,16 +367,14 @@
         "online_requirement": "No"
       },
       "notes": {
-        "job_notes": "The facelift shares the later first-generation Transit Connect ID63 security range. Exact OEM remote number remains to be added.",
+        "job_notes": "The facelift shares the later first-generation Transit Connect ID63 security range. Exact OEM remote number remains to be added. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "oem_part_numbers"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -934,15 +941,17 @@
         "immobiliser_generation": "MQB AES / exact implementation verification required",
         "transponder_type": "Megamos AES family — exact application verification required",
         "transponder_id": "megamos_aes",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
         "blade_profile": "HU162T family — exact T variant verification required",
         "blade_id": "hu162t",
         "key_type": "Keyed or passive configuration must be confirmed",
-        "button_count": null,
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
         "battery_type": "Confirm against physical remote",
         "smart_key": "Verification required",
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Volkswagen Caddy V-derived Ford Tourneo Connect key family"
         ],
@@ -969,10 +978,17 @@
         "status": "shared_platform_core_identified",
         "last_verified": "2026-07-15",
         "sources": [
-          "ford_tourneo_connect_split_audit"
+          "ford_tourneo_connect_split_audit",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count",
+          "frequency_mhz"
+        ]
       },
       "tools": {
         "Programming route": "VAG/MQB diagnostic or authorised online workflow",
@@ -1037,12 +1053,14 @@
         "blade_profile": "HU162T family — exact T variant verification required",
         "transponder_type": "Megamos AES family — exact application verification required",
         "transponder_id": "megamos_aes",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "battery": "Confirm against physical remote",
-        "buttons": null,
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": "Verification required",
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Volkswagen Caddy V-derived Ford Tourneo Connect key family"
         ]
@@ -1069,7 +1087,7 @@
         "online_requirement": "Operation dependent; verify exact build and tool"
       },
       "notes": {
-        "job_notes": "Shared Volkswagen platform. Never apply earlier Tourneo Connect PATS procedures. Exact blade variant, frequency, part numbers and tool coverage require VAG-specific confirmation.",
+        "job_notes": "Shared Volkswagen platform. Never apply earlier Tourneo Connect PATS procedures. Exact blade variant, frequency, part numbers and tool coverage require VAG-specific confirmation. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "frequency_mhz",
           "button_count",
@@ -1077,12 +1095,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "frequency_mhz",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

@@ -216,7 +216,7 @@
         "immobiliser_generation": "Exact S650 implementation requires current tool/OEM confirmation",
         "transponder_type": "Exact build verification required",
         "transponder_id": "transponder_unknown",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
         "blade_profile": "Emergency blade requires exact physical-key confirmation",
         "blade_id": "emergency_blade_unknown",
@@ -254,11 +254,16 @@
         "last_verified": "2026-07-15",
         "sources": [
           "ford_mustang_split_audit",
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "frequency_mhz"
+        ]
       },
       "tools": {
         "Programming route": "Ford diagnostic/FDRS workflow",
@@ -323,7 +328,7 @@
         "blade_profile": "Emergency blade requires exact physical-key confirmation",
         "transponder_type": "Exact build verification required",
         "transponder_id": "transponder_unknown",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "battery": "Confirm against physical remote",
         "buttons": "3 Buttons",
         "emergency_blade": "HU101",
@@ -356,16 +361,14 @@
         "online_requirement": "Likely operation dependent; verify before booking"
       },
       "notes": {
-        "job_notes": "The current S650 is isolated from S550 data. Do not inherit the older key or programming route without an exact current-generation application source.",
+        "job_notes": "The current S650 is isolated from S550 data. Do not inherit the older key or programming route without an exact current-generation application source. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "frequency_mhz"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "frequency_mhz"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

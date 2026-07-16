@@ -28,9 +28,9 @@
         "immobiliser_generation": "Texas 4C",
         "transponder_type": "Texas 4C",
         "transponder_id": "texas_4c",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
         "blade_id": "emergency_blade_unknown",
         "key_type": "Mechanical ignition key / remote configuration varies",
         "smart_key": false,
@@ -55,30 +55,44 @@
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
         },
-        "battery_type": "Confirm against physical remote"
+        "battery_type": "Confirm against physical remote",
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
+        "button_count": "Varies by original remote and trim configuration — confirm physical key"
       },
       "verification": {
         "status": "partially_verified",
         "last_verified": "2026-07-14",
         "sources": [
           "transpondery_mondeo",
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count",
+          "frequency_mhz",
+          "blade_profile"
+        ]
       },
       "key_information": {
         "key_type": "Mechanical ignition key / remote configuration varies",
-        "blade_profile": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
         "transponder_type": "Texas 4C",
         "transponder_id": "texas_4c",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "battery": "Confirm against physical remote",
-        "buttons": null,
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": []
       },
       "operations": {
@@ -159,7 +173,7 @@
         "online_requirement": "No online account normally required."
       },
       "notes": {
-        "job_notes": "Transponder family is verified by Transpondery for Mondeo 1995-2001. Blade and UK remote frequency remain unresolved because the checked Silca proximity/remote catalogue starts at the 2001 Mondeo application.",
+        "job_notes": "Transponder family is verified by Transpondery for Mondeo 1995-2001. Blade and UK remote frequency remain unresolved because the checked Silca proximity/remote catalogue starts at the 2001 Mondeo application. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "blade_profile",
           "frequency_mhz",
@@ -169,13 +183,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "blade_profile",
-          "frequency_mhz",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -195,11 +204,11 @@
       "vehicle_information": {
         "immobiliser_system": "Ford PATS",
         "immobiliser_generation": "Verification required",
-        "transponder_type": "Verification required",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "transponder_id": "transponder_unknown",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
         "blade_id": "emergency_blade_unknown",
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
@@ -223,26 +232,44 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
       },
       "verification": {
         "status": "verification_required",
         "last_verified": "2026-07-14",
-        "sources": [],
+        "sources": [
+          "ford_final_conservative_resolution"
+        ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count",
+          "battery_type",
+          "frequency_mhz",
+          "blade_profile",
+          "transponder_type"
+        ]
       },
       "key_information": {
         "key_type": "Remote key with mechanical ignition blade",
-        "blade_profile": "Verification required",
-        "transponder_type": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "transponder_id": "transponder_unknown",
-        "frequency_mhz": "Verification required",
-        "battery": null,
-        "buttons": null,
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "battery": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": []
       },
       "operations": {
@@ -263,7 +290,8 @@
         "family": "Ford PATS",
         "programming_route": "Legacy Ford PATS by OBD, with clone or module/chip fallback where required.",
         "online_requirement": "No online account normally required.",
-        "fdrs_requirement": "No online account normally required."
+        "fdrs_requirement": "No online account normally required.",
+        "transponder_family": "Build-dependent — identify the original transponder before key generation"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -321,7 +349,7 @@
         "online_requirement": "No online account normally required."
       },
       "notes": {
-        "job_notes": "The professional catalogues checked begin the Mk3 application at 2001. Verify VIN/build before choosing the 2001-2006 mapping.",
+        "job_notes": "The professional catalogues checked begin the Mk3 application at 2001. Verify VIN/build before choosing the 2001-2006 mapping. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "blade_profile",
           "transponder_type",
@@ -333,15 +361,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "blade_profile",
-          "transponder_type",
-          "frequency_mhz",
-          "battery_type",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

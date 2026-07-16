@@ -59,6 +59,9 @@
         "button_count": 3,
         "aftermarket_references": [
           "Ford Ka FO21 433 MHz ID60 remote-key family"
+        ],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ]
       },
       "verification": {
@@ -67,11 +70,16 @@
         "sources": [
           "transpondery_focus",
           "silca_focus",
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers"
+        ]
       },
       "key_information": {
         "key_type": "Remote key with mechanical blade",
@@ -83,7 +91,9 @@
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Ford Ka FO21 433 MHz ID60 remote-key family"
         ]
@@ -165,17 +175,15 @@
         "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "notes": {
-        "job_notes": "Blade and frequency are confirmed by the Silca Ford application catalogue; transponder and year range are confirmed by Transpondery. Tool compatibility is still pending mapping from the existing tool database.",
+        "job_notes": "Blade and frequency are confirmed by the Silca Ford application catalogue; transponder and year range are confirmed by Transpondery. Tool compatibility is still pending mapping from the existing tool database. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "oem_part_numbers"
         ],
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -1016,7 +1024,8 @@
           "Transit Connect HU101 433 MHz Hitag Pro remote-key family",
           "Transit Custom HU101 433 MHz Hitag Pro family",
           "Silca HU101TR15 application"
-        ]
+        ],
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
       },
       "verification": {
         "status": "key_data_verified",
@@ -1025,11 +1034,16 @@
           "transpondery_focus",
           "silca_focus",
           "keystation_focus",
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "battery_type"
+        ]
       },
       "key_information": {
         "key_type": "Remote key with mechanical blade",
@@ -1037,7 +1051,7 @@
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": "433.92",
-        "battery": null,
+        "battery": "Varies by remote shell/version — confirm battery fitted to physical key",
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
@@ -1143,17 +1157,15 @@
         "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "notes": {
-        "job_notes": "Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending.",
+        "job_notes": "Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "battery_type"
         ],
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "battery_type"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -1387,11 +1399,11 @@
       "vehicle_information": {
         "immobiliser_system": "Ford PATS",
         "immobiliser_generation": "Verification required",
-        "transponder_type": "Verification required",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "transponder_id": "transponder_unknown",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
         "blade_id": "emergency_blade_unknown",
         "key_type": "Passive key with emergency blade",
         "smart_key": true,
@@ -1421,25 +1433,34 @@
           "2596954"
         ],
         "button_count": "3 Buttons",
-        "emergency_blade": "HU101"
+        "emergency_blade": "HU101",
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
       },
       "verification": {
         "status": "verification_required",
         "last_verified": "2026-07-14",
         "sources": [
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "battery_type",
+          "frequency_mhz",
+          "blade_profile",
+          "transponder_type"
+        ]
       },
       "key_information": {
         "key_type": "Passive key with emergency blade",
-        "blade_profile": "Verification required",
-        "transponder_type": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "transponder_id": "transponder_unknown",
-        "frequency_mhz": "Verification required",
-        "battery": null,
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "battery": "Varies by remote shell/version — confirm battery fitted to physical key",
         "buttons": "3 Buttons",
         "emergency_blade": "HU101",
         "smart_key": true,
@@ -1467,7 +1488,8 @@
         "family": "Ford PATS",
         "programming_route": "Late Ford secured OBD route through the KVM/BCM; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
-        "fdrs_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+        "fdrs_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+        "transponder_family": "Build-dependent — identify the original transponder before key generation"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -1525,7 +1547,7 @@
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
       },
       "notes": {
-        "job_notes": "The currently checked catalogues do not provide an exact UK Mk4 mapping across the full 2018-2025 range. Keep unresolved rather than inheriting Mk3 data.",
+        "job_notes": "The currently checked catalogues do not provide an exact UK Mk4 mapping across the full 2018-2025 range. Keep unresolved rather than inheriting Mk3 data. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "blade_profile",
           "transponder_type",
@@ -1535,13 +1557,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "blade_profile",
-          "transponder_type",
-          "frequency_mhz",
-          "battery_type"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

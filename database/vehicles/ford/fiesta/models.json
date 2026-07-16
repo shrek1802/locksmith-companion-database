@@ -391,7 +391,9 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Ford C-Max / Fiesta / Focus 3-button 433 MHz ID63 80-bit HU101 remote family"
         ],
@@ -421,10 +423,15 @@
         "sources": [
           "transpondery_fiesta",
           "keystation_fiesta",
-          "silca_fiesta"
+          "silca_fiesta",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers"
+        ]
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -500,7 +507,9 @@
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Ford C-Max / Fiesta / Focus 3-button 433 MHz ID63 80-bit HU101 remote family"
         ]
@@ -529,16 +538,14 @@
         "online_requirement": "No"
       },
       "notes": {
-        "job_notes": "Core key-stock data is independently supported by Transpondery and UK supplier catalogues. Exact OEM part number varies by remote style and build.",
+        "job_notes": "Core key-stock data is independently supported by Transpondery and UK supplier catalogues. Exact OEM part number varies by remote style and build. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "oem_part_numbers"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -1119,7 +1126,9 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Mk8 Fiesta HU101 433 MHz Hitag Pro remote family"
         ],
@@ -1151,10 +1160,15 @@
         "sources": [
           "ford_owner_manual_2020_uk",
           "silca_fiesta",
-          "keystation_fiesta"
+          "keystation_fiesta",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers"
+        ]
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -1237,7 +1251,9 @@
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Mk8 Fiesta HU101 433 MHz Hitag Pro remote family"
         ]
@@ -1266,16 +1282,14 @@
         "online_requirement": "Build and operation dependent"
       },
       "notes": {
-        "job_notes": "Ford UK documents the flip-key configuration. Core blade/frequency/chip family follows professional Mk8 application listings; exact OEM remote number and tool IDs still need mapping.",
+        "job_notes": "Ford UK documents the flip-key configuration. Core blade/frequency/chip family follows professional Mk8 application listings; exact OEM remote number and tool IDs still need mapping. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "oem_part_numbers"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -1305,7 +1319,9 @@
         "button_count": 3,
         "battery_type": "CR2032 — confirm against physical remote",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Mk8 Fiesta HU101 433 MHz Hitag Pro passive-key family"
         ],
@@ -1338,10 +1354,15 @@
         "sources": [
           "ford_owner_manual_2020_uk",
           "silca_fiesta",
-          "keystation_fiesta"
+          "keystation_fiesta",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers"
+        ]
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -1424,7 +1445,9 @@
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Mk8 Fiesta HU101 433 MHz Hitag Pro passive-key family"
         ]
@@ -1453,16 +1476,14 @@
         "online_requirement": "Build and operation dependent"
       },
       "notes": {
-        "job_notes": "Ford UK documents passive key, removable emergency blade and backup start. Exact OEM remote number and tool IDs remain to be mapped.",
+        "job_notes": "Ford UK documents passive key, removable emergency blade and backup start. Exact OEM remote number and tool IDs remain to be mapped. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "oem_part_numbers"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

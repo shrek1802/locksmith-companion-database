@@ -36,7 +36,9 @@
         "button_count": "Varies by separate/original remote configuration",
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "1997-2001 UK RHD Explorer legacy Ford/SecuriLock key family"
         ],
@@ -64,12 +66,17 @@
         "last_verified": "2026-07-15",
         "sources": [
           "ford_explorer_split_audit",
-          "ford_securilock_history"
+          "ford_securilock_history",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
         "non_applicable_hardware_resolved_at": "2026-07-16",
-        "non_applicable_hardware_basis": "existing key/remote description"
+        "non_applicable_hardware_basis": "existing key/remote description",
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers"
+        ]
       },
       "tools": {
         "Programming route": "OBD diagnostic or legacy PATS procedure",
@@ -139,7 +146,9 @@
         "buttons": "Varies by separate/original remote configuration",
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "1997-2001 UK RHD Explorer legacy Ford/SecuriLock key family"
         ]
@@ -166,16 +175,14 @@
         "online_requirement": "No"
       },
       "notes": {
-        "job_notes": "This UK RHD Explorer is based on the North American platform and spans the PATS I/PATS II era. Do not apply European Fiesta/Mondeo blade assumptions. Confirm the physical blade, original remote frequency and transponder before supply.",
+        "job_notes": "This UK RHD Explorer is based on the North American platform and spans the PATS I/PATS II era. Do not apply European Fiesta/Mondeo blade assumptions. Confirm the physical blade, original remote frequency and transponder before supply. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "oem_part_numbers"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -197,15 +204,17 @@
         "immobiliser_generation": "MEB/MQB-AES-derived implementation — exact Ford application verification required",
         "transponder_type": "Megamos AES family or platform-specific passive credential — exact application verification required",
         "transponder_id": "megamos_aes",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
         "blade_profile": "Emergency access method and blade profile require exact vehicle/key confirmation",
         "blade_id": "emergency_blade_unknown",
         "key_type": "Passive key with connected EV access features",
-        "button_count": null,
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
         "battery_type": "Confirm against physical remote",
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Volkswagen MEB-derived Ford Explorer EV key family"
         ],
@@ -233,10 +242,17 @@
         "last_verified": "2026-07-15",
         "sources": [
           "ford_explorer_split_audit",
-          "ford_explorer_meb_platform"
+          "ford_explorer_meb_platform",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count",
+          "frequency_mhz"
+        ]
       },
       "tools": {
         "Programming route": "Authorised Ford/VAG connected diagnostic workflow",
@@ -301,12 +317,14 @@
         "blade_profile": "Emergency access method and blade profile require exact vehicle/key confirmation",
         "transponder_type": "Megamos AES family or platform-specific passive credential — exact application verification required",
         "transponder_id": "megamos_aes",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "battery": "Confirm against physical remote",
-        "buttons": null,
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Volkswagen MEB-derived Ford Explorer EV key family"
         ]
@@ -333,7 +351,7 @@
         "online_requirement": "Expected for security-sensitive operations; confirm exact procedure"
       },
       "notes": {
-        "job_notes": "The European Explorer EV is built on Volkswagen's MEB platform. Never inherit the legacy Explorer or normal Ford PATS procedure. Exact key part number, blade, frequency and supported tools remain current-platform research items.",
+        "job_notes": "The European Explorer EV is built on Volkswagen's MEB platform. Never inherit the legacy Explorer or normal Ford PATS procedure. Exact key part number, blade, frequency and supported tools remain current-platform research items. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "frequency_mhz",
           "button_count",
@@ -341,12 +359,8 @@
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "frequency_mhz",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

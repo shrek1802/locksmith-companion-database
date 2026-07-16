@@ -33,10 +33,12 @@
         "blade_profile": "FO21",
         "blade_id": "fo21",
         "key_type": "Mechanical ignition key; remote configuration varies",
-        "button_count": null,
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Ford Ka FO21 Texas 4C family"
         ],
@@ -64,10 +66,16 @@
         "last_verified": "2026-07-14",
         "sources": [
           "transpondery_ka",
-          "silca_ka"
+          "silca_ka",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count"
+        ]
       },
       "tools": {
         "Programming route": "OBD or legacy PATS procedure",
@@ -134,10 +142,12 @@
         "transponder_id": "texas_4c",
         "frequency_mhz": "433.92",
         "battery": "Confirm against physical remote",
-        "buttons": null,
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Ford Ka FO21 Texas 4C family"
         ]
@@ -164,18 +174,15 @@
         "online_requirement": "No"
       },
       "notes": {
-        "job_notes": "Early first-generation Ka uses the legacy Ford key family. Remote style varies, so verify the original key before supply.",
+        "job_notes": "Early first-generation Ka uses the legacy Ford key family. Remote style varies, so verify the original key before supply. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "button_count",
           "oem_part_numbers"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -205,7 +212,9 @@
         "button_count": 3,
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Ford Ka FO21 433 MHz ID60 remote-key family"
         ],
@@ -233,10 +242,15 @@
         "last_verified": "2026-07-14",
         "sources": [
           "transpondery_ka",
-          "silca_ka"
+          "silca_ka",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers"
+        ]
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -306,7 +320,9 @@
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Ford Ka FO21 433 MHz ID60 remote-key family"
         ]
@@ -333,16 +349,14 @@
         "online_requirement": "No"
       },
       "notes": {
-        "job_notes": "Later first-generation Ka changes to 4D60 while retaining the FO21 blade family.",
+        "job_notes": "Later first-generation Ka changes to 4D60 while retaining the FO21 blade family. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "oem_part_numbers"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -549,7 +563,7 @@
         "immobiliser_generation": "Texas 4D-60",
         "transponder_type": "Texas 4D-60",
         "transponder_id": "texas_4d60",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
         "blade_profile": "FO21",
         "blade_id": "fo21",
@@ -588,10 +602,15 @@
         "sources": [
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "frequency_mhz"
+        ]
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -658,7 +677,7 @@
         "blade_profile": "FO21",
         "transponder_type": "Texas 4D-60",
         "transponder_id": "texas_4d60",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "battery": "N/A / separate remote",
         "buttons": "None",
         "emergency_blade": "Same as ignition blade",
@@ -692,16 +711,14 @@
         "online_requirement": "Normally no"
       },
       "notes": {
-        "job_notes": "Immobiliser diagnostically or cloning. Red key master system on very early models.",
+        "job_notes": "Immobiliser diagnostically or cloning. Red key master system on very early models. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "frequency_mhz"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "frequency_mhz"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

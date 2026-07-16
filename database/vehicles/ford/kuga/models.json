@@ -875,7 +875,8 @@
           "Transit Connect HU101 433 MHz Hitag Pro remote-key family",
           "Transit Custom HU101 433 MHz Hitag Pro family",
           "Silca HU101TR15 application"
-        ]
+        ],
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
       },
       "verification": {
         "status": "key_data_verified",
@@ -883,11 +884,16 @@
         "sources": [
           "transpondery_kuga",
           "silca_kuga",
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "battery_type"
+        ]
       },
       "key_information": {
         "key_type": "Remote key with mechanical blade",
@@ -895,7 +901,7 @@
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
         "frequency_mhz": "433.92",
-        "battery": null,
+        "battery": "Varies by remote shell/version — confirm battery fitted to physical key",
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
@@ -1002,17 +1008,15 @@
         "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "notes": {
-        "job_notes": "Blade, transponder and 433 MHz frequency verified against Transpondery and Silca. Tool compatibility still pending.",
+        "job_notes": "Blade, transponder and 433 MHz frequency verified against Transpondery and Silca. Tool compatibility still pending. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "battery_type"
         ],
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "battery_type"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

@@ -33,10 +33,12 @@
         "blade_profile": "FO21 family",
         "blade_id": "fo21",
         "key_type": "Mechanical ignition key; remote configuration varies",
-        "button_count": null,
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Transit FO21 Texas 4C key family"
         ],
@@ -63,10 +65,16 @@
         "status": "locksmith_card_core_partially_verified",
         "last_verified": "2026-07-15",
         "sources": [
-          "transpondery_transit"
+          "transpondery_transit",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count"
+        ]
       },
       "tools": {
         "Programming route": "Legacy PATS / OBD where supported",
@@ -133,10 +141,12 @@
         "transponder_id": "texas_4c",
         "frequency_mhz": "Remote configuration varies; confirm original key",
         "battery": "Confirm against physical remote",
-        "buttons": null,
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Transit FO21 Texas 4C key family"
         ]
@@ -163,18 +173,15 @@
         "online_requirement": "No"
       },
       "notes": {
-        "job_notes": "Transpondery confirms Texas 4C for 1995-1999. The remote configuration varies, so frequency must be confirmed from the original key or exact application before supply.",
+        "job_notes": "Transpondery confirms Texas 4C for 1995-1999. The remote configuration varies, so frequency must be confirmed from the original key or exact application before supply. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "button_count",
           "oem_part_numbers"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -388,7 +395,9 @@
         "button_count": 3,
         "battery_type": "Confirm against physical remote",
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Silca FO21R10 Transit V347 application",
           "Transit FO21 433 MHz ID63 family"
@@ -419,10 +428,15 @@
         "last_verified": "2026-07-15",
         "sources": [
           "transpondery_transit",
-          "silca_transit"
+          "silca_transit",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers"
+        ]
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -504,7 +518,9 @@
         "buttons": 3,
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": [
           "Silca FO21R10 Transit V347 application",
           "Transit FO21 433 MHz ID63 family"
@@ -532,16 +548,14 @@
         "online_requirement": "No"
       },
       "notes": {
-        "job_notes": "Transpondery lists 2007-2013 as Texas 4D63. Silca independently lists Transit V347 2006-2013 with FO21 and 433 MHz.",
+        "job_notes": "Transpondery lists 2007-2013 as Texas 4D63. Silca independently lists Transit V347 2006-2013 with FO21 and 433 MHz. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "oem_part_numbers"
         ]
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

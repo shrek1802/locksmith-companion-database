@@ -26,9 +26,9 @@
       "vehicle_information": {
         "immobiliser_system": "Ford PATS",
         "immobiliser_generation": "Verification required",
-        "transponder_type": "Verification required",
-        "frequency_mhz": "Verification required",
-        "blade_profile": "Verification required",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
         "notes": "Commercial derivative of Fiesta. Share technical records only after VIN/build and security equivalence are verified.",
@@ -51,28 +51,45 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
       },
       "verification": {
         "status": "verification_required",
         "last_verified": "2026-07-14",
         "sources": [
-          "ford_fiesta_van_split_audit"
+          "ford_fiesta_van_split_audit",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count",
+          "battery_type",
+          "frequency_mhz",
+          "blade_profile",
+          "transponder_type"
+        ]
       },
       "key_information": {
         "key_type": "Remote key with mechanical ignition blade",
-        "blade_profile": "Verification required",
-        "transponder_type": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "transponder_id": null,
-        "frequency_mhz": "Verification required",
-        "battery": null,
-        "buttons": null,
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "battery": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": []
       },
       "operations": {
@@ -92,7 +109,8 @@
       "security": {
         "family": "Ford PATS",
         "programming_route": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
-        "online_requirement": "Normally no for supported aftermarket-tool programming."
+        "online_requirement": "Normally no for supported aftermarket-tool programming.",
+        "transponder_family": "Build-dependent — identify the original transponder before key generation"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -150,7 +168,7 @@
         "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "notes": {
-        "job_notes": "Commercial derivative of Fiesta. Share technical records only after VIN/build and security equivalence are verified.",
+        "job_notes": "Commercial derivative of Fiesta. Share technical records only after VIN/build and security equivalence are verified. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "blade_profile",
           "transponder_type",
@@ -162,15 +180,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "blade_profile",
-          "transponder_type",
-          "frequency_mhz",
-          "battery_type",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -190,9 +201,9 @@
       "vehicle_information": {
         "immobiliser_system": "Ford PATS",
         "immobiliser_generation": "Verification required",
-        "transponder_type": "Verification required",
-        "frequency_mhz": "Verification required",
-        "blade_profile": "Verification required",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
         "key_type": "Remote flip key with mechanical ignition blade",
         "smart_key": false,
         "notes": "Verify exact production boundary and whether passenger-Fiesta technical records can be shared.",
@@ -217,28 +228,45 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
       },
       "verification": {
         "status": "verification_required",
         "last_verified": "2026-07-14",
         "sources": [
-          "ford_fiesta_van_split_audit"
+          "ford_fiesta_van_split_audit",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count",
+          "battery_type",
+          "frequency_mhz",
+          "blade_profile",
+          "transponder_type"
+        ]
       },
       "key_information": {
         "key_type": "Remote flip key with mechanical ignition blade",
-        "blade_profile": "Verification required",
-        "transponder_type": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "transponder_id": null,
-        "frequency_mhz": "Verification required",
-        "battery": null,
-        "buttons": null,
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "battery": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": []
       },
       "operations": {
@@ -258,7 +286,8 @@
       "security": {
         "family": "Ford PATS",
         "programming_route": "Standard OBD Ford PATS programming through the BCM/IPC PATS; use regulated battery support.",
-        "online_requirement": "Normally no for supported aftermarket-tool programming."
+        "online_requirement": "Normally no for supported aftermarket-tool programming.",
+        "transponder_family": "Build-dependent — identify the original transponder before key generation"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -328,7 +357,7 @@
         "online_requirement": "Normally no for supported aftermarket-tool programming."
       },
       "notes": {
-        "job_notes": "Verify exact production boundary and whether passenger-Fiesta technical records can be shared.",
+        "job_notes": "Verify exact production boundary and whether passenger-Fiesta technical records can be shared. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "blade_profile",
           "transponder_type",
@@ -340,15 +369,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "blade_profile",
-          "transponder_type",
-          "frequency_mhz",
-          "battery_type",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -368,9 +390,9 @@
       "vehicle_information": {
         "immobiliser_system": "Ford PATS",
         "immobiliser_generation": "Verification required",
-        "transponder_type": "Verification required",
-        "frequency_mhz": "Verification required",
-        "blade_profile": "Verification required",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
         "notes": "Verify exact UK security specification and online/FDRS requirements by operation.",
@@ -393,28 +415,45 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
       },
       "verification": {
         "status": "verification_required",
         "last_verified": "2026-07-14",
         "sources": [
-          "ford_fiesta_van_split_audit"
+          "ford_fiesta_van_split_audit",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count",
+          "battery_type",
+          "frequency_mhz",
+          "blade_profile",
+          "transponder_type"
+        ]
       },
       "key_information": {
         "key_type": "Remote key with mechanical ignition blade",
-        "blade_profile": "Verification required",
-        "transponder_type": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "transponder_id": null,
-        "frequency_mhz": "Verification required",
-        "battery": null,
-        "buttons": null,
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "battery": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": []
       },
       "operations": {
@@ -435,7 +474,8 @@
         "family": "Ford PATS",
         "programming_route": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
-        "fdrs_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+        "fdrs_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+        "transponder_family": "Build-dependent — identify the original transponder before key generation"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -493,7 +533,7 @@
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
       },
       "notes": {
-        "job_notes": "Verify exact UK security specification and online/FDRS requirements by operation.",
+        "job_notes": "Verify exact UK security specification and online/FDRS requirements by operation. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "blade_profile",
           "transponder_type",
@@ -505,15 +545,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "blade_profile",
-          "transponder_type",
-          "frequency_mhz",
-          "battery_type",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }

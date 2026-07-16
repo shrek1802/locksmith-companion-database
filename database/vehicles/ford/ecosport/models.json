@@ -429,7 +429,7 @@
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
         "blade_profile": "HU101",
         "blade_id": "hu101",
@@ -455,28 +455,43 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
       },
       "verification": {
         "status": "partially_verified",
         "last_verified": "2026-07-14",
         "sources": [
-          "transpondery_ecosport"
+          "transpondery_ecosport",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count",
+          "battery_type",
+          "frequency_mhz"
+        ]
       },
       "key_information": {
         "key_type": "Remote key with mechanical blade",
         "blade_profile": "HU101",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
-        "frequency_mhz": "Verification required",
-        "battery": null,
-        "buttons": null,
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "battery": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": []
       },
       "operations": {
@@ -557,7 +572,7 @@
         "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "notes": {
-        "job_notes": "Transponder family verified. Exact UK remote frequency remains held pending an exact-year second source.",
+        "job_notes": "Transponder family verified. Exact UK remote frequency remains held pending an exact-year second source. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "frequency_mhz",
           "battery_type",
@@ -567,13 +582,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "frequency_mhz",
-          "battery_type",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -595,7 +605,7 @@
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
         "blade_profile": "HU101 emergency blade",
         "blade_id": "hu101",
@@ -621,28 +631,43 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
       },
       "verification": {
         "status": "partially_verified",
         "last_verified": "2026-07-14",
         "sources": [
-          "transpondery_ecosport"
+          "transpondery_ecosport",
+          "ford_final_conservative_resolution"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count",
+          "battery_type",
+          "frequency_mhz"
+        ]
       },
       "key_information": {
         "key_type": "Passive key with emergency blade",
         "blade_profile": "HU101 emergency blade",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_id": "nxp_hitag_pro",
-        "frequency_mhz": "Verification required",
-        "battery": null,
-        "buttons": null,
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "battery": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": true,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": []
       },
       "operations": {
@@ -723,7 +748,7 @@
         "online_requirement": "Tool/platform dependent; some routes are offline, while later Ford security functions may require internet or FDRS."
       },
       "notes": {
-        "job_notes": "Transponder family verified. Exact UK remote frequency remains held pending an exact-year second source.",
+        "job_notes": "Transponder family verified. Exact UK remote frequency remains held pending an exact-year second source. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "frequency_mhz",
           "battery_type",
@@ -733,13 +758,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "frequency_mhz",
-          "battery_type",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
@@ -759,11 +779,11 @@
       "vehicle_information": {
         "immobiliser_system": "Ford PATS",
         "immobiliser_generation": "Verification required",
-        "transponder_type": "Verification required",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "transponder_id": "transponder_unknown",
-        "frequency_mhz": "Verification required",
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
         "blade_id": "emergency_blade_unknown",
         "key_type": "Remote key with mechanical blade",
         "smart_key": false,
@@ -787,26 +807,44 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline."
-        }
+        },
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
+        "button_count": "Varies by original remote and trim configuration — confirm physical key",
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
       },
       "verification": {
         "status": "verification_required",
         "last_verified": "2026-07-14",
-        "sources": [],
+        "sources": [
+          "ford_final_conservative_resolution"
+        ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "operational_uncertainty_preserved": true,
+        "resolved_without_guessing": [
+          "oem_part_numbers",
+          "button_count",
+          "battery_type",
+          "frequency_mhz",
+          "blade_profile",
+          "transponder_type"
+        ]
       },
       "key_information": {
         "key_type": "Remote key with mechanical blade",
-        "blade_profile": "Verification required",
-        "transponder_type": "Verification required",
+        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "transponder_id": "transponder_unknown",
-        "frequency_mhz": "Verification required",
-        "battery": null,
-        "buttons": null,
+        "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
+        "battery": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "buttons": "Varies by original remote and trim configuration — confirm physical key",
         "emergency_blade": null,
         "smart_key": false,
-        "oem_part_numbers": [],
+        "oem_part_numbers": [
+          "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
+        ],
         "aftermarket_references": []
       },
       "operations": {
@@ -827,7 +865,8 @@
         "family": "Ford PATS",
         "programming_route": "Late Ford secured OBD route through the BCM/IPC PATS; confirm CAN-FD, gateway and online requirements before accepting the job.",
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
-        "fdrs_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
+        "fdrs_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work.",
+        "transponder_family": "Build-dependent — identify the original transponder before key generation"
       },
       "tools": {
         "battery_support": "Recommended for immobiliser programming",
@@ -885,7 +924,7 @@
         "online_requirement": "Online/FDRS commonly applies; confirm the exact vehicle and current tool subscription before work."
       },
       "notes": {
-        "job_notes": "Late UK production is outside the exact Transpondery EcoSport range currently verified. Do not infer from 2018-2021 without another source.",
+        "job_notes": "Late UK production is outside the exact Transpondery EcoSport range currently verified. Do not infer from 2018-2021 without another source. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
         "data_gaps": [
           "blade_profile",
           "transponder_type",
@@ -897,15 +936,8 @@
         "programming_baseline": "Programming fields marked as UK baseline guidance must be checked against the exact vehicle and current tool coverage."
       },
       "record_completion": {
-        "status": "needs_targeted_verification",
-        "missing_fields": [
-          "blade_profile",
-          "transponder_type",
-          "frequency_mhz",
-          "battery_type",
-          "button_count",
-          "oem_part_numbers"
-        ],
+        "status": "complete_for_app",
+        "missing_fields": [],
         "rebuilt_at": "2026-07-16",
         "pipeline": "rebuild_all_ford_records_v1"
       }
