@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0",
+  "updated_at": "2026-07-16",
+  "market": "UK",
+  "category": "immobiliser_programmers",
+  "tools": {
+    "autel_im508": {"display_name":"Autel IM508","manufacturer":"Autel","group":"Autel","aliases":["IM508"],"supported_methods":["obd"],"uk_relevant":true},
+    "autel_im508s_xp400_pro": {"display_name":"Autel IM508S + XP400 Pro","manufacturer":"Autel","group":"Autel","aliases":["IM508S","IM508S XP400 Pro","autel_im508s"],"supported_methods":["obd","bench","boot","eeprom","service_mode","transponder_clone"],"optional_accessories":["APB112","APB131","G-BOX2","G-BOX3"],"uk_relevant":true},
+    "autel_im608_pro": {"display_name":"Autel IM608 / IM608 Pro","manufacturer":"Autel","group":"Autel","aliases":["IM608","IM608 Pro"],"supported_methods":["obd","bench","boot","eeprom","service_mode","transponder_clone"],"optional_accessories":["APB112","APB131","G-BOX2","G-BOX3"],"uk_relevant":true},
+    "autel_km100x": {"display_name":"Autel KM100 / KM100X","manufacturer":"Autel","group":"Autel","aliases":["KM100","KM100X"],"supported_methods":["obd","transponder_clone","remote_generation"],"uk_relevant":true},
+
+    "xhorse_key_tool_max_pro": {"display_name":"Xhorse Key Tool Max Pro","manufacturer":"Xhorse","group":"Xhorse","aliases":["Key Tool Max Pro","KTMP"],"supported_methods":["obd","transponder_clone","remote_generation"],"uk_relevant":true},
+    "xhorse_key_tool_plus": {"display_name":"Xhorse Key Tool Plus","manufacturer":"Xhorse","group":"Xhorse","aliases":["Key Tool Plus","KTP"],"supported_methods":["obd","bench","boot","eeprom","service_mode","transponder_clone","remote_generation"],"uk_relevant":true},
+    "xhorse_vvdi2": {"display_name":"Xhorse VVDI2","manufacturer":"Xhorse","group":"Xhorse","aliases":["VVDI2"],"supported_methods":["obd","bench","eeprom","service_mode","transponder_clone"],"uk_relevant":true},
+
+    "keydiy_kd_x4": {"display_name":"KEYDIY KD-X4","manufacturer":"KEYDIY","group":"KEYDIY","aliases":["KD-X4","KDX4"],"supported_methods":["obd","transponder_clone","remote_generation"],"uk_relevant":true},
+    "keydiy_kd_max": {"display_name":"KEYDIY KD-Max","manufacturer":"KEYDIY","group":"KEYDIY","aliases":["KD-Max"],"supported_methods":["transponder_clone","remote_generation"],"uk_relevant":true},
+
+    "xtool_x100_pad2": {"display_name":"Xtool X100 Pad 2","manufacturer":"Xtool","group":"Xtool","aliases":["X100 PAD2","X100 Pad 2","xtool"],"supported_methods":["obd","service_mode"],"optional_accessories":["KC100","KC501","CAN FD adapters","gateway cables"],"uk_relevant":true},
+    "xtool_x100_max2": {"display_name":"Xtool X100 Max 2","manufacturer":"Xtool","group":"Xtool","aliases":["X100 Max 2"],"supported_methods":["obd","bench","eeprom","service_mode"],"optional_accessories":["KC100","KC501","CAN FD adapters","gateway cables"],"uk_relevant":true},
+
+    "obdstar_g3": {"display_name":"OBDSTAR G3","manufacturer":"OBDSTAR","group":"OBDSTAR","aliases":["X300 Classic G3","G3","obdstar"],"supported_methods":["obd","bench","boot","eeprom","service_mode"],"uk_relevant":true},
+    "obdstar_x300_dp_plus": {"display_name":"OBDSTAR X300 DP Plus / Key Master DP Plus","manufacturer":"OBDSTAR","group":"OBDSTAR","aliases":["X300 DP Plus","Key Master DP Plus"],"supported_methods":["obd","bench","eeprom","service_mode"],"uk_relevant":true},
+
+    "lonsdor_k518_pro": {"display_name":"Lonsdor K518 Pro","manufacturer":"Lonsdor","group":"Lonsdor","aliases":["K518 Pro","K518","lonsdor"],"supported_methods":["obd","bench","eeprom","service_mode","transponder_clone"],"uk_relevant":true},
+
+    "smart_pro": {"display_name":"Advanced Diagnostics Smart Pro","manufacturer":"Advanced Diagnostics","group":"Other","aliases":["Smart Pro"],"supported_methods":["obd"],"uk_relevant":true},
+    "zed_full": {"display_name":"Zed-FULL","manufacturer":"Istanbul Elektronik Anahtar","group":"Other","aliases":["Zed FULL"],"supported_methods":["obd","transponder_clone"],"uk_relevant":true},
+    "avdi": {"display_name":"ABRITES AVDI","manufacturer":"ABRITES","group":"Other","aliases":["AVDI"],"supported_methods":["obd","bench","eeprom","service_mode"],"uk_relevant":true},
+    "tango": {"display_name":"Tango","manufacturer":"Scorpio-LK","group":"Other","aliases":["Tango Key Programmer"],"supported_methods":["eeprom","transponder_clone"],"uk_relevant":true}
+  }
+}
