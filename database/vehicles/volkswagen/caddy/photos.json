@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-17",
+  "photos": [],
+  "required_photo_types": [
+    "vehicle_generation_reference",
+    "original_key_front_and_back",
+    "instrument_cluster_label",
+    "instrument_cluster_front",
+    "instrument_cluster_rear",
+    "verified_module_location_rhd"
+  ],
+  "rules": [
+    "Only use photos with a confirmed vehicle generation and UK/RHD context where location matters.",
+    "PCB or adapter photos must match the exact part number or hardware revision.",
+    "Do not publish generic internet photos as verified procedure evidence."
+  ]
+}
