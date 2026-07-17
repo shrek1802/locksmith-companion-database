@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": "Volkswagen",
+  "model": "Golf",
+  "market": "UK",
+  "drive_side": "RHD",
+  "items": {
+    "golf_mk4_1998_2004_keyed": {
+      "primary_module": "Instrument cluster",
+      "location": "Dashboard behind steering wheel",
+      "communication": "Diagnostic bus varies by build",
+      "encrypted": false,
+      "identification_required": ["Immo2 or Immo3", "cluster manufacturer", "part number"]
+    },
+    "golf_mk5_2004_2009_keyed": {
+      "primary_module": "Instrument cluster",
+      "location": "Dashboard behind steering wheel",
+      "communication": "CAN",
+      "encrypted": "cluster_dependent",
+      "identification_required": ["cluster manufacturer", "processor or dashboard family", "part number"]
+    },
+    "golf_mk6_2009_2013_keyed": {
+      "primary_module": "Instrument cluster",
+      "location": "Dashboard behind steering wheel",
+      "communication": "CAN",
+      "encrypted": true,
+      "identification_required": ["dashboard family", "Challenge or later family", "part number"]
+    },
+    "golf_mk7_2013_2017": {
+      "primary_module": "Instrument cluster",
+      "secondary_module": "Access/start authorisation system on KESSY variants",
+      "location": "Instrument cluster in dashboard; access/start components in passenger compartment",
+      "communication": "CAN",
+      "encrypted": true,
+      "identification_required": ["dashboard family", "keyed or KESSY", "part number"]
+    },
+    "golf_mk75_2017_2020": {
+      "primary_module": "Instrument cluster",
+      "secondary_module": "Access/start authorisation system on KESSY variants",
+      "location": "Instrument cluster in dashboard; access/start components in passenger compartment",
+      "communication": "CAN",
+      "encrypted": true,
+      "identification_required": ["dashboard family", "keyed or KESSY", "current support"]
+    },
+    "golf_mk8_2020_present": {
+      "primary_module": "Instrument cluster / protected immobiliser environment",
+      "secondary_module": "Access/start authorisation system depending on specification",
+      "location": "Vehicle-specific; confirm with current service information",
+      "communication": "Protected vehicle network",
+      "encrypted": true,
+      "identification_required": ["VIN", "keyed or KESSY", "original key or part number", "current tool support"]
+    }
+  }
+}
