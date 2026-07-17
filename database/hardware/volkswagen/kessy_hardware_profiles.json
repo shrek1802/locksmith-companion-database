@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "manufacturer": "Volkswagen Group",
+  "market": "UK",
+  "updated_at": "2026-07-17",
+  "rules": {
+    "part_number_required_for_verified_mapping": true,
+    "pcb_revision_required_when_part_number_is_not_unique": true,
+    "model_year_alone_is_not_identification": true,
+    "photos_must_be_linked_not_embedded": true,
+    "unknown_memory_or_mcu_must_remain_null": true
+  },
+  "profiles": {
+    "vw_kessy_early_serial_eeprom": {
+      "locksmith_name": "Early / non-encrypted KESSY serial EEPROM type",
+      "official_module_name": "Access/Start Authorization Control Module - exact designation vehicle dependent",
+      "manufacturer_names": [],
+      "part_numbers": [],
+      "pcb_revisions": [],
+      "memory_devices": [
+        {
+          "type": "serial_eeprom",
+          "marking": "93C86",
+          "status": "field_reported_research_required"
+        }
+      ],
+      "mcu": null,
+      "encryption": "commonly described by locksmiths as non-encrypted; exact implementation requires evidence",
+      "supported_read_methods": ["eeprom_in_circuit_where_reliable", "eeprom_removed_read"],
+      "procedure_ids": ["vw_kessy_early_eeprom_read"],
+      "identification_checks": ["module label", "part number", "PCB layout", "memory marking"],
+      "warnings": ["Do not remove an IC until orientation is photographed and a verified backup plan exists.", "A stable in-circuit read must be repeated and compared before it is trusted."],
+      "verification_state": "research_required",
+      "evidence": []
+    },
+    "vw_kessy_late_encrypted_board": {
+      "locksmith_name": "Late / encrypted KESSY board type",
+      "official_module_name": "Access/Start Authorization Control Module - exact designation vehicle dependent",
+      "manufacturer_names": [],
+      "part_numbers": [],
+      "pcb_revisions": [],
+      "memory_devices": [],
+      "mcu": null,
+      "encryption": "encrypted locksmith classification; exact cryptographic implementation must be documented per hardware revision",
+      "supported_read_methods": ["dedicated_solder_free_adapter", "verified_wired_bench_connection"],
+      "procedure_ids": ["vw_kessy_encrypted_adapter_read", "vw_kessy_encrypted_wired_read"],
+      "identification_checks": ["module label", "part number", "manufacturer", "PCB revision", "adapter compatibility"],
+      "warnings": ["Never select an adapter from vehicle year alone.", "Confirm supply voltage, ground and pin orientation before connecting a programmer.", "Back up all readable areas before key preparation or data modification."],
+      "verification_state": "research_required",
+      "evidence": []
+    }
+  }
+}
