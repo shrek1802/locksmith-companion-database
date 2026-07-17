@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-17",
+  "manufacturer": "Volkswagen",
+  "model": "Caddy",
+  "procedures": {
+    "caddy_cluster_identification": {
+      "title": "Identify fitted immobiliser and cluster before programming",
+      "applies_to": ["caddy_2k_2004_2010_keyed", "caddy_2k_facelift_2010_2015_keyed", "caddy_2k_2015_2020_keyed"],
+      "summary": "Read the vehicle and cluster identification first. Confirm cluster manufacturer, immobiliser family and current tool support before choosing OBD, EEPROM or bench work.",
+      "route": "diagnostic_identification",
+      "warnings": ["Do not choose a procedure from model year alone.", "Save all original data before any write operation."],
+      "verification_state": "research_required"
+    },
+    "caddy_obd_add_key": {
+      "title": "Add key by supported diagnostic route",
+      "applies_to": ["caddy_2k_2004_2010_keyed", "caddy_2k_facelift_2010_2015_keyed", "caddy_2k_2015_2020_keyed"],
+      "summary": "Use a compatible immobiliser tool after the fitted system has been identified. Exact menu wording is deliberately not stored because it changes with software updates.",
+      "route": "obd",
+      "requirements": ["working key where required", "correct prepared transponder", "regulated battery support"],
+      "verification_state": "research_required"
+    },
+    "caddy_cluster_data_route": {
+      "title": "Cluster data route for unsupported OBD or AKL",
+      "applies_to": ["caddy_2k_2004_2010_keyed", "caddy_2k_facelift_2010_2015_keyed", "caddy_2k_2015_2020_keyed"],
+      "summary": "Use the dashboard-specific supported read method only after exact hardware identification. The method may be EEPROM, service mode or bench adapter depending on cluster type.",
+      "route": "bench_or_eeprom",
+      "requirements": ["exact cluster identification", "two matching backup reads", "verified adapter or connection diagram"],
+      "warnings": ["Do not generalise one dashboard procedure across all Caddy years."],
+      "verification_state": "research_required"
+    },
+    "caddy_sb_current_security_route": {
+      "title": "Caddy V current security-access route",
+      "applies_to": ["caddy_sb_2020_present"],
+      "summary": "Confirm keyed versus KESSY specification, current tool coverage and any online/security requirement before accepting the job.",
+      "route": "vehicle_specific_diagnostic",
+      "warnings": ["No universal AKL support claim.", "Tool capability may change with software updates."],
+      "verification_state": "research_required"
+    }
+  }
+}
