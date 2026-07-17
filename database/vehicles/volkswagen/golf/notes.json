@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": "Volkswagen",
+  "model": "Golf",
+  "market": "UK",
+  "general_notes": [
+    "Do not choose the immobiliser procedure from registration year alone.",
+    "Identify the fitted instrument cluster or dashboard family before Add Key or AKL work.",
+    "Keep keyed and KESSY variants separate during diagnosis and quoting.",
+    "Confirm the blade physically before cutting, especially during the HU66 to HU162T transition.",
+    "Dealer-key preparation requirements depend on immobiliser family, fitted module and chosen tool.",
+    "Generation tools do not automatically provide vehicle programming or AKL coverage.",
+    "Use regulated battery support throughout immobiliser programming."
+  ],
+  "generation_notes": {
+    "golf_mk4_1998_2004_keyed": [
+      "Split Immo2 and Immo3 once the exact cluster is identified.",
+      "Verify early-build transponder type before generating a replacement key."
+    ],
+    "golf_mk5_2004_2009_keyed": [
+      "VDO, Micronas and other cluster implementations may require different data routes.",
+      "Record cluster part number and manufacturer in future verified sub-records."
+    ],
+    "golf_mk6_2009_2013_keyed": [
+      "Challenge and later trade-labelled families must not be merged without module evidence.",
+      "AKL acceptance should follow dashboard identification."
+    ],
+    "golf_mk7_2013_2017": [
+      "MQB dashboard family determines the supported data-read route.",
+      "KESSY specification changes the module and key workflow."
+    ],
+    "golf_mk75_2017_2020": [
+      "Do not assume identical coverage to early Mk7.",
+      "Confirm exact dashboard and current software coverage before AKL."
+    ],
+    "golf_mk8_2020_present": [
+      "Check current aftermarket and authorised online coverage before booking.",
+      "Confirm key part number or original key and VIN before ordering or generating hardware."
+    ]
+  },
+  "research_gaps": [
+    "Verified UK cluster-manufacturer splits by generation and build range",
+    "Verified keyed versus KESSY sub-records",
+    "Exact UK key and blade transitions by part number",
+    "Verified tool-operation coverage without recording volatile menu paths",
+    "Approved module-location photographs and adapter photographs"
+  ]
+}
