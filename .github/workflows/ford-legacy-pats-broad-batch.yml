@@ -1,0 +1,41 @@
+name: Ford legacy PATS broad batch
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/verify_ford_legacy_pats_broad_batch.py"
+      - ".github/workflows/ford-legacy-pats-broad-batch.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply broad legacy PATS classification
+        run: python scripts/verify_ford_legacy_pats_broad_batch.py
+
+      - name: Refresh strict Ford audit
+        run: python scripts/audit_ford_true_completion.py || true
+
+      - name: Commit verified records and reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database/vehicles/ford reports/ford_legacy_pats_broad_batch.json reports/ford_true_completion_audit.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "ford: verify broad legacy PATS batch"
+            git push
+          fi
