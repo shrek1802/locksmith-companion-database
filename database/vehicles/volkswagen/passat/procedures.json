@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": "Volkswagen",
+  "model": "Passat",
+  "procedures": {
+    "passat_b5_1997_2005_keyed": {"add_key": "PROC_VW_IMMO2_3_OBD", "all_keys_lost": "PROC_VW_IMMO2_3_DATA_ADAPTATION"},
+    "passat_b6_2005_2010_keyed": {"add_key": "PROC_VW_PASSAT_3C_IMMO4D_ADD", "all_keys_lost": "PROC_VW_PASSAT_3C_IMMO4D_AKL"},
+    "passat_b7_2010_2014": {"add_key": "PROC_VW_PASSAT_3C_LATE_ADD", "all_keys_lost": "PROC_VW_PASSAT_3C_LATE_AKL"},
+    "passat_b8_2014_2019": {"add_key": "PROC_VW_MQB48_ADD", "all_keys_lost": "PROC_VW_MQB48_AKL"},
+    "passat_b8_facelift_2019_2023": {"add_key": "PROC_VW_MQB48_LATE_ADD", "all_keys_lost": "PROC_VW_MQB48_LATE_AKL"},
+    "passat_b9_2024_present": {"add_key": "PROC_VW_MQB_PROTECTED_ADD", "all_keys_lost": "PROC_VW_MQB_PROTECTED_AKL"}
+  },
+  "status": "research_in_progress"
+}
