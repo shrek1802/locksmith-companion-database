@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "manufacturer": "Volkswagen",
+  "market": "UK",
+  "drive_side": "RHD",
+  "updated_at": "2026-07-17",
+  "status": "research_started",
+  "rules": {
+    "one_row_per_meaningful_generation": true,
+    "platform_inheritance_requires_verified_mapping": true,
+    "tool_menu_names_require_tool_specific_evidence": true,
+    "model_year_alone_is_not_proof_of_immobiliser_family": true,
+    "do_not_publish_research_required_rows_to_app": true
+  },
+  "required_fields": [
+    "record_id",
+    "model",
+    "generation",
+    "uk_year_from",
+    "uk_year_to",
+    "platform_id",
+    "mapping_state",
+    "evidence"
+  ],
+  "optional_job_fields": [
+    "body_codes",
+    "key_style",
+    "frequency_mhz",
+    "transponder",
+    "blade",
+    "immobiliser_module",
+    "add_key_route",
+    "all_keys_lost_route",
+    "security_access",
+    "online_requirement",
+    "required_adapters",
+    "tool_support",
+    "rhd_locations",
+    "exceptions",
+    "notes"
+  ],
+  "mapping_states": [
+    "verified",
+    "inherited_verified",
+    "research_required",
+    "excluded_non_uk"
+  ],
+  "records": []
+}
