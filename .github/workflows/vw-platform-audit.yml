@@ -1,0 +1,42 @@
+name: Volkswagen platform audit
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'database/platforms/volkswagen/**'
+      - 'research/volkswagen_master_matrix.json'
+      - 'scripts/audit_vw_true_completion.py'
+      - '.github/workflows/vw-platform-audit.yml'
+  pull_request:
+    paths:
+      - 'database/platforms/volkswagen/**'
+      - 'research/volkswagen_master_matrix.json'
+      - 'scripts/audit_vw_true_completion.py'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run strict Volkswagen audit
+        run: python scripts/audit_vw_true_completion.py
+
+      - name: Upload Volkswagen audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: volkswagen-platform-audit
+          path: reports/volkswagen_true_completion_audit.json
+          if-no-files-found: error
