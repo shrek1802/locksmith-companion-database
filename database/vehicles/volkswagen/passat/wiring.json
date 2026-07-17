@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": "Volkswagen",
+  "model": "Passat",
+  "connections": {
+    "passat_b5_1997_2005_keyed": {"diagnostic": "Standard 16-pin OBD", "bench": "Cluster-specific connection only when required", "battery_support": "Recommended"},
+    "passat_b6_2005_2010_keyed": {"diagnostic": "Standard 16-pin OBD", "bench": "Module/EEPROM connection depends on fitted access-start system", "battery_support": "Required for programming"},
+    "passat_b7_2010_2014": {"diagnostic": "Standard 16-pin OBD", "bench": "Module-specific connection when security data cannot be obtained diagnostically", "battery_support": "Required for programming"},
+    "passat_b8_2014_2019": {"diagnostic": "Standard 16-pin OBD", "bench": "Dashboard adapter/programmer may be required for AKL", "battery_support": "Required for programming"},
+    "passat_b8_facelift_2019_2023": {"diagnostic": "Standard 16-pin OBD", "bench": "Dashboard-specific adapter/programmer when supported", "battery_support": "Required for programming"},
+    "passat_b9_2024_present": {"diagnostic": "Standard diagnostic connection", "bench": "No universal connection claim; check current tool coverage", "battery_support": "Required for programming"}
+  },
+  "status": "research_in_progress"
+}
