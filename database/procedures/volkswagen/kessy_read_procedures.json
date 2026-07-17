@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "manufacturer": "Volkswagen Group",
+  "market": "UK",
+  "updated_at": "2026-07-17",
+  "publication_rule": "A procedure must remain research_required until every electrical value, connection point, adapter and tool route has direct evidence.",
+  "procedures": {
+    "vw_kessy_early_eeprom_read": {
+      "title": "Read early KESSY serial EEPROM",
+      "locksmith_system": "Early / non-encrypted KESSY",
+      "hardware_profile_ids": ["vw_kessy_early_serial_eeprom"],
+      "access_method": "module_removed_bench",
+      "read_method_options": ["in_circuit_read", "remove_and_read_eeprom"],
+      "required_identification": ["module part number", "PCB revision or clear PCB photographs", "memory device marking", "pin-1 orientation"],
+      "required_equipment": ["supported EEPROM programmer", "ESD protection", "current-limited bench supply if the verified tool procedure requires module power", "microscope for removed-IC work"],
+      "mandatory_backup_checks": ["read at least twice", "compare duplicate reads byte-for-byte", "save untouched original under VIN/job reference", "record checksum or file hash"],
+      "steps": [],
+      "warnings": ["Do not publish generic clip wiring because layouts and programmer pinouts vary.", "Do not write to the original dump before verified backups exist.", "If duplicate reads differ, stop and correct the connection or remove the device using an approved method."],
+      "verification_state": "research_required",
+      "evidence": []
+    },
+    "vw_kessy_encrypted_adapter_read": {
+      "title": "Read encrypted KESSY with solder-free adapter",
+      "locksmith_system": "Late / encrypted KESSY",
+      "hardware_profile_ids": ["vw_kessy_late_encrypted_board"],
+      "access_method": "module_removed_bench",
+      "read_method_options": ["dedicated_solder_free_adapter"],
+      "required_identification": ["module part number", "module manufacturer", "PCB revision", "adapter part number", "programmer and software version"],
+      "required_equipment": ["verified compatible programmer", "verified compatible solder-free adapter", "current-limited power supply where required by the tool maker", "ESD protection"],
+      "mandatory_backup_checks": ["read all available memory areas", "repeat read", "compare duplicate files", "save untouched originals", "record tool and software version"],
+      "steps": [],
+      "warnings": ["Adapter alignment must be confirmed from the exact PCB revision, not a similar photograph.", "Never apply power until voltage and polarity are confirmed from evidence.", "Do not assume all encrypted KESSY adapters support all board revisions."],
+      "verification_state": "research_required",
+      "evidence": []
+    },
+    "vw_kessy_encrypted_wired_read": {
+      "title": "Read encrypted KESSY by wired bench connection",
+      "locksmith_system": "Late / encrypted KESSY",
+      "hardware_profile_ids": ["vw_kessy_late_encrypted_board"],
+      "access_method": "module_removed_bench",
+      "read_method_options": ["soldered_wired_connection"],
+      "required_identification": ["module part number", "module manufacturer", "PCB revision", "programmer and software version", "verified wiring diagram for the exact board"],
+      "required_equipment": ["verified compatible programmer", "fine soldering equipment", "current-limited power supply where required", "ESD protection", "microscope"],
+      "mandatory_backup_checks": ["continuity-check every connected wire", "inspect for bridges", "read all available memory areas", "repeat read", "compare files", "save untouched originals"],
+      "steps": [],
+      "warnings": ["No generic solder points are provided until exact board evidence is available.", "Remove power before attaching or removing signal wires.", "Photograph the board before and after work and restore all points cleanly."],
+      "verification_state": "research_required",
+      "evidence": []
+    }
+  }
+}
