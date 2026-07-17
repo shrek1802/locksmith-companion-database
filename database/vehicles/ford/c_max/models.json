@@ -54,7 +54,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "The Ford master workbook covers the full 2003-2010 first-generation family with HU101, 433 MHz and the ID63 40-bit family. Confirm exact remote shell against the original key.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -73,10 +73,14 @@
           "ford_master_workbook_cmax",
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_official_pats_security_access_timed_delay",
+          "ford_cmax_owner_manual_pats"
         ],
-        "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "last_checked": "2026-07-17",
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_from_official_ford_pats_procedure",
+        "security_access_note": "Ford's official PATS service procedure uses timed security access before diagnostic key programming. Apply the timed PATS route to these UK C-Max records; this does not claim that every aftermarket tool uses the full wait, because some supported tools may calculate or bypass access internally."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -237,7 +241,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Uses the standard Focus Mk3/C-Max DST80 programming family. The Ford master workbook records OEM references 1756409 and 2026900.",
         "generation_tool_ids": [
@@ -252,10 +256,14 @@
         "sources": [
           "transpondery_cmax",
           "keystation_cmax_id63",
-          "ford_master_workbook_cmax"
+          "ford_master_workbook_cmax",
+          "ford_official_pats_security_access_timed_delay",
+          "ford_cmax_owner_manual_pats"
         ],
-        "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "last_checked": "2026-07-17",
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_from_official_ford_pats_procedure",
+        "security_access_note": "Ford's official PATS service procedure uses timed security access before diagnostic key programming. Apply the timed PATS route to these UK C-Max records; this does not claim that every aftermarket tool uses the full wait, because some supported tools may calculate or bypass access internally."
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -423,7 +431,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Use only where push-button start is confirmed. Exact smart-key OEM number varies by build; 1713499 is a common matching Ford oval smart-key reference in this family.",
         "generation_tool_ids": [
@@ -440,11 +448,15 @@
           "transpondery_cmax",
           "keystation_cmax_id63",
           "ford_master_workbook_cmax",
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_official_pats_security_access_timed_delay",
+          "ford_cmax_owner_manual_pats"
         ],
-        "last_checked": "2026-07-16",
+        "last_checked": "2026-07-17",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "verified_from_official_ford_pats_procedure",
+        "security_access_note": "Ford's official PATS service procedure uses timed security access before diagnostic key programming. Apply the timed PATS route to these UK C-Max records; this does not claim that every aftermarket tool uses the full wait, because some supported tools may calculate or bypass access internally."
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -611,7 +623,7 @@
           "all_keys_lost": "Exact-build coverage required; online security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "The Ford master workbook confirms 433 MHz and OEM reference 2027592 for the 2015-2019 Hitag Pro family.",
         "generation_tool_ids": [
@@ -628,11 +640,15 @@
           "transpondery_cmax",
           "keystation_cmax_id49",
           "ford_master_workbook_cmax",
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_official_pats_security_access_timed_delay",
+          "ford_cmax_owner_manual_pats"
         ],
-        "last_checked": "2026-07-16",
+        "last_checked": "2026-07-17",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "verified_from_official_ford_pats_procedure",
+        "security_access_note": "Ford's official PATS service procedure uses timed security access before diagnostic key programming. Apply the timed PATS route to these UK C-Max records; this does not claim that every aftermarket tool uses the full wait, because some supported tools may calculate or bypass access internally."
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -799,7 +815,7 @@
           "all_keys_lost": "Exact-build coverage required; online security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Keyless start family. The Ford master workbook identifies the pear-style 433 MHz Hitag Pro key and OEM reference 2027592; backup slot is normally around the steering-column shroud area.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -819,10 +835,14 @@
           "ford_master_workbook_cmax",
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_official_pats_security_access_timed_delay",
+          "ford_cmax_owner_manual_pats"
         ],
-        "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "last_checked": "2026-07-17",
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_from_official_ford_pats_procedure",
+        "security_access_note": "Ford's official PATS service procedure uses timed security access before diagnostic key programming. Apply the timed PATS route to these UK C-Max records; this does not claim that every aftermarket tool uses the full wait, because some supported tools may calculate or bypass access internally."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -992,7 +1012,7 @@
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -1009,10 +1029,14 @@
         "sources": [
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_official_pats_security_access_timed_delay",
+          "ford_cmax_owner_manual_pats"
         ],
-        "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "last_checked": "2026-07-17",
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_from_official_ford_pats_procedure",
+        "security_access_note": "Ford's official PATS service procedure uses timed security access before diagnostic key programming. Apply the timed PATS route to these UK C-Max records; this does not claim that every aftermarket tool uses the full wait, because some supported tools may calculate or bypass access internally."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
