@@ -16,89 +16,66 @@ PLACEHOLDERS = {
     "todo",
 }
 
-REQUIRED_RECORD_FIELDS = [
-    ("security_access",),
-]
-
-
-def iter_records(data):
-    if isinstance(data, dict):
-        for key, value in data.items():
-            if isinstance(value, dict) and any(k in value for k in ("record_id", "model", "variant", "year_from")):
-                yield key, value
-            yield from iter_records(value)
-    elif isinstance(data, list):
-        for idx, value in enumerate(data):
-            if isinstance(value, dict) and any(k in value for k in ("record_id", "model", "variant", "year_from")):
-                yield str(idx), value
-            yield from iter_records(value)
-
-
-def get_nested(record, path):
-    cur = record
-    for part in path:
-        if not isinstance(cur, dict):
-            return None
-        cur = cur.get(part)
-    return cur
-
 
 def main():
     records = []
     incomplete = []
+    parse_errors = []
 
     for path in sorted(FORD.glob("*/models.json")):
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
         except Exception as exc:
-            incomplete.append({"path": str(path.relative_to(ROOT)), "error": str(exc)})
+            parse_errors.append({"path": str(path.relative_to(ROOT)), "error": str(exc)})
             continue
 
-        seen = set()
-        for item_key, record in iter_records(data):
-            rid = record.get("record_id") or f"{path.stem}:{item_key}"
-            marker = (str(path), rid)
-            if marker in seen:
+        items = data.get("items")
+        if not isinstance(items, dict):
+            parse_errors.append({
+                "path": str(path.relative_to(ROOT)),
+                "error": "models.json has no top-level items object",
+            })
+            continue
+
+        for item_key, record in items.items():
+            if not isinstance(record, dict):
                 continue
-            seen.add(marker)
+
             records.append(record)
-
-            failures = []
-            security = record.get("security_access")
-            if security is None and isinstance(record.get("operations"), dict):
-                security = record["operations"].get("security_access")
-            if security is None and isinstance(record.get("programming"), dict):
-                security = record["programming"].get("security_access")
-
+            vehicle = record.get("vehicle") if isinstance(record.get("vehicle"), dict) else {}
+            vehicle_info = record.get("vehicle_information") if isinstance(record.get("vehicle_information"), dict) else {}
+            programming = vehicle_info.get("programming") if isinstance(vehicle_info.get("programming"), dict) else {}
+            security = programming.get("security_access")
             normalized = security.strip().lower() if isinstance(security, str) else security
-            if normalized in PLACEHOLDERS:
-                failures.append({"field": "security_access", "value": security})
 
-            if failures:
+            if normalized in PLACEHOLDERS:
                 incomplete.append({
                     "path": str(path.relative_to(ROOT)),
                     "item_key": item_key,
                     "record_id": record.get("record_id"),
-                    "model": record.get("model"),
-                    "variant": record.get("variant"),
-                    "year_from": record.get("year_from"),
-                    "year_to": record.get("year_to"),
-                    "failures": failures,
+                    "model": vehicle.get("model"),
+                    "variant": vehicle.get("variant"),
+                    "year_from": vehicle.get("year_from"),
+                    "year_to": vehicle.get("year_to"),
+                    "security_access": security,
                 })
 
     report = {
-        "policy": "Ford is complete only when no record uses verification/research placeholders for security access.",
+        "policy": "Ford is complete only when every vehicle record has a verified, non-placeholder vehicle_information.programming.security_access value.",
         "counts": {
             "records": len(records),
             "fully_verified": len(records) - len(incomplete),
             "incomplete": len(incomplete),
+            "parse_errors": len(parse_errors),
         },
         "incomplete": incomplete,
+        "parse_errors": parse_errors,
     }
+
     REPORT.parent.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps(report["counts"], indent=2))
-    return 1 if incomplete else 0
+    return 1 if incomplete or parse_errors else 0
 
 
 if __name__ == "__main__":
