@@ -17,7 +17,20 @@
         "blade_profile": "HU66",
         "key_type": "Remote flip key or non-remote transponder key",
         "smart_key": false,
-        "programming": {"add_key": "OBD on supported cluster variants", "all_keys_lost": "OBD or cluster data route depending on cluster type", "route": "Identify cluster, then use supported OBD or EEPROM/bench route", "online_requirement": "Tool dependent; no blanket online claim"},
+        "access_method": {
+          "add_key": "OBD on supported cluster variants",
+          "all_keys_lost": "OBD or cluster data route",
+          "module": "Instrument cluster",
+          "encrypted": "cluster_dependent"
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": "tool_and_cluster_dependent",
+          "working_key_required": false,
+          "security_access": "immobiliser_data_or_pin_cs_route"
+        },
+        "adapter": ["Standard OBD", "Cluster programmer connection when required"],
+        "programming": {"add_key": "OBD on supported cluster variants", "all_keys_lost": "OBD or cluster data route depending on cluster type", "route": "Identify cluster, then use supported OBD or EEPROM/bench route", "online_requirement": "No blanket online requirement"},
         "tool_or_cable_required": "Standard OBD for supported variants; programmer connection only where cluster identification requires it",
         "notes": "Do not select the procedure by registration year alone. Confirm cluster manufacturer and immobiliser data route."
       },
@@ -35,7 +48,20 @@
         "blade_profile": "HU66",
         "key_type": "Remote flip key",
         "smart_key": false,
-        "programming": {"add_key": "Usually diagnostic route when supported", "all_keys_lost": "Cluster data may be required depending on dashboard type", "route": "Identify dashboard before selecting OBD or data-read method", "online_requirement": "Tool dependent"},
+        "access_method": {
+          "add_key": "OBD when supported",
+          "all_keys_lost": "OBD or cluster data route",
+          "module": "Instrument cluster",
+          "encrypted": "dashboard_dependent"
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": "tool_and_dashboard_dependent",
+          "working_key_required": false,
+          "security_access": "immobiliser_data_route"
+        },
+        "adapter": ["Standard OBD", "Cluster-specific programmer connection when required"],
+        "programming": {"add_key": "Usually diagnostic route when supported", "all_keys_lost": "Cluster data may be required depending on dashboard type", "route": "Identify dashboard before selecting OBD or data-read method", "online_requirement": "No blanket online requirement"},
         "tool_or_cable_required": "Standard OBD or cluster-specific programmer connection",
         "notes": "Keep this record separate from early 2K because late dashboards and tool classifications differ."
       },
@@ -53,7 +79,20 @@
         "blade_profile": "HU66 — verify physical key before cutting",
         "key_type": "Remote flip key",
         "smart_key": false,
-        "programming": {"add_key": "OBD or saved-data route depending on dashboard and tool", "all_keys_lost": "Dashboard data/bench route may be required", "route": "MQB dashboard identification followed by supported OBD or bench procedure", "online_requirement": "Tool and operation dependent"},
+        "access_method": {
+          "add_key": "OBD or saved-data route",
+          "all_keys_lost": "Dashboard data or bench route may be required",
+          "module": "Instrument cluster",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "mqb_immobiliser_data"
+        },
+        "adapter": ["Standard OBD", "Dashboard adapter or programmer when required"],
+        "programming": {"add_key": "OBD or saved-data route depending on dashboard and tool", "all_keys_lost": "Dashboard data/bench route may be required", "route": "MQB dashboard identification followed by supported OBD or bench procedure", "online_requirement": "No blanket online requirement"},
         "tool_or_cable_required": "Standard OBD; dashboard adapter/programmer only when required by the fitted cluster",
         "notes": "Do not assume every 2015-2020 Caddy uses the same dashboard or key-preparation route."
       },
@@ -71,6 +110,19 @@
         "blade_profile": "HU162T family — verify track and tip before cutting",
         "key_type": "Remote key or KESSY smart key",
         "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "Vehicle-specific diagnostic/security route",
+          "all_keys_lost": "Coverage must be confirmed before accepting the job",
+          "module": "Instrument cluster or access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_and_operation_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "later_mqb_protected_route"
+        },
+        "adapter": ["Standard diagnostic connection", "Current platform-specific adapter or security access when required"],
         "programming": {"add_key": "Supported-tool and security-access dependent", "all_keys_lost": "Do not claim universal aftermarket coverage; verify current tool support first", "route": "Vehicle-specific diagnostic/security route", "online_requirement": "May be required depending on tool and operation"},
         "tool_or_cable_required": "Standard diagnostic connection plus any current platform-specific security access required by the chosen tool",
         "notes": "Keep keyed and KESSY identification visible in the app. Current-tool coverage must be checked before accepting AKL work."
