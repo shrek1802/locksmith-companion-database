@@ -1,0 +1,12 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "items": {
+    "polo_6n_1994_2001": {"module": "Instrument cluster or separate immobiliser box", "location": "Dashboard area", "communication": "K-line / early diagnostic", "encrypted": false},
+    "polo_9n_2001_2009": {"module": "Instrument cluster", "location": "Dashboard", "communication": "CAN / K-line depending on build", "encrypted": "cluster_dependent"},
+    "polo_6r_2009_2014": {"module": "Instrument cluster", "location": "Dashboard", "communication": "CAN", "encrypted": true},
+    "polo_6c_2014_2017": {"module": "Instrument cluster", "location": "Dashboard", "communication": "CAN", "encrypted": true},
+    "polo_aw_2017_2021": {"module": "Instrument cluster or access-start system", "location": "Dashboard / steering column area depending on variant", "communication": "MQB CAN", "encrypted": true},
+    "polo_aw_facelift_2021_present": {"module": "Instrument cluster or access-start system", "location": "Dashboard / steering column area depending on variant", "communication": "Protected MQB network", "encrypted": true}
+  }
+}
