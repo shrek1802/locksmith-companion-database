@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "manufacturer": "Volkswagen Group",
+  "market": "UK",
+  "updated_at": "2026-07-17",
+  "rules": {
+    "exact_menu_wording_required": true,
+    "tool_model_required": true,
+    "software_version_required": true,
+    "operation_required": true,
+    "screenshots_or_official_docs_required_for_verified": true,
+    "do_not_infer_one_tool_menu_from_another": true
+  },
+  "tool_profiles": {
+    "autel_im508s": {
+      "tool_name": "Autel IM508S",
+      "owned_by_user": true,
+      "menu_routes": []
+    },
+    "xhorse_key_tool_plus": {
+      "tool_name": "Xhorse Key Tool Plus",
+      "owned_by_user": true,
+      "menu_routes": []
+    },
+    "keydiy_kd_x4": {
+      "tool_name": "KEYDIY KD-X4",
+      "owned_by_user": true,
+      "menu_routes": []
+    },
+    "obdstar_g3": {
+      "tool_name": "OBDSTAR X300 Classic G3",
+      "owned_by_user": false,
+      "menu_routes": []
+    },
+    "lonsdor_k518": {
+      "tool_name": "Lonsdor K518 series",
+      "owned_by_user": false,
+      "menu_routes": []
+    }
+  },
+  "menu_route_schema": {
+    "route_id": "unique string",
+    "platform_id": "immobiliser family id",
+    "hardware_profile_ids": [],
+    "operation": "identify | read_data | add_key | all_keys_lost | make_dealer_key | module_replacement",
+    "software_version": "exact version",
+    "menu_path": [],
+    "required_adapters": [],
+    "online_required": null,
+    "notes": [],
+    "verification_state": "research_required",
+    "evidence": []
+  }
+}
