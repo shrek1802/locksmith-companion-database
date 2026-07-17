@@ -1,0 +1,38 @@
+name: Verify Ford C-Max security access
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/verify_ford_cmax_security_access.py
+      - .github/workflows/verify-ford-cmax-security-access.yml
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply verified C-Max security-access routes
+        run: python scripts/verify_ford_cmax_security_access.py
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes required"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database/vehicles/ford/c_max/models.json
+          git commit -m "ford: verify C-Max timed PATS security access"
+          git push
