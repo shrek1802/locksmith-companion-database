@@ -2,91 +2,11 @@
   "policy": "Ford is complete only when every vehicle record has a verified, non-placeholder vehicle_information.programming.security_access value.",
   "counts": {
     "records": 158,
-    "fully_verified": 2,
-    "incomplete": 156,
+    "fully_verified": 26,
+    "incomplete": 132,
     "parse_errors": 0
   },
   "incomplete": [
-    {
-      "path": "database/vehicles/ford/b_max/models.json",
-      "item_key": "b_max_2012_2017_keyed",
-      "record_id": "ford_b_max_2012_2017_keyed_uk",
-      "model": "B-Max",
-      "variant": "Keyed Ignition",
-      "year_from": 2012,
-      "year_to": 2017,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/b_max/models.json",
-      "item_key": "b_max_2012_2017_passive",
-      "record_id": "ford_b_max_2012_2017_passive_uk",
-      "model": "B-Max",
-      "variant": "Passive Key / Push Button Start",
-      "year_from": 2012,
-      "year_to": 2017,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/c_max/models.json",
-      "item_key": "c_max_2003_2010_keyed",
-      "record_id": "ford_c_max_2003_2010_keyed_uk",
-      "model": "C-Max",
-      "variant": "Keyed Ignition",
-      "year_from": 2003,
-      "year_to": 2010,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/c_max/models.json",
-      "item_key": "c_max_2010_2014_keyed",
-      "record_id": "ford_c_max_2010_2014_keyed_uk",
-      "model": "C-Max",
-      "variant": "Keyed Ignition",
-      "year_from": 2010,
-      "year_to": 2014,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/c_max/models.json",
-      "item_key": "c_max_2010_2014_passive",
-      "record_id": "ford_c_max_2010_2014_passive_uk",
-      "model": "C-Max",
-      "variant": "Passive Key / Push Button Start",
-      "year_from": 2010,
-      "year_to": 2014,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/c_max/models.json",
-      "item_key": "c_max_2015_2019_keyed",
-      "record_id": "ford_c_max_2015_2019_keyed_uk",
-      "model": "C-Max",
-      "variant": "Keyed Ignition",
-      "year_from": 2015,
-      "year_to": 2019,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/c_max/models.json",
-      "item_key": "c_max_2015_2019_passive",
-      "record_id": "ford_c_max_2015_2019_passive_uk",
-      "model": "C-Max",
-      "variant": "Passive Key / Push Button Start",
-      "year_from": 2015,
-      "year_to": 2019,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/c_max/models.json",
-      "item_key": "c_max_2010_2015_keyed",
-      "record_id": "ford_c_max_2010_2015_keyed_uk",
-      "model": "C-Max",
-      "variant": "Flip Remote Key",
-      "year_from": 2010,
-      "year_to": 2015,
-      "security_access": "verification_required"
-    },
     {
       "path": "database/vehicles/ford/ecosport/models.json",
       "item_key": "ecosport_2014_2017_keyed",
@@ -196,66 +116,6 @@
       "year_from": 2024,
       "year_to": null,
       "security_access": null
-    },
-    {
-      "path": "database/vehicles/ford/fiesta/models.json",
-      "item_key": "fiesta_1995_2001_keyed",
-      "record_id": "ford_fiesta_1995_2001_keyed_uk",
-      "model": "Fiesta",
-      "variant": "Keyed Ignition",
-      "year_from": 1995,
-      "year_to": 2001,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/fiesta/models.json",
-      "item_key": "fiesta_2002_2008_keyed",
-      "record_id": "ford_fiesta_2002_2008_keyed_uk",
-      "model": "Fiesta",
-      "variant": "Keyed Ignition",
-      "year_from": 2002,
-      "year_to": 2008,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/fiesta/models.json",
-      "item_key": "fiesta_2008_2012_keyed",
-      "record_id": "ford_fiesta_2008_2012_keyed_uk",
-      "model": "Fiesta",
-      "variant": "Remote Key / Mechanical Ignition",
-      "year_from": 2008,
-      "year_to": 2012,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/fiesta/models.json",
-      "item_key": "fiesta_2008_2012_passive",
-      "record_id": "ford_fiesta_2008_2012_passive_uk",
-      "model": "Fiesta",
-      "variant": "Passive Key / Ford Power Start",
-      "year_from": 2008,
-      "year_to": 2012,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/fiesta/models.json",
-      "item_key": "fiesta_2013_2017_keyed",
-      "record_id": "ford_fiesta_2013_2017_keyed_uk",
-      "model": "Fiesta",
-      "variant": "Remote Flip Key / Mechanical Ignition",
-      "year_from": 2013,
-      "year_to": 2017,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/fiesta/models.json",
-      "item_key": "fiesta_2013_2017_passive",
-      "record_id": "ford_fiesta_2013_2017_passive_uk",
-      "model": "Fiesta",
-      "variant": "Passive Key / Ford Power Start",
-      "year_from": 2013,
-      "year_to": 2017,
-      "security_access": "verification_required"
     },
     {
       "path": "database/vehicles/ford/fiesta/models.json",
@@ -399,36 +259,6 @@
     },
     {
       "path": "database/vehicles/ford/focus/models.json",
-      "item_key": "focus_mk1_1998_2005_keyed",
-      "record_id": "ford_focus_mk1_1998_2005_keyed_uk",
-      "model": "Focus",
-      "variant": "3 Button Remote Head",
-      "year_from": 1998,
-      "year_to": 2005,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/focus/models.json",
-      "item_key": "focus_mk2_2005_2011_keyed",
-      "record_id": "ford_focus_mk2_2005_2011_keyed_uk",
-      "model": "Focus",
-      "variant": "Flip Remote Key / Remote Head",
-      "year_from": 2005,
-      "year_to": 2011,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/focus/models.json",
-      "item_key": "focus_mk3_2011_2015_keyed",
-      "record_id": "ford_focus_mk3_2011_2015_keyed_uk",
-      "model": "Focus",
-      "variant": "Flip Remote Key",
-      "year_from": 2011,
-      "year_to": 2015,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/focus/models.json",
       "item_key": "focus_mk3_keyless_2011_2015_passive",
       "record_id": "ford_focus_mk3_keyless_2011_2015_passive_uk",
       "model": "Focus",
@@ -535,26 +365,6 @@
       "variant": "Passive Key / Push Button Start",
       "year_from": 2010,
       "year_to": 2014,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/galaxy/models.json",
-      "item_key": "galaxy_2015_2023_passive",
-      "record_id": "ford_galaxy_2015_2023_passive_uk",
-      "model": "Galaxy",
-      "variant": "Passive Key / Push Button Start",
-      "year_from": 2015,
-      "year_to": 2023,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/galaxy/models.json",
-      "item_key": "galaxy_2006_2015_keyed",
-      "record_id": "ford_galaxy_2006_2015_keyed_uk",
-      "model": "Galaxy",
-      "variant": "Flip Remote / Smart Key (Oval)",
-      "year_from": 2006,
-      "year_to": 2015,
       "security_access": "verification_required"
     },
     {
@@ -699,16 +509,6 @@
     },
     {
       "path": "database/vehicles/ford/kuga/models.json",
-      "item_key": "kuga_2008_2012_passive",
-      "record_id": "ford_kuga_2008_2012_passive_uk",
-      "model": "Kuga",
-      "variant": "Passive Key / Push Button Start",
-      "year_from": 2008,
-      "year_to": 2012,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/kuga/models.json",
       "item_key": "kuga_2013_2015_keyed",
       "record_id": "ford_kuga_2013_2015_keyed_uk",
       "model": "Kuga",
@@ -756,16 +556,6 @@
       "year_from": 2020,
       "year_to": null,
       "security_access": null
-    },
-    {
-      "path": "database/vehicles/ford/kuga/models.json",
-      "item_key": "kuga_2013_2020_passive",
-      "record_id": "ford_kuga_2013_2020_passive_uk",
-      "model": "Kuga",
-      "variant": "Pear / Teardrop Keyless Smart Key",
-      "year_from": 2013,
-      "year_to": 2020,
-      "security_access": "verification_required"
     },
     {
       "path": "database/vehicles/ford/mondeo/models.json",
@@ -846,26 +636,6 @@
       "year_from": 2014,
       "year_to": 2022,
       "security_access": null
-    },
-    {
-      "path": "database/vehicles/ford/mondeo/models.json",
-      "item_key": "mondeo_2000_2007_keyed",
-      "record_id": "ford_mondeo_2000_2007_keyed_uk",
-      "model": "Mondeo",
-      "variant": "3 Button Remote Head",
-      "year_from": 2000,
-      "year_to": 2007,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/mondeo/models.json",
-      "item_key": "mondeo_2007_2014_passive",
-      "record_id": "ford_mondeo_2007_2014_passive_uk",
-      "model": "Mondeo",
-      "variant": "Smart Key / Flip Key Options",
-      "year_from": 2007,
-      "year_to": 2014,
-      "security_access": "verification_required"
     },
     {
       "path": "database/vehicles/ford/mustang/models.json",
@@ -1075,16 +845,6 @@
       "variant": "Passive Key / Push Button Start",
       "year_from": 2010,
       "year_to": 2014,
-      "security_access": "verification_required"
-    },
-    {
-      "path": "database/vehicles/ford/s_max/models.json",
-      "item_key": "s_max_2015_2023_passive",
-      "record_id": "ford_s_max_2015_2023_passive_uk",
-      "model": "S-Max",
-      "variant": "Passive Key / Push Button Start",
-      "year_from": 2015,
-      "year_to": 2023,
       "security_access": "verification_required"
     },
     {

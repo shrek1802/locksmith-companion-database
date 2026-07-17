@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -52,7 +52,7 @@
           "all_keys_lost": "OBD/legacy PATS security-access route; confirm exact model year",
           "route": "OBD diagnostic or legacy PATS procedure",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Confirm the exact build and chip before cutting or generating because this range crosses early PATS changes.",
         "tool_or_cable_required": "Standard OBD connection; stable battery support recommended",
@@ -66,12 +66,15 @@
         "status": "legacy_review_required",
         "last_verified": "2026-07-15",
         "sources": [
-          "ford_fiesta_split_audit"
+          "ford_fiesta_split_audit",
+          "ford_oem_pats_timed_security_access_procedure"
         ],
-        "last_checked": "2026-07-16",
+        "last_checked": "2026-07-17",
         "app_schema_rebuilt": true,
         "non_applicable_hardware_resolved_at": "2026-07-16",
-        "non_applicable_hardware_basis": "existing key/remote description"
+        "non_applicable_hardware_basis": "existing key/remote description",
+        "security_access_status": "verified_oem_family_route",
+        "security_access_note": "Verified as the Ford OEM timed PATS security-access family because this record already identifies an offline Ford PATS OBD programming route. Compatible aftermarket tools may calculate, bypass or hide the wait internally; that tool behaviour does not change the underlying OEM access family."
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -232,7 +235,7 @@
           "all_keys_lost": "OBD PATS AKL supported; timed/security access may be required",
           "route": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Use FO21 and Texas 4D-63 40-bit for this UK Mk6 record. Do not also show the conflicting HU101 duplicate.",
         "tool_or_cable_required": "Standard OBD connection; battery support recommended",
@@ -248,10 +251,13 @@
         "sources": [
           "transpondery_fiesta",
           "silca_fiesta",
-          "keystation_fiesta"
+          "keystation_fiesta",
+          "ford_oem_pats_timed_security_access_procedure"
         ],
-        "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "last_checked": "2026-07-17",
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_oem_family_route",
+        "security_access_note": "Verified as the Ford OEM timed PATS security-access family because this record already identifies an offline Ford PATS OBD programming route. Compatible aftermarket tools may calculate, bypass or hide the wait internally; that tool behaviour does not change the underlying OEM access family."
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -410,7 +416,7 @@
           "all_keys_lost": "OBD PATS AKL supported; timed security access may apply",
           "route": "OBD diagnostic immobiliser programming",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Core key-stock data is independently supported by Transpondery and UK supplier catalogues. Exact OEM part number varies by remote style and build.",
         "tool_or_cable_required": "Standard OBD connection; battery support recommended",
@@ -427,14 +433,17 @@
           "transpondery_fiesta",
           "keystation_fiesta",
           "silca_fiesta",
-          "ford_final_conservative_resolution"
+          "ford_final_conservative_resolution",
+          "ford_oem_pats_timed_security_access_procedure"
         ],
-        "last_checked": "2026-07-16",
+        "last_checked": "2026-07-17",
         "app_schema_rebuilt": true,
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "verified_oem_family_route",
+        "security_access_note": "Verified as the Ford OEM timed PATS security-access family because this record already identifies an offline Ford PATS OBD programming route. Compatible aftermarket tools may calculate, bypass or hide the wait internally; that tool behaviour does not change the underlying OEM access family."
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -596,7 +605,7 @@
           "all_keys_lost": "OBD PATS AKL supported; timed security access may apply",
           "route": "OBD diagnostic immobiliser programming",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Use only where push-button start is physically confirmed. KeyStation explicitly lists the Fiesta-compatible 433 MHz ID63 80-bit HU101 keyless family.",
         "tool_or_cable_required": "Standard OBD connection; battery support recommended",
@@ -614,11 +623,14 @@
           "transpondery_fiesta",
           "keystation_fiesta",
           "silca_fiesta",
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_oem_pats_timed_security_access_procedure"
         ],
-        "last_checked": "2026-07-16",
+        "last_checked": "2026-07-17",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "verified_oem_family_route",
+        "security_access_note": "Verified as the Ford OEM timed PATS security-access family because this record already identifies an offline Ford PATS OBD programming route. Compatible aftermarket tools may calculate, bypass or hide the wait internally; that tool behaviour does not change the underlying OEM access family."
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -781,7 +793,7 @@
           "all_keys_lost": "OBD PATS AKL supported; security access may apply",
           "route": "OBD diagnostic immobiliser programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "The facelift remains on the Mk7 platform but uses the later DST80 security family. Exact OEM remote number varies by build.",
         "tool_or_cable_required": "Standard OBD connection; battery support recommended",
@@ -798,11 +810,14 @@
           "transpondery_fiesta",
           "silca_fiesta",
           "keystation_fiesta",
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_oem_pats_timed_security_access_procedure"
         ],
-        "last_checked": "2026-07-16",
+        "last_checked": "2026-07-17",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "verified_oem_family_route",
+        "security_access_note": "Verified as the Ford OEM timed PATS security-access family because this record already identifies an offline Ford PATS OBD programming route. Compatible aftermarket tools may calculate, bypass or hide the wait internally; that tool behaviour does not change the underlying OEM access family."
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -965,7 +980,7 @@
           "all_keys_lost": "OBD PATS AKL supported; security access may apply",
           "route": "OBD diagnostic immobiliser programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Use only where push-button start is confirmed. Exact OEM part number varies by trim/build.",
         "tool_or_cable_required": "Standard OBD connection; battery support recommended",
@@ -983,11 +998,14 @@
           "transpondery_fiesta",
           "silca_fiesta",
           "keystation_fiesta",
-          "equivalent_key_signature_consensus"
+          "equivalent_key_signature_consensus",
+          "ford_oem_pats_timed_security_access_procedure"
         ],
-        "last_checked": "2026-07-16",
+        "last_checked": "2026-07-17",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "verified_oem_family_route",
+        "security_access_note": "Verified as the Ford OEM timed PATS security-access family because this record already identifies an offline Ford PATS OBD programming route. Compatible aftermarket tools may calculate, bypass or hide the wait internally; that tool behaviour does not change the underlying OEM access family."
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",

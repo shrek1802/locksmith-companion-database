@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -271,7 +271,7 @@
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "HU101",
@@ -289,10 +289,13 @@
           "silca_kuga",
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_oem_pats_timed_security_access_procedure"
         ],
-        "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "last_checked": "2026-07-17",
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_oem_family_route",
+        "security_access_note": "Verified as the Ford OEM timed PATS security-access family because this record already identifies an offline Ford PATS OBD programming route. Compatible aftermarket tools may calculate, bypass or hide the wait internally; that tool behaviour does not change the underlying OEM access family."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -1337,7 +1340,7 @@
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "HU101",
@@ -1354,10 +1357,13 @@
         "sources": [
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_oem_pats_timed_security_access_procedure"
         ],
-        "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "last_checked": "2026-07-17",
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_oem_family_route",
+        "security_access_note": "Verified as the Ford OEM timed PATS security-access family because this record already identifies an offline Ford PATS OBD programming route. Compatible aftermarket tools may calculate, bypass or hide the wait internally; that tool behaviour does not change the underlying OEM access family."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
