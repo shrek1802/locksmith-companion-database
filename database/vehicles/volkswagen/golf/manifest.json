@@ -1,21 +1,28 @@
 {
   "schema_version": "2.1",
-  "manufacturer": "Volkswagen",
-  "model": "Golf",
-  "market": "UK",
-  "drive_side": "RHD",
   "updated_at": "2026-07-17",
-  "record_count": 6,
-  "verified_count": 0,
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "golf",
+    "name": "Golf"
+  },
+  "version": 1,
   "status": "research_in_progress",
-  "files": [
-    "models.json",
-    "procedures.json",
-    "modules.json",
-    "wiring.json",
-    "service_functions.json",
-    "notes.json",
-    "photos.json"
-  ],
-  "publication_rule": "Do not publish Golf records until each generation passes the Volkswagen audit."
+  "files": {
+    "models": "models.json",
+    "procedures": "procedures.json",
+    "modules": "modules.json",
+    "wiring": "wiring.json",
+    "service_functions": "service_functions.json",
+    "notes": "notes.json",
+    "photos": "photos.json"
+  },
+  "verification": {
+    "scope": "Six UK RHD Golf generations added for app display and schema testing",
+    "programming_status": "Research required",
+    "last_verified": "2026-07-17"
+  }
 }
