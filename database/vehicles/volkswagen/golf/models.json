@@ -1,0 +1,129 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": {"id": "volkswagen", "name": "Volkswagen"},
+  "model": {"id": "golf", "name": "Golf"},
+  "category": "vehicles",
+  "items": {
+    "golf_mk4_1998_2004_keyed": {
+      "record_id": "volkswagen_golf_mk4_1998_2004_keyed_uk",
+      "vehicle": {"make": "Volkswagen", "model": "Golf", "variant": "Keyed ignition", "generation": "Golf Mk4", "year_from": 1998, "year_to": 2004, "market": "UK", "drive_side": "RHD"},
+      "vehicle_information": {
+        "platform": "PQ34",
+        "immobiliser_family_id": "vw_immo_2_3",
+        "immobiliser_system": "Instrument-cluster based Immo2/Immo3 family depending on build and cluster",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto family on most later UK vehicles; verify early build",
+        "blade_profile": "HU66",
+        "key_type": "Remote flip key or non-remote transponder key",
+        "smart_key": false,
+        "access_method": {"add_key": "OBD adaptation when security data is available", "all_keys_lost": "PIN/data acquisition then adaptation", "module": "Instrument cluster", "encrypted": false},
+        "security": {"online_required": false, "dealer_key_required": false, "working_key_required": false, "security_access": "pin_or_cluster_data"},
+        "adapter": ["Standard OBD", "EEPROM programmer only when data extraction is required"],
+        "programming": {"add_key": "OBD adaptation on supported variants", "all_keys_lost": "Read required security data then adapt keys", "route": "Identify Immo2 or Immo3 before programming", "online_requirement": "No"},
+        "notes": "Do not combine Immo2 and Immo3 procedures. Confirm cluster and transponder before preparing the key."
+      },
+      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+    },
+    "golf_mk5_2004_2009_keyed": {
+      "record_id": "volkswagen_golf_mk5_2004_2009_keyed_uk",
+      "vehicle": {"make": "Volkswagen", "model": "Golf", "variant": "Keyed ignition", "generation": "Golf Mk5", "year_from": 2004, "year_to": 2009, "market": "UK", "drive_side": "RHD"},
+      "vehicle_information": {
+        "platform": "PQ35",
+        "immobiliser_family_id": "vw_immo_4a_adaptation",
+        "immobiliser_system": "Instrument-cluster based Volkswagen Immo4 family",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote flip key",
+        "smart_key": false,
+        "access_method": {"add_key": "OBD on supported clusters", "all_keys_lost": "OBD or cluster data route", "module": "Instrument cluster", "encrypted": "cluster_dependent"},
+        "security": {"online_required": false, "dealer_key_required": "tool_and_cluster_dependent", "working_key_required": false, "security_access": "pin_cs_or_cluster_data"},
+        "adapter": ["Standard OBD", "Cluster programmer connection when required"],
+        "programming": {"add_key": "OBD on supported cluster variants", "all_keys_lost": "Cluster identification and security-data route", "route": "Identify cluster manufacturer before selecting method", "online_requirement": "No blanket online requirement"},
+        "notes": "VDO, Micronas and other cluster variants must not be treated as one procedure."
+      },
+      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+    },
+    "golf_mk6_2009_2013_keyed": {
+      "record_id": "volkswagen_golf_mk6_2009_2013_keyed_uk",
+      "vehicle": {"make": "Volkswagen", "model": "Golf", "variant": "Keyed ignition", "generation": "Golf Mk6", "year_from": 2009, "year_to": 2013, "market": "UK", "drive_side": "RHD"},
+      "vehicle_information": {
+        "platform": "PQ35",
+        "immobiliser_family_id": "vw_immo_4_challenge_or_45",
+        "immobiliser_system": "Later cluster-based Volkswagen immobiliser; exact family depends on fitted dashboard",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote flip key",
+        "smart_key": false,
+        "access_method": {"add_key": "OBD when supported", "all_keys_lost": "Cluster data route may be required", "module": "Instrument cluster", "encrypted": true},
+        "security": {"online_required": false, "dealer_key_required": true, "working_key_required": false, "security_access": "challenge_or_immobiliser_data"},
+        "adapter": ["Standard OBD", "Cluster-specific programmer connection when required"],
+        "programming": {"add_key": "Diagnostic or saved-data route depending on dashboard", "all_keys_lost": "Dashboard identification and data acquisition", "route": "Do not select by year alone", "online_requirement": "No blanket online requirement"},
+        "notes": "Keep Immo4 Challenge and trade-labelled Immo4.5 classifications separate until the dashboard is identified."
+      },
+      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+    },
+    "golf_mk7_2013_2017": {
+      "record_id": "volkswagen_golf_mk7_2013_2017_uk",
+      "vehicle": {"make": "Volkswagen", "model": "Golf", "variant": "Keyed or KESSY depending on specification", "generation": "Golf Mk7", "year_from": 2013, "year_to": 2017, "market": "UK", "drive_side": "RHD"},
+      "vehicle_information": {
+        "platform": "MQB",
+        "immobiliser_family_id": "vw_mqb_48",
+        "immobiliser_system": "MQB ID48 immobiliser family",
+        "module_type": "Instrument cluster / access-start system on KESSY variants",
+        "transponder_type": "MQB ID48 family",
+        "blade_profile": "HU66 or HU162T family depending on key and build — verify physically",
+        "key_type": "Remote key or KESSY smart key",
+        "smart_key": "variant_dependent",
+        "access_method": {"add_key": "OBD or saved-data route", "all_keys_lost": "Dashboard data or bench route may be required", "module": "Instrument cluster or access-start system", "encrypted": true},
+        "security": {"online_required": false, "dealer_key_required": true, "working_key_required": false, "security_access": "mqb_immobiliser_data"},
+        "adapter": ["Standard OBD", "Dashboard adapter or programmer when required"],
+        "programming": {"add_key": "OBD or saved-data route depending on dashboard and tool", "all_keys_lost": "Dashboard identification and data route", "route": "Separate keyed and KESSY variants during the job", "online_requirement": "No blanket online requirement"},
+        "notes": "Dashboard family and keyless specification determine the actual procedure."
+      },
+      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+    },
+    "golf_mk75_2017_2020": {
+      "record_id": "volkswagen_golf_mk75_2017_2020_uk",
+      "vehicle": {"make": "Volkswagen", "model": "Golf", "variant": "Keyed or KESSY depending on specification", "generation": "Golf Mk7.5", "year_from": 2017, "year_to": 2020, "market": "UK", "drive_side": "RHD"},
+      "vehicle_information": {
+        "platform": "MQB",
+        "immobiliser_family_id": "vw_mqb_48_late",
+        "immobiliser_system": "Later MQB ID48 family with dashboard-dependent access",
+        "module_type": "Instrument cluster / access-start system on KESSY variants",
+        "transponder_type": "MQB ID48 family",
+        "blade_profile": "HU162T family on many later keys — verify track and tip",
+        "key_type": "Remote key or KESSY smart key",
+        "smart_key": "variant_dependent",
+        "access_method": {"add_key": "OBD or saved-data route", "all_keys_lost": "Dashboard data or supported bench route", "module": "Instrument cluster or access-start system", "encrypted": true},
+        "security": {"online_required": "tool_and_operation_dependent", "dealer_key_required": true, "working_key_required": false, "security_access": "late_mqb_immobiliser_data"},
+        "adapter": ["Standard OBD", "Dashboard adapter or programmer when required"],
+        "programming": {"add_key": "Supported diagnostic or saved-data route", "all_keys_lost": "Confirm current dashboard support before accepting work", "route": "Identify dashboard and keyed/KESSY configuration", "online_requirement": "Tool and operation dependent"},
+        "notes": "Do not assume Mk7 and Mk7.5 use identical dashboard access."
+      },
+      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+    },
+    "golf_mk8_2020_present": {
+      "record_id": "volkswagen_golf_mk8_2020_present_uk",
+      "vehicle": {"make": "Volkswagen", "model": "Golf", "variant": "Keyed or keyless depending on specification", "generation": "Golf Mk8", "year_from": 2020, "year_to": null, "market": "UK", "drive_side": "RHD"},
+      "vehicle_information": {
+        "platform": "MQB Evo",
+        "immobiliser_family_id": "vw_mqb_49_5c",
+        "immobiliser_system": "Later protected MQB immobiliser family",
+        "module_type": "Instrument cluster / access-start system depending on specification",
+        "transponder_type": "Later MQB key family — confirm by VIN and original key",
+        "blade_profile": "HU162T family — verify exact profile",
+        "key_type": "Remote key or KESSY smart key",
+        "smart_key": "variant_dependent",
+        "access_method": {"add_key": "Vehicle-specific diagnostic/security route", "all_keys_lost": "Confirm current aftermarket coverage before accepting", "module": "Instrument cluster or access-start system", "encrypted": true},
+        "security": {"online_required": "tool_and_operation_dependent", "dealer_key_required": true, "working_key_required": false, "security_access": "later_mqb_protected_route"},
+        "adapter": ["Standard diagnostic connection", "Current platform-specific security access or adapter when required"],
+        "programming": {"add_key": "Supported-tool and security-access dependent", "all_keys_lost": "No universal aftermarket coverage claim", "route": "Vehicle-specific diagnostic/security route", "online_requirement": "May be required"},
+        "notes": "Current tool coverage must be checked before booking Add Key or AKL work."
+      },
+      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+    }
+  }
+}
