@@ -1,0 +1,38 @@
+name: Mark Missing Ford Security Access
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/mark_missing_ford_security_access_for_verification.py'
+      - '.github/workflows/mark-missing-ford-security-access.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Mark missing routes for verification
+        run: python scripts/mark_missing_ford_security_access_for_verification.py
+
+      - name: Commit explicit verification states
+        run: |
+          if git diff --quiet -- database/vehicles/ford; then
+            echo 'No missing Ford security-access values remain.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford
+          git commit -m 'ford: mark missing security-access routes for verification'
+          git push
