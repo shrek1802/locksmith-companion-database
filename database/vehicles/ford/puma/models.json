@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -53,7 +53,7 @@
           "all_keys_lost": "Legacy PATS diagnostic or code-based route depending build",
           "route": "OBD or legacy PATS procedure",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "The original Puma is Fiesta-derived and spans a legacy Ford PATS transition. Blade and European remote frequency are useful for stock lookup, but the chip must be confirmed by exact year/build or original key before programming.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -71,10 +71,13 @@
           "ford_puma_split_audit",
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",

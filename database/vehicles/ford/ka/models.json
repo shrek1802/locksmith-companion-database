@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -53,7 +53,7 @@
           "all_keys_lost": "Legacy PATS diagnostic or code-based route depending build",
           "route": "OBD or legacy PATS procedure",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Early first-generation Ka uses the legacy Ford key family. Remote style varies, so verify the original key before supply.",
         "generation_tool_ids": [
@@ -68,7 +68,8 @@
         "sources": [
           "transpondery_ka",
           "silca_ka",
-          "ford_final_conservative_resolution"
+          "ford_final_conservative_resolution",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
@@ -76,7 +77,9 @@
         "resolved_without_guessing": [
           "oem_part_numbers",
           "button_count"
-        ]
+        ],
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Programming route": "OBD or legacy PATS procedure",
@@ -230,7 +233,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Later first-generation Ka changes to 4D60 while retaining the FO21 blade family.",
         "generation_tool_ids": [
@@ -245,14 +248,17 @@
         "sources": [
           "transpondery_ka",
           "silca_ka",
-          "ford_final_conservative_resolution"
+          "ford_final_conservative_resolution",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -589,7 +595,7 @@
           "all_keys_lost": "Confirm exact build/tool",
           "route": "Clone or diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -607,14 +613,17 @@
           "ford_master_workbook",
           "transpondery_ford",
           "silca_ford",
-          "ford_final_conservative_resolution"
+          "ford_final_conservative_resolution",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "frequency_mhz"
-        ]
+        ],
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -769,7 +778,7 @@
           "all_keys_lost": "Yes — EEPROM/OBD route",
           "route": "EEPROM / OBD pre-code",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "tool_or_cable_required": "Fiat-compatible pre-code/EEPROM setup if OBD route fails",
         "emergency_blade": "Same as ignition blade",
@@ -786,10 +795,13 @@
         "sources": [
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Connection / cable": "Fiat-compatible pre-code/EEPROM setup if OBD route fails",

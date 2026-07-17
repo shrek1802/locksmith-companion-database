@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -53,7 +53,7 @@
           "all_keys_lost": "Legacy PATS diagnostic or code-based procedure depending build",
           "route": "Legacy PATS / OBD where supported",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Transpondery confirms Texas 4C for 1995-1999. The remote configuration varies, so frequency must be confirmed from the original key or exact application before supply.",
         "generation_tool_ids": [
@@ -67,7 +67,8 @@
         "last_verified": "2026-07-15",
         "sources": [
           "transpondery_transit",
-          "ford_final_conservative_resolution"
+          "ford_final_conservative_resolution",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
@@ -75,7 +76,9 @@
         "resolved_without_guessing": [
           "oem_part_numbers",
           "button_count"
-        ]
+        ],
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Programming route": "Legacy PATS / OBD where supported",
@@ -232,7 +235,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Transpondery confirms 4D60 for 2000-2006. Silca independently lists Transit V184/5 2000-2006 with FO21 and 433 MHz.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -251,10 +254,13 @@
           "silca_transit",
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -417,7 +423,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; timed security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "Transpondery lists 2007-2013 as Texas 4D63. Silca independently lists Transit V347 2006-2013 with FO21 and 433 MHz.",
         "generation_tool_ids": [
@@ -432,14 +438,17 @@
         "sources": [
           "transpondery_transit",
           "silca_transit",
-          "ford_final_conservative_resolution"
+          "ford_final_conservative_resolution",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -1097,7 +1106,7 @@
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -1114,10 +1123,13 @@
         "sources": [
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -1286,7 +1298,7 @@
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -1303,10 +1315,13 @@
         "sources": [
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",

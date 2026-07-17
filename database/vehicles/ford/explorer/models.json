@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-17",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -53,7 +53,7 @@
           "all_keys_lost": "Legacy Ford PATS diagnostic route with exact-build coverage required",
           "route": "OBD diagnostic or legacy PATS procedure",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "notes": "This UK RHD Explorer is based on the North American platform and spans the PATS I/PATS II era. Do not apply European Fiesta/Mondeo blade assumptions. Confirm the physical blade, original remote frequency and transponder before supply.",
         "generation_tool_ids": [
@@ -68,7 +68,8 @@
         "sources": [
           "ford_explorer_split_audit",
           "ford_securilock_history",
-          "ford_final_conservative_resolution"
+          "ford_final_conservative_resolution",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
@@ -77,7 +78,9 @@
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Programming route": "OBD diagnostic or legacy PATS procedure",

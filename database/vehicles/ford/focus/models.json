@@ -2144,7 +2144,7 @@
           "all_keys_lost": "Confirm exact build/tool",
           "route": "Confirm exact tool route",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "timed_pats"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "HU101",
@@ -2161,10 +2161,13 @@
         "sources": [
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "ford_existing_record_pats_route_classification"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_from_explicit_record_family_metadata",
+        "security_access_basis": "Existing record explicitly identifies a Ford PATS family, an OBD/diagnostic programming route, no normal online requirement, and a UK vehicle range ending no later than 2018."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
