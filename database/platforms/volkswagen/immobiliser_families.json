@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "manufacturer": "Volkswagen",
+  "market": "UK",
+  "drive_side": "RHD",
+  "updated_at": "2026-07-17",
+  "purpose": "Single source of truth linking OEM/diagnostic terminology to names used by locksmith tools.",
+  "naming_rules": {
+    "official_name": "Use only when supported by OEM or reliable diagnostic documentation.",
+    "locksmith_name": "Common trade/tool name; may not be an OEM designation.",
+    "tool_menu_names": "Exact menu wording must be captured from the named tool/version and supported by evidence.",
+    "aliases": "Search terms only; aliases must never be treated as proof that two systems are identical.",
+    "verification_states": [
+      "verified",
+      "partially_verified",
+      "research_required"
+    ]
+  },
+  "families": {
+    "vw_immo_1": {
+      "official_name": "Immobilizer Generation 1",
+      "locksmith_name": "Immo 1",
+      "aliases": ["Immobilizer I", "IMMO1"],
+      "tool_menu_names": {},
+      "architecture": "Separate immobilizer control module or immobilizer integrated in instrument cluster, depending on vehicle.",
+      "verification_state": "partially_verified",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "title": "Immobilizer",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+          "supports": ["generation_name", "identification_notes"]
+        }
+      ]
+    },
+    "vw_immo_2": {
+      "official_name": "Immobilizer Generation 2",
+      "locksmith_name": "Immo 2",
+      "aliases": ["Immobilizer II", "IMMO2"],
+      "tool_menu_names": {},
+      "architecture": "Separate immobilizer control module or instrument-cluster integrated implementation, depending on vehicle.",
+      "verification_state": "partially_verified",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "title": "Immobilizer",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+          "supports": ["generation_name", "identification_notes"]
+        }
+      ]
+    },
+    "vw_immo_3": {
+      "official_name": "Immobilizer Generation 3",
+      "locksmith_name": "Immo 3",
+      "aliases": ["Immobilizer III", "IMMO3"],
+      "tool_menu_names": {},
+      "architecture": "Vehicle-specific implementation; do not infer from model year alone.",
+      "verification_state": "research_required",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "title": "Immobilizer",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+          "supports": ["generation_name", "model_market_variation_warning"]
+        }
+      ]
+    },
+    "vw_immo_4a_adaptation": {
+      "official_name": "Immobilizer Generation 4 - adaptation implementation",
+      "locksmith_name": "Immo 4A / Immo 4 Adaptation",
+      "aliases": ["IMMO4A", "Immo IV Adaptation"],
+      "tool_menu_names": {},
+      "architecture": "Generation 4 implementation identified in diagnostic documentation as using adaptation rather than a revolving challenge.",
+      "verification_state": "partially_verified",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "title": "Immobilizer",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+          "supports": ["immo_4a_name", "adaptation_distinction"]
+        }
+      ]
+    },
+    "vw_immo_4_challenge": {
+      "official_name": "Immobilizer Generation 4 - challenge implementation",
+      "locksmith_name": "Immo 4 Challenge / Immo 4 Download",
+      "aliases": ["IMMO4 Challenge", "Challenge system", "Immo IV Challenge"],
+      "tool_menu_names": {},
+      "architecture": "Generation 4 implementation that exposes a changing immobilizer challenge value; exact locksmith-tool route is tool and cluster dependent.",
+      "verification_state": "partially_verified",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "title": "Immobilizer",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+          "supports": ["challenge_distinction", "challenge_changes_with_ignition_cycle"]
+        },
+        {
+          "publisher": "Ross-Tech",
+          "title": "Immobilizer IV ECU Swapping",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer_IV_ECU_Swapping",
+          "supports": ["challenge_identification"]
+        }
+      ]
+    },
+    "vw_immo_4d_passat": {
+      "official_name": "Immobilizer Generation 4D",
+      "locksmith_name": "Immo 4D / Passat B6 CCM Immo",
+      "aliases": ["IMMO4D", "Passat 3C Immobilizer", "J393 immobilizer"],
+      "tool_menu_names": {},
+      "architecture": "Immobilizer integrated in Comfort Control Module J393 on the documented Passat 3C implementation.",
+      "verification_state": "verified",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "title": "VW Passat (3C) Immobilizer",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/VW_Passat_%283C%29_Immobilizer",
+          "supports": ["generation_name", "j393_integration"]
+        }
+      ]
+    },
+    "vw_immo_4_kessy": {
+      "official_name": "Immobilizer Generation 4 - KESSY implementation",
+      "locksmith_name": "Immo 4 KESSY",
+      "aliases": ["KESSY Immo 4", "Access/Start Authorization"],
+      "tool_menu_names": {},
+      "architecture": "Immobilizer integrated in a keyless entry/start authorization control unit; exact module and procedure vary by platform.",
+      "verification_state": "research_required",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "title": "Immobilizer IV Immobilizer Swapping (Instrument Cluster)",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer_IV_Immobilizer_Swapping_%28Instrument_Cluster%29",
+          "supports": ["kessy_is_distinct_from_cluster_implementation"]
+        }
+      ]
+    },
+    "vw_immo_45": {
+      "official_name": null,
+      "official_name_status": "No single OEM designation verified yet; retain as locksmith/tool classification until mapped to a documented implementation.",
+      "locksmith_name": "Immo 4.5",
+      "aliases": ["IMMO4.5", "Immo IV+", "Generation 4.5"],
+      "tool_menu_names": {},
+      "architecture": "Trade classification requiring separation by cluster/module type before vehicle inheritance is allowed.",
+      "verification_state": "research_required",
+      "sources": []
+    },
+    "vw_immo_5": {
+      "official_name": "Immobilizer Generation 5",
+      "locksmith_name": "Immo 5",
+      "aliases": ["Immobilizer V", "IMMO5"],
+      "tool_menu_names": {},
+      "architecture": "Vehicle-specific implementation; do not treat MQB, BCM2 or all keyless systems as automatically equivalent to Immo 5.",
+      "verification_state": "research_required",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "title": "Immobilizer",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+          "supports": ["generation_name"]
+        }
+      ]
+    },
+    "vw_mqb_48": {
+      "official_name": "MQB platform immobilizer - exact OEM generation name vehicle dependent",
+      "locksmith_name": "MQB48",
+      "aliases": ["MQB 48", "VAG MQB"],
+      "tool_menu_names": {},
+      "architecture": "Locksmith classification. Platform mapping must include cluster type, key type and procedure evidence.",
+      "verification_state": "research_required",
+      "sources": []
+    },
+    "vw_mqb_49_5c": {
+      "official_name": "MQB platform immobilizer - exact OEM generation name vehicle dependent",
+      "locksmith_name": "MQB49 / 5C",
+      "aliases": ["MQB49", "MQB 5C", "5C system"],
+      "tool_menu_names": {},
+      "architecture": "Locksmith/tool classification. MQB49 and 5C must remain separately searchable and must not be merged without vehicle/tool evidence.",
+      "verification_state": "research_required",
+      "sources": []
+    },
+    "vw_mlb_bcm2": {
+      "official_name": "MLB-based Central Convenience J393 / BCM2",
+      "locksmith_name": "BCM2",
+      "aliases": ["MLB BCM2", "J393 BCM2", "BCM2 1.1", "BCM2 2.0"],
+      "tool_menu_names": {},
+      "architecture": "On documented MLB applications, J393 BCM2 performs immobilizer/KESSY functions and uses diagnostic address 05 for access/start authorization.",
+      "verification_state": "partially_verified",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "title": "MLB based Central Conv. (J393) BCM2",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/MLB_based_Central_Conv._%28J393%29_BCM2",
+          "supports": ["official_module_name", "bcm2_versions", "immobilizer_kessy_role"]
+        },
+        {
+          "publisher": "Autel",
+          "title": "APB300",
+          "url": "https://www.autel.com/immotool1/4337.jhtml",
+          "supports": ["tool_uses_mlb_and_mqb_platform_terms"]
+        }
+      ]
+    },
+    "vw_mlb_evo": {
+      "official_name": "MLB evo immobilizer system - exact control-unit designation vehicle dependent",
+      "locksmith_name": "MLB Evo",
+      "aliases": ["MLBevo", "MLB-evo"],
+      "tool_menu_names": {},
+      "architecture": "Must remain distinct from BCM2 1.1/2.0 unless documentation proves compatibility.",
+      "verification_state": "research_required",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "title": "MLB based Central Conv. (J393) BCM2",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/MLB_based_Central_Conv._%28J393%29_BCM2",
+          "supports": ["mlbevo_exclusion_from_legacy_bcm2_page"]
+        },
+        {
+          "publisher": "Autel",
+          "title": "APB300",
+          "url": "https://www.autel.com/immotool1/4337.jhtml",
+          "supports": ["tool_uses_mlb_platform_term"]
+        }
+      ]
+    },
+    "vw_meb": {
+      "official_name": "MEB platform access/start authorization - exact control-unit designation vehicle dependent",
+      "locksmith_name": "MEB",
+      "aliases": ["VW ID immobilizer", "ID platform"],
+      "tool_menu_names": {},
+      "architecture": "Electric-vehicle platform classification; no programming route may be inherited until UK tool and OEM evidence is recorded.",
+      "verification_state": "research_required",
+      "sources": []
+    },
+    "vw_crafter_derived": {
+      "official_name": "Crafter generation-specific immobilizer system",
+      "locksmith_name": "Crafter / Commercial special system",
+      "aliases": ["Crafter Mercedes-derived", "Crafter VW-derived"],
+      "tool_menu_names": {},
+      "architecture": "Placeholder family boundary only. First- and second-generation Crafter systems must be researched separately and never inherited from passenger-car VW profiles by default.",
+      "verification_state": "research_required",
+      "sources": []
+    }
+  }
+}
