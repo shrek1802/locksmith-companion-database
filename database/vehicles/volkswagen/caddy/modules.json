@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-17",
+  "modules": {
+    "caddy_2k_cluster": {
+      "name": "Instrument cluster",
+      "applies_to": ["caddy_2k_2004_2010_keyed", "caddy_2k_facelift_2010_2015_keyed"],
+      "function": "Primary immobiliser data location",
+      "location_rhd": "Dashboard directly ahead of the driver",
+      "identification_required": ["manufacturer", "part_number", "software_or_hardware_version"],
+      "notes": "Cluster type determines whether OBD, EEPROM or bench access is appropriate.",
+      "verification_state": "research_required"
+    },
+    "caddy_2k_late_cluster": {
+      "name": "Later instrument cluster",
+      "applies_to": ["caddy_2k_2015_2020_keyed"],
+      "function": "MQB-style immobiliser data and key authorisation",
+      "location_rhd": "Dashboard directly ahead of the driver",
+      "identification_required": ["manufacturer", "part_number", "dashboard family"],
+      "notes": "Do not assume all late Caddy dashboards share one service-mode or bench procedure.",
+      "verification_state": "research_required"
+    },
+    "caddy_sb_access_start": {
+      "name": "Instrument cluster / access-start authorisation system",
+      "applies_to": ["caddy_sb_2020_present"],
+      "function": "Later MQB vehicle authorisation; implementation varies with keyed or KESSY specification",
+      "location_rhd": "Vehicle-specific; confirm through diagnosis before dismantling",
+      "identification_required": ["keyed_or_kessy", "part_number", "diagnostic_identification"],
+      "verification_state": "research_required"
+    }
+  }
+}
