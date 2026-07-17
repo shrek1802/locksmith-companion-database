@@ -2,6 +2,10 @@ name: Ford security-access bulk classify
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/ford-security-access-bulk-classify.yml'
+      - 'scripts/ford_security_access_bulk_classify.py'
 
 permissions:
   contents: write
