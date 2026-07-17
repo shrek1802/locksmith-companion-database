@@ -1,0 +1,39 @@
+name: Ford security-access bulk classify
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Classify explicit Ford security-access routes
+        run: python scripts/ford_security_access_bulk_classify.py
+
+      - name: Refresh strict Ford audit
+        run: python scripts/audit_ford_true_completion.py || true
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database/vehicles/ford reports/ford_security_access_bulk_classify.json reports/ford_true_completion_audit.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "ford: classify explicit security-access routes in bulk"
+            git push
+          fi
