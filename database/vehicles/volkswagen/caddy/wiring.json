@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-17",
+  "connections": {
+    "standard_obd": {
+      "applies_to": ["caddy_2k_2004_2010_keyed", "caddy_2k_facelift_2010_2015_keyed", "caddy_2k_2015_2020_keyed", "caddy_sb_2020_present"],
+      "connection": "Vehicle OBD diagnostic connector",
+      "location_rhd": "Driver lower dashboard area; confirm exact trim position on vehicle",
+      "battery_support": "Regulated support supply recommended during immobiliser operations",
+      "notes": "No exact tool menu path is stored."
+    },
+    "cluster_bench": {
+      "applies_to": ["caddy_2k_2004_2010_keyed", "caddy_2k_facelift_2010_2015_keyed", "caddy_2k_2015_2020_keyed"],
+      "connection": "Cluster-specific bench, service-mode or EEPROM connection",
+      "location_rhd": "Instrument cluster removed from driver dashboard",
+      "notes": "Connection diagram must match the exact cluster part number and PCB revision. Never inherit a generic pinout."
+    }
+  }
+}
