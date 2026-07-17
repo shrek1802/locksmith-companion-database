@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-17",
+  "functions": {
+    "add_key": {
+      "label": "Add Key",
+      "availability": "variant_and_tool_dependent",
+      "notes": "Identify the fitted immobiliser and dashboard before programming."
+    },
+    "all_keys_lost": {
+      "label": "All Keys Lost",
+      "availability": "variant_and_tool_dependent",
+      "notes": "May require cluster data, bench access or current security access. No universal OBD claim."
+    },
+    "remote_learning": {
+      "label": "Remote Learning",
+      "availability": "generation_dependent",
+      "notes": "Remote matching may be separate from transponder learning on earlier vehicles."
+    },
+    "key_identification": {
+      "label": "Key and Transponder Identification",
+      "availability": "all_generations",
+      "notes": "Confirm blade, frequency, button layout and keyed/KESSY specification from the original key or VIN-supported data."
+    }
+  }
+}
