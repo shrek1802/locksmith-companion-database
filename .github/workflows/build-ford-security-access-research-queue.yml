@@ -1,0 +1,39 @@
+name: Build Ford Security Access Research Queue
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reports/ford_security_access_audit.json'
+      - 'scripts/build_ford_security_access_research_queue.py'
+      - '.github/workflows/build-ford-security-access-research-queue.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build-queue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build Ford security-access research queue
+        run: python scripts/build_ford_security_access_research_queue.py
+
+      - name: Commit generated research queue
+        run: |
+          if [ -z "$(git status --porcelain -- reports/ford_security_access_research_queue.json)" ]; then
+            echo 'Ford security-access research queue is already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/ford_security_access_research_queue.json
+          git commit -m 'Generate Ford security-access research queue'
+          git push
