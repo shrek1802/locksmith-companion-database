@@ -55,7 +55,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "tool_calculated_or_bypassed_pats"
         },
         "notes": "B-Max shares the Fiesta Mk7 electrical/key architecture. The Ford master workbook records OEM reference 1756409 for the keyed family.",
         "generation_tool_ids": [
@@ -70,10 +70,15 @@
         "sources": [
           "transpondery_bmax",
           "keystation_bmax",
-          "ford_master_workbook_bmax"
+          "ford_master_workbook_bmax",
+          "autel_ford_pats_security_access_guidance",
+          "advanced_diagnostics_smart_pro_ford_key_programming",
+          "ford_bmax_dst80_architecture_inference"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_by_family_and_tool_route",
+        "security_access_note": "Ford PATS security access is handled by a compatible diagnostic/key tool; for this DST80 B-Max family, use the tool-guided calculated/bypassed PATS route. Do not treat remote/transponder generation tools as proof of vehicle programming support."
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -241,7 +246,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "tool_calculated_or_bypassed_pats"
         },
         "notes": "Use only where push-button start is physically confirmed. The Ford master workbook records OEM reference 1713499 for the smart-key family.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -261,10 +266,15 @@
           "ford_master_workbook_bmax",
           "ford_master_workbook",
           "transpondery_ford",
-          "silca_ford"
+          "silca_ford",
+          "autel_ford_pats_security_access_guidance",
+          "advanced_diagnostics_smart_pro_ford_key_programming",
+          "ford_bmax_dst80_architecture_inference"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "verified_by_family_and_tool_route",
+        "security_access_note": "Ford PATS security access is handled by a compatible diagnostic/key tool; for this DST80 B-Max family, use the tool-guided calculated/bypassed PATS route. Do not treat remote/transponder generation tools as proof of vehicle programming support."
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
