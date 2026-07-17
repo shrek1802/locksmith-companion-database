@@ -1,0 +1,46 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": "Volkswagen",
+  "model": "Golf",
+  "market": "UK",
+  "items": {
+    "golf_mk4_1998_2004_keyed": {
+      "add_key": "PROC_VW_IMMO2_3_OBD_ADAPTATION",
+      "all_keys_lost": "PROC_VW_IMMO2_3_SECURITY_DATA_AND_ADAPTATION",
+      "remote_learning": "PROC_VW_REMOTE_MATCHING_VARIANT_DEPENDENT",
+      "selection_note": "Identify Immo2 or Immo3 and confirm cluster type before programming."
+    },
+    "golf_mk5_2004_2009_keyed": {
+      "add_key": "PROC_VW_IMMO4_OBD_OR_SAVED_DATA",
+      "all_keys_lost": "PROC_VW_IMMO4_CLUSTER_DATA_AKL",
+      "remote_learning": "PROC_VW_REMOTE_MATCHING_VARIANT_DEPENDENT",
+      "selection_note": "Identify the fitted cluster manufacturer and supported security-data route."
+    },
+    "golf_mk6_2009_2013_keyed": {
+      "add_key": "PROC_VW_IMMO4_CHALLENGE_OR_45_ADD_KEY",
+      "all_keys_lost": "PROC_VW_IMMO4_CHALLENGE_OR_45_AKL",
+      "remote_learning": "PROC_VW_REMOTE_MATCHING_VARIANT_DEPENDENT",
+      "selection_note": "Do not choose between Challenge and later trade classifications by year alone."
+    },
+    "golf_mk7_2013_2017": {
+      "add_key": "PROC_VW_MQB48_ADD_KEY",
+      "all_keys_lost": "PROC_VW_MQB48_DASHBOARD_DATA_AKL",
+      "kessy": "PROC_VW_MQB48_KESSY_IDENTIFICATION",
+      "selection_note": "Identify dashboard family and keyed or KESSY specification first."
+    },
+    "golf_mk75_2017_2020": {
+      "add_key": "PROC_VW_LATE_MQB48_ADD_KEY",
+      "all_keys_lost": "PROC_VW_LATE_MQB48_SUPPORTED_DATA_AKL",
+      "kessy": "PROC_VW_LATE_MQB48_KESSY_IDENTIFICATION",
+      "selection_note": "Confirm current support for the exact dashboard before accepting AKL work."
+    },
+    "golf_mk8_2020_present": {
+      "add_key": "PROC_VW_MQB49_5C_CURRENT_SUPPORT_CHECK",
+      "all_keys_lost": "PROC_VW_MQB49_5C_AKL_CURRENT_SUPPORT_CHECK",
+      "kessy": "PROC_VW_MQB49_5C_KEYED_OR_KESSY_IDENTIFICATION",
+      "selection_note": "No universal aftermarket coverage claim; confirm VIN, key type and current tool support."
+    }
+  },
+  "status": "procedure_links_created_research_pending"
+}
