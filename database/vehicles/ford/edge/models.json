@@ -49,7 +49,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD diagnostic programming or FDRS by operation/build",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "The UK Edge was principally supplied with passive start. Use a European 433 MHz application, not a North American 315 MHz key. The Ford master workbook records OEM references 1919602 and 2230771 for the UK 2016-2021 slim smart-key family.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -78,7 +79,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -202,7 +206,7 @@
           "all_keys_lost": "Exact configuration and tool coverage required",
           "route": "Ford PATS diagnostic route if genuine keyed variant is confirmed",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Retained only to prevent a keyed vehicle being forced into the passive record. The normal UK Edge record is passive start; verify the actual ignition before ordering.",
         "generation_tool_ids": [
@@ -224,7 +228,10 @@
         "resolved_without_guessing": [
           "oem_part_numbers",
           "button_count"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "Ford PATS diagnostic route if genuine keyed variant is confirmed",

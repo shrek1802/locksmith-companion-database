@@ -57,7 +57,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no for this early DST80 range",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Passenger derivative of the first-generation Transit Custom. Core key data follows the matching V362/V363 Transit Custom security family.",
         "generation_tool_ids": [
@@ -77,7 +77,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -246,7 +249,7 @@
           "all_keys_lost": "Do not accept without VIN/build and exact tool coverage",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Retained as a real transition range because the checked catalogues leave a gap between the early DST80 and later Hitag Pro applications. Confirm the original key or VIN/build before ordering.",
         "generation_tool_ids": [
@@ -268,7 +271,10 @@
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -436,7 +442,7 @@
           "all_keys_lost": "Exact-build coverage required; later security/online access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Late Tourneo Custom shares the Transit Custom Hitag Pro key family and OEM references. Exact operation-level tool IDs still need mapping.",
         "generation_tool_ids": [
@@ -456,7 +462,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -614,7 +623,7 @@
           "all_keys_lost": "Exact-build coverage required; later security/online access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Use only where passive start is physically confirmed. Core key family and OEM references follow the matching Transit Custom application.",
         "generation_tool_ids": [
@@ -634,7 +643,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -781,7 +793,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Ford diagnostic/FDRS workflow",
-          "online_requirement": "Likely operation dependent; verify before booking"
+          "online_requirement": "Likely operation dependent; verify before booking",
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Current second-generation Tourneo Custom is isolated from the 2019-2023 data. Do not inherit the older key or procedure without exact VIN/build confirmation.",
         "generation_tool_ids": [
@@ -811,7 +824,10 @@
           "button_count",
           "frequency_mhz"
         ],
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "Ford diagnostic/FDRS workflow",

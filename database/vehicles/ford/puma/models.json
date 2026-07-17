@@ -234,7 +234,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD diagnostic programming or FDRS by operation/build",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Silca explicitly lists the Ford Puma from 2019 with HU101, 433 MHz and ID47. Use this keyed record only where mechanical ignition is physically confirmed.",
         "generation_tool_ids": [
@@ -262,7 +263,10 @@
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
         "hardware_consensus_applied": true,
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming or FDRS by operation/build",
@@ -385,7 +389,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD diagnostic programming or FDRS by operation/build",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Use where push-button start is confirmed. The Silca 2019 Puma application independently confirms HU101, 433 MHz and ID47 for the modern generation.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -415,7 +420,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",

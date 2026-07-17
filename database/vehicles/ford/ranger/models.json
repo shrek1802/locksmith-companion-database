@@ -51,7 +51,7 @@
           "all_keys_lost": "Exact immobiliser and tool coverage required",
           "route": "Legacy diagnostic/immobiliser route",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Transpondery confirms Texas 4C for 1999-2000. The early UK Ranger is Mazda-derived, so the blade and remote must not be inferred from later HU101 Ford applications.",
         "generation_tool_ids": [
@@ -73,7 +73,10 @@
         "resolved_without_guessing": [
           "oem_part_numbers",
           "button_count"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "Legacy diagnostic/immobiliser route",
@@ -223,7 +226,7 @@
           "all_keys_lost": "Exact immobiliser and tool coverage required",
           "route": "OBD diagnostic programming where supported",
           "online_requirement": "No",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Transpondery confirms Texas 4D63 for 2001-2010. Because this is a Mazda-derived UK platform, blade and frequency remain tied to the exact application rather than later Ford T6 data.",
         "generation_tool_ids": [
@@ -245,7 +248,10 @@
         "resolved_without_guessing": [
           "oem_part_numbers",
           "button_count"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming where supported",
@@ -401,7 +407,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no for this early T6 range",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Transpondery lists Ranger 2011+ as DST80. Silca independently lists Ranger TKE 2011-2015 with HU101 and 433 MHz; this record stops before the separately catalogued 2015 Hitag Pro application.",
         "generation_tool_ids": [
@@ -421,7 +427,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -590,7 +599,7 @@
           "all_keys_lost": "Exact-build coverage required; later vehicles may require online Ford security access",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Silca explicitly lists Ranger P375 from 2015 with HU101, 433 MHz and ID47. This provides a locksmith-relevant security breakpoint from the earlier DST80 application.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -612,7 +621,10 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -772,7 +784,7 @@
           "all_keys_lost": "Exact-build coverage required; online Ford security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Use only where passive start is physically confirmed. Blade, frequency and Hitag Pro family are supported by the 2015-on Silca Ranger application.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -794,7 +806,10 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -944,7 +959,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Ford diagnostic/FDRS workflow",
-          "online_requirement": "Likely operation dependent; verify before booking"
+          "online_requirement": "Likely operation dependent; verify before booking",
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Current P703 Ranger is intentionally isolated from the 2015-2022 T6 data. Do not inherit the older key or programming route without exact VIN/build confirmation.",
         "generation_tool_ids": [
@@ -974,7 +990,10 @@
           "button_count",
           "frequency_mhz"
         ],
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "Ford diagnostic/FDRS workflow",
@@ -1473,7 +1492,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Confirm exact tool route",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "ford_fdrs_online_security_access"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "HU198 (Laser)",
@@ -1500,7 +1520,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",

@@ -54,7 +54,7 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline.",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "battery_type": "Confirm against physical remote",
         "oem_part_numbers": [
@@ -79,7 +79,10 @@
           "button_count",
           "frequency_mhz",
           "blade_profile"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "key_information": {
         "key_type": "Mechanical ignition key / remote configuration varies",
@@ -233,7 +236,7 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline.",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "oem_part_numbers": [
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
@@ -257,7 +260,10 @@
           "frequency_mhz",
           "blade_profile",
           "transponder_type"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "key_information": {
         "key_type": "Remote key with mechanical ignition blade",
@@ -412,7 +418,7 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline.",
-          "security_access": "verification_required"
+          "security_access": "tool_calculated_or_bypassed_pats"
         },
         "button_count": 3,
         "oem_part_numbers": [
@@ -440,7 +446,10 @@
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
         "hardware_enrichment": "derived_from_existing_record_data",
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -598,7 +607,7 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline.",
-          "security_access": "verification_required"
+          "security_access": "tool_calculated_or_bypassed_pats"
         },
         "button_count": 3,
         "oem_part_numbers": [
@@ -634,7 +643,10 @@
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
         "hardware_enrichment": "derived_from_existing_record_data",
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -800,7 +812,7 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline.",
-          "security_access": "verification_required"
+          "security_access": "tool_calculated_or_bypassed_pats"
         },
         "oem_part_numbers": [
           "1698112",
@@ -820,7 +832,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "key_information": {
         "key_type": "Passive key with emergency blade",
@@ -975,7 +990,7 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline.",
-          "security_access": "verification_required"
+          "security_access": "tool_calculated_or_bypassed_pats"
         },
         "button_count": 3,
         "oem_part_numbers": [
@@ -1011,7 +1026,10 @@
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
         "hardware_enrichment": "derived_from_existing_record_data",
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "key_information": {
         "key_type": "3-button remote key with mechanical blade",
@@ -1191,7 +1209,7 @@
           "data_status": "uk_baseline_guidance_not_personally_verified",
           "last_baseline_update": "2026-07-16",
           "verification_note": "Confirm exact year, ignition type, module generation and current tool menu before programming. Record-specific verified information takes priority over this baseline.",
-          "security_access": "verification_required"
+          "security_access": "tool_calculated_or_bypassed_pats"
         },
         "oem_part_numbers": [
           "1698112",
@@ -1211,7 +1229,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "key_information": {
         "key_type": "Passive key with emergency blade",
@@ -1376,7 +1397,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Confirm exact tool route",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "ford_fdrs_online_security_access"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "HU101",
@@ -1406,7 +1428,10 @@
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
         "hardware_consensus_applied": true,
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",

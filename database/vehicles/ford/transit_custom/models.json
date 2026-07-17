@@ -57,7 +57,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no for this early DST80 range",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Transpondery lists Transit Custom 2012-2017 as DST80/ID63-6F. Silca independently lists Transit Custom V362/V363 2012-2016 with HU101 and 433 MHz.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -79,7 +79,10 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -252,7 +255,7 @@
           "all_keys_lost": "Do not accept without VIN/build and exact tool coverage",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "The checked professional catalogues leave a gap between the 2012-2017 DST80 range and the 2019+ Hitag Pro range. Keep 2017-2018 as a genuine build transition requiring VIN/original-key confirmation rather than guessing one chip across both years.",
         "generation_tool_ids": [
@@ -274,7 +277,10 @@
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -442,7 +448,7 @@
           "all_keys_lost": "Exact-build coverage required; later security/online access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Transpondery lists Transit Custom 2019+ as Hitag Pro and provides the OEM proximity references shown. Silca lists Transit Custom V362 from 2016 with HU101, 433 MHz and ID47-family remote applications.",
         "generation_tool_ids": [
@@ -459,7 +465,10 @@
           "silca_transit_custom"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -617,7 +626,7 @@
           "all_keys_lost": "Exact-build coverage required; later security/online access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Use only where passive start is physically confirmed. OEM references and transponder family are source-backed; operation-level tool IDs remain to be mapped.",
         "generation_tool_ids": [
@@ -637,7 +646,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -784,7 +796,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Ford diagnostic/FDRS workflow",
-          "online_requirement": "Likely operation dependent; verify before booking"
+          "online_requirement": "Likely operation dependent; verify before booking",
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Current second-generation Transit Custom is retained as an explicit current-platform record. Do not inherit the 2019-2023 key or procedure without exact VIN/build confirmation.",
         "generation_tool_ids": [
@@ -814,7 +827,10 @@
           "button_count",
           "frequency_mhz"
         ],
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "Ford diagnostic/FDRS workflow",
@@ -936,7 +952,7 @@
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -956,7 +972,10 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
@@ -1105,7 +1124,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD + online/FDRS/security access",
-          "online_requirement": "Yes / operation dependent"
+          "online_requirement": "Yes / operation dependent",
+          "security_access": "ford_fdrs_online_security_access"
         },
         "tool_or_cable_required": "Ford security access/bypass as required by build",
         "emergency_blade": "HU198 (Laser)",
@@ -1132,7 +1152,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Ford security access/bypass as required by build",

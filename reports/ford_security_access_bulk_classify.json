@@ -1,0 +1,764 @@
+{
+  "policy": "Classify only when the existing Ford record explicitly identifies the security architecture or access route; ambiguous records remain untouched.",
+  "changed_count": 108,
+  "skipped_count": 0,
+  "changed": [
+    {
+      "path": "database/vehicles/ford/ecosport/models.json",
+      "item_key": "ecosport_2014_2017_keyed",
+      "record_id": "ford_ecosport_2014_2017_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/ecosport/models.json",
+      "item_key": "ecosport_2014_2017_passive",
+      "record_id": "ford_ecosport_2014_2017_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/ecosport/models.json",
+      "item_key": "ecosport_2018_2021_keyed",
+      "record_id": "ford_ecosport_2018_2021_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ecosport/models.json",
+      "item_key": "ecosport_2018_2021_passive",
+      "record_id": "ford_ecosport_2018_2021_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ecosport/models.json",
+      "item_key": "ecosport_2022_2023_keyed",
+      "record_id": "ford_ecosport_2022_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ecosport/models.json",
+      "item_key": "ecosport_2017_2022_passive",
+      "record_id": "ford_ecosport_2017_2022_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/edge/models.json",
+      "item_key": "edge_2016_2021_passive",
+      "record_id": "ford_edge_2016_2021_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/edge/models.json",
+      "item_key": "edge_2016_2021_keyed",
+      "record_id": "ford_edge_2016_2021_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/explorer/models.json",
+      "item_key": "explorer_2024_present_meb",
+      "record_id": "ford_explorer_2024_present_meb_uk",
+      "value": "vw_meb_online_security_access",
+      "basis": "record explicitly identifies Volkswagen MEB-derived security architecture"
+    },
+    {
+      "path": "database/vehicles/ford/fiesta/models.json",
+      "item_key": "fiesta_2017_2023_keyed",
+      "record_id": "ford_fiesta_2017_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/fiesta/models.json",
+      "item_key": "fiesta_2017_2023_passive",
+      "record_id": "ford_fiesta_2017_2023_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/fiesta/models.json",
+      "item_key": "fiesta_mk8_keyless_2017_2023_passive",
+      "record_id": "ford_fiesta_mk8_keyless_2017_2023_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/fiesta_van/models.json",
+      "item_key": "fiesta_van_2002_2008_keyed",
+      "record_id": "ford_fiesta_van_2002_2008_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/fiesta_van/models.json",
+      "item_key": "fiesta_van_2009_2018_keyed",
+      "record_id": "ford_fiesta_van_2009_2018_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/fiesta_van/models.json",
+      "item_key": "fiesta_van_2018_2023_keyed",
+      "record_id": "ford_fiesta_van_2018_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "item_key": "focus_1998_2004_keyed",
+      "record_id": "ford_focus_1998_2004_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "item_key": "focus_2004_2010_keyed",
+      "record_id": "ford_focus_2004_2010_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "item_key": "focus_2008_2010_passive",
+      "record_id": "ford_focus_2008_2010_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "item_key": "focus_2011_2014_keyed",
+      "record_id": "ford_focus_2011_2014_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "item_key": "focus_2011_2014_passive",
+      "record_id": "ford_focus_2011_2014_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "item_key": "focus_2015_2018_keyed",
+      "record_id": "ford_focus_2015_2018_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "item_key": "focus_2015_2018_passive",
+      "record_id": "ford_focus_2015_2018_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "item_key": "focus_2018_2025_passive",
+      "record_id": "ford_focus_2018_2025_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "item_key": "focus_mk3_5_mk4_2015_2020_passive",
+      "record_id": "ford_focus_mk3_5_mk4_2015_2020_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/focus/models.json",
+      "item_key": "focus_mk4_keyless_2020_present_passive",
+      "record_id": "ford_focus_mk4_keyless_2020_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/galaxy/models.json",
+      "item_key": "galaxy_1995_1998_vag",
+      "record_id": "ford_galaxy_1995_1998_vag_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/galaxy/models.json",
+      "item_key": "galaxy_1998_2000_vag",
+      "record_id": "ford_galaxy_1998_2000_vag_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/galaxy/models.json",
+      "item_key": "galaxy_2000_2006_vag",
+      "record_id": "ford_galaxy_2000_2006_vag_uk",
+      "value": "vag_legacy_pin_or_security_access",
+      "basis": "record explicitly identifies a VAG-derived Ford generation"
+    },
+    {
+      "path": "database/vehicles/ford/galaxy/models.json",
+      "item_key": "galaxy_2006_2009_keyed",
+      "record_id": "ford_galaxy_2006_2009_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/galaxy/models.json",
+      "item_key": "galaxy_2006_2009_passive",
+      "record_id": "ford_galaxy_2006_2009_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/galaxy/models.json",
+      "item_key": "galaxy_2010_2014_keyed",
+      "record_id": "ford_galaxy_2010_2014_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/galaxy/models.json",
+      "item_key": "galaxy_2010_2014_passive",
+      "record_id": "ford_galaxy_2010_2014_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/grand_c_max/models.json",
+      "item_key": "grand_c_max_2010_2014_keyed",
+      "record_id": "ford_grand_c_max_2010_2014_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/grand_c_max/models.json",
+      "item_key": "grand_c_max_2010_2014_passive",
+      "record_id": "ford_grand_c_max_2010_2014_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/grand_c_max/models.json",
+      "item_key": "grand_c_max_2015_2019_keyed",
+      "record_id": "ford_grand_c_max_2015_2019_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/grand_c_max/models.json",
+      "item_key": "grand_c_max_2015_2019_passive",
+      "record_id": "ford_grand_c_max_2015_2019_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ka/models.json",
+      "item_key": "ka_2009_2016_fiat_keyed",
+      "record_id": "ford_ka_2009_2016_fiat_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ka_plus/models.json",
+      "item_key": "ka_plus_2016_2020_keyed",
+      "record_id": "ford_ka_plus_2016_2020_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ka_plus/models.json",
+      "item_key": "ka_plus_2016_2021_keyed",
+      "record_id": "ford_ka_plus_2016_2021_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/kuga/models.json",
+      "item_key": "kuga_2008_2012_keyed",
+      "record_id": "ford_kuga_2008_2012_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/kuga/models.json",
+      "item_key": "kuga_2013_2015_keyed",
+      "record_id": "ford_kuga_2013_2015_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/kuga/models.json",
+      "item_key": "kuga_2013_2015_passive",
+      "record_id": "ford_kuga_2013_2015_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/kuga/models.json",
+      "item_key": "kuga_2016_2019_keyed",
+      "record_id": "ford_kuga_2016_2019_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/kuga/models.json",
+      "item_key": "kuga_2016_2019_passive",
+      "record_id": "ford_kuga_2016_2019_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/kuga/models.json",
+      "item_key": "kuga_2020_present_passive",
+      "record_id": "ford_kuga_2020_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/mondeo/models.json",
+      "item_key": "mondeo_1996_2000_keyed",
+      "record_id": "ford_mondeo_1996_2000_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/mondeo/models.json",
+      "item_key": "mondeo_2000_transition_keyed",
+      "record_id": "ford_mondeo_2000_transition_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/mondeo/models.json",
+      "item_key": "mondeo_2001_2006_keyed",
+      "record_id": "ford_mondeo_2001_2006_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/mondeo/models.json",
+      "item_key": "mondeo_2007_2010_keyed",
+      "record_id": "ford_mondeo_2007_2010_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/mondeo/models.json",
+      "item_key": "mondeo_2007_2010_passive",
+      "record_id": "ford_mondeo_2007_2010_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/mondeo/models.json",
+      "item_key": "mondeo_2011_2014_keyed",
+      "record_id": "ford_mondeo_2011_2014_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/mondeo/models.json",
+      "item_key": "mondeo_2011_2014_passive",
+      "record_id": "ford_mondeo_2011_2014_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/mondeo/models.json",
+      "item_key": "mondeo_2014_2022_passive",
+      "record_id": "ford_mondeo_2014_2022_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/mustang/models.json",
+      "item_key": "mustang_2015_2023_passive",
+      "record_id": "ford_mustang_2015_2023_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/mustang/models.json",
+      "item_key": "mustang_2024_present_passive",
+      "record_id": "ford_mustang_2024_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/mustang/models.json",
+      "item_key": "mustang_2015_2021_passive",
+      "record_id": "ford_mustang_2015_2021_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/mustang_mach_e/models.json",
+      "item_key": "mustang_mach_e_2021_present_passive",
+      "record_id": "ford_mustang_mach_e_2021_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/mustang_mach_e/models.json",
+      "item_key": "mustang_mach_e_2020_present_passive",
+      "record_id": "ford_mustang_mach_e_2020_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/puma/models.json",
+      "item_key": "puma_2019_present_keyed",
+      "record_id": "ford_puma_2019_present_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/puma/models.json",
+      "item_key": "puma_2019_present_passive",
+      "record_id": "ford_puma_2019_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ranger/models.json",
+      "item_key": "ranger_1999_2000_keyed",
+      "record_id": "ford_ranger_1999_2000_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ranger/models.json",
+      "item_key": "ranger_2001_2010_keyed",
+      "record_id": "ford_ranger_2001_2010_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ranger/models.json",
+      "item_key": "ranger_2011_2014_keyed",
+      "record_id": "ford_ranger_2011_2014_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ranger/models.json",
+      "item_key": "ranger_2015_2022_keyed",
+      "record_id": "ford_ranger_2015_2022_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ranger/models.json",
+      "item_key": "ranger_2015_2022_passive",
+      "record_id": "ford_ranger_2015_2022_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ranger/models.json",
+      "item_key": "ranger_2023_present",
+      "record_id": "ford_ranger_2023_present_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/ranger/models.json",
+      "item_key": "ranger_2022_present_passive",
+      "record_id": "ford_ranger_2022_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/s_max/models.json",
+      "item_key": "s_max_2006_2009_keyed",
+      "record_id": "ford_s_max_2006_2009_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/s_max/models.json",
+      "item_key": "s_max_2006_2009_passive",
+      "record_id": "ford_s_max_2006_2009_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/s_max/models.json",
+      "item_key": "s_max_2010_2014_keyed",
+      "record_id": "ford_s_max_2010_2014_keyed_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/s_max/models.json",
+      "item_key": "s_max_2010_2014_passive",
+      "record_id": "ford_s_max_2010_2014_passive_uk",
+      "value": "tool_calculated_or_bypassed_pats",
+      "basis": "record identifies Ford PATS diagnostic programming and contains no FDRS marker"
+    },
+    {
+      "path": "database/vehicles/ford/s_max/models.json",
+      "item_key": "s_max_2015_2023_keyed",
+      "record_id": "ford_s_max_2015_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_connect/models.json",
+      "item_key": "tourneo_connect_2013_2015_keyed",
+      "record_id": "ford_tourneo_connect_2013_2015_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_connect/models.json",
+      "item_key": "tourneo_connect_2016_2021_keyed",
+      "record_id": "ford_tourneo_connect_2016_2021_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_connect/models.json",
+      "item_key": "tourneo_connect_2016_2021_passive",
+      "record_id": "ford_tourneo_connect_2016_2021_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_courier/models.json",
+      "item_key": "tourneo_courier_2014_2023_keyed",
+      "record_id": "ford_tourneo_courier_2014_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_courier/models.json",
+      "item_key": "tourneo_courier_2014_2023_passive",
+      "record_id": "ford_tourneo_courier_2014_2023_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_courier/models.json",
+      "item_key": "tourneo_courier_2023_present_keyed",
+      "record_id": "ford_tourneo_courier_2023_present_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_courier/models.json",
+      "item_key": "tourneo_courier_2023_present_passive",
+      "record_id": "ford_tourneo_courier_2023_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_custom/models.json",
+      "item_key": "tourneo_custom_2012_2016_keyed",
+      "record_id": "ford_tourneo_custom_2012_2016_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_custom/models.json",
+      "item_key": "tourneo_custom_2017_2018_keyed",
+      "record_id": "ford_tourneo_custom_2017_2018_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_custom/models.json",
+      "item_key": "tourneo_custom_2019_2023_keyed",
+      "record_id": "ford_tourneo_custom_2019_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_custom/models.json",
+      "item_key": "tourneo_custom_2019_2023_passive",
+      "record_id": "ford_tourneo_custom_2019_2023_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/tourneo_custom/models.json",
+      "item_key": "tourneo_custom_2023_present",
+      "record_id": "ford_tourneo_custom_2023_present_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit/models.json",
+      "item_key": "transit_2013_2016_keyed",
+      "record_id": "ford_transit_2013_2016_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit/models.json",
+      "item_key": "transit_2016_present_keyed",
+      "record_id": "ford_transit_2016_present_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit/models.json",
+      "item_key": "transit_2016_present_passive",
+      "record_id": "ford_transit_2016_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit/models.json",
+      "item_key": "transit_2016_2023_keyed",
+      "record_id": "ford_transit_2016_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit/models.json",
+      "item_key": "transit_2023_present_passive",
+      "record_id": "ford_transit_2023_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_connect/models.json",
+      "item_key": "transit_connect_2002_2008_keyed",
+      "record_id": "ford_transit_connect_2002_2008_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_connect/models.json",
+      "item_key": "transit_connect_2009_2012_keyed",
+      "record_id": "ford_transit_connect_2009_2012_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_connect/models.json",
+      "item_key": "transit_connect_2013_2015_keyed",
+      "record_id": "ford_transit_connect_2013_2015_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_connect/models.json",
+      "item_key": "transit_connect_2016_2023_keyed",
+      "record_id": "ford_transit_connect_2016_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_connect/models.json",
+      "item_key": "transit_connect_2016_2023_passive",
+      "record_id": "ford_transit_connect_2016_2023_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_connect/models.json",
+      "item_key": "transit_connect_2018_2024_keyed",
+      "record_id": "ford_transit_connect_2018_2024_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_courier/models.json",
+      "item_key": "transit_courier_2014_2017_keyed",
+      "record_id": "ford_transit_courier_2014_2017_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_courier/models.json",
+      "item_key": "transit_courier_2018_2023_keyed",
+      "record_id": "ford_transit_courier_2018_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_courier/models.json",
+      "item_key": "transit_courier_2018_2023_passive",
+      "record_id": "ford_transit_courier_2018_2023_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_courier/models.json",
+      "item_key": "transit_courier_2023_present",
+      "record_id": "ford_transit_courier_2023_present_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_courier/models.json",
+      "item_key": "transit_courier_2014_2023_keyed",
+      "record_id": "ford_transit_courier_2014_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_courier/models.json",
+      "item_key": "transit_courier_2023_present_passive",
+      "record_id": "ford_transit_courier_2023_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_custom/models.json",
+      "item_key": "transit_custom_2012_2016_keyed",
+      "record_id": "ford_transit_custom_2012_2016_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_custom/models.json",
+      "item_key": "transit_custom_2017_2018_keyed",
+      "record_id": "ford_transit_custom_2017_2018_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_custom/models.json",
+      "item_key": "transit_custom_2019_2023_keyed",
+      "record_id": "ford_transit_custom_2019_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_custom/models.json",
+      "item_key": "transit_custom_2019_2023_passive",
+      "record_id": "ford_transit_custom_2019_2023_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_custom/models.json",
+      "item_key": "transit_custom_2023_present",
+      "record_id": "ford_transit_custom_2023_present_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_custom/models.json",
+      "item_key": "transit_custom_2016_2023_keyed",
+      "record_id": "ford_transit_custom_2016_2023_keyed_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    },
+    {
+      "path": "database/vehicles/ford/transit_custom/models.json",
+      "item_key": "transit_custom_2023_present_passive",
+      "record_id": "ford_transit_custom_2023_present_passive_uk",
+      "value": "ford_fdrs_online_security_access",
+      "basis": "record explicitly identifies FDRS or required online programming"
+    }
+  ],
+  "skipped": []
+}

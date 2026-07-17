@@ -53,7 +53,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Not normally expected for this generation",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Early first-generation Transit Connect. Core blade, transponder and frequency are mapped for UK stock lookup; exact OEM remote part numbers and tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -75,7 +75,10 @@
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -230,7 +233,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Not normally expected for this generation",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "The first-generation facelift changes from 4D60 to 4D63. Exact OEM remote part numbers and tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -253,7 +256,10 @@
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -420,7 +426,7 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Tool/build dependent but normally offline-capable on this early second-generation range",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Second-generation early range uses DST80 before the later Hitag Pro change. OEM part numbers and exact tool coverage remain to be mapped.",
         "generation_tool_ids": [
@@ -443,7 +449,10 @@
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -610,7 +619,7 @@
           "all_keys_lost": "Supported only with exact-build coverage; later vehicles may require online/security access",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent; verify before accepting AKL",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Late second-generation Transit Connect uses Hitag Pro. Exact OEM remote part numbers and operation-level tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -630,7 +639,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -789,7 +801,7 @@
           "all_keys_lost": "Supported only with exact-build coverage; later vehicles may require online/security access",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent; verify before accepting AKL",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Use only where passive start is physically confirmed. Exact OEM part numbers and tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -810,7 +822,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -1725,7 +1740,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "OBD + online/FDRS/security access",
-          "online_requirement": "Yes / operation dependent"
+          "online_requirement": "Yes / operation dependent",
+          "security_access": "ford_fdrs_online_security_access"
         },
         "tool_or_cable_required": "Ford security access/bypass as required by build",
         "emergency_blade": "Same as ignition blade",
@@ -1752,7 +1768,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Ford security access/bypass as required by build",

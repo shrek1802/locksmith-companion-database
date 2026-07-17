@@ -1168,7 +1168,7 @@
           "all_keys_lost": "OBD AKL where exact-build coverage is confirmed; later builds may require Ford online/security access",
           "route": "OBD diagnostic programming — select exact year, ignition type and build",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Ford UK documents the flip-key configuration. Core blade/frequency/chip family follows professional Mk8 application listings; exact OEM remote number and tool IDs still need mapping.",
         "tool_or_cable_required": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement.",
@@ -1193,7 +1193,10 @@
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -1362,7 +1365,7 @@
           "all_keys_lost": "OBD AKL where exact-build coverage is confirmed; later builds may require Ford online/security access",
           "route": "OBD diagnostic programming — select exact year, ignition type and build",
           "online_requirement": "Build and operation dependent",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "backup_start": "Use the Ford-documented passive-key backup position, buttons facing upward, then operate the push-button ignition.",
         "notes": "Ford UK documents passive key, removable emergency blade and backup start. Exact OEM remote number and tool IDs remain to be mapped.",
@@ -1388,7 +1391,10 @@
         "operational_uncertainty_preserved": true,
         "resolved_without_guessing": [
           "oem_part_numbers"
-        ]
+        ],
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Autel IM508S + XP400 Pro": "Compatible family coverage — confirm exact year, ignition type and current tool menu",
@@ -1555,7 +1561,7 @@
           "all_keys_lost": "Confirm exact build/tool",
           "route": "Confirm exact tool route",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "HU101",
@@ -1575,7 +1581,10 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",

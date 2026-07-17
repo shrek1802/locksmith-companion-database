@@ -227,7 +227,8 @@
           "add_key": "Verification required — operation-specific tool evidence missing",
           "all_keys_lost": "Verification required — operation-specific tool evidence missing",
           "route": "Authorised Ford/VAG connected diagnostic workflow",
-          "online_requirement": "Expected for security-sensitive operations; confirm exact procedure"
+          "online_requirement": "Expected for security-sensitive operations; confirm exact procedure",
+          "security_access": "vw_meb_online_security_access"
         },
         "notes": "The European Explorer EV is built on Volkswagen's MEB platform. Never inherit the legacy Explorer or normal Ford PATS procedure. Exact key part number, blade, frequency and supported tools remain current-platform research items.",
         "generation_tool_ids": [
@@ -258,7 +259,10 @@
           "button_count",
           "frequency_mhz"
         ],
-        "modern_tool_claims_quarantined": true
+        "modern_tool_claims_quarantined": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies Volkswagen MEB-derived security architecture",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "Authorised Ford/VAG connected diagnostic workflow",

@@ -61,7 +61,7 @@
           "all_keys_lost": "Supported only with exact Ka+ coverage; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent; confirm in the selected tool",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "notes": "Transpondery lists Ford Ka/Ka+ 2016+ as Hitag Pro ID47. Silca independently lists Ka+ 2016-2019 with HU101, 433 MHz and ID47. Exact Ford part number and operation-level tool IDs still need mapping.",
         "generation_tool_ids": [
@@ -81,7 +81,10 @@
         ],
         "last_checked": "2026-07-16",
         "app_schema_rebuilt": true,
-        "hardware_consensus_applied": true
+        "hardware_consensus_applied": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Programming route": "OBD diagnostic programming",
@@ -251,7 +254,7 @@
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "verification_required"
+          "security_access": "ford_fdrs_online_security_access"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -271,7 +274,10 @@
           "silca_ford"
         ],
         "last_checked": "2026-07-16",
-        "app_schema_rebuilt": true
+        "app_schema_rebuilt": true,
+        "security_access_status": "classified_from_existing_record_evidence",
+        "security_access_basis": "record explicitly identifies FDRS or required online programming",
+        "security_access_classifier": "ford_security_access_bulk_classify_v1"
       },
       "tools": {
         "Connection / cable": "Standard OBD; battery support recommended",
