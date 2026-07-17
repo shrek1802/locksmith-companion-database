@@ -1,0 +1,47 @@
+name: Audit Ford True Completion
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'database/vehicles/ford/**/models.json'
+      - 'scripts/audit_ford_true_completion.py'
+      - '.github/workflows/audit-ford-true-completion.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Audit Ford true completion
+        id: audit
+        continue-on-error: true
+        run: python scripts/audit_ford_true_completion.py
+
+      - name: Commit strict audit report
+        run: |
+          if [ -z "$(git status --porcelain -- reports/ford_true_completion_audit.json)" ]; then
+            echo 'Ford true-completion report is already current.'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add reports/ford_true_completion_audit.json
+            git commit -m 'Update Ford true-completion audit report'
+            git push
+          fi
+
+      - name: Fail until Ford is genuinely complete
+        if: steps.audit.outcome == 'failure'
+        run: |
+          echo 'Ford still contains verification or research placeholders.'
+          exit 1
