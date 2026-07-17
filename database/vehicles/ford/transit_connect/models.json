@@ -52,7 +52,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Not normally expected for this generation"
+          "online_requirement": "Not normally expected for this generation",
+          "security_access": "verification_required"
         },
         "notes": "Early first-generation Transit Connect. Core blade, transponder and frequency are mapped for UK stock lookup; exact OEM remote part numbers and tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -228,7 +229,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Not normally expected for this generation"
+          "online_requirement": "Not normally expected for this generation",
+          "security_access": "verification_required"
         },
         "notes": "The first-generation facelift changes from 4D60 to 4D63. Exact OEM remote part numbers and tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -417,7 +419,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Tool/build dependent but normally offline-capable on this early second-generation range"
+          "online_requirement": "Tool/build dependent but normally offline-capable on this early second-generation range",
+          "security_access": "verification_required"
         },
         "notes": "Second-generation early range uses DST80 before the later Hitag Pro change. OEM part numbers and exact tool coverage remain to be mapped.",
         "generation_tool_ids": [
@@ -606,7 +609,8 @@
           "add_key": "Supported where the selected diagnostic tool explicitly covers the exact build",
           "all_keys_lost": "Supported only with exact-build coverage; later vehicles may require online/security access",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Build and operation dependent; verify before accepting AKL"
+          "online_requirement": "Build and operation dependent; verify before accepting AKL",
+          "security_access": "verification_required"
         },
         "notes": "Late second-generation Transit Connect uses Hitag Pro. Exact OEM remote part numbers and operation-level tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -784,7 +788,8 @@
           "add_key": "Supported where the selected diagnostic tool explicitly covers the exact build",
           "all_keys_lost": "Supported only with exact-build coverage; later vehicles may require online/security access",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Build and operation dependent; verify before accepting AKL"
+          "online_requirement": "Build and operation dependent; verify before accepting AKL",
+          "security_access": "verification_required"
         },
         "notes": "Use only where passive start is physically confirmed. Exact OEM part numbers and tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -1162,7 +1167,8 @@
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD immobiliser + manual remote matching",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -1338,7 +1344,8 @@
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -1527,7 +1534,8 @@
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",

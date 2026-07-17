@@ -52,7 +52,8 @@
           "add_key": "Legacy Ford PATS procedure/tool dependent",
           "all_keys_lost": "Legacy PATS diagnostic or code-based route depending build",
           "route": "OBD or legacy PATS procedure",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Early first-generation Ka uses the legacy Ford key family. Remote style varies, so verify the original key before supply.",
         "generation_tool_ids": [
@@ -228,7 +229,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Later first-generation Ka changes to 4D60 while retaining the FO21 blade family.",
         "generation_tool_ids": [
@@ -404,7 +406,8 @@
           "add_key": "Use Fiat-derived immobiliser route, not Ford PATS",
           "all_keys_lost": "Supported by compatible Fiat CODE tools; PIN/security data may be required",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Normally no, tool/security-code dependent"
+          "online_requirement": "Normally no, tool/security-code dependent",
+          "security_access": "verification_required"
         },
         "notes": "This generation shares the Fiat 500 platform. KeyStation lists compatible Ford/Fiat 433 MHz ID46 PCF7946 SIP22 remotes, including OEM reference 71765697 on the 3-button family. Never select the Ford PATS menu solely because the badge is Ford.",
         "generation_tool_ids": [
@@ -585,7 +588,8 @@
           "add_key": "Confirm",
           "all_keys_lost": "Confirm exact build/tool",
           "route": "Clone or diagnostic programming",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -764,7 +768,8 @@
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — EEPROM/OBD route",
           "route": "EEPROM / OBD pre-code",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Fiat-compatible pre-code/EEPROM setup if OBD route fails",
         "emergency_blade": "Same as ignition blade",

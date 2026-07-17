@@ -52,7 +52,8 @@
           "add_key": "Legacy PATS route; exact build/tool coverage required",
           "all_keys_lost": "Legacy PATS diagnostic or code-based procedure depending build",
           "route": "Legacy PATS / OBD where supported",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Transpondery confirms Texas 4C for 1995-1999. The remote configuration varies, so frequency must be confirmed from the original key or exact application before supply.",
         "generation_tool_ids": [
@@ -230,7 +231,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Transpondery confirms 4D60 for 2000-2006. Silca independently lists Transit V184/5 2000-2006 with FO21 and 433 MHz.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -414,7 +416,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; timed security access may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Transpondery lists 2007-2013 as Texas 4D63. Silca independently lists Transit V347 2006-2013 with FO21 and 433 MHz.",
         "generation_tool_ids": [
@@ -605,7 +608,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Normally no for this early V363 range"
+          "online_requirement": "Normally no for this early V363 range",
+          "security_access": "verification_required"
         },
         "notes": "Transpondery confirms DST80 for 2013-2016. Silca independently lists Transit 2013-2016 with HU101 and 433 MHz.",
         "generation_tool_ids": [
@@ -1092,7 +1096,8 @@
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -1280,7 +1285,8 @@
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -1467,7 +1473,8 @@
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",

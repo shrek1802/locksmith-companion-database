@@ -50,7 +50,8 @@
           "add_key": "Use exact Mazda/Ford shared-platform coverage",
           "all_keys_lost": "Exact immobiliser and tool coverage required",
           "route": "Legacy diagnostic/immobiliser route",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Transpondery confirms Texas 4C for 1999-2000. The early UK Ranger is Mazda-derived, so the blade and remote must not be inferred from later HU101 Ford applications.",
         "generation_tool_ids": [
@@ -221,7 +222,8 @@
           "add_key": "Use exact Mazda/Ford shared-platform tool coverage",
           "all_keys_lost": "Exact immobiliser and tool coverage required",
           "route": "OBD diagnostic programming where supported",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Transpondery confirms Texas 4D63 for 2001-2010. Because this is a Mazda-derived UK platform, blade and frequency remain tied to the exact application rather than later Ford T6 data.",
         "generation_tool_ids": [
@@ -398,7 +400,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Normally no for this early T6 range"
+          "online_requirement": "Normally no for this early T6 range",
+          "security_access": "verification_required"
         },
         "notes": "Transpondery lists Ranger 2011+ as DST80. Silca independently lists Ranger TKE 2011-2015 with HU101 and 433 MHz; this record stops before the separately catalogued 2015 Hitag Pro application.",
         "generation_tool_ids": [
@@ -586,7 +589,8 @@
           "add_key": "Supported only where exact Ranger build coverage is explicit",
           "all_keys_lost": "Exact-build coverage required; later vehicles may require online Ford security access",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "security_access": "verification_required"
         },
         "notes": "Silca explicitly lists Ranger P375 from 2015 with HU101, 433 MHz and ID47. This provides a locksmith-relevant security breakpoint from the earlier DST80 application.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -767,7 +771,8 @@
           "add_key": "Supported only where exact Ranger passive-key coverage is explicit",
           "all_keys_lost": "Exact-build coverage required; online Ford security access may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "security_access": "verification_required"
         },
         "notes": "Use only where passive start is physically confirmed. Blade, frequency and Hitag Pro family are supported by the 2015-on Silca Ranger application.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -1091,7 +1096,8 @@
           "add_key": "Confirm",
           "all_keys_lost": "Confirm exact build/tool",
           "route": "Confirm exact tool route",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",
@@ -1279,7 +1285,8 @@
           "add_key": "Yes — OBD",
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",

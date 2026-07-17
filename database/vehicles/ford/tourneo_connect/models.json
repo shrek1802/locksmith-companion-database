@@ -55,7 +55,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Passenger derivative of the first-generation Transit Connect. Silca explicitly lists Tourneo Connect 2002-2008 with FO21 and 433 MHz; the chip family follows the matching early Connect security range.",
         "generation_tool_ids": [
@@ -233,7 +234,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; timed security access may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "The facelift shares the later first-generation Transit Connect ID63 security range. Exact OEM remote number remains to be added.",
         "generation_tool_ids": [
@@ -424,7 +426,8 @@
           "add_key": "Supported by compatible Ford PATS diagnostic tools",
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Normally no for this early second-generation range"
+          "online_requirement": "Normally no for this early second-generation range",
+          "security_access": "verification_required"
         },
         "notes": "Silca explicitly lists Tourneo Connect CHC from 2013 with HU101 and 433 MHz. The chip family follows the matching Transit Connect DST80 range.",
         "generation_tool_ids": [
@@ -612,7 +615,8 @@
           "add_key": "Supported where the selected Ford PATS tool explicitly covers the exact build",
           "all_keys_lost": "Exact-build coverage required; later vehicles may require online security access",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "security_access": "verification_required"
         },
         "notes": "Late second-generation Tourneo Connect shares the matching Transit Connect Hitag Pro security family. Exact OEM part number and tool IDs remain to be mapped.",
         "generation_tool_ids": [
@@ -789,7 +793,8 @@
           "add_key": "Supported where the selected Ford PATS tool explicitly covers the exact build",
           "all_keys_lost": "Exact-build coverage required; later vehicles may require online security access",
           "route": "OBD diagnostic programming",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "security_access": "verification_required"
         },
         "notes": "Use only where push-button start is physically confirmed. Exact OEM part number and tool IDs remain to be mapped.",
         "generation_tool_ids": [

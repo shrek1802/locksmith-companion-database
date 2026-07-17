@@ -51,7 +51,8 @@
           "add_key": "OBD PATS programming on supported builds; cloning may also be possible",
           "all_keys_lost": "OBD/legacy PATS security-access route; confirm exact model year",
           "route": "OBD diagnostic or legacy PATS procedure",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Confirm the exact build and chip before cutting or generating because this range crosses early PATS changes.",
         "tool_or_cable_required": "Standard OBD connection; stable battery support recommended",
@@ -230,7 +231,8 @@
           "add_key": "OBD PATS programming with a compatible Ford immobiliser tool",
           "all_keys_lost": "OBD PATS AKL supported; timed/security access may be required",
           "route": "OBD diagnostic immobiliser programming; remote matching may be manual/tool dependent",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Use FO21 and Texas 4D-63 40-bit for this UK Mk6 record. Do not also show the conflicting HU101 duplicate.",
         "tool_or_cable_required": "Standard OBD connection; battery support recommended",
@@ -407,7 +409,8 @@
           "add_key": "OBD PATS programming with a compatible Ford immobiliser tool",
           "all_keys_lost": "OBD PATS AKL supported; timed security access may apply",
           "route": "OBD diagnostic immobiliser programming",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Core key-stock data is independently supported by Transpondery and UK supplier catalogues. Exact OEM part number varies by remote style and build.",
         "tool_or_cable_required": "Standard OBD connection; battery support recommended",
@@ -592,7 +595,8 @@
           "add_key": "OBD PATS programming with a compatible Ford immobiliser tool",
           "all_keys_lost": "OBD PATS AKL supported; timed security access may apply",
           "route": "OBD diagnostic immobiliser programming",
-          "online_requirement": "No"
+          "online_requirement": "No",
+          "security_access": "verification_required"
         },
         "notes": "Use only where push-button start is physically confirmed. KeyStation explicitly lists the Fiesta-compatible 433 MHz ID63 80-bit HU101 keyless family.",
         "tool_or_cable_required": "Standard OBD connection; battery support recommended",
@@ -776,7 +780,8 @@
           "add_key": "OBD PATS programming with a compatible Ford immobiliser tool",
           "all_keys_lost": "OBD PATS AKL supported; security access may apply",
           "route": "OBD diagnostic immobiliser programming",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "notes": "The facelift remains on the Mk7 platform but uses the later DST80 security family. Exact OEM remote number varies by build.",
         "tool_or_cable_required": "Standard OBD connection; battery support recommended",
@@ -959,7 +964,8 @@
           "add_key": "OBD PATS programming with a compatible Ford immobiliser tool",
           "all_keys_lost": "OBD PATS AKL supported; security access may apply",
           "route": "OBD diagnostic immobiliser programming",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "notes": "Use only where push-button start is confirmed. Exact OEM part number varies by trim/build.",
         "tool_or_cable_required": "Standard OBD connection; battery support recommended",
@@ -1143,7 +1149,8 @@
           "add_key": "OBD programming where the selected tool explicitly supports the exact Fiesta build",
           "all_keys_lost": "OBD AKL where exact-build coverage is confirmed; later builds may require Ford online/security access",
           "route": "OBD diagnostic programming — select exact year, ignition type and build",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "security_access": "verification_required"
         },
         "notes": "Ford UK documents the flip-key configuration. Core blade/frequency/chip family follows professional Mk8 application listings; exact OEM remote number and tool IDs still need mapping.",
         "tool_or_cable_required": "Standard OBD connection; stable battery support. Confirm exact tool software and any Ford security access requirement.",
@@ -1336,7 +1343,8 @@
           "add_key": "OBD programming where the selected tool explicitly supports the exact Fiesta build",
           "all_keys_lost": "OBD AKL where exact-build coverage is confirmed; later builds may require Ford online/security access",
           "route": "OBD diagnostic programming — select exact year, ignition type and build",
-          "online_requirement": "Build and operation dependent"
+          "online_requirement": "Build and operation dependent",
+          "security_access": "verification_required"
         },
         "backup_start": "Use the Ford-documented passive-key backup position, buttons facing upward, then operate the push-button ignition.",
         "notes": "Ford UK documents passive key, removable emergency blade and backup start. Exact OEM remote number and tool IDs remain to be mapped.",
@@ -1528,7 +1536,8 @@
           "add_key": "Confirm",
           "all_keys_lost": "Confirm exact build/tool",
           "route": "Confirm exact tool route",
-          "online_requirement": "Normally no"
+          "online_requirement": "Normally no",
+          "security_access": "verification_required"
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "HU101",
