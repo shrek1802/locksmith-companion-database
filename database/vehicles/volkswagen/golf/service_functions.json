@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": "Volkswagen",
+  "model": "Golf",
+  "functions": [
+    "Identify immobiliser family",
+    "Read immobiliser information",
+    "Read PIN or security data where supported",
+    "Prepare dealer key where required and supported",
+    "Add key",
+    "All keys lost",
+    "Remote matching",
+    "Key status or learned-key count where supported",
+    "KESSY identification",
+    "Dashboard identification"
+  ],
+  "display_rule": "Only show a function as available when the selected generation, fitted module and current tool coverage support it."
+}
