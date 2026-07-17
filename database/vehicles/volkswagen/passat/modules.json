@@ -1,0 +1,15 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": "Volkswagen",
+  "model": "Passat",
+  "modules": {
+    "passat_b5_1997_2005_keyed": {"primary_module": "Instrument cluster", "location": "Dashboard", "communication": "K-line/CAN depending on build", "encrypted": false},
+    "passat_b6_2005_2010_keyed": {"primary_module": "Access-start/comfort system", "location": "Vehicle-specific; verify fitted module", "communication": "CAN", "encrypted": true},
+    "passat_b7_2010_2014": {"primary_module": "Access-start/comfort system", "location": "Vehicle-specific; verify fitted module", "communication": "CAN", "encrypted": true},
+    "passat_b8_2014_2019": {"primary_module": "Instrument cluster / KESSY access-start system", "location": "Dashboard / vehicle-specific KESSY location", "communication": "CAN", "encrypted": true},
+    "passat_b8_facelift_2019_2023": {"primary_module": "Instrument cluster / KESSY access-start system", "location": "Dashboard / vehicle-specific KESSY location", "communication": "CAN", "encrypted": true},
+    "passat_b9_2024_present": {"primary_module": "Protected instrument/access-start architecture", "location": "Confirm by VIN and vehicle specification", "communication": "CAN / protected diagnostic route", "encrypted": true}
+  },
+  "status": "research_in_progress"
+}
