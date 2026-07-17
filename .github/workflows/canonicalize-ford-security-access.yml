@@ -1,0 +1,38 @@
+name: Canonicalize Ford Security Access
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/canonicalize_ford_security_access.py'
+      - '.github/workflows/canonicalize-ford-security-access.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  canonicalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Canonicalize known Ford security-access labels
+        run: python scripts/canonicalize_ford_security_access.py
+
+      - name: Commit canonical labels
+        run: |
+          if git diff --quiet -- database/vehicles/ford; then
+            echo 'Ford security-access labels are already canonical.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add database/vehicles/ford
+          git commit -m 'ford: canonicalize security-access labels'
+          git push
