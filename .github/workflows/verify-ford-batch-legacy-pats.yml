@@ -1,0 +1,41 @@
+name: Verify Ford multi-family legacy PATS routes
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/verify_ford_batch_legacy_pats.py"
+      - ".github/workflows/verify-ford-batch-legacy-pats.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply conservative multi-family PATS verification
+        run: python scripts/verify_ford_batch_legacy_pats.py
+
+      - name: Run strict Ford completion audit
+        run: python scripts/audit_ford_true_completion.py || true
+
+      - name: Commit verified Ford records and refreshed audit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database/vehicles/ford reports/ford_true_completion_audit.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "ford: verify multiple legacy PATS model families"
+          git push
