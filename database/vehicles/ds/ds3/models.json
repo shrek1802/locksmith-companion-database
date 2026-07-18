@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "DS 3",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "ds3_uk_generations",
+      "name": "DS 3 UK generations",
+      "years": "2010-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; DS generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "DS",
+      "url": "https://www.dsautomobiles.co.uk/",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
