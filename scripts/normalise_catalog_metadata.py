@@ -8,7 +8,12 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SCANNED_ROOTS = (ROOT / "database",)
+SCANNED_ROOTS = (ROOT / "database", ROOT / "reports")
+EXCLUDED_PATHS = {
+    ROOT / "reports" / "ford_true_completion_audit.json",
+    ROOT / "reports" / "shared_verified_architecture_audit.json",
+    ROOT / "reports" / "volkswagen_true_completion_audit.json",
+}
 
 
 def label(item_id: str, item: dict[str, object]) -> str:
@@ -25,7 +30,9 @@ def main() -> int:
     changed_files = 0
     labels_added = 0
     schemas_added = 0
-    paths = sorted({path for root in SCANNED_ROOTS for path in root.rglob("*.json")})
+    paths = sorted(
+        path for root in SCANNED_ROOTS for path in root.rglob("*.json") if path not in EXCLUDED_PATHS
+    )
     for path in paths:
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
