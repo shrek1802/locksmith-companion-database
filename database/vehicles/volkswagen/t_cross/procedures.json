@@ -1,1 +1,48 @@
-{"schema_version":"2.1","updated_at":"2026-07-18","manufacturer":"Volkswagen","model":"T-Cross","items":{"t_cross_c11":{"add_key":{"summary":"Identify exact dashboard/access-start hardware and software, confirm current tool support, back up security data where supported, prepare the dealer key and perform Add Key adaptation.","tool_support":"Conditional","warning":"Support varies by dashboard generation and model year."},"all_keys_lost":{"summary":"Confirm explicit AKL coverage for the fitted protected MQB system before work; use only the supported security-data and dealer-key preparation route.","tool_support":"Verification Required","warning":"Do not assume standard MQB48 coverage applies to every T-Cross."}}},"status":"research_in_progress"}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": "Volkswagen",
+  "model": "T-Cross",
+  "items": {
+    "t_cross_c11": {
+      "add_key": {
+        "summary": "Identify exact dashboard/access-start hardware and software, confirm current tool support, back up security data where supported, prepare the dealer key and perform Add Key adaptation.",
+        "tool_support": "Conditional",
+        "warning": "Support varies by dashboard generation and model year.",
+        "tools": {
+          "autel_apb300": {
+            "status": "supported",
+            "method": "working_key_data",
+            "display_name": "Autel APB300 + MaxiIM 508/608 series",
+            "summary": "Official Autel APB300 working-key Add Key coverage lists Volkswagen T-Cross 2018-2021.",
+            "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+            "confidence": "high",
+            "checked_at": "2026-07-18",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Open and read the original working key using APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Compatible MaxiIM 508/608-series tablet",
+              "Supported Autel VW/Audi-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "warnings": [
+              "Coverage is Add Key only and does not establish All Keys Lost support.",
+              "Confirm the exact key PCB and keyed or KESSY configuration before programming.",
+              "Autel states no additional adapter is needed for the APB300 working-key data route."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "summary": "Confirm explicit AKL coverage for the fitted protected MQB system before work; use only the supported security-data and dealer-key preparation route.",
+        "tool_support": "Verification Required",
+        "warning": "Do not assume standard MQB48 coverage applies to every T-Cross."
+      }
+    }
+  },
+  "status": "research_in_progress"
+}

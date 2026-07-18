@@ -169,6 +169,31 @@
             "warnings": [
               "Identify MQB5A, MQB5B or MQB5C before proceeding; MQB5C is not covered by the documented G3 solution."
             ]
+          },
+          "autel_apb300": {
+            "status": "supported",
+            "method": "working_key_data",
+            "display_name": "Autel APB300 + MaxiIM 508/608 series",
+            "summary": "Official Autel APB300 working-key Add Key coverage lists Volkswagen Golf 2013-2017.",
+            "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+            "confidence": "high",
+            "checked_at": "2026-07-18",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Open and read the original working key using APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Compatible MaxiIM 508/608-series tablet",
+              "Supported Autel VW/Audi-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "warnings": [
+              "Coverage is Add Key only and does not establish All Keys Lost support.",
+              "Confirm the exact key PCB and keyed or KESSY configuration before programming.",
+              "Autel states no additional adapter is needed for the APB300 working-key data route."
+            ]
           }
         }
       },
@@ -244,6 +269,31 @@
             "warnings": [
               "Later Golf Mk7.5 dashboards vary; check whether the unit is MQB5A, MQB5B or unsupported MQB5C."
             ]
+          },
+          "autel_apb300": {
+            "status": "supported",
+            "method": "working_key_data",
+            "display_name": "Autel APB300 + MaxiIM 508/608 series",
+            "summary": "Official Autel APB300 working-key Add Key coverage lists Volkswagen Golf 2017-2020.",
+            "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+            "confidence": "high",
+            "checked_at": "2026-07-18",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Open and read the original working key using APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Compatible MaxiIM 508/608-series tablet",
+              "Supported Autel VW/Audi-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "warnings": [
+              "Coverage is Add Key only and does not establish All Keys Lost support.",
+              "Confirm the exact key PCB and keyed or KESSY configuration before programming.",
+              "Autel states no additional adapter is needed for the APB300 working-key data route."
+            ]
           }
         }
       },
@@ -304,6 +354,31 @@
             "warnings": [
               "The official APB300 description is platform-wide; exact Golf Mk8 key and VIN coverage must be confirmed in the live Autel menu.",
               "Do not treat this as All Keys Lost support."
+            ]
+          },
+          "autel_apb300": {
+            "status": "supported",
+            "method": "working_key_data",
+            "display_name": "Autel APB300 + MaxiIM 508/608 series",
+            "summary": "Official Autel APB300 working-key Add Key coverage lists Volkswagen Golf 2020-2021 only.",
+            "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+            "confidence": "high",
+            "checked_at": "2026-07-18",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Open and read the original working key using APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Compatible MaxiIM 508/608-series tablet",
+              "Supported Autel VW/Audi-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "warnings": [
+              "Coverage is Add Key only and does not establish All Keys Lost support.",
+              "Confirm the exact key PCB and keyed or KESSY configuration before programming.",
+              "Autel states no additional adapter is needed for the APB300 working-key data route."
             ]
           }
         }

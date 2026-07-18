@@ -5,12 +5,150 @@
   "model": "Arteon",
   "items": {
     "arteon_2017_2020": {
-      "add_key": {"method":"Identify dashboard family and KESSY specification before selecting the programming route","programming_method":"MQB48 dashboard-specific Add Key procedure","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"autel_im508s_xp400_pro":{"status":"conditional","method":"transponder_clone","display_name":"Autel IM508S + XP400 Pro","summary":"APB300 working-key Add Key may be available for supported Arteon MQB applications.","vehicle_connection":{"required":false,"display_text":"Read the opened working key using APB300"},"working_key_required":true,"vehicle_required":false,"internet_required":true},"obdstar_g3":{"status":"conditional","method":"obd","display_name":"OBDSTAR KeyMaster G3","summary":"MQB key programming is conditional on a supported MQB48 5A/5B dashboard.","vehicle_connection":{"required":true,"display_text":"OBD or supported dashboard-data route"},"internet_required":false}}},
-      "all_keys_lost": {"method":"Read supported MQB dashboard data, calculate security data, prepare the dealer key and learn all keys","programming_method":"MQB48 5A/5B dashboard-data AKL route","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL is available only for supported MQB48 5A/5B dashboards.","vehicle_connection":{"required":true,"display_text":"RH850/V850 dashboard adapter route where required"},"module_removal_required":true,"internet_required":false,"warnings":["Confirm the dashboard processor and KESSY configuration first.","This does not establish MQB5C support."]}}}
+      "add_key": {
+        "method": "Identify dashboard family and KESSY specification before selecting the programming route",
+        "programming_method": "MQB48 dashboard-specific Add Key procedure",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "APB300 working-key Add Key may be available for supported Arteon MQB applications.",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Read the opened working key using APB300"
+            },
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true
+          },
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "MQB key programming is conditional on a supported MQB48 5A/5B dashboard.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "OBD or supported dashboard-data route"
+            },
+            "internet_required": false
+          },
+          "autel_apb300": {
+            "status": "supported",
+            "method": "working_key_data",
+            "display_name": "Autel APB300 + MaxiIM 508/608 series",
+            "summary": "Official Autel APB300 working-key Add Key coverage lists Volkswagen Arteon 2017-2020.",
+            "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+            "confidence": "high",
+            "checked_at": "2026-07-18",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Open and read the original working key using APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Compatible MaxiIM 508/608-series tablet",
+              "Supported Autel VW/Audi-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "warnings": [
+              "Coverage is Add Key only and does not establish All Keys Lost support.",
+              "Confirm the exact key PCB and keyed or KESSY configuration before programming.",
+              "Autel states no additional adapter is needed for the APB300 working-key data route."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read supported MQB dashboard data, calculate security data, prepare the dealer key and learn all keys",
+        "programming_method": "MQB48 5A/5B dashboard-data AKL route",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is available only for supported MQB48 5A/5B dashboards.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "RH850/V850 dashboard adapter route where required"
+            },
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Confirm the dashboard processor and KESSY configuration first.",
+              "This does not establish MQB5C support."
+            ]
+          }
+        }
+      }
     },
     "arteon_2020_present": {
-      "add_key": {"method":"Confirm exact dashboard, key type and current tool coverage before accepting the job","programming_method":"Late protected MQB support check","online_requirement":"May Be Required","overall_status":"verification_required","tools":{"autel_im508s_xp400_pro":{"status":"conditional","method":"transponder_clone","display_name":"Autel IM508S + XP400 Pro","summary":"A working-key APB300 route may be available only where the exact Arteon application appears in current coverage.","vehicle_connection":{"required":false,"display_text":"Read the opened working key using APB300"},"working_key_required":true,"vehicle_required":false,"internet_required":true,"warnings":["This does not prove All Keys Lost coverage."]}},"warnings":["Do not assume pre-facelift and facelift dashboard support is identical."]},
-      "all_keys_lost": {"method":"Confirm current platform-specific AKL support before accepting the job","programming_method":"Late protected MQB coverage check","online_requirement":"Likely Required","overall_status":"verification_required","warnings":["No universal aftermarket AKL claim has been verified."]}
+      "add_key": {
+        "method": "Confirm exact dashboard, key type and current tool coverage before accepting the job",
+        "programming_method": "Late protected MQB support check",
+        "online_requirement": "May Be Required",
+        "overall_status": "verification_required",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "A working-key APB300 route may be available only where the exact Arteon application appears in current coverage.",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Read the opened working key using APB300"
+            },
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true,
+            "warnings": [
+              "This does not prove All Keys Lost coverage."
+            ]
+          },
+          "autel_apb300": {
+            "status": "supported",
+            "method": "working_key_data",
+            "display_name": "Autel APB300 + MaxiIM 508/608 series",
+            "summary": "Official Autel APB300 working-key Add Key coverage lists Volkswagen Arteon 2020-2021 only.",
+            "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+            "confidence": "high",
+            "checked_at": "2026-07-18",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Open and read the original working key using APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Compatible MaxiIM 508/608-series tablet",
+              "Supported Autel VW/Audi-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "warnings": [
+              "Coverage is Add Key only and does not establish All Keys Lost support.",
+              "Confirm the exact key PCB and keyed or KESSY configuration before programming.",
+              "Autel states no additional adapter is needed for the APB300 working-key data route."
+            ]
+          }
+        },
+        "warnings": [
+          "Do not assume pre-facelift and facelift dashboard support is identical."
+        ]
+      },
+      "all_keys_lost": {
+        "method": "Confirm current platform-specific AKL support before accepting the job",
+        "programming_method": "Late protected MQB coverage check",
+        "online_requirement": "Likely Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "No universal aftermarket AKL claim has been verified."
+        ]
+      }
     }
   },
   "status": "research_in_progress"
