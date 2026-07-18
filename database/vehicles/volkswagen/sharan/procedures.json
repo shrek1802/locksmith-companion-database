@@ -1,1 +1,35 @@
-{"schema_version":"2.1","updated_at":"2026-07-18","manufacturer":"Volkswagen","model":"Sharan","items":{"sharan_7m":{"add_key":{"summary":"Identify the fitted immobiliser generation and transponder, retrieve the required PIN/security data, prepare the correct key and adapt all keys using a supported diagnostic route.","tool_support":"Conditional","warning":"Early vehicles vary by year and cluster; verify before programming."},"all_keys_lost":{"summary":"Read or retrieve the required PIN/security data from the supported cluster or immobiliser route, prepare the correct transponder and adapt the complete key set.","tool_support":"Conditional","warning":"Bench work may be required where diagnostic security access is unavailable."}},"sharan_7n":{"add_key":{"summary":"Identify the exact instrument cluster or KESSY variant, back up immobiliser data where supported, prepare a dealer key and perform Add Key adaptation.","tool_support":"Conditional","warning":"Support is dashboard and operation specific."},"all_keys_lost":{"summary":"Use a supported cluster or KESSY security-data route, prepare the dealer key and complete AKL adaptation only after exact hardware identification.","tool_support":"Verification Required","warning":"Do not assume blanket OBD coverage."}}},"status":"research_in_progress"}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": "Volkswagen",
+  "model": "Sharan",
+  "items": {
+    "sharan_7m": {
+      "add_key": {
+        "summary": "Identify the fitted immobiliser generation and transponder, retrieve the required PIN/security data, prepare the correct key and adapt all keys using a supported diagnostic route.",
+        "tool_support": "Conditional",
+        "warning": "Early vehicles vary by year and cluster; verify before programming."
+      },
+      "all_keys_lost": {
+        "summary": "Read or retrieve the required PIN/security data from the supported cluster or immobiliser route, prepare the correct transponder and adapt the complete key set.",
+        "tool_support": "Conditional",
+        "warning": "Bench work may be required where diagnostic security access is unavailable."
+      },
+      "display_name": "Sharan 7m"
+    },
+    "sharan_7n": {
+      "add_key": {
+        "summary": "Identify the exact instrument cluster or KESSY variant, back up immobiliser data where supported, prepare a dealer key and perform Add Key adaptation.",
+        "tool_support": "Conditional",
+        "warning": "Support is dashboard and operation specific."
+      },
+      "all_keys_lost": {
+        "summary": "Use a supported cluster or KESSY security-data route, prepare the dealer key and complete AKL adaptation only after exact hardware identification.",
+        "tool_support": "Verification Required",
+        "warning": "Do not assume blanket OBD coverage."
+      },
+      "display_name": "Sharan 7n"
+    }
+  },
+  "status": "research_in_progress"
+}

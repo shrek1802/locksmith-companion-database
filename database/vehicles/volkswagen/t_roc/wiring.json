@@ -1,1 +1,19 @@
-{"schema_version":"2.1","updated_at":"2026-07-17","items":{"obd":{"location":"Driver footwell/dashboard area; UK RHD","connector":"16-pin diagnostic socket"},"bench":{"note":"Use verified module-specific connection only."},"power":{"note":"Use stable battery support during programming."}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "items": {
+    "obd": {
+      "location": "Driver footwell/dashboard area; UK RHD",
+      "connector": "16-pin diagnostic socket",
+      "display_name": "Obd"
+    },
+    "bench": {
+      "note": "Use verified module-specific connection only.",
+      "display_name": "Bench"
+    },
+    "power": {
+      "note": "Use stable battery support during programming.",
+      "display_name": "Power"
+    }
+  }
+}

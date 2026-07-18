@@ -1,1 +1,101 @@
-{"schema_version":"2.1","updated_at":"2026-07-18","manufacturer":{"id":"volkswagen","name":"Volkswagen"},"model":{"id":"beetle","name":"Beetle"},"category":"vehicles","items":{"beetle_1c_1998_2010":{"record_id":"volkswagen_beetle_1c_1998_2010_uk","vehicle":{"make":"Volkswagen","model":"Beetle","generation":"1C/9C","year_from":1998,"year_to":2010,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"PQ34","immobiliser_system":"Immo2/Immo3 family; verify year and cluster","module_type":"Instrument cluster","transponder_type":"ID44 or ID48 family","blade_profile":"HU66","key_type":"Remote or non-remote key","smart_key":false,"access_method":{"add_key":"Diagnostic adaptation after PIN/security identification","all_keys_lost":"PIN or cluster-data retrieval route","module":"Instrument cluster","encrypted":true},"security":{"online_required":false,"dealer_key_required":"tool_dependent","working_key_required":false,"security_access":"pin_or_cluster_data"},"adapter":["Standard OBD","Cluster programmer when required"],"notes":"Verify immobiliser generation before selecting key."},"verification":{"status":"research_required","last_checked":"2026-07-18"}},"beetle_5c_2011_2019":{"record_id":"volkswagen_beetle_5c_2011_2019_uk","vehicle":{"make":"Volkswagen","model":"Beetle","generation":"5C","year_from":2011,"year_to":2019,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"PQ35 derivative","immobiliser_system":"Immo4/Immo5 family; verify dashboard","module_type":"Instrument cluster","transponder_type":"ID48 crypto family","blade_profile":"HU66","key_type":"Remote key","smart_key":false,"access_method":{"add_key":"Diagnostic or dashboard-data route","all_keys_lost":"Processor-specific cluster-data route may be required","module":"Instrument cluster","encrypted":true},"security":{"online_required":"tool_dependent","dealer_key_required":true,"working_key_required":false,"security_access":"dashboard_security_data"},"adapter":["Standard OBD","Cluster programmer when required"],"notes":"Dashboard support is processor dependent."},"verification":{"status":"research_required","last_checked":"2026-07-18"}}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "beetle",
+    "name": "Beetle"
+  },
+  "category": "vehicles",
+  "items": {
+    "beetle_1c_1998_2010": {
+      "record_id": "volkswagen_beetle_1c_1998_2010_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Beetle",
+        "generation": "1C/9C",
+        "year_from": 1998,
+        "year_to": 2010,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ34",
+        "immobiliser_system": "Immo2/Immo3 family; verify year and cluster",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID44 or ID48 family",
+        "blade_profile": "HU66",
+        "key_type": "Remote or non-remote key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "Diagnostic adaptation after PIN/security identification",
+          "all_keys_lost": "PIN or cluster-data retrieval route",
+          "module": "Instrument cluster",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": "tool_dependent",
+          "working_key_required": false,
+          "security_access": "pin_or_cluster_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Cluster programmer when required"
+        ],
+        "notes": "Verify immobiliser generation before selecting key."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-18"
+      },
+      "display_name": "Beetle 1c 1998 2010"
+    },
+    "beetle_5c_2011_2019": {
+      "record_id": "volkswagen_beetle_5c_2011_2019_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Beetle",
+        "generation": "5C",
+        "year_from": 2011,
+        "year_to": 2019,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ35 derivative",
+        "immobiliser_system": "Immo4/Immo5 family; verify dashboard",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "Diagnostic or dashboard-data route",
+          "all_keys_lost": "Processor-specific cluster-data route may be required",
+          "module": "Instrument cluster",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "dashboard_security_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Cluster programmer when required"
+        ],
+        "notes": "Dashboard support is processor dependent."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-18"
+      },
+      "display_name": "Beetle 5c 2011 2019"
+    }
+  }
+}

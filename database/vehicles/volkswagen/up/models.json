@@ -1,1 +1,107 @@
-{"schema_version":"2.1","updated_at":"2026-07-17","manufacturer":{"id":"volkswagen","name":"Volkswagen"},"model":{"id":"up","name":"Up!"},"category":"vehicles","items":{"up_aa_2012_2016":{"record_id":"volkswagen_up_aa_2012_2016_uk","vehicle":{"make":"Volkswagen","model":"Up!","generation":"AA","year_from":2012,"year_to":2016,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"NSF","immobiliser_family_id":"vw_immo4_small_car","module_type":"Instrument cluster","transponder_type":"ID48 crypto family","blade_profile":"HU66","key_type":"Remote or non-remote key","smart_key":false,"access_method":{"add_key":"Diagnostic adaptation where supported","all_keys_lost":"Cluster security-data route","module":"Instrument cluster","encrypted":true},"security":{"online_required":false,"dealer_key_required":"tool_dependent","working_key_required":false,"security_access":"cluster_data"},"adapter":["Standard OBD","Cluster connection when required"],"notes":"Confirm cluster type before programming."},"verification":{"status":"research_required","last_checked":"2026-07-17","sources":["vw_up_research_pending"]}},"up_aa_facelift_2016_2023":{"record_id":"volkswagen_up_aa_facelift_2016_2023_uk","vehicle":{"make":"Volkswagen","model":"Up!","generation":"AA facelift","year_from":2016,"year_to":2023,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"NSF","immobiliser_family_id":"vw_immo4_small_car_late","module_type":"Instrument cluster","transponder_type":"ID48 family","blade_profile":"HU66","key_type":"Remote key","smart_key":false,"access_method":{"add_key":"Diagnostic or saved-data route","all_keys_lost":"Cluster-data route","module":"Instrument cluster","encrypted":true},"security":{"online_required":"tool_dependent","dealer_key_required":true,"working_key_required":false,"security_access":"late_cluster_data"},"adapter":["Standard OBD","Cluster programmer when required"],"notes":"Check cluster support and key preparation requirements."},"verification":{"status":"research_required","last_checked":"2026-07-17","sources":["vw_up_research_pending"]}}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "up",
+    "name": "Up!"
+  },
+  "category": "vehicles",
+  "items": {
+    "up_aa_2012_2016": {
+      "record_id": "volkswagen_up_aa_2012_2016_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Up!",
+        "generation": "AA",
+        "year_from": 2012,
+        "year_to": 2016,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "NSF",
+        "immobiliser_family_id": "vw_immo4_small_car",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote or non-remote key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "Diagnostic adaptation where supported",
+          "all_keys_lost": "Cluster security-data route",
+          "module": "Instrument cluster",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": "tool_dependent",
+          "working_key_required": false,
+          "security_access": "cluster_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Cluster connection when required"
+        ],
+        "notes": "Confirm cluster type before programming."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_up_research_pending"
+        ]
+      },
+      "display_name": "Up aa 2012 2016"
+    },
+    "up_aa_facelift_2016_2023": {
+      "record_id": "volkswagen_up_aa_facelift_2016_2023_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Up!",
+        "generation": "AA facelift",
+        "year_from": 2016,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "NSF",
+        "immobiliser_family_id": "vw_immo4_small_car_late",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 family",
+        "blade_profile": "HU66",
+        "key_type": "Remote key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "Diagnostic or saved-data route",
+          "all_keys_lost": "Cluster-data route",
+          "module": "Instrument cluster",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "late_cluster_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Cluster programmer when required"
+        ],
+        "notes": "Check cluster support and key preparation requirements."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_up_research_pending"
+        ]
+      },
+      "display_name": "Up aa facelift 2016 2023"
+    }
+  }
+}

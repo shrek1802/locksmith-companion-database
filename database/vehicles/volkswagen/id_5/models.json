@@ -1,1 +1,58 @@
-{"schema_version":"2.1","updated_at":"2026-07-17","manufacturer":{"id":"volkswagen","name":"Volkswagen"},"model":{"id":"id_5","name":"ID.5"},"category":"vehicles","items":{"id5_2022_present":{"record_id":"volkswagen_id5_2022_present_uk","vehicle":{"make":"Volkswagen","model":"ID.5","generation":"E39","year_from":2022,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"MEB","immobiliser_system":"MEB protected digital access/immobiliser architecture","module_type":"Protected access-start / gateway system","transponder_type":"MEB smart-key family","blade_profile":"Emergency blade; verify exact profile","key_type":"Smart key","smart_key":true,"access_method":{"add_key":"Authorised online/security route","all_keys_lost":"Confirm current authorised coverage before booking","module":"Protected MEB access system","encrypted":true},"security":{"online_required":true,"dealer_key_required":true,"working_key_required":false,"security_access":"meb_protected_online"},"adapter":["Supported diagnostic interface","Current authorised security access"],"notes":"No universal offline aftermarket route should be assumed."},"verification":{"status":"research_required","last_checked":"2026-07-17"}}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "id_5",
+    "name": "ID.5"
+  },
+  "category": "vehicles",
+  "items": {
+    "id5_2022_present": {
+      "record_id": "volkswagen_id5_2022_present_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "ID.5",
+        "generation": "E39",
+        "year_from": 2022,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "MEB",
+        "immobiliser_system": "MEB protected digital access/immobiliser architecture",
+        "module_type": "Protected access-start / gateway system",
+        "transponder_type": "MEB smart-key family",
+        "blade_profile": "Emergency blade; verify exact profile",
+        "key_type": "Smart key",
+        "smart_key": true,
+        "access_method": {
+          "add_key": "Authorised online/security route",
+          "all_keys_lost": "Confirm current authorised coverage before booking",
+          "module": "Protected MEB access system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": true,
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "meb_protected_online"
+        },
+        "adapter": [
+          "Supported diagnostic interface",
+          "Current authorised security access"
+        ],
+        "notes": "No universal offline aftermarket route should be assumed."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17"
+      },
+      "display_name": "Id5 2022 present"
+    }
+  }
+}

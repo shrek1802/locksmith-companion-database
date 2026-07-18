@@ -11,21 +11,36 @@
       "location": "Dashboard behind steering wheel",
       "communication": "Diagnostic bus varies by build",
       "encrypted": false,
-      "identification_required": ["Immo2 or Immo3", "cluster manufacturer", "part number"]
+      "identification_required": [
+        "Immo2 or Immo3",
+        "cluster manufacturer",
+        "part number"
+      ],
+      "display_name": "Golf mk4 1998 2004 keyed"
     },
     "golf_mk5_2004_2009_keyed": {
       "primary_module": "Instrument cluster",
       "location": "Dashboard behind steering wheel",
       "communication": "CAN",
       "encrypted": "cluster_dependent",
-      "identification_required": ["cluster manufacturer", "processor or dashboard family", "part number"]
+      "identification_required": [
+        "cluster manufacturer",
+        "processor or dashboard family",
+        "part number"
+      ],
+      "display_name": "Golf mk5 2004 2009 keyed"
     },
     "golf_mk6_2009_2013_keyed": {
       "primary_module": "Instrument cluster",
       "location": "Dashboard behind steering wheel",
       "communication": "CAN",
       "encrypted": true,
-      "identification_required": ["dashboard family", "Challenge or later family", "part number"]
+      "identification_required": [
+        "dashboard family",
+        "Challenge or later family",
+        "part number"
+      ],
+      "display_name": "Golf mk6 2009 2013 keyed"
     },
     "golf_mk7_2013_2017": {
       "primary_module": "Instrument cluster",
@@ -33,7 +48,12 @@
       "location": "Instrument cluster in dashboard; access/start components in passenger compartment",
       "communication": "CAN",
       "encrypted": true,
-      "identification_required": ["dashboard family", "keyed or KESSY", "part number"]
+      "identification_required": [
+        "dashboard family",
+        "keyed or KESSY",
+        "part number"
+      ],
+      "display_name": "Golf mk7 2013 2017"
     },
     "golf_mk75_2017_2020": {
       "primary_module": "Instrument cluster",
@@ -41,7 +61,12 @@
       "location": "Instrument cluster in dashboard; access/start components in passenger compartment",
       "communication": "CAN",
       "encrypted": true,
-      "identification_required": ["dashboard family", "keyed or KESSY", "current support"]
+      "identification_required": [
+        "dashboard family",
+        "keyed or KESSY",
+        "current support"
+      ],
+      "display_name": "Golf mk75 2017 2020"
     },
     "golf_mk8_2020_present": {
       "primary_module": "Instrument cluster / protected immobiliser environment",
@@ -49,7 +74,13 @@
       "location": "Vehicle-specific; confirm with current service information",
       "communication": "Protected vehicle network",
       "encrypted": true,
-      "identification_required": ["VIN", "keyed or KESSY", "original key or part number", "current tool support"]
+      "identification_required": [
+        "VIN",
+        "keyed or KESSY",
+        "original key or part number",
+        "current tool support"
+      ],
+      "display_name": "Golf mk8 2020 present"
     }
   }
 }

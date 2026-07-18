@@ -19,12 +19,25 @@
       "source_type": "professional_locksmith_supplier",
       "trust_rating": 5,
       "uk_relevance": "high",
-      "categories": ["vehicle_application", "year_range", "blade", "transponder", "remote", "frequency"],
-      "preferred_for": ["UK vehicle/year cross-check", "blade verification", "transponder verification", "remote verification"],
+      "categories": [
+        "vehicle_application",
+        "year_range",
+        "blade",
+        "transponder",
+        "remote",
+        "frequency"
+      ],
+      "preferred_for": [
+        "UK vehicle/year cross-check",
+        "blade verification",
+        "transponder verification",
+        "remote verification"
+      ],
       "verification_priority": 1,
       "active": true,
       "last_checked": "2026-07-14",
-      "notes": "Primary UK-oriented reference supplied by the project owner. Use exact vehicle and year matches where available."
+      "notes": "Primary UK-oriented reference supplied by the project owner. Use exact vehicle and year matches where available.",
+      "display_name": "NW Keys vehicle/year application guide"
     },
     "transpondery_catalogue": {
       "id": "transpondery_catalogue",
@@ -34,12 +47,21 @@
       "source_type": "professional_transponder_catalogue",
       "trust_rating": 5,
       "uk_relevance": "medium",
-      "categories": ["transponder", "year_range", "immobiliser_family", "vehicle_application"],
-      "preferred_for": ["transponder-family verification", "security breakpoint identification"],
+      "categories": [
+        "transponder",
+        "year_range",
+        "immobiliser_family",
+        "vehicle_application"
+      ],
+      "preferred_for": [
+        "transponder-family verification",
+        "security breakpoint identification"
+      ],
       "verification_priority": 1,
       "active": true,
       "last_checked": "2026-07-14",
-      "notes": "Strong source for transponder families and year boundaries; pair with a UK application source before approval."
+      "notes": "Strong source for transponder families and year boundaries; pair with a UK application source before approval.",
+      "display_name": "Transpondery transponder catalogue"
     },
     "auto_keys_transponder_catalogue": {
       "id": "auto_keys_transponder_catalogue",
@@ -49,12 +71,22 @@
       "source_type": "professional_transponder_catalogue",
       "trust_rating": 5,
       "uk_relevance": "medium",
-      "categories": ["transponder", "vehicle_application", "oem_reference", "year_range"],
-      "preferred_for": ["transponder verification", "OEM key cross-reference", "vehicle application cross-check"],
+      "categories": [
+        "transponder",
+        "vehicle_application",
+        "oem_reference",
+        "year_range"
+      ],
+      "preferred_for": [
+        "transponder verification",
+        "OEM key cross-reference",
+        "vehicle application cross-check"
+      ],
       "verification_priority": 2,
       "active": true,
       "last_checked": "2026-07-14",
-      "notes": "Useful second professional source for chip family and application matching."
+      "notes": "Useful second professional source for chip family and application matching.",
+      "display_name": "Auto-Keys EU Transponder Catalogue"
     },
     "silca_prox_slot_catalogue": {
       "id": "silca_prox_slot_catalogue",
@@ -66,12 +98,23 @@
       "host": "Aldridge Security",
       "trust_rating": 5,
       "uk_relevance": "high",
-      "categories": ["proximity_key", "remote", "emergency_blade", "silca_part_number", "vehicle_application"],
-      "preferred_for": ["proximity key identification", "emergency blade verification", "remote identification"],
+      "categories": [
+        "proximity_key",
+        "remote",
+        "emergency_blade",
+        "silca_part_number",
+        "vehicle_application"
+      ],
+      "preferred_for": [
+        "proximity key identification",
+        "emergency blade verification",
+        "remote identification"
+      ],
       "verification_priority": 1,
       "active": true,
       "last_checked": "2026-07-14",
-      "notes": "Manufacturer catalogue hosted by a UK locksmith supplier."
+      "notes": "Manufacturer catalogue hosted by a UK locksmith supplier.",
+      "display_name": "Silca Proximity, Slot and Remote Car Keys Catalogue"
     },
     "mykeys_pro_news": {
       "id": "mykeys_pro_news",
@@ -82,12 +125,25 @@
       "publisher": "Silca / Advanced Diagnostics",
       "trust_rating": 5,
       "uk_relevance": "high",
-      "categories": ["vehicle_application", "blade", "remote", "programming", "key_cutting", "technical_news"],
-      "preferred_for": ["programming guidance", "key identification", "remote identification", "Silca application references"],
+      "categories": [
+        "vehicle_application",
+        "blade",
+        "remote",
+        "programming",
+        "key_cutting",
+        "technical_news"
+      ],
+      "preferred_for": [
+        "programming guidance",
+        "key identification",
+        "remote identification",
+        "Silca application references"
+      ],
       "verification_priority": 1,
       "active": true,
       "last_checked": "2026-07-14",
-      "notes": "Official professional platform; some material may require subscription or login."
+      "notes": "Official professional platform; some material may require subscription or login.",
+      "display_name": "MYKEYS Pro"
     },
     "keystation_ford_remote_catalogue": {
       "id": "keystation_ford_remote_catalogue",
@@ -97,12 +153,22 @@
       "source_type": "professional_locksmith_supplier",
       "trust_rating": 4,
       "uk_relevance": "high",
-      "categories": ["remote", "frequency", "blade", "transponder", "vehicle_application"],
-      "preferred_for": ["UK remote-frequency cross-check", "blade and chip combination verification"],
+      "categories": [
+        "remote",
+        "frequency",
+        "blade",
+        "transponder",
+        "vehicle_application"
+      ],
+      "preferred_for": [
+        "UK remote-frequency cross-check",
+        "blade and chip combination verification"
+      ],
       "verification_priority": 2,
       "active": true,
       "last_checked": "2026-07-14",
-      "notes": "Useful UK supplier catalogue; pair with a manufacturer or independent professional source."
+      "notes": "Useful UK supplier catalogue; pair with a manufacturer or independent professional source.",
+      "display_name": "KeyStation UK Ford remote key catalogue"
     },
     "slideshare_auto_key_chip_list": {
       "id": "slideshare_auto_key_chip_list",
@@ -112,12 +178,21 @@
       "source_type": "historical_uploaded_reference",
       "trust_rating": 3,
       "uk_relevance": "medium",
-      "categories": ["historical_application", "blade", "transponder", "cross_reference"],
-      "preferred_for": ["historical cross-check", "legacy application comparison"],
+      "categories": [
+        "historical_application",
+        "blade",
+        "transponder",
+        "cross_reference"
+      ],
+      "preferred_for": [
+        "historical cross-check",
+        "legacy application comparison"
+      ],
       "verification_priority": 4,
       "active": true,
       "last_checked": "2026-07-14",
-      "notes": "Cross-reference only. Do not use as the sole approval source because it is an uploaded historical document rather than a maintained official catalogue."
+      "notes": "Cross-reference only. Do not use as the sole approval source because it is an uploaded historical document rather than a maintained official catalogue.",
+      "display_name": "Auto Key Chip List"
     }
   },
   "change_log": [

@@ -1,16 +1,104 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-18",
-  "manufacturer":"Volkswagen",
-  "model":"Up!",
-  "items":{
-    "up_aa_2012_2016":{
-      "add_key":{"method":"Identify the fitted instrument cluster, obtain the required immobiliser data and adapt the prepared key","programming_method":"Small-car Immo IV cluster-specific diagnostic or saved-data route","online_requirement":"Not Required for supported offline routes","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"obd_or_bench","display_name":"OBDSTAR KeyMaster G3","summary":"Support depends on the exact Up! instrument-cluster family.","vehicle_connection":{"required":true,"display_text":"Standard OBD or supported cluster-data route"},"internet_required":false,"warnings":["Confirm the cluster type before programming."]}}},
-      "all_keys_lost":{"method":"Read the supported cluster immobiliser data, prepare the dealer key and learn all keys","programming_method":"Instrument-cluster data AKL route","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL requires an explicitly supported instrument cluster and the correct adapter route.","vehicle_connection":{"required":true,"display_text":"Supported instrument-cluster bench connection"},"module_removal_required":true,"internet_required":false,"warnings":["Back up and verify cluster data before key learning."]}}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": "Volkswagen",
+  "model": "Up!",
+  "items": {
+    "up_aa_2012_2016": {
+      "add_key": {
+        "method": "Identify the fitted instrument cluster, obtain the required immobiliser data and adapt the prepared key",
+        "programming_method": "Small-car Immo IV cluster-specific diagnostic or saved-data route",
+        "online_requirement": "Not Required for supported offline routes",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd_or_bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Support depends on the exact Up! instrument-cluster family.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD or supported cluster-data route"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Confirm the cluster type before programming."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read the supported cluster immobiliser data, prepare the dealer key and learn all keys",
+        "programming_method": "Instrument-cluster data AKL route",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL requires an explicitly supported instrument cluster and the correct adapter route.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Supported instrument-cluster bench connection"
+            },
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Back up and verify cluster data before key learning."
+            ]
+          }
+        }
+      },
+      "display_name": "Up aa 2012 2016"
     },
-    "up_aa_facelift_2016_2023":{
-      "add_key":{"method":"Confirm the late AA instrument cluster and current tool coverage before selecting the diagnostic or saved-data route","programming_method":"Late small-car cluster-specific Add Key route","online_requirement":"Tool dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"obd_or_bench","display_name":"OBDSTAR KeyMaster G3","summary":"Conditional support only where the fitted late Up! cluster is listed by the tool.","vehicle_connection":{"required":true,"display_text":"Standard OBD or supported cluster-data route"},"internet_required":false,"warnings":["Do not assume all facelift clusters use the same procedure."]}}},
-      "all_keys_lost":{"method":"Acquire the required late-cluster immobiliser data, prepare the key and learn all keys","programming_method":"Supported late instrument-cluster data route","online_requirement":"Tool dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL is conditional on exact cluster and processor support.","vehicle_connection":{"required":true,"display_text":"Supported late-cluster bench connection"},"module_removal_required":true,"internet_required":false,"warnings":["Verify the processor and EEPROM family before reading."]}}}
+    "up_aa_facelift_2016_2023": {
+      "add_key": {
+        "method": "Confirm the late AA instrument cluster and current tool coverage before selecting the diagnostic or saved-data route",
+        "programming_method": "Late small-car cluster-specific Add Key route",
+        "online_requirement": "Tool dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd_or_bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Conditional support only where the fitted late Up! cluster is listed by the tool.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD or supported cluster-data route"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Do not assume all facelift clusters use the same procedure."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Acquire the required late-cluster immobiliser data, prepare the key and learn all keys",
+        "programming_method": "Supported late instrument-cluster data route",
+        "online_requirement": "Tool dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is conditional on exact cluster and processor support.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Supported late-cluster bench connection"
+            },
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Verify the processor and EEPROM family before reading."
+            ]
+          }
+        }
+      },
+      "display_name": "Up aa facelift 2016 2023"
     }
   }
 }

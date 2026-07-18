@@ -1,1 +1,101 @@
-{"schema_version":"2.1","updated_at":"2026-07-18","manufacturer":{"id":"volkswagen","name":"Volkswagen"},"model":{"id":"jetta","name":"Jetta"},"category":"vehicles","items":{"jetta_1k_2005_2011":{"record_id":"volkswagen_jetta_1k_2005_2011_uk","vehicle":{"make":"Volkswagen","model":"Jetta","generation":"1K","year_from":2005,"year_to":2011,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"PQ35","immobiliser_system":"Immo4 family; verify cluster","module_type":"Instrument cluster","transponder_type":"ID48 crypto family","blade_profile":"HU66","key_type":"Remote key","smart_key":false,"access_method":{"add_key":"Diagnostic or cluster security-data route","all_keys_lost":"Cluster security-data route may be required","module":"Instrument cluster","encrypted":true},"security":{"online_required":false,"dealer_key_required":"tool_dependent","working_key_required":false,"security_access":"cluster_data"},"adapter":["Standard OBD","Cluster programmer when required"],"notes":"Identify exact cluster before selecting procedure."},"verification":{"status":"research_required","last_checked":"2026-07-18"}},"jetta_16_2011_2018":{"record_id":"volkswagen_jetta_16_2011_2018_uk","vehicle":{"make":"Volkswagen","model":"Jetta","generation":"16","year_from":2011,"year_to":2018,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"PQ35/PQ46 derivative","immobiliser_system":"Immo4/Immo5 family; verify dashboard","module_type":"Instrument cluster","transponder_type":"ID48 crypto family","blade_profile":"HU66","key_type":"Remote key","smart_key":false,"access_method":{"add_key":"Supported diagnostic or saved-data route after cluster identification","all_keys_lost":"Cluster-data route may be required","module":"Instrument cluster","encrypted":true},"security":{"online_required":"tool_dependent","dealer_key_required":true,"working_key_required":false,"security_access":"dashboard_security_data"},"adapter":["Standard OBD","Cluster programmer when required"],"notes":"Later dashboard support is processor specific."},"verification":{"status":"research_required","last_checked":"2026-07-18"}}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "jetta",
+    "name": "Jetta"
+  },
+  "category": "vehicles",
+  "items": {
+    "jetta_1k_2005_2011": {
+      "record_id": "volkswagen_jetta_1k_2005_2011_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Jetta",
+        "generation": "1K",
+        "year_from": 2005,
+        "year_to": 2011,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ35",
+        "immobiliser_system": "Immo4 family; verify cluster",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "Diagnostic or cluster security-data route",
+          "all_keys_lost": "Cluster security-data route may be required",
+          "module": "Instrument cluster",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": "tool_dependent",
+          "working_key_required": false,
+          "security_access": "cluster_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Cluster programmer when required"
+        ],
+        "notes": "Identify exact cluster before selecting procedure."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-18"
+      },
+      "display_name": "Jetta 1k 2005 2011"
+    },
+    "jetta_16_2011_2018": {
+      "record_id": "volkswagen_jetta_16_2011_2018_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Jetta",
+        "generation": "16",
+        "year_from": 2011,
+        "year_to": 2018,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ35/PQ46 derivative",
+        "immobiliser_system": "Immo4/Immo5 family; verify dashboard",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "Supported diagnostic or saved-data route after cluster identification",
+          "all_keys_lost": "Cluster-data route may be required",
+          "module": "Instrument cluster",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "dashboard_security_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Cluster programmer when required"
+        ],
+        "notes": "Later dashboard support is processor specific."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-18"
+      },
+      "display_name": "Jetta 16 2011 2018"
+    }
+  }
+}

@@ -1,1 +1,58 @@
-{"schema_version":"2.1","updated_at":"2026-07-18","manufacturer":{"id":"volkswagen","name":"Volkswagen"},"model":{"id":"t_cross","name":"T-Cross"},"category":"vehicles","items":{"t_cross_c11_2019_present":{"record_id":"volkswagen_t_cross_c11_2019_present_uk","vehicle":{"make":"Volkswagen","model":"T-Cross","generation":"C11","year_from":2019,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"MQB A0","immobiliser_system":"MQB protected dashboard/access-start family; verify exact cluster generation","module_type":"Instrument cluster or access-start system","transponder_type":"ID48/MQB smart-key family; verify fitted key","blade_profile":"HU162T or emergency blade variant; verify","key_type":"Remote key or smart key","smart_key":"variant_dependent","access_method":{"add_key":"Supported MQB diagnostic or saved-data route after exact dashboard identification","all_keys_lost":"Processor/security-generation-specific route; current coverage must be confirmed","module":"Instrument cluster or access-start system","encrypted":true},"security":{"online_required":"tool_and_operation_dependent","dealer_key_required":true,"working_key_required":false,"security_access":"mqb_protected_data"},"adapter":["Standard OBD","Dashboard connection when required"],"notes":"Facelift and later protected dashboards require live tool-coverage verification."},"verification":{"status":"research_required","last_checked":"2026-07-18"}}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "t_cross",
+    "name": "T-Cross"
+  },
+  "category": "vehicles",
+  "items": {
+    "t_cross_c11_2019_present": {
+      "record_id": "volkswagen_t_cross_c11_2019_present_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "T-Cross",
+        "generation": "C11",
+        "year_from": 2019,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "MQB A0",
+        "immobiliser_system": "MQB protected dashboard/access-start family; verify exact cluster generation",
+        "module_type": "Instrument cluster or access-start system",
+        "transponder_type": "ID48/MQB smart-key family; verify fitted key",
+        "blade_profile": "HU162T or emergency blade variant; verify",
+        "key_type": "Remote key or smart key",
+        "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "Supported MQB diagnostic or saved-data route after exact dashboard identification",
+          "all_keys_lost": "Processor/security-generation-specific route; current coverage must be confirmed",
+          "module": "Instrument cluster or access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_and_operation_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "mqb_protected_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Dashboard connection when required"
+        ],
+        "notes": "Facelift and later protected dashboards require live tool-coverage verification."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-18"
+      },
+      "display_name": "T cross c11 2019 present"
+    }
+  }
+}

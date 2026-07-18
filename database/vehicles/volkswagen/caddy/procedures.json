@@ -5,20 +5,179 @@
   "model": "Caddy",
   "items": {
     "caddy_2k_2004_2010_keyed": {
-      "add_key": {"method":"Identify the fitted Immo IV dashboard, obtain the required security data and adapt the prepared key","programming_method":"Supported OBD or saved dashboard-data route","online_requirement":"Not Required","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"obd","display_name":"OBDSTAR KeyMaster G3","summary":"Volkswagen Immo IV key programming is available when the fitted Caddy dashboard is supported.","vehicle_connection":{"required":true,"display_text":"Standard OBD or dashboard-data route depending on cluster"},"internet_required":false,"warnings":["Identify the exact cluster family before programming."]}}},
-      "all_keys_lost": {"method":"Read the supported dashboard data, prepare the dealer key and learn all keys","programming_method":"Immo IV dashboard-specific bench or data route","online_requirement":"Not Required for documented bench routes","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL is conditional on the fitted dashboard being one of the supported Volkswagen Immo IV types.","vehicle_connection":{"required":true,"display_text":"VW4-AKL cable or supported dashboard adapter"},"module_removal_required":true,"internet_required":false,"warnings":["Confirm processor and EEPROM family before removal or reading."]}}}
+      "add_key": {
+        "method": "Identify the fitted Immo IV dashboard, obtain the required security data and adapt the prepared key",
+        "programming_method": "Supported OBD or saved dashboard-data route",
+        "online_requirement": "Not Required",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Volkswagen Immo IV key programming is available when the fitted Caddy dashboard is supported.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD or dashboard-data route depending on cluster"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Identify the exact cluster family before programming."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read the supported dashboard data, prepare the dealer key and learn all keys",
+        "programming_method": "Immo IV dashboard-specific bench or data route",
+        "online_requirement": "Not Required for documented bench routes",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is conditional on the fitted dashboard being one of the supported Volkswagen Immo IV types.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "VW4-AKL cable or supported dashboard adapter"
+            },
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Confirm processor and EEPROM family before removal or reading."
+            ]
+          }
+        }
+      },
+      "display_name": "Caddy 2k 2004 2010 keyed"
     },
     "caddy_2k_facelift_2010_2015_keyed": {
-      "add_key": {"method":"Use the supported diagnostic or saved-data route after exact dashboard identification","programming_method":"Late Immo IV dashboard-specific Add Key route","online_requirement":"Tool dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"obd","display_name":"OBDSTAR KeyMaster G3","summary":"Conditional support for listed late Volkswagen Immo IV dashboards.","vehicle_connection":{"required":true,"display_text":"Standard OBD or cluster-data route"},"internet_required":false,"warnings":["Do not select by model year alone."]}}},
-      "all_keys_lost": {"method":"Acquire the required dashboard immobiliser data, prepare the key and learn all keys","programming_method":"Supported late Immo IV dashboard-data route","online_requirement":"Tool dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL requires a supported dashboard and the correct dedicated adapter route.","vehicle_connection":{"required":true,"display_text":"Supported dashboard bench connection"},"module_removal_required":true,"internet_required":false,"warnings":["Back up and verify dashboard data before key learning."]}}}
+      "add_key": {
+        "method": "Use the supported diagnostic or saved-data route after exact dashboard identification",
+        "programming_method": "Late Immo IV dashboard-specific Add Key route",
+        "online_requirement": "Tool dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Conditional support for listed late Volkswagen Immo IV dashboards.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD or cluster-data route"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Do not select by model year alone."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Acquire the required dashboard immobiliser data, prepare the key and learn all keys",
+        "programming_method": "Supported late Immo IV dashboard-data route",
+        "online_requirement": "Tool dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL requires a supported dashboard and the correct dedicated adapter route.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Supported dashboard bench connection"
+            },
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Back up and verify dashboard data before key learning."
+            ]
+          }
+        }
+      },
+      "display_name": "Caddy 2k facelift 2010 2015 keyed"
     },
     "caddy_2k_2015_2020_keyed": {
-      "add_key": {"method":"Identify the MQB dashboard and use a supported OBD, working-key or saved-data route","programming_method":"MQB48 dashboard-specific Add Key procedure","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"autel_im508s_xp400_pro":{"status":"conditional","method":"transponder_clone","display_name":"Autel IM508S + XP400 Pro","summary":"APB300 working-key Add Key may be available for supported MQB applications.","vehicle_connection":{"required":false,"display_text":"Read the opened working key using APB300"},"working_key_required":true,"vehicle_required":false,"internet_required":true},"obdstar_g3":{"status":"conditional","method":"obd","display_name":"OBDSTAR KeyMaster G3","summary":"MQB key programming is conditional on a supported MQB48 5A/5B dashboard.","vehicle_connection":{"required":true,"display_text":"OBD or supported dashboard-data route"},"internet_required":false}}},
-      "all_keys_lost": {"method":"Read supported MQB dashboard data, calculate security data, prepare the dealer key and learn all keys","programming_method":"MQB48 5A/5B dashboard-data AKL route","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL is available only for supported MQB48 5A/5B dashboard types.","vehicle_connection":{"required":true,"display_text":"RH850/V850 dashboard adapter route where required"},"module_removal_required":true,"internet_required":false,"warnings":["This does not establish MQB5C support."]}}}
+      "add_key": {
+        "method": "Identify the MQB dashboard and use a supported OBD, working-key or saved-data route",
+        "programming_method": "MQB48 dashboard-specific Add Key procedure",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "APB300 working-key Add Key may be available for supported MQB applications.",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Read the opened working key using APB300"
+            },
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true
+          },
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "MQB key programming is conditional on a supported MQB48 5A/5B dashboard.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "OBD or supported dashboard-data route"
+            },
+            "internet_required": false
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read supported MQB dashboard data, calculate security data, prepare the dealer key and learn all keys",
+        "programming_method": "MQB48 5A/5B dashboard-data AKL route",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is available only for supported MQB48 5A/5B dashboard types.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "RH850/V850 dashboard adapter route where required"
+            },
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "This does not establish MQB5C support."
+            ]
+          }
+        }
+      },
+      "display_name": "Caddy 2k 2015 2020 keyed"
     },
     "caddy_sb_2020_present": {
-      "add_key": {"method":"Confirm VIN, key type, dashboard family and current tool coverage before accepting the job","programming_method":"Later protected MQB / MQB5C support check","online_requirement":"May Be Required","overall_status":"verification_required","warnings":["No blanket aftermarket Add Key claim has been verified."]},
-      "all_keys_lost": {"method":"Confirm current platform-specific AKL coverage before accepting the job","programming_method":"Protected MQB / MQB5C coverage check","online_requirement":"Likely Required","overall_status":"verification_required","warnings":["Do not promise AKL until the exact vehicle and live tool coverage are confirmed."]}
+      "add_key": {
+        "method": "Confirm VIN, key type, dashboard family and current tool coverage before accepting the job",
+        "programming_method": "Later protected MQB / MQB5C support check",
+        "online_requirement": "May Be Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "No blanket aftermarket Add Key claim has been verified."
+        ]
+      },
+      "all_keys_lost": {
+        "method": "Confirm current platform-specific AKL coverage before accepting the job",
+        "programming_method": "Protected MQB / MQB5C coverage check",
+        "online_requirement": "Likely Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "Do not promise AKL until the exact vehicle and live tool coverage are confirmed."
+        ]
+      },
+      "display_name": "Caddy sb 2020 present"
     }
   }
 }

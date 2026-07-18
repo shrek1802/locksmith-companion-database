@@ -1,1 +1,58 @@
-{"schema_version":"2.1","updated_at":"2026-07-18","manufacturer":{"id":"volkswagen","name":"Volkswagen"},"model":{"id":"taigo","name":"Taigo"},"category":"vehicles","items":{"taigo_cs_2021_present":{"record_id":"volkswagen_taigo_cs_2021_present_uk","vehicle":{"make":"Volkswagen","model":"Taigo","generation":"CS","year_from":2021,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"MQB A0","immobiliser_system":"Later protected MQB dashboard/access-start family","module_type":"Instrument cluster or access-start system","transponder_type":"MQB ID48-family key; verify exact remote","blade_profile":"HU162T or emergency blade variant; verify","key_type":"Remote key or smart key","smart_key":"variant_dependent","access_method":{"add_key":"Current tool and dashboard-specific protected MQB route","all_keys_lost":"Explicit current AKL support required before work","module":"Instrument cluster or access-start system","encrypted":true},"security":{"online_required":"tool_and_operation_dependent","dealer_key_required":true,"working_key_required":false,"security_access":"later_mqb_protected"},"adapter":["Supported diagnostic interface","Dashboard connection when explicitly required"],"notes":"Treat all coverage as current-tool-version dependent."},"verification":{"status":"research_required","last_checked":"2026-07-18"}}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "taigo",
+    "name": "Taigo"
+  },
+  "category": "vehicles",
+  "items": {
+    "taigo_cs_2021_present": {
+      "record_id": "volkswagen_taigo_cs_2021_present_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Taigo",
+        "generation": "CS",
+        "year_from": 2021,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "MQB A0",
+        "immobiliser_system": "Later protected MQB dashboard/access-start family",
+        "module_type": "Instrument cluster or access-start system",
+        "transponder_type": "MQB ID48-family key; verify exact remote",
+        "blade_profile": "HU162T or emergency blade variant; verify",
+        "key_type": "Remote key or smart key",
+        "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "Current tool and dashboard-specific protected MQB route",
+          "all_keys_lost": "Explicit current AKL support required before work",
+          "module": "Instrument cluster or access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_and_operation_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "later_mqb_protected"
+        },
+        "adapter": [
+          "Supported diagnostic interface",
+          "Dashboard connection when explicitly required"
+        ],
+        "notes": "Treat all coverage as current-tool-version dependent."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-18"
+      },
+      "display_name": "Taigo cs 2021 present"
+    }
+  }
+}

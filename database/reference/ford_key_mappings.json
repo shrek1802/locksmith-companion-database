@@ -14,208 +14,398 @@
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "mhz_433_92",
-      "approval": {"blade":"hold","transponder":"approved","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD","SRC-KEYSTATION-FORD-LIST"],
-      "notes": "Transponder is approved in the Ford workbook. Blade and exact frequency remain held pending another exact-vehicle source or workshop evidence."
+      "approval": {
+        "blade": "hold",
+        "transponder": "approved",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD",
+        "SRC-KEYSTATION-FORD-LIST"
+      ],
+      "notes": "Transponder is approved in the Ford workbook. Blade and exact frequency remain held pending another exact-vehicle source or workshop evidence.",
+      "display_name": "Ford fiesta 2008 2012 keyed uk"
     },
     "ford_fiesta_2013_2017_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "Catalogue identifies DST80 / ID63-6F family. Exact UK blade and frequency require a second source."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Catalogue identifies DST80 / ID63-6F family. Exact UK blade and frequency require a second source.",
+      "display_name": "Ford fiesta 2013 2017 keyed uk"
     },
     "ford_fiesta_2013_2017_passive_uk": {
       "blade_id": "emergency_blade_unknown",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "passive_multi_band",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "Passive-key implementation and emergency blade require exact UK confirmation."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Passive-key implementation and emergency blade require exact UK confirmation.",
+      "display_name": "Ford fiesta 2013 2017 passive uk"
     },
     "ford_fiesta_2017_2023_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "nxp_hitag_pro",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "Catalogue identifies Hitag Pro / ID47 family for 2017 onward."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Catalogue identifies Hitag Pro / ID47 family for 2017 onward.",
+      "display_name": "Ford fiesta 2017 2023 keyed uk"
     },
     "ford_fiesta_2017_2023_passive_uk": {
       "blade_id": "emergency_blade_unknown",
       "transponder_id": "nxp_hitag_pro",
       "frequency_id": "passive_multi_band",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "Passive implementation requires exact UK build confirmation."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Passive implementation requires exact UK build confirmation.",
+      "display_name": "Ford fiesta 2017 2023 passive uk"
     },
     "ford_focus_1998_2004_keyed_uk": {
       "blade_id": "fo21",
       "transponder_id": "texas_4d60",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "Catalogue lists 4D60 for 1998-2004; exact blade split needs independent confirmation."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Catalogue lists 4D60 for 1998-2004; exact blade split needs independent confirmation.",
+      "display_name": "Ford focus 1998 2004 keyed uk"
     },
     "ford_focus_2004_2011_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"]
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford focus 2004 2011 keyed uk"
     },
     "ford_focus_2011_2018_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "2011-2015 catalogue range uses DST80 / ID63-6F; later builds may use Hitag Pro and require a split."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2011-2015 catalogue range uses DST80 / ID63-6F; later builds may use Hitag Pro and require a split.",
+      "display_name": "Ford focus 2011 2018 keyed uk"
     },
     "ford_focus_2011_2018_passive_uk": {
       "blade_id": "emergency_blade_unknown",
       "transponder_id": "nxp_hitag_pro",
       "frequency_id": "passive_multi_band",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "2015-2018 catalogue range uses Hitag Pro; exact passive introduction and UK build split must be verified."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2015-2018 catalogue range uses Hitag Pro; exact passive introduction and UK build split must be verified.",
+      "display_name": "Ford focus 2011 2018 passive uk"
     },
     "ford_transit_1994_2000_keyed_uk": {
       "blade_id": "fo21",
       "transponder_id": "texas_4c",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"]
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford transit 1994 2000 keyed uk"
     },
     "ford_transit_2000_2006_keyed_uk": {
       "blade_id": "fo21",
       "transponder_id": "texas_4d60",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"]
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford transit 2000 2006 keyed uk"
     },
     "ford_transit_2006_2014_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"]
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford transit 2006 2014 keyed uk"
     },
     "ford_transit_2014_2023_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "2013-2016 catalogue range is DST80; 2016 onward changes to Hitag Pro, so this app record requires a technical split."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2013-2016 catalogue range is DST80; 2016 onward changes to Hitag Pro, so this app record requires a technical split.",
+      "display_name": "Ford transit 2014 2023 keyed uk"
     },
     "ford_transit_2014_2023_passive_uk": {
       "blade_id": "emergency_blade_unknown",
       "transponder_id": "nxp_hitag_pro",
       "frequency_id": "passive_multi_band",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "Later-generation passive key; exact UK introduction/build split must be verified."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Later-generation passive key; exact UK introduction/build split must be verified.",
+      "display_name": "Ford transit 2014 2023 passive uk"
     },
     "ford_transit_custom_2012_2023_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "2012-2017 catalogue range is DST80; 2019 onward is Hitag Pro. Existing broad record must be split before approval."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2012-2017 catalogue range is DST80; 2019 onward is Hitag Pro. Existing broad record must be split before approval.",
+      "display_name": "Ford transit custom 2012 2023 keyed uk"
     },
     "ford_transit_custom_2012_2023_passive_uk": {
       "blade_id": "emergency_blade_unknown",
       "transponder_id": "nxp_hitag_pro",
       "frequency_id": "passive_multi_band",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"]
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford transit custom 2012 2023 passive uk"
     },
     "ford_transit_connect_2002_2013_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d60",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "2002-2008 is 4D60 and 2009-2013 is 4D63; broad app record must be split."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2002-2008 is 4D60 and 2009-2013 is 4D63; broad app record must be split.",
+      "display_name": "Ford transit connect 2002 2013 keyed uk"
     },
     "ford_transit_connect_2013_2022_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "2013-2016 is DST80 and 2016 onward is Hitag Pro; broad record must be split."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2013-2016 is DST80 and 2016 onward is Hitag Pro; broad record must be split.",
+      "display_name": "Ford transit connect 2013 2022 keyed uk"
     },
     "ford_transit_connect_2013_2022_passive_uk": {
       "blade_id": "emergency_blade_unknown",
       "transponder_id": "nxp_hitag_pro",
       "frequency_id": "passive_multi_band",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"]
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford transit connect 2013 2022 passive uk"
     },
     "ford_transit_courier_2014_2023_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "2014-2018 is DST80 and 2019 onward is Hitag Pro; broad record must be split."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2014-2018 is DST80 and 2019 onward is Hitag Pro; broad record must be split.",
+      "display_name": "Ford transit courier 2014 2023 keyed uk"
     },
     "ford_tourneo_courier_2014_2023_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "2014-2018 is DST80 and 2019 onward is Hitag Pro; broad record must be split."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2014-2018 is DST80 and 2019 onward is Hitag Pro; broad record must be split.",
+      "display_name": "Ford tourneo courier 2014 2023 keyed uk"
     },
     "ford_kuga_2008_2012_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"]
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford kuga 2008 2012 keyed uk"
     },
     "ford_kuga_2013_2019_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "2012-2016 is DST80 and 2016 onward is Hitag Pro; split required."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2012-2016 is DST80 and 2016 onward is Hitag Pro; split required.",
+      "display_name": "Ford kuga 2013 2019 keyed uk"
     },
     "ford_kuga_2013_2019_passive_uk": {
       "blade_id": "emergency_blade_unknown",
       "transponder_id": "nxp_hitag_pro",
       "frequency_id": "passive_multi_band",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"]
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford kuga 2013 2019 passive uk"
     },
     "ford_ranger_1999_2006_keyed_uk": {
       "blade_id": "fo21",
       "transponder_id": "texas_4c",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "1999-2000 catalogue range is 4C; later Mazda-derived years require separate verification."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "1999-2000 catalogue range is 4C; later Mazda-derived years require separate verification.",
+      "display_name": "Ford ranger 1999 2006 keyed uk"
     },
     "ford_ranger_2006_2011_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"]
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford ranger 2006 2011 keyed uk"
     },
     "ford_ranger_2012_2022_keyed_uk": {
       "blade_id": "hu101",
       "transponder_id": "texas_4d63_80bit",
       "frequency_id": "frequency_unknown",
-      "approval": {"blade":"hold","transponder":"hold","frequency":"hold"},
-      "sources": ["SRC-TRANSPONDERY-FORD"],
-      "notes": "Catalogue identifies DST80 family from 2011 onward; exact later build changes require a second source."
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Catalogue identifies DST80 family from 2011 onward; exact later build changes require a second source.",
+      "display_name": "Ford ranger 2012 2022 keyed uk"
     }
   },
   "sources": {

@@ -1,28 +1,185 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-18",
-  "manufacturer":"Volkswagen",
-  "model":"Transporter",
-  "items":{
-    "transporter_t4_1990_2003":{
-      "add_key":{"method":"Identify the fitted Immo II/III system, obtain PIN or module data and adapt the prepared key","programming_method":"Supported OBD or module-data route","online_requirement":"Not Required","overall_status":"conditional","tools":{}},
-      "all_keys_lost":{"method":"Recover security data from the supported cluster or immobiliser unit, prepare the key and learn all keys","programming_method":"Immo II/III module-data route","online_requirement":"Not Required","overall_status":"conditional","tools":{}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": "Volkswagen",
+  "model": "Transporter",
+  "items": {
+    "transporter_t4_1990_2003": {
+      "add_key": {
+        "method": "Identify the fitted Immo II/III system, obtain PIN or module data and adapt the prepared key",
+        "programming_method": "Supported OBD or module-data route",
+        "online_requirement": "Not Required",
+        "overall_status": "conditional",
+        "tools": {}
+      },
+      "all_keys_lost": {
+        "method": "Recover security data from the supported cluster or immobiliser unit, prepare the key and learn all keys",
+        "programming_method": "Immo II/III module-data route",
+        "online_requirement": "Not Required",
+        "overall_status": "conditional",
+        "tools": {}
+      },
+      "display_name": "Transporter t4 1990 2003"
     },
-    "transporter_t5_2003_2009":{
-      "add_key":{"method":"Identify the fitted Immo IV dashboard, obtain the required security data and adapt the prepared key","programming_method":"Supported OBD or saved dashboard-data route","online_requirement":"Not Required","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"obd","display_name":"OBDSTAR KeyMaster G3","summary":"Volkswagen Immo IV programming is available only when the fitted T5 dashboard is supported.","vehicle_connection":{"required":true,"display_text":"Standard OBD or dashboard-data route"},"internet_required":false}}},
-      "all_keys_lost":{"method":"Read the supported dashboard data, prepare the dealer key and learn all keys","programming_method":"Immo IV dashboard-specific data route","online_requirement":"Not Required for documented bench routes","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL is conditional on exact dashboard support.","vehicle_connection":{"required":true,"display_text":"Supported Volkswagen dashboard adapter"},"module_removal_required":true,"internet_required":false}}}
+    "transporter_t5_2003_2009": {
+      "add_key": {
+        "method": "Identify the fitted Immo IV dashboard, obtain the required security data and adapt the prepared key",
+        "programming_method": "Supported OBD or saved dashboard-data route",
+        "online_requirement": "Not Required",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Volkswagen Immo IV programming is available only when the fitted T5 dashboard is supported.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD or dashboard-data route"
+            },
+            "internet_required": false
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read the supported dashboard data, prepare the dealer key and learn all keys",
+        "programming_method": "Immo IV dashboard-specific data route",
+        "online_requirement": "Not Required for documented bench routes",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is conditional on exact dashboard support.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Supported Volkswagen dashboard adapter"
+            },
+            "module_removal_required": true,
+            "internet_required": false
+          }
+        }
+      },
+      "display_name": "Transporter t5 2003 2009"
     },
-    "transporter_t5_gp_2009_2015":{
-      "add_key":{"method":"Use the supported diagnostic or saved-data route after exact dashboard identification","programming_method":"Late Immo IV dashboard-specific Add Key route","online_requirement":"Tool dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"obd","display_name":"OBDSTAR KeyMaster G3","summary":"Conditional support for listed late Volkswagen Immo IV dashboards.","vehicle_connection":{"required":true,"display_text":"Standard OBD or cluster-data route"},"internet_required":false}}},
-      "all_keys_lost":{"method":"Acquire the required dashboard immobiliser data, prepare the key and learn all keys","programming_method":"Supported late Immo IV dashboard-data route","online_requirement":"Tool dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL requires a supported dashboard and correct adapter route.","vehicle_connection":{"required":true,"display_text":"Supported dashboard bench connection"},"module_removal_required":true,"internet_required":false}}}
+    "transporter_t5_gp_2009_2015": {
+      "add_key": {
+        "method": "Use the supported diagnostic or saved-data route after exact dashboard identification",
+        "programming_method": "Late Immo IV dashboard-specific Add Key route",
+        "online_requirement": "Tool dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Conditional support for listed late Volkswagen Immo IV dashboards.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD or cluster-data route"
+            },
+            "internet_required": false
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Acquire the required dashboard immobiliser data, prepare the key and learn all keys",
+        "programming_method": "Supported late Immo IV dashboard-data route",
+        "online_requirement": "Tool dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL requires a supported dashboard and correct adapter route.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Supported dashboard bench connection"
+            },
+            "module_removal_required": true,
+            "internet_required": false
+          }
+        }
+      },
+      "display_name": "Transporter t5 gp 2009 2015"
     },
-    "transporter_t6_2015_2019":{
-      "add_key":{"method":"Identify the dashboard family and use a supported working-key, OBD or saved-data route","programming_method":"Late ID48 / MQB48 dashboard-specific Add Key procedure","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"autel_im508s_xp400_pro":{"status":"conditional","method":"transponder_clone","display_name":"Autel IM508S + XP400 Pro","summary":"APB300 working-key Add Key may be available on supported applications.","vehicle_connection":{"required":false,"display_text":"Read opened working key with APB300"},"working_key_required":true,"vehicle_required":false,"internet_required":true},"obdstar_g3":{"status":"conditional","method":"obd","display_name":"OBDSTAR KeyMaster G3","summary":"Support depends on the exact fitted dashboard family.","vehicle_connection":{"required":true,"display_text":"OBD or supported dashboard-data route"},"internet_required":false}}},
-      "all_keys_lost":{"method":"Read supported dashboard data, prepare the dealer key and learn all keys","programming_method":"Dashboard-specific security-data route","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL is available only where the fitted dashboard is explicitly supported.","vehicle_connection":{"required":true,"display_text":"Supported dashboard adapter route"},"module_removal_required":true,"internet_required":false}}}
+    "transporter_t6_2015_2019": {
+      "add_key": {
+        "method": "Identify the dashboard family and use a supported working-key, OBD or saved-data route",
+        "programming_method": "Late ID48 / MQB48 dashboard-specific Add Key procedure",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "APB300 working-key Add Key may be available on supported applications.",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Read opened working key with APB300"
+            },
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true
+          },
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Support depends on the exact fitted dashboard family.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "OBD or supported dashboard-data route"
+            },
+            "internet_required": false
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read supported dashboard data, prepare the dealer key and learn all keys",
+        "programming_method": "Dashboard-specific security-data route",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is available only where the fitted dashboard is explicitly supported.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Supported dashboard adapter route"
+            },
+            "module_removal_required": true,
+            "internet_required": false
+          }
+        }
+      },
+      "display_name": "Transporter t6 2015 2019"
     },
-    "transporter_t61_2019_present":{
-      "add_key":{"method":"Confirm VIN, key type, dashboard family and current tool coverage before accepting the job","programming_method":"Protected Volkswagen platform support check","online_requirement":"May Be Required","overall_status":"verification_required","warnings":["No blanket aftermarket Add Key claim has been verified."]},
-      "all_keys_lost":{"method":"Confirm current platform-specific AKL coverage before accepting the job","programming_method":"Protected platform coverage check","online_requirement":"Likely Required","overall_status":"verification_required","warnings":["Do not promise AKL until live tool coverage is confirmed."]}
+    "transporter_t61_2019_present": {
+      "add_key": {
+        "method": "Confirm VIN, key type, dashboard family and current tool coverage before accepting the job",
+        "programming_method": "Protected Volkswagen platform support check",
+        "online_requirement": "May Be Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "No blanket aftermarket Add Key claim has been verified."
+        ]
+      },
+      "all_keys_lost": {
+        "method": "Confirm current platform-specific AKL coverage before accepting the job",
+        "programming_method": "Protected platform coverage check",
+        "online_requirement": "Likely Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "Do not promise AKL until live tool coverage is confirmed."
+        ]
+      },
+      "display_name": "Transporter t61 2019 present"
     }
   }
 }

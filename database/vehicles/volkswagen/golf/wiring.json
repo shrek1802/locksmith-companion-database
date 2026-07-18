@@ -8,38 +8,61 @@
     "golf_mk4_1998_2004_keyed": {
       "diagnostic_connection": "Standard 16-pin OBD socket",
       "bench_connection": "Only when security data cannot be obtained diagnostically",
-      "adapter": ["Standard OBD", "EEPROM or cluster programmer as required"],
-      "battery_support": "Regulated vehicle support supply recommended"
+      "adapter": [
+        "Standard OBD",
+        "EEPROM or cluster programmer as required"
+      ],
+      "battery_support": "Regulated vehicle support supply recommended",
+      "display_name": "Golf mk4 1998 2004 keyed"
     },
     "golf_mk5_2004_2009_keyed": {
       "diagnostic_connection": "Standard 16-pin OBD socket",
       "bench_connection": "Cluster-specific programmer connection when required",
-      "adapter": ["Standard OBD", "Cluster adapter or programmer connection"],
-      "battery_support": "Regulated vehicle support supply recommended"
+      "adapter": [
+        "Standard OBD",
+        "Cluster adapter or programmer connection"
+      ],
+      "battery_support": "Regulated vehicle support supply recommended",
+      "display_name": "Golf mk5 2004 2009 keyed"
     },
     "golf_mk6_2009_2013_keyed": {
       "diagnostic_connection": "Standard 16-pin OBD socket",
       "bench_connection": "Dashboard-specific data connection when required",
-      "adapter": ["Standard OBD", "Cluster-specific programmer connection"],
-      "battery_support": "Regulated vehicle support supply recommended"
+      "adapter": [
+        "Standard OBD",
+        "Cluster-specific programmer connection"
+      ],
+      "battery_support": "Regulated vehicle support supply recommended",
+      "display_name": "Golf mk6 2009 2013 keyed"
     },
     "golf_mk7_2013_2017": {
       "diagnostic_connection": "Standard 16-pin OBD socket",
       "bench_connection": "Dashboard adapter or supported programmer route when required",
-      "adapter": ["Standard OBD", "MQB dashboard adapter or programmer where supported"],
-      "battery_support": "Regulated vehicle support supply required for programming"
+      "adapter": [
+        "Standard OBD",
+        "MQB dashboard adapter or programmer where supported"
+      ],
+      "battery_support": "Regulated vehicle support supply required for programming",
+      "display_name": "Golf mk7 2013 2017"
     },
     "golf_mk75_2017_2020": {
       "diagnostic_connection": "Standard 16-pin OBD socket",
       "bench_connection": "Supported late-MQB dashboard connection when required",
-      "adapter": ["Standard OBD", "Current supported dashboard adapter or programmer"],
-      "battery_support": "Regulated vehicle support supply required for programming"
+      "adapter": [
+        "Standard OBD",
+        "Current supported dashboard adapter or programmer"
+      ],
+      "battery_support": "Regulated vehicle support supply required for programming",
+      "display_name": "Golf mk75 2017 2020"
     },
     "golf_mk8_2020_present": {
       "diagnostic_connection": "Standard diagnostic socket",
       "bench_connection": "No universal bench connection claim",
-      "adapter": ["Current platform-specific connection or security access where supported"],
-      "battery_support": "Use a regulated support supply and follow current tool requirements"
+      "adapter": [
+        "Current platform-specific connection or security access where supported"
+      ],
+      "battery_support": "Use a regulated support supply and follow current tool requirements",
+      "display_name": "Golf mk8 2020 present"
     }
   },
   "warning": "Pin-level wiring is intentionally excluded until verified against an exact module part number and procedure."

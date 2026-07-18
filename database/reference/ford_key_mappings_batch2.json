@@ -1,68 +1,689 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-14",
-  "manufacturer":"ford",
-  "market":"UK",
-  "version":1,
-  "rules":{"approved_only_for_vehicle_export":true,"single_professional_source_status":"hold","unknown_values_must_remain_unknown":true},
-  "items":{
-    "ford_mondeo_1996_2000_keyed_uk":{"blade_id":"fo21","transponder_id":"texas_4c","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_mondeo_2000_2007_keyed_uk":{"blade_id":"fo21","transponder_id":"texas_4d60","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_mondeo_2007_2014_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_80bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"2007-2010 catalogue range is 4D63; 2011-2014 is DST80, so this record needs a split."},
-    "ford_mondeo_2007_2014_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"texas_4d63_80bit","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"Passive-key introduction and exact chip split require verification."},
-    "ford_mondeo_2014_2022_keyed_uk":{"blade_id":"hu101","transponder_id":"nxp_hitag_pro","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_mondeo_2014_2022_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-
-    "ford_galaxy_1995_2000_vag_uk":{"blade_id":"hu66","transponder_id":"philips_id33","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"1995-1998 ID33 and 1998-2000 ID42; existing record must be split."},
-    "ford_galaxy_2000_2006_vag_uk":{"blade_id":"hu66","transponder_id":"philips_crypto_id44","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_galaxy_2006_2015_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_80bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"2006-2010 4D63 and 2010-2014 DST80; split required."},
-    "ford_galaxy_2006_2015_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"texas_4d63_80bit","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_galaxy_2015_2023_keyed_uk":{"blade_id":"hu101","transponder_id":"nxp_hitag_pro","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_galaxy_2015_2023_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-
-    "ford_s_max_2006_2015_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_80bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"2006-2010 4D63 and 2010-2014 DST80; split required."},
-    "ford_s_max_2006_2015_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"texas_4d63_80bit","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_s_max_2015_2023_keyed_uk":{"blade_id":"hu101","transponder_id":"nxp_hitag_pro","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_s_max_2015_2023_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-
-    "ford_c_max_2007_2010_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_40bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_c_max_2010_2019_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_80bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"2010-2015 DST80 and 2015 onward Hitag Pro; split required."},
-    "ford_c_max_2010_2019_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_grand_c_max_2010_2019_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_80bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"Likely same security-family split as C-Max; must be independently confirmed before approval."},
-    "ford_grand_c_max_2010_2019_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_b_max_2012_2017_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_80bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_b_max_2012_2017_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"texas_4d63_80bit","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-
-    "ford_ecosport_2014_2023_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_80bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"2013-2017 DST80 and 2018 onward Hitag Pro; split required."},
-    "ford_ecosport_2014_2023_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_edge_2016_2019_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_edge_2016_2019_keyed_uk":{"blade_id":"hu101","transponder_id":"nxp_hitag_pro","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"UK keyed-ignition fitment itself remains unconfirmed."},
-
-    "ford_tourneo_custom_2012_2023_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_80bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"Expected Transit Custom family split; exact Tourneo mapping requires confirmation."},
-    "ford_tourneo_custom_2012_2023_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_tourneo_connect_2002_2013_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d60","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"2002-2008 4D60 and 2009-2013 4D63; split required."},
-    "ford_tourneo_connect_2013_2022_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_80bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"2013-2016 DST80 and later Hitag Pro; split required."},
-    "ford_tourneo_connect_2013_2022_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_tourneo_connect_2022_present_mqb_uk":{"blade_id":"hu162t","transponder_id":"megamos_aes","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":[],"notes":"Volkswagen Caddy V-derived platform. Exact blade variant and security generation need VAG-specific source verification."},
-
-    "ford_puma_1997_2002_keyed_uk":{"blade_id":"fo21","transponder_id":"texas_4c","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_puma_2019_present_keyed_uk":{"blade_id":"hu101","transponder_id":"nxp_hitag_pro","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":[],"notes":"Current Puma exact keyed configuration requires a dedicated source."},
-    "ford_puma_2019_present_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":[]},
-
-    "ford_ka_1996_2008_keyed_uk":{"blade_id":"fo21","transponder_id":"texas_4c","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"1996-2002 4C and 2002-2008 4D60; split required."},
-    "ford_ka_2009_2016_fiat_keyed_uk":{"blade_id":"sip22","transponder_id":"nxp_hitag2_id46","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_ka_plus_2016_2020_keyed_uk":{"blade_id":"hu101","transponder_id":"nxp_hitag_pro","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-
-    "ford_mustang_2015_2023_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"nxp_hitag_pro","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_mustang_2024_present_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"transponder_unknown","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":[],"notes":"Current S650 exact transponder family requires verification."},
-    "ford_mustang_mach_e_2021_present_passive_uk":{"blade_id":"emergency_blade_unknown","transponder_id":"transponder_unknown","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":[],"notes":"Connected EV access system; do not infer chip family from conventional Ford keys."},
-
-    "ford_explorer_1997_2001_keyed_uk":{"blade_id":"fo21","transponder_id":"texas_4c","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]},
-    "ford_explorer_2024_present_meb_uk":{"blade_id":"hu162t","transponder_id":"megamos_aes","frequency_id":"passive_multi_band","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":[],"notes":"Volkswagen MEB-derived platform; exact key system needs VAG/MEB-specific verification."},
-
-    "ford_fiesta_van_2002_2008_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_40bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"Derivative mapping follows Fiesta family and requires exact commercial-build confirmation."},
-    "ford_fiesta_van_2009_2018_keyed_uk":{"blade_id":"hu101","transponder_id":"texas_4d63_80bit","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"],"notes":"Broad range crosses DST80/Hitag Pro change and requires splitting."},
-    "ford_fiesta_van_2018_2023_keyed_uk":{"blade_id":"hu101","transponder_id":"nxp_hitag_pro","frequency_id":"frequency_unknown","approval":{"blade":"hold","transponder":"hold","frequency":"hold"},"sources":["SRC-TRANSPONDERY-FORD"]}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": "ford",
+  "market": "UK",
+  "version": 1,
+  "rules": {
+    "approved_only_for_vehicle_export": true,
+    "single_professional_source_status": "hold",
+    "unknown_values_must_remain_unknown": true
   },
-  "sources":{"SRC-TRANSPONDERY-FORD":{"publisher":"Transpondery","title":"Ford Transponder Catalog","url":"https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html","type":"professional_catalogue","accessed":"2026-07-14"}}
+  "items": {
+    "ford_mondeo_1996_2000_keyed_uk": {
+      "blade_id": "fo21",
+      "transponder_id": "texas_4c",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford mondeo 1996 2000 keyed uk"
+    },
+    "ford_mondeo_2000_2007_keyed_uk": {
+      "blade_id": "fo21",
+      "transponder_id": "texas_4d60",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford mondeo 2000 2007 keyed uk"
+    },
+    "ford_mondeo_2007_2014_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2007-2010 catalogue range is 4D63; 2011-2014 is DST80, so this record needs a split.",
+      "display_name": "Ford mondeo 2007 2014 keyed uk"
+    },
+    "ford_mondeo_2007_2014_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Passive-key introduction and exact chip split require verification.",
+      "display_name": "Ford mondeo 2007 2014 passive uk"
+    },
+    "ford_mondeo_2014_2022_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford mondeo 2014 2022 keyed uk"
+    },
+    "ford_mondeo_2014_2022_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford mondeo 2014 2022 passive uk"
+    },
+    "ford_galaxy_1995_2000_vag_uk": {
+      "blade_id": "hu66",
+      "transponder_id": "philips_id33",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "1995-1998 ID33 and 1998-2000 ID42; existing record must be split.",
+      "display_name": "Ford galaxy 1995 2000 vag uk"
+    },
+    "ford_galaxy_2000_2006_vag_uk": {
+      "blade_id": "hu66",
+      "transponder_id": "philips_crypto_id44",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford galaxy 2000 2006 vag uk"
+    },
+    "ford_galaxy_2006_2015_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2006-2010 4D63 and 2010-2014 DST80; split required.",
+      "display_name": "Ford galaxy 2006 2015 keyed uk"
+    },
+    "ford_galaxy_2006_2015_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford galaxy 2006 2015 passive uk"
+    },
+    "ford_galaxy_2015_2023_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford galaxy 2015 2023 keyed uk"
+    },
+    "ford_galaxy_2015_2023_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford galaxy 2015 2023 passive uk"
+    },
+    "ford_s_max_2006_2015_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2006-2010 4D63 and 2010-2014 DST80; split required.",
+      "display_name": "Ford s max 2006 2015 keyed uk"
+    },
+    "ford_s_max_2006_2015_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford s max 2006 2015 passive uk"
+    },
+    "ford_s_max_2015_2023_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford s max 2015 2023 keyed uk"
+    },
+    "ford_s_max_2015_2023_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford s max 2015 2023 passive uk"
+    },
+    "ford_c_max_2007_2010_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_40bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford c max 2007 2010 keyed uk"
+    },
+    "ford_c_max_2010_2019_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2010-2015 DST80 and 2015 onward Hitag Pro; split required.",
+      "display_name": "Ford c max 2010 2019 keyed uk"
+    },
+    "ford_c_max_2010_2019_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford c max 2010 2019 passive uk"
+    },
+    "ford_grand_c_max_2010_2019_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Likely same security-family split as C-Max; must be independently confirmed before approval.",
+      "display_name": "Ford grand c max 2010 2019 keyed uk"
+    },
+    "ford_grand_c_max_2010_2019_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford grand c max 2010 2019 passive uk"
+    },
+    "ford_b_max_2012_2017_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford b max 2012 2017 keyed uk"
+    },
+    "ford_b_max_2012_2017_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford b max 2012 2017 passive uk"
+    },
+    "ford_ecosport_2014_2023_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2013-2017 DST80 and 2018 onward Hitag Pro; split required.",
+      "display_name": "Ford ecosport 2014 2023 keyed uk"
+    },
+    "ford_ecosport_2014_2023_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford ecosport 2014 2023 passive uk"
+    },
+    "ford_edge_2016_2019_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford edge 2016 2019 passive uk"
+    },
+    "ford_edge_2016_2019_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "UK keyed-ignition fitment itself remains unconfirmed.",
+      "display_name": "Ford edge 2016 2019 keyed uk"
+    },
+    "ford_tourneo_custom_2012_2023_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Expected Transit Custom family split; exact Tourneo mapping requires confirmation.",
+      "display_name": "Ford tourneo custom 2012 2023 keyed uk"
+    },
+    "ford_tourneo_custom_2012_2023_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford tourneo custom 2012 2023 passive uk"
+    },
+    "ford_tourneo_connect_2002_2013_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d60",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2002-2008 4D60 and 2009-2013 4D63; split required.",
+      "display_name": "Ford tourneo connect 2002 2013 keyed uk"
+    },
+    "ford_tourneo_connect_2013_2022_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "2013-2016 DST80 and later Hitag Pro; split required.",
+      "display_name": "Ford tourneo connect 2013 2022 keyed uk"
+    },
+    "ford_tourneo_connect_2013_2022_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford tourneo connect 2013 2022 passive uk"
+    },
+    "ford_tourneo_connect_2022_present_mqb_uk": {
+      "blade_id": "hu162t",
+      "transponder_id": "megamos_aes",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [],
+      "notes": "Volkswagen Caddy V-derived platform. Exact blade variant and security generation need VAG-specific source verification.",
+      "display_name": "Ford tourneo connect 2022 present mqb uk"
+    },
+    "ford_puma_1997_2002_keyed_uk": {
+      "blade_id": "fo21",
+      "transponder_id": "texas_4c",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford puma 1997 2002 keyed uk"
+    },
+    "ford_puma_2019_present_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [],
+      "notes": "Current Puma exact keyed configuration requires a dedicated source.",
+      "display_name": "Ford puma 2019 present keyed uk"
+    },
+    "ford_puma_2019_present_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [],
+      "display_name": "Ford puma 2019 present passive uk"
+    },
+    "ford_ka_1996_2008_keyed_uk": {
+      "blade_id": "fo21",
+      "transponder_id": "texas_4c",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "1996-2002 4C and 2002-2008 4D60; split required.",
+      "display_name": "Ford ka 1996 2008 keyed uk"
+    },
+    "ford_ka_2009_2016_fiat_keyed_uk": {
+      "blade_id": "sip22",
+      "transponder_id": "nxp_hitag2_id46",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford ka 2009 2016 fiat keyed uk"
+    },
+    "ford_ka_plus_2016_2020_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford ka plus 2016 2020 keyed uk"
+    },
+    "ford_mustang_2015_2023_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford mustang 2015 2023 passive uk"
+    },
+    "ford_mustang_2024_present_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "transponder_unknown",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [],
+      "notes": "Current S650 exact transponder family requires verification.",
+      "display_name": "Ford mustang 2024 present passive uk"
+    },
+    "ford_mustang_mach_e_2021_present_passive_uk": {
+      "blade_id": "emergency_blade_unknown",
+      "transponder_id": "transponder_unknown",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [],
+      "notes": "Connected EV access system; do not infer chip family from conventional Ford keys.",
+      "display_name": "Ford mustang mach e 2021 present passive uk"
+    },
+    "ford_explorer_1997_2001_keyed_uk": {
+      "blade_id": "fo21",
+      "transponder_id": "texas_4c",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford explorer 1997 2001 keyed uk"
+    },
+    "ford_explorer_2024_present_meb_uk": {
+      "blade_id": "hu162t",
+      "transponder_id": "megamos_aes",
+      "frequency_id": "passive_multi_band",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [],
+      "notes": "Volkswagen MEB-derived platform; exact key system needs VAG/MEB-specific verification.",
+      "display_name": "Ford explorer 2024 present meb uk"
+    },
+    "ford_fiesta_van_2002_2008_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_40bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Derivative mapping follows Fiesta family and requires exact commercial-build confirmation.",
+      "display_name": "Ford fiesta van 2002 2008 keyed uk"
+    },
+    "ford_fiesta_van_2009_2018_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "texas_4d63_80bit",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "notes": "Broad range crosses DST80/Hitag Pro change and requires splitting.",
+      "display_name": "Ford fiesta van 2009 2018 keyed uk"
+    },
+    "ford_fiesta_van_2018_2023_keyed_uk": {
+      "blade_id": "hu101",
+      "transponder_id": "nxp_hitag_pro",
+      "frequency_id": "frequency_unknown",
+      "approval": {
+        "blade": "hold",
+        "transponder": "hold",
+        "frequency": "hold"
+      },
+      "sources": [
+        "SRC-TRANSPONDERY-FORD"
+      ],
+      "display_name": "Ford fiesta van 2018 2023 keyed uk"
+    }
+  },
+  "sources": {
+    "SRC-TRANSPONDERY-FORD": {
+      "publisher": "Transpondery",
+      "title": "Ford Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/ford_transponder_catalog.html",
+      "type": "professional_catalogue",
+      "accessed": "2026-07-14"
+    }
+  }
 }

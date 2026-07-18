@@ -1,20 +1,98 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-18",
-  "manufacturer":"Volkswagen",
-  "model":"Touareg",
-  "items":{
-    "touareg_7l_2002_2010":{
-      "add_key":{"method":"Identify the fitted KESSY hardware, obtain the required security data, prepare the dealer key and adapt all present keys","programming_method":"Early Touareg KESSY diagnostic or saved-data route","online_requirement":"Not Required for supported offline routes","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"obd_or_bench","display_name":"OBDSTAR KeyMaster G3","summary":"Support depends on the exact KESSY hardware and documented Volkswagen/Porsche-style access module route.","vehicle_connection":{"required":true,"display_text":"Standard OBD or supported KESSY bench connection"},"internet_required":false,"warnings":["Read the KESSY part number and preserve a verified backup before programming."]}}},
-      "all_keys_lost":{"method":"Read the supported KESSY security data, prepare the dealer key and learn all keys","programming_method":"KESSY module-data or bench AKL route","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL is conditional on the fitted KESSY module being explicitly supported.","vehicle_connection":{"required":true,"display_text":"Supported KESSY adapter or module-data route"},"module_removal_required":true,"internet_required":false,"warnings":["Do not select the procedure by registration year alone."]}}}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": "Volkswagen",
+  "model": "Touareg",
+  "items": {
+    "touareg_7l_2002_2010": {
+      "add_key": {
+        "method": "Identify the fitted KESSY hardware, obtain the required security data, prepare the dealer key and adapt all present keys",
+        "programming_method": "Early Touareg KESSY diagnostic or saved-data route",
+        "online_requirement": "Not Required for supported offline routes",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd_or_bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Support depends on the exact KESSY hardware and documented Volkswagen/Porsche-style access module route.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD or supported KESSY bench connection"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Read the KESSY part number and preserve a verified backup before programming."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read the supported KESSY security data, prepare the dealer key and learn all keys",
+        "programming_method": "KESSY module-data or bench AKL route",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is conditional on the fitted KESSY module being explicitly supported.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Supported KESSY adapter or module-data route"
+            },
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Do not select the procedure by registration year alone."
+            ]
+          }
+        }
+      },
+      "display_name": "Touareg 7l 2002 2010"
     },
-    "touareg_7p_2010_2018":{
-      "add_key":{"method":"Confirm the exact encrypted access-start module and current tool coverage before accepting the job","programming_method":"Encrypted Touareg 7P access-authorisation route","online_requirement":"Tool and operation dependent","overall_status":"verification_required","warnings":["No universal 7P Add Key route is claimed."]},
-      "all_keys_lost":{"method":"Confirm current module-specific AKL coverage and required security-data access before accepting the job","programming_method":"Encrypted access-start module data route","online_requirement":"Likely Required or specialist bench service","overall_status":"verification_required","warnings":["Do not treat 7P as an early 7L KESSY system."]}
+    "touareg_7p_2010_2018": {
+      "add_key": {
+        "method": "Confirm the exact encrypted access-start module and current tool coverage before accepting the job",
+        "programming_method": "Encrypted Touareg 7P access-authorisation route",
+        "online_requirement": "Tool and operation dependent",
+        "overall_status": "verification_required",
+        "warnings": [
+          "No universal 7P Add Key route is claimed."
+        ]
+      },
+      "all_keys_lost": {
+        "method": "Confirm current module-specific AKL coverage and required security-data access before accepting the job",
+        "programming_method": "Encrypted access-start module data route",
+        "online_requirement": "Likely Required or specialist bench service",
+        "overall_status": "verification_required",
+        "warnings": [
+          "Do not treat 7P as an early 7L KESSY system."
+        ]
+      },
+      "display_name": "Touareg 7p 2010 2018"
     },
-    "touareg_cr_2018_present":{
-      "add_key":{"method":"Use an authorised MLB Evo security-access route after VIN and key verification","programming_method":"Protected MLB Evo online/security-authorisation route","online_requirement":"Required","overall_status":"verification_required","warnings":["Confirm legal online access and live tool coverage before booking."]},
-      "all_keys_lost":{"method":"Confirm authorised MLB Evo AKL capability before accepting the vehicle","programming_method":"Protected MLB Evo AKL security-authorisation route","online_requirement":"Required","overall_status":"verification_required","warnings":["No blanket aftermarket AKL support is recorded."]}
+    "touareg_cr_2018_present": {
+      "add_key": {
+        "method": "Use an authorised MLB Evo security-access route after VIN and key verification",
+        "programming_method": "Protected MLB Evo online/security-authorisation route",
+        "online_requirement": "Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "Confirm legal online access and live tool coverage before booking."
+        ]
+      },
+      "all_keys_lost": {
+        "method": "Confirm authorised MLB Evo AKL capability before accepting the vehicle",
+        "programming_method": "Protected MLB Evo AKL security-authorisation route",
+        "online_requirement": "Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "No blanket aftermarket AKL support is recorded."
+        ]
+      },
+      "display_name": "Touareg cr 2018 present"
     }
   }
 }

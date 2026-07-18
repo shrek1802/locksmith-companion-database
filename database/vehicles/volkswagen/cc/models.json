@@ -1,1 +1,101 @@
-{"schema_version":"2.1","updated_at":"2026-07-18","manufacturer":{"id":"volkswagen","name":"Volkswagen"},"model":{"id":"cc","name":"CC"},"category":"vehicles","items":{"passat_cc_3c8_2008_2012":{"record_id":"volkswagen_passat_cc_3c8_2008_2012_uk","vehicle":{"make":"Volkswagen","model":"Passat CC","generation":"3C8","year_from":2008,"year_to":2012,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"PQ46","immobiliser_system":"Immo4/KESSY variant dependent","module_type":"Comfort access/start or instrument cluster","transponder_type":"ID48 crypto family","blade_profile":"HU66","key_type":"Remote key or keyless variant","smart_key":"variant_dependent","access_method":{"add_key":"Module-specific diagnostic or security-data route","all_keys_lost":"Cluster/KESSY data route may be required","module":"Instrument cluster or KESSY","encrypted":true},"security":{"online_required":"tool_dependent","dealer_key_required":true,"working_key_required":false,"security_access":"immo_security_data"},"adapter":["Standard OBD","Module programmer when required"],"notes":"Identify keyless/KESSY variant before programming."},"verification":{"status":"research_required","last_checked":"2026-07-18"}},"cc_358_2012_2017":{"record_id":"volkswagen_cc_358_2012_2017_uk","vehicle":{"make":"Volkswagen","model":"CC","generation":"358","year_from":2012,"year_to":2017,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"PQ46","immobiliser_system":"Immo5/KESSY family; verify fitted system","module_type":"Instrument cluster or KESSY","transponder_type":"ID48 crypto family","blade_profile":"HU66","key_type":"Remote key or smart key","smart_key":"variant_dependent","access_method":{"add_key":"Supported dashboard/KESSY route after exact identification","all_keys_lost":"Security-data route may require bench work","module":"Instrument cluster or KESSY","encrypted":true},"security":{"online_required":"tool_and_operation_dependent","dealer_key_required":true,"working_key_required":false,"security_access":"encrypted_immo_data"},"adapter":["Standard OBD","Module-specific bench adapter"],"notes":"No blanket support claim; verify hardware and operation."},"verification":{"status":"research_required","last_checked":"2026-07-18"}}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "cc",
+    "name": "CC"
+  },
+  "category": "vehicles",
+  "items": {
+    "passat_cc_3c8_2008_2012": {
+      "record_id": "volkswagen_passat_cc_3c8_2008_2012_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Passat CC",
+        "generation": "3C8",
+        "year_from": 2008,
+        "year_to": 2012,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ46",
+        "immobiliser_system": "Immo4/KESSY variant dependent",
+        "module_type": "Comfort access/start or instrument cluster",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote key or keyless variant",
+        "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "Module-specific diagnostic or security-data route",
+          "all_keys_lost": "Cluster/KESSY data route may be required",
+          "module": "Instrument cluster or KESSY",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "immo_security_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Module programmer when required"
+        ],
+        "notes": "Identify keyless/KESSY variant before programming."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-18"
+      },
+      "display_name": "Passat cc 3c8 2008 2012"
+    },
+    "cc_358_2012_2017": {
+      "record_id": "volkswagen_cc_358_2012_2017_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "CC",
+        "generation": "358",
+        "year_from": 2012,
+        "year_to": 2017,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ46",
+        "immobiliser_system": "Immo5/KESSY family; verify fitted system",
+        "module_type": "Instrument cluster or KESSY",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote key or smart key",
+        "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "Supported dashboard/KESSY route after exact identification",
+          "all_keys_lost": "Security-data route may require bench work",
+          "module": "Instrument cluster or KESSY",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_and_operation_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "encrypted_immo_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Module-specific bench adapter"
+        ],
+        "notes": "No blanket support claim; verify hardware and operation."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-18"
+      },
+      "display_name": "Cc 358 2012 2017"
+    }
+  }
+}

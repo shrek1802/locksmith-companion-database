@@ -2,11 +2,47 @@
   "schema_version": "2.1",
   "updated_at": "2026-07-17",
   "items": {
-    "polo_6n_1994_2001": {"module": "Instrument cluster or separate immobiliser box", "location": "Dashboard area", "communication": "K-line / early diagnostic", "encrypted": false},
-    "polo_9n_2001_2009": {"module": "Instrument cluster", "location": "Dashboard", "communication": "CAN / K-line depending on build", "encrypted": "cluster_dependent"},
-    "polo_6r_2009_2014": {"module": "Instrument cluster", "location": "Dashboard", "communication": "CAN", "encrypted": true},
-    "polo_6c_2014_2017": {"module": "Instrument cluster", "location": "Dashboard", "communication": "CAN", "encrypted": true},
-    "polo_aw_2017_2021": {"module": "Instrument cluster or access-start system", "location": "Dashboard / steering column area depending on variant", "communication": "MQB CAN", "encrypted": true},
-    "polo_aw_facelift_2021_present": {"module": "Instrument cluster or access-start system", "location": "Dashboard / steering column area depending on variant", "communication": "Protected MQB network", "encrypted": true}
+    "polo_6n_1994_2001": {
+      "module": "Instrument cluster or separate immobiliser box",
+      "location": "Dashboard area",
+      "communication": "K-line / early diagnostic",
+      "encrypted": false,
+      "display_name": "Polo 6n 1994 2001"
+    },
+    "polo_9n_2001_2009": {
+      "module": "Instrument cluster",
+      "location": "Dashboard",
+      "communication": "CAN / K-line depending on build",
+      "encrypted": "cluster_dependent",
+      "display_name": "Polo 9n 2001 2009"
+    },
+    "polo_6r_2009_2014": {
+      "module": "Instrument cluster",
+      "location": "Dashboard",
+      "communication": "CAN",
+      "encrypted": true,
+      "display_name": "Polo 6r 2009 2014"
+    },
+    "polo_6c_2014_2017": {
+      "module": "Instrument cluster",
+      "location": "Dashboard",
+      "communication": "CAN",
+      "encrypted": true,
+      "display_name": "Polo 6c 2014 2017"
+    },
+    "polo_aw_2017_2021": {
+      "module": "Instrument cluster or access-start system",
+      "location": "Dashboard / steering column area depending on variant",
+      "communication": "MQB CAN",
+      "encrypted": true,
+      "display_name": "Polo aw 2017 2021"
+    },
+    "polo_aw_facelift_2021_present": {
+      "module": "Instrument cluster or access-start system",
+      "location": "Dashboard / steering column area depending on variant",
+      "communication": "Protected MQB network",
+      "encrypted": true,
+      "display_name": "Polo aw facelift 2021 present"
+    }
   }
 }
