@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18",
+  "manufacturer_group": [
+    "BMW",
+    "MINI"
+  ],
+  "scope": "Shared family/tool verification; no chassis applicability inferred",
+  "families": {
+    "ews": {
+      "status": "research_required",
+      "vehicle_applicability": "generation-specific"
+    },
+    "cas2_cas3_cas3plus": {
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Yanhua ACDP Module 1",
+          "functions": [
+            "add_key",
+            "all_keys_lost",
+            "EEPROM/flash read-write"
+          ],
+          "confidence": "high",
+          "source": "https://www.acdpmaster.com/en/Module.html"
+        }
+      ],
+      "vehicle_applicability": "research_required"
+    },
+    "cas4_cas4plus": {
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Yanhua ACDP Module 1",
+          "method": "in-circuit programming",
+          "functions": [
+            "add_key",
+            "all_keys_lost"
+          ],
+          "confidence": "high",
+          "source": "https://www.acdpmaster.com/en/Module.html"
+        }
+      ],
+      "vehicle_applicability": "research_required"
+    },
+    "fem": {
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Yanhua ACDP Module 2",
+          "functions": [
+            "add_key",
+            "all_keys_lost",
+            "data backup/recovery"
+          ],
+          "confidence": "high",
+          "source": "https://blog.yanhuaacdp.com/yanhua-mini-acdp-program-bmw-fem-bdc-without-soldering/"
+        }
+      ],
+      "vehicle_applicability": "research_required"
+    },
+    "bdc": {
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Yanhua ACDP Module 2",
+          "functions": [
+            "add_key",
+            "all_keys_lost",
+            "data backup/recovery"
+          ],
+          "confidence": "high",
+          "source": "https://blog.yanhuaacdp.com/yanhua-mini-acdp-program-bmw-fem-bdc-without-soldering/"
+        }
+      ],
+      "vehicle_applicability": "research_required"
+    },
+    "bdc2": {
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Yanhua ACDP Module 38",
+          "functions": [
+            "add_key",
+            "all_keys_lost",
+            "refresh",
+            "replacement data copy"
+          ],
+          "confidence": "high",
+          "source": "https://www.acdpmaster.com/en/Module.html",
+          "limits": "AKL requires separately listed key-learning bench platform."
+        }
+      ],
+      "vehicle_applicability": "research_required"
+    }
+  }
+}
