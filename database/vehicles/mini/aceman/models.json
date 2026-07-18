@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.1",
+  "model": "Aceman",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "aceman_uk_scope",
+      "name": "Aceman UK-market generations",
+      "years": "Generation/build-date specific; verify by VIN",
+      "platform": "Exact chassis/platform requires generation confirmation",
+      "immobiliser_family": "BMW Group EWS/CAS/FEM/BDC-derived architecture varies by MINI generation and fitted hardware",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_uk_range": {
+      "publisher": "MINI UK",
+      "url": "https://www.mini.co.uk/en_GB/home/range/browse.html",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family presence"
+      ]
+    },
+    "official_manuals": {
+      "publisher": "MINI UK",
+      "url": "https://www.mini.co.uk/en_GB/home/owners/drivers-guide-and-owners-information.html",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "VIN/generation-specific documentation requirement"
+      ]
+    }
+  }
+}
