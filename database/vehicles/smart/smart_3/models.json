@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.1",
+  "model": "#3",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "smart_3_uk_scope",
+      "name": "#3 UK-market generations",
+      "years": "Generation/build-date specific; verify by VIN",
+      "platform": "Exact chassis/platform requires generation confirmation",
+      "immobiliser_family": "Legacy Mercedes-derived and current smart EV access architectures must not be conflated",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_uk_range": {
+      "publisher": "Smart UK",
+      "url": "https://uk.smart.com/en/models/",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family presence"
+      ]
+    },
+    "official_manuals": {
+      "publisher": "Smart UK",
+      "url": "https://uk.smart.com/en/service/manuals/",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "VIN/generation-specific documentation requirement"
+      ]
+    }
+  }
+}
