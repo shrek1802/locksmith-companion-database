@@ -2,11 +2,38 @@
   "schema_version": "2.1",
   "model": "A1",
   "notes": [
-    {"title": "UK/RHD scope", "text": "Only UK-market right-hand-drive vehicles are in scope. Component locations remain unverified until supported by UK RHD workshop evidence."},
-    {"title": "Platform split", "text": "Audi primary evidence verifies MQB A0 for the A1 generation produced from October 2018. The 8X PQ25 claim remains research in progress."},
-    {"title": "Key-system split", "text": "Keyed and advanced-key/keyless variants must remain separate. Current public sources do not establish their complete UK production ranges or locksmith procedures."},
-    {"title": "Repository reuse search", "text": "The repository-wide verified-architecture audit found no record-level claim with two traceable sources eligible for automatic reuse."},
-    {"title": "Tool evidence limit", "text": "The Xhorse VVDI2 VAG manual names Audi A1 in a service-mode category. This is tool-menu evidence only and does not prove universal add-key or all-keys-lost support."}
+    {
+      "title": "UK/RHD scope",
+      "text": "Only UK-market right-hand-drive vehicles are in scope. Component locations remain unverified until supported by UK RHD workshop evidence."
+    },
+    {
+      "title": "Platform split",
+      "text": "Audi primary evidence verifies MQB A0 for the A1 generation produced from October 2018. The 8X PQ25 claim remains research in progress."
+    },
+    {
+      "title": "Key-system split",
+      "text": "Keyed and advanced-key/keyless variants must remain separate. Current public sources do not establish their complete UK production ranges or locksmith procedures."
+    },
+    {
+      "title": "Repository reuse search",
+      "text": "The repository-wide verified-architecture audit found no record-level claim with two traceable sources eligible for automatic reuse."
+    },
+    {
+      "title": "Tool evidence limit",
+      "text": "The Xhorse VVDI2 VAG manual names Audi A1 in a service-mode category. This is tool-menu evidence only and does not prove universal add-key or all-keys-lost support."
+    },
+    {
+      "title": "Phase 2 shared-architecture review",
+      "text": "VAG family registry and official vendor material were checked. Keyed and KESSY remain separate; model-year, RHD location, AKL, wiring and exact dashboard applicability are not inherited.",
+      "sources": [
+        "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+        "https://wiki.ross-tech.com/wiki/index.php/VW_Passat_%283C%29_Immobilizer",
+        "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+        "https://www.acdpmaster.com/en/Module.html"
+      ],
+      "confidence": "high for named family/tool scope; vehicle applicability remains generation-specific",
+      "checked_at": "2026-07-18"
+    }
   ],
   "status": "research_in_progress"
 }

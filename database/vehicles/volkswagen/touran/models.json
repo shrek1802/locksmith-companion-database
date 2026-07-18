@@ -1,1 +1,166 @@
-{"schema_version":"2.1","updated_at":"2026-07-17","manufacturer":{"id":"volkswagen","name":"Volkswagen"},"model":{"id":"touran","name":"Touran"},"category":"vehicles","items":{"touran_1t_2003_2010":{"record_id":"volkswagen_touran_1t_2003_2010_uk","vehicle":{"make":"Volkswagen","model":"Touran","generation":"1T","year_from":2003,"year_to":2010,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"PQ35","immobiliser_family_id":"vw_immo_4a_adaptation","module_type":"Instrument cluster","transponder_type":"ID48 crypto","blade_profile":"HU66","key_type":"Remote flip key","smart_key":false,"access_method":{"add_key":"OBD where supported","all_keys_lost":"Cluster security-data route","module":"Instrument cluster","encrypted":"cluster_dependent"},"security":{"online_required":false,"dealer_key_required":"tool_dependent","working_key_required":false,"security_access":"pin_cs_or_cluster_data"},"adapter":["Standard OBD","Cluster connection when required"],"notes":"Identify cluster manufacturer before procedure."},"verification":{"status":"research_required","last_checked":"2026-07-17","sources":["vw_touran_research_pending"]}},"touran_1t_gp_2010_2015":{"record_id":"volkswagen_touran_1t_gp_2010_2015_uk","vehicle":{"make":"Volkswagen","model":"Touran","generation":"1T facelift","year_from":2010,"year_to":2015,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"PQ35","immobiliser_family_id":"vw_immo_4_challenge_or_45","module_type":"Instrument cluster","transponder_type":"ID48 crypto","blade_profile":"HU66","key_type":"Remote flip key","smart_key":false,"access_method":{"add_key":"OBD where supported","all_keys_lost":"Cluster-data route","module":"Instrument cluster","encrypted":true},"security":{"online_required":false,"dealer_key_required":true,"working_key_required":false,"security_access":"challenge_or_cluster_data"},"adapter":["Standard OBD","Cluster programmer when required"],"notes":"Do not rely on model year alone."},"verification":{"status":"research_required","last_checked":"2026-07-17","sources":["vw_touran_research_pending"]}},"touran_5t_2015_present":{"record_id":"volkswagen_touran_5t_2015_present_uk","vehicle":{"make":"Volkswagen","model":"Touran","generation":"5T","year_from":2015,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"MQB","immobiliser_family_id":"vw_mqb_48_late","module_type":"Instrument cluster / access-start system","transponder_type":"MQB ID48 family","blade_profile":"HU162T family; verify","key_type":"Remote or keyless depending on specification","smart_key":"variant_dependent","access_method":{"add_key":"Diagnostic or saved-data route","all_keys_lost":"Dashboard/access-start data route","module":"Cluster or access-start system","encrypted":true},"security":{"online_required":"tool_dependent","dealer_key_required":true,"working_key_required":false,"security_access":"mqb_immobiliser_data"},"adapter":["Standard OBD","Dashboard adapter when required"],"notes":"Confirm dashboard and keyless specification."},"verification":{"status":"research_required","last_checked":"2026-07-17","sources":["vw_touran_research_pending"]}}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "touran",
+    "name": "Touran"
+  },
+  "category": "vehicles",
+  "items": {
+    "touran_1t_2003_2010": {
+      "record_id": "volkswagen_touran_1t_2003_2010_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Touran",
+        "generation": "1T",
+        "year_from": 2003,
+        "year_to": 2010,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ35",
+        "immobiliser_family_id": "vw_immo_4a_adaptation",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto",
+        "blade_profile": "HU66",
+        "key_type": "Remote flip key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "OBD where supported",
+          "all_keys_lost": "Cluster security-data route",
+          "module": "Instrument cluster",
+          "encrypted": "cluster_dependent"
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": "tool_dependent",
+          "working_key_required": false,
+          "security_access": "pin_cs_or_cluster_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Cluster connection when required"
+        ],
+        "notes": "Identify cluster manufacturer before procedure."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_touran_research_pending"
+        ],
+        "evidence": [
+          {
+            "scope": "shared immobiliser architecture only",
+            "source": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+            "confidence": "high",
+            "checked_at": "2026-07-18"
+          }
+        ]
+      }
+    },
+    "touran_1t_gp_2010_2015": {
+      "record_id": "volkswagen_touran_1t_gp_2010_2015_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Touran",
+        "generation": "1T facelift",
+        "year_from": 2010,
+        "year_to": 2015,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ35",
+        "immobiliser_family_id": "vw_immo_4_challenge_or_45",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto",
+        "blade_profile": "HU66",
+        "key_type": "Remote flip key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "OBD where supported",
+          "all_keys_lost": "Cluster-data route",
+          "module": "Instrument cluster",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "challenge_or_cluster_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Cluster programmer when required"
+        ],
+        "notes": "Do not rely on model year alone."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_touran_research_pending"
+        ],
+        "evidence": [
+          {
+            "scope": "shared immobiliser architecture only",
+            "source": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+            "confidence": "high",
+            "checked_at": "2026-07-18"
+          }
+        ]
+      }
+    },
+    "touran_5t_2015_present": {
+      "record_id": "volkswagen_touran_5t_2015_present_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Touran",
+        "generation": "5T",
+        "year_from": 2015,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "MQB",
+        "immobiliser_family_id": "vw_mqb_48_late",
+        "module_type": "Instrument cluster / access-start system",
+        "transponder_type": "MQB ID48 family",
+        "blade_profile": "HU162T family; verify",
+        "key_type": "Remote or keyless depending on specification",
+        "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "Diagnostic or saved-data route",
+          "all_keys_lost": "Dashboard/access-start data route",
+          "module": "Cluster or access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "mqb_immobiliser_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Dashboard adapter when required"
+        ],
+        "notes": "Confirm dashboard and keyless specification."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_touran_research_pending"
+        ]
+      }
+    }
+  }
+}

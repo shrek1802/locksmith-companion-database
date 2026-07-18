@@ -11,7 +11,19 @@
     "OBDSTAR lists Arteon in its Volkswagen key-programming coverage, but the model entry alone is not enough to mark every dashboard or AKL route verified.",
     "For any Arteon fitted with an MQB48-5A dashboard, OBDSTAR officially confirms AKL support through the RH850/V850 Adapter Kit, subject to exact dashboard identification.",
     "OBDSTAR March 2026 coverage explicitly adds D70F3525-V5 Program Keys using C4-06 with online synchronisation-code calculation.",
-    "Do not infer MQB49-5C support from MQB48 evidence; the current OBDSTAR adapter documentation keeps 5C unsupported on that route."
+    "Do not infer MQB49-5C support from MQB48 evidence; the current OBDSTAR adapter documentation keeps 5C unsupported on that route.",
+    {
+      "title": "Phase 2 shared-architecture review",
+      "text": "VAG family registry and official vendor material were checked. Keyed and KESSY remain separate; model-year, RHD location, AKL, wiring and exact dashboard applicability are not inherited.",
+      "sources": [
+        "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+        "https://wiki.ross-tech.com/wiki/index.php/VW_Passat_%283C%29_Immobilizer",
+        "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+        "https://www.acdpmaster.com/en/Module.html"
+      ],
+      "confidence": "high for named family/tool scope; vehicle applicability remains generation-specific",
+      "checked_at": "2026-07-18"
+    }
   ],
   "official_evidence": [
     {

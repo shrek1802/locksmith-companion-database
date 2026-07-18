@@ -1,45 +1,307 @@
 {
   "schema_version": "2.1",
   "updated_at": "2026-07-17",
-  "manufacturer": {"id": "volkswagen", "name": "Volkswagen"},
-  "model": {"id": "polo", "name": "Polo"},
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "polo",
+    "name": "Polo"
+  },
   "category": "vehicles",
   "items": {
     "polo_6n_1994_2001": {
       "record_id": "volkswagen_polo_6n_1994_2001_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Polo", "generation": "Polo 6N/6N2", "year_from": 1994, "year_to": 2001, "market": "UK", "drive_side": "RHD"},
-      "vehicle_information": {"platform": "6N", "immobiliser_family_id": "vw_immo_2_3", "immobiliser_system": "Early cluster or immobiliser-box system depending on build", "module_type": "Instrument cluster or separate immobiliser box", "transponder_type": "Early fixed-code or ID48 family depending on build", "blade_profile": "HU66 family; verify early variants", "key_type": "Keyed ignition", "smart_key": false, "access_method": {"add_key": "PIN-based adaptation where supported", "all_keys_lost": "Immobiliser data acquisition then adaptation", "module": "Cluster or immobiliser box", "encrypted": false}, "security": {"online_required": false, "dealer_key_required": false, "working_key_required": false, "security_access": "pin_or_eeprom_data"}, "adapter": ["Standard OBD", "EEPROM programmer when required"], "notes": "Identify exact immobiliser generation before key preparation."},
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["vw_polo_master_research_pending"]}
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Polo",
+        "generation": "Polo 6N/6N2",
+        "year_from": 1994,
+        "year_to": 2001,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "6N",
+        "immobiliser_family_id": "vw_immo_2_3",
+        "immobiliser_system": "Early cluster or immobiliser-box system depending on build",
+        "module_type": "Instrument cluster or separate immobiliser box",
+        "transponder_type": "Early fixed-code or ID48 family depending on build",
+        "blade_profile": "HU66 family; verify early variants",
+        "key_type": "Keyed ignition",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "PIN-based adaptation where supported",
+          "all_keys_lost": "Immobiliser data acquisition then adaptation",
+          "module": "Cluster or immobiliser box",
+          "encrypted": false
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": false,
+          "working_key_required": false,
+          "security_access": "pin_or_eeprom_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "EEPROM programmer when required"
+        ],
+        "notes": "Identify exact immobiliser generation before key preparation."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_polo_master_research_pending"
+        ],
+        "evidence": [
+          {
+            "scope": "shared immobiliser architecture only",
+            "source": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+            "confidence": "high",
+            "checked_at": "2026-07-18"
+          }
+        ]
+      }
     },
     "polo_9n_2001_2009": {
       "record_id": "volkswagen_polo_9n_2001_2009_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Polo", "generation": "Polo 9N/9N3", "year_from": 2001, "year_to": 2009, "market": "UK", "drive_side": "RHD"},
-      "vehicle_information": {"platform": "PQ24", "immobiliser_family_id": "vw_immo_3_4a", "immobiliser_system": "Cluster-based Immo3 or early Immo4 depending on build", "module_type": "Instrument cluster", "transponder_type": "ID48 crypto family", "blade_profile": "HU66", "key_type": "Remote flip key or transponder key", "smart_key": false, "access_method": {"add_key": "OBD adaptation when security data is available", "all_keys_lost": "Cluster data route may be required", "module": "Instrument cluster", "encrypted": "cluster_dependent"}, "security": {"online_required": false, "dealer_key_required": "variant_dependent", "working_key_required": false, "security_access": "pin_cs_or_cluster_data"}, "adapter": ["Standard OBD", "Cluster programmer when required"], "notes": "Do not select the procedure by year alone; identify cluster type."},
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["vw_polo_master_research_pending"]}
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Polo",
+        "generation": "Polo 9N/9N3",
+        "year_from": 2001,
+        "year_to": 2009,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ24",
+        "immobiliser_family_id": "vw_immo_3_4a",
+        "immobiliser_system": "Cluster-based Immo3 or early Immo4 depending on build",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote flip key or transponder key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "OBD adaptation when security data is available",
+          "all_keys_lost": "Cluster data route may be required",
+          "module": "Instrument cluster",
+          "encrypted": "cluster_dependent"
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": "variant_dependent",
+          "working_key_required": false,
+          "security_access": "pin_cs_or_cluster_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Cluster programmer when required"
+        ],
+        "notes": "Do not select the procedure by year alone; identify cluster type."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_polo_master_research_pending"
+        ]
+      }
     },
     "polo_6r_2009_2014": {
       "record_id": "volkswagen_polo_6r_2009_2014_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Polo", "generation": "Polo 6R", "year_from": 2009, "year_to": 2014, "market": "UK", "drive_side": "RHD"},
-      "vehicle_information": {"platform": "PQ25", "immobiliser_family_id": "vw_immo_4_challenge", "immobiliser_system": "Later cluster-based Volkswagen Immo4 family", "module_type": "Instrument cluster", "transponder_type": "ID48 crypto family", "blade_profile": "HU66", "key_type": "Remote flip key", "smart_key": false, "access_method": {"add_key": "OBD or saved-data route depending on dashboard", "all_keys_lost": "Cluster data route may be required", "module": "Instrument cluster", "encrypted": true}, "security": {"online_required": false, "dealer_key_required": true, "working_key_required": false, "security_access": "challenge_or_cluster_data"}, "adapter": ["Standard OBD", "Cluster-specific programmer connection when required"], "notes": "Confirm dashboard family and tool coverage before AKL."},
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["vw_polo_master_research_pending"]}
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Polo",
+        "generation": "Polo 6R",
+        "year_from": 2009,
+        "year_to": 2014,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ25",
+        "immobiliser_family_id": "vw_immo_4_challenge",
+        "immobiliser_system": "Later cluster-based Volkswagen Immo4 family",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote flip key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "OBD or saved-data route depending on dashboard",
+          "all_keys_lost": "Cluster data route may be required",
+          "module": "Instrument cluster",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "challenge_or_cluster_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Cluster-specific programmer connection when required"
+        ],
+        "notes": "Confirm dashboard family and tool coverage before AKL."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_polo_master_research_pending"
+        ],
+        "evidence": [
+          {
+            "scope": "shared immobiliser architecture only",
+            "source": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+            "confidence": "high",
+            "checked_at": "2026-07-18"
+          }
+        ]
+      }
     },
     "polo_6c_2014_2017": {
       "record_id": "volkswagen_polo_6c_2014_2017_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Polo", "generation": "Polo 6C", "year_from": 2014, "year_to": 2017, "market": "UK", "drive_side": "RHD"},
-      "vehicle_information": {"platform": "PQ25 facelift", "immobiliser_family_id": "vw_immo_4_late", "immobiliser_system": "Late cluster-based immobiliser family", "module_type": "Instrument cluster", "transponder_type": "ID48 crypto family", "blade_profile": "HU66", "key_type": "Remote flip key", "smart_key": false, "access_method": {"add_key": "Supported OBD or data route", "all_keys_lost": "Dashboard identification and data acquisition", "module": "Instrument cluster", "encrypted": true}, "security": {"online_required": "tool_and_operation_dependent", "dealer_key_required": true, "working_key_required": false, "security_access": "late_cluster_data"}, "adapter": ["Standard OBD", "Dashboard adapter when required"], "notes": "Keep 6R and 6C dashboard coverage separate."},
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["vw_polo_master_research_pending"]}
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Polo",
+        "generation": "Polo 6C",
+        "year_from": 2014,
+        "year_to": 2017,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ25 facelift",
+        "immobiliser_family_id": "vw_immo_4_late",
+        "immobiliser_system": "Late cluster-based immobiliser family",
+        "module_type": "Instrument cluster",
+        "transponder_type": "ID48 crypto family",
+        "blade_profile": "HU66",
+        "key_type": "Remote flip key",
+        "smart_key": false,
+        "access_method": {
+          "add_key": "Supported OBD or data route",
+          "all_keys_lost": "Dashboard identification and data acquisition",
+          "module": "Instrument cluster",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_and_operation_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "late_cluster_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Dashboard adapter when required"
+        ],
+        "notes": "Keep 6R and 6C dashboard coverage separate."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_polo_master_research_pending"
+        ]
+      }
     },
     "polo_aw_2017_2021": {
       "record_id": "volkswagen_polo_aw_2017_2021_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Polo", "generation": "Polo AW", "year_from": 2017, "year_to": 2021, "market": "UK", "drive_side": "RHD"},
-      "vehicle_information": {"platform": "MQB A0", "immobiliser_family_id": "vw_mqb_48_late", "immobiliser_system": "MQB ID48 family", "module_type": "Instrument cluster / access-start system depending on specification", "transponder_type": "MQB ID48 family", "blade_profile": "HU162T family; verify exact profile", "key_type": "Remote key or keyless key depending on specification", "smart_key": "variant_dependent", "access_method": {"add_key": "OBD or saved-data route", "all_keys_lost": "Dashboard data or supported bench route", "module": "Instrument cluster or access-start system", "encrypted": true}, "security": {"online_required": "tool_and_operation_dependent", "dealer_key_required": true, "working_key_required": false, "security_access": "mqb_immobiliser_data"}, "adapter": ["Standard OBD", "Dashboard adapter or programmer when required"], "notes": "Identify keyed versus keyless configuration before accepting the job."},
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["vw_polo_master_research_pending"]}
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Polo",
+        "generation": "Polo AW",
+        "year_from": 2017,
+        "year_to": 2021,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "MQB A0",
+        "immobiliser_family_id": "vw_mqb_48_late",
+        "immobiliser_system": "MQB ID48 family",
+        "module_type": "Instrument cluster / access-start system depending on specification",
+        "transponder_type": "MQB ID48 family",
+        "blade_profile": "HU162T family; verify exact profile",
+        "key_type": "Remote key or keyless key depending on specification",
+        "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "OBD or saved-data route",
+          "all_keys_lost": "Dashboard data or supported bench route",
+          "module": "Instrument cluster or access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_and_operation_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "mqb_immobiliser_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Dashboard adapter or programmer when required"
+        ],
+        "notes": "Identify keyed versus keyless configuration before accepting the job."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_polo_master_research_pending"
+        ]
+      }
     },
     "polo_aw_facelift_2021_present": {
       "record_id": "volkswagen_polo_aw_facelift_2021_present_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Polo", "generation": "Polo AW facelift", "year_from": 2021, "year_to": null, "market": "UK", "drive_side": "RHD"},
-      "vehicle_information": {"platform": "MQB A0", "immobiliser_family_id": "vw_mqb_protected_late", "immobiliser_system": "Later protected MQB immobiliser family", "module_type": "Instrument cluster / access-start system", "transponder_type": "Later MQB key family; confirm by VIN and original key", "blade_profile": "HU162T family; verify exact profile", "key_type": "Remote key or keyless key", "smart_key": "variant_dependent", "access_method": {"add_key": "Vehicle-specific diagnostic/security route", "all_keys_lost": "Confirm current aftermarket coverage before accepting", "module": "Instrument cluster or access-start system", "encrypted": true}, "security": {"online_required": "tool_and_operation_dependent", "dealer_key_required": true, "working_key_required": false, "security_access": "later_mqb_protected_route"}, "adapter": ["Standard diagnostic connection", "Current platform-specific access when required"], "notes": "Check live tool coverage before booking Add Key or AKL work."},
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["vw_polo_master_research_pending"]}
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Polo",
+        "generation": "Polo AW facelift",
+        "year_from": 2021,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "MQB A0",
+        "immobiliser_family_id": "vw_mqb_protected_late",
+        "immobiliser_system": "Later protected MQB immobiliser family",
+        "module_type": "Instrument cluster / access-start system",
+        "transponder_type": "Later MQB key family; confirm by VIN and original key",
+        "blade_profile": "HU162T family; verify exact profile",
+        "key_type": "Remote key or keyless key",
+        "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "Vehicle-specific diagnostic/security route",
+          "all_keys_lost": "Confirm current aftermarket coverage before accepting",
+          "module": "Instrument cluster or access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_and_operation_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "later_mqb_protected_route"
+        },
+        "adapter": [
+          "Standard diagnostic connection",
+          "Current platform-specific access when required"
+        ],
+        "notes": "Check live tool coverage before booking Add Key or AKL work."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_polo_master_research_pending"
+        ]
+      }
     }
   }
 }

@@ -11,7 +11,19 @@
     "Later MQB and MQB Evo coverage changes with tool and software support.",
     "OBDSTAR officially confirms MQB48-5A AKL support using the RH850/V850 Adapter Kit, but this must be mapped to the exact fitted Passat B8 dashboard before upgrading the vehicle record.",
     "OBDSTAR March 2026 coverage explicitly adds D70F3525-V5 Program Keys with C4-06 and online synchronisation-code calculation.",
-    "Do not extend MQB48-5A/5B evidence to MQB49-5C. OBDSTAR's current adapter documentation states the 5C route is not supported by that adapter."
+    "Do not extend MQB48-5A/5B evidence to MQB49-5C. OBDSTAR's current adapter documentation states the 5C route is not supported by that adapter.",
+    {
+      "title": "Phase 2 shared-architecture review",
+      "text": "VAG family registry and official vendor material were checked. Keyed and KESSY remain separate; model-year, RHD location, AKL, wiring and exact dashboard applicability are not inherited.",
+      "sources": [
+        "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+        "https://wiki.ross-tech.com/wiki/index.php/VW_Passat_%283C%29_Immobilizer",
+        "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+        "https://www.acdpmaster.com/en/Module.html"
+      ],
+      "confidence": "high for named family/tool scope; vehicle applicability remains generation-specific",
+      "checked_at": "2026-07-18"
+    }
   ],
   "official_evidence": [
     {

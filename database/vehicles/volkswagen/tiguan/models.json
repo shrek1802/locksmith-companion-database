@@ -1,1 +1,166 @@
-{"schema_version":"2.1","updated_at":"2026-07-17","manufacturer":{"id":"volkswagen","name":"Volkswagen"},"model":{"id":"tiguan","name":"Tiguan"},"category":"vehicles","items":{"tiguan_5n_2007_2016":{"record_id":"volkswagen_tiguan_5n_2007_2016_uk","vehicle":{"make":"Volkswagen","model":"Tiguan","generation":"5N","year_from":2007,"year_to":2016,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"PQ35","immobiliser_family_id":"vw_immo_4_challenge_or_45","module_type":"Instrument cluster / KESSY on equipped vehicles","transponder_type":"ID48 crypto","blade_profile":"HU66","key_type":"Remote flip or KESSY key","smart_key":"variant_dependent","access_method":{"add_key":"OBD where supported","all_keys_lost":"Cluster or KESSY data route","module":"Cluster or KESSY","encrypted":true},"security":{"online_required":false,"dealer_key_required":true,"working_key_required":false,"security_access":"cluster_or_kessy_data"},"adapter":["Standard OBD","Module-specific connection when required"],"notes":"Separate keyed and KESSY variants."},"verification":{"status":"research_required","last_checked":"2026-07-17","sources":["vw_tiguan_research_pending"]}},"tiguan_ad1_2016_2024":{"record_id":"volkswagen_tiguan_ad1_2016_2024_uk","vehicle":{"make":"Volkswagen","model":"Tiguan","generation":"AD1","year_from":2016,"year_to":2024,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"MQB","immobiliser_family_id":"vw_mqb_48_late","module_type":"Instrument cluster / access-start system","transponder_type":"MQB ID48 family","blade_profile":"HU162T family; verify","key_type":"Remote or KESSY smart key","smart_key":"variant_dependent","access_method":{"add_key":"Diagnostic or saved-data route","all_keys_lost":"Dashboard/access-start data route","module":"Cluster or access-start system","encrypted":true},"security":{"online_required":"tool_dependent","dealer_key_required":true,"working_key_required":false,"security_access":"mqb_immobiliser_data"},"adapter":["Standard OBD","Dashboard adapter when required"],"notes":"Confirm dashboard and keyless configuration."},"verification":{"status":"research_required","last_checked":"2026-07-17","sources":["vw_tiguan_research_pending"]}},"tiguan_2024_present":{"record_id":"volkswagen_tiguan_2024_present_uk","vehicle":{"make":"Volkswagen","model":"Tiguan","generation":"Third generation","year_from":2024,"year_to":null,"market":"UK","drive_side":"RHD"},"vehicle_information":{"platform":"MQB Evo","immobiliser_family_id":"vw_mqb_49_5c","module_type":"Protected cluster/access-start system","transponder_type":"Later protected Volkswagen key family","blade_profile":"HU162T family; verify","key_type":"Remote or smart key","smart_key":"variant_dependent","access_method":{"add_key":"Protected vehicle-specific route","all_keys_lost":"Confirm current aftermarket coverage","module":"Cluster/access-start system","encrypted":true},"security":{"online_required":"tool_and_operation_dependent","dealer_key_required":true,"working_key_required":false,"security_access":"protected_route"},"adapter":["Standard diagnostic connection","Current platform access when required"],"notes":"Check live tool support before accepting work."},"verification":{"status":"research_required","last_checked":"2026-07-17","sources":["vw_tiguan_research_pending"]}}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "tiguan",
+    "name": "Tiguan"
+  },
+  "category": "vehicles",
+  "items": {
+    "tiguan_5n_2007_2016": {
+      "record_id": "volkswagen_tiguan_5n_2007_2016_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Tiguan",
+        "generation": "5N",
+        "year_from": 2007,
+        "year_to": 2016,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "PQ35",
+        "immobiliser_family_id": "vw_immo_4_challenge_or_45",
+        "module_type": "Instrument cluster / KESSY on equipped vehicles",
+        "transponder_type": "ID48 crypto",
+        "blade_profile": "HU66",
+        "key_type": "Remote flip or KESSY key",
+        "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "OBD where supported",
+          "all_keys_lost": "Cluster or KESSY data route",
+          "module": "Cluster or KESSY",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "cluster_or_kessy_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Module-specific connection when required"
+        ],
+        "notes": "Separate keyed and KESSY variants."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_tiguan_research_pending"
+        ],
+        "evidence": [
+          {
+            "scope": "shared immobiliser architecture only",
+            "source": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+            "confidence": "high",
+            "checked_at": "2026-07-18"
+          }
+        ]
+      }
+    },
+    "tiguan_ad1_2016_2024": {
+      "record_id": "volkswagen_tiguan_ad1_2016_2024_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Tiguan",
+        "generation": "AD1",
+        "year_from": 2016,
+        "year_to": 2024,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "MQB",
+        "immobiliser_family_id": "vw_mqb_48_late",
+        "module_type": "Instrument cluster / access-start system",
+        "transponder_type": "MQB ID48 family",
+        "blade_profile": "HU162T family; verify",
+        "key_type": "Remote or KESSY smart key",
+        "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "Diagnostic or saved-data route",
+          "all_keys_lost": "Dashboard/access-start data route",
+          "module": "Cluster or access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "mqb_immobiliser_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Dashboard adapter when required"
+        ],
+        "notes": "Confirm dashboard and keyless configuration."
+      },
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_tiguan_research_pending"
+        ]
+      }
+    },
+    "tiguan_2024_present": {
+      "record_id": "volkswagen_tiguan_2024_present_uk",
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Tiguan",
+        "generation": "Third generation",
+        "year_from": 2024,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
+      "vehicle_information": {
+        "platform": "MQB Evo",
+        "immobiliser_family_id": "vw_mqb_49_5c",
+        "module_type": "Protected cluster/access-start system",
+        "transponder_type": "Later protected Volkswagen key family",
+        "blade_profile": "HU162T family; verify",
+        "key_type": "Remote or smart key",
+        "smart_key": "variant_dependent",
+        "access_method": {
+          "add_key": "Protected vehicle-specific route",
+          "all_keys_lost": "Confirm current aftermarket coverage",
+          "module": "Cluster/access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_and_operation_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "protected_route"
+        },
+        "adapter": [
+          "Standard diagnostic connection",
+          "Current platform access when required"
+        ],
+        "notes": "Check live tool support before accepting work."
+      },
+      "verification": {
+        "status": "partially_verified",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "vw_tiguan_research_pending"
+        ],
+        "evidence": [
+          {
+            "scope": "shared immobiliser architecture only",
+            "source": "https://www.acdpmaster.com/en/Module.html",
+            "confidence": "high",
+            "checked_at": "2026-07-18"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,13 +1,28 @@
 {
   "schema_version": "2.1",
   "updated_at": "2026-07-17",
-  "manufacturer": {"id": "volkswagen", "name": "Volkswagen"},
-  "model": {"id": "passat", "name": "Passat"},
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen"
+  },
+  "model": {
+    "id": "passat",
+    "name": "Passat"
+  },
   "category": "vehicles",
   "items": {
     "passat_b5_1997_2005_keyed": {
       "record_id": "volkswagen_passat_b5_1997_2005_keyed_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Passat", "variant": "Keyed ignition", "generation": "Passat B5/B5.5", "year_from": 1997, "year_to": 2005, "market": "UK", "drive_side": "RHD"},
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Passat",
+        "variant": "Keyed ignition",
+        "generation": "Passat B5/B5.5",
+        "year_from": 1997,
+        "year_to": 2005,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
       "vehicle_information": {
         "platform": "PL45",
         "immobiliser_family_id": "vw_immo_2_3",
@@ -17,17 +32,59 @@
         "blade_profile": "HU66",
         "key_type": "Remote flip key or transponder key",
         "smart_key": false,
-        "access_method": {"add_key": "OBD adaptation when security data is available", "all_keys_lost": "PIN or cluster-data acquisition then key adaptation", "module": "Instrument cluster", "encrypted": false},
-        "security": {"online_required": false, "dealer_key_required": false, "working_key_required": false, "security_access": "pin_or_cluster_data"},
-        "adapter": ["Standard OBD", "EEPROM programmer if cluster data must be read"],
-        "programming": {"add_key": "Supported OBD adaptation", "all_keys_lost": "Identify Immo2 or Immo3 then obtain required data", "route": "Confirm cluster and immobiliser generation", "online_requirement": "No"},
+        "access_method": {
+          "add_key": "OBD adaptation when security data is available",
+          "all_keys_lost": "PIN or cluster-data acquisition then key adaptation",
+          "module": "Instrument cluster",
+          "encrypted": false
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": false,
+          "working_key_required": false,
+          "security_access": "pin_or_cluster_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "EEPROM programmer if cluster data must be read"
+        ],
+        "programming": {
+          "add_key": "Supported OBD adaptation",
+          "all_keys_lost": "Identify Immo2 or Immo3 then obtain required data",
+          "route": "Confirm cluster and immobiliser generation",
+          "online_requirement": "No"
+        },
         "notes": "Do not assume all B5 vehicles use the same immobiliser generation."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_passat_master_research_pending"]}
+      "verification": {
+        "status": "partially_verified",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "volkswagen_platform_registry",
+          "vw_passat_master_research_pending"
+        ],
+        "evidence": [
+          {
+            "scope": "shared immobiliser architecture only",
+            "source": "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+            "confidence": "high",
+            "checked_at": "2026-07-18"
+          }
+        ]
+      }
     },
     "passat_b6_2005_2010_keyed": {
       "record_id": "volkswagen_passat_b6_2005_2010_keyed_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Passat", "variant": "Keyed ignition", "generation": "Passat B6 / 3C", "year_from": 2005, "year_to": 2010, "market": "UK", "drive_side": "RHD"},
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Passat",
+        "variant": "Keyed ignition",
+        "generation": "Passat B6 / 3C",
+        "year_from": 2005,
+        "year_to": 2010,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
       "vehicle_information": {
         "platform": "PQ46",
         "immobiliser_family_id": "vw_immo_4d_passat_3c",
@@ -37,17 +94,51 @@
         "blade_profile": "HU66",
         "key_type": "Remote key with slot-start system",
         "smart_key": false,
-        "access_method": {"add_key": "Vehicle-specific OBD/data route", "all_keys_lost": "Security-data acquisition from supported module route", "module": "Passat 3C access-start/comfort system", "encrypted": true},
-        "security": {"online_required": false, "dealer_key_required": true, "working_key_required": false, "security_access": "passat_3c_immo4d_data"},
-        "adapter": ["Standard OBD", "Module or EEPROM connection when required"],
-        "programming": {"add_key": "Supported diagnostic or saved-data route", "all_keys_lost": "Identify fitted module and obtain security data", "route": "Use Passat 3C-specific procedure", "online_requirement": "No blanket online requirement"},
+        "access_method": {
+          "add_key": "Vehicle-specific OBD/data route",
+          "all_keys_lost": "Security-data acquisition from supported module route",
+          "module": "Passat 3C access-start/comfort system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "passat_3c_immo4d_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Module or EEPROM connection when required"
+        ],
+        "programming": {
+          "add_key": "Supported diagnostic or saved-data route",
+          "all_keys_lost": "Identify fitted module and obtain security data",
+          "route": "Use Passat 3C-specific procedure",
+          "online_requirement": "No blanket online requirement"
+        },
         "notes": "Passat 3C must not be grouped with ordinary PQ35 cluster procedures."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_passat_master_research_pending"]}
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "volkswagen_platform_registry",
+          "vw_passat_master_research_pending"
+        ]
+      }
     },
     "passat_b7_2010_2014": {
       "record_id": "volkswagen_passat_b7_2010_2014_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Passat", "variant": "Keyed or keyless depending on specification", "generation": "Passat B7", "year_from": 2010, "year_to": 2014, "market": "UK", "drive_side": "RHD"},
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Passat",
+        "variant": "Keyed or keyless depending on specification",
+        "generation": "Passat B7",
+        "year_from": 2010,
+        "year_to": 2014,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
       "vehicle_information": {
         "platform": "PQ46",
         "immobiliser_family_id": "vw_immo_4d_passat_3c_late",
@@ -57,17 +148,51 @@
         "blade_profile": "HU66",
         "key_type": "Remote slot key or keyless key",
         "smart_key": "variant_dependent",
-        "access_method": {"add_key": "Diagnostic or saved-data route depending on equipment", "all_keys_lost": "Module-data route may be required", "module": "Access-start/comfort system", "encrypted": true},
-        "security": {"online_required": false, "dealer_key_required": true, "working_key_required": false, "security_access": "late_passat_3c_immo4d_data"},
-        "adapter": ["Standard OBD", "Module programmer connection when required"],
-        "programming": {"add_key": "Supported diagnostic or data route", "all_keys_lost": "Confirm module and keyless specification before work", "route": "Keep keyed and keyless variants separate", "online_requirement": "No blanket online requirement"},
+        "access_method": {
+          "add_key": "Diagnostic or saved-data route depending on equipment",
+          "all_keys_lost": "Module-data route may be required",
+          "module": "Access-start/comfort system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "late_passat_3c_immo4d_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Module programmer connection when required"
+        ],
+        "programming": {
+          "add_key": "Supported diagnostic or data route",
+          "all_keys_lost": "Confirm module and keyless specification before work",
+          "route": "Keep keyed and keyless variants separate",
+          "online_requirement": "No blanket online requirement"
+        },
         "notes": "Identify the exact access-start system before preparing the key."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_passat_master_research_pending"]}
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "volkswagen_platform_registry",
+          "vw_passat_master_research_pending"
+        ]
+      }
     },
     "passat_b8_2014_2019": {
       "record_id": "volkswagen_passat_b8_2014_2019_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Passat", "variant": "Keyed or KESSY depending on specification", "generation": "Passat B8", "year_from": 2014, "year_to": 2019, "market": "UK", "drive_side": "RHD"},
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Passat",
+        "variant": "Keyed or KESSY depending on specification",
+        "generation": "Passat B8",
+        "year_from": 2014,
+        "year_to": 2019,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
       "vehicle_information": {
         "platform": "MQB",
         "immobiliser_family_id": "vw_mqb_48",
@@ -77,17 +202,51 @@
         "blade_profile": "HU162T family on many keys; verify physically",
         "key_type": "Remote key or KESSY smart key",
         "smart_key": "variant_dependent",
-        "access_method": {"add_key": "OBD or saved-data route", "all_keys_lost": "Dashboard data or bench route may be required", "module": "Instrument cluster or access-start system", "encrypted": true},
-        "security": {"online_required": false, "dealer_key_required": true, "working_key_required": false, "security_access": "mqb_immobiliser_data"},
-        "adapter": ["Standard OBD", "Dashboard adapter or programmer when required"],
-        "programming": {"add_key": "Supported OBD or saved-data route", "all_keys_lost": "Identify dashboard and KESSY status", "route": "Separate keyed and KESSY variants", "online_requirement": "No blanket online requirement"},
+        "access_method": {
+          "add_key": "OBD or saved-data route",
+          "all_keys_lost": "Dashboard data or bench route may be required",
+          "module": "Instrument cluster or access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": false,
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "mqb_immobiliser_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Dashboard adapter or programmer when required"
+        ],
+        "programming": {
+          "add_key": "Supported OBD or saved-data route",
+          "all_keys_lost": "Identify dashboard and KESSY status",
+          "route": "Separate keyed and KESSY variants",
+          "online_requirement": "No blanket online requirement"
+        },
         "notes": "Dashboard family and keyless specification determine the procedure."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_passat_master_research_pending"]}
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "volkswagen_platform_registry",
+          "vw_passat_master_research_pending"
+        ]
+      }
     },
     "passat_b8_facelift_2019_2023": {
       "record_id": "volkswagen_passat_b8_facelift_2019_2023_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Passat", "variant": "Keyed or KESSY depending on specification", "generation": "Passat B8 facelift", "year_from": 2019, "year_to": 2023, "market": "UK", "drive_side": "RHD"},
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Passat",
+        "variant": "Keyed or KESSY depending on specification",
+        "generation": "Passat B8 facelift",
+        "year_from": 2019,
+        "year_to": 2023,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
       "vehicle_information": {
         "platform": "MQB",
         "immobiliser_family_id": "vw_mqb_48_late",
@@ -97,17 +256,51 @@
         "blade_profile": "HU162T family — verify exact track and tip",
         "key_type": "Remote key or KESSY smart key",
         "smart_key": "variant_dependent",
-        "access_method": {"add_key": "Supported diagnostic or saved-data route", "all_keys_lost": "Dashboard data or supported bench route", "module": "Instrument cluster or access-start system", "encrypted": true},
-        "security": {"online_required": "tool_and_operation_dependent", "dealer_key_required": true, "working_key_required": false, "security_access": "late_mqb_immobiliser_data"},
-        "adapter": ["Standard OBD", "Dashboard adapter or programmer when required"],
-        "programming": {"add_key": "Tool-support dependent", "all_keys_lost": "Confirm current dashboard support before accepting", "route": "Identify dashboard and keyed/KESSY configuration", "online_requirement": "Tool and operation dependent"},
+        "access_method": {
+          "add_key": "Supported diagnostic or saved-data route",
+          "all_keys_lost": "Dashboard data or supported bench route",
+          "module": "Instrument cluster or access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_and_operation_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "late_mqb_immobiliser_data"
+        },
+        "adapter": [
+          "Standard OBD",
+          "Dashboard adapter or programmer when required"
+        ],
+        "programming": {
+          "add_key": "Tool-support dependent",
+          "all_keys_lost": "Confirm current dashboard support before accepting",
+          "route": "Identify dashboard and keyed/KESSY configuration",
+          "online_requirement": "Tool and operation dependent"
+        },
         "notes": "Do not assume all B8 facelift dashboards have identical access."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_passat_master_research_pending"]}
+      "verification": {
+        "status": "research_required",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "volkswagen_platform_registry",
+          "vw_passat_master_research_pending"
+        ]
+      }
     },
     "passat_b9_2024_present": {
       "record_id": "volkswagen_passat_b9_2024_present_uk",
-      "vehicle": {"make": "Volkswagen", "model": "Passat", "variant": "Keyless or remote-key specification dependent", "generation": "Passat B9", "year_from": 2024, "year_to": null, "market": "UK", "drive_side": "RHD"},
+      "vehicle": {
+        "make": "Volkswagen",
+        "model": "Passat",
+        "variant": "Keyless or remote-key specification dependent",
+        "generation": "Passat B9",
+        "year_from": 2024,
+        "year_to": null,
+        "market": "UK",
+        "drive_side": "RHD"
+      },
       "vehicle_information": {
         "platform": "MQB Evo",
         "immobiliser_family_id": "vw_mqb_49_5c",
@@ -117,13 +310,46 @@
         "blade_profile": "HU162T family — verify exact profile",
         "key_type": "Remote or KESSY smart key",
         "smart_key": "variant_dependent",
-        "access_method": {"add_key": "Vehicle-specific diagnostic/security route", "all_keys_lost": "Confirm current aftermarket coverage before accepting", "module": "Instrument cluster or access-start system", "encrypted": true},
-        "security": {"online_required": "tool_and_operation_dependent", "dealer_key_required": true, "working_key_required": false, "security_access": "later_mqb_protected_route"},
-        "adapter": ["Standard diagnostic connection", "Current platform-specific security access when required"],
-        "programming": {"add_key": "Supported-tool and security-access dependent", "all_keys_lost": "No universal aftermarket coverage claim", "route": "Vehicle-specific diagnostic/security route", "online_requirement": "May be required"},
+        "access_method": {
+          "add_key": "Vehicle-specific diagnostic/security route",
+          "all_keys_lost": "Confirm current aftermarket coverage before accepting",
+          "module": "Instrument cluster or access-start system",
+          "encrypted": true
+        },
+        "security": {
+          "online_required": "tool_and_operation_dependent",
+          "dealer_key_required": true,
+          "working_key_required": false,
+          "security_access": "later_mqb_protected_route"
+        },
+        "adapter": [
+          "Standard diagnostic connection",
+          "Current platform-specific security access when required"
+        ],
+        "programming": {
+          "add_key": "Supported-tool and security-access dependent",
+          "all_keys_lost": "No universal aftermarket coverage claim",
+          "route": "Vehicle-specific diagnostic/security route",
+          "online_requirement": "May be required"
+        },
         "notes": "Check current tool coverage before booking Add Key or AKL work."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_passat_master_research_pending"]}
+      "verification": {
+        "status": "partially_verified",
+        "last_checked": "2026-07-17",
+        "sources": [
+          "volkswagen_platform_registry",
+          "vw_passat_master_research_pending"
+        ],
+        "evidence": [
+          {
+            "scope": "shared immobiliser architecture only",
+            "source": "https://www.acdpmaster.com/en/Module.html",
+            "confidence": "high",
+            "checked_at": "2026-07-18"
+          }
+        ]
+      }
     }
   }
 }

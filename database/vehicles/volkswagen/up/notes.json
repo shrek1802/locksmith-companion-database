@@ -1,1 +1,22 @@
-{"schema_version":"2.1","updated_at":"2026-07-17","notes":["Confirm cluster type before programming.","Verify key and remote specification.","Use stable battery support.","Check current support before AKL."]}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-17",
+  "notes": [
+    "Confirm cluster type before programming.",
+    "Verify key and remote specification.",
+    "Use stable battery support.",
+    "Check current support before AKL.",
+    {
+      "title": "Phase 2 shared-architecture review",
+      "text": "VAG family registry and official vendor material were checked. Keyed and KESSY remain separate; model-year, RHD location, AKL, wiring and exact dashboard applicability are not inherited.",
+      "sources": [
+        "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+        "https://wiki.ross-tech.com/wiki/index.php/VW_Passat_%283C%29_Immobilizer",
+        "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+        "https://www.acdpmaster.com/en/Module.html"
+      ],
+      "confidence": "high for named family/tool scope; vehicle applicability remains generation-specific",
+      "checked_at": "2026-07-18"
+    }
+  ]
+}

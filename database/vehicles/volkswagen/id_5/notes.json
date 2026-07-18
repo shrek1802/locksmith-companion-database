@@ -1,1 +1,23 @@
-{"schema_version":"2.1","model":"ID.5","notes":["MEB key programming is protected and may require authorised online access.","Confirm current tool coverage before accepting work.","Observe high-voltage vehicle safety procedures.","Maintain the 12V supply during diagnostics."],"status":"research_in_progress"}
+{
+  "schema_version": "2.1",
+  "model": "ID.5",
+  "notes": [
+    "MEB key programming is protected and may require authorised online access.",
+    "Confirm current tool coverage before accepting work.",
+    "Observe high-voltage vehicle safety procedures.",
+    "Maintain the 12V supply during diagnostics.",
+    {
+      "title": "Phase 2 shared-architecture review",
+      "text": "VAG family registry and official vendor material were checked. Keyed and KESSY remain separate; model-year, RHD location, AKL, wiring and exact dashboard applicability are not inherited.",
+      "sources": [
+        "https://wiki.ross-tech.com/wiki/index.php/Immobilizer",
+        "https://wiki.ross-tech.com/wiki/index.php/VW_Passat_%283C%29_Immobilizer",
+        "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+        "https://www.acdpmaster.com/en/Module.html"
+      ],
+      "confidence": "high for named family/tool scope; vehicle applicability remains generation-specific",
+      "checked_at": "2026-07-18"
+    }
+  ],
+  "status": "research_in_progress"
+}
