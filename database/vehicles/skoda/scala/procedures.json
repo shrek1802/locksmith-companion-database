@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.1",
+  "model": "Scala",
+  "procedures": [
+    {
+      "id": "add_key",
+      "name": "Add key",
+      "method": "Read immobiliser data from opened working key with APB300 and prepare supported replacement",
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Autel APB300 with MaxiIM 508/608 series",
+          "status": "partially_verified",
+          "confidence": "high",
+          "coverage": "Škoda Scala 2019-2022",
+          "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+          "working_key_required": true,
+          "vehicle_connection_required": false,
+          "required_hardware": [
+            "APB300",
+            "Compatible MaxiIM tablet",
+            "Supported Autel IKEY or PCB"
+          ],
+          "limits": "Add Key only; exact keyed/KESSY variant and key PCB require confirmation."
+        }
+      ]
+    },
+    {
+      "id": "akl",
+      "name": "All keys lost",
+      "method": "No AKL support inferred from working-key coverage",
+      "status": "research_required"
+    }
+  ]
+}

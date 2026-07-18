@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.1",
+  "model": "Rapid",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "rapid_apb300_scope",
+      "name": "Rapid APB300 coverage range",
+      "years": "2013-2021",
+      "platform": "Volkswagen Group MQB per official Autel coverage category",
+      "immobiliser_family": "Exact dashboard/key family requires fitted-hardware confirmation",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "skoda_uk": {
+      "publisher": "Škoda UK",
+      "title": "UK model range",
+      "url": "https://www.skoda.co.uk/",
+      "supports": [
+        "UK market presence"
+      ]
+    },
+    "autel": {
+      "publisher": "Autel",
+      "title": "APB300 coverage",
+      "url": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+      "supports": [
+        "Škoda Rapid 2013-2021 working-key Add Key"
+      ]
+    }
+  }
+}

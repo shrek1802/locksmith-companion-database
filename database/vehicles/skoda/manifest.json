@@ -1,0 +1,74 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "skoda",
+    "name": "Škoda",
+    "market": "UK",
+    "drive_side": "RHD"
+  },
+  "version": 1,
+  "models": {
+    "fabia": {
+      "name": "Fabia",
+      "version": 1,
+      "manifest": "fabia/manifest.json",
+      "status": "research_in_progress"
+    },
+    "karoq": {
+      "name": "Karoq",
+      "version": 1,
+      "manifest": "karoq/manifest.json",
+      "status": "research_in_progress"
+    },
+    "kodiaq": {
+      "name": "Kodiaq",
+      "version": 1,
+      "manifest": "kodiaq/manifest.json",
+      "status": "research_in_progress"
+    },
+    "octavia": {
+      "name": "Octavia",
+      "version": 1,
+      "manifest": "octavia/manifest.json",
+      "status": "research_in_progress"
+    },
+    "rapid": {
+      "name": "Rapid",
+      "version": 1,
+      "manifest": "rapid/manifest.json",
+      "status": "research_in_progress"
+    },
+    "superb": {
+      "name": "Superb",
+      "version": 1,
+      "manifest": "superb/manifest.json",
+      "status": "research_in_progress"
+    },
+    "scala": {
+      "name": "Scala",
+      "version": 1,
+      "manifest": "scala/manifest.json",
+      "status": "research_in_progress"
+    }
+  },
+  "status": "research_in_progress",
+  "sources": {
+    "skoda_uk": {
+      "publisher": "Škoda UK",
+      "title": "UK model range",
+      "url": "https://www.skoda.co.uk/",
+      "supports": [
+        "UK model presence"
+      ]
+    },
+    "autel": {
+      "publisher": "Autel",
+      "title": "APB300 coverage",
+      "url": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+      "supports": [
+        "Working-key Add Key coverage"
+      ]
+    }
+  }
+}
