@@ -78,7 +78,8 @@ def main() -> None:
     for relative, applications in sorted(applications_by_file.items()):
         path = ROOT / relative
         data = json.loads(path.read_text(encoding="utf-8"))
-        records = list(data.get("items", {}).values())
+        detailed = isinstance(data.get("items"), dict)
+        records = list(data.get("items", {}).values()) if detailed else data.get("generations", [])
         if not records:
             continue
         dirty = False
@@ -95,7 +96,7 @@ def main() -> None:
             if len(covering_ids) != 1:
                 skipped.append({"record_id": rid, "reason": "conflicting_catalogue_families", "families": sorted(covering_ids)})
                 continue
-            info = record.setdefault("vehicle_information", {})
+            info = record.setdefault("vehicle_information", {}) if detailed else record
             target_id = family["repository_transponder_id"]
             display = family["display_name"]
             old_type, old_id = info.get("transponder_type"), info.get("transponder_id")
