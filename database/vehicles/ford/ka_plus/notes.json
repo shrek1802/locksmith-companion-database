@@ -1,1 +1,28 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"ka_plus","name":"Ka+"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "ka_plus",
+    "name": "Ka+"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_ka_plus_job_note_bd6e814abd": {
+      "id": "ford_ka_plus_job_note_bd6e814abd",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery lists Ford Ka/Ka+ 2016+ as Hitag Pro ID47. Silca independently lists Ka+ 2016-2019 with HU101, 433 MHz and ID47. Exact Ford part number and operation-level tool IDs still need mapping.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ka_plus_2016_2020_keyed_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

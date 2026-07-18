@@ -1,1 +1,73 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"tourneo_connect","name":"Tourneo Connect"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after Ford/MQB generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "tourneo_connect",
+    "name": "Tourneo Connect"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_tourneo_connect_job_note_6e746dabc9": {
+      "id": "ford_tourneo_connect_job_note_6e746dabc9",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Late second-generation Tourneo Connect shares the matching Transit Connect Hitag Pro security family. Exact OEM part number and tool IDs remain to be mapped.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_connect_2016_2021_keyed_uk"
+      ]
+    },
+    "ford_tourneo_connect_job_note_19cf2b3a50": {
+      "id": "ford_tourneo_connect_job_note_19cf2b3a50",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Passenger derivative of the first-generation Transit Connect. Silca explicitly lists Tourneo Connect 2002-2008 with FO21 and 433 MHz; the chip family follows the matching early Connect security range.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_connect_2002_2008_keyed_uk"
+      ]
+    },
+    "ford_tourneo_connect_job_note_f6d3f8dbc4": {
+      "id": "ford_tourneo_connect_job_note_f6d3f8dbc4",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Silca explicitly lists Tourneo Connect CHC from 2013 with HU101 and 433 MHz. The chip family follows the matching Transit Connect DST80 range.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_connect_2013_2015_keyed_uk"
+      ]
+    },
+    "ford_tourneo_connect_job_note_005413e9c8": {
+      "id": "ford_tourneo_connect_job_note_005413e9c8",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The facelift shares the later first-generation Transit Connect ID63 security range. Exact OEM remote number remains to be added.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_connect_2009_2012_keyed_uk"
+      ]
+    },
+    "ford_tourneo_connect_job_note_9f0672f6c1": {
+      "id": "ford_tourneo_connect_job_note_9f0672f6c1",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The facelift shares the later first-generation Transit Connect ID63 security range. Exact OEM remote number remains to be added. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_connect_2009_2012_keyed_uk"
+      ]
+    },
+    "ford_tourneo_connect_job_note_81d70d5779": {
+      "id": "ford_tourneo_connect_job_note_81d70d5779",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where push-button start is physically confirmed. Exact OEM part number and tool IDs remain to be mapped.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_connect_2016_2021_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

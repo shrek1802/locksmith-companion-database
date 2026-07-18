@@ -1,1 +1,46 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"puma","name":"Puma"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "puma",
+    "name": "Puma"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_puma_job_note_119976b459": {
+      "id": "ford_puma_job_note_119976b459",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Silca explicitly lists the Ford Puma from 2019 with HU101, 433 MHz and ID47. Use this keyed record only where mechanical ignition is physically confirmed.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_puma_2019_present_keyed_uk"
+      ]
+    },
+    "ford_puma_job_note_965100c1c0": {
+      "id": "ford_puma_job_note_965100c1c0",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The original Puma is Fiesta-derived and spans a legacy Ford PATS transition. Blade and European remote frequency are useful for stock lookup, but the chip must be confirmed by exact year/build or original key before programming.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_puma_1997_2002_keyed_uk"
+      ]
+    },
+    "ford_puma_job_note_22c0726564": {
+      "id": "ford_puma_job_note_22c0726564",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use where push-button start is confirmed. The Silca 2019 Puma application independently confirms HU101, 433 MHz and ID47 for the modern generation.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_puma_2019_present_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

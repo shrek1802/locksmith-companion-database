@@ -1,1 +1,55 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"grand_c_max","name":"Grand C-Max"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "grand_c_max",
+    "name": "Grand C-Max"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_grand_c_max_job_note_6d63d3cfa6": {
+      "id": "ford_grand_c_max_job_note_6d63d3cfa6",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The Grand C-Max shares the C-Max CB7 security family. The professional Ford transponder catalogue places C-Max 2010-2015 in DST80/ID63-6F. Silca lists C-Max CB7 2010-2015 with HU101 and 433 MHz. Tool IDs and exact OEM remote part numbers remain to be mapped.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_grand_c_max_2010_2014_keyed_uk"
+      ]
+    },
+    "ford_grand_c_max_job_note_e4a833e5b9": {
+      "id": "ford_grand_c_max_job_note_e4a833e5b9",
+      "display_name": "Generation-specific locksmith note",
+      "text": "This exact Grand C-Max keyless application is listed by a UK professional supplier as 433 MHz ID49 with HU101. Transponder family and C-Max CEU blade/frequency are independently supported by Transpondery and Silca. OEM part number remains to be added.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_grand_c_max_2015_2019_passive_uk"
+      ]
+    },
+    "ford_grand_c_max_job_note_eee60ac7b3": {
+      "id": "ford_grand_c_max_job_note_eee60ac7b3",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery places C-Max 2015-2020 in Hitag Pro. Silca lists C-Max CEU 2015-on with HU101 and 433 MHz; KeyStation explicitly lists a C-Max/Focus/Grand C-Max 433 MHz ID49 HU101 keyless family. Exact keyed remote OEM part number remains to be added.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_grand_c_max_2015_2019_keyed_uk"
+      ]
+    },
+    "ford_grand_c_max_job_note_3da5f8f13e": {
+      "id": "ford_grand_c_max_job_note_3da5f8f13e",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is physically confirmed. Core blade, transponder and frequency are supported by C-Max family application catalogues. Exact OEM part number remains to be added.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_grand_c_max_2010_2014_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

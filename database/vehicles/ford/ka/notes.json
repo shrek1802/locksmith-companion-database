@@ -1,1 +1,64 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"ka","name":"Ka"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after Ford/Fiat generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "ka",
+    "name": "Ka"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_ka_job_note_6e3e8235c1": {
+      "id": "ford_ka_job_note_6e3e8235c1",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Early first-generation Ka uses the legacy Ford key family. Remote style varies, so verify the original key before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ka_1996_2001_keyed_uk"
+      ]
+    },
+    "ford_ka_job_note_910bbb5349": {
+      "id": "ford_ka_job_note_910bbb5349",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Early first-generation Ka uses the legacy Ford key family. Remote style varies, so verify the original key before supply. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ka_1996_2001_keyed_uk"
+      ]
+    },
+    "ford_ka_job_note_f391abbdc8": {
+      "id": "ford_ka_job_note_f391abbdc8",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Later first-generation Ka changes to 4D60 while retaining the FO21 blade family.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ka_2002_2008_keyed_uk"
+      ]
+    },
+    "ford_ka_job_note_9a9baa2ac5": {
+      "id": "ford_ka_job_note_9a9baa2ac5",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Later first-generation Ka changes to 4D60 while retaining the FO21 blade family. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ka_2002_2008_keyed_uk"
+      ]
+    },
+    "ford_ka_job_note_8297fc315c": {
+      "id": "ford_ka_job_note_8297fc315c",
+      "display_name": "Generation-specific locksmith note",
+      "text": "This generation shares the Fiat 500 platform. KeyStation lists compatible Ford/Fiat 433 MHz ID46 PCF7946 SIP22 remotes, including OEM reference 71765697 on the 3-button family. Never select the Ford PATS menu solely because the badge is Ford.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ka_2009_2016_fiat_keyed_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

@@ -1,1 +1,28 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"edge","name":"Edge"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "edge",
+    "name": "Edge"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_edge_job_note_df2f0fc26a": {
+      "id": "ford_edge_job_note_df2f0fc26a",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The UK Edge was principally supplied with passive start. Use a European 433 MHz application, not a North American 315 MHz key. The Ford master workbook records OEM references 1919602 and 2230771 for the UK 2016-2021 slim smart-key family.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_edge_2016_2021_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

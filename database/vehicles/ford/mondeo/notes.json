@@ -1,1 +1,91 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"mondeo","name":"Mondeo"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "mondeo",
+    "name": "Mondeo"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_mondeo_job_note_b95f105a3f": {
+      "id": "ford_mondeo_job_note_b95f105a3f",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade and 433 MHz application are confirmed by Silca for Mondeo B4Y/B5Y/BWY 2001-2006; Transpondery confirms 4D60 for Mondeo 2001-2007. Tool compatibility remains pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_mondeo_2001_2006_keyed_uk"
+      ]
+    },
+    "ford_mondeo_job_note_f78de9d09d": {
+      "id": "ford_mondeo_job_note_f78de9d09d",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transponder family is verified by Transpondery for Mondeo 1995-2001. Blade and UK remote frequency remain unresolved because the checked Silca proximity/remote catalogue starts at the 2001 Mondeo application.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_mondeo_1996_2000_keyed_uk"
+      ]
+    },
+    "ford_mondeo_job_note_59efaeb091": {
+      "id": "ford_mondeo_job_note_59efaeb091",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transponder family is verified by Transpondery for Mondeo 1995-2001. Blade and UK remote frequency remain unresolved because the checked Silca proximity/remote catalogue starts at the 2001 Mondeo application. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_mondeo_1996_2000_keyed_uk"
+      ]
+    },
+    "ford_mondeo_job_note_ed05c2a6f1": {
+      "id": "ford_mondeo_job_note_ed05c2a6f1",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery confirms 4D63 for 2007-2010. Silca lists Mondeo BA7/CA2 HU101 at 433 MHz across this range. Tool compatibility remains pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_mondeo_2007_2010_keyed_uk"
+      ]
+    },
+    "ford_mondeo_job_note_fe98fa5287": {
+      "id": "ford_mondeo_job_note_fe98fa5287",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery confirms DST80 for 2011-2014. Silca lists Mondeo CA2 HU101 at 433 MHz for 2011-2014. Tool compatibility remains pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_mondeo_2011_2014_keyed_uk"
+      ]
+    },
+    "ford_mondeo_job_note_116f88fa7c": {
+      "id": "ford_mondeo_job_note_116f88fa7c",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery lists Mondeo 2014+ as Hitag Pro. Silca lists CD391 2014-2020 and 2017-2022 with HU101 and 433 MHz. Tool and FDRS requirements remain to be mapped separately.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_mondeo_2014_2022_passive_uk"
+      ]
+    },
+    "ford_mondeo_job_note_96528e1839": {
+      "id": "ford_mondeo_job_note_96528e1839",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is confirmed. Blade, transponder and frequency are verified for the facelift range.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_mondeo_2011_2014_passive_uk"
+      ]
+    },
+    "ford_mondeo_job_note_ef15e4c6ee": {
+      "id": "ford_mondeo_job_note_ef15e4c6ee",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is confirmed. Key family, HU101 emergency blade and 433 MHz application are verified for this range.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_mondeo_2007_2010_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

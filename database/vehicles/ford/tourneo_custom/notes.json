@@ -1,1 +1,46 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"tourneo_custom","name":"Tourneo Custom"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "tourneo_custom",
+    "name": "Tourneo Custom"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_tourneo_custom_job_note_17567bf8d4": {
+      "id": "ford_tourneo_custom_job_note_17567bf8d4",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Late Tourneo Custom shares the Transit Custom Hitag Pro key family and OEM references. Exact operation-level tool IDs still need mapping.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_custom_2019_2023_keyed_uk"
+      ]
+    },
+    "ford_tourneo_custom_job_note_b86d1aba25": {
+      "id": "ford_tourneo_custom_job_note_b86d1aba25",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Passenger derivative of the first-generation Transit Custom. Core key data follows the matching V362/V363 Transit Custom security family.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_custom_2012_2016_keyed_uk"
+      ]
+    },
+    "ford_tourneo_custom_job_note_f6c2074bca": {
+      "id": "ford_tourneo_custom_job_note_f6c2074bca",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is physically confirmed. Core key family and OEM references follow the matching Transit Custom application.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_custom_2019_2023_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

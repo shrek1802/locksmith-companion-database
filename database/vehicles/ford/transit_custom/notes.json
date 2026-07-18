@@ -1,1 +1,46 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"transit_custom","name":"Transit Custom"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "transit_custom",
+    "name": "Transit Custom"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_transit_custom_job_note_4624f7cf89": {
+      "id": "ford_transit_custom_job_note_4624f7cf89",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery lists Transit Custom 2012-2017 as DST80/ID63-6F. Silca independently lists Transit Custom V362/V363 2012-2016 with HU101 and 433 MHz.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_custom_2012_2016_keyed_uk"
+      ]
+    },
+    "ford_transit_custom_job_note_2d2f99e79d": {
+      "id": "ford_transit_custom_job_note_2d2f99e79d",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery lists Transit Custom 2019+ as Hitag Pro and provides the OEM proximity references shown. Silca lists Transit Custom V362 from 2016 with HU101, 433 MHz and ID47-family remote applications.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_custom_2019_2023_keyed_uk"
+      ]
+    },
+    "ford_transit_custom_job_note_1c919f1d17": {
+      "id": "ford_transit_custom_job_note_1c919f1d17",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is physically confirmed. OEM references and transponder family are source-backed; operation-level tool IDs remain to be mapped.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_custom_2019_2023_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

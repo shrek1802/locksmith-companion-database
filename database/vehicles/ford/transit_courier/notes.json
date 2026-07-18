@@ -1,1 +1,46 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"transit_courier","name":"Transit Courier"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "transit_courier",
+    "name": "Transit Courier"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_transit_courier_job_note_e64e92cd52": {
+      "id": "ford_transit_courier_job_note_e64e92cd52",
+      "display_name": "Generation-specific locksmith note",
+      "text": "First-generation Transit Courier uses the Fiesta/B-Max-derived Ford security family. Core stock data is HU101, 433 MHz and DST80/ID63-6F for the early range.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_courier_2014_2017_keyed_uk"
+      ]
+    },
+    "ford_transit_courier_job_note_2e24b97f84": {
+      "id": "ford_transit_courier_job_note_2e24b97f84",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The late first-generation range follows the later Ford small-car Hitag Pro security family. Exact OEM part numbers and tool IDs remain to be mapped.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_courier_2018_2023_keyed_uk"
+      ]
+    },
+    "ford_transit_courier_job_note_6b8a11d58c": {
+      "id": "ford_transit_courier_job_note_6b8a11d58c",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where push-button start is physically confirmed. Core key family follows the late Ford small-car Hitag Pro application.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_courier_2018_2023_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

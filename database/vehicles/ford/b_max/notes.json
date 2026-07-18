@@ -1,1 +1,37 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"b_max","name":"B-Max"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "b_max",
+    "name": "B-Max"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_b_max_job_note_50a3aa8e4f": {
+      "id": "ford_b_max_job_note_50a3aa8e4f",
+      "display_name": "Generation-specific locksmith note",
+      "text": "B-Max shares the Fiesta Mk7 electrical/key architecture. The Ford master workbook records OEM reference 1756409 for the keyed family.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_b_max_2012_2017_keyed_uk"
+      ]
+    },
+    "ford_b_max_job_note_ae72f8fe0c": {
+      "id": "ford_b_max_job_note_ae72f8fe0c",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where push-button start is physically confirmed. The Ford master workbook records OEM reference 1713499 for the smart-key family.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_b_max_2012_2017_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

@@ -1,1 +1,91 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"transit_connect","name":"Transit Connect"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after Ford and MQB generation verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "transit_connect",
+    "name": "Transit Connect"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_transit_connect_job_note_b675f2c105": {
+      "id": "ford_transit_connect_job_note_b675f2c105",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Early first-generation Transit Connect. Core blade, transponder and frequency are mapped for UK stock lookup; exact OEM remote part numbers and tool IDs remain to be added.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_connect_2002_2008_keyed_uk"
+      ]
+    },
+    "ford_transit_connect_job_note_9f43c51b05": {
+      "id": "ford_transit_connect_job_note_9f43c51b05",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Early first-generation Transit Connect. Core blade, transponder and frequency are mapped for UK stock lookup; exact OEM remote part numbers and tool IDs remain to be added. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_connect_2002_2008_keyed_uk"
+      ]
+    },
+    "ford_transit_connect_job_note_882ff9fbb6": {
+      "id": "ford_transit_connect_job_note_882ff9fbb6",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Late second-generation Transit Connect uses Hitag Pro. Exact OEM remote part numbers and operation-level tool IDs remain to be added.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_connect_2016_2023_keyed_uk"
+      ]
+    },
+    "ford_transit_connect_job_note_6b6f3f74fc": {
+      "id": "ford_transit_connect_job_note_6b6f3f74fc",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Second-generation early range uses DST80 before the later Hitag Pro change. OEM part numbers and exact tool coverage remain to be mapped.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_connect_2013_2015_keyed_uk"
+      ]
+    },
+    "ford_transit_connect_job_note_979b204a82": {
+      "id": "ford_transit_connect_job_note_979b204a82",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Second-generation early range uses DST80 before the later Hitag Pro change. OEM part numbers and exact tool coverage remain to be mapped. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_connect_2013_2015_keyed_uk"
+      ]
+    },
+    "ford_transit_connect_job_note_ad16de7f56": {
+      "id": "ford_transit_connect_job_note_ad16de7f56",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The first-generation facelift changes from 4D60 to 4D63. Exact OEM remote part numbers and tool IDs remain to be added.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_connect_2009_2012_keyed_uk"
+      ]
+    },
+    "ford_transit_connect_job_note_7b6d0168cf": {
+      "id": "ford_transit_connect_job_note_7b6d0168cf",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The first-generation facelift changes from 4D60 to 4D63. Exact OEM remote part numbers and tool IDs remain to be added. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_connect_2009_2012_keyed_uk"
+      ]
+    },
+    "ford_transit_connect_job_note_1692068129": {
+      "id": "ford_transit_connect_job_note_1692068129",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is physically confirmed. Exact OEM part numbers and tool IDs remain to be added.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_connect_2016_2023_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

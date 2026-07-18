@@ -1,1 +1,64 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"c_max","name":"C-Max"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "c_max",
+    "name": "C-Max"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_c_max_job_note_66ba278889": {
+      "id": "ford_c_max_job_note_66ba278889",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Keyless start family. The Ford master workbook identifies the pear-style 433 MHz Hitag Pro key and OEM reference 2027592; backup slot is normally around the steering-column shroud area.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_c_max_2015_2019_passive_uk"
+      ]
+    },
+    "ford_c_max_job_note_6cd474bf98": {
+      "id": "ford_c_max_job_note_6cd474bf98",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The Ford master workbook confirms 433 MHz and OEM reference 2027592 for the 2015-2019 Hitag Pro family.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_c_max_2015_2019_keyed_uk"
+      ]
+    },
+    "ford_c_max_job_note_676bcf7eb7": {
+      "id": "ford_c_max_job_note_676bcf7eb7",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The Ford master workbook covers the full 2003-2010 first-generation family with HU101, 433 MHz and the ID63 40-bit family. Confirm exact remote shell against the original key.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_c_max_2003_2010_keyed_uk"
+      ]
+    },
+    "ford_c_max_job_note_6b78d5cf72": {
+      "id": "ford_c_max_job_note_6b78d5cf72",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where push-button start is confirmed. Exact smart-key OEM number varies by build; 1713499 is a common matching Ford oval smart-key reference in this family.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_c_max_2010_2014_passive_uk"
+      ]
+    },
+    "ford_c_max_job_note_0a2587560f": {
+      "id": "ford_c_max_job_note_0a2587560f",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Uses the standard Focus Mk3/C-Max DST80 programming family. The Ford master workbook records OEM references 1756409 and 2026900.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_c_max_2010_2014_keyed_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

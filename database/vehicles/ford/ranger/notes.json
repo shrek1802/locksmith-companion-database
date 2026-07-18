@@ -1,1 +1,82 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"ranger","name":"Ranger"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after platform, generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "ranger",
+    "name": "Ranger"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_ranger_job_note_35cf72aa67": {
+      "id": "ford_ranger_job_note_35cf72aa67",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Silca explicitly lists Ranger P375 from 2015 with HU101, 433 MHz and ID47. This provides a locksmith-relevant security breakpoint from the earlier DST80 application.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ranger_2015_2022_keyed_uk"
+      ]
+    },
+    "ford_ranger_job_note_b9e9278ea7": {
+      "id": "ford_ranger_job_note_b9e9278ea7",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery confirms Texas 4C for 1999-2000. The early UK Ranger is Mazda-derived, so the blade and remote must not be inferred from later HU101 Ford applications.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ranger_1999_2000_keyed_uk"
+      ]
+    },
+    "ford_ranger_job_note_adc13f444f": {
+      "id": "ford_ranger_job_note_adc13f444f",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery confirms Texas 4C for 1999-2000. The early UK Ranger is Mazda-derived, so the blade and remote must not be inferred from later HU101 Ford applications. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ranger_1999_2000_keyed_uk"
+      ]
+    },
+    "ford_ranger_job_note_db5af4f282": {
+      "id": "ford_ranger_job_note_db5af4f282",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery confirms Texas 4D63 for 2001-2010. Because this is a Mazda-derived UK platform, blade and frequency remain tied to the exact application rather than later Ford T6 data.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ranger_2001_2010_keyed_uk"
+      ]
+    },
+    "ford_ranger_job_note_06e0fdd944": {
+      "id": "ford_ranger_job_note_06e0fdd944",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery confirms Texas 4D63 for 2001-2010. Because this is a Mazda-derived UK platform, blade and frequency remain tied to the exact application rather than later Ford T6 data. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ranger_2001_2010_keyed_uk"
+      ]
+    },
+    "ford_ranger_job_note_546d0ced8a": {
+      "id": "ford_ranger_job_note_546d0ced8a",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery lists Ranger 2011+ as DST80. Silca independently lists Ranger TKE 2011-2015 with HU101 and 433 MHz; this record stops before the separately catalogued 2015 Hitag Pro application.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ranger_2011_2014_keyed_uk"
+      ]
+    },
+    "ford_ranger_job_note_f835e9085d": {
+      "id": "ford_ranger_job_note_f835e9085d",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is physically confirmed. Blade, frequency and Hitag Pro family are supported by the 2015-on Silca Ranger application.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ranger_2015_2022_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

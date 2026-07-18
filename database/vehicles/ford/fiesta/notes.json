@@ -35,6 +35,96 @@
         "Transponder, frequency, blade profile and aftermarket programming coverage remain unverified.",
         "Do not use unverified values for ordering or programming a customer key."
       ]
+    },
+    "ford_fiesta_job_note_573f03c9e1": {
+      "id": "ford_fiesta_job_note_573f03c9e1",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Core key-stock data is independently supported by Transpondery and UK supplier catalogues. Exact OEM part number varies by remote style and build.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_2008_2012_keyed_uk"
+      ]
+    },
+    "ford_fiesta_job_note_b9b1cb64ef": {
+      "id": "ford_fiesta_job_note_b9b1cb64ef",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Core key-stock data is independently supported by Transpondery and UK supplier catalogues. Exact OEM part number varies by remote style and build. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_2008_2012_keyed_uk"
+      ]
+    },
+    "ford_fiesta_job_note_60a7bd00f4": {
+      "id": "ford_fiesta_job_note_60a7bd00f4",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Ford UK documents passive key, removable emergency blade and backup start. Exact OEM remote number and tool IDs remain to be mapped.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_2017_2023_passive_uk"
+      ]
+    },
+    "ford_fiesta_job_note_524effc9fe": {
+      "id": "ford_fiesta_job_note_524effc9fe",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Ford UK documents passive key, removable emergency blade and backup start. Exact OEM remote number and tool IDs remain to be mapped. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_2017_2023_passive_uk"
+      ]
+    },
+    "ford_fiesta_job_note_be2cc58595": {
+      "id": "ford_fiesta_job_note_be2cc58595",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Ford UK documents the flip-key configuration. Core blade/frequency/chip family follows professional Mk8 application listings; exact OEM remote number and tool IDs still need mapping.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_2017_2023_keyed_uk"
+      ]
+    },
+    "ford_fiesta_job_note_184e95721e": {
+      "id": "ford_fiesta_job_note_184e95721e",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Ford UK documents the flip-key configuration. Core blade/frequency/chip family follows professional Mk8 application listings; exact OEM remote number and tool IDs still need mapping. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_2017_2023_keyed_uk"
+      ]
+    },
+    "ford_fiesta_job_note_d5e827af26": {
+      "id": "ford_fiesta_job_note_d5e827af26",
+      "display_name": "Generation-specific locksmith note",
+      "text": "The facelift remains on the Mk7 platform but uses the later DST80 security family. Exact OEM remote number varies by build.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_2013_2017_keyed_uk"
+      ]
+    },
+    "ford_fiesta_job_note_2b9b1c19d9": {
+      "id": "ford_fiesta_job_note_2b9b1c19d9",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use FO21 and Texas 4D-63 40-bit for this UK Mk6 record. Do not also show the conflicting HU101 duplicate.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_2002_2008_keyed_uk"
+      ]
+    },
+    "ford_fiesta_job_note_283f9150d3": {
+      "id": "ford_fiesta_job_note_283f9150d3",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where push-button start is confirmed. Exact OEM part number varies by trim/build.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_2013_2017_passive_uk"
+      ]
+    },
+    "ford_fiesta_job_note_e986904559": {
+      "id": "ford_fiesta_job_note_e986904559",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where push-button start is physically confirmed. KeyStation explicitly lists the Fiesta-compatible 433 MHz ID63 80-bit HU101 keyless family.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_2008_2012_passive_uk"
+      ]
     }
   },
   "sources": {
@@ -63,5 +153,9 @@
         "owner manuals are published for later model years including 2022"
       ]
     }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
   }
 }

@@ -1,9 +1,92 @@
 {
   "schema_version": "2.1",
   "updated_at": "2026-07-14",
-  "manufacturer": {"id":"ford","name":"Ford"},
-  "model": {"id":"focus","name":"Focus"},
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "focus",
+    "name": "Focus"
+  },
   "category": "vehicle_notes",
-  "items": {},
-  "verification": {"status":"not_verified","notes":"Warnings and job notes will be added only after exact generation and tool verification."}
+  "items": {
+    "ford_focus_job_note_3d765617c4": {
+      "id": "ford_focus_job_note_3d765617c4",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade and frequency are confirmed by the Silca Ford application catalogue; transponder and year range are confirmed by Transpondery. Tool compatibility is still pending mapping from the existing tool database.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_focus_1998_2004_keyed_uk"
+      ]
+    },
+    "ford_focus_job_note_544e7b490d": {
+      "id": "ford_focus_job_note_544e7b490d",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade and frequency are confirmed by the Silca Ford application catalogue; transponder and year range are confirmed by Transpondery. Tool compatibility is still pending mapping from the existing tool database. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_focus_1998_2004_keyed_uk"
+      ]
+    },
+    "ford_focus_job_note_eda7730c37": {
+      "id": "ford_focus_job_note_eda7730c37",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_focus_2015_2018_keyed_uk"
+      ]
+    },
+    "ford_focus_job_note_fe05a7bcd5": {
+      "id": "ford_focus_job_note_fe05a7bcd5",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_focus_2015_2018_keyed_uk"
+      ]
+    },
+    "ford_focus_job_note_f5df7559f3": {
+      "id": "ford_focus_job_note_f5df7559f3",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and frequency verified against Transpondery, Silca and KeyStation UK. Tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_focus_2004_2010_keyed_uk",
+        "ford_focus_2015_2018_passive_uk"
+      ]
+    },
+    "ford_focus_job_note_fbd8978761": {
+      "id": "ford_focus_job_note_fbd8978761",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and frequency verified for the Mk3 pre-facelift security family. Tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_focus_2011_2014_passive_uk"
+      ]
+    },
+    "ford_focus_job_note_b9c11b112a": {
+      "id": "ford_focus_job_note_b9c11b112a",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Split before the verified 2015 Hitag Pro change. Blade, transponder and frequency verified; tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_focus_2011_2014_keyed_uk"
+      ]
+    },
+    "ford_focus_job_note_0f6a20faa9": {
+      "id": "ford_focus_job_note_0f6a20faa9",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where Ford Power Start is confirmed. Key data matches the verified Mk2 security family; tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_focus_2008_2010_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
 }

@@ -1,1 +1,28 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"mustang","name":"Mustang"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "mustang",
+    "name": "Mustang"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_mustang_job_note_01c7504e48": {
+      "id": "ford_mustang_job_note_01c7504e48",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Silca explicitly lists Ford Mustang S550 from 2017 with HU101, 433 MHz and ID47. The UK S550 generation began in 2015, so 2015-2016 vehicles must still be checked against VIN/original key before supply, but the principal UK S550 key family is now mapped.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_mustang_2015_2023_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

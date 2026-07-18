@@ -1,1 +1,110 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"galaxy","name":"Galaxy"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after Ford/VAG generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "galaxy",
+    "name": "Galaxy"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_galaxy_job_note_eda7730c37": {
+      "id": "ford_galaxy_job_note_eda7730c37",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_galaxy_2006_2009_keyed_uk",
+        "ford_galaxy_2010_2014_keyed_uk"
+      ]
+    },
+    "ford_galaxy_job_note_7eef903cdc": {
+      "id": "ford_galaxy_job_note_7eef903cdc",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and frequency verified for the facelift security family. Tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_galaxy_2010_2014_passive_uk"
+      ]
+    },
+    "ford_galaxy_job_note_e938488c72": {
+      "id": "ford_galaxy_job_note_e938488c72",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transponder family is verified for 2000-2006. Exact UK blade and frequency remain pending a VAG/Galaxy-specific application source.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_galaxy_2000_2006_vag_uk"
+      ]
+    },
+    "ford_galaxy_job_note_ab672814d6": {
+      "id": "ford_galaxy_job_note_ab672814d6",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transponder family is verified for 2000-2006. Exact UK blade and frequency remain pending a VAG/Galaxy-specific application source. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_galaxy_2000_2006_vag_uk"
+      ]
+    },
+    "ford_galaxy_job_note_a97515eb2c": {
+      "id": "ford_galaxy_job_note_a97515eb2c",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transponder year split is verified. Exact UK blade and remote frequency remain to be confirmed from a dedicated Mk1 application source.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_galaxy_1998_2000_vag_uk"
+      ]
+    },
+    "ford_galaxy_job_note_2d01a7a780": {
+      "id": "ford_galaxy_job_note_2d01a7a780",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transponder year split is verified. Exact UK blade and remote frequency remain to be confirmed from a dedicated Mk1 application source. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_galaxy_1998_2000_vag_uk"
+      ]
+    },
+    "ford_galaxy_job_note_d1d4ad3a21": {
+      "id": "ford_galaxy_job_note_d1d4ad3a21",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transponder year split is verified. Exact UK blade and remote frequency still require a dedicated Mk1 Galaxy application source; do not apply Ford PATS assumptions.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_galaxy_1995_1998_vag_uk"
+      ]
+    },
+    "ford_galaxy_job_note_464881e0e0": {
+      "id": "ford_galaxy_job_note_464881e0e0",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transponder year split is verified. Exact UK blade and remote frequency still require a dedicated Mk1 Galaxy application source; do not apply Ford PATS assumptions. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_galaxy_1995_1998_vag_uk"
+      ]
+    },
+    "ford_galaxy_job_note_57753ed4ef": {
+      "id": "ford_galaxy_job_note_57753ed4ef",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery lists Galaxy 2015+ as Hitag Pro. Silca lists CD390 2015-2022 with HU101 and 433 MHz. Tool and online requirements remain to be mapped separately.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_galaxy_2015_2023_passive_uk"
+      ]
+    },
+    "ford_galaxy_job_note_ed152f5056": {
+      "id": "ford_galaxy_job_note_ed152f5056",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is confirmed. Key data verified for the 2006-2009 security family.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_galaxy_2006_2009_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

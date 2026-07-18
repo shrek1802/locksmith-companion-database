@@ -1,1 +1,91 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"transit","name":"Transit"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "transit",
+    "name": "Transit"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_transit_job_note_83aa36aea1": {
+      "id": "ford_transit_job_note_83aa36aea1",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery confirms 4D60 for 2000-2006. Silca independently lists Transit V184/5 2000-2006 with FO21 and 433 MHz.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_2000_2006_keyed_uk"
+      ]
+    },
+    "ford_transit_job_note_a709be6cde": {
+      "id": "ford_transit_job_note_a709be6cde",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery confirms DST80 for 2013-2016. Silca independently lists Transit 2013-2016 with HU101 and 433 MHz.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_2013_2016_keyed_uk"
+      ]
+    },
+    "ford_transit_job_note_83092f4f79": {
+      "id": "ford_transit_job_note_83092f4f79",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery confirms Texas 4C for 1995-1999. The remote configuration varies, so frequency must be confirmed from the original key or exact application before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_1995_1999_keyed_uk"
+      ]
+    },
+    "ford_transit_job_note_4b47a60084": {
+      "id": "ford_transit_job_note_4b47a60084",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery confirms Texas 4C for 1995-1999. The remote configuration varies, so frequency must be confirmed from the original key or exact application before supply. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_1995_1999_keyed_uk"
+      ]
+    },
+    "ford_transit_job_note_8a396d3d43": {
+      "id": "ford_transit_job_note_8a396d3d43",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery lists 2007-2013 as Texas 4D63. Silca independently lists Transit V347 2006-2013 with FO21 and 433 MHz.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_2007_2013_keyed_uk"
+      ]
+    },
+    "ford_transit_job_note_04bf218f8a": {
+      "id": "ford_transit_job_note_04bf218f8a",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery lists 2007-2013 as Texas 4D63. Silca independently lists Transit V347 2006-2013 with FO21 and 433 MHz. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_2007_2013_keyed_uk"
+      ]
+    },
+    "ford_transit_job_note_db85b8c890": {
+      "id": "ford_transit_job_note_db85b8c890",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery lists Transit 2016+ as Hitag Pro and publishes the OEM references shown. Silca independently lists Transit from 2016/2017 with HU101 and 433 MHz.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_2016_present_keyed_uk"
+      ]
+    },
+    "ford_transit_job_note_a5da3f7e43": {
+      "id": "ford_transit_job_note_a5da3f7e43",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is physically confirmed. Key family and OEM references are source-backed; operation-level tool IDs remain to be mapped.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_2016_present_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

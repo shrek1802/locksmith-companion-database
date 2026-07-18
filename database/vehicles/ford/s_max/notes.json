@@ -1,1 +1,74 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"s_max","name":"S-Max"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "s_max",
+    "name": "S-Max"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_s_max_job_note_2080366260": {
+      "id": "ford_s_max_job_note_2080366260",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and frequency verified against Transpondery and Silca. Tool compatibility remains pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_s_max_2006_2009_keyed_uk",
+        "ford_s_max_2010_2014_keyed_uk"
+      ]
+    },
+    "ford_s_max_job_note_de472c3e90": {
+      "id": "ford_s_max_job_note_de472c3e90",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and frequency verified for the facelift security family. Tool compatibility remains pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_s_max_2010_2014_passive_uk"
+      ]
+    },
+    "ford_s_max_job_note_2d98f82612": {
+      "id": "ford_s_max_job_note_2d98f82612",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Transpondery lists S-Max 2015+ as Hitag Pro. Silca lists the second-generation S-Max with HU101 and 433 MHz. Tool and online requirements remain to be mapped separately.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_s_max_2015_2023_passive_uk"
+      ]
+    },
+    "ford_s_max_job_note_ad8fd855ea": {
+      "id": "ford_s_max_job_note_ad8fd855ea",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is confirmed. Key data is verified for the 2006-2009 security family.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_s_max_2006_2009_passive_uk"
+      ]
+    },
+    "ford_s_max_job_note_ebd6bf58ad": {
+      "id": "ford_s_max_job_note_ebd6bf58ad",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use this record only where keyed ignition is physically confirmed. Key data is verified; keyed UK fitment is less common than passive start. Tool compatibility remains pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_s_max_2015_2023_keyed_uk"
+      ]
+    },
+    "ford_s_max_job_note_650fb4d1a1": {
+      "id": "ford_s_max_job_note_650fb4d1a1",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use this record only where keyed ignition is physically confirmed. Key data is verified; keyed UK fitment is less common than passive start. Tool compatibility remains pending. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_s_max_2015_2023_keyed_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}

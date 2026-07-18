@@ -1,1 +1,66 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"kuga","name":"Kuga"},"category":"vehicle_notes","items":{},"verification":{"status":"not_verified","notes":"Warnings and job notes will be added after generation and tool verification."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "kuga",
+    "name": "Kuga"
+  },
+  "category": "vehicle_notes",
+  "items": {
+    "ford_kuga_job_note_e37c4c9774": {
+      "id": "ford_kuga_job_note_e37c4c9774",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and 433 MHz frequency verified against Transpondery and Silca. Tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_kuga_2016_2019_keyed_uk",
+        "ford_kuga_2016_2019_passive_uk"
+      ]
+    },
+    "ford_kuga_job_note_def894259a": {
+      "id": "ford_kuga_job_note_def894259a",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and 433 MHz frequency verified against Transpondery and Silca. Tool compatibility still pending. Some key hardware varies within this year/build range. Confirm the original key, VIN and physical vehicle configuration before supply.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_kuga_2016_2019_keyed_uk"
+      ]
+    },
+    "ford_kuga_job_note_733c20e67e": {
+      "id": "ford_kuga_job_note_733c20e67e",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Blade, transponder and frequency verified against Transpondery and the 2025 Silca catalogue. Tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_kuga_2008_2012_keyed_uk"
+      ]
+    },
+    "ford_kuga_job_note_8c779f819a": {
+      "id": "ford_kuga_job_note_8c779f819a",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Use only where passive start is confirmed. Blade, transponder and frequency verified; tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_kuga_2008_2012_passive_uk"
+      ]
+    },
+    "ford_kuga_job_note_6d8c18cb55": {
+      "id": "ford_kuga_job_note_6d8c18cb55",
+      "display_name": "Generation-specific locksmith note",
+      "text": "Verified within the 2012-2016 DST80 security range. Tool compatibility still pending.",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_kuga_2013_2015_keyed_uk",
+        "ford_kuga_2013_2015_passive_uk"
+      ]
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Duplicate wording is collapsed in this index. Each note remains traceable to the verified generation-specific records in models.json."
+  }
+}
