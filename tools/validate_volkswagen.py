@@ -36,6 +36,10 @@ APPROVED_STATUS = {
     "research_in_progress",
     "to_be_verified",
     "fully_verified",
+    # Existing document-level lifecycle values retained until the Volkswagen
+    # procedure files are migrated to a dedicated document_status field.
+    "operation_specific_tool_support_added_with_conditions",
+    "operation_specific_tool_support_partially_verified",
 }
 RAW_PROCEDURE_PREFIX = "PROC_"
 
@@ -154,8 +158,17 @@ def validate() -> list[str]:
             if key == "drive_side" and value != "RHD":
                 errors.append(f"{rel_dir}/models.json: non-RHD drive_side value {value!r}")
 
-        if "items" not in procedures_data:
-            errors.append(f"{rel_dir}/procedures.json: use top-level 'items' for procedure records")
+        procedure_items = procedures_data.get("items")
+        if procedure_items is None:
+            # A small number of established Volkswagen files still use the
+            # older top-level name. Validate their records while they are
+            # migrated rather than hiding all of their other data-quality errors.
+            procedure_items = procedures_data.get("procedures")
+        if procedure_items is None:
+            errors.append(
+                f"{rel_dir}/procedures.json: missing top-level 'items' procedure records"
+            )
+            procedure_items = {}
 
         for key, value in walk_values(procedures_data):
             if isinstance(value, str) and value.startswith(RAW_PROCEDURE_PREFIX):
@@ -167,7 +180,6 @@ def validate() -> list[str]:
                         f"{rel_dir}/procedures.json: unapproved status value {value!r}"
                     )
 
-        procedure_items = procedures_data.get("items", {})
         if isinstance(procedure_items, dict):
             for generation_id, operations in procedure_items.items():
                 if not isinstance(operations, dict):
