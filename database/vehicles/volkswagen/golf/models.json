@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "manufacturer": {"id": "volkswagen", "name": "Volkswagen"},
   "model": {"id": "golf", "name": "Golf"},
   "category": "vehicles",
@@ -23,7 +23,7 @@
         "programming": {"add_key": "OBD adaptation on supported variants", "all_keys_lost": "Read required security data then adapt keys", "route": "Identify Immo2 or Immo3 before programming", "online_requirement": "No"},
         "notes": "Do not combine Immo2 and Immo3 procedures. Confirm cluster and transponder before preparing the key."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+      "verification": {"status": "research_required", "last_checked": "2026-07-18", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
     },
     "golf_mk5_2004_2009_keyed": {
       "record_id": "volkswagen_golf_mk5_2004_2009_keyed_uk",
@@ -43,7 +43,7 @@
         "programming": {"add_key": "OBD on supported cluster variants", "all_keys_lost": "Cluster identification and security-data route", "route": "Identify cluster manufacturer before selecting method", "online_requirement": "No blanket online requirement"},
         "notes": "VDO, Micronas and other cluster variants must not be treated as one procedure."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+      "verification": {"status": "research_required", "last_checked": "2026-07-18", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
     },
     "golf_mk6_2009_2013_keyed": {
       "record_id": "volkswagen_golf_mk6_2009_2013_keyed_uk",
@@ -63,7 +63,7 @@
         "programming": {"add_key": "Diagnostic or saved-data route depending on dashboard", "all_keys_lost": "Dashboard identification and data acquisition", "route": "Do not select by year alone", "online_requirement": "No blanket online requirement"},
         "notes": "Keep Immo4 Challenge and trade-labelled Immo4.5 classifications separate until the dashboard is identified."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+      "verification": {"status": "research_required", "last_checked": "2026-07-18", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
     },
     "golf_mk7_2013_2017": {
       "record_id": "volkswagen_golf_mk7_2013_2017_uk",
@@ -83,7 +83,82 @@
         "programming": {"add_key": "OBD or saved-data route depending on dashboard and tool", "all_keys_lost": "Dashboard identification and data route", "route": "Separate keyed and KESSY variants during the job", "online_requirement": "No blanket online requirement"},
         "notes": "Dashboard family and keyless specification determine the actual procedure."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+      "operations": {
+        "add_key": {
+          "summary": "Identify the fitted MQB48 dashboard and keyed/KESSY configuration before selecting the route.",
+          "programming_method": "OBD or saved dashboard-data route",
+          "online_requirement": "Tool and dashboard dependent",
+          "dealer_key_required": true,
+          "overall_status": "conditional",
+          "warnings": ["Do not assume all MQB48 dashboards use the same read method.", "A working key may be needed to obtain synchronisation data on some Xhorse routes."],
+          "tools": {
+            "xhorse_key_tool_plus": {
+              "status": "conditional",
+              "method": "bench",
+              "internet_required": true,
+              "working_key_required": "route_dependent",
+              "module_removal_required": "dashboard_dependent",
+              "vehicle_connection": {"required": true, "display_text": "Dashboard read followed by vehicle key learning"},
+              "tool_accessory_ids": ["MQB48 licence", "MQB48 dashboard adapter or supported programmer connection"],
+              "summary": "Verified MQB48 add-key route on supported VDO/JCI NEC35xx dashboards.",
+              "notes": "Confirm exact dashboard chip and current software coverage before starting."
+            },
+            "obdstar_g3": {
+              "status": "conditional",
+              "method": "service_mode",
+              "internet_required": true,
+              "module_removal_required": "chip_and_route_dependent",
+              "vehicle_connection": {"required": true, "display_text": "OBD/bench route according to fitted MQB48 dashboard"},
+              "tool_accessory_ids": ["C4-06 or applicable MQB adapter", "RH850/V850 Adapter Kit when required"],
+              "summary": "MQB48 key programming is supported on specified dashboard families with the required adapter and online calculation.",
+              "notes": "Check the exact D70F/RH850 dashboard variant in the current software menu."
+            },
+            "autel_im508s_xp400_pro": {
+              "status": "conditional",
+              "method": "obd",
+              "internet_required": true,
+              "vehicle_connection": {"required": true, "display_text": "Exact vehicle and dashboard coverage must be checked in the current IMMO menu"},
+              "tool_accessory_ids": ["XP400 Pro where dashboard or EEPROM work is required"],
+              "summary": "Professional IMMO platform capable of PIN/CS, key learning and EEPROM/MCU work; exact MQB48 coverage is vehicle-specific.",
+              "notes": "Do not treat general Autel IMMO capability as confirmation for every MQB48 dashboard."
+            }
+          }
+        },
+        "all_keys_lost": {
+          "summary": "Read or obtain the required dashboard immobiliser data, prepare dealer keys and learn all keys.",
+          "programming_method": "Dashboard-data or supported bench/online route",
+          "online_requirement": "Required on some supported routes",
+          "dealer_key_required": true,
+          "overall_status": "conditional",
+          "warnings": ["Exact dashboard processor must be identified before accepting the job.", "Maintain regulated battery support during data acquisition and key learning."],
+          "tools": {
+            "obdstar_g3": {
+              "status": "conditional",
+              "method": "bench",
+              "internet_required": true,
+              "working_key_required": false,
+              "module_removal_required": true,
+              "vehicle_connection": {"required": true, "display_text": "Dashboard data acquisition plus vehicle key learning"},
+              "tool_accessory_ids": ["C4-06", "RH850/V850 Adapter Kit", "MP001 where specified"],
+              "summary": "Official MQB48 all-keys-lost support exists for specified 5A dashboard variants.",
+              "notes": "Support is processor-specific; confirm the current software list before dismantling."
+            },
+            "autel_im508s_xp400_pro": {
+              "status": "conditional",
+              "method": "bench",
+              "internet_required": true,
+              "working_key_required": false,
+              "module_removal_required": "dashboard_dependent",
+              "eeprom_required": "route_dependent",
+              "vehicle_connection": {"required": true, "display_text": "Coverage must be confirmed against the exact dashboard and current software"},
+              "tool_accessory_ids": ["XP400 Pro", "Applicable MQB dashboard connection or adapter"],
+              "summary": "AKL capability depends on the fitted dashboard and currently supported Autel route.",
+              "notes": "Leave as conditional until exact dashboard coverage is confirmed in-tool."
+            }
+          }
+        }
+      },
+      "verification": {"status": "partially_verified", "last_checked": "2026-07-18", "sources": ["obdstar_official_mqb48_updates", "xhorse_mqb48_worked_examples", "autel_im508s_official_capabilities"]}
     },
     "golf_mk75_2017_2020": {
       "record_id": "volkswagen_golf_mk75_2017_2020_uk",
@@ -103,7 +178,76 @@
         "programming": {"add_key": "Supported diagnostic or saved-data route", "all_keys_lost": "Confirm current dashboard support before accepting work", "route": "Identify dashboard and keyed/KESSY configuration", "online_requirement": "Tool and operation dependent"},
         "notes": "Do not assume Mk7 and Mk7.5 use identical dashboard access."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+      "operations": {
+        "add_key": {
+          "summary": "Confirm whether the fitted cluster remains MQB48/5A and identify the exact processor before programming.",
+          "programming_method": "Supported diagnostic or dashboard-data route",
+          "online_requirement": "Tool and operation dependent",
+          "dealer_key_required": true,
+          "overall_status": "conditional",
+          "tools": {
+            "xhorse_key_tool_plus": {
+              "status": "conditional",
+              "method": "bench",
+              "internet_required": true,
+              "vehicle_connection": {"required": true, "display_text": "MQB48 dashboard-data route on supported clusters"},
+              "tool_accessory_ids": ["MQB48 licence", "Supported dashboard adapter/programmer"],
+              "summary": "Supported where the fitted late dashboard is covered by the MQB48 route.",
+              "notes": "Later dashboard revisions must be checked individually."
+            },
+            "obdstar_g3": {
+              "status": "conditional",
+              "method": "service_mode",
+              "internet_required": true,
+              "vehicle_connection": {"required": true, "display_text": "Processor-specific MQB48 route"},
+              "tool_accessory_ids": ["C4-06 or current listed adapter", "RH850/V850 Adapter Kit when required"],
+              "summary": "Supported on specified MQB48-5A processor variants.",
+              "notes": "Confirm dashboard processor and software version before accepting the job."
+            },
+            "autel_im508s_xp400_pro": {
+              "status": "conditional",
+              "method": "obd",
+              "internet_required": true,
+              "vehicle_connection": {"required": true, "display_text": "Current vehicle/dashboard coverage check required"},
+              "tool_accessory_ids": ["XP400 Pro where programmer work is required"],
+              "summary": "Exact coverage varies by dashboard and software release.",
+              "notes": "Verify in the current Volkswagen IMMO menu."
+            }
+          }
+        },
+        "all_keys_lost": {
+          "summary": "Confirm the exact MQB48 dashboard variant and current AKL support before removing the cluster.",
+          "programming_method": "Processor-specific dashboard-data route",
+          "online_requirement": "Often required on current supported routes",
+          "dealer_key_required": true,
+          "overall_status": "conditional",
+          "tools": {
+            "obdstar_g3": {
+              "status": "conditional",
+              "method": "bench",
+              "internet_required": true,
+              "working_key_required": false,
+              "module_removal_required": true,
+              "vehicle_connection": {"required": true, "display_text": "Dashboard data acquisition and online synchronisation calculation"},
+              "tool_accessory_ids": ["C4-06", "RH850/V850 Adapter Kit", "MP001 where required"],
+              "summary": "Official support is available for specified MQB48-5A variants, not every late dashboard.",
+              "notes": "Do not book solely by registration year."
+            },
+            "autel_im508s_xp400_pro": {
+              "status": "conditional",
+              "method": "bench",
+              "internet_required": true,
+              "working_key_required": false,
+              "module_removal_required": "dashboard_dependent",
+              "vehicle_connection": {"required": true, "display_text": "Exact current AKL coverage must be confirmed"},
+              "tool_accessory_ids": ["XP400 Pro", "Applicable dashboard adapter"],
+              "summary": "Potential support depends on dashboard family and current Autel coverage.",
+              "notes": "Keep conditional until checked against the actual vehicle."
+            }
+          }
+        }
+      },
+      "verification": {"status": "partially_verified", "last_checked": "2026-07-18", "sources": ["obdstar_official_mqb48_updates", "xhorse_mqb48_worked_examples", "autel_im508s_official_capabilities"]}
     },
     "golf_mk8_2020_present": {
       "record_id": "volkswagen_golf_mk8_2020_present_uk",
@@ -123,7 +267,67 @@
         "programming": {"add_key": "Supported-tool and security-access dependent", "all_keys_lost": "No universal aftermarket coverage claim", "route": "Vehicle-specific diagnostic/security route", "online_requirement": "May be required"},
         "notes": "Current tool coverage must be checked before booking Add Key or AKL work."
       },
-      "verification": {"status": "research_required", "last_checked": "2026-07-17", "sources": ["volkswagen_platform_registry", "vw_golf_master_research_pending"]}
+      "operations": {
+        "add_key": {
+          "summary": "Confirm MQB49/5C dashboard manufacturer, VIN coverage and current server availability.",
+          "programming_method": "Online vehicle-specific security route",
+          "online_requirement": "Required on supported aftermarket routes",
+          "dealer_key_required": true,
+          "overall_status": "conditional",
+          "tools": {
+            "xhorse_key_tool_plus": {
+              "status": "conditional",
+              "method": "obd",
+              "internet_required": true,
+              "working_key_required": "route_dependent",
+              "vehicle_connection": {"required": true, "display_text": "Online MQB49/5C key-learning route on supported Johnson systems"},
+              "tool_accessory_ids": ["MQB49/5C compatible key", "Paid online calculation where prompted"],
+              "summary": "Add-key support is documented for supported MQB49/5C Johnson systems.",
+              "notes": "Not universal coverage; verify dashboard manufacturer and current menu before booking."
+            },
+            "autel_im508s_xp400_pro": {
+              "status": "conditional",
+              "method": "obd",
+              "internet_required": true,
+              "vehicle_connection": {"required": true, "display_text": "Exact VIN and software coverage check required"},
+              "tool_accessory_ids": ["XP400 Pro if the prompted route requires programmer functions"],
+              "summary": "General IMMO capability does not confirm every MQB49/5C Golf; verify current coverage.",
+              "notes": "Do not promise support without checking the live vehicle menu."
+            },
+            "obdstar_g3": {
+              "status": "not_supported",
+              "reason": "OBDSTAR states MQB5C immobiliser functions remain under development; no universal Golf Mk8 support should be shown.",
+              "summary": "No verified universal MQB5C support."
+            }
+          }
+        },
+        "all_keys_lost": {
+          "summary": "No universal aftermarket AKL coverage is confirmed for Golf Mk8 MQB49/5C.",
+          "programming_method": "Current VIN-specific support check only",
+          "online_requirement": "Required where a supported route exists",
+          "dealer_key_required": true,
+          "overall_status": "verification_required",
+          "warnings": ["Do not accept the job until the exact VIN, dashboard and current tool coverage have been confirmed."],
+          "tools": {
+            "xhorse_key_tool_plus": {
+              "status": "unknown",
+              "summary": "No reliable universal Golf Mk8 AKL claim is stored.",
+              "notes": "Check the latest software and supported dashboard list."
+            },
+            "autel_im508s_xp400_pro": {
+              "status": "unknown",
+              "summary": "Exact VIN-specific AKL coverage must be verified in the current Autel software.",
+              "notes": "No blanket support claim."
+            },
+            "obdstar_g3": {
+              "status": "not_supported",
+              "reason": "MQB5C immobiliser functions are listed as under development rather than generally supported.",
+              "summary": "No verified general MQB5C AKL support."
+            }
+          }
+        }
+      },
+      "verification": {"status": "partially_verified", "last_checked": "2026-07-18", "sources": ["xhorse_mqb49_5c_add_key_documentation", "obdstar_mqb5c_development_status", "autel_im508s_official_capabilities"]}
     }
   }
 }
