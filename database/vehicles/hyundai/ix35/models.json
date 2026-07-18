@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "ix35",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "ix35_uk_generations",
+      "name": "ix35 UK generations",
+      "years": "2010-2015",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Hyundai",
+      "url": "https://www.hyundai.com/uk/en/models.html",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
