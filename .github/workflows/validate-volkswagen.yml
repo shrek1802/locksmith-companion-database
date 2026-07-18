@@ -1,0 +1,29 @@
+name: Validate Volkswagen Database
+
+on:
+  pull_request:
+    paths:
+      - "database/vehicles/volkswagen/**"
+      - "database/manifest.json"
+      - "manifest.json"
+      - "tools/validate_volkswagen.py"
+      - ".github/workflows/validate-volkswagen.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-volkswagen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Volkswagen data
+        run: python tools/validate_volkswagen.py
