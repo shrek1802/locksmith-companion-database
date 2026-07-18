@@ -1,8 +1,8 @@
 # Database Schema
 
-**Version:** 1.0  
+**Version:** 2.2  
 **Status:** Approved  
-**Last updated:** 2026-07-14
+**Last updated:** 2026-07-19
 
 ## Purpose
 
@@ -85,6 +85,49 @@ Underlying platform names must not replace the badge name.
   "notes": {}
 }
 ```
+
+## Structured Key Profile (schema 2.2)
+
+Vehicle records may store the following optional, backwards-compatible fields in
+`vehicle_information` (or the equivalent legacy generation object):
+
+```json
+{
+  "blade_profile": "HU101",
+  "transponder_id": "ID46",
+  "technology_family": "Philips Crypto / Hitag",
+  "chip_type": "Glass Chip",
+  "chip_ic": "PCF7936",
+  "remote_configuration": "Separate",
+  "frequency": "433 MHz",
+  "key_profile_evidence": {
+    "blade_profile": [],
+    "transponder_id": [],
+    "technology_family": [],
+    "chip_type": [],
+    "chip_ic": [],
+    "remote_configuration": [],
+    "frequency": []
+  }
+}
+```
+
+The example describes shape only; values must be supported for the exact vehicle
+and key variant. Unknown applicable values display as `Research Required`.
+
+Display order is Blade, Transponder, Technology, Chip Type, Chip IC, Remote,
+Frequency. The machine-readable contract is
+`database/reference/key_profile_schema.json`.
+
+Approved `chip_type` values are `Glass Chip`, `Carbon Chip`, `Ceramic Chip`,
+`Integrated Remote Chip`, `Integrated Proximity Chip`, `PCB Mounted Chip`,
+`No Separate Transponder`, and `Research Required`.
+
+Approved `remote_configuration` values are `Separate`, `Integrated`,
+`Integrated Proximity`, `No Remote`, and `Research Required`.
+
+Legacy `transponder_type`, `frequency_mhz`, and `chip_or_ic` fields remain
+readable. Structured fields take precedence, so existing consumers remain valid.
 
 ## Controlled Status Values
 

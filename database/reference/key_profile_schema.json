@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.2",
+  "updated_at": "2026-07-19",
+  "category": "key_profile_display_contract",
+  "display_order": [
+    "blade_profile",
+    "transponder_id",
+    "technology_family",
+    "chip_type",
+    "chip_ic",
+    "remote_configuration",
+    "frequency"
+  ],
+  "display_labels": {
+    "blade_profile": "Blade",
+    "transponder_id": "Transponder",
+    "technology_family": "Technology",
+    "chip_type": "Chip Type",
+    "chip_ic": "Chip IC",
+    "remote_configuration": "Remote",
+    "frequency": "Frequency"
+  },
+  "unknown_display_value": "Research Required",
+  "chip_type_values": [
+    "Glass Chip",
+    "Carbon Chip",
+    "Ceramic Chip",
+    "Integrated Remote Chip",
+    "Integrated Proximity Chip",
+    "PCB Mounted Chip",
+    "No Separate Transponder",
+    "Research Required"
+  ],
+  "remote_configuration_values": [
+    "Separate",
+    "Integrated",
+    "Integrated Proximity",
+    "No Remote",
+    "Research Required"
+  ],
+  "legacy_mappings": {
+    "transponder_type": "technology_family",
+    "frequency_mhz": "frequency",
+    "chip_or_ic": "chip_ic"
+  },
+  "rendering_rules": [
+    "Render fields in display_order.",
+    "Never render raw null values; use unknown_display_value when the field is applicable but unknown.",
+    "Hide a field only when the record explicitly marks it not applicable.",
+    "Legacy fields remain readable, but structured fields take precedence."
+  ]
+}
