@@ -46,7 +46,8 @@
           "Standard OBD",
           "KESSY programmer connection when required"
         ],
-        "notes": "Identify KESSY hardware and part number before selecting procedure."
+        "notes": "Identify KESSY hardware and part number before selecting procedure.",
+        "blade_id": "hu66"
       },
       "verification": {
         "status": "research_required",
@@ -89,7 +90,8 @@
           "Standard OBD",
           "Module-specific bench adapter when required"
         ],
-        "notes": "Do not treat 7P as the same KESSY procedure as 7L."
+        "notes": "Do not treat 7P as the same KESSY procedure as 7L.",
+        "blade_id": "hu66"
       },
       "verification": {
         "status": "research_required",
@@ -113,7 +115,7 @@
         "immobiliser_system": "MLB Evo protected access/start system",
         "module_type": "Access-start authorisation system",
         "transponder_type": "MLB Evo smart-key family",
-        "blade_profile": "Emergency blade; verify profile",
+        "blade_profile": "research_required",
         "key_type": "Smart key",
         "smart_key": true,
         "access_method": {
@@ -132,7 +134,13 @@
           "Supported diagnostic interface",
           "Current security-authorisation service"
         ],
-        "notes": "Coverage changes frequently; verify tool support and legal access before accepting work."
+        "notes": "Coverage changes frequently; verify tool support and legal access before accepting work.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",

@@ -27,7 +27,7 @@
         "immobiliser_system": "MQB ID48 family",
         "module_type": "Instrument cluster / access-start system on KESSY variants",
         "transponder_type": "MQB ID48 family",
-        "blade_profile": "HU162T family; verify exact profile",
+        "blade_profile": "research_required",
         "key_type": "Remote or KESSY smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -46,7 +46,13 @@
           "Standard OBD",
           "Dashboard adapter when required"
         ],
-        "notes": "Separate keyed and KESSY variants and identify dashboard before programming."
+        "notes": "Separate keyed and KESSY variants and identify dashboard before programming.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",
@@ -70,7 +76,7 @@
         "immobiliser_system": "Later protected MQB family",
         "module_type": "Instrument cluster / access-start system",
         "transponder_type": "Later MQB key family",
-        "blade_profile": "HU162T family; verify exact profile",
+        "blade_profile": "research_required",
         "key_type": "Remote or KESSY smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -89,7 +95,13 @@
           "Standard diagnostic connection",
           "Current platform-specific security access when required"
         ],
-        "notes": "Do not assume pre-facelift and facelift dashboard access is identical."
+        "notes": "Do not assume pre-facelift and facelift dashboard access is identical.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",

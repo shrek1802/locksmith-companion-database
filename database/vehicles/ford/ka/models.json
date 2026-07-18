@@ -27,7 +27,7 @@
         "immobiliser_system": "Ford PATS legacy fixed-code",
         "immobiliser_generation": "Texas 4C",
         "transponder_type": "Texas fixed ID4C",
-        "transponder_id": "texas_4c",
+        "transponder_id": "4C",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "FO21",
@@ -108,7 +108,15 @@
               ]
             }
           ]
-        }
+        },
+        "transponder_family_id": "texas_4c",
+        "technology_family": "Texas fixed code",
+        "transponder_aliases": [
+          "4C",
+          "TEXAS 4C",
+          "Texas fixed ID4C",
+          "texas_fixed_id4c"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -256,7 +264,7 @@
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
         "immobiliser_generation": "Texas 4D-60",
         "transponder_type": "Texas 4D-60",
-        "transponder_id": "texas_4d60",
+        "transponder_id": "4D60",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "FO21",
@@ -308,7 +316,15 @@
               ]
             }
           ]
-        }
+        },
+        "transponder_family_id": "texas_4d60",
+        "technology_family": "Texas Crypto 4D",
+        "transponder_aliases": [
+          "4D60",
+          "TEX/CR 60",
+          "Texas crypto ID60",
+          "texas_crypto_id60"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -454,7 +470,7 @@
         "immobiliser_system": "Fiat CODE-derived architecture",
         "immobiliser_generation": "NXP Hitag2 ID46",
         "transponder_type": "NXP Hitag2 ID46",
-        "transponder_id": "nxp_hitag2_id46",
+        "transponder_id": "ID46",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "SIP22",
@@ -530,7 +546,15 @@
               ]
             }
           ]
-        }
+        },
+        "transponder_family_id": "nxp_hitag2_id46",
+        "technology_family": "Philips Crypto / Hitag",
+        "transponder_aliases": [
+          "ID46",
+          "PH/CR2 46",
+          "Philips Crypto 2 ID46",
+          "philips_crypto2_id46"
+        ]
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -685,7 +709,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "Texas 4D-60",
         "transponder_type": "Texas 4D-60",
-        "transponder_id": "texas_4d60",
+        "transponder_id": "4D60",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
         "blade_profile": "FO21",
@@ -718,6 +742,14 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
+        ],
+        "transponder_family_id": "texas_4d60",
+        "technology_family": "Texas Crypto 4D",
+        "transponder_aliases": [
+          "4D60",
+          "TEX/CR 60",
+          "Texas crypto ID60",
+          "texas_crypto_id60"
         ]
       },
       "verification": {
@@ -867,7 +899,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "NXP Hitag2 ID46",
         "transponder_type": "NXP Hitag2 ID46",
-        "transponder_id": "nxp_hitag2_id46",
+        "transponder_id": "ID46",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "SIP22",
@@ -940,7 +972,15 @@
               ]
             }
           ]
-        }
+        },
+        "transponder_family_id": "nxp_hitag2_id46",
+        "technology_family": "Philips Crypto / Hitag",
+        "transponder_aliases": [
+          "ID46",
+          "PH/CR2 46",
+          "Philips Crypto 2 ID46",
+          "philips_crypto2_id46"
+        ]
       },
       "verification": {
         "status": "core_data_complete",

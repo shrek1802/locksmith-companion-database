@@ -27,10 +27,10 @@
         "immobiliser_system": "Ford PATS legacy / Fiesta-derived",
         "immobiliser_generation": "Texas 4C to 4D60 build-family verification required",
         "transponder_type": "Confirm exact year/build before supply",
-        "transponder_id": "transponder_unknown",
+        "transponder_id": "research_required",
         "frequency_mhz": "433.92 — confirm original remote",
         "frequency_id": "mhz_433_92",
-        "blade_profile": "FO21 family",
+        "blade_profile": "FO21",
         "blade_id": "fo21",
         "key_type": "Mechanical ignition key / remote configuration varies",
         "button_count": "3 Buttons",
@@ -62,7 +62,11 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "transponder_family_id": "transponder_unknown",
+        "technology_family": "research_required",
+        "chip_or_ic": null,
+        "transponder_aliases": []
       },
       "verification": {
         "status": "locksmith_card_core_partially_verified",
@@ -209,7 +213,7 @@
         "immobiliser_system": "Ford PATS Hitag Pro",
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_id": "nxp_hitag_pro",
+        "transponder_id": "research_required",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -252,7 +256,16 @@
           "smart_pro",
           "xhorse_key_tool_plus",
           "xtool_x100_pad2"
-        ]
+        ],
+        "transponder_family_id": "nxp_hitag_pro",
+        "technology_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "chip_or_ic": null,
+        "transponder_aliases": [],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -370,10 +383,10 @@
         "immobiliser_system": "Ford PATS Hitag Pro",
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_id": "nxp_hitag_pro",
+        "transponder_id": "research_required",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
-        "blade_profile": "HU101 emergency blade",
+        "blade_profile": "HU101",
         "blade_id": "hu101",
         "key_type": "3-button passive key with emergency blade",
         "button_count": 3,
@@ -409,7 +422,16 @@
           "smart_pro",
           "xhorse_key_tool_plus",
           "xtool_x100_pad2"
-        ]
+        ],
+        "transponder_family_id": "nxp_hitag_pro",
+        "technology_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "chip_or_ic": null,
+        "transponder_aliases": [],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "locksmith_card_core_verified",

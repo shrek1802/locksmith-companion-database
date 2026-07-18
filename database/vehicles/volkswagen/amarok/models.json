@@ -27,7 +27,7 @@
         "immobiliser_system": "Cluster/BCM-based Volkswagen immobiliser; exact family build-dependent",
         "module_type": "Instrument cluster / BCM",
         "transponder_type": "ID48 crypto family",
-        "blade_profile": "HU66 or HU162T family depending on build; verify physically",
+        "blade_profile": "research_required",
         "key_type": "Remote key",
         "smart_key": false,
         "access_method": {
@@ -46,7 +46,16 @@
           "Standard OBD",
           "Cluster/BCM programmer when required"
         ],
-        "notes": "Identify dashboard, BCM and blade before preparing the key."
+        "notes": "Identify dashboard, BCM and blade before preparing the key.",
+        "blade_transition_candidates": [
+          "hu66"
+        ],
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",
@@ -70,7 +79,7 @@
         "immobiliser_system": "Ford-derived protected access/immobiliser architecture",
         "module_type": "BCM / gateway / access system depending on specification",
         "transponder_type": "Ford-derived later key family; confirm by VIN and original key",
-        "blade_profile": "Ford-derived emergency blade/profile; verify physically",
+        "blade_profile": "research_required",
         "key_type": "Remote or smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -89,7 +98,13 @@
           "Supported diagnostic interface",
           "Current Ford-platform security access when required"
         ],
-        "notes": "Do not apply Volkswagen MQB procedures to the second-generation Amarok."
+        "notes": "Do not apply Volkswagen MQB procedures to the second-generation Amarok.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",

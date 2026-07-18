@@ -27,7 +27,7 @@
         "immobiliser_system": "Later protected MQB dashboard/access-start family",
         "module_type": "Instrument cluster or access-start system",
         "transponder_type": "MQB ID48-family key; verify exact remote",
-        "blade_profile": "HU162T or emergency blade variant; verify",
+        "blade_profile": "research_required",
         "key_type": "Remote key or smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -46,7 +46,13 @@
           "Supported diagnostic interface",
           "Dashboard connection when explicitly required"
         ],
-        "notes": "Treat all coverage as current-tool-version dependent."
+        "notes": "Treat all coverage as current-tool-version dependent.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",

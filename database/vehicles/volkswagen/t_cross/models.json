@@ -27,7 +27,7 @@
         "immobiliser_system": "MQB protected dashboard/access-start family; verify exact cluster generation",
         "module_type": "Instrument cluster or access-start system",
         "transponder_type": "ID48/MQB smart-key family; verify fitted key",
-        "blade_profile": "HU162T or emergency blade variant; verify",
+        "blade_profile": "research_required",
         "key_type": "Remote key or smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -46,7 +46,13 @@
           "Standard OBD",
           "Dashboard connection when required"
         ],
-        "notes": "Facelift and later protected dashboards require live tool-coverage verification."
+        "notes": "Facelift and later protected dashboards require live tool-coverage verification.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",

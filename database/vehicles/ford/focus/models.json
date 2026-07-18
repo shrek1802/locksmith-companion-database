@@ -27,7 +27,7 @@
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
         "immobiliser_generation": "Texas 4D-60",
         "transponder_type": "Texas 4D-60",
-        "transponder_id": "texas_4d60",
+        "transponder_id": "4D60",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "FO21",
@@ -123,7 +123,15 @@
               ]
             }
           ]
-        }
+        },
+        "transponder_family_id": "texas_4d60",
+        "technology_family": "Texas Crypto 4D",
+        "transponder_aliases": [
+          "4D60",
+          "TEX/CR 60",
+          "Texas crypto ID60",
+          "texas_crypto_id60"
+        ]
       },
       "verification": {
         "status": "key_data_verified",
@@ -269,7 +277,7 @@
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -349,6 +357,19 @@
               ]
             }
           ]
+        },
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
         }
       },
       "verification": {
@@ -506,10 +527,10 @@
         "immobiliser_system": "Ford PATS Texas Crypto 4D",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
-        "blade_profile": "HU101 emergency blade",
+        "blade_profile": "HU101",
         "blade_id": "hu101",
         "key_type": "Passive key with emergency blade",
         "smart_key": true,
@@ -541,7 +562,20 @@
         ],
         "battery_type": "CR2032 (confirm physical key)",
         "button_count": "3 Buttons",
-        "emergency_blade": "HU101"
+        "emergency_blade": "HU101",
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "key_data_verified",
@@ -684,7 +718,7 @@
         "immobiliser_system": "Ford PATS DST80",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -756,6 +790,19 @@
               ]
             }
           ]
+        },
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
         }
       },
       "verification": {
@@ -925,10 +972,10 @@
         "immobiliser_system": "Ford PATS DST80",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
-        "blade_profile": "HU101 emergency blade",
+        "blade_profile": "HU101",
         "blade_id": "hu101",
         "key_type": "Passive key with emergency blade",
         "smart_key": true,
@@ -962,7 +1009,20 @@
         ],
         "battery_type": "CR2032 (confirm physical key)",
         "button_count": "3 Buttons",
-        "emergency_blade": "HU101"
+        "emergency_blade": "HU101",
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "key_data_verified",
@@ -1117,7 +1177,7 @@
         "immobiliser_system": "Ford PATS Hitag Pro",
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_id": "nxp_hitag_pro",
+        "transponder_id": "research_required",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -1181,6 +1241,15 @@
               ]
             }
           ]
+        },
+        "transponder_family_id": "nxp_hitag_pro",
+        "technology_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "chip_or_ic": null,
+        "transponder_aliases": [],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
         }
       },
       "verification": {
@@ -1346,10 +1415,10 @@
         "immobiliser_system": "Ford PATS Hitag Pro",
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_id": "nxp_hitag_pro",
+        "transponder_id": "research_required",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
-        "blade_profile": "HU101 emergency blade",
+        "blade_profile": "HU101",
         "blade_id": "hu101",
         "key_type": "3-button passive key with emergency blade",
         "smart_key": true,
@@ -1397,7 +1466,16 @@
           "Ford Puma 2019 HU101 433 MHz ID47 passive-key family",
           "Tourneo Custom HU101 433 MHz Hitag Pro proximity-key family",
           "Transit Courier HU101 433 MHz Hitag Pro passive-key family"
-        ]
+        ],
+        "transponder_family_id": "nxp_hitag_pro",
+        "technology_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "chip_or_ic": null,
+        "transponder_aliases": [],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "key_data_verified",
@@ -1565,11 +1643,11 @@
         "immobiliser_system": "Ford PATS",
         "immobiliser_generation": "Verification required",
         "transponder_type": "Build-dependent — identify the original transponder before key generation",
-        "transponder_id": "transponder_unknown",
+        "transponder_id": "research_required",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
-        "blade_id": "emergency_blade_unknown",
+        "blade_profile": "research_required",
+        "blade_id": null,
         "key_type": "Passive key with emergency blade",
         "smart_key": true,
         "tool_ids": [],
@@ -1601,7 +1679,16 @@
           "obdstar_g3",
           "smart_pro",
           "xhorse_key_tool_plus"
-        ]
+        ],
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        },
+        "transponder_family_id": "transponder_unknown",
+        "technology_family": "research_required",
+        "chip_or_ic": null,
+        "transponder_aliases": []
       },
       "verification": {
         "status": "verification_required",
@@ -1720,7 +1807,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "Texas 4D-60",
         "transponder_type": "Texas 4D-60",
-        "transponder_id": "texas_4d60",
+        "transponder_id": "4D60",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "FO21",
@@ -1772,7 +1859,15 @@
               ]
             }
           ]
-        }
+        },
+        "transponder_family_id": "texas_4d60",
+        "technology_family": "Texas Crypto 4D",
+        "transponder_aliases": [
+          "4D60",
+          "TEX/CR 60",
+          "Texas crypto ID60",
+          "texas_crypto_id60"
+        ]
       },
       "verification": {
         "status": "core_data_complete",
@@ -1916,7 +2011,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -1952,7 +2047,20 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "core_data_complete",
@@ -2109,7 +2217,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -2164,6 +2272,19 @@
               ]
             }
           ]
+        },
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
         }
       },
       "verification": {
@@ -2321,7 +2442,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -2376,6 +2497,19 @@
               ]
             }
           ]
+        },
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
         }
       },
       "verification": {
@@ -2533,7 +2667,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_id": "nxp_hitag_pro",
+        "transponder_id": "research_required",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -2572,7 +2706,16 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "transponder_family_id": "nxp_hitag_pro",
+        "technology_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "chip_or_ic": null,
+        "transponder_aliases": [],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "core_data_complete",
@@ -2729,7 +2872,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "NXP HITAG AES 128-Bit",
         "transponder_type": "NXP HITAG AES 128-Bit",
-        "transponder_id": "hitag_aes",
+        "transponder_id": "research_required",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -2766,7 +2909,16 @@
           "smart_pro",
           "xhorse_key_tool_plus",
           "xtool_x100_pad2"
-        ]
+        ],
+        "transponder_family_id": "hitag_aes",
+        "technology_family": "NXP HITAG AES 128-Bit",
+        "chip_or_ic": null,
+        "transponder_aliases": [],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "core_data_complete",

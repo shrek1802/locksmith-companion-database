@@ -120,7 +120,8 @@
           "Standard OBD",
           "Cluster programmer when required"
         ],
-        "notes": "Do not rely on model year alone."
+        "notes": "Do not rely on model year alone.",
+        "blade_id": "hu66"
       },
       "verification": {
         "status": "partially_verified",
@@ -155,7 +156,7 @@
         "immobiliser_family_id": "vw_mqb_48_late",
         "module_type": "Instrument cluster / access-start system",
         "transponder_type": "MQB ID48 family",
-        "blade_profile": "HU162T family; verify",
+        "blade_profile": "research_required",
         "key_type": "Remote or keyless depending on specification",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -174,7 +175,13 @@
           "Standard OBD",
           "Dashboard adapter when required"
         ],
-        "notes": "Confirm dashboard and keyless specification."
+        "notes": "Confirm dashboard and keyless specification.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",

@@ -28,7 +28,7 @@
         "immobiliser_generation": "Verification required",
         "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
-        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "blade_profile": "research_required",
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
         "notes": "Commercial derivative of Fiesta. Share technical records only after VIN/build and security equivalence are verified.",
@@ -57,7 +57,13 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
-        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "verification_required",
@@ -208,7 +214,7 @@
         "immobiliser_generation": "Verification required",
         "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
-        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "blade_profile": "research_required",
         "key_type": "Remote flip key with mechanical ignition blade",
         "smart_key": false,
         "notes": "Verify exact production boundary and whether passenger-Fiesta technical records can be shared.",
@@ -239,7 +245,13 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
-        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "verification_required",
@@ -402,7 +414,7 @@
         "immobiliser_generation": "Verification required",
         "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
-        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "blade_profile": "research_required",
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
         "notes": "Verify exact UK security specification and online/FDRS requirements by operation.",
@@ -432,7 +444,13 @@
           "obdstar_g3",
           "smart_pro",
           "xhorse_key_tool_plus"
-        ]
+        ],
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "verification_required",

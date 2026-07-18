@@ -27,7 +27,7 @@
         "immobiliser_family_id": "vw_immo_2_3",
         "module_type": "Instrument cluster / immobiliser box depending on build",
         "transponder_type": "ID13 or ID48 family depending on year",
-        "blade_profile": "HU49 or HU66 depending on build",
+        "blade_profile": "research_required",
         "key_type": "Keyed ignition",
         "smart_key": false,
         "access_method": {
@@ -46,7 +46,17 @@
           "Standard OBD",
           "EEPROM programmer when required"
         ],
-        "notes": "Confirm early and late T4 immobiliser configuration before preparing key."
+        "notes": "Confirm early and late T4 immobiliser configuration before preparing key.",
+        "blade_transition_candidates": [
+          "hu49",
+          "hu66"
+        ],
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "partially_verified",
@@ -100,7 +110,8 @@
           "Standard OBD",
           "Cluster connection when required"
         ],
-        "notes": "Identify cluster manufacturer before selecting procedure."
+        "notes": "Identify cluster manufacturer before selecting procedure.",
+        "blade_id": "hu66"
       },
       "verification": {
         "status": "partially_verified",
@@ -209,7 +220,7 @@
         "immobiliser_family_id": "vw_mqb_48_or_late_immo4",
         "module_type": "Instrument cluster",
         "transponder_type": "ID48 family",
-        "blade_profile": "HU66 or HU162T family; verify",
+        "blade_profile": "research_required",
         "key_type": "Remote key",
         "smart_key": false,
         "access_method": {
@@ -228,7 +239,16 @@
           "Standard OBD",
           "Dashboard adapter when required"
         ],
-        "notes": "Confirm dashboard family and exact key profile."
+        "notes": "Confirm dashboard family and exact key profile.",
+        "blade_transition_candidates": [
+          "hu66"
+        ],
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",
@@ -255,7 +275,7 @@
         "immobiliser_family_id": "vw_mqb_49_5c_or_protected",
         "module_type": "Instrument cluster / access-start system",
         "transponder_type": "Later protected Volkswagen key family",
-        "blade_profile": "HU162T family; verify",
+        "blade_profile": "research_required",
         "key_type": "Remote or keyless depending on specification",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -274,7 +294,13 @@
           "Standard diagnostic connection",
           "Platform-specific access when required"
         ],
-        "notes": "Check current aftermarket support and keyless specification."
+        "notes": "Check current aftermarket support and keyless specification.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",

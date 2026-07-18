@@ -27,7 +27,7 @@
         "immobiliser_system": "Ford PATS DST80",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -67,7 +67,20 @@
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
         ],
-        "emergency_blade": "Same as ignition blade"
+        "emergency_blade": "Same as ignition blade",
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -224,10 +237,10 @@
         "immobiliser_system": "Ford PATS DST80",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
-        "blade_profile": "HU101 emergency blade",
+        "blade_profile": "HU101",
         "blade_id": "hu101",
         "key_type": "3-button passive key with emergency blade",
         "button_count": 3,
@@ -264,7 +277,20 @@
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
         ],
-        "emergency_blade": "HU101 (Laser)"
+        "emergency_blade": "HU101 (Laser)",
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -421,7 +447,7 @@
         "immobiliser_system": "Ford PATS Hitag Pro",
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_id": "nxp_hitag_pro",
+        "transponder_id": "research_required",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -461,7 +487,16 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "transponder_family_id": "nxp_hitag_pro",
+        "technology_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "chip_or_ic": null,
+        "transponder_aliases": [],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -619,10 +654,10 @@
         "immobiliser_system": "Ford PATS Hitag Pro",
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_id": "nxp_hitag_pro",
+        "transponder_id": "research_required",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
-        "blade_profile": "HU101 emergency blade",
+        "blade_profile": "HU101",
         "blade_id": "hu101",
         "key_type": "3-button passive key with emergency blade",
         "button_count": 3,
@@ -659,7 +694,16 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "transponder_family_id": "nxp_hitag_pro",
+        "technology_family": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
+        "chip_or_ic": null,
+        "transponder_aliases": [],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "locksmith_card_core_verified",
@@ -820,7 +864,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -854,7 +898,20 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "core_data_complete",
@@ -999,7 +1056,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -1035,7 +1092,20 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "core_data_complete",

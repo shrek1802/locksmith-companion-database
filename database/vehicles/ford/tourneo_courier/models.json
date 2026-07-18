@@ -28,7 +28,7 @@
         "immobiliser_generation": "Verification required",
         "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
-        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "blade_profile": "research_required",
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
         "notes": "Passenger derivative of first-generation Transit Courier. Verify whether all technical security data can be shared before linking records.",
@@ -58,7 +58,13 @@
           "obdstar_g3",
           "smart_pro",
           "xhorse_key_tool_plus"
-        ]
+        ],
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "verification_required",
@@ -180,7 +186,7 @@
         "immobiliser_generation": "Verification required",
         "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
-        "blade_profile": "Emergency blade verification required",
+        "blade_profile": "research_required",
         "key_type": "Passive key with emergency blade",
         "smart_key": true,
         "notes": "Use only where passive start is confirmed. Exact UK trim and build availability remains under audit.",
@@ -210,7 +216,13 @@
           "obdstar_g3",
           "smart_pro",
           "xhorse_key_tool_plus"
-        ]
+        ],
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "verification_required",
@@ -330,7 +342,7 @@
         "immobiliser_generation": "Verification required",
         "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
-        "blade_profile": "Build-dependent — identify or decode the physical lock/key before cutting",
+        "blade_profile": "research_required",
         "key_type": "Remote key with mechanical ignition blade",
         "smart_key": false,
         "notes": "New Ford generation related to Puma architecture. Verify keyed UK availability and FDRS requirements by operation.",
@@ -360,7 +372,13 @@
           "obdstar_g3",
           "smart_pro",
           "xhorse_key_tool_plus"
-        ]
+        ],
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "verification_required",
@@ -482,7 +500,7 @@
         "immobiliser_generation": "Verification required",
         "transponder_type": "Build-dependent — identify the original transponder before key generation",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
-        "blade_profile": "Emergency blade verification required",
+        "blade_profile": "research_required",
         "key_type": "Passive key with emergency blade",
         "smart_key": true,
         "notes": "Verify online/FDRS requirements by exact operation and build. EV and ICE only split where key/security workflow differs.",
@@ -512,7 +530,13 @@
           "obdstar_g3",
           "smart_pro",
           "xhorse_key_tool_plus"
-        ]
+        ],
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "verification_required",

@@ -27,11 +27,11 @@
         "immobiliser_system": "Ford SecuriLock / PATS North American-derived architecture",
         "immobiliser_generation": "PATS I to PATS II transition by build",
         "transponder_type": "Texas fixed-code / early Ford transponder family — exact build confirmation required",
-        "transponder_id": "transponder_unknown",
+        "transponder_id": "research_required",
         "frequency_mhz": "European/UK remote application must be confirmed from original remote",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "North American Ford 8-cut family — exact profile confirmation required",
-        "blade_id": "emergency_blade_unknown",
+        "blade_profile": "research_required",
+        "blade_id": null,
         "key_type": "Mechanical ignition key with separate or integrated remote depending build",
         "button_count": "Varies by separate/original remote configuration",
         "battery_type": "Confirm against physical remote",
@@ -60,7 +60,16 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        },
+        "transponder_family_id": "transponder_unknown",
+        "technology_family": "research_required",
+        "chip_or_ic": null,
+        "transponder_aliases": []
       },
       "verification": {
         "status": "legacy_platform_core_identified",
@@ -208,11 +217,11 @@
         "immobiliser_system": "Volkswagen MEB-derived connected security architecture",
         "immobiliser_generation": "MEB/MQB-AES-derived implementation — exact Ford application verification required",
         "transponder_type": "Megamos AES family or platform-specific passive credential — exact application verification required",
-        "transponder_id": "megamos_aes",
+        "transponder_id": "research_required",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "Emergency access method and blade profile require exact vehicle/key confirmation",
-        "blade_id": "emergency_blade_unknown",
+        "blade_profile": "research_required",
+        "blade_id": null,
         "key_type": "Passive key with connected EV access features",
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
         "battery_type": "Confirm against physical remote",
@@ -242,7 +251,21 @@
           "obdstar_g3",
           "smart_pro",
           "xhorse_key_tool_plus"
-        ]
+        ],
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        },
+        "transponder_family_id": "megamos_aes",
+        "technology_family": "Megamos AES family or platform-specific passive credential — exact application verification required",
+        "chip_or_ic": null,
+        "transponder_aliases": [],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "shared_platform_core_identified",

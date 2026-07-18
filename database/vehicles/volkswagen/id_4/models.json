@@ -27,7 +27,7 @@
         "immobiliser_system": "MEB protected digital access/immobiliser architecture",
         "module_type": "Protected access-start / gateway system",
         "transponder_type": "MEB smart-key family",
-        "blade_profile": "Emergency blade; verify exact profile",
+        "blade_profile": "research_required",
         "key_type": "Smart key",
         "smart_key": true,
         "access_method": {
@@ -46,7 +46,13 @@
           "Supported diagnostic interface",
           "Current authorised security access"
         ],
-        "notes": "No universal offline aftermarket route should be assumed."
+        "notes": "No universal offline aftermarket route should be assumed.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",

@@ -54,7 +54,8 @@
           "route": "Confirm cluster and immobiliser generation",
           "online_requirement": "No"
         },
-        "notes": "Do not assume all B5 vehicles use the same immobiliser generation."
+        "notes": "Do not assume all B5 vehicles use the same immobiliser generation.",
+        "blade_id": "hu66"
       },
       "verification": {
         "status": "partially_verified",
@@ -117,7 +118,8 @@
           "route": "Use Passat 3C-specific procedure",
           "online_requirement": "No blanket online requirement"
         },
-        "notes": "Passat 3C must not be grouped with ordinary PQ35 cluster procedures."
+        "notes": "Passat 3C must not be grouped with ordinary PQ35 cluster procedures.",
+        "blade_id": "hu66"
       },
       "verification": {
         "status": "research_required",
@@ -172,7 +174,8 @@
           "route": "Keep keyed and keyless variants separate",
           "online_requirement": "No blanket online requirement"
         },
-        "notes": "Identify the exact access-start system before preparing the key."
+        "notes": "Identify the exact access-start system before preparing the key.",
+        "blade_id": "hu66"
       },
       "verification": {
         "status": "research_required",
@@ -202,7 +205,7 @@
         "immobiliser_system": "MQB ID48 immobiliser family",
         "module_type": "Instrument cluster / access-start system on KESSY variants",
         "transponder_type": "MQB ID48 family",
-        "blade_profile": "HU162T family on many keys; verify physically",
+        "blade_profile": "research_required",
         "key_type": "Remote key or KESSY smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -227,7 +230,13 @@
           "route": "Separate keyed and KESSY variants",
           "online_requirement": "No blanket online requirement"
         },
-        "notes": "Dashboard family and keyless specification determine the procedure."
+        "notes": "Dashboard family and keyless specification determine the procedure.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",
@@ -257,7 +266,7 @@
         "immobiliser_system": "Later MQB ID48 family with dashboard-dependent access",
         "module_type": "Instrument cluster / access-start system on KESSY variants",
         "transponder_type": "Later MQB ID48 family",
-        "blade_profile": "HU162T family — verify exact track and tip",
+        "blade_profile": "research_required",
         "key_type": "Remote key or KESSY smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -282,7 +291,13 @@
           "route": "Identify dashboard and keyed/KESSY configuration",
           "online_requirement": "Tool and operation dependent"
         },
-        "notes": "Do not assume all B8 facelift dashboards have identical access."
+        "notes": "Do not assume all B8 facelift dashboards have identical access.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",
@@ -312,7 +327,7 @@
         "immobiliser_system": "Later protected MQB immobiliser family",
         "module_type": "Instrument cluster / access-start system depending on specification",
         "transponder_type": "Later MQB key family — confirm by VIN and original key",
-        "blade_profile": "HU162T family — verify exact profile",
+        "blade_profile": "research_required",
         "key_type": "Remote or KESSY smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -337,7 +352,13 @@
           "route": "Vehicle-specific diagnostic/security route",
           "online_requirement": "May be required"
         },
-        "notes": "Check current tool coverage before booking Add Key or AKL work."
+        "notes": "Check current tool coverage before booking Add Key or AKL work.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "partially_verified",

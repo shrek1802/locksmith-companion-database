@@ -27,7 +27,7 @@
         "immobiliser_family_id": "vw_mqb_48_late",
         "module_type": "Instrument cluster / access-start system",
         "transponder_type": "MQB ID48 family",
-        "blade_profile": "HU162T family; verify",
+        "blade_profile": "research_required",
         "key_type": "Remote or KESSY smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -46,7 +46,13 @@
           "Standard OBD",
           "Dashboard adapter when required"
         ],
-        "notes": "Confirm dashboard and keyless specification."
+        "notes": "Confirm dashboard and keyless specification.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",
@@ -73,7 +79,7 @@
         "immobiliser_family_id": "vw_mqb_49_5c_or_late_mqb",
         "module_type": "Protected cluster/access-start system",
         "transponder_type": "Later MQB key family",
-        "blade_profile": "HU162T family; verify",
+        "blade_profile": "research_required",
         "key_type": "Remote or KESSY smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -92,7 +98,13 @@
           "Standard diagnostic connection",
           "Current platform access when required"
         ],
-        "notes": "Check live support before accepting AKL work."
+        "notes": "Check live support before accepting AKL work.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",

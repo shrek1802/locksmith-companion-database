@@ -27,7 +27,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
         "transponder_type": "Texas 4D-63 80-Bit DST80 (ID63 / 6F)",
-        "transponder_id": "texas_4d63_80bit",
+        "transponder_id": "4D63-80",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "FO21",
@@ -92,6 +92,19 @@
               ]
             }
           ]
+        },
+        "transponder_family_id": "texas_4d63_80bit",
+        "technology_family": "Texas Crypto 4D",
+        "chip_or_ic": null,
+        "transponder_aliases": [
+          "4D63-80",
+          "4D63 80",
+          "Texas Crypto 4D"
+        ],
+        "transponder_verification": {
+          "status": "research_required",
+          "confidence": "canonical_identifier_not_supported",
+          "last_checked": "2026-07-19"
         }
       },
       "verification": {

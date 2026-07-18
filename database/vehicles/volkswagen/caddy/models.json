@@ -55,7 +55,8 @@
           "online_requirement": "No blanket online requirement"
         },
         "tool_or_cable_required": "Standard OBD for supported variants; programmer connection only where cluster identification requires it",
-        "notes": "Do not select the procedure by registration year alone. Confirm cluster manufacturer and immobiliser data route."
+        "notes": "Do not select the procedure by registration year alone. Confirm cluster manufacturer and immobiliser data route.",
+        "blade_id": "hu66"
       },
       "verification": {
         "status": "partially_verified",
@@ -119,7 +120,8 @@
           "online_requirement": "No blanket online requirement"
         },
         "tool_or_cable_required": "Standard OBD or cluster-specific programmer connection",
-        "notes": "Keep this record separate from early 2K because late dashboards and tool classifications differ."
+        "notes": "Keep this record separate from early 2K because late dashboards and tool classifications differ.",
+        "blade_id": "hu66"
       },
       "verification": {
         "status": "research_required",
@@ -149,7 +151,7 @@
         "immobiliser_system": "MQB-style ID48 immobiliser classification used by locksmith tools; dashboard type must be confirmed",
         "module_type": "Instrument cluster",
         "transponder_type": "MQB ID48 family",
-        "blade_profile": "HU66 — verify physical key before cutting",
+        "blade_profile": "research_required",
         "key_type": "Remote flip key",
         "smart_key": false,
         "access_method": {
@@ -175,7 +177,16 @@
           "online_requirement": "No blanket online requirement"
         },
         "tool_or_cable_required": "Standard OBD; dashboard adapter/programmer only when required by the fitted cluster",
-        "notes": "Do not assume every 2015-2020 Caddy uses the same dashboard or key-preparation route."
+        "notes": "Do not assume every 2015-2020 Caddy uses the same dashboard or key-preparation route.",
+        "blade_transition_candidates": [
+          "hu66"
+        ],
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "research_required",
@@ -205,7 +216,7 @@
         "immobiliser_system": "Later MQB immobiliser family; keyed and keyless vehicles must be identified separately during the job",
         "module_type": "Instrument cluster / access-start system depending on specification",
         "transponder_type": "Later MQB key family — exact key must be confirmed by VIN and original key",
-        "blade_profile": "HU162T family — verify track and tip before cutting",
+        "blade_profile": "research_required",
         "key_type": "Remote key or KESSY smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -231,7 +242,13 @@
           "online_requirement": "May be required depending on tool and operation"
         },
         "tool_or_cable_required": "Standard diagnostic connection plus any current platform-specific security access required by the chosen tool",
-        "notes": "Keep keyed and KESSY identification visible in the app. Current-tool coverage must be checked before accepting AKL work."
+        "notes": "Keep keyed and KESSY identification visible in the app. Current-tool coverage must be checked before accepting AKL work.",
+        "blade_id": null,
+        "blade_verification": {
+          "status": "research_required",
+          "confidence": "conflicting_or_noncanonical_value",
+          "last_checked": "2026-07-19"
+        }
       },
       "verification": {
         "status": "partially_verified",
