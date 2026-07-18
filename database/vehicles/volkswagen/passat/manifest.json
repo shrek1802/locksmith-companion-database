@@ -1,9 +1,9 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "manufacturer": {"id": "volkswagen", "name": "Volkswagen"},
   "model": {"id": "passat", "name": "Passat"},
-  "version": 1,
+  "version": 2,
   "status": "research_in_progress",
   "files": {
     "models": "models.json",
@@ -15,8 +15,8 @@
     "photos": "photos.json"
   },
   "verification": {
-    "scope": "Initial UK RHD Passat generation and immobiliser-family mapping for app testing",
-    "programming_status": "Not verified",
-    "last_verified": "2026-07-17"
+    "scope": "UK RHD Passat generations with cautious operation-specific tool support where current evidence permits",
+    "programming_status": "Partially verified; exact module, dashboard, KESSY status and live tool coverage remain mandatory",
+    "last_verified": "2026-07-18"
   }
 }

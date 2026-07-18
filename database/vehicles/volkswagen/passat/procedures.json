@@ -1,15 +1,213 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "manufacturer": "Volkswagen",
   "model": "Passat",
+  "market": "UK",
   "procedures": {
-    "passat_b5_1997_2005_keyed": {"add_key": "PROC_VW_IMMO2_3_OBD", "all_keys_lost": "PROC_VW_IMMO2_3_DATA_ADAPTATION"},
-    "passat_b6_2005_2010_keyed": {"add_key": "PROC_VW_PASSAT_3C_IMMO4D_ADD", "all_keys_lost": "PROC_VW_PASSAT_3C_IMMO4D_AKL"},
-    "passat_b7_2010_2014": {"add_key": "PROC_VW_PASSAT_3C_LATE_ADD", "all_keys_lost": "PROC_VW_PASSAT_3C_LATE_AKL"},
-    "passat_b8_2014_2019": {"add_key": "PROC_VW_MQB48_ADD", "all_keys_lost": "PROC_VW_MQB48_AKL"},
-    "passat_b8_facelift_2019_2023": {"add_key": "PROC_VW_MQB48_LATE_ADD", "all_keys_lost": "PROC_VW_MQB48_LATE_AKL"},
-    "passat_b9_2024_present": {"add_key": "PROC_VW_MQB_PROTECTED_ADD", "all_keys_lost": "PROC_VW_MQB_PROTECTED_AKL"}
+    "passat_b5_1997_2005_keyed": {
+      "add_key": {
+        "method": "OBD adaptation after confirming Immo2 or Immo3 and obtaining the required PIN or cluster data",
+        "programming_method": "Instrument-cluster based adaptation",
+        "online_requirement": "Not Required",
+        "overall_status": "verification_required",
+        "warnings": ["No operation-specific tool is listed until current Passat B5 coverage is verified against the exact cluster."]
+      },
+      "all_keys_lost": {
+        "method": "Acquire the required immobiliser data, prepare the correct transponder and adapt all keys",
+        "programming_method": "Cluster-data or EEPROM route depending on immobiliser generation",
+        "online_requirement": "Not Required",
+        "overall_status": "verification_required",
+        "warnings": ["Identify Immo2 or Immo3 before reading or adapting keys."]
+      }
+    },
+    "passat_b6_2005_2010_keyed": {
+      "add_key": {
+        "method": "Passat 3C-specific diagnostic or saved-data route after identifying the fitted access-start system",
+        "programming_method": "Immo4D Passat 3C procedure",
+        "online_requirement": "No blanket online requirement",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Passat Immo IV key programming is available only when the exact 3C module and software route are supported.",
+            "vehicle_connection": {"required": true, "display_text": "Standard OBD or supported module-data route"},
+            "internet_required": false,
+            "warnings": ["Passat 3C is not an ordinary PQ35 cluster procedure.", "Confirm the exact access-start or comfort module before programming."]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read the required Passat 3C security data, prepare a dealer key and learn all keys",
+        "programming_method": "Supported module or EEPROM data route",
+        "online_requirement": "No blanket online requirement",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL may be available through a supported Passat 3C module-data route after exact module identification.",
+            "vehicle_connection": {"required": true, "display_text": "Module or EEPROM connection where required by the supported procedure"},
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": ["Back up and verify all security data before key learning.", "Do not infer support from model year alone."]
+          }
+        }
+      }
+    },
+    "passat_b7_2010_2014": {
+      "add_key": {
+        "method": "Diagnostic or saved-data route after confirming slot-key or KESSY specification",
+        "programming_method": "Late Passat 3C-derived Immo4D procedure",
+        "online_requirement": "No blanket online requirement",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Key programming is conditional on the fitted Passat access-start system and current software coverage.",
+            "vehicle_connection": {"required": true, "display_text": "Standard OBD or supported saved-data route"},
+            "internet_required": false,
+            "warnings": ["Keep slot-key and KESSY variants separate."]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Acquire the supported access-start or comfort-module security data and learn all keys",
+        "programming_method": "Passat module-data AKL route",
+        "online_requirement": "No blanket online requirement",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is conditional on exact module identification and a supported data-reading route.",
+            "vehicle_connection": {"required": true, "display_text": "Supported module or EEPROM connection where required"},
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": ["Confirm keyed or KESSY configuration before dismantling."]
+          }
+        }
+      }
+    },
+    "passat_b8_2014_2019": {
+      "add_key": {
+        "method": "OBD or saved MQB immobiliser-data route after identifying the exact dashboard and KESSY status",
+        "programming_method": "MQB48 dashboard-specific Add Key procedure",
+        "online_requirement": "Tool and dashboard dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "Add Key is conditional on current Autel coverage for the exact Passat dashboard and key configuration.",
+            "vehicle_connection": {"required": true, "display_text": "Standard OBD after exact dashboard identification"},
+            "internet_required": true,
+            "warnings": ["Check the live Autel menu and server availability before starting."]
+          },
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "MQB key programming is available only for a supported MQB48 dashboard family.",
+            "vehicle_connection": {"required": true, "display_text": "OBD or supported dashboard-data route"},
+            "internet_required": false,
+            "warnings": ["Identify the MQB dashboard processor before proceeding."]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read supported MQB dashboard data, calculate security data, prepare the dealer key and learn all keys",
+        "programming_method": "MQB48 dashboard-data AKL route",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is conditional on a supported MQB48 5A/5B dashboard and the required adapter route.",
+            "vehicle_connection": {"required": true, "display_text": "RH850/V850 dashboard adapter route where required"},
+            "tool_accessory_ids": ["OBDSTAR MP001", "OBDSTAR RH850/V850 adapter kit"],
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": ["Confirm processor and MQB generation before removal.", "This does not establish MQB5C support."]
+          }
+        }
+      }
+    },
+    "passat_b8_facelift_2019_2023": {
+      "add_key": {
+        "method": "Supported diagnostic, working-key or saved-data route after exact dashboard identification",
+        "programming_method": "Late MQB dashboard-specific Add Key procedure",
+        "online_requirement": "Tool and operation dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "A working-key Add Key route may be available with APB300 on a supported application.",
+            "vehicle_connection": {"required": false, "display_text": "Open and read the original working key using APB300"},
+            "tool_accessory_ids": ["Autel APB300", "Supported Autel VW-style IKEY or key PCB"],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true,
+            "warnings": ["Confirm the exact Passat key and platform in current APB300 coverage.", "This does not prove AKL support."]
+          },
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Programming is conditional on the dashboard being a supported MQB48 5A/5B type.",
+            "vehicle_connection": {"required": true, "display_text": "OBD or supported dashboard-data route"},
+            "internet_required": false,
+            "warnings": ["Later dashboards vary; identify 5A, 5B or unsupported 5C first."]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Confirm current dashboard support before accepting; supported MQB48 dashboards require security-data acquisition and dealer-key preparation",
+        "programming_method": "MQB48 5A/5B AKL route only where explicitly supported",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is available only for supported MQB48 5A/5B dashboards, not as a blanket B8 facelift claim.",
+            "vehicle_connection": {"required": true, "display_text": "RH850/V850 dashboard adapter route where supported"},
+            "tool_accessory_ids": ["OBDSTAR MP001", "OBDSTAR RH850/V850 adapter kit"],
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": ["Do not proceed until the dashboard processor is confirmed.", "MQB5C coverage is not established."]
+          }
+        }
+      }
+    },
+    "passat_b9_2024_present": {
+      "add_key": {
+        "method": "Current vehicle-specific diagnostic and security-access route only after VIN and live coverage confirmation",
+        "programming_method": "Protected MQB Evo support check",
+        "online_requirement": "May Be Required",
+        "overall_status": "verification_required",
+        "warnings": ["No blanket aftermarket Add Key claim is made for Passat B9."]
+      },
+      "all_keys_lost": {
+        "method": "Confirm current manufacturer coverage before accepting the job",
+        "programming_method": "Protected MQB Evo AKL support check",
+        "online_requirement": "Likely platform and tool dependent",
+        "overall_status": "verification_required",
+        "warnings": ["No universal aftermarket AKL route is recorded."]
+      }
+    }
   },
-  "status": "research_in_progress"
+  "status": "operation_specific_tool_support_partially_verified"
 }
