@@ -58,6 +58,7 @@ def main() -> None:
                 "source_id": source_id,
                 "source_page": row.get("page"),
                 "catalogue_row": row["raw"],
+                "key_variant_scope": row.get("key_variant_scope", "catalogue_key_type_not_recovered"),
             }
             identity = (
                 family,
