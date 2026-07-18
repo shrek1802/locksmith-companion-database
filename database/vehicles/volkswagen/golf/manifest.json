@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "manufacturer": {
     "id": "volkswagen",
     "name": "Volkswagen"
@@ -9,7 +9,7 @@
     "id": "golf",
     "name": "Golf"
   },
-  "version": 1,
+  "version": 2,
   "status": "research_in_progress",
   "files": {
     "models": "models.json",
@@ -21,8 +21,8 @@
     "photos": "photos.json"
   },
   "verification": {
-    "scope": "Six UK RHD Golf generations added for app display and schema testing",
-    "programming_status": "Research required",
-    "last_verified": "2026-07-17"
+    "scope": "Six UK RHD Golf generations with conditional operation-specific tool support added where supported by current manufacturer evidence",
+    "programming_status": "Partially verified; exact dashboard and live tool coverage checks remain mandatory",
+    "last_verified": "2026-07-18"
   }
 }
