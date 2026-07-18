@@ -43,12 +43,22 @@
       "transponder_type": "Philips Crypto 2 ID46",
       "transponder_id": "nxp_hitag2_id46",
       "transponder_verification": {
-        "status": "partially_verified",
-        "confidence": "medium",
+        "status": "verified",
+        "confidence": "high",
         "last_checked": "2026-07-18",
         "canonical_transponder_family_id": "philips_crypto2_id46",
         "record_year_range": "2005-2005",
         "evidence": [
+          {
+            "source_id": "hickleys_vehicle_keys_2026",
+            "publisher": "Hickleys",
+            "title": "Vehicle Keys, Remotes and Transponders",
+            "edition": "Current web catalogue",
+            "url": "https://www.hickleys.com/diagnostics/keys_list.php?cat=102",
+            "catalogue_rows": [
+              "Citroen C4 2004-2010: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+            ]
+          },
           {
             "source_id": "silca_car_book_4_2014",
             "publisher": "Silca",

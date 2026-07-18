@@ -113,20 +113,24 @@ def main() -> None:
                 source_apps = [app for app in evidence_apps if app["source_id"] == source_id]
                 evidence.append({
                     "source_id": source_id, "publisher": source["publisher"], "title": source["title"],
-                    "edition": source["edition"], "url": source["url"],
+                    "edition": source.get("edition", "Current web catalogue"), "url": source["url"],
                     "catalogue_rows": sorted({app["catalogue_row"] for app in source_apps}),
                 })
             verification = info.get("transponder_verification", {})
             if not isinstance(verification, dict):
                 verification = {}
-            if old_type == display and old_id == target_id and verification.get("canonical_transponder_family_id") == family_id:
-                continue
             if not concrete(old_type):
                 info["transponder_type"] = display
             if not concrete(old_id):
                 info["transponder_id"] = target_id
+            publishers = {catalogue["sources"][app["source_id"]]["publisher"] for app in evidence_apps}
+            status = "verified" if len(publishers) > 1 else "partially_verified"
+            confidence = "high" if status == "verified" else "medium"
+            if (verification.get("canonical_transponder_family_id") == family_id and verification.get("status") == status
+                    and {x.get("source_id") for x in verification.get("evidence", []) if isinstance(x, dict)} == {x["source_id"] for x in evidence}):
+                continue
             verification.update({
-                "status": "partially_verified", "confidence": "medium", "last_checked": "2026-07-18",
+                "status": status, "confidence": confidence, "last_checked": "2026-07-18",
                 "canonical_transponder_family_id": family_id, "record_year_range": f"{start}-{end}", "evidence": evidence,
             })
             info["transponder_verification"] = verification

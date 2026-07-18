@@ -23,6 +23,38 @@
       "authority": "primary",
       "checked_at": "2026-07-18",
       "scope": "Proximity, slot and remote key applications through February 2025"
+    },
+    "hickleys_vehicle_keys_2026": {
+      "publisher": "Hickleys",
+      "title": "Vehicle Keys, Remotes and Transponders",
+      "url": "https://www.hickleys.com/diagnostics/keys_list.php?cat=102",
+      "authority": "secondary_trade",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search after AI Overview did not finish rendering"
+    },
+    "nwkeys_pcf7936_id46_2026": {
+      "publisher": "NW Keys",
+      "title": "PCF7936 Philips Crypto production chip (46)",
+      "url": "https://www.nwkeys.co.uk/Product/pcf7936-philips-crypto-production-chip-46",
+      "authority": "secondary_trade",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search results"
+    },
+    "keystation_id46_2026": {
+      "publisher": "Keystation",
+      "title": "ID46 T14 PCF7936 Diagnostic Transponder Chip",
+      "url": "https://keystation.co.uk/id-46-t14-pcf7936-diagnostics-transponder-chip",
+      "authority": "secondary_trade",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search results"
+    },
+    "nwkeys_modern_philips_2026": {
+      "publisher": "NW Keys",
+      "title": "Transponder Chips catalogue page 7",
+      "url": "https://www.nwkeys.co.uk/Store/transponder-chips?page=7",
+      "authority": "secondary_trade",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search results"
     }
   },
   "items": {
@@ -1834,6 +1866,18 @@
         },
         {
           "manufacturer": "citroen",
+          "model": "c2",
+          "model_file": "database/vehicles/citroen/c2/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2005,
+          "year_to": 2009,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Citroen C2 2005-2009: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+        },
+        {
+          "manufacturer": "citroen",
           "model": "c3",
           "model_file": "database/vehicles/citroen/c3/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
@@ -1846,6 +1890,18 @@
         },
         {
           "manufacturer": "citroen",
+          "model": "c3",
+          "model_file": "database/vehicles/citroen/c3/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2006,
+          "year_to": 2010,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Citroen C3 2006-2010: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+        },
+        {
+          "manufacturer": "citroen",
           "model": "c3 picasso",
           "model_file": "database/vehicles/citroen/c3_picasso/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
@@ -1855,6 +1911,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 73,
           "catalogue_row": "C3 PICASSO 2008 VA6MH VA6FH Y Y PH / CR2 46 Y P-BOX"
+        },
+        {
+          "manufacturer": "citroen",
+          "model": "c4",
+          "model_file": "database/vehicles/citroen/c4/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2004,
+          "year_to": 2010,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Citroen C4 2004-2010: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
         },
         {
           "manufacturer": "citroen",
@@ -1933,6 +2001,18 @@
           "manufacturer": "citroen",
           "model": "c5",
           "model_file": "database/vehicles/citroen/c5/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2008,
+          "year_to": 2011,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Citroen C5 2008-2011: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+        },
+        {
+          "manufacturer": "citroen",
+          "model": "c5",
+          "model_file": "database/vehicles/citroen/c5/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 2008,
           "year_to": null,
@@ -1940,6 +2020,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 73,
           "catalogue_row": "C5 2008 HU83MH HU83TE HU83FH Y Y PH / CR2 46 Y P-BOX"
+        },
+        {
+          "manufacturer": "citroen",
+          "model": "c6",
+          "model_file": "database/vehicles/citroen/c6/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2005,
+          "year_to": 2012,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Citroen C6 2005-2012: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
         },
         {
           "manufacturer": "citroen",
@@ -3955,6 +4047,18 @@
           "manufacturer": "peugeot",
           "model": "207",
           "model_file": "database/vehicles/peugeot/207/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2006,
+          "year_to": 2012,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Peugeot 207 2006-2012: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+        },
+        {
+          "manufacturer": "peugeot",
+          "model": "207",
+          "model_file": "database/vehicles/peugeot/207/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 2006,
           "year_to": null,
@@ -4011,6 +4115,30 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 287,
           "catalogue_row": "307 2001 2009 HU83T14 PH / CR2 46"
+        },
+        {
+          "manufacturer": "peugeot",
+          "model": "307",
+          "model_file": "database/vehicles/peugeot/307/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2005,
+          "year_to": 2008,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Peugeot 307 2005-2008: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+        },
+        {
+          "manufacturer": "peugeot",
+          "model": "308",
+          "model_file": "database/vehicles/peugeot/308/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2007,
+          "year_to": 2008,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Peugeot 308 2007-2008: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
         },
         {
           "manufacturer": "peugeot",
@@ -4601,6 +4729,66 @@
           "catalogue_row": "VITARA 2002 2008 SZ11RMH SZ11RTE SZ11RFH Y PH / CR2 46 Y P-BOX"
         },
         {
+          "manufacturer": "vauxhall",
+          "model": "astra",
+          "model_file": "database/vehicles/vauxhall/astra/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2004,
+          "year_to": 2009,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Vauxhall Astra 2004-2009: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+        },
+        {
+          "manufacturer": "vauxhall",
+          "model": "corsa",
+          "model_file": "database/vehicles/vauxhall/corsa/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2007,
+          "year_to": 2014,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Vauxhall Corsa 2007-2014: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+        },
+        {
+          "manufacturer": "vauxhall",
+          "model": "signum",
+          "model_file": "database/vehicles/vauxhall/signum/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2003,
+          "year_to": 2007,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Vauxhall Signum 2003-2007: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+        },
+        {
+          "manufacturer": "vauxhall",
+          "model": "vectra",
+          "model_file": "database/vehicles/vauxhall/vectra/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2002,
+          "year_to": 2008,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Vauxhall Vectra 2002-2008: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+        },
+        {
+          "manufacturer": "vauxhall",
+          "model": "zafira",
+          "model_file": "database/vehicles/vauxhall/zafira/models.json",
+          "generation_or_chassis": "Exact model/year application published by Hickleys",
+          "year_from": 2005,
+          "year_to": 2013,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "hickleys_vehicle_keys_2026",
+          "source_page": null,
+          "catalogue_row": "Vauxhall Zafira 2005-2013: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+        },
+        {
           "manufacturer": "volkswagen",
           "model": "touareg",
           "model_file": "database/vehicles/volkswagen/touareg/models.json",
@@ -4614,9 +4802,24 @@
         }
       ],
       "evidence_source_ids": [
+        "hickleys_vehicle_keys_2026",
+        "keystation_id46_2026",
+        "nwkeys_pcf7936_id46_2026",
         "silca_car_book_4_2014",
         "silca_proximity_slot_remote_2025"
-      ]
+      ],
+      "family_verification": {
+        "status": "verified",
+        "confidence": "high",
+        "last_checked": "2026-07-18",
+        "basis": "Silca, Hickleys, NW Keys and Keystation independently identify Philips Crypto ID46/PCF7936; exact vehicle records are upgraded only where separate application ranges overlap.",
+        "source_ids": [
+          "silca_car_book_4_2014",
+          "hickleys_vehicle_keys_2026",
+          "nwkeys_pcf7936_id46_2026",
+          "keystation_id46_2026"
+        ]
+      }
     },
     "philips_crypto_id40": {
       "id": "philips_crypto_id40",
@@ -6330,8 +6533,19 @@
         }
       ],
       "evidence_source_ids": [
+        "nwkeys_modern_philips_2026",
         "silca_proximity_slot_remote_2025"
-      ]
+      ],
+      "family_verification": {
+        "status": "verified",
+        "confidence": "high",
+        "last_checked": "2026-07-18",
+        "basis": "PH/CR3 ID47 / PCF7939FA; NW Keys explicitly lists Ford Transit 2016-2018",
+        "source_ids": [
+          "silca_proximity_slot_remote_2025",
+          "nwkeys_modern_philips_2026"
+        ]
+      }
     },
     "silca_id48_a2": {
       "id": "silca_id48_a2",
@@ -6467,8 +6681,19 @@
         }
       ],
       "evidence_source_ids": [
+        "nwkeys_modern_philips_2026",
         "silca_proximity_slot_remote_2025"
-      ]
+      ],
+      "family_verification": {
+        "status": "verified",
+        "confidence": "high",
+        "last_checked": "2026-07-18",
+        "basis": "PH/CR3 ID49-1C / PCF7938XA for Honda, Hyundai and Kia",
+        "source_ids": [
+          "silca_proximity_slot_remote_2025",
+          "nwkeys_modern_philips_2026"
+        ]
+      }
     },
     "silca_id49_1e": {
       "id": "silca_id49_1e",
@@ -7012,8 +7237,19 @@
         }
       ],
       "evidence_source_ids": [
+        "nwkeys_modern_philips_2026",
         "silca_proximity_slot_remote_2025"
-      ]
+      ],
+      "family_verification": {
+        "status": "verified",
+        "confidence": "high",
+        "last_checked": "2026-07-18",
+        "basis": "PH/CR3 ID49-1E / PCF7939MA for Dacia and Renault",
+        "source_ids": [
+          "silca_proximity_slot_remote_2025",
+          "nwkeys_modern_philips_2026"
+        ]
+      }
     },
     "silca_id50": {
       "id": "silca_id50",
