@@ -1,12 +1,30 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
-  "items": [
-    "Confirm the exact Polo generation and dashboard before choosing a procedure.",
-    "Do not assume 6R and 6C use identical immobiliser access.",
-    "Verify HU66 versus HU162T physically before cutting.",
-    "Identify keyed or keyless specification on MQB vehicles.",
-    "Use stable battery support during reading and adaptation.",
-    "Check current tool coverage before accepting late MQB all-keys-lost work."
-  ]
+  "updated_at": "2026-07-18",
+  "items": {
+    "generation_identification": {
+      "display_name": "Generation identification",
+      "status": "verification_required",
+      "notes": [
+        "Confirm the exact Polo generation and dashboard before choosing a procedure.",
+        "Do not assume 6R and 6C use identical immobiliser access."
+      ]
+    },
+    "key_and_blade_checks": {
+      "display_name": "Key and blade checks",
+      "status": "verification_required",
+      "notes": [
+        "Verify HU66 versus HU162T physically before cutting.",
+        "Identify keyed or keyless specification on MQB vehicles."
+      ]
+    },
+    "workshop_precautions": {
+      "display_name": "Workshop precautions",
+      "status": "verification_required",
+      "notes": [
+        "Use stable battery support during reading and adaptation.",
+        "Check current tool coverage before accepting late MQB all-keys-lost work."
+      ]
+    }
+  }
 }
