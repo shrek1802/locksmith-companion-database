@@ -19,7 +19,7 @@ Updated: 2026-07-18
 | Batch | Structural gate | Matrix coverage | Technical disposition |
 |---|---:|---:|---|
 | MQB Passenger | Pass | 20 separate UK/RHD keyed or KESSY records | Research Required pending exact fitted-hardware and current application evidence |
-| MQB Commercial | Pending | Pending | Pending |
+| MQB Commercial | Pass | 6 separate UK/RHD keyed or KESSY records | Research Required pending exact fitted-hardware and current application evidence |
 | PQ Platform | Pending | Pending | Pending |
 | Legacy | Pending | Pending | Pending |
 | MEB | Pending | Pending | Pending |
