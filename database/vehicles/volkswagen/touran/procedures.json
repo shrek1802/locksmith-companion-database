@@ -1,1 +1,133 @@
-{"schema_version":"2.1","updated_at":"2026-07-17","items":{"touran_1t":{"add_key":"PROC_VW_IMMO4_OBD","all_keys_lost":"PROC_VW_IMMO4_CLUSTER_DATA"},"touran_1t_gp":{"add_key":"PROC_VW_IMMO4_CHALLENGE","all_keys_lost":"PROC_VW_CLUSTER_DATA"},"touran_5t":{"add_key":"PROC_VW_MQB48","all_keys_lost":"PROC_VW_MQB_DASH_DATA"}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": "Volkswagen",
+  "model": "Touran",
+  "items": {
+    "touran_1t_2003_2010": {
+      "add_key": {
+        "method": "OBD adaptation after identifying the fitted Immo IV dashboard",
+        "programming_method": "Cluster-specific diagnostic route",
+        "online_requirement": "Not Required",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Volkswagen Immo IV key programming is available on supported Touran dashboards.",
+            "vehicle_connection": {"required": true, "display_text": "Standard OBD after exact cluster identification"},
+            "internet_required": false,
+            "warnings": ["Confirm the dashboard manufacturer and immobiliser family in the current tool menu before programming."]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Acquire the required dashboard immobiliser data, prepare the dealer key and learn all keys",
+        "programming_method": "Supported Immo IV dashboard bench-data route",
+        "online_requirement": "Not Required for the documented bench route",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is available when the fitted Touran dashboard is one of the supported Volkswagen Immo IV types.",
+            "vehicle_connection": {"required": true, "display_text": "VW4-AKL cable or supported dashboard adapter as required"},
+            "tool_accessory_ids": ["OBDSTAR VW4-AKL cable"],
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": ["Do not generalise one dashboard procedure across all 1T vehicles.", "Back up and verify the dashboard data before key learning."]
+          }
+        }
+      }
+    },
+    "touran_1t_gp_2010_2015": {
+      "add_key": {
+        "method": "Diagnostic or saved-data route after exact dashboard identification",
+        "programming_method": "Late Immo IV dashboard-specific Add Key route",
+        "online_requirement": "Tool and dashboard dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Key programming is available where the fitted late Touran dashboard appears in current Immo IV coverage.",
+            "vehicle_connection": {"required": true, "display_text": "Standard OBD or supported dashboard-data route"},
+            "internet_required": false,
+            "warnings": ["Do not select Challenge or later dashboard classifications by year alone."]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read the supported dashboard data, prepare the dealer key and learn all keys",
+        "programming_method": "Dashboard-specific bench-data route",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is conditional on exact dashboard processor and current adapter coverage.",
+            "vehicle_connection": {"required": true, "display_text": "Supported dashboard adapter or VW4-AKL route"},
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": ["Confirm the processor and EEPROM family before removal or reading."]
+          }
+        }
+      }
+    },
+    "touran_5t_2015_present": {
+      "add_key": {
+        "method": "Supported diagnostic, working-key or saved-data route after dashboard and keyed/KESSY identification",
+        "programming_method": "MQB48 dashboard-specific Add Key route",
+        "online_requirement": "Tool and operation dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "A working-key Add Key route may be available through APB300 on supported MQB applications.",
+            "vehicle_connection": {"required": false, "display_text": "Open and read the supported working key using APB300"},
+            "tool_accessory_ids": ["Autel APB300"],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true,
+            "warnings": ["Confirm the exact Touran key and current APB300 coverage before accepting the job."]
+          },
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "MQB key programming is available only when the fitted dashboard is a supported MQB48 5A/5B type.",
+            "vehicle_connection": {"required": true, "display_text": "OBD or supported dashboard-data route"},
+            "internet_required": false,
+            "warnings": ["Identify MQB5A, MQB5B or MQB5C before proceeding."]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Acquire supported MQB dashboard data, calculate security data, prepare the dealer key and learn all keys",
+        "programming_method": "MQB48 5A/5B dashboard-data AKL route",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is available for supported MQB48 5A/5B dashboards, not as a blanket Touran 5T claim.",
+            "vehicle_connection": {"required": true, "display_text": "RH850/V850 dashboard adapter route where required"},
+            "tool_accessory_ids": ["OBDSTAR MP001", "OBDSTAR RH850/V850 adapter kit"],
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": ["Confirm dashboard processor and MQB generation before work.", "MQB5C AKL coverage is not established."]
+          }
+        }
+      }
+    }
+  }
+}
