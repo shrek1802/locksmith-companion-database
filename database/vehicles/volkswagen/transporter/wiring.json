@@ -2,18 +2,21 @@
   "schema_version": "2.1",
   "updated_at": "2026-07-17",
   "items": {
-    "obd": {
+    "volkswagen_transporter_obd": {
       "location": "Driver footwell/dashboard area; confirm UK RHD trim",
       "connector": "16-pin diagnostic socket",
-      "display_name": "Obd"
+      "display_name": "Obd",
+      "legacy_item_id": "obd"
     },
-    "bench": {
+    "volkswagen_transporter_bench": {
       "note": "Use module-specific verified pinout only; no universal Transporter pinout.",
-      "display_name": "Bench"
+      "display_name": "Bench",
+      "legacy_item_id": "bench"
     },
-    "power": {
+    "volkswagen_transporter_power": {
       "note": "Use stable battery support during diagnostic programming.",
-      "display_name": "Power"
+      "display_name": "Power",
+      "legacy_item_id": "power"
     }
   }
 }

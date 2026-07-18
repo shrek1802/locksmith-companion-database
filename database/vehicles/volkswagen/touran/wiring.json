@@ -2,18 +2,21 @@
   "schema_version": "2.1",
   "updated_at": "2026-07-17",
   "items": {
-    "obd": {
+    "volkswagen_touran_obd": {
       "location": "Driver footwell/dashboard area; UK RHD",
       "connector": "16-pin diagnostic socket",
-      "display_name": "Obd"
+      "display_name": "Obd",
+      "legacy_item_id": "obd"
     },
-    "bench": {
+    "volkswagen_touran_bench": {
       "note": "Use verified cluster-specific connection only.",
-      "display_name": "Bench"
+      "display_name": "Bench",
+      "legacy_item_id": "bench"
     },
-    "power": {
+    "volkswagen_touran_power": {
       "note": "Use stable battery support during programming.",
-      "display_name": "Power"
+      "display_name": "Power",
+      "legacy_item_id": "power"
     }
   }
 }

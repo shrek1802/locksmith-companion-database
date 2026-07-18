@@ -2,15 +2,17 @@
   "schema_version": "2.1",
   "updated_at": "2026-07-18",
   "items": {
-    "instrument_cluster": {
+    "volkswagen_t_cross_instrument_cluster": {
       "name": "Instrument Cluster",
       "verification": "required",
-      "display_name": "Instrument Cluster"
+      "display_name": "Instrument Cluster",
+      "legacy_item_id": "instrument_cluster"
     },
-    "access_start": {
+    "volkswagen_t_cross_access_start": {
       "name": "Access/Start Authorisation System",
       "verification": "variant_dependent",
-      "display_name": "Access/Start Authorisation System"
+      "display_name": "Access/Start Authorisation System",
+      "legacy_item_id": "access_start"
     }
   }
 }

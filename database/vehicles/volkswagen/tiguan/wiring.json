@@ -2,18 +2,21 @@
   "schema_version": "2.1",
   "updated_at": "2026-07-17",
   "items": {
-    "obd": {
+    "volkswagen_tiguan_obd": {
       "location": "Driver footwell/dashboard area; UK RHD",
       "connector": "16-pin diagnostic socket",
-      "display_name": "Obd"
+      "display_name": "Obd",
+      "legacy_item_id": "obd"
     },
-    "bench": {
+    "volkswagen_tiguan_bench": {
       "note": "Use verified module-specific pinout only.",
-      "display_name": "Bench"
+      "display_name": "Bench",
+      "legacy_item_id": "bench"
     },
-    "power": {
+    "volkswagen_tiguan_power": {
       "note": "Stable battery support required.",
-      "display_name": "Power"
+      "display_name": "Power",
+      "legacy_item_id": "power"
     }
   }
 }

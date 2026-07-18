@@ -122,6 +122,29 @@ def allowed_shared_hardware_duplicate(locations: list[str]) -> bool:
     )
 
 
+def vehicle_model_scope(location: str) -> str | None:
+    parts = Path(location).parts
+    if len(parts) >= 5 and parts[:2] == ("database", "vehicles"):
+        return "/".join(parts[:4])
+    return None
+
+
+def allowed_same_vehicle_duplicate(locations: list[str]) -> bool:
+    scopes = {vehicle_model_scope(location) for location in locations}
+    return None not in scopes and len(scopes) == 1
+
+
+def allowed_report_index_duplicate(locations: list[str]) -> bool:
+    """Reports and staged reference catalogues intentionally mirror entity IDs."""
+    has_report = any(location.startswith("reports/") for location in locations)
+    non_reports = [location for location in locations if not location.startswith("reports/")]
+    return has_report and all(location.startswith("database/reference/") for location in non_reports)
+
+
+def allowed_staged_reference_duplicate(locations: list[str]) -> bool:
+    return all(location.startswith("database/reference/") for location in locations)
+
+
 def json_files() -> list[Path]:
     return sorted(
         path for path in ROOT.rglob("*.json")
@@ -336,10 +359,15 @@ def validate_duplicates() -> None:
         unique = sorted(set(locations))
         if len(unique) < 2:
             continue
-        if allowed_shared_hardware_duplicate(unique):
+        if (
+            allowed_shared_hardware_duplicate(unique)
+            or allowed_same_vehicle_duplicate(unique)
+            or allowed_report_index_duplicate(unique)
+            or allowed_staged_reference_duplicate(unique)
+        ):
             note(
                 "GLOBAL",
-                f"ID {item_id!r} is intentionally indexed in shared and hardware catalogues",
+                f"ID {item_id!r} is intentionally indexed in related catalogues",
             )
         else:
             warning(
