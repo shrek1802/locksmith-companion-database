@@ -55,6 +55,38 @@
       "authority": "secondary_trade",
       "checked_at": "2026-07-18",
       "discovered_via": "Google search results"
+    },
+    "keystation_texas_4c_2026": {
+      "publisher": "Keystation",
+      "title": "Texas 4C T3 Transponder Diagnostic Chip for Ford",
+      "url": "https://keystation.co.uk/texas-4c-t3-transponder-diagnostic-chip-for-ford",
+      "authority": "secondary_trade",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search results after AI Overview did not finish rendering"
+    },
+    "keystation_texas_id60_2026": {
+      "publisher": "Keystation",
+      "title": "Texas ID60 4D60 T7 Glass Transponder Diagnostic Chip for Ford",
+      "url": "https://keystation.co.uk/texas-id60-4d60-t7-glass-transponder-diagnostic-chip-for-ford",
+      "authority": "secondary_trade",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search results"
+    },
+    "keystation_texas_id63_2026": {
+      "publisher": "Keystation",
+      "title": "Texas ID63 T17 80-bit Transponder Diagnostic Chip for Ford and Mazda",
+      "url": "https://keystation.co.uk/texas-id63-t17-carbon-transponder-diagnostic-chip-for-ford-mazda",
+      "authority": "secondary_trade",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search results"
+    },
+    "hickleys_cloning_transponders_2026": {
+      "publisher": "Hickleys",
+      "title": "Transponders - Cloning",
+      "url": "https://www.hickleys.com/diagnostics/keys_list.php?cat=105",
+      "authority": "secondary_trade",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search results"
     }
   },
   "items": {
@@ -8161,7 +8193,7 @@
       "silca_code": "TEX/CR 60",
       "status": "catalogue_supported",
       "confidence": "high",
-      "repository_transponder_id": "texas_crypto_id60",
+      "repository_transponder_id": "texas_4d60",
       "market_scope": "UK database model set",
       "supported_manufacturers": [
         "ford",
@@ -8277,6 +8309,18 @@
           "manufacturer": "ford",
           "model": "focus",
           "model_file": "database/vehicles/ford/focus/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 1998,
+          "year_to": 2005,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_id60_2026",
+          "source_page": null,
+          "catalogue_row": "Ford Focus 1998-2005: Texas ID60 / 4D60 / T7"
+        },
+        {
+          "manufacturer": "ford",
+          "model": "focus",
+          "model_file": "database/vehicles/ford/focus/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 1998,
           "year_to": 2007,
@@ -8313,6 +8357,18 @@
           "manufacturer": "ford",
           "model": "mondeo",
           "model_file": "database/vehicles/ford/mondeo/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 2001,
+          "year_to": 2007,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_id60_2026",
+          "source_page": null,
+          "catalogue_row": "Ford Mondeo 2001-2007: Texas ID60 / 4D60 / T7"
+        },
+        {
+          "manufacturer": "ford",
+          "model": "mondeo",
+          "model_file": "database/vehicles/ford/mondeo/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 2001,
           "year_to": 2007,
@@ -8337,6 +8393,18 @@
           "manufacturer": "ford",
           "model": "transit",
           "model_file": "database/vehicles/ford/transit/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 2000,
+          "year_to": 2006,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_id60_2026",
+          "source_page": null,
+          "catalogue_row": "Ford Transit 2000-2006: Texas ID60 / 4D60 / T7"
+        },
+        {
+          "manufacturer": "ford",
+          "model": "transit",
+          "model_file": "database/vehicles/ford/transit/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 2000,
           "year_to": 2006,
@@ -8344,6 +8412,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 113,
           "catalogue_row": "TRANSIT 2000 2006 FO21T7 TEX / CR 60 S5"
+        },
+        {
+          "manufacturer": "ford",
+          "model": "transit connect",
+          "model_file": "database/vehicles/ford/transit_connect/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 2002,
+          "year_to": 2008,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_id60_2026",
+          "source_page": null,
+          "catalogue_row": "Ford Transit Connect 2002-2008: Texas ID60 / 4D60 / T7"
         },
         {
           "manufacturer": "hyundai",
@@ -8373,6 +8453,18 @@
           "manufacturer": "jaguar",
           "model": "s type",
           "model_file": "database/vehicles/jaguar/s_type/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 1999,
+          "year_to": 2009,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_id60_2026",
+          "source_page": null,
+          "catalogue_row": "Jaguar S Type 1999-2009: Texas ID60 / 4D60 / T7"
+        },
+        {
+          "manufacturer": "jaguar",
+          "model": "s type",
+          "model_file": "database/vehicles/jaguar/s_type/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 2000,
           "year_to": 2008,
@@ -8385,6 +8477,18 @@
           "manufacturer": "jaguar",
           "model": "x type",
           "model_file": "database/vehicles/jaguar/x_type/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 1999,
+          "year_to": 2009,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_id60_2026",
+          "source_page": null,
+          "catalogue_row": "Jaguar X Type 1999-2009: Texas ID60 / 4D60 / T7"
+        },
+        {
+          "manufacturer": "jaguar",
+          "model": "x type",
+          "model_file": "database/vehicles/jaguar/x_type/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 2002,
           "year_to": 2008,
@@ -8392,6 +8496,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 179,
           "catalogue_row": "X-TYPE 2002 2008 FO21MH FO21TE FO21FH Y Y TEX / CR 60 Y P-BOX"
+        },
+        {
+          "manufacturer": "jaguar",
+          "model": "xj",
+          "model_file": "database/vehicles/jaguar/xj/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 2002,
+          "year_to": 2010,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_id60_2026",
+          "source_page": null,
+          "catalogue_row": "Jaguar Xj 2002-2010: Texas ID60 / 4D60 / T7"
         },
         {
           "manufacturer": "jaguar",
@@ -8440,6 +8556,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 205,
           "catalogue_row": "SPORTAGE 2001 2003 KIA3RT16 TEX / CR 60"
+        },
+        {
+          "manufacturer": "ldv",
+          "model": "convoy",
+          "model_file": "database/vehicles/ldv/convoy/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 2000,
+          "year_to": 2008,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_id60_2026",
+          "source_page": null,
+          "catalogue_row": "Ldv Convoy 2000-2008: Texas ID60 / 4D60 / T7"
         },
         {
           "manufacturer": "lexus",
@@ -8743,8 +8871,21 @@
         }
       ],
       "evidence_source_ids": [
+        "hickleys_cloning_transponders_2026",
+        "keystation_texas_id60_2026",
         "silca_car_book_4_2014"
-      ]
+      ],
+      "family_verification": {
+        "status": "verified",
+        "confidence": "high",
+        "last_checked": "2026-07-18",
+        "basis": "Silca and Keystation independently agree on the family and exact listed applications; Hickleys independently corroborates the Texas cloning-family identifiers.",
+        "source_ids": [
+          "silca_car_book_4_2014",
+          "keystation_texas_id60_2026",
+          "hickleys_cloning_transponders_2026"
+        ]
+      }
     },
     "texas_crypto_id61": {
       "id": "texas_crypto_id61",
@@ -9272,8 +9413,21 @@
         }
       ],
       "evidence_source_ids": [
+        "hickleys_cloning_transponders_2026",
+        "keystation_texas_id63_2026",
         "silca_car_book_4_2014"
-      ]
+      ],
+      "family_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "basis": "The ID63 family is independently corroborated, but Keystation explicitly identifies its listed product as 80-bit while older Silca rows do not state bit length. No application was copied across that distinction.",
+        "source_ids": [
+          "silca_car_book_4_2014",
+          "keystation_texas_id63_2026",
+          "hickleys_cloning_transponders_2026"
+        ]
+      }
     },
     "texas_crypto_id64": {
       "id": "texas_crypto_id64",
@@ -9924,6 +10078,18 @@
         },
         {
           "manufacturer": "ford",
+          "model": "fiesta",
+          "model_file": "database/vehicles/ford/fiesta/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 1995,
+          "year_to": 2003,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_4c_2026",
+          "source_page": null,
+          "catalogue_row": "Ford Fiesta 1995-2003: Texas ID4C"
+        },
+        {
+          "manufacturer": "ford",
           "model": "ka",
           "model_file": "database/vehicles/ford/ka/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
@@ -9938,6 +10104,18 @@
           "manufacturer": "ford",
           "model": "ka",
           "model_file": "database/vehicles/ford/ka/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 1996,
+          "year_to": 2008,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_4c_2026",
+          "source_page": null,
+          "catalogue_row": "Ford Ka 1996-2008: Texas ID4C"
+        },
+        {
+          "manufacturer": "ford",
+          "model": "ka",
+          "model_file": "database/vehicles/ford/ka/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 1998,
           "year_to": 2002,
@@ -9945,6 +10123,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 115,
           "catalogue_row": "KA 1998 2002 FO21T3 TEXAS 4C S2"
+        },
+        {
+          "manufacturer": "ford",
+          "model": "mondeo",
+          "model_file": "database/vehicles/ford/mondeo/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 1995,
+          "year_to": 2001,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_4c_2026",
+          "source_page": null,
+          "catalogue_row": "Ford Mondeo 1995-2001: Texas ID4C"
         },
         {
           "manufacturer": "ford",
@@ -10029,6 +10219,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 125,
           "catalogue_row": "RANGER 1999 2000 FO38RT3 TEXAS 4C C"
+        },
+        {
+          "manufacturer": "ford",
+          "model": "transit",
+          "model_file": "database/vehicles/ford/transit/models.json",
+          "generation_or_chassis": "Exact model/year application published by Keystation",
+          "year_from": 1995,
+          "year_to": 2000,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_texas_4c_2026",
+          "source_page": null,
+          "catalogue_row": "Ford Transit 1995-2000: Texas ID4C"
         },
         {
           "manufacturer": "ford",
@@ -10464,8 +10666,21 @@
         }
       ],
       "evidence_source_ids": [
+        "hickleys_cloning_transponders_2026",
+        "keystation_texas_4c_2026",
         "silca_car_book_4_2014"
-      ]
+      ],
+      "family_verification": {
+        "status": "verified",
+        "confidence": "high",
+        "last_checked": "2026-07-18",
+        "basis": "Silca and Keystation independently agree on the family and exact listed applications; Hickleys independently corroborates the Texas cloning-family identifiers.",
+        "source_ids": [
+          "silca_car_book_4_2014",
+          "keystation_texas_4c_2026",
+          "hickleys_cloning_transponders_2026"
+        ]
+      }
     },
     "texas_megamos_application_id6e": {
       "id": "texas_megamos_application_id6e",

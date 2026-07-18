@@ -30,6 +30,26 @@ SOURCES = {
         "url": "https://www.nwkeys.co.uk/Store/transponder-chips?page=7", "authority": "secondary_trade",
         "checked_at": "2026-07-18", "discovered_via": "Google search results",
     },
+    "keystation_texas_4c_2026": {
+        "publisher": "Keystation", "title": "Texas 4C T3 Transponder Diagnostic Chip for Ford",
+        "url": "https://keystation.co.uk/texas-4c-t3-transponder-diagnostic-chip-for-ford",
+        "authority": "secondary_trade", "checked_at": "2026-07-18", "discovered_via": "Google search results after AI Overview did not finish rendering",
+    },
+    "keystation_texas_id60_2026": {
+        "publisher": "Keystation", "title": "Texas ID60 4D60 T7 Glass Transponder Diagnostic Chip for Ford",
+        "url": "https://keystation.co.uk/texas-id60-4d60-t7-glass-transponder-diagnostic-chip-for-ford",
+        "authority": "secondary_trade", "checked_at": "2026-07-18", "discovered_via": "Google search results",
+    },
+    "keystation_texas_id63_2026": {
+        "publisher": "Keystation", "title": "Texas ID63 T17 80-bit Transponder Diagnostic Chip for Ford and Mazda",
+        "url": "https://keystation.co.uk/texas-id63-t17-carbon-transponder-diagnostic-chip-for-ford-mazda",
+        "authority": "secondary_trade", "checked_at": "2026-07-18", "discovered_via": "Google search results",
+    },
+    "hickleys_cloning_transponders_2026": {
+        "publisher": "Hickleys", "title": "Transponders - Cloning",
+        "url": "https://www.hickleys.com/diagnostics/keys_list.php?cat=105", "authority": "secondary_trade",
+        "checked_at": "2026-07-18", "discovered_via": "Google search results",
+    },
 }
 
 # Exact Hickleys applications whose model folder exists in the UK repository.
@@ -42,6 +62,19 @@ ID46_APPLICATIONS = [
     ("citroen", "c2", 2005, 2009), ("citroen", "c3", 2006, 2010),
     ("citroen", "c5", 2008, 2011),
 ]
+
+TEXAS_APPLICATIONS = {
+    "texas_fixed_id4c": [
+        ("ford", "fiesta", 1995, 2003), ("ford", "ka", 1996, 2008),
+        ("ford", "mondeo", 1995, 2001), ("ford", "transit", 1995, 2000),
+    ],
+    "texas_crypto_id60": [
+        ("ford", "focus", 1998, 2005), ("ford", "mondeo", 2001, 2007),
+        ("ford", "transit", 2000, 2006), ("ford", "transit_connect", 2002, 2008),
+        ("jaguar", "s_type", 1999, 2009), ("jaguar", "x_type", 1999, 2009),
+        ("jaguar", "xj", 2002, 2010), ("ldv", "convoy", 2000, 2008),
+    ],
+}
 
 
 def model_path(make: str, model: str) -> str:
@@ -84,6 +117,40 @@ def main() -> None:
         item = data["items"][family_id]
         item["evidence_source_ids"] = sorted(set(item["evidence_source_ids"]) | {"nwkeys_modern_philips_2026"})
         item["family_verification"] = {"status": "verified", "confidence": "high", "last_checked": "2026-07-18", "basis": basis, "source_ids": ["silca_proximity_slot_remote_2025", "nwkeys_modern_philips_2026"]}
+    for family_id, applications in TEXAS_APPLICATIONS.items():
+        item = data["items"][family_id]
+        source_id = "keystation_texas_4c_2026" if family_id == "texas_fixed_id4c" else "keystation_texas_id60_2026"
+        if family_id == "texas_crypto_id60":
+            item["repository_transponder_id"] = "texas_4d60"
+        existing = {(x["model_file"], x["year_from"], x.get("year_to"), x["source_id"]) for x in item["applications"]}
+        for make, model, start, end in applications:
+            relative = model_path(make, model)
+            if not (ROOT / relative).exists():
+                continue
+            row = {
+                "manufacturer": make, "model": model.replace("_", " "), "model_file": relative,
+                "generation_or_chassis": "Exact model/year application published by Keystation",
+                "year_from": start, "year_to": end, "key_variant_scope": "keyed_or_remote_transponder_key",
+                "source_id": source_id, "source_page": None,
+                "catalogue_row": f"{make.title()} {model.replace('_', ' ').title()} {start}-{end}: {'Texas ID4C' if family_id == 'texas_fixed_id4c' else 'Texas ID60 / 4D60 / T7'}",
+            }
+            key = (relative, start, end, source_id)
+            if key not in existing:
+                item["applications"].append(row); existing.add(key)
+        item["applications"].sort(key=lambda x: (x["manufacturer"], x["model"], x["year_from"], x.get("year_to") or 9999, x["source_id"]))
+        item["evidence_source_ids"] = sorted(set(item["evidence_source_ids"]) | {source_id, "hickleys_cloning_transponders_2026"})
+        item["family_verification"] = {
+            "status": "verified", "confidence": "high", "last_checked": "2026-07-18",
+            "basis": "Silca and Keystation independently agree on the family and exact listed applications; Hickleys independently corroborates the Texas cloning-family identifiers.",
+            "source_ids": ["silca_car_book_4_2014", source_id, "hickleys_cloning_transponders_2026"],
+        }
+    id63 = data["items"]["texas_crypto_id63"]
+    id63["evidence_source_ids"] = sorted(set(id63["evidence_source_ids"]) | {"keystation_texas_id63_2026", "hickleys_cloning_transponders_2026"})
+    id63["family_verification"] = {
+        "status": "partially_verified", "confidence": "medium", "last_checked": "2026-07-18",
+        "basis": "The ID63 family is independently corroborated, but Keystation explicitly identifies its listed product as 80-bit while older Silca rows do not state bit length. No application was copied across that distinction.",
+        "source_ids": ["silca_car_book_4_2014", "keystation_texas_id63_2026", "hickleys_cloning_transponders_2026"],
+    }
     CATALOGUE.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({"id46_trade_applications_added": added, "family_statuses_upgraded": 4}))
 

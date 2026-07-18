@@ -65,12 +65,22 @@
         ],
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
         "transponder_verification": {
-          "status": "partially_verified",
-          "confidence": "medium",
+          "status": "verified",
+          "confidence": "high",
           "last_checked": "2026-07-18",
           "canonical_transponder_family_id": "texas_fixed_id4c",
           "record_year_range": "1996-2000",
           "evidence": [
+            {
+              "source_id": "keystation_texas_4c_2026",
+              "publisher": "Keystation",
+              "title": "Texas 4C T3 Transponder Diagnostic Chip for Ford",
+              "edition": "Current web catalogue",
+              "url": "https://keystation.co.uk/texas-4c-t3-transponder-diagnostic-chip-for-ford",
+              "catalogue_rows": [
+                "Ford Mondeo 1995-2001: Texas ID4C"
+              ]
+            },
             {
               "source_id": "silca_car_book_4_2014",
               "publisher": "Silca",
@@ -486,6 +496,35 @@
               "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
               "catalogue_rows": [
                 "Ford Mondeo B4Y/B5Y/BWY 2001 2006 FO21 433AM"
+              ]
+            }
+          ]
+        },
+        "transponder_verification": {
+          "status": "verified",
+          "confidence": "high",
+          "last_checked": "2026-07-18",
+          "canonical_transponder_family_id": "texas_crypto_id60",
+          "record_year_range": "2001-2006",
+          "evidence": [
+            {
+              "source_id": "keystation_texas_id60_2026",
+              "publisher": "Keystation",
+              "title": "Texas ID60 4D60 T7 Glass Transponder Diagnostic Chip for Ford",
+              "edition": "Current web catalogue",
+              "url": "https://keystation.co.uk/texas-id60-4d60-t7-glass-transponder-diagnostic-chip-for-ford",
+              "catalogue_rows": [
+                "Ford Mondeo 2001-2007: Texas ID60 / 4D60 / T7"
+              ]
+            },
+            {
+              "source_id": "silca_car_book_4_2014",
+              "publisher": "Silca",
+              "title": "The Car Book 4 - Car Keys Guide",
+              "edition": "2014",
+              "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+              "catalogue_rows": [
+                "MONDEO 2001 2007 FO21T7 TEX / CR 60 S5"
               ]
             }
           ]

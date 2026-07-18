@@ -81,12 +81,22 @@
           ]
         },
         "transponder_verification": {
-          "status": "partially_verified",
-          "confidence": "medium",
+          "status": "verified",
+          "confidence": "high",
           "last_checked": "2026-07-18",
           "canonical_transponder_family_id": "texas_fixed_id4c",
           "record_year_range": "1996-2001",
           "evidence": [
+            {
+              "source_id": "keystation_texas_4c_2026",
+              "publisher": "Keystation",
+              "title": "Texas 4C T3 Transponder Diagnostic Chip for Ford",
+              "edition": "Current web catalogue",
+              "url": "https://keystation.co.uk/texas-4c-t3-transponder-diagnostic-chip-for-ford",
+              "catalogue_rows": [
+                "Ford Ka 1996-2008: Texas ID4C"
+              ]
+            },
             {
               "source_id": "silca_car_book_4_2014",
               "publisher": "Silca",
