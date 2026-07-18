@@ -5,36 +5,26 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "roadster_uk_scope",
-      "name": "Roadster UK-market generations",
-      "years": "Generation/build-date specific; verify by VIN",
+      "id": "r59_uk_2011_2015_proximity",
+      "name": "R59 UK proximity/emergency-insert generation",
+      "years": "2011-2015",
       "platform": "Exact chassis/platform requires generation confirmation",
       "immobiliser_family": "BMW Group EWS/CAS/FEM/BDC-derived architecture varies by MINI generation and fitted hardware",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
-        {
-          "type": "slot_key",
-          "status": "research_required"
-        },
-        {
           "type": "proximity",
-          "status": "research_required"
-        },
-        {
-          "type": "keyless",
-          "status": "research_required"
+          "status": "partially_verified"
         }
       ],
       "status": "partially_verified",
       "blade_profile": "HU200",
       "blade_verification": {
-        "status": "verified",
-        "confidence": "high",
+        "status": "partially_verified",
+        "confidence": "medium",
         "last_checked": "2026-07-18",
-        "catalogue_application": "MINI Roadster (R59), 2011-2015",
+        "canonical_blade_family_id": "hu200",
+        "record_year_range": "2011-2015",
+        "key_variant_scope": "proximity",
         "evidence": [
           {
             "publisher": "Silca",
@@ -51,8 +41,24 @@
             "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
             "checked_at": "2026-07-18",
             "confidence": "high"
+          },
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Mini Roadster R59 2011 2015 HU200 868FM"
+            ]
           }
         ]
+      },
+      "blade_id": "hu200",
+      "catalogue_split": {
+        "origin_generation_id": "roadster_uk_scope",
+        "boundary_basis": "Silca application range intersected with UK/OEM generation evidence where available",
+        "last_checked": "2026-07-18"
       }
     }
   ],

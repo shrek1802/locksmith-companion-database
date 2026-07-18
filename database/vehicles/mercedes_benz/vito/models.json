@@ -5,8 +5,49 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "vito_uk_scope",
-      "name": "Vito UK-market generations",
+      "id": "vito_1996_2014_ym15",
+      "name": "Vito catalogue-supported keyed range",
+      "years": "1996-2014",
+      "platform": "Exact chassis/platform requires generation confirmation",
+      "immobiliser_family": "DAS/FBS generation, EIS/EZS, ESL/ELV and key type require exact chassis and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "YM15",
+      "blade_id": "ym15",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "ym15",
+        "record_year_range": "1996-2014",
+        "key_variant_scope": "keyed_or_remote",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "VITO 1996 YM15P YM15FH"
+            ]
+          }
+        ]
+      },
+      "catalogue_split": {
+        "origin_generation_id": "vito_uk_scope",
+        "boundary_basis": "Silca application range intersected with UK/OEM generation evidence where available",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "vito_uk_scope_other_generations_blade_research",
+      "name": "Vito UK-market generations - other generations requiring blade evidence",
       "years": "Generation/build-date specific; verify by VIN",
       "platform": "Exact chassis/platform requires generation confirmation",
       "immobiliser_family": "DAS/FBS generation, EIS/EZS, ESL/ELV and key type require exact chassis and fitted-hardware evidence",
@@ -28,7 +69,19 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "outside_normalised_catalogue_range",
+        "last_checked": "2026-07-18"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "vito_uk_scope",
+        "boundary_basis": "Retained for generations outside the exact catalogue/OEM mapping",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {
