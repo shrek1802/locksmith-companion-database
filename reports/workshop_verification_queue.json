@@ -3,7 +3,7 @@
   "generated_at": "2026-07-18",
   "market": "UK",
   "drive_side": "RHD",
-  "count": 915,
+  "count": 1043,
   "items": {
     "audi_a1_manifest_1": {
       "manufacturer": "audi",
@@ -2792,6 +2792,1414 @@
       "file": "database/vehicles/audi/tt/wiring.json",
       "json_path": "connections/1/status",
       "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_manifest_1": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/manifest.json",
+      "json_path": "verification/status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_models_2": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/models.json",
+      "json_path": "generations/0/key_variants/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_models_3": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/models.json",
+      "json_path": "generations/0/key_variants/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_models_4": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/models.json",
+      "json_path": "generations/0/status",
+      "current_status": "partially_verified",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_modules_5": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/modules.json",
+      "json_path": "modules/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_modules_6": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/modules.json",
+      "json_path": "modules/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_modules_7": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/modules.json",
+      "json_path": "modules/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_notes_8": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/notes.json",
+      "json_path": "status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_procedures_9": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/procedures.json",
+      "json_path": "procedures/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_procedures_10": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/procedures.json",
+      "json_path": "procedures/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_procedures_11": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/procedures.json",
+      "json_path": "procedures/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_procedures_12": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/procedures.json",
+      "json_path": "procedures/3/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_service_functions_13": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/service_functions.json",
+      "json_path": "functions/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_service_functions_14": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/service_functions.json",
+      "json_path": "functions/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_wiring_15": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/wiring.json",
+      "json_path": "connections/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_ateca_wiring_16": {
+      "manufacturer": "cupra",
+      "model": "ateca",
+      "file": "database/vehicles/cupra/ateca/wiring.json",
+      "json_path": "connections/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_manifest_1": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/manifest.json",
+      "json_path": "verification/status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_models_2": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/models.json",
+      "json_path": "generations/0/key_variants/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_models_3": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/models.json",
+      "json_path": "generations/0/key_variants/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_models_4": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/models.json",
+      "json_path": "generations/0/status",
+      "current_status": "partially_verified",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_modules_5": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/modules.json",
+      "json_path": "modules/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_modules_6": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/modules.json",
+      "json_path": "modules/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_modules_7": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/modules.json",
+      "json_path": "modules/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_notes_8": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/notes.json",
+      "json_path": "status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_procedures_9": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/procedures.json",
+      "json_path": "procedures/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_procedures_10": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/procedures.json",
+      "json_path": "procedures/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_procedures_11": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/procedures.json",
+      "json_path": "procedures/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_procedures_12": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/procedures.json",
+      "json_path": "procedures/3/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_service_functions_13": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/service_functions.json",
+      "json_path": "functions/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_service_functions_14": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/service_functions.json",
+      "json_path": "functions/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_wiring_15": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/wiring.json",
+      "json_path": "connections/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_born_wiring_16": {
+      "manufacturer": "cupra",
+      "model": "born",
+      "file": "database/vehicles/cupra/born/wiring.json",
+      "json_path": "connections/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_manifest_1": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/manifest.json",
+      "json_path": "verification/status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_models_2": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/models.json",
+      "json_path": "generations/0/key_variants/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_models_3": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/models.json",
+      "json_path": "generations/0/key_variants/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_models_4": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/models.json",
+      "json_path": "generations/0/status",
+      "current_status": "partially_verified",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_modules_5": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/modules.json",
+      "json_path": "modules/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_modules_6": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/modules.json",
+      "json_path": "modules/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_modules_7": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/modules.json",
+      "json_path": "modules/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_notes_8": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/notes.json",
+      "json_path": "status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_procedures_9": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/procedures.json",
+      "json_path": "procedures/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_procedures_10": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/procedures.json",
+      "json_path": "procedures/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_procedures_11": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/procedures.json",
+      "json_path": "procedures/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_procedures_12": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/procedures.json",
+      "json_path": "procedures/3/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_service_functions_13": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/service_functions.json",
+      "json_path": "functions/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_service_functions_14": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/service_functions.json",
+      "json_path": "functions/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_wiring_15": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/wiring.json",
+      "json_path": "connections/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_formentor_wiring_16": {
+      "manufacturer": "cupra",
+      "model": "formentor",
+      "file": "database/vehicles/cupra/formentor/wiring.json",
+      "json_path": "connections/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_manifest_1": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/manifest.json",
+      "json_path": "verification/status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_models_2": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/models.json",
+      "json_path": "generations/0/key_variants/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_models_3": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/models.json",
+      "json_path": "generations/0/key_variants/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_models_4": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/models.json",
+      "json_path": "generations/0/status",
+      "current_status": "partially_verified",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_modules_5": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/modules.json",
+      "json_path": "modules/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_modules_6": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/modules.json",
+      "json_path": "modules/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_modules_7": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/modules.json",
+      "json_path": "modules/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_notes_8": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/notes.json",
+      "json_path": "status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_procedures_9": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/procedures.json",
+      "json_path": "procedures/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_procedures_10": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/procedures.json",
+      "json_path": "procedures/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_procedures_11": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/procedures.json",
+      "json_path": "procedures/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_procedures_12": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/procedures.json",
+      "json_path": "procedures/3/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_service_functions_13": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/service_functions.json",
+      "json_path": "functions/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_service_functions_14": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/service_functions.json",
+      "json_path": "functions/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_wiring_15": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/wiring.json",
+      "json_path": "connections/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_wiring_16": {
+      "manufacturer": "cupra",
+      "model": "leon",
+      "file": "database/vehicles/cupra/leon/wiring.json",
+      "json_path": "connections/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_manifest_1": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/manifest.json",
+      "json_path": "verification/status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_models_2": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/models.json",
+      "json_path": "generations/0/key_variants/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_models_3": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/models.json",
+      "json_path": "generations/0/key_variants/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_models_4": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/models.json",
+      "json_path": "generations/0/status",
+      "current_status": "partially_verified",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_modules_5": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/modules.json",
+      "json_path": "modules/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_modules_6": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/modules.json",
+      "json_path": "modules/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_modules_7": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/modules.json",
+      "json_path": "modules/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_notes_8": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/notes.json",
+      "json_path": "status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_procedures_9": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/procedures.json",
+      "json_path": "procedures/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_procedures_10": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/procedures.json",
+      "json_path": "procedures/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_procedures_11": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/procedures.json",
+      "json_path": "procedures/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_procedures_12": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/procedures.json",
+      "json_path": "procedures/3/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_service_functions_13": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/service_functions.json",
+      "json_path": "functions/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_service_functions_14": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/service_functions.json",
+      "json_path": "functions/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_wiring_15": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/wiring.json",
+      "json_path": "connections/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_leon_estate_wiring_16": {
+      "manufacturer": "cupra",
+      "model": "leon_estate",
+      "file": "database/vehicles/cupra/leon_estate/wiring.json",
+      "json_path": "connections/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_manifest_1": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/manifest.json",
+      "json_path": "verification/status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_models_2": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/models.json",
+      "json_path": "generations/0/key_variants/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_models_3": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/models.json",
+      "json_path": "generations/0/key_variants/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_models_4": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/models.json",
+      "json_path": "generations/0/status",
+      "current_status": "partially_verified",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_modules_5": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/modules.json",
+      "json_path": "modules/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_modules_6": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/modules.json",
+      "json_path": "modules/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_modules_7": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/modules.json",
+      "json_path": "modules/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_notes_8": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/notes.json",
+      "json_path": "status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_procedures_9": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/procedures.json",
+      "json_path": "procedures/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_procedures_10": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/procedures.json",
+      "json_path": "procedures/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_procedures_11": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/procedures.json",
+      "json_path": "procedures/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_procedures_12": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/procedures.json",
+      "json_path": "procedures/3/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_service_functions_13": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/service_functions.json",
+      "json_path": "functions/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_service_functions_14": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/service_functions.json",
+      "json_path": "functions/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_wiring_15": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/wiring.json",
+      "json_path": "connections/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_raval_wiring_16": {
+      "manufacturer": "cupra",
+      "model": "raval",
+      "file": "database/vehicles/cupra/raval/wiring.json",
+      "json_path": "connections/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_manifest_1": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/manifest.json",
+      "json_path": "verification/status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_models_2": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/models.json",
+      "json_path": "generations/0/key_variants/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_models_3": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/models.json",
+      "json_path": "generations/0/key_variants/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_models_4": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/models.json",
+      "json_path": "generations/0/status",
+      "current_status": "partially_verified",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_modules_5": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/modules.json",
+      "json_path": "modules/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_modules_6": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/modules.json",
+      "json_path": "modules/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_modules_7": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/modules.json",
+      "json_path": "modules/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_notes_8": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/notes.json",
+      "json_path": "status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_procedures_9": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/procedures.json",
+      "json_path": "procedures/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_procedures_10": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/procedures.json",
+      "json_path": "procedures/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_procedures_11": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/procedures.json",
+      "json_path": "procedures/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_procedures_12": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/procedures.json",
+      "json_path": "procedures/3/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_service_functions_13": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/service_functions.json",
+      "json_path": "functions/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_service_functions_14": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/service_functions.json",
+      "json_path": "functions/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_wiring_15": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/wiring.json",
+      "json_path": "connections/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_tavascan_wiring_16": {
+      "manufacturer": "cupra",
+      "model": "tavascan",
+      "file": "database/vehicles/cupra/tavascan/wiring.json",
+      "json_path": "connections/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_manifest_1": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/manifest.json",
+      "json_path": "verification/status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_models_2": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/models.json",
+      "json_path": "generations/0/key_variants/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_models_3": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/models.json",
+      "json_path": "generations/0/key_variants/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_models_4": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/models.json",
+      "json_path": "generations/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_modules_5": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/modules.json",
+      "json_path": "modules/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_modules_6": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/modules.json",
+      "json_path": "modules/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_modules_7": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/modules.json",
+      "json_path": "modules/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "UK RHD workshop evidence or clearly identified UK RHD vehicle photographs"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_notes_8": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/notes.json",
+      "json_path": "status",
+      "current_status": "research_in_progress",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_procedures_9": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/procedures.json",
+      "json_path": "procedures/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_procedures_10": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/procedures.json",
+      "json_path": "procedures/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_procedures_11": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/procedures.json",
+      "json_path": "procedures/2/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_procedures_12": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/procedures.json",
+      "json_path": "procedures/3/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact model/generation/operation result from OEM or current tool-vendor coverage"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_service_functions_13": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/service_functions.json",
+      "json_path": "functions/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_service_functions_14": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/service_functions.json",
+      "json_path": "functions/1/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Traceable model/generation evidence sufficient to resolve the recorded status"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_wiring_15": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/wiring.json",
+      "json_path": "connections/0/status",
+      "current_status": "research_required",
+      "evidence_needed": [
+        "Exact module part number plus authoritative wiring/processor/adapter documentation"
+      ],
+      "workshop_action": "Verify on an exact UK RHD vehicle only where location or physical access is involved."
+    },
+    "cupra_terramar_wiring_16": {
+      "manufacturer": "cupra",
+      "model": "terramar",
+      "file": "database/vehicles/cupra/terramar/wiring.json",
+      "json_path": "connections/1/status",
+      "current_status": "research_required",
       "evidence_needed": [
         "Exact module part number plus authoritative wiring/processor/adapter documentation"
       ],

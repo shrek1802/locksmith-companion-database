@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.1",
+  "model": "Formentor",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "formentor_uk",
+      "name": "Formentor UK architecture",
+      "years": "2020-present",
+      "platform": "Volkswagen Group MQB Evo production family",
+      "immobiliser_family": "Exact fitted immobiliser and dashboard family not verified",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "applicability": "Where fitted; not inferred from sibling models",
+          "status": "research_required"
+        },
+        {
+          "type": "keyless_or_proximity",
+          "applicability": "Where fitted; separate from keyed systems",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "cupra_uk": {
+      "publisher": "CUPRA UK",
+      "title": "UK model range and owner manuals",
+      "url": "https://www.cupraofficial.co.uk/new-cars",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model presence"
+      ]
+    },
+    "platform": {
+      "publisher": "Volkswagen Group or CUPRA UK",
+      "title": "Model/platform evidence",
+      "url": "https://www.volkswagen-group.com/en/publications/more/seat-annual-report-2020-3199/download?disposition=attachment",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "Volkswagen Group MQB Evo production family"
+      ]
+    }
+  }
+}

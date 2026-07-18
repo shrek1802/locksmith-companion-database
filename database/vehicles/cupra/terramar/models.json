@@ -1,0 +1,50 @@
+{
+  "schema_version": "2.1",
+  "model": "Terramar",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "terramar_uk",
+      "name": "Terramar UK architecture",
+      "years": "2024-present",
+      "platform": "Platform designation requires a directly naming source",
+      "immobiliser_family": "Exact fitted immobiliser and dashboard family not verified",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "applicability": "Where fitted; not inferred from sibling models",
+          "status": "research_required"
+        },
+        {
+          "type": "keyless_or_proximity",
+          "applicability": "Where fitted; separate from keyed systems",
+          "status": "research_required"
+        }
+      ],
+      "status": "research_required"
+    }
+  ],
+  "sources": {
+    "cupra_uk": {
+      "publisher": "CUPRA UK",
+      "title": "UK model range and owner manuals",
+      "url": "https://www.cupraofficial.co.uk/new-cars",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model presence"
+      ]
+    },
+    "platform": {
+      "publisher": "Volkswagen Group or CUPRA UK",
+      "title": "Model/platform evidence",
+      "url": "https://www.cupraofficial.co.uk/new-cars",
+      "checked_at": "2026-07-18",
+      "confidence": "medium",
+      "supports": [
+        "Platform designation requires a directly naming source"
+      ]
+    }
+  }
+}
