@@ -12,7 +12,7 @@ Updated: 2026-07-18
 - JSON/schema consistency currently enforced by CI: **PASS**
 - Technical locksmith verification: **IN PROGRESS**
 - Manufacturer sign-off: **NOT YET COMPLETE**
-- Architecture matrix: **MQB PASSENGER RECORDED; TECHNICAL EVIDENCE OPEN**
+- Architecture matrix: **ALL REQUESTED BATCHES RECORDED; TECHNICAL EVIDENCE OPEN**
 
 ## Architecture batch audit
 
@@ -22,7 +22,7 @@ Updated: 2026-07-18
 | MQB Commercial | Pass | 6 separate UK/RHD keyed or KESSY records | Research Required pending exact fitted-hardware and current application evidence |
 | PQ Platform | Pass | 10 separate UK/RHD keyed or KESSY records | Research Required except the existing source-backed Immo 4D family |
 | Legacy | Pass | 9 separate UK/RHD keyed or KESSY records | Research Required pending generation splits and RHD module evidence |
-| MEB | Pending | Pending | Pending |
+| MEB | Pass | 4 UK/RHD keyless records | Research Required pending authorised procedure and RHD location evidence |
 
 Matrix evidence is deliberately scoped to model, generation and architecture context. It does not verify locksmith procedures, tool support, pinouts or UK RHD component locations.
 
