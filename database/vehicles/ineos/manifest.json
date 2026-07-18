@@ -1,0 +1,31 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "ineos",
+    "name": "INEOS",
+    "market": "UK",
+    "drive_side": "RHD"
+  },
+  "version": 1,
+  "models": {
+    "grenadier": {
+      "name": "Grenadier",
+      "version": 1,
+      "manifest": "grenadier/manifest.json",
+      "status": "research_in_progress"
+    },
+    "quartermaster": {
+      "name": "Quartermaster",
+      "version": 1,
+      "manifest": "quartermaster/manifest.json",
+      "status": "research_in_progress"
+    }
+  },
+  "status": "research_in_progress",
+  "sources": {
+    "official_range": {
+      "url": "https://ineosgrenadier.com/en/gb/"
+    }
+  }
+}
