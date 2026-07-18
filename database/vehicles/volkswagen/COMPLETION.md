@@ -12,6 +12,19 @@ Updated: 2026-07-18
 - JSON/schema consistency currently enforced by CI: **PASS**
 - Technical locksmith verification: **IN PROGRESS**
 - Manufacturer sign-off: **NOT YET COMPLETE**
+- Architecture matrix: **MQB PASSENGER RECORDED; TECHNICAL EVIDENCE OPEN**
+
+## Architecture batch audit
+
+| Batch | Structural gate | Matrix coverage | Technical disposition |
+|---|---:|---:|---|
+| MQB Passenger | Pass | 20 separate UK/RHD keyed or KESSY records | Research Required pending exact fitted-hardware and current application evidence |
+| MQB Commercial | Pending | Pending | Pending |
+| PQ Platform | Pending | Pending | Pending |
+| Legacy | Pending | Pending | Pending |
+| MEB | Pending | Pending | Pending |
+
+Matrix evidence is deliberately scoped to model, generation and architecture context. It does not verify locksmith procedures, tool support, pinouts or UK RHD component locations.
 
 Passing validation means the files are structurally consistent. It does not mean every technical claim, tool route, module location, wiring detail or photo has been independently verified.
 
