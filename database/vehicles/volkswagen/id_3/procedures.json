@@ -1,1 +1,20 @@
-{"schema_version":"2.1","model":"ID.3","procedures":{"meb":{"add_key":"PROC_VW_MEB_AUTHORISED_ADD","all_keys_lost":"PROC_VW_MEB_AUTHORISED_AKL"}},"status":"research_in_progress"}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "model": "ID.3",
+  "items": {
+    "meb": {
+      "add_key": {
+        "summary": "Use only a currently supported and authorised MEB key-programming route after confirming exact vehicle and tool coverage.",
+        "tool_support": "verification_required",
+        "warning": "Do not assume universal aftermarket support for MEB vehicles."
+      },
+      "all_keys_lost": {
+        "summary": "Confirm explicit current AKL support and required authorisation before accepting the job.",
+        "tool_support": "verification_required",
+        "warning": "No blanket aftermarket AKL claim is recorded."
+      }
+    }
+  },
+  "status": "research_in_progress"
+}
