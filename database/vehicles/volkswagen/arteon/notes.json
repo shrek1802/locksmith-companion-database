@@ -1,1 +1,44 @@
-{"schema_version":"2.1","model":"Arteon","notes":["Identify dashboard family before selecting procedure.","Separate keyed and KESSY variants.","Verify HU162T profile before cutting.","Check current tool coverage for facelift vehicles."],"status":"research_in_progress"}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": "Volkswagen",
+  "model": "Arteon",
+  "notes": [
+    "Identify dashboard family before selecting procedure.",
+    "Separate keyed and KESSY variants.",
+    "Verify HU162T profile before cutting.",
+    "Check current tool coverage for facelift vehicles.",
+    "OBDSTAR lists Arteon in its Volkswagen key-programming coverage, but the model entry alone is not enough to mark every dashboard or AKL route verified.",
+    "For any Arteon fitted with an MQB48-5A dashboard, OBDSTAR officially confirms AKL support through the RH850/V850 Adapter Kit, subject to exact dashboard identification.",
+    "OBDSTAR March 2026 coverage explicitly adds D70F3525-V5 Program Keys using C4-06 with online synchronisation-code calculation.",
+    "Do not infer MQB49-5C support from MQB48 evidence; the current OBDSTAR adapter documentation keeps 5C unsupported on that route."
+  ],
+  "official_evidence": [
+    {
+      "source": "OBDSTAR X300 MINI VW official product coverage",
+      "scope": "Arteon listed for Volkswagen key programming",
+      "status": "verified_source",
+      "checked_at": "2026-07-18"
+    },
+    {
+      "source": "OBDSTAR RH850/V850 Adapter Kit product documentation",
+      "scope": "MQB48-5A/5B dashboard data reading and adapter requirements",
+      "status": "verified_source",
+      "checked_at": "2026-07-18"
+    },
+    {
+      "source": "OBDSTAR IMMO Upgrade Announcement March 2026",
+      "scope": "MQB48-5A D70F3525-V5 Program Keys, AKL, C4-06 and online synchronisation calculation",
+      "status": "verified_source",
+      "checked_at": "2026-07-18"
+    }
+  ],
+  "research_gaps": [
+    "Exact UK Arteon dashboard part-number mapping",
+    "Keyed versus KESSY coverage by UK specification",
+    "Facelift and virtual-dashboard tool coverage",
+    "UK RHD module and OBD locations",
+    "Verified key part numbers and frequencies"
+  ],
+  "status": "research_in_progress"
+}
