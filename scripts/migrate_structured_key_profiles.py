@@ -161,6 +161,11 @@ def main() -> None:
             data["updated_at"] = DATE
             save(path, data)
             files += 1
+    for chip_type in sorted(CHIP_TYPES):
+        totals.setdefault(f"chip_type_{chip_type}", 0)
+    totals.setdefault("exact_ic_values", 0)
+    totals.setdefault("unsupported_ic_assumptions_removed", 0)
+    totals.setdefault("frequencies_preserved", 0)
     report = {
         "schema_version": "2.2",
         "updated_at": DATE,
