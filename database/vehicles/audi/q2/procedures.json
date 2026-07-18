@@ -6,7 +6,18 @@
       "id": "add_key",
       "name": "Add key",
       "method": "No model-wide route; identify generation, dashboard and key system",
-      "status": "research_in_progress"
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Autel APB300 with MaxiIM 508/608 series",
+          "status": "partially_verified",
+          "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+          "confidence": "high",
+          "coverage": "Audi Q2 2017-2021 Add Key only",
+          "working_key_required": true,
+          "limits": "No AKL claim; exact key PCB and keyed/keyless configuration still require confirmation."
+        }
+      ]
     },
     {
       "id": "akl",

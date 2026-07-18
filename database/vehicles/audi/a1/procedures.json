@@ -12,6 +12,15 @@
       "status": "research_required",
       "tool_evidence": [
         {
+          "tool": "Autel APB300 with MaxiIM 508/608 series",
+          "status": "partially_verified",
+          "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+          "confidence": "high",
+          "coverage": "Audi A1 2019-2021 Add Key only",
+          "supports": "Official Autel coverage states APB300 reads immobiliser data from a working MLB/MQB key and lists Audi A1 2019-2021.",
+          "limits": "Requires a working key; does not establish AKL support, RHD location or every keyed/keyless variant."
+        },
+        {
           "tool": "Xhorse VVDI2",
           "status": "research_required",
           "source": "https://www.xhorse.co.uk/upload/pro/vvdi2-vag-user-manual.pdf",
