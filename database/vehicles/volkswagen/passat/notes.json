@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "manufacturer": "Volkswagen",
   "model": "Passat",
   "notes": [
@@ -9,12 +9,35 @@
     "Confirm dashboard or access-start module type before accepting AKL work.",
     "Blade and key family must be verified physically or by reliable part-number/VIN data.",
     "Later MQB and MQB Evo coverage changes with tool and software support.",
-    "All current records remain research-only until the Volkswagen audit is complete."
+    "OBDSTAR officially confirms MQB48-5A AKL support using the RH850/V850 Adapter Kit, but this must be mapped to the exact fitted Passat B8 dashboard before upgrading the vehicle record.",
+    "OBDSTAR March 2026 coverage explicitly adds D70F3525-V5 Program Keys with C4-06 and online synchronisation-code calculation.",
+    "Do not extend MQB48-5A/5B evidence to MQB49-5C. OBDSTAR's current adapter documentation states the 5C route is not supported by that adapter."
+  ],
+  "official_evidence": [
+    {
+      "source": "OBDSTAR RH850/V850 Adapter Kit product documentation",
+      "scope": "MQB48-5A/5B dashboard data reading and adapter requirements",
+      "status": "verified_source",
+      "checked_at": "2026-07-18"
+    },
+    {
+      "source": "OBDSTAR IMMO Upgrade Announcement March 2026",
+      "scope": "MQB48-5A D70F3525-V5 Program Keys, AKL, C4-06 and online synchronisation calculation",
+      "status": "verified_source",
+      "checked_at": "2026-07-18"
+    },
+    {
+      "source": "OBDSTAR IMMO Upgrade Announcement April 2025",
+      "scope": "MQB48-5A AKL with RH850/V850 Adapter Kit",
+      "status": "verified_source",
+      "checked_at": "2026-07-18"
+    }
   ],
   "research_gaps": [
     "UK trim-by-trim KESSY mapping",
     "Dashboard manufacturer and part-number splits",
     "Confirmed key part numbers and frequencies",
+    "Exact mapping of MQB48-5A evidence to Passat B8 dashboard variants",
     "Tool-neutral adapter and bench connection verification",
     "UK RHD module-location photographs"
   ],
