@@ -26,7 +26,7 @@
       "vehicle_information": {
         "immobiliser_system": "Ford PATS legacy fixed-code",
         "immobiliser_generation": "Texas 4C",
-        "transponder_type": "Texas 4C",
+        "transponder_type": "Texas fixed ID4C",
         "transponder_id": "texas_4c",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
@@ -66,6 +66,25 @@
           "confidence": "medium",
           "last_checked": "2026-07-18",
           "canonical_blade_family_id": "fo21",
+          "record_year_range": "1996-2001",
+          "evidence": [
+            {
+              "source_id": "silca_car_book_4_2014",
+              "publisher": "Silca",
+              "title": "The Car Book 4 - Car Keys Guide",
+              "edition": "2014",
+              "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+              "catalogue_rows": [
+                "KA 1996 2002 FO21T3M TEXAS 4C S2"
+              ]
+            }
+          ]
+        },
+        "transponder_verification": {
+          "status": "partially_verified",
+          "confidence": "medium",
+          "last_checked": "2026-07-18",
+          "canonical_transponder_family_id": "texas_fixed_id4c",
           "record_year_range": "1996-2001",
           "evidence": [
             {

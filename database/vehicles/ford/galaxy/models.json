@@ -26,7 +26,7 @@
       "vehicle_information": {
         "immobiliser_system": "Volkswagen Group legacy immobiliser",
         "immobiliser_generation": "Philips fixed-code ID33",
-        "transponder_type": "Philips ID33",
+        "transponder_type": "Philips fixed ID33",
         "transponder_id": "philips_id33",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
@@ -63,7 +63,26 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
-        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "transponder_verification": {
+          "status": "partially_verified",
+          "confidence": "medium",
+          "last_checked": "2026-07-18",
+          "canonical_transponder_family_id": "philips_fixed_id33",
+          "record_year_range": "1995-1998",
+          "evidence": [
+            {
+              "source_id": "silca_car_book_4_2014",
+              "publisher": "Silca",
+              "title": "The Car Book 4 - Car Keys Guide",
+              "edition": "2014",
+              "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+              "catalogue_rows": [
+                "GALAXY 1995 1998 HU66BT1 HU66FH PH 33 Y Y S-V S2"
+              ]
+            }
+          ]
+        }
       },
       "verification": {
         "status": "partially_verified",
@@ -212,7 +231,7 @@
       "vehicle_information": {
         "immobiliser_system": "Volkswagen Group legacy immobiliser",
         "immobiliser_generation": "Philips Crypto ID42",
-        "transponder_type": "Philips Crypto ID42",
+        "transponder_type": "Philips crypto ID42",
         "transponder_id": "philips_crypto_id42",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
@@ -249,7 +268,26 @@
           "VIN-specific or superseded reference — confirm from original key/VIN before ordering"
         ],
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
-        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key"
+        "battery_type": "Varies by remote shell/version — confirm battery fitted to physical key",
+        "transponder_verification": {
+          "status": "partially_verified",
+          "confidence": "medium",
+          "last_checked": "2026-07-18",
+          "canonical_transponder_family_id": "philips_crypto_id42",
+          "record_year_range": "1998-2000",
+          "evidence": [
+            {
+              "source_id": "silca_car_book_4_2014",
+              "publisher": "Silca",
+              "title": "The Car Book 4 - Car Keys Guide",
+              "edition": "2014",
+              "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+              "catalogue_rows": [
+                "GALAXY 1998 2000 HU66T10 HU66FH PH / CR 42 Y Y"
+              ]
+            }
+          ]
+        }
       },
       "verification": {
         "status": "partially_verified",

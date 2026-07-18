@@ -34,6 +34,15 @@ TOKEN_RE = re.compile(
     re.IGNORECASE,
 )
 
+REFERENCE_IDS = {
+    "TEXAS 4C": "texas_4c",
+    "PH 33": "philips_id33",
+    "PH/CR 42": "philips_crypto_id42",
+    "PH/CR 44": "philips_crypto_id44",
+    "PH/CR2 46": "nxp_hitag2_id46",
+    "MEG/CR 48": "megamos_crypto_id48",
+}
+
 
 def normalise_token(raw: str) -> tuple[str, str, str] | None:
     matches = list(TOKEN_RE.finditer(raw))
@@ -108,6 +117,7 @@ def main() -> None:
             "id": family_id, "display_name": display, "silca_code": code,
             "status": "catalogue_supported" if concrete else "research_required",
             "confidence": "high" if concrete else "low",
+            "repository_transponder_id": REFERENCE_IDS.get(code, family_id) if concrete else "transponder_unknown",
             "market_scope": "UK database model set",
             "supported_manufacturers": sorted({x["manufacturer"] for x in apps}),
             "supported_models": sorted({f'{x["manufacturer"]}/{x["model"]}' for x in apps}),
