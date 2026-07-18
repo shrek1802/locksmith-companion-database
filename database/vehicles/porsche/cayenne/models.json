@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "Cayenne",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "cayenne_uk_generations",
+      "name": "Cayenne UK generations",
+      "years": "2003-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Porsche immobiliser/KESSY/BCM family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Porsche",
+      "url": "https://www.porsche.com/uk/models/",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
