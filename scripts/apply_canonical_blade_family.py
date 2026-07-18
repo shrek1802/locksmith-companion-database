@@ -100,9 +100,14 @@ def main() -> None:
             if concrete(existing_id) and existing_id.lower() != family_id:
                 skipped_conflicts.append({"record_id": record_id, "existing_id": existing_id, "candidate": family_id, "file": relative})
                 continue
-            if existing_profile == family_name and existing_id == family_id:
+            prior_verification = target.get("blade_verification", {}) if detailed else record.get("blade_verification", {})
+            if (
+                existing_profile == family_name
+                and existing_id == family_id
+                and isinstance(prior_verification, dict)
+                and prior_verification.get("canonical_blade_family_id") == family_id
+            ):
                 continue
-
             evidence_apps = [application for candidate_id, application in full_cover if candidate_id == family_id]
             source_ids = sorted({application["source_id"] for application in evidence_apps})
             status = "verified" if len(source_ids) > 1 else "partially_verified"
@@ -122,7 +127,7 @@ def main() -> None:
 
             target["blade_profile"] = family_name
             target["blade_id"] = family_id
-            verification = {
+            new_verification = {
                 "status": status,
                 "confidence": confidence,
                 "last_checked": "2026-07-18",
@@ -130,6 +135,25 @@ def main() -> None:
                 "record_year_range": f"{start}-{end}",
                 "evidence": evidence,
             }
+            existing_verification = target.get("blade_verification", {}) if detailed else record.get("blade_verification", {})
+            verification = dict(existing_verification) if isinstance(existing_verification, dict) else {}
+            existing_status = verification.get("status")
+            if existing_status == "verified" or status == "verified":
+                new_verification["status"] = "verified"
+                new_verification["confidence"] = "high"
+            existing_evidence = verification.get("evidence", [])
+            merged_evidence = list(existing_evidence) if isinstance(existing_evidence, list) else []
+            evidence_keys = {
+                (item.get("source_id"), item.get("url"), item.get("edition"))
+                for item in merged_evidence if isinstance(item, dict)
+            }
+            for item in evidence:
+                key = (item.get("source_id"), item.get("url"), item.get("edition"))
+                if key not in evidence_keys:
+                    merged_evidence.append(item)
+                    evidence_keys.add(key)
+            verification.update(new_verification)
+            verification["evidence"] = merged_evidence
             if detailed:
                 target["blade_verification"] = verification
             else:
