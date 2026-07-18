@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "v70_uk_generations",
-      "name": "V70 UK generations",
-      "years": "1997-2016",
+      "id": "v70_uk_generations_1997_1998_keyed_or_remote_transponder_key_ne66",
+      "name": "V70 UK generations - keyed_or_remote (1997-1998)",
+      "years": "1997-1998",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Volvo CEM/KVM or SPA/CMA access family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "v70_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "V70 1997 1998 NE66T2 PH 73 Y Y"
+        ]
+      },
+      "blade_profile": "NE66",
+      "blade_id": "ne66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "ne66",
+        "record_year_range": "1997-1998",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "V70 1997 1998 NE66T2 PH 73 Y Y"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "v70_uk_generations_1999_2016_blade_research",
+      "name": "V70 UK generations - blade research boundary (1999-2016)",
+      "years": "1999-2016",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Volvo CEM/KVM or SPA/CMA access family; generation specific",
       "key_variants": [
@@ -32,7 +77,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1999-2016"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "v70_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

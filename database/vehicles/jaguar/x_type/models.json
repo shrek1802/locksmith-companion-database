@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "x_type_uk_generations",
-      "name": "X-TYPE UK generations",
-      "years": "2001-2009",
+      "id": "x_type_uk_generations_2002_2008_keyed_or_remote_transponder_key_fo21",
+      "name": "X-TYPE UK generations - keyed_or_remote (2002-2008)",
+      "years": "2002-2008",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Jaguar KVM/BCM or legacy security family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "x_type_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "X-TYPE 2002 2008 FO21MH FO21TE FO21FH Y Y TEX / CR 60 Y P-BOX"
+        ]
+      },
+      "blade_profile": "FO21",
+      "blade_id": "fo21",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "fo21",
+        "record_year_range": "2002-2008",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "X-TYPE 2002 2008 FO21MH FO21TE FO21FH Y Y TEX / CR 60 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "x_type_uk_generations_2001_2001_blade_research",
+      "name": "X-TYPE UK generations - blade research boundary (2001-2001)",
+      "years": "2001-2001",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Jaguar KVM/BCM or legacy security family; generation specific",
       "key_variants": [
@@ -32,7 +77,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2001-2001"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "x_type_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "x_type_uk_generations_2009_2009_blade_research",
+      "name": "X-TYPE UK generations - blade research boundary (2009-2009)",
+      "years": "2009-2009",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Jaguar KVM/BCM or legacy security family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2009-2009"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "x_type_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

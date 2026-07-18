@@ -44,9 +44,54 @@
       }
     },
     {
-      "id": "f3",
-      "name": "Q3 F3",
-      "years": "2018-2025",
+      "id": "f3_2018_2018_remote_or_flip_key_hu66",
+      "name": "Q3 F3 - remote_or_flip (2018-2018)",
+      "years": "2018-2018",
+      "platform": "MQB",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "research_in_progress",
+      "catalogue_split": {
+        "origin_generation_id": "f3",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Audi Q3 8U 2011 2018 HU66 434AM"
+        ]
+      },
+      "blade_profile": "HU66",
+      "blade_id": "hu66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu66",
+        "record_year_range": "2018-2018",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Audi Q3 8U 2011 2018 HU66 434AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "f3_2019_2025_blade_research",
+      "name": "Q3 F3 - blade research boundary (2019-2025)",
+      "years": "2019-2025",
       "platform": "MQB",
       "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
       "key_variants": [
@@ -59,7 +104,21 @@
           "status": "research_required"
         }
       ],
-      "status": "research_in_progress"
+      "status": "research_in_progress",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2019-2025"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "f3",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     },
     {
       "id": "f3_2025",

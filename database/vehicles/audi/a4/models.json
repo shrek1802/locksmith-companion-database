@@ -5,47 +5,187 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "b5",
-      "name": "A4 B5",
-      "years": "1995-2001",
+      "id": "b5_1995_1995_keyed_or_remote_transponder_key_hu49a",
+      "name": "A4 B5 - keyed_or_remote (1995-1995)",
+      "years": "1995-1995",
       "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
       "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
-        {
-          "type": "advanced_key_or_keyless",
-          "status": "research_required"
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
         }
       ],
       "status": "research_in_progress",
-      "verification_scope": "UK model history only."
+      "verification_scope": "UK model history only.",
+      "catalogue_split": {
+        "origin_generation_id": "b5",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "A4 1995 1996 HU49AT5 HU49FH MEG 13 Y Y Meg"
+        ]
+      },
+      "blade_profile": "HU49A",
+      "blade_id": "hu49a",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu49a",
+        "record_year_range": "1995-1995",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "A4 1995 1996 HU49AT5 HU49FH MEG 13 Y Y Meg"
+            ]
+          }
+        ]
+      }
     },
     {
-      "id": "b6",
-      "name": "A4 B6",
-      "years": "2001-2005",
+      "id": "b5_1996_1996_keyed_or_remote_transponder_key_hu49a_or_hu66a",
+      "name": "A4 B5 - keyed_or_remote (1996-1996)",
+      "years": "1996-1996",
       "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
       "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
-        {
-          "type": "advanced_key_or_keyless",
+          "type": "keyed_or_remote",
           "status": "research_required"
         }
       ],
       "status": "research_in_progress",
-      "verification_scope": "UK model history only."
+      "verification_scope": "UK model history only.",
+      "catalogue_split": {
+        "origin_generation_id": "b5",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "A4 1995 1996 HU49AT5 HU49FH MEG 13 Y Y Meg",
+          "A4 1996 1997 HU66AT5 HU66FH MEG 13 Y Y Meg"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hu49a",
+        "hu66a"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1996-1996",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
     },
     {
-      "id": "b7",
-      "name": "A4 B7",
-      "years": "2005-2008",
+      "id": "b5_1997_2001_keyed_or_remote_transponder_key_hu66a",
+      "name": "A4 B5 - keyed_or_remote (1997-2001)",
+      "years": "1997-2001",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "research_in_progress",
+      "verification_scope": "UK model history only.",
+      "catalogue_split": {
+        "origin_generation_id": "b5",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "A4 1996 1997 HU66AT5 HU66FH MEG 13 Y Y Meg",
+          "A4 1997 2004 HU66AT6 HU66FH MEG / CR 48"
+        ]
+      },
+      "blade_profile": "HU66A",
+      "blade_id": "hu66a",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu66a",
+        "record_year_range": "1997-2001",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "A4 1996 1997 HU66AT5 HU66FH MEG 13 Y Y Meg",
+              "A4 1997 2004 HU66AT6 HU66FH MEG / CR 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b6_2001_2004_keyed_or_remote_transponder_key_hu66a",
+      "name": "A4 B6 - keyed_or_remote (2001-2004)",
+      "years": "2001-2004",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "research_in_progress",
+      "verification_scope": "UK model history only.",
+      "catalogue_split": {
+        "origin_generation_id": "b6",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "A4 1997 2004 HU66AT6 HU66FH MEG / CR 48"
+        ]
+      },
+      "blade_profile": "HU66A",
+      "blade_id": "hu66a",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu66a",
+        "record_year_range": "2001-2004",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "A4 1997 2004 HU66AT6 HU66FH MEG / CR 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b6_2005_2005_blade_research",
+      "name": "A4 B6 - blade research boundary (2005-2005)",
+      "years": "2005-2005",
       "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
       "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
       "key_variants": [
@@ -59,7 +199,100 @@
         }
       ],
       "status": "research_in_progress",
-      "verification_scope": "UK model history only."
+      "verification_scope": "UK model history only.",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2005-2005"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "b6",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "b7_2008_2008_slot_key_hu66",
+      "name": "A4 B7 - slot_key (2008-2008)",
+      "years": "2008-2008",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "slot_key",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "research_in_progress",
+      "verification_scope": "UK model history only.",
+      "catalogue_split": {
+        "origin_generation_id": "b7",
+        "key_variant_scope": "slot_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Audi A4 B8/8K 2008 2016 HU66 868 MHz"
+        ]
+      },
+      "blade_profile": "HU66",
+      "blade_id": "hu66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu66",
+        "record_year_range": "2008-2008",
+        "key_variant_scope": "slot_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Audi A4 B8/8K 2008 2016 HU66 868 MHz"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b7_2005_2007_blade_research",
+      "name": "A4 B7 - blade research boundary (2005-2007)",
+      "years": "2005-2007",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "research_in_progress",
+      "verification_scope": "UK model history only.",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2005-2007"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "b7",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     },
     {
       "id": "b8",
@@ -102,9 +335,55 @@
       }
     },
     {
-      "id": "b9",
-      "name": "A4 B9",
-      "years": "2015-2024",
+      "id": "b9_2015_2016_slot_key_hu66",
+      "name": "A4 B9 - slot_key (2015-2016)",
+      "years": "2015-2016",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "slot_key",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "research_in_progress",
+      "verification_scope": "UK model history only.",
+      "catalogue_split": {
+        "origin_generation_id": "b9",
+        "key_variant_scope": "slot_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Audi A4 B8/8K 2008 2016 HU66 868 MHz"
+        ]
+      },
+      "blade_profile": "HU66",
+      "blade_id": "hu66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu66",
+        "record_year_range": "2015-2016",
+        "key_variant_scope": "slot_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Audi A4 B8/8K 2008 2016 HU66 868 MHz"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b9_2017_2024_blade_research",
+      "name": "A4 B9 - blade research boundary (2017-2024)",
+      "years": "2017-2024",
       "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
       "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
       "key_variants": [
@@ -118,7 +397,21 @@
         }
       ],
       "status": "research_in_progress",
-      "verification_scope": "UK model history only."
+      "verification_scope": "UK model history only.",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2017-2024"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "b9",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

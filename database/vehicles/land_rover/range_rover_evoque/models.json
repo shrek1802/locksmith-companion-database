@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "range_rover_evoque_uk_generations",
-      "name": "Range Rover Evoque UK generations",
-      "years": "2011-present",
+      "id": "range_rover_evoque_uk_generations_2011_2019_proximity_emergency_insert_hu101",
+      "name": "Range Rover Evoque UK generations - proximity (2011-2019)",
+      "years": "2011-2019",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "JLR KVM/BCM or legacy security family; generation specific",
+      "key_variants": [
+        {
+          "type": "proximity",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "range_rover_evoque_uk_generations",
+        "key_variant_scope": "proximity_emergency_insert",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Land Rover Range Rover Evoque L358 2011 2019 HU101 433FM"
+        ]
+      },
+      "blade_profile": "HU101",
+      "blade_id": "hu101",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu101",
+        "record_year_range": "2011-2019",
+        "key_variant_scope": "proximity_emergency_insert",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Land Rover Range Rover Evoque L358 2011 2019 HU101 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "range_rover_evoque_uk_generations_2020_2026_blade_research",
+      "name": "Range Rover Evoque UK generations - blade research boundary (2020-present)",
+      "years": "2020-present",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "JLR KVM/BCM or legacy security family; generation specific",
       "key_variants": [
@@ -32,7 +77,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2020-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "range_rover_evoque_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

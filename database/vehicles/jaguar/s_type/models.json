@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "s_type_uk_generations",
-      "name": "S-TYPE UK generations",
-      "years": "1999-2007",
+      "id": "s_type_uk_generations_2000_2007_keyed_or_remote_transponder_key_fo21",
+      "name": "S-TYPE UK generations - keyed_or_remote (2000-2007)",
+      "years": "2000-2007",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Jaguar KVM/BCM or legacy security family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "s_type_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "S-TYPE 2000 2008 FO21T7 TEX / CR 60"
+        ]
+      },
+      "blade_profile": "FO21",
+      "blade_id": "fo21",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "fo21",
+        "record_year_range": "2000-2007",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "S-TYPE 2000 2008 FO21T7 TEX / CR 60"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "s_type_uk_generations_1999_1999_blade_research",
+      "name": "S-TYPE UK generations - blade research boundary (1999-1999)",
+      "years": "1999-1999",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Jaguar KVM/BCM or legacy security family; generation specific",
       "key_variants": [
@@ -32,7 +77,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1999-1999"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "s_type_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

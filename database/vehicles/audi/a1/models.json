@@ -5,26 +5,152 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "8x",
-      "name": "A1 8X",
-      "years": "2010-2018",
+      "id": "8x_2011_2018_remote_or_flip_key_hu66",
+      "name": "A1 8X - remote_or_flip (2011-2018)",
+      "years": "2011-2018",
       "platform": "PQ25",
       "immobiliser_family": "Immo 4 / cluster-based",
       "status": "research_in_progress",
-      "verification_note": "UK model history is confirmed by Audi UK; the PQ25 and immobiliser mapping still require a second traceable technical source before inheritance."
+      "verification_note": "UK model history is confirmed by Audi UK; the PQ25 and immobiliser mapping still require a second traceable technical source before inheritance.",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "catalogue_split": {
+        "origin_generation_id": "8x",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Audi A1 8X 2011 2018 HU66 434AM"
+        ]
+      },
+      "blade_profile": "HU66",
+      "blade_id": "hu66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu66",
+        "record_year_range": "2011-2018",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Audi A1 8X 2011 2018 HU66 434AM"
+            ]
+          }
+        ]
+      }
     },
     {
-      "id": "gb",
-      "name": "A1 GB",
-      "years": "2018-present",
+      "id": "8x_2010_2010_blade_research",
+      "name": "A1 8X - blade research boundary (2010-2010)",
+      "years": "2010-2010",
+      "platform": "PQ25",
+      "immobiliser_family": "Immo 4 / cluster-based",
+      "status": "research_in_progress",
+      "verification_note": "UK model history is confirmed by Audi UK; the PQ25 and immobiliser mapping still require a second traceable technical source before inheritance.",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2010-2010"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "8x",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "gb_2018_2018_remote_or_flip_key_hu66",
+      "name": "A1 GB - remote_or_flip (2018-2018)",
+      "years": "2018-2018",
       "platform": "MQB A0",
       "immobiliser_family": "MQB; exact dashboard and key system not yet verified",
       "status": "partially_verified",
       "verification_scope": "Audi MediaCenter confirms MQB A0 and Audi UK confirms UK availability. No locksmith procedure, dashboard family or UK RHD module location is verified by those sources.",
       "key_variants": [
-        {"type": "keyed", "status": "research_required"},
-        {"type": "advanced_key_or_keyless", "status": "research_required"}
-      ]
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "catalogue_split": {
+        "origin_generation_id": "gb",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Audi A1 8X 2011 2018 HU66 434AM"
+        ]
+      },
+      "blade_profile": "HU66",
+      "blade_id": "hu66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu66",
+        "record_year_range": "2018-2018",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Audi A1 8X 2011 2018 HU66 434AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "gb_2019_2026_blade_research",
+      "name": "A1 GB - blade research boundary (2019-present)",
+      "years": "2019-present",
+      "platform": "MQB A0",
+      "immobiliser_family": "MQB; exact dashboard and key system not yet verified",
+      "status": "partially_verified",
+      "verification_scope": "Audi MediaCenter confirms MQB A0 and Audi UK confirms UK availability. No locksmith procedure, dashboard family or UK RHD module location is verified by those sources.",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2019-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "gb",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {
@@ -32,13 +158,19 @@
       "publisher": "Audi UK",
       "title": "Audi UK model archive and current model range",
       "url": "https://press.audi.co.uk/models/concept/releases",
-      "supports": ["A1 is a UK-market model", "A1 Sportback from 2018 is represented in the UK model archive"]
+      "supports": [
+        "A1 is a UK-market model",
+        "A1 Sportback from 2018 is represented in the UK model archive"
+      ]
     },
     "audi_spain_facts_2025": {
       "publisher": "Audi MediaCenter",
       "title": "Audi in Spain 2025 facts and figures",
       "url": "https://uploads.audi-mediacenter.com/system/production/uploaded_files/33809/file/5877d28fe411826faf4f4d0375b4763adf21a1ff/250318_Audi_in_Spanien_2025_EN.pdf",
-      "supports": ["A1 Sportback production began in October 2018", "Current A1 uses the MQB A0 platform"]
+      "supports": [
+        "A1 Sportback production began in October 2018",
+        "Current A1 uses the MQB A0 platform"
+      ]
     }
   }
 }

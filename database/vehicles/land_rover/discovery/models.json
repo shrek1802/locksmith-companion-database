@@ -5,9 +5,144 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "discovery_uk_generations",
-      "name": "Discovery UK generations",
-      "years": "1989-present",
+      "id": "discovery_uk_generations_1995_2004_keyed_or_remote_transponder_key_ne75",
+      "name": "Discovery UK generations - keyed_or_remote (1995-2004)",
+      "years": "1995-2004",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "JLR KVM/BCM or legacy security family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "discovery_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "DISCOVERY 1995 2004 NE75EP NE75FH"
+        ]
+      },
+      "blade_profile": "NE75",
+      "blade_id": "ne75",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "ne75",
+        "record_year_range": "1995-2004",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "DISCOVERY 1995 2004 NE75EP NE75FH"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "discovery_uk_generations_2006_2009_keyed_or_remote_transponder_key_hu101",
+      "name": "Discovery UK generations - keyed_or_remote (2006-2009)",
+      "years": "2006-2009",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "JLR KVM/BCM or legacy security family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "discovery_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "DISCOVERY 3 2006 2009 HU101MH HU101TE HU101FH Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "HU101",
+      "blade_id": "hu101",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu101",
+        "record_year_range": "2006-2009",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "DISCOVERY 3 2006 2009 HU101MH HU101TE HU101FH Y PH / CR2 46 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "discovery_uk_generations_2012_2018_proximity_emergency_insert_hu101",
+      "name": "Discovery UK generations - proximity (2012-2018)",
+      "years": "2012-2018",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "JLR KVM/BCM or legacy security family; generation specific",
+      "key_variants": [
+        {
+          "type": "proximity",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "discovery_uk_generations",
+        "key_variant_scope": "proximity_emergency_insert",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Land Rover Discovery L319 2012 2018 HU101 433FM"
+        ]
+      },
+      "blade_profile": "HU101",
+      "blade_id": "hu101",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu101",
+        "record_year_range": "2012-2018",
+        "key_variant_scope": "proximity_emergency_insert",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Land Rover Discovery L319 2012 2018 HU101 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "discovery_uk_generations_1989_1994_blade_research",
+      "name": "Discovery UK generations - blade research boundary (1989-1994)",
+      "years": "1989-1994",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "JLR KVM/BCM or legacy security family; generation specific",
       "key_variants": [
@@ -32,7 +167,153 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1989-1994"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "discovery_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "discovery_uk_generations_2005_2005_blade_research",
+      "name": "Discovery UK generations - blade research boundary (2005-2005)",
+      "years": "2005-2005",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "JLR KVM/BCM or legacy security family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2005-2005"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "discovery_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "discovery_uk_generations_2010_2011_blade_research",
+      "name": "Discovery UK generations - blade research boundary (2010-2011)",
+      "years": "2010-2011",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "JLR KVM/BCM or legacy security family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2010-2011"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "discovery_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "discovery_uk_generations_2019_2026_blade_research",
+      "name": "Discovery UK generations - blade research boundary (2019-present)",
+      "years": "2019-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "JLR KVM/BCM or legacy security family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2019-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "discovery_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {
