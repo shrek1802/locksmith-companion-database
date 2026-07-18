@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "RX-8",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "rx_8_uk_generations",
+      "name": "RX-8 UK generations",
+      "years": "2003-2010",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Mazda immobiliser/SSU/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Mazda",
+      "url": "https://www.mazda.co.uk/cars/",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
