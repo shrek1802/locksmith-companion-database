@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "106",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "106_uk_generations",
+      "name": "106 UK generations",
+      "years": "1991-2003",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Peugeot",
+      "url": "https://www.peugeot.co.uk/help-me-choose/peugeot-range.html",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
