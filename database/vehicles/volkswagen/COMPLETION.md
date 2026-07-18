@@ -43,7 +43,7 @@ Volkswagen can only be marked complete when all of the following are true:
 | CC | Pass | Pass | Pending | Pending | Research in progress |
 | Crafter | Pass | Pass | Pending | Pending | Research in progress |
 | Eos | Pass | Pass | Pending | Pending | Research in progress |
-| Golf | Pass | Pass | Partial | Pending | Research in progress |
+| Golf | Pass | Pass | Audit started | Pending | Research in progress |
 | ID.3 | Pass | Pass | Pending | Pending | Research in progress |
 | ID.4 | Pass | Pass | Pending | Pending | Research in progress |
 | ID.5 | Pass | Pass | Pending | Pending | Research in progress |
@@ -62,9 +62,37 @@ Volkswagen can only be marked complete when all of the following are true:
 | Transporter | Pass | Pass | Pending | Pending | Research in progress |
 | Up! | Pass | Pass | Pending | Pending | Research in progress |
 
+## Golf audit findings
+
+Golf currently contains six UK/RHD generation records:
+
+- Golf Mk4, 1998–2004, keyed ignition
+- Golf Mk5, 2004–2009, keyed ignition
+- Golf Mk6, 2009–2013, keyed ignition
+- Golf Mk7, 2013–2017, keyed or KESSY
+- Golf Mk7.5, 2017–2020, keyed or KESSY
+- Golf Mk8, 2020–present
+
+The first audit pass confirms that all six generations have readable Add Key and All Keys Lost routes. The remaining work is technical verification rather than missing structure.
+
+### Golf items still requiring evidence
+
+- [ ] Split Golf Mk4 Immo2 and Immo3 coverage where exact build or cluster identification changes the route.
+- [ ] Verify the supported Golf Mk5 and Mk6 dashboard families against current manufacturer application lists.
+- [ ] Confirm every listed OBDSTAR cable or adapter against the exact dashboard processor and EEPROM family.
+- [ ] Confirm every listed Autel Golf dashboard part number and operation against the current official coverage list.
+- [ ] Keep MQB5A, MQB5B and MQB5C routes separate; do not infer support from model year alone.
+- [ ] Confirm keyed and KESSY procedures separately for Golf Mk7 and Mk7.5.
+- [ ] Confirm APB300 working-key routes by exact key and platform before upgrading any record from Conditional.
+- [ ] Verify UK RHD OBD, dashboard, KESSY and access-start module locations.
+- [ ] Verify bench connections and regulated-power requirements where a bench route is listed.
+- [ ] Add or verify the required Golf photo records and assets.
+
+No Golf record is upgraded to Fully Verified during this pass.
+
 ## Next audit order
 
-1. Golf
+1. Golf evidence and location verification
 2. Passat
 3. Polo
 4. Caddy
