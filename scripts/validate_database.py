@@ -52,6 +52,19 @@ STRICT_VEHICLE_REFERENCE_FIELDS = {
     "platform_ids",
 }
 
+KEY_PROFILE_FIELDS = (
+    "blade_profile", "transponder_id", "technology_family", "chip_type",
+    "chip_ic", "remote_configuration", "frequency",
+)
+CHIP_TYPE_VALUES = {
+    "Glass Chip", "Carbon Chip", "Ceramic Chip", "Integrated Remote Chip",
+    "Integrated Proximity Chip", "PCB Mounted Chip", "No Separate Transponder",
+    "Research Required",
+}
+REMOTE_CONFIGURATION_VALUES = {
+    "Separate", "Integrated", "Integrated Proximity", "No Remote", "Research Required",
+}
+
 errors: list[str] = []
 warnings: list[str] = []
 notes: list[str] = []
@@ -260,6 +273,35 @@ def validate_items(path: Path, data: dict[str, Any]) -> None:
             part_locations[normalized].append(f"{label}#{item_id}")
 
 
+def validate_structured_key_profiles(path: Path, data: dict[str, Any]) -> None:
+    if path.name != "models.json" or "database" not in path.parts or "vehicles" not in path.parts:
+        return
+    label = rel(path)
+    records: list[tuple[str, Any]] = list(data.get("items", {}).items())
+    records.extend((entry.get("id", f"generation_{index}"), entry) for index, entry in enumerate(data.get("generations", [])))
+    for record_id, record in records:
+        if not isinstance(record, dict):
+            continue
+        info = record.get("vehicle_information", record)
+        if not isinstance(info, dict):
+            continue
+        for field in KEY_PROFILE_FIELDS:
+            value = info.get(field)
+            if not isinstance(value, str) or not value.strip():
+                error(label, f"record {record_id!r} requires non-empty structured field {field!r}")
+        if info.get("chip_type") not in CHIP_TYPE_VALUES:
+            error(label, f"record {record_id!r} has invalid chip_type {info.get('chip_type')!r}")
+        if info.get("remote_configuration") not in REMOTE_CONFIGURATION_VALUES:
+            error(label, f"record {record_id!r} has invalid remote_configuration {info.get('remote_configuration')!r}")
+        evidence_map = info.get("key_profile_evidence")
+        if not isinstance(evidence_map, dict):
+            error(label, f"record {record_id!r} requires key_profile_evidence")
+            continue
+        for field in KEY_PROFILE_FIELDS:
+            if not isinstance(evidence_map.get(field), list):
+                error(label, f"record {record_id!r} evidence for {field!r} must be a list")
+
+
 def validate_strict_vehicle_references(path: Path, data: dict[str, Any]) -> None:
     if not is_vehicle_file(path):
         return
@@ -352,6 +394,7 @@ def validate_file(path: Path) -> None:
     validate_sources(path, data)
     validate_manifest(path, data)
     validate_strict_vehicle_references(path, data)
+    validate_structured_key_profiles(path, data)
 
 
 def validate_duplicates() -> None:
