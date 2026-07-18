@@ -12,6 +12,23 @@
           "status": "partially_verified",
           "source": "https://abrites.com/media/user_manuals/html/abrites-diagnostics-for-vag-online-user-manual/index.html",
           "notes": "Manual covers named platform families; verify exact vehicle and active licence."
+        },
+        {
+          "tool": "Autel APB300 with MaxiIM 508/608 series",
+          "status": "partially_verified",
+          "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+          "confidence": "high",
+          "coverage": "A8/S8 2018-present",
+          "operation": "Add Key",
+          "working_key_required": true,
+          "method": "Read immobiliser data from the opened original working key; no instrument-cluster removal for this route.",
+          "required_hardware": [
+            "Autel APB300",
+            "Compatible MaxiIM 508/608-series tablet",
+            "Supported Autel IKEY or key PCB"
+          ],
+          "limits": "Official coverage is model/year and Add Key specific. It does not verify AKL, every trim/key PCB, UK RHD locations or unrelated generations.",
+          "checked_at": "2026-07-18"
         }
       ],
       "status": "partially_verified"
