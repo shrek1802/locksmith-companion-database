@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "tesla",
+    "name": "Tesla",
+    "market": "UK",
+    "drive_side": "RHD"
+  },
+  "version": 1,
+  "models": {
+    "model_3": {
+      "name": "Model 3",
+      "version": 1,
+      "manifest": "model_3/manifest.json",
+      "status": "research_in_progress"
+    },
+    "model_s": {
+      "name": "Model S",
+      "version": 1,
+      "manifest": "model_s/manifest.json",
+      "status": "research_in_progress"
+    },
+    "model_x": {
+      "name": "Model X",
+      "version": 1,
+      "manifest": "model_x/manifest.json",
+      "status": "research_in_progress"
+    },
+    "model_y": {
+      "name": "Model Y",
+      "version": 1,
+      "manifest": "model_y/manifest.json",
+      "status": "research_in_progress"
+    },
+    "roadster": {
+      "name": "Roadster",
+      "version": 1,
+      "manifest": "roadster/manifest.json",
+      "status": "research_in_progress"
+    }
+  },
+  "status": "research_in_progress",
+  "sources": {
+    "official_range": {
+      "url": "https://www.tesla.com/en_gb/"
+    }
+  }
+}

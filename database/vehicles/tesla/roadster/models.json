@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "Roadster",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "roadster_uk_generations",
+      "name": "Roadster UK generations",
+      "years": "2010-2012",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Tesla card/phone/proximity key architecture; model and generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Tesla",
+      "url": "https://www.tesla.com/en_gb/",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
