@@ -263,7 +263,15 @@ def resolve_manifest_target(manifest_path: Path, raw: str) -> Path | None:
     clean = raw.split("#", 1)[0].split("?", 1)[0]
     if not clean.lower().endswith((".json", ".zip")):
         return None
-    return (manifest_path.parent / clean).resolve()
+    local_target = (manifest_path.parent / clean).resolve()
+    root_target = (ROOT / clean).resolve()
+
+    # Manifests historically use both paths relative to their own directory and
+    # paths relative to the repository root. Prefer the local interpretation to
+    # preserve existing behaviour, then accept an existing root-relative target.
+    if local_target.exists() or not root_target.exists():
+        return local_target
+    return root_target
 
 
 def validate_manifest(path: Path, data: dict[str, Any]) -> None:
