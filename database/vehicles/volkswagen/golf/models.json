@@ -54,7 +54,28 @@
           "route": "Identify Immo2 or Immo3 before programming",
           "online_requirement": "No"
         },
-        "notes": "Do not combine Immo2 and Immo3 procedures. Confirm cluster and transponder before preparing the key."
+        "notes": "Do not combine Immo2 and Immo3 procedures. Confirm cluster and transponder before preparing the key.",
+        "blade_id": "hu66",
+        "blade_verification": {
+          "status": "partially_verified",
+          "confidence": "medium",
+          "last_checked": "2026-07-18",
+          "canonical_blade_family_id": "hu66",
+          "record_year_range": "1998-2004",
+          "evidence": [
+            {
+              "source_id": "silca_car_book_4_2014",
+              "publisher": "Silca",
+              "title": "The Car Book 4 - Car Keys Guide",
+              "edition": "2014",
+              "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+              "catalogue_rows": [
+                "GOLF 1998 2004 HU66T6 HU66FH MEG / CR 48",
+                "GOLF 1998 HU66T6 HU66FH MEG / CR 48"
+              ]
+            }
+          ]
+        }
       },
       "verification": {
         "status": "partially_verified",
@@ -117,7 +138,28 @@
           "route": "Identify cluster manufacturer before selecting method",
           "online_requirement": "No blanket online requirement"
         },
-        "notes": "VDO, Micronas and other cluster variants must not be treated as one procedure."
+        "notes": "VDO, Micronas and other cluster variants must not be treated as one procedure.",
+        "blade_id": "hu66",
+        "blade_verification": {
+          "status": "partially_verified",
+          "confidence": "medium",
+          "last_checked": "2026-07-18",
+          "canonical_blade_family_id": "hu66",
+          "record_year_range": "2004-2009",
+          "evidence": [
+            {
+              "source_id": "silca_car_book_4_2014",
+              "publisher": "Silca",
+              "title": "The Car Book 4 - Car Keys Guide",
+              "edition": "2014",
+              "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+              "catalogue_rows": [
+                "GOLF 1998 HU66T6 HU66FH MEG / CR 48",
+                "GOLF CABRIO 2004 HU66T24 HU66FH MEG / CR A1"
+              ]
+            }
+          ]
+        }
       },
       "verification": {
         "status": "partially_verified",
@@ -180,7 +222,39 @@
           "route": "Do not select by year alone",
           "online_requirement": "No blanket online requirement"
         },
-        "notes": "Keep Immo4 Challenge and trade-labelled Immo4.5 classifications separate until the dashboard is identified."
+        "notes": "Keep Immo4 Challenge and trade-labelled Immo4.5 classifications separate until the dashboard is identified.",
+        "blade_id": "hu66",
+        "blade_verification": {
+          "status": "verified",
+          "confidence": "high",
+          "last_checked": "2026-07-18",
+          "canonical_blade_family_id": "hu66",
+          "record_year_range": "2009-2013",
+          "evidence": [
+            {
+              "source_id": "silca_car_book_4_2014",
+              "publisher": "Silca",
+              "title": "The Car Book 4 - Car Keys Guide",
+              "edition": "2014",
+              "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+              "catalogue_rows": [
+                "GOLF 1998 HU66T6 HU66FH MEG / CR 48",
+                "GOLF CABRIO 2004 HU66T24 HU66FH MEG / CR A1"
+              ]
+            },
+            {
+              "source_id": "silca_proximity_slot_remote_2025",
+              "publisher": "Silca",
+              "title": "Proximity, Slot and Remote Car Keys Catalogue",
+              "edition": "02/2025",
+              "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+              "catalogue_rows": [
+                "Volkswagen Golf 5K 2009 2013 HU66 434AM",
+                "Volkswagen Golf Plus 1K 2009 2014 HU66 434AM"
+              ]
+            }
+          ]
+        }
       },
       "verification": {
         "status": "partially_verified",
