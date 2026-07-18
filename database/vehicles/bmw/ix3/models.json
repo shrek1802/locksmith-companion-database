@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.1",
+  "model": "iX3",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "ix3_uk_scope",
+      "name": "iX3 UK-market generations",
+      "years": "Generation/build-date specific; verify by VIN",
+      "platform": "Exact chassis/platform requires generation confirmation",
+      "immobiliser_family": "EWS, CAS, FEM, BDC and later BDC generations are generation/fitted-hardware dependent",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_uk_range": {
+      "publisher": "BMW UK",
+      "url": "https://www.bmw.co.uk/en_GB/all-models.html",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family presence"
+      ]
+    },
+    "official_manuals": {
+      "publisher": "BMW UK",
+      "url": "https://www.bmw.co.uk/en_GB/topics/owners/bmw-owners-manual.html",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "VIN/generation-specific documentation requirement"
+      ]
+    }
+  }
+}
