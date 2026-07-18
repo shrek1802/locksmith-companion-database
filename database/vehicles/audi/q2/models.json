@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.1",
+  "model": "Q2",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "ga",
+      "name": "Q2 GA",
+      "years": "2016-present",
+      "platform": "MQB",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "research_in_progress"
+    }
+  ],
+  "sources": {
+    "audi_uk_model_archive": {
+      "publisher": "Audi UK Newsroom",
+      "title": "Audi UK current, previous and heritage model archive",
+      "url": "https://press.audi.co.uk/models/concept/releases",
+      "supports": [
+        "UK model presence and broad production-era context"
+      ]
+    }
+  }
+}

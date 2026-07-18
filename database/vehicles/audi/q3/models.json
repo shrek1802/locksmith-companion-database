@@ -1,0 +1,72 @@
+{
+  "schema_version": "2.1",
+  "model": "Q3",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "8u",
+      "name": "Q3 8U",
+      "years": "2011-2018",
+      "platform": "PQ35 derivative",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "research_in_progress"
+    },
+    {
+      "id": "f3",
+      "name": "Q3 F3",
+      "years": "2018-2025",
+      "platform": "MQB",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "research_in_progress"
+    },
+    {
+      "id": "f3_2025",
+      "name": "Q3 from 2025",
+      "years": "2025-present",
+      "platform": "platform requires technical confirmation",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "research_in_progress"
+    }
+  ],
+  "sources": {
+    "audi_uk_model_archive": {
+      "publisher": "Audi UK Newsroom",
+      "title": "Audi UK current, previous and heritage model archive",
+      "url": "https://press.audi.co.uk/models/concept/releases",
+      "supports": [
+        "UK model presence and broad production-era context"
+      ]
+    }
+  }
+}

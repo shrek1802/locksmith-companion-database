@@ -1,11 +1,29 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-18",
-  "database_root":"database",
-  "manufacturers":{
-    "ford":{"name":"Ford","version":42,"manifest":"database/vehicles/ford/manifest.json","status":"fully_verified","updated_at":"2026-07-17"},
-    "volkswagen":{"name":"Volkswagen","version":14,"manifest":"database/vehicles/volkswagen/manifest.json","status":"research_in_progress","updated_at":"2026-07-18"},
-    "audi":{"name":"Audi","version":1,"manifest":"database/vehicles/audi/manifest.json","status":"research_in_progress","updated_at":"2026-07-17"}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "database_root": "database",
+  "manufacturers": {
+    "ford": {
+      "name": "Ford",
+      "version": 42,
+      "manifest": "database/vehicles/ford/manifest.json",
+      "status": "fully_verified",
+      "updated_at": "2026-07-17"
+    },
+    "volkswagen": {
+      "name": "Volkswagen",
+      "version": 14,
+      "manifest": "database/vehicles/volkswagen/manifest.json",
+      "status": "research_in_progress",
+      "updated_at": "2026-07-18"
+    },
+    "audi": {
+      "name": "Audi",
+      "version": 2,
+      "manifest": "database/vehicles/audi/manifest.json",
+      "status": "research_in_progress",
+      "updated_at": "2026-07-18"
+    }
   },
-  "status":"ford_verified_vag_research"
+  "status": "ford_verified_vag_research"
 }
