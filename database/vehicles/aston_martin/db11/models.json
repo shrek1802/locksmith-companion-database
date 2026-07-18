@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "DB11",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "db11_uk_generations",
+      "name": "DB11 UK generations",
+      "years": "2016-2023",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Aston Martin immobiliser/PEPS family; model specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Aston Martin",
+      "url": "https://www.astonmartin.com/en-gb/models",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
