@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "GT",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "gt_uk_generations",
+      "name": "GT UK generations",
+      "years": "2019-2023",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "McLaren immobiliser/proximity access family; model specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "McLaren",
+      "url": "https://cars.mclaren.com/gb-en",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
