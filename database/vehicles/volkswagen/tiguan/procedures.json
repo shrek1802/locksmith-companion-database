@@ -1,1 +1,170 @@
-{"schema_version":"2.1","updated_at":"2026-07-17","items":{"tiguan_5n":{"add_key":"PROC_VW_IMMO4_OR_KESSY","all_keys_lost":"PROC_VW_CLUSTER_OR_KESSY_DATA"},"tiguan_ad1":{"add_key":"PROC_VW_MQB48","all_keys_lost":"PROC_VW_MQB_DASH_DATA"},"tiguan_2024":{"add_key":"PROC_VW_PROTECTED_PLATFORM","all_keys_lost":"PROC_CHECK_CURRENT_COVERAGE"}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": "Volkswagen",
+  "model": "Tiguan",
+  "market": "UK",
+  "items": {
+    "tiguan_5n_2007_2016": {
+      "add_key": {
+        "method": "Diagnostic or saved immobiliser-data route after identifying the exact instrument cluster and keyed or KESSY configuration",
+        "programming_method": "Volkswagen Immo IV / KESSY variant-specific Add Key procedure",
+        "online_requirement": "No blanket online requirement",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Volkswagen Immo IV key programming is available where the exact Tiguan cluster or KESSY variant is supported by the current device software.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD on supported variants; a module-data route may be required on others"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Do not treat keyed and KESSY vehicles as the same procedure.",
+              "Confirm the fitted cluster or access-start module and current software coverage before programming."
+            ]
+          }
+        },
+        "warnings": [
+          "Identify the immobiliser generation, cluster family and KESSY specification before preparing the key."
+        ]
+      },
+      "all_keys_lost": {
+        "method": "Acquire the required cluster or KESSY immobiliser data, prepare the correct dealer key and learn all keys",
+        "programming_method": "Cluster or KESSY module-data route depending on the fitted system",
+        "online_requirement": "No blanket online requirement",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL may be available through a supported Volkswagen Immo IV dashboard or module-data route after exact hardware identification.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Supported dashboard or access-start module connection as required by the fitted system"
+            },
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Do not remove or read a module until its processor and memory family have been confirmed.",
+              "Back up and verify all data before dealer-key preparation or key learning."
+            ]
+          }
+        },
+        "warnings": [
+          "All Keys Lost coverage is hardware-specific and must not be selected by vehicle year alone."
+        ]
+      },
+      "selection_note": "Separate keyed and KESSY variants and identify the exact cluster or access-start system first."
+    },
+    "tiguan_ad1_2016_2024": {
+      "add_key": {
+        "method": "Supported diagnostic, working-key or saved MQB immobiliser-data route after exact dashboard identification",
+        "programming_method": "MQB48 dashboard-specific Add Key procedure",
+        "online_requirement": "Tool and operation dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "A working-key Add Key route may be available with APB300 on a supported Volkswagen Group MQB application.",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Open and read the original working key using APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Supported Autel VW-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true,
+            "warnings": [
+              "Confirm the exact Tiguan key and current APB300 application coverage before accepting the job.",
+              "This working-key route does not prove All Keys Lost support."
+            ]
+          },
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "MQB key programming is available only when the fitted dashboard is a supported MQB48 5A or 5B type.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "OBD or supported dashboard-data route depending on the fitted MQB dashboard"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Identify MQB5A, MQB5B or MQB5C before proceeding.",
+              "The documented MQB48 solution does not establish MQB5C support."
+            ]
+          }
+        },
+        "warnings": [
+          "Confirm dashboard processor, keyed or KESSY configuration and current tool coverage before programming."
+        ]
+      },
+      "all_keys_lost": {
+        "method": "Read supported MQB dashboard data, calculate the required security data, prepare the dealer key and learn all keys",
+        "programming_method": "MQB48 5A/5B dashboard-data AKL route only where explicitly supported",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "MQB48 blade and proximity AKL is available for supported 5A/5B dashboards using the required dashboard-data route.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "RH850/V850 dashboard adapter route where the fitted dashboard is supported"
+            },
+            "tool_accessory_ids": [
+              "OBDSTAR MP001",
+              "OBDSTAR RH850/V850 adapter kit"
+            ],
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Confirm the dashboard processor and MQB generation before removal or reading.",
+              "Do not claim MQB5C AKL support from the documented MQB48 solution."
+            ]
+          }
+        },
+        "warnings": [
+          "Do not accept the job until the exact dashboard family and current AKL coverage have been confirmed."
+        ]
+      },
+      "selection_note": "Identify the exact dashboard and keyed or KESSY configuration before selecting the operation."
+    },
+    "tiguan_2024_present": {
+      "add_key": {
+        "method": "Current protected-platform Add Key route only after VIN, key type and live tool coverage confirmation",
+        "programming_method": "Later protected MQB / MQB5C support check",
+        "online_requirement": "May Be Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "No operation-specific aftermarket tool support is claimed for the 2024-on Tiguan until current manufacturer coverage is confirmed.",
+          "Check the exact vehicle build, security platform and key type before booking the work."
+        ]
+      },
+      "all_keys_lost": {
+        "method": "Confirm current aftermarket coverage before accepting the job",
+        "programming_method": "Protected platform-specific security route",
+        "online_requirement": "May Be Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "No universal aftermarket All Keys Lost route is claimed for this generation.",
+          "Do not infer AKL support from earlier MQB48 Tiguan coverage."
+        ]
+      },
+      "selection_note": "Check live tool coverage for the exact VIN and platform before accepting Add Key or All Keys Lost work."
+    }
+  },
+  "status": "operation_specific_tool_support_partially_verified"
+}
