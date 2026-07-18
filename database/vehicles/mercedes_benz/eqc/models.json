@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.1",
+  "model": "EQC",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "eqc_uk_scope",
+      "name": "EQC UK-market generations",
+      "years": "Generation/build-date specific; verify by VIN",
+      "platform": "Exact chassis/platform requires generation confirmation",
+      "immobiliser_family": "DAS/FBS generation, EIS/EZS, ESL/ELV and key type require exact chassis and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_uk_range": {
+      "publisher": "Mercedes-Benz UK",
+      "url": "https://www.mercedes-benz.co.uk/passengercars/models.html?group=all",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family presence"
+      ]
+    },
+    "official_manuals": {
+      "publisher": "Mercedes-Benz UK",
+      "url": "https://www.mercedes-benz.co.uk/passengercars/services/manuals.html",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "VIN/generation-specific documentation requirement"
+      ]
+    }
+  }
+}
