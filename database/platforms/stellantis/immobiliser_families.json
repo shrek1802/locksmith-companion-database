@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18",
+  "manufacturer_group": [
+    "PSA",
+    "FCA",
+    "Stellantis"
+  ],
+  "families": {
+    "psa_bsi_keyed": {
+      "status": "research_required"
+    },
+    "psa_bsi_proximity": {
+      "status": "research_required"
+    },
+    "legacy_gm_opel": {
+      "status": "research_required"
+    },
+    "fiat_code_bcm": {
+      "status": "research_required"
+    },
+    "fca_sgw": {
+      "status": "partially_verified",
+      "notes": "SGW/bypass applicability is vehicle and tool specific; no universal 12+8 claim."
+    },
+    "stellantis_large_van": {
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Advanced Diagnostics Smart Pro ADS2327",
+          "models": [
+            "Fiat Ducato",
+            "Peugeot Boxer",
+            "Opel Movano"
+          ],
+          "operation": "Programs remote and transponder; erases existing keys first; no working key required",
+          "confidence": "high",
+          "source": "https://www.advanced-diagnostics.com/news-posts/software-update-compatible-with-fiat-01-2026-ads2327"
+        }
+      ],
+      "limits": "Iveco-specific ADC2026 requirement is not copied to the three Stellantis vans."
+    }
+  }
+}

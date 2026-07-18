@@ -45,5 +45,22 @@
         "UK model-family coverage"
       ]
     }
+  },
+  "phase2_architecture_review": {
+    "checked_at": "2026-07-18",
+    "families_reviewed": [
+      "psa_bsi_keyed",
+      "psa_bsi_proximity",
+      "legacy_gm_opel",
+      "fiat_code_bcm",
+      "fca_sgw",
+      "stellantis_large_van"
+    ],
+    "status": "partially_verified at named family/tool scope; model applicability remains research_required",
+    "scope_limit": "PSA BSI and FCA BCM/SGW remain separate; no model mapping except explicitly named commercial vans",
+    "sources": [
+      "https://www.advanced-diagnostics.com/news-posts/software-update-compatible-with-fiat-01-2026-ads2327"
+    ],
+    "confidence": "high for official vendor/OEM claims"
   }
 }
