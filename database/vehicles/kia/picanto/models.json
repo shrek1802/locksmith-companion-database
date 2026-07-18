@@ -5,9 +5,130 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "picanto_uk_generations",
-      "name": "Picanto UK generations",
-      "years": "2004-present",
+      "id": "picanto_uk_generations_2004_2007_keyed_or_remote_transponder_key_hyn6",
+      "name": "Picanto UK generations - keyed_or_remote (2004-2007)",
+      "years": "2004-2007",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "picanto_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "PICANTO 2004 2008 HYN6T14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "HYN6",
+      "blade_id": "hyn6",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hyn6",
+        "record_year_range": "2004-2007",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "PICANTO 2004 2008 HYN6T14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "picanto_uk_generations_2008_2008_keyed_or_remote_transponder_key_hyn6_or_kia7_or_toy40",
+      "name": "Picanto UK generations - keyed_or_remote (2008-2008)",
+      "years": "2008-2008",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "picanto_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "PICANTO 2004 2008 HYN6T14 PH / CR2 46",
+          "PICANTO 2008 2011 KIA7T14 PH / CR2 46",
+          "PICANTO 2008 2011 TOY40MH TOY40FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hyn6",
+        "kia7",
+        "toy40"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2008-2008",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "picanto_uk_generations_2009_2011_keyed_or_remote_transponder_key_kia7_or_toy40",
+      "name": "Picanto UK generations - keyed_or_remote (2009-2011)",
+      "years": "2009-2011",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "picanto_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "PICANTO 2008 2011 KIA7T14 PH / CR2 46",
+          "PICANTO 2008 2011 TOY40MH TOY40FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "kia7",
+        "toy40"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2009-2011",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "picanto_uk_generations_2012_2026_blade_research",
+      "name": "Picanto UK generations - blade research boundary (2012-present)",
+      "years": "2012-present",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +153,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2012-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "picanto_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

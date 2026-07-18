@@ -5,9 +5,136 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "accent_uk_generations",
-      "name": "Accent UK generations",
-      "years": "1994-2009",
+      "id": "accent_uk_generations_1996_1998_keyed_or_remote_transponder_key_hyn10",
+      "name": "Accent UK generations - keyed_or_remote (1996-1998)",
+      "years": "1996-1998",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "accent_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ACCENT 1996 1999 HYN10T4 TEXAS 4C S6"
+        ]
+      },
+      "blade_profile": "HYN10",
+      "blade_id": "hyn10",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hyn10",
+        "record_year_range": "1996-1998",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "ACCENT 1996 1999 HYN10T4 TEXAS 4C S6"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "accent_uk_generations_1999_1999_keyed_or_remote_transponder_key_hyn10_or_hyn6",
+      "name": "Accent UK generations - keyed_or_remote (1999-1999)",
+      "years": "1999-1999",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "accent_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ACCENT 1996 1999 HYN10T4 TEXAS 4C S6",
+          "ACCENT 1999 2011 HYN6T14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hyn10",
+        "hyn6"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1999-1999",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "accent_uk_generations_2000_2009_keyed_or_remote_transponder_key_hyn6",
+      "name": "Accent UK generations - keyed_or_remote (2000-2009)",
+      "years": "2000-2009",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "accent_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ACCENT 1999 2011 HYN6T14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "HYN6",
+      "blade_id": "hyn6",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hyn6",
+        "record_year_range": "2000-2009",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "ACCENT 1999 2011 HYN6T14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "accent_uk_generations_1994_1995_blade_research",
+      "name": "Accent UK generations - blade research boundary (1994-1995)",
+      "years": "1994-1995",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +159,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1994-1995"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "accent_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

@@ -5,9 +5,48 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "patrol_uk_generations",
-      "name": "Patrol UK generations",
-      "years": "1980-2010",
+      "id": "patrol_uk_generations_1998_2010_keyed_or_remote_transponder_key_nsn14_or_nsn14a",
+      "name": "Patrol UK generations - keyed_or_remote (1998-2010)",
+      "years": "1998-2010",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Nissan BCM/NATS or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "patrol_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "PATROL 1998 2003 NSN14T25 NSN14TE NSN14FH PH / CR 41 Y Y",
+          "PATROL 2004 NSN14T13 TEX / CR XX",
+          "PATROL 1998 2003 NSN14AT25 PH / CR 41 Y Y",
+          "PATROL 2004 NSN14AT13 TEX / CR XX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "nsn14",
+        "nsn14a"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1998-2010",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "patrol_uk_generations_1980_1997_blade_research",
+      "name": "Patrol UK generations - blade research boundary (1980-1997)",
+      "years": "1980-1997",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Nissan BCM/NATS or later Alliance architecture; generation specific",
       "key_variants": [
@@ -32,7 +71,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1980-1997"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "patrol_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

@@ -5,34 +5,51 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "carisma_uk_generations",
-      "name": "Carisma UK generations",
+      "id": "carisma_uk_generations_1996_2004_keyed_or_remote_transponder_key_hu56r",
+      "name": "Carisma UK generations - keyed_or_remote (1996-2004)",
       "years": "1996-2004",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Mitsubishi ETACS/KOS or Alliance-derived BCM family; generation specific",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
-        {
-          "type": "slot_key",
-          "status": "research_required"
-        },
-        {
-          "type": "proximity",
-          "status": "research_required"
-        },
-        {
-          "type": "KESSY_or_keyless",
-          "status": "research_required"
-        },
-        {
-          "type": "smart_key",
-          "status": "research_required"
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "carisma_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "CARISMA 1996 2000 HU56RT2 HU56RFH PH 73 Y Y",
+          "CARISMA 2000 2004 HU56RT30 HU56RFH PH / CR 4M"
+        ]
+      },
+      "blade_profile": "HU56R",
+      "blade_id": "hu56r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu56r",
+        "record_year_range": "1996-2004",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "CARISMA 1996 2000 HU56RT2 HU56RFH PH 73 Y Y",
+              "CARISMA 2000 2004 HU56RT30 HU56RFH PH / CR 4M"
+            ]
+          }
+        ]
+      }
     }
   ],
   "sources": {

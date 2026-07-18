@@ -5,9 +5,267 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "corolla_uk_generations",
-      "name": "Corolla UK generations",
-      "years": "1983-present",
+      "id": "corolla_uk_generations_1996_1998_keyed_or_remote_transponder_key_toy43_or_toy46r",
+      "name": "Corolla UK generations - keyed_or_remote (1996-1998)",
+      "years": "1996-1998",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "corolla_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "COROLLA 1996 1999 TOY43T3 TEXAS 4C S11",
+          "COROLLA 1996 2006 TOY43MH TOY43TE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "COROLLA 1996 1999 TOY46RT3 TEXAS 4C S11"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy46r"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1996-1998",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "corolla_uk_generations_1999_1999_keyed_or_remote_transponder_key_toy43_or_toy43a_or_toy46r_or_toy47",
+      "name": "Corolla UK generations - keyed_or_remote (1999-1999)",
+      "years": "1999-1999",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "corolla_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "COROLLA 1996 1999 TOY43T3 TEXAS 4C S11",
+          "COROLLA 1996 2006 TOY43MH TOY43TE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "COROLLA 1999 2006 TOY43AT4 TEXAS 4C S11",
+          "COROLLA 1996 1999 TOY46RT3 TEXAS 4C S11",
+          "COROLLA 1999 2006 TOY47T4 TEXAS 4C S11"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy43a",
+        "toy46r",
+        "toy47"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1999-1999",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "corolla_uk_generations_2000_2006_keyed_or_remote_transponder_key_toy43_or_toy43a_or_toy47",
+      "name": "Corolla UK generations - keyed_or_remote (2000-2006)",
+      "years": "2000-2006",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "corolla_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "COROLLA 1996 2006 TOY43MH TOY43TE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "COROLLA SPACIO 2003 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA FIELDER 2004 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA 2005 2010 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA 1999 2006 TOY43AT4 TEXAS 4C S11",
+          "COROLLA SPACIO 2003 TOY43AT31 TEX / CR 67",
+          "COROLLA FIELDER 2004 TOY43AT31 TEX / CR 67",
+          "COROLLA 2005 2010 TOY43AT31 TEX / CR 67 I",
+          "COROLLA 1999 2006 TOY47T4 TEXAS 4C S11"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy43a",
+        "toy47"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2000-2006",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "corolla_uk_generations_2007_2007_keyed_or_remote_transponder_key_toy43_or_toy43a",
+      "name": "Corolla UK generations - keyed_or_remote (2007-2007)",
+      "years": "2007-2007",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "corolla_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "COROLLA SPACIO 2003 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA FIELDER 2004 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA 2005 2010 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA 2007 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA SPACIO 2003 TOY43AT31 TEX / CR 67",
+          "COROLLA FIELDER 2004 TOY43AT31 TEX / CR 67",
+          "COROLLA 2005 2010 TOY43AT31 TEX / CR 67 I",
+          "COROLLA 2007 TOY43AT31 TEX / CR 67 I"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy43a"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2007-2007",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "corolla_uk_generations_2008_2014_keyed_or_remote_transponder_key_toy43_or_toy43a_or_toy47",
+      "name": "Corolla UK generations - keyed_or_remote (2008-2014)",
+      "years": "2008-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "corolla_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "COROLLA SPACIO 2003 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA FIELDER 2004 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA 2005 2010 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA 2007 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "COROLLA SPACIO 2003 TOY43AT31 TEX / CR 67",
+          "COROLLA FIELDER 2004 TOY43AT31 TEX / CR 67",
+          "COROLLA 2005 2010 TOY43AT31 TEX / CR 67 I",
+          "COROLLA 2007 TOY43AT31 TEX / CR 67 I",
+          "COROLLA (S.Africa) 2008 TOY47MH TOY47TE TOY47FH Y Y TEX / CR 70 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy43a",
+        "toy47"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2008-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "corolla_uk_generations_2019_2022_proximity_emergency_insert_toy53",
+      "name": "Corolla UK generations - proximity (2019-2022)",
+      "years": "2019-2022",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "proximity",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "corolla_uk_generations",
+        "key_variant_scope": "proximity_emergency_insert",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Toyota Corolla NRE210 2019 2022 TOY53 433FM"
+        ]
+      },
+      "blade_profile": "TOY53",
+      "blade_id": "toy53",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "toy53",
+        "record_year_range": "2019-2022",
+        "key_variant_scope": "proximity_emergency_insert",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Toyota Corolla NRE210 2019 2022 TOY53 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "corolla_uk_generations_1983_1995_blade_research",
+      "name": "Corolla UK generations - blade research boundary (1983-1995)",
+      "years": "1983-1995",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +290,109 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1983-1995"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "corolla_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "corolla_uk_generations_2015_2018_blade_research",
+      "name": "Corolla UK generations - blade research boundary (2015-2018)",
+      "years": "2015-2018",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-2018"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "corolla_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "corolla_uk_generations_2023_2026_blade_research",
+      "name": "Corolla UK generations - blade research boundary (2023-present)",
+      "years": "2023-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2023-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "corolla_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

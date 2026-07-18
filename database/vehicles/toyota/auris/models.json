@@ -5,34 +5,88 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "auris_uk_generations",
-      "name": "Auris UK generations",
-      "years": "2007-2018",
+      "id": "auris_uk_generations_2007_2014_keyed_or_remote_transponder_key_toy43_or_toy43a_or_toy47",
+      "name": "Auris UK generations - keyed_or_remote (2007-2014)",
+      "years": "2007-2014",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
-        {
-          "type": "slot_key",
-          "status": "research_required"
-        },
-        {
-          "type": "proximity",
-          "status": "research_required"
-        },
-        {
-          "type": "KESSY_or_keyless",
-          "status": "research_required"
-        },
-        {
-          "type": "smart_key",
+          "type": "keyed_or_remote",
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "auris_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "AURIS 2006 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "AURIS 2006 TOY43AT31 TEX / CR 67 I",
+          "AURIS (EU) 2007 TOY47MH TOY47TE TOY47FH Y Y TEX / CR 70 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy43a",
+        "toy47"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2007-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "auris_uk_generations_2015_2018_proximity_emergency_insert_toy52",
+      "name": "Auris UK generations - proximity (2015-2018)",
+      "years": "2015-2018",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "proximity",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "auris_uk_generations",
+        "key_variant_scope": "proximity_emergency_insert",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Toyota Auris 18 2015 2018 TOY52 433FM"
+        ]
+      },
+      "blade_profile": "TOY52",
+      "blade_id": "toy52",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "toy52",
+        "record_year_range": "2015-2018",
+        "key_variant_scope": "proximity_emergency_insert",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Toyota Auris 18 2015 2018 TOY52 433FM"
+            ]
+          }
+        ]
+      }
     }
   ],
   "sources": {

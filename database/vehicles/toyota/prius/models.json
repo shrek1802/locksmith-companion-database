@@ -5,9 +5,47 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "prius_uk_generations",
-      "name": "Prius UK generations",
-      "years": "2000-present",
+      "id": "prius_uk_generations_2000_2003_keyed_or_remote_transponder_key_toy43_or_toy43a",
+      "name": "Prius UK generations - keyed_or_remote (2000-2003)",
+      "years": "2000-2003",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "prius_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "PRIUS 2000 2003 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "PRIUS 2000 2003 TOY43AT4 TEXAS 4C E",
+          "PRIUS 2001 2003 TOY43AT4 TEXAS 4C E"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy43a"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2000-2003",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "prius_uk_generations_2004_2026_blade_research",
+      "name": "Prius UK generations - blade research boundary (2004-present)",
+      "years": "2004-present",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +70,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2004-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "prius_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

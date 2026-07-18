@@ -5,34 +5,176 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "magentis_uk_generations",
-      "name": "Magentis UK generations",
-      "years": "2001-2010",
+      "id": "magentis_uk_generations_2001_2005_keyed_or_remote_transponder_key_kia3r",
+      "name": "Magentis UK generations - keyed_or_remote (2001-2005)",
+      "years": "2001-2005",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "magentis_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "MAGENTIS 2001 2006 KIA3RT14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "KIA3R",
+      "blade_id": "kia3r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "kia3r",
+        "record_year_range": "2001-2005",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "MAGENTIS 2001 2006 KIA3RT14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "magentis_uk_generations_2006_2006_keyed_or_remote_transponder_key_hyn14r_or_kia3r",
+      "name": "Magentis UK generations - keyed_or_remote (2006-2006)",
+      "years": "2006-2006",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
         {
-          "type": "slot_key",
-          "status": "research_required"
-        },
-        {
-          "type": "proximity",
-          "status": "research_required"
-        },
-        {
-          "type": "KESSY_or_keyless",
-          "status": "research_required"
-        },
-        {
-          "type": "smart_key",
+          "type": "keyed_or_remote",
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "magentis_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "MAGENTIS 2006 2008 HYN14RT14 PH / CR2 46",
+          "MAGENTIS 2001 2006 KIA3RT14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hyn14r",
+        "kia3r"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2006-2006",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "magentis_uk_generations_2007_2008_keyed_or_remote_transponder_key_hyn14r",
+      "name": "Magentis UK generations - keyed_or_remote (2007-2008)",
+      "years": "2007-2008",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "magentis_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "MAGENTIS 2006 2008 HYN14RT14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "HYN14R",
+      "blade_id": "hyn14r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hyn14r",
+        "record_year_range": "2007-2008",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "MAGENTIS 2006 2008 HYN14RT14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "magentis_uk_generations_2009_2010_keyed_or_remote_transponder_key_toy49",
+      "name": "Magentis UK generations - keyed_or_remote (2009-2010)",
+      "years": "2009-2010",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "magentis_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "MAGENTIS 2009 2011 TOY49MH TOY49TE TOY49FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "TOY49",
+      "blade_id": "toy49",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "toy49",
+        "record_year_range": "2009-2010",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "MAGENTIS 2009 2011 TOY49MH TOY49TE TOY49FH Y Y PH / CR2 46 Y P-BOX"
+            ]
+          }
+        ]
+      }
     }
   ],
   "sources": {

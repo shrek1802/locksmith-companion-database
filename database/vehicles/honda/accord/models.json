@@ -5,9 +5,228 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "accord_uk_generations",
-      "name": "Accord UK generations",
-      "years": "1982-2015",
+      "id": "accord_uk_generations_1995_1998_keyed_or_remote_transponder_key_hon58r_or_ne77r",
+      "name": "Accord UK generations - keyed_or_remote (1995-1998)",
+      "years": "1995-1998",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "accord_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ACCORD Aerodeck 1995 1997 HON58RT5 HON58RFH MEG 13 Y Y Meg",
+          "ACCORD Coupè 1995 2002 HON58RT5 HON58RFH MEG 13 Y Y Meg",
+          "ACCORD 1998 2002 HON58RT5 HON58RFH MEG 13 Y Y",
+          "ACCORD 1995 1999 NE77RT2 PH 33 Y Y"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hon58r",
+        "ne77r"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1995-1998",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "accord_uk_generations_1999_1999_keyed_or_remote_transponder_key_hon58r_or_hon65r_or_ne77r",
+      "name": "Accord UK generations - keyed_or_remote (1999-1999)",
+      "years": "1999-1999",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "accord_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ACCORD Coupè 1995 2002 HON58RT5 HON58RFH MEG 13 Y Y Meg",
+          "ACCORD 1998 2002 HON58RT5 HON58RFH MEG 13 Y Y",
+          "ACCORD 1999 2002 HON58RT6 HON58RFH MEG / CR 48",
+          "ACCORD 1999 2002 HON65RT6 MEG / CR 48",
+          "ACCORD 1995 1999 NE77RT2 PH 33 Y Y"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hon58r",
+        "hon65r",
+        "ne77r"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1999-1999",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "accord_uk_generations_2000_2002_keyed_or_remote_transponder_key_hon58r_or_hon65r",
+      "name": "Accord UK generations - keyed_or_remote (2000-2002)",
+      "years": "2000-2002",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "accord_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ACCORD Coupè 1995 2002 HON58RT5 HON58RFH MEG 13 Y Y Meg",
+          "ACCORD 1998 2002 HON58RT5 HON58RFH MEG 13 Y Y",
+          "ACCORD 1999 2002 HON58RT6 HON58RFH MEG / CR 48",
+          "ACCORD 1999 2002 HON65RT6 MEG / CR 48"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hon58r",
+        "hon65r"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2000-2002",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "accord_uk_generations_2003_2014_keyed_or_remote_transponder_key_hon66",
+      "name": "Accord UK generations - keyed_or_remote (2003-2014)",
+      "years": "2003-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "accord_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ACCORD 2003 2006 HON66T14 PH / CR2 46",
+          "ACCORD 2003 HON66T14 PH / CR2 46",
+          "ACCORD 2006 2008 HON66T27 HON66FH SOK / CR 8E",
+          "ACCORD 2008 HON66T14 PH / CR2 46",
+          "ACCORD CrossT 2010 HON66T14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "HON66",
+      "blade_id": "hon66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon66",
+        "record_year_range": "2003-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "ACCORD 2003 2006 HON66T14 PH / CR2 46",
+              "ACCORD 2003 HON66T14 PH / CR2 46",
+              "ACCORD 2006 2008 HON66T27 HON66FH SOK / CR 8E",
+              "ACCORD 2008 HON66T14 PH / CR2 46",
+              "ACCORD CrossT 2010 HON66T14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "accord_uk_generations_2003_2008_remote_or_flip_key_hon66",
+      "name": "Accord UK generations - remote_or_flip (2003-2008)",
+      "years": "2003-2008",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "accord_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Honda Accord 2003 2006 HON66 433FM",
+          "Honda Accord 2006 2008 HON66 433FM"
+        ]
+      },
+      "blade_profile": "HON66",
+      "blade_id": "hon66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon66",
+        "record_year_range": "2003-2008",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Honda Accord 2003 2006 HON66 433FM",
+              "Honda Accord 2006 2008 HON66 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "accord_uk_generations_1982_1994_blade_research",
+      "name": "Accord UK generations - blade research boundary (1982-1994)",
+      "years": "1982-1994",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +251,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1982-1994"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "accord_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "accord_uk_generations_2015_2015_blade_research",
+      "name": "Accord UK generations - blade research boundary (2015-2015)",
+      "years": "2015-2015",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-2015"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "accord_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

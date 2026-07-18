@@ -5,9 +5,218 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "outback_uk_generations",
-      "name": "Outback UK generations",
-      "years": "1996-present",
+      "id": "outback_uk_generations_1996_1997_keyed_or_remote_transponder_key_nsn11",
+      "name": "Outback UK generations - keyed_or_remote (1996-1997)",
+      "years": "1996-1997",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Subaru immobiliser/BIU or keyless-access family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "outback_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "OUTBACK 1996 1998 NSN11T2 NSN11FH PH 33 Y Y"
+        ]
+      },
+      "blade_profile": "NSN11",
+      "blade_id": "nsn11",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "nsn11",
+        "record_year_range": "1996-1997",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "OUTBACK 1996 1998 NSN11T2 NSN11FH PH 33 Y Y"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "outback_uk_generations_1998_1998_keyed_or_remote_transponder_key_nsn11_or_nsn14_or_nsn19",
+      "name": "Outback UK generations - keyed_or_remote (1998-1998)",
+      "years": "1998-1998",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Subaru immobiliser/BIU or keyless-access family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "outback_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "OUTBACK 1996 1998 NSN11T2 NSN11FH PH 33 Y Y",
+          "OUTBACK 1998 2003 NSN14T13 TEX / CR 60",
+          "OUTBACK (AUS) 1998 2003 NSN19T13 TEX / CR 60"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "nsn11",
+        "nsn14",
+        "nsn19"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1998-1998",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "outback_uk_generations_1999_2002_keyed_or_remote_transponder_key_nsn14_or_nsn19",
+      "name": "Outback UK generations - keyed_or_remote (1999-2002)",
+      "years": "1999-2002",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Subaru immobiliser/BIU or keyless-access family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "outback_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "OUTBACK 1998 2003 NSN14T13 TEX / CR 60",
+          "OUTBACK (AUS) 1998 2003 NSN19T13 TEX / CR 60"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "nsn14",
+        "nsn19"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1999-2002",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "outback_uk_generations_2003_2003_keyed_or_remote_transponder_key_dat17_or_nsn14_or_nsn19",
+      "name": "Outback UK generations - keyed_or_remote (2003-2003)",
+      "years": "2003-2003",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Subaru immobiliser/BIU or keyless-access family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "outback_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "OUTBACK 2003 DAT17MH DAT17TE DAT17FH Y Y TEX / CR 60 Y P-BOX",
+          "OUTBACK 1998 2003 NSN14T13 TEX / CR 60",
+          "OUTBACK (AUS) 1998 2003 NSN19T13 TEX / CR 60"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "dat17",
+        "nsn14",
+        "nsn19"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2003-2003",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "outback_uk_generations_2004_2014_keyed_or_remote_transponder_key_dat17",
+      "name": "Outback UK generations - keyed_or_remote (2004-2014)",
+      "years": "2004-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Subaru immobiliser/BIU or keyless-access family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "outback_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "OUTBACK 2003 DAT17MH DAT17TE DAT17FH Y Y TEX / CR 60 Y P-BOX",
+          "OUTBACK 2004 DAT17T13 TEX / CR 60",
+          "OUTBACK 2005 DAT17T21 TEX / CR 62"
+        ]
+      },
+      "blade_profile": "DAT17",
+      "blade_id": "dat17",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "dat17",
+        "record_year_range": "2004-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "OUTBACK 2003 DAT17MH DAT17TE DAT17FH Y Y TEX / CR 60 Y P-BOX",
+              "OUTBACK 2004 DAT17T13 TEX / CR 60",
+              "OUTBACK 2005 DAT17T21 TEX / CR 62"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "outback_uk_generations_2015_2026_blade_research",
+      "name": "Outback UK generations - blade research boundary (2015-present)",
+      "years": "2015-present",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Subaru immobiliser/BIU or keyless-access family; generation specific",
       "key_variants": [
@@ -32,7 +241,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "outback_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

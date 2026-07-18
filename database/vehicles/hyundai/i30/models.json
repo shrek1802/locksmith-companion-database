@@ -5,9 +5,48 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "i30_uk_generations",
-      "name": "i30 UK generations",
-      "years": "2007-present",
+      "id": "i30_uk_generations_2007_2011_keyed_or_remote_transponder_key_kia7_or_toy40_or_toy49",
+      "name": "i30 UK generations - keyed_or_remote (2007-2011)",
+      "years": "2007-2011",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "i30_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "I30 2007 2011 KIA7T14 PH / CR2 46",
+          "I30 2007 2011 TOY40MH TOY40FH Y Y PH / CR2 46 Y P-BOX",
+          "I30 2007 2011 TOY49MH TOY49FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "kia7",
+        "toy40",
+        "toy49"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2007-2011",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "i30_uk_generations_2012_2026_blade_research",
+      "name": "i30 UK generations - blade research boundary (2012-present)",
+      "years": "2012-present",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +71,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2012-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "i30_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

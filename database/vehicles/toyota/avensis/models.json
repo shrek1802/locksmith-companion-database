@@ -5,9 +5,141 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "avensis_uk_generations",
-      "name": "Avensis UK generations",
-      "years": "1998-2018",
+      "id": "avensis_uk_generations_1998_2000_keyed_or_remote_transponder_key_toy47",
+      "name": "Avensis UK generations - keyed_or_remote (1998-2000)",
+      "years": "1998-2000",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "avensis_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "AVENSIS 1998 2000 TOY47T4 TEXAS 4C S11",
+          "AVENSIS 2000 2003 TOY47T16 TEX / CR 60"
+        ]
+      },
+      "blade_profile": "TOY47",
+      "blade_id": "toy47",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "toy47",
+        "record_year_range": "1998-2000",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "AVENSIS 1998 2000 TOY47T4 TEXAS 4C S11",
+              "AVENSIS 2000 2003 TOY47T16 TEX / CR 60"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "avensis_uk_generations_2001_2003_keyed_or_remote_transponder_key_toy43_or_toy43a_or_toy47",
+      "name": "Avensis UK generations - keyed_or_remote (2001-2003)",
+      "years": "2001-2003",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "avensis_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "AVENSIS VERSO 2001 2003 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "AVENSIS VERSO 2001 2003 TOY43AT4 TEXAS 4C E",
+          "AVENSIS 2000 2003 TOY47T16 TEX / CR 60",
+          "AVENSIS 2003 TOY47MH TOY47TE TOY47FH Y Y TEX / CR 70 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy43a",
+        "toy47"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2001-2003",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "avensis_uk_generations_2004_2014_keyed_or_remote_transponder_key_toy47",
+      "name": "Avensis UK generations - keyed_or_remote (2004-2014)",
+      "years": "2004-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "avensis_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "AVENSIS 2003 TOY47MH TOY47TE TOY47FH Y Y TEX / CR 70 Y P-BOX"
+        ]
+      },
+      "blade_profile": "TOY47",
+      "blade_id": "toy47",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "toy47",
+        "record_year_range": "2004-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "AVENSIS 2003 TOY47MH TOY47TE TOY47FH Y Y TEX / CR 70 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "avensis_uk_generations_2015_2018_blade_research",
+      "name": "Avensis UK generations - blade research boundary (2015-2018)",
+      "years": "2015-2018",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +164,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-2018"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "avensis_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

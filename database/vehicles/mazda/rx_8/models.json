@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "rx_8_uk_generations",
-      "name": "RX-8 UK generations",
-      "years": "2003-2010",
+      "id": "rx_8_uk_generations_2004_2010_keyed_or_remote_transponder_key_maz24r",
+      "name": "RX-8 UK generations - keyed_or_remote (2004-2010)",
+      "years": "2004-2010",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Mazda immobiliser/SSU/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "rx_8_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "RX-8 2004 MAZ24RT17 TEX / CR 63"
+        ]
+      },
+      "blade_profile": "MAZ24R",
+      "blade_id": "maz24r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "maz24r",
+        "record_year_range": "2004-2010",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "RX-8 2004 MAZ24RT17 TEX / CR 63"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rx_8_uk_generations_2003_2003_blade_research",
+      "name": "RX-8 UK generations - blade research boundary (2003-2003)",
+      "years": "2003-2003",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Mazda immobiliser/SSU/BCM or smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +77,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2003-2003"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "rx_8_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

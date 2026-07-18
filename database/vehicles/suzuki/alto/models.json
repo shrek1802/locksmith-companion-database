@@ -5,9 +5,168 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "alto_uk_generations",
-      "name": "Alto UK generations",
-      "years": "1981-2014",
+      "id": "alto_uk_generations_1996_2001_keyed_or_remote_transponder_key_sz11r_or_sz12",
+      "name": "Alto UK generations - keyed_or_remote (1996-2001)",
+      "years": "1996-2001",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "alto_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ALTO 1996 2002 SZ11RT4 TEXAS 4C",
+          "ALTO 1996 2002 SZ12T4 TEXAS 4C"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "sz11r",
+        "sz12"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1996-2001",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "alto_uk_generations_2002_2002_keyed_or_remote_transponder_key_sz11_or_sz11r_or_sz12",
+      "name": "Alto UK generations - keyed_or_remote (2002-2002)",
+      "years": "2002-2002",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "alto_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ALTO 2002 2008 SZ11T18 TEX / CR 65",
+          "ALTO 1996 2002 SZ11RT4 TEXAS 4C",
+          "ALTO 2002 2008 SZ11RT18 TEX / CR 65",
+          "ALTO 1996 2002 SZ12T4 TEXAS 4C"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "sz11",
+        "sz11r",
+        "sz12"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2002-2002",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "alto_uk_generations_2003_2008_keyed_or_remote_transponder_key_sz11_or_sz11r",
+      "name": "Alto UK generations - keyed_or_remote (2003-2008)",
+      "years": "2003-2008",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "alto_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ALTO 2002 2008 SZ11T18 TEX / CR 65",
+          "ALTO 2002 2008 SZ11RT18 TEX / CR 65"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "sz11",
+        "sz11r"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2003-2008",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "alto_uk_generations_2009_2014_keyed_or_remote_transponder_key_hu133r",
+      "name": "Alto UK generations - keyed_or_remote (2009-2014)",
+      "years": "2009-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "alto_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ALTO 2009 HU133RT14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "HU133R",
+      "blade_id": "hu133r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu133r",
+        "record_year_range": "2009-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "ALTO 2009 HU133RT14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "alto_uk_generations_1981_1995_blade_research",
+      "name": "Alto UK generations - blade research boundary (1981-1995)",
+      "years": "1981-1995",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +191,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1981-1995"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "alto_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

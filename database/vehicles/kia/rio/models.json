@@ -5,9 +5,144 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "rio_uk_generations",
-      "name": "Rio UK generations",
-      "years": "2001-2023",
+      "id": "rio_uk_generations_2001_2005_keyed_or_remote_transponder_key_kia3r",
+      "name": "Rio UK generations - keyed_or_remote (2001-2005)",
+      "years": "2001-2005",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "rio_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "RIO 2001 2005 KIA3RT16 TEX / CR 60 60"
+        ]
+      },
+      "blade_profile": "KIA3R",
+      "blade_id": "kia3r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "kia3r",
+        "record_year_range": "2001-2005",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "RIO 2001 2005 KIA3RT16 TEX / CR 60 60"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rio_uk_generations_2006_2009_keyed_or_remote_transponder_key_hyn15",
+      "name": "Rio UK generations - keyed_or_remote (2006-2009)",
+      "years": "2006-2009",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "rio_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "RIO 2006 2009 HYN15T14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "HYN15",
+      "blade_id": "hyn15",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hyn15",
+        "record_year_range": "2006-2009",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "RIO 2006 2009 HYN15T14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rio_uk_generations_2010_2011_keyed_or_remote_transponder_key_toy49",
+      "name": "Rio UK generations - keyed_or_remote (2010-2011)",
+      "years": "2010-2011",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "rio_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "RIO 2010 2011 TOY49MH TOY49TE TOY49FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "TOY49",
+      "blade_id": "toy49",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "toy49",
+        "record_year_range": "2010-2011",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "RIO 2010 2011 TOY49MH TOY49TE TOY49FH Y Y PH / CR2 46 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rio_uk_generations_2012_2023_blade_research",
+      "name": "Rio UK generations - blade research boundary (2012-2023)",
+      "years": "2012-2023",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Kia SMARTRA/BCM/smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +167,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2012-2023"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "rio_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

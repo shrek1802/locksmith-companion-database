@@ -5,9 +5,46 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "baleno_uk_generations",
-      "name": "Baleno UK generations",
-      "years": "1995-2003",
+      "id": "baleno_uk_generations_1996_2001_keyed_or_remote_transponder_key_sz11r_or_sz12",
+      "name": "Baleno UK generations - keyed_or_remote (1996-2001)",
+      "years": "1996-2001",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "baleno_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "BALENO 1996 2001 SZ11RT4 TEXAS 4C",
+          "BALENO 1996 2001 SZ12T4 TEXAS 4C"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "sz11r",
+        "sz12"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1996-2001",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "baleno_uk_generations_1995_1995_blade_research",
+      "name": "Baleno UK generations - blade research boundary (1995-1995)",
+      "years": "1995-1995",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +69,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1995-1995"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "baleno_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "baleno_uk_generations_2002_2003_blade_research",
+      "name": "Baleno UK generations - blade research boundary (2002-2003)",
+      "years": "2002-2003",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2002-2003"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "baleno_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

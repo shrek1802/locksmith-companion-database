@@ -5,9 +5,94 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "terrano_uk_generations",
-      "name": "Terrano II UK generations",
-      "years": "1993-2006",
+      "id": "terrano_uk_generations_1995_1997_keyed_or_remote_transponder_key_nsn11",
+      "name": "Terrano II UK generations - keyed_or_remote (1995-1997)",
+      "years": "1995-1997",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Nissan BCM/NATS or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "terrano_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "TERRANO II 1995 1998 NSN11T2 NSN11FH PH 33 Y Y N-N"
+        ]
+      },
+      "blade_profile": "NSN11",
+      "blade_id": "nsn11",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "nsn11",
+        "record_year_range": "1995-1997",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "TERRANO II 1995 1998 NSN11T2 NSN11FH PH 33 Y Y N-N"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "terrano_uk_generations_1998_2006_keyed_or_remote_transponder_key_nsn11_or_nsn11a",
+      "name": "Terrano II UK generations - keyed_or_remote (1998-2006)",
+      "years": "1998-2006",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Nissan BCM/NATS or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "terrano_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "TERRANO II 1995 1998 NSN11T2 NSN11FH PH 33 Y Y N-N",
+          "TERRANO II 1998 2001 NSN11T25 NSN11TE NSN11FH PH / CR 41 Y Y",
+          "TERRANO II 2002 2006 NSN11T13 TEX / CR 60",
+          "TERRANO II 1998 2001 NSN11AT25 PH / CR 41 Y Y",
+          "TERRANO II 2002 2006 NSN11AT13 TEX / CR 60"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "nsn11",
+        "nsn11a"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1998-2006",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "terrano_uk_generations_1993_1994_blade_research",
+      "name": "Terrano II UK generations - blade research boundary (1993-1994)",
+      "years": "1993-1994",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Nissan BCM/NATS or later Alliance architecture; generation specific",
       "key_variants": [
@@ -32,7 +117,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1993-1994"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "terrano_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

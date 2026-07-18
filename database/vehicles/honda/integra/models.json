@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "integra_uk_generations",
-      "name": "Integra UK generations",
-      "years": "1986-2001",
+      "id": "integra_uk_generations_1998_2001_keyed_or_remote_transponder_key_hon58r",
+      "name": "Integra UK generations - keyed_or_remote (1998-2001)",
+      "years": "1998-2001",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "integra_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "INTEGRA 1998 2001 HON58RT5 HON58RFH MEG 13 Y Y Meg"
+        ]
+      },
+      "blade_profile": "HON58R",
+      "blade_id": "hon58r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon58r",
+        "record_year_range": "1998-2001",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "INTEGRA 1998 2001 HON58RT5 HON58RFH MEG 13 Y Y Meg"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "integra_uk_generations_1986_1997_blade_research",
+      "name": "Integra UK generations - blade research boundary (1986-1997)",
+      "years": "1986-1997",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +77,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1986-1997"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "integra_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

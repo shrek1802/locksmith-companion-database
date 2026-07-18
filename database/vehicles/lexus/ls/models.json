@@ -5,9 +5,56 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "ls_uk_generations",
-      "name": "LS UK generations",
-      "years": "1990-present",
+      "id": "ls_uk_generations_2000_2006_keyed_or_remote_transponder_key_fo38r",
+      "name": "LS UK generations - keyed_or_remote (2000-2006)",
+      "years": "2000-2006",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota/Lexus immobiliser ECU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "ls_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "LS 2000 2006 FO38RMH FO38RTE FO38RFH Y Y TEX / CR 60 Y P-BOX",
+          "LS 2003 2006 FO38RT17 TEX / CR 63 C"
+        ]
+      },
+      "blade_profile": "FO38R",
+      "blade_id": "fo38r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "fo38r",
+        "record_year_range": "2000-2006",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "LS 2000 2006 FO38RMH FO38RTE FO38RFH Y Y TEX / CR 60 Y P-BOX",
+              "LS 2003 2006 FO38RT17 TEX / CR 63 C"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ls_uk_generations_1990_1999_blade_research",
+      "name": "LS UK generations - blade research boundary (1990-1999)",
+      "years": "1990-1999",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Toyota/Lexus immobiliser ECU and smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +79,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1990-1999"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "ls_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "ls_uk_generations_2007_2026_blade_research",
+      "name": "LS UK generations - blade research boundary (2007-present)",
+      "years": "2007-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota/Lexus immobiliser ECU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2007-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "ls_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

@@ -5,9 +5,216 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "swift_uk_generations",
-      "name": "Swift UK generations",
-      "years": "1984-present",
+      "id": "swift_uk_generations_1996_2004_keyed_or_remote_transponder_key_sz11r_or_sz12",
+      "name": "Swift UK generations - keyed_or_remote (1996-2004)",
+      "years": "1996-2004",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "swift_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SWIFT 1996 2005 SZ11RT4 TEXAS 4C",
+          "SWIFT 1996 2005 SZ12T4 TEXAS 4C"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "sz11r",
+        "sz12"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1996-2004",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "swift_uk_generations_2005_2005_keyed_or_remote_transponder_key_hu133r_or_sz11r_or_sz12_or_sz22",
+      "name": "Swift UK generations - keyed_or_remote (2005-2005)",
+      "years": "2005-2005",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "swift_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SWIFT 2005 HU133RT14 PH / CR2 46",
+          "SWIFT 1996 2005 SZ11RT4 TEXAS 4C",
+          "SWIFT 1996 2005 SZ12T4 TEXAS 4C",
+          "SWIFT 2005 SZ22MH SZ22TE SZ22FH Y Y TEX / CR 66 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hu133r",
+        "sz11r",
+        "sz12",
+        "sz22"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2005-2005",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "swift_uk_generations_2006_2014_keyed_or_remote_transponder_key_hu133r_or_sz22",
+      "name": "Swift UK generations - keyed_or_remote (2006-2014)",
+      "years": "2006-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "swift_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SWIFT 2005 HU133RT14 PH / CR2 46",
+          "SWIFT 2005 SZ22MH SZ22TE SZ22FH Y Y TEX / CR 66 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hu133r",
+        "sz22"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2006-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "swift_uk_generations_2005_2010_remote_or_flip_key_hu133r",
+      "name": "Swift UK generations - remote_or_flip (2005-2010)",
+      "years": "2005-2010",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "swift_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Suzuki Swift (Diesel) MZ/EZ 2005 2010 HU133R 433AM",
+          "Suzuki Swift MZ/EZ 2005 2010 HU133R 433AM"
+        ]
+      },
+      "blade_profile": "HU133R",
+      "blade_id": "hu133r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu133r",
+        "record_year_range": "2005-2010",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Suzuki Swift (Diesel) MZ/EZ 2005 2010 HU133R 433AM",
+              "Suzuki Swift MZ/EZ 2005 2010 HU133R 433AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "swift_uk_generations_2017_2021_proximity_emergency_insert_hu133r",
+      "name": "Swift UK generations - proximity (2017-2021)",
+      "years": "2017-2021",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "proximity",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "swift_uk_generations",
+        "key_variant_scope": "proximity_emergency_insert",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Suzuki Swift A2L (Z3S) 2017 2021 HU133R 433AM"
+        ]
+      },
+      "blade_profile": "HU133R",
+      "blade_id": "hu133r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu133r",
+        "record_year_range": "2017-2021",
+        "key_variant_scope": "proximity_emergency_insert",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Suzuki Swift A2L (Z3S) 2017 2021 HU133R 433AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "swift_uk_generations_1984_1995_blade_research",
+      "name": "Swift UK generations - blade research boundary (1984-1995)",
+      "years": "1984-1995",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +239,109 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1984-1995"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "swift_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "swift_uk_generations_2015_2016_blade_research",
+      "name": "Swift UK generations - blade research boundary (2015-2016)",
+      "years": "2015-2016",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-2016"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "swift_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "swift_uk_generations_2022_2026_blade_research",
+      "name": "Swift UK generations - blade research boundary (2022-present)",
+      "years": "2022-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Suzuki immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2022-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "swift_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

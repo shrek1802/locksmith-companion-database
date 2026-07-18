@@ -5,9 +5,230 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "land_cruiser_uk_generations",
-      "name": "Land Cruiser UK generations",
-      "years": "1980-present",
+      "id": "land_cruiser_uk_generations_1996_1997_keyed_or_remote_transponder_key_toy43_or_toy43a",
+      "name": "Land Cruiser UK generations - keyed_or_remote (1996-1997)",
+      "years": "1996-1997",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "land_cruiser_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "LAND CRUISER 90 1996 2002 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER 90 1996 2002 TOY43AT4 TEXAS 4C E"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy43a"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1996-1997",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "land_cruiser_uk_generations_1998_1999_keyed_or_remote_transponder_key_toy40_or_toy40b_or_toy43_or_toy43a",
+      "name": "Land Cruiser UK generations - keyed_or_remote (1998-1999)",
+      "years": "1998-1999",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "land_cruiser_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "LAND CRUISER 100 1998 2000 TOY40MH TOY40BTE TOY40FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER 100 1998 2000 TOY40BT4 TEXAS 4C E",
+          "LAND CRUISER 90 1996 2002 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER 100 1998 2002 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER 90 1996 2002 TOY43AT4 TEXAS 4C E",
+          "LAND CRUISER 100 1998 2002 TOY43AT4 TEXAS 4C E"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy40",
+        "toy40b",
+        "toy43",
+        "toy43a"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1998-1999",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "land_cruiser_uk_generations_2000_2000_keyed_or_remote_transponder_key_toy40_or_toy40b_or_toy43_or_toy43a_or_toy48_or_toy48b",
+      "name": "Land Cruiser UK generations - keyed_or_remote (2000-2000)",
+      "years": "2000-2000",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "land_cruiser_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "LAND CRUISER 100 1998 2000 TOY40MH TOY40BTE TOY40FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER 100 1998 2000 TOY40BT4 TEXAS 4C E",
+          "LAND CRUISER 90 1996 2002 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER 100 1998 2002 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER PRADO 2000 2002 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER 90 1996 2002 TOY43AT4 TEXAS 4C E",
+          "LAND CRUISER 100 1998 2002 TOY43AT4 TEXAS 4C E",
+          "LAND CRUISER PRADO 2000 2002 TOY43AT4 TEXAS 4C S11",
+          "LAND CRUISER 100 2000 2002 TOY48MH TOY48BTE TOY48FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER 100 2000 2002 TOY48BT4 TEXAS 4C E"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy40",
+        "toy40b",
+        "toy43",
+        "toy43a",
+        "toy48",
+        "toy48b"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2000-2000",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "land_cruiser_uk_generations_2001_2002_keyed_or_remote_transponder_key_toy43_or_toy43a_or_toy48_or_toy48b",
+      "name": "Land Cruiser UK generations - keyed_or_remote (2001-2002)",
+      "years": "2001-2002",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "land_cruiser_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "LAND CRUISER 90 1996 2002 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER 100 1998 2002 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER PRADO 2000 2002 TOY43MH TOY43ATE TOY43FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER PRADO 2002 2005 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "LAND CRUISER PRADO 2002 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "LAND CRUISER 90 1996 2002 TOY43AT4 TEXAS 4C E",
+          "LAND CRUISER 100 1998 2002 TOY43AT4 TEXAS 4C E",
+          "LAND CRUISER PRADO 2000 2002 TOY43AT4 TEXAS 4C S11",
+          "LAND CRUISER PRADO 2002 2005 TOY43AT31 TEX / CR 67 I",
+          "LAND CRUISER PRADO 2002 TOY43AT31 TEX / CR 67 I",
+          "LAND CRUISER 100 2000 2002 TOY48MH TOY48BTE TOY48FH Y Y TEXAS 4C Y P-BOX",
+          "LAND CRUISER 100 2000 2002 TOY48BT4 TEXAS 4C E"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy43a",
+        "toy48",
+        "toy48b"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2001-2002",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "land_cruiser_uk_generations_2003_2014_keyed_or_remote_transponder_key_toy43_or_toy43a_or_toy48",
+      "name": "Land Cruiser UK generations - keyed_or_remote (2003-2014)",
+      "years": "2003-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "land_cruiser_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "LAND CRUISER PRADO 2002 2005 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "LAND CRUISER PRADO 2002 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "LAND CRUISER 100 2003 2008 TOY43MH TOY43ATE TOY43FH Y Y TEX / CR 67 Y P-BOX",
+          "LAND CRUISER PRADO 2002 2005 TOY43AT31 TEX / CR 67 I",
+          "LAND CRUISER PRADO 2002 TOY43AT31 TEX / CR 67 I",
+          "LAND CRUISER 100 2003 2008 TOY43AT31 TEX / CR 67 I",
+          "LAND CRUISER 100 (AUS) 2003 TOY48MH TOY48BTE TOY48FH Y TEX / CR 60 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy43",
+        "toy43a",
+        "toy48"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2003-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "land_cruiser_uk_generations_1980_1995_blade_research",
+      "name": "Land Cruiser UK generations - blade research boundary (1980-1995)",
+      "years": "1980-1995",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +253,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1980-1995"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "land_cruiser_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "land_cruiser_uk_generations_2015_2026_blade_research",
+      "name": "Land Cruiser UK generations - blade research boundary (2015-present)",
+      "years": "2015-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "land_cruiser_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

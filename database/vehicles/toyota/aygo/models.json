@@ -5,9 +5,181 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "aygo_uk_generations",
-      "name": "Aygo UK generations",
-      "years": "2005-2022",
+      "id": "aygo_uk_generations_2005_2014_keyed_or_remote_transponder_key_va6",
+      "name": "Aygo UK generations - keyed_or_remote (2005-2014)",
+      "years": "2005-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "aygo_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "AYGO 2005 VA6MH VA6FH Y Y TEX / CR 70 Y P-BOX"
+        ]
+      },
+      "blade_profile": "VA6",
+      "blade_id": "va6",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "va6",
+        "record_year_range": "2005-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "AYGO 2005 VA6MH VA6FH Y Y TEX / CR 70 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aygo_uk_generations_2005_2013_remote_or_flip_key_va2",
+      "name": "Aygo UK generations - remote_or_flip (2005-2013)",
+      "years": "2005-2013",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "aygo_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Toyota Aygo KGB10 2005 2014 VA2 433AM"
+        ]
+      },
+      "blade_profile": "VA2",
+      "blade_id": "va2",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "va2",
+        "record_year_range": "2005-2013",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Toyota Aygo KGB10 2005 2014 VA2 433AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aygo_uk_generations_2014_2014_remote_or_flip_key_toy49_or_va2",
+      "name": "Aygo UK generations - remote_or_flip (2014-2014)",
+      "years": "2014-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "aygo_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Toyota Aygo KGB40 2014 2021 TOY49 433AM",
+          "Toyota Aygo KGB10 2005 2014 VA2 433AM"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy49",
+        "va2"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2014-2014",
+        "key_variant_scope": "remote_or_flip_key"
+      }
+    },
+    {
+      "id": "aygo_uk_generations_2015_2021_remote_or_flip_key_toy49",
+      "name": "Aygo UK generations - remote_or_flip (2015-2021)",
+      "years": "2015-2021",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "aygo_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Toyota Aygo KGB40 2014 2021 TOY49 433AM"
+        ]
+      },
+      "blade_profile": "TOY49",
+      "blade_id": "toy49",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "toy49",
+        "record_year_range": "2015-2021",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Toyota Aygo KGB40 2014 2021 TOY49 433AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "aygo_uk_generations_2022_2022_blade_research",
+      "name": "Aygo UK generations - blade research boundary (2022-2022)",
+      "years": "2022-2022",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Toyota immobiliser ECU/smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +204,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2022-2022"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "aygo_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

@@ -5,9 +5,46 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "gs_uk_generations",
-      "name": "GS UK generations",
-      "years": "1993-2018",
+      "id": "gs_uk_generations_1998_2014_keyed_or_remote_transponder_key_toy48_or_toy48b",
+      "name": "GS UK generations - keyed_or_remote (1998-2014)",
+      "years": "1998-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota/Lexus immobiliser ECU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "gs_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "GS/LS/LX 1998 TOY48MH TOY48BTE TOY48FH Y Y TEXAS 4C Y P-BOX",
+          "GS/LS/LX 1998 TOY48BT4 TEXAS 4C E"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "toy48",
+        "toy48b"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1998-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "gs_uk_generations_1993_1997_blade_research",
+      "name": "GS UK generations - blade research boundary (1993-1997)",
+      "years": "1993-1997",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Toyota/Lexus immobiliser ECU and smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +69,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1993-1997"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "gs_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "gs_uk_generations_2015_2018_blade_research",
+      "name": "GS UK generations - blade research boundary (2015-2018)",
+      "years": "2015-2018",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota/Lexus immobiliser ECU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-2018"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "gs_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

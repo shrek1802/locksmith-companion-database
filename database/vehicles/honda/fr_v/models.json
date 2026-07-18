@@ -5,34 +5,98 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "fr_v_uk_generations",
-      "name": "FR-V UK generations",
+      "id": "fr_v_uk_generations_2004_2009_keyed_or_remote_transponder_key_hon66",
+      "name": "FR-V UK generations - keyed_or_remote (2004-2009)",
       "years": "2004-2009",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
-        {
-          "type": "slot_key",
-          "status": "research_required"
-        },
-        {
-          "type": "proximity",
-          "status": "research_required"
-        },
-        {
-          "type": "KESSY_or_keyless",
-          "status": "research_required"
-        },
-        {
-          "type": "smart_key",
-          "status": "research_required"
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "fr_v_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "FR-V 2004 2007 HON66T6 HON66FH MEG / CR 48",
+          "FR-V 2007 HON66T27 HON66FH SOK / CR 8E"
+        ]
+      },
+      "blade_profile": "HON66",
+      "blade_id": "hon66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon66",
+        "record_year_range": "2004-2009",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "FR-V 2004 2007 HON66T6 HON66FH MEG / CR 48",
+              "FR-V 2007 HON66T27 HON66FH SOK / CR 8E"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "fr_v_uk_generations_2004_2009_remote_or_flip_key_hon66",
+      "name": "FR-V UK generations - remote_or_flip (2004-2009)",
+      "years": "2004-2009",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "fr_v_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Honda FR-V BE1 2004 2007 HON66 433FM",
+          "Honda FR-V BE5 2007 2009 HON66 433FM"
+        ]
+      },
+      "blade_profile": "HON66",
+      "blade_id": "hon66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon66",
+        "record_year_range": "2004-2009",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Honda FR-V BE1 2004 2007 HON66 433FM",
+              "Honda FR-V BE5 2007 2009 HON66 433FM"
+            ]
+          }
+        ]
+      }
     }
   ],
   "sources": {

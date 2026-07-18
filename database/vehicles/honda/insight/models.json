@@ -5,9 +5,103 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "insight_uk_generations",
-      "name": "Insight UK generations",
-      "years": "2000-2014",
+      "id": "insight_uk_generations_2000_2006_keyed_or_remote_transponder_key_hon58r",
+      "name": "Insight UK generations - keyed_or_remote (2000-2006)",
+      "years": "2000-2006",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "insight_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "INSIGHT 2000 2006 HON58RT5 HON58RFH MEG 13 Y Y",
+          "INSIGHT 2001 2005 HON58RT6 HON58RFH MEG / CR 48"
+        ]
+      },
+      "blade_profile": "HON58R",
+      "blade_id": "hon58r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon58r",
+        "record_year_range": "2000-2006",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "INSIGHT 2000 2006 HON58RT5 HON58RFH MEG 13 Y Y",
+              "INSIGHT 2001 2005 HON58RT6 HON58RFH MEG / CR 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "insight_uk_generations_2009_2014_keyed_or_remote_transponder_key_hon66",
+      "name": "Insight UK generations - keyed_or_remote (2009-2014)",
+      "years": "2009-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "insight_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "INSIGHT 2009 HON66MH HON66TE HON66FH Y Y PH / CR2 46 Y P-BOX",
+          "INSIGHT 2010 HON66T14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "HON66",
+      "blade_id": "hon66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon66",
+        "record_year_range": "2009-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "INSIGHT 2009 HON66MH HON66TE HON66FH Y Y PH / CR2 46 Y P-BOX",
+              "INSIGHT 2010 HON66T14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "insight_uk_generations_2007_2008_blade_research",
+      "name": "Insight UK generations - blade research boundary (2007-2008)",
+      "years": "2007-2008",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +126,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2007-2008"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "insight_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

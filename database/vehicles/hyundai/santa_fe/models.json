@@ -5,9 +5,178 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "santa_fe_uk_generations",
-      "name": "Santa Fe UK generations",
-      "years": "2001-present",
+      "id": "santa_fe_uk_generations_2001_2001_keyed_or_remote_transponder_key_hyn7r",
+      "name": "Santa Fe UK generations - keyed_or_remote (2001-2001)",
+      "years": "2001-2001",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "santa_fe_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SANTA FE 2000 2002 HYN7RMH HYN7RFH Y Y TEX / CR 60 Y P-BOX",
+          "SANTA FE (USA) 2001 2006 HYN7RAP"
+        ]
+      },
+      "blade_profile": "HYN7R",
+      "blade_id": "hyn7r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hyn7r",
+        "record_year_range": "2001-2001",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "SANTA FE 2000 2002 HYN7RMH HYN7RFH Y Y TEX / CR 60 Y P-BOX",
+              "SANTA FE (USA) 2001 2006 HYN7RAP"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "santa_fe_uk_generations_2002_2005_keyed_or_remote_transponder_key_hyn6_or_hyn7r",
+      "name": "Santa Fe UK generations - keyed_or_remote (2002-2005)",
+      "years": "2002-2005",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "santa_fe_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SANTA FE 2002 2006 HYN6T14 PH / CR2 46",
+          "SANTA FE 2000 2002 HYN7RMH HYN7RFH Y Y TEX / CR 60 Y P-BOX",
+          "SANTA FE (USA) 2001 2006 HYN7RAP"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hyn6",
+        "hyn7r"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2002-2005",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "santa_fe_uk_generations_2006_2006_keyed_or_remote_transponder_key_hyn14r_or_hyn6_or_hyn7r",
+      "name": "Santa Fe UK generations - keyed_or_remote (2006-2006)",
+      "years": "2006-2006",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "santa_fe_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SANTA FE 2006 HYN14RT14 PH / CR2 46",
+          "SANTA FE 2002 2006 HYN6T14 PH / CR2 46",
+          "SANTA FE (USA) 2001 2006 HYN7RAP"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hyn14r",
+        "hyn6",
+        "hyn7r"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2006-2006",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "santa_fe_uk_generations_2007_2014_keyed_or_remote_transponder_key_hyn14r",
+      "name": "Santa Fe UK generations - keyed_or_remote (2007-2014)",
+      "years": "2007-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "santa_fe_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SANTA FE 2006 HYN14RT14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "HYN14R",
+      "blade_id": "hyn14r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hyn14r",
+        "record_year_range": "2007-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "SANTA FE 2006 HYN14RT14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "santa_fe_uk_generations_2015_2026_blade_research",
+      "name": "Santa Fe UK generations - blade research boundary (2015-present)",
+      "years": "2015-present",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +201,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "santa_fe_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

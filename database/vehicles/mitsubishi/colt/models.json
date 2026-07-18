@@ -5,9 +5,99 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "colt_uk_generations",
-      "name": "Colt UK generations",
-      "years": "1982-2013",
+      "id": "colt_uk_generations_1996_2000_keyed_or_remote_transponder_key_mit11r",
+      "name": "Colt UK generations - keyed_or_remote (1996-2000)",
+      "years": "1996-2000",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Mitsubishi ETACS/KOS or Alliance-derived BCM family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "colt_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "COLT 1996 2000 MIT11RT4 TEXAS 4C"
+        ]
+      },
+      "blade_profile": "MIT11R",
+      "blade_id": "mit11r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "mit11r",
+        "record_year_range": "1996-2000",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "COLT 1996 2000 MIT11RT4 TEXAS 4C"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "colt_uk_generations_2004_2013_keyed_or_remote_transponder_key_hu56r",
+      "name": "Colt UK generations - keyed_or_remote (2004-2013)",
+      "years": "2004-2013",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Mitsubishi ETACS/KOS or Alliance-derived BCM family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "colt_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "COLT 2004 HU56RMH HU56RTE HU56RFH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "HU56R",
+      "blade_id": "hu56r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu56r",
+        "record_year_range": "2004-2013",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "COLT 2004 HU56RMH HU56RTE HU56RFH Y Y PH / CR2 46 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "colt_uk_generations_1982_1995_blade_research",
+      "name": "Colt UK generations - blade research boundary (1982-1995)",
+      "years": "1982-1995",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Mitsubishi ETACS/KOS or Alliance-derived BCM family; generation specific",
       "key_variants": [
@@ -32,7 +122,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1982-1995"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "colt_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "colt_uk_generations_2001_2003_blade_research",
+      "name": "Colt UK generations - blade research boundary (2001-2003)",
+      "years": "2001-2003",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Mitsubishi ETACS/KOS or Alliance-derived BCM family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2001-2003"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "colt_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

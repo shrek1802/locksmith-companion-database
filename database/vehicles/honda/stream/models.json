@@ -5,34 +5,176 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "stream_uk_generations",
-      "name": "Stream UK generations",
-      "years": "2001-2005",
+      "id": "stream_uk_generations_2001_2002_keyed_or_remote_transponder_key_hon58r",
+      "name": "Stream UK generations - keyed_or_remote (2001-2002)",
+      "years": "2001-2002",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "stream_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "STREAM 2001 2003 HON58RT6 HON58RFH MEG / CR 48"
+        ]
+      },
+      "blade_profile": "HON58R",
+      "blade_id": "hon58r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon58r",
+        "record_year_range": "2001-2002",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "STREAM 2001 2003 HON58RT6 HON58RFH MEG / CR 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "stream_uk_generations_2003_2003_keyed_or_remote_transponder_key_hon58r_or_hon66",
+      "name": "Stream UK generations - keyed_or_remote (2003-2003)",
+      "years": "2003-2003",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
         {
-          "type": "slot_key",
-          "status": "research_required"
-        },
-        {
-          "type": "proximity",
-          "status": "research_required"
-        },
-        {
-          "type": "KESSY_or_keyless",
-          "status": "research_required"
-        },
-        {
-          "type": "smart_key",
+          "type": "keyed_or_remote",
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "stream_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "STREAM 2001 2003 HON58RT6 HON58RFH MEG / CR 48",
+          "STREAM 2003 2007 HON66T6 HON66FH MEG / CR 48"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hon58r",
+        "hon66"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2003-2003",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "stream_uk_generations_2004_2005_keyed_or_remote_transponder_key_hon66",
+      "name": "Stream UK generations - keyed_or_remote (2004-2005)",
+      "years": "2004-2005",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "stream_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "STREAM 2003 2007 HON66T6 HON66FH MEG / CR 48"
+        ]
+      },
+      "blade_profile": "HON66",
+      "blade_id": "hon66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon66",
+        "record_year_range": "2004-2005",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "STREAM 2003 2007 HON66T6 HON66FH MEG / CR 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "stream_uk_generations_2003_2005_remote_or_flip_key_hon66",
+      "name": "Stream UK generations - remote_or_flip (2003-2005)",
+      "years": "2003-2005",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "stream_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Honda Stream RN1-5 2003 2007 HON66 433FM"
+        ]
+      },
+      "blade_profile": "HON66",
+      "blade_id": "hon66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon66",
+        "record_year_range": "2003-2005",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Honda Stream RN1-5 2003 2007 HON66 433FM"
+            ]
+          }
+        ]
+      }
     }
   ],
   "sources": {

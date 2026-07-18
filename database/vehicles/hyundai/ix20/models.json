@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "ix20_uk_generations",
-      "name": "ix20 UK generations",
-      "years": "2010-2019",
+      "id": "ix20_uk_generations_2010_2014_keyed_or_remote_transponder_key_toy49",
+      "name": "ix20 UK generations - keyed_or_remote (2010-2014)",
+      "years": "2010-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "ix20_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "IX20 2010 TOY49MH TOY49FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "TOY49",
+      "blade_id": "toy49",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "toy49",
+        "record_year_range": "2010-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "IX20 2010 TOY49MH TOY49FH Y Y PH / CR2 46 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ix20_uk_generations_2015_2019_blade_research",
+      "name": "ix20 UK generations - blade research boundary (2015-2019)",
+      "years": "2015-2019",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +77,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-2019"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "ix20_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

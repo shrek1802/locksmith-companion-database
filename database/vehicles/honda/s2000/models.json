@@ -5,9 +5,142 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "s2000_uk_generations",
-      "name": "S2000 UK generations",
-      "years": "1999-2009",
+      "id": "s2000_uk_generations_2000_2002_keyed_or_remote_transponder_key_hon58r",
+      "name": "S2000 UK generations - keyed_or_remote (2000-2002)",
+      "years": "2000-2002",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "s2000_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "S2000 2000 2002 HON58RT5 HON58RFH MEG 13 Y Y",
+          "S2000 2000 2003 HON58RT6 HON58RFH MEG / CR 48"
+        ]
+      },
+      "blade_profile": "HON58R",
+      "blade_id": "hon58r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon58r",
+        "record_year_range": "2000-2002",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "S2000 2000 2002 HON58RT5 HON58RFH MEG 13 Y Y",
+              "S2000 2000 2003 HON58RT6 HON58RFH MEG / CR 48"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "s2000_uk_generations_2003_2003_keyed_or_remote_transponder_key_hon58r_or_hon66",
+      "name": "S2000 UK generations - keyed_or_remote (2003-2003)",
+      "years": "2003-2003",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "s2000_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "S2000 2000 2003 HON58RT6 HON58RFH MEG / CR 48",
+          "S2000 2003 2005 HON66T5 HON66FH MEG 13 Y Y"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hon58r",
+        "hon66"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2003-2003",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "s2000_uk_generations_2004_2009_keyed_or_remote_transponder_key_hon66",
+      "name": "S2000 UK generations - keyed_or_remote (2004-2009)",
+      "years": "2004-2009",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "s2000_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "S2000 2003 2005 HON66T5 HON66FH MEG 13 Y Y",
+          "S2000 2004 2005 HON66T6 HON66FH MEG / CR 48",
+          "S2000 2006 2010 HON66T27 HON66FH SOK / CR 8E"
+        ]
+      },
+      "blade_profile": "HON66",
+      "blade_id": "hon66",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hon66",
+        "record_year_range": "2004-2009",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "S2000 2003 2005 HON66T5 HON66FH MEG 13 Y Y",
+              "S2000 2004 2005 HON66T6 HON66FH MEG / CR 48",
+              "S2000 2006 2010 HON66T27 HON66FH SOK / CR 8E"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "s2000_uk_generations_1999_1999_blade_research",
+      "name": "S2000 UK generations - blade research boundary (1999-1999)",
+      "years": "1999-1999",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Honda immobiliser receiver/MICU and smart-entry family; generation specific",
       "key_variants": [
@@ -32,7 +165,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1999-1999"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "s2000_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

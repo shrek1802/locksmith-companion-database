@@ -5,9 +5,91 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "interstar_uk_generations",
-      "name": "Interstar UK generations",
-      "years": "2002-present",
+      "id": "interstar_uk_generations_2002_2010_keyed_or_remote_transponder_key_ne72_or_ne73",
+      "name": "Interstar UK generations - keyed_or_remote (2002-2010)",
+      "years": "2002-2010",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Nissan BCM/NATS or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "interstar_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "INTERSTAR 2002 2010 NE72MH NE72ATE NE72FH Y Y PH / CR2 46 Y P-BOX",
+          "INTERSTAR 2002 2010 NE73T32 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "ne72",
+        "ne73"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2002-2010",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "interstar_uk_generations_2004_2010_remote_or_flip_key_ne73",
+      "name": "Interstar UK generations - remote_or_flip (2004-2010)",
+      "years": "2004-2010",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Nissan BCM/NATS or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "interstar_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Nissan Interstar X70 2004 2010 NE73 433AM"
+        ]
+      },
+      "blade_profile": "NE73",
+      "blade_id": "ne73",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "ne73",
+        "record_year_range": "2004-2010",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Nissan Interstar X70 2004 2010 NE73 433AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "interstar_uk_generations_2011_2026_blade_research",
+      "name": "Interstar UK generations - blade research boundary (2011-present)",
+      "years": "2011-present",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Nissan BCM/NATS or later Alliance architecture; generation specific",
       "key_variants": [
@@ -32,7 +114,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2011-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "interstar_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

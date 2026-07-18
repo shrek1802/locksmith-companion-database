@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "rexton_uk_generations",
-      "name": "Rexton UK generations",
-      "years": "2003-present",
+      "id": "rexton_uk_generations_2006_2014_keyed_or_remote_transponder_key_ssy3",
+      "name": "Rexton UK generations - keyed_or_remote (2006-2014)",
+      "years": "2006-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "SsangYong/KGM immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "rexton_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "REXTON 2006 SSY3MH SSY3TE SSY3FH Y Y TEX / CR 60 Y P-BOX"
+        ]
+      },
+      "blade_profile": "SSY3",
+      "blade_id": "ssy3",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "ssy3",
+        "record_year_range": "2006-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "REXTON 2006 SSY3MH SSY3TE SSY3FH Y Y TEX / CR 60 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "rexton_uk_generations_2003_2005_blade_research",
+      "name": "Rexton UK generations - blade research boundary (2003-2005)",
+      "years": "2003-2005",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "SsangYong/KGM immobiliser/BCM or smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +77,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2003-2005"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "rexton_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "rexton_uk_generations_2015_2026_blade_research",
+      "name": "Rexton UK generations - blade research boundary (2015-present)",
+      "years": "2015-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "SsangYong/KGM immobiliser/BCM or smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "rexton_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

@@ -5,9 +5,142 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "sonata_uk_generations",
-      "name": "Sonata UK generations",
-      "years": "1982-2010",
+      "id": "sonata_uk_generations_1993_2004_keyed_or_remote_transponder_key_hyn7r",
+      "name": "Sonata UK generations - keyed_or_remote (1993-2004)",
+      "years": "1993-2004",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "sonata_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SONATA 1993 1995 HYN7RAP",
+          "SONATA (USA) 1995 2006 HYN7RAP",
+          "SONATA 1996 1998 HYN7RT4 TEXAS 4C S6",
+          "SONATA 1998 2004 HYN7RMH HYN7RFH Y Y TEX / CR 60 Y P-BOX"
+        ]
+      },
+      "blade_profile": "HYN7R",
+      "blade_id": "hyn7r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hyn7r",
+        "record_year_range": "1993-2004",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "SONATA 1993 1995 HYN7RAP",
+              "SONATA (USA) 1995 2006 HYN7RAP",
+              "SONATA 1996 1998 HYN7RT4 TEXAS 4C S6",
+              "SONATA 1998 2004 HYN7RMH HYN7RFH Y Y TEX / CR 60 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sonata_uk_generations_2005_2006_keyed_or_remote_transponder_key_hyn14r_or_hyn7r",
+      "name": "Sonata UK generations - keyed_or_remote (2005-2006)",
+      "years": "2005-2006",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "sonata_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SONATA 2005 HYN14RT14 PH / CR2 46",
+          "SONATA (USA) 1995 2006 HYN7RAP"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hyn14r",
+        "hyn7r"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2005-2006",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "sonata_uk_generations_2007_2010_keyed_or_remote_transponder_key_hyn14r",
+      "name": "Sonata UK generations - keyed_or_remote (2007-2010)",
+      "years": "2007-2010",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "sonata_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SONATA 2005 HYN14RT14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "HYN14R",
+      "blade_id": "hyn14r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hyn14r",
+        "record_year_range": "2007-2010",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "SONATA 2005 HYN14RT14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "sonata_uk_generations_1982_1992_blade_research",
+      "name": "Sonata UK generations - blade research boundary (1982-1992)",
+      "years": "1982-1992",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Hyundai SMARTRA/BCM/smart-key family; generation specific",
       "key_variants": [
@@ -32,7 +165,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1982-1992"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "sonata_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {
