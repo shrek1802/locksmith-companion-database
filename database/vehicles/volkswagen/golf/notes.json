@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "manufacturer": "Volkswagen",
   "model": "Golf",
   "market": "UK",
@@ -28,22 +28,45 @@
     ],
     "golf_mk7_2013_2017": [
       "MQB dashboard family determines the supported data-read route.",
-      "KESSY specification changes the module and key workflow."
+      "KESSY specification changes the module and key workflow.",
+      "OBDSTAR officially lists MQB48-5A AKL support using the RH850/V850 Adapter Kit, with exact dashboard and processor identification still required.",
+      "OBDSTAR March 2026 coverage explicitly adds D70F3525-V5 key programming with C4-06 and online synchronisation-code calculation. This evidence applies only to that dashboard variant, not every Golf Mk7 cluster."
     ],
     "golf_mk75_2017_2020": [
       "Do not assume identical coverage to early Mk7.",
-      "Confirm exact dashboard and current software coverage before AKL."
+      "Confirm exact dashboard and current software coverage before AKL.",
+      "Keep MQB48-5A/5B and MQB49-5C records separate. OBDSTAR's current RH850/V850 adapter documentation states 5C is not supported by that adapter route."
     ],
     "golf_mk8_2020_present": [
       "Check current aftermarket and authorised online coverage before booking.",
       "Confirm key part number or original key and VIN before ordering or generating hardware."
     ]
   },
+  "official_evidence": [
+    {
+      "source": "OBDSTAR RH850/V850 Adapter Kit product documentation",
+      "scope": "MQB48-5A/5B dashboard data reading and adapter identification",
+      "status": "verified_source",
+      "checked_at": "2026-07-18"
+    },
+    {
+      "source": "OBDSTAR IMMO Upgrade Announcement March 2026",
+      "scope": "MQB48-5A D70F3525-V5 Program Keys, AKL, C4-06 and online synchronisation calculation",
+      "status": "verified_source",
+      "checked_at": "2026-07-18"
+    },
+    {
+      "source": "OBDSTAR IMMO Upgrade Announcement April 2025",
+      "scope": "MQB48-5A AKL with RH850/V850 Adapter Kit and IMMO IV NEC24C64/NEC24C32 bench reading with VW4-AKL cable",
+      "status": "verified_source",
+      "checked_at": "2026-07-18"
+    }
+  ],
   "research_gaps": [
     "Verified UK cluster-manufacturer splits by generation and build range",
     "Verified keyed versus KESSY sub-records",
     "Exact UK key and blade transitions by part number",
-    "Verified tool-operation coverage without recording volatile menu paths",
+    "Model-specific mapping of official tool coverage to exact dashboard part numbers",
     "Approved module-location photographs and adapter photographs"
   ]
 }
