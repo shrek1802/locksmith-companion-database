@@ -27,7 +27,7 @@
           "C6 2006 VA6MH VA6FH Y Y PH / CR2 46 Y P-BOX"
         ]
       },
-      "blade_profile": "research_required",
+      "blade_profile": "Research Required",
       "blade_id": null,
       "blade_transition_candidates": [
         "va2",
@@ -78,7 +78,105 @@
         "PH/CR2 46",
         "Philips Crypto 2 ID46",
         "philips_crypto2_id46"
-      ]
+      ],
+      "chip_type": "Integrated Remote Chip",
+      "chip_ic": "Research Required",
+      "remote_configuration": "Integrated",
+      "frequency": "Research Required",
+      "chip_or_ic": null,
+      "key_profile_evidence": {
+        "blade_profile": [],
+        "transponder_id": [
+          {
+            "source_id": "hickleys_vehicle_keys_2026",
+            "publisher": "Hickleys",
+            "title": "Vehicle Keys, Remotes and Transponders",
+            "edition": "Current web catalogue",
+            "url": "https://www.hickleys.com/diagnostics/keys_list.php?cat=102",
+            "catalogue_rows": [
+              "Citroen C6 2005-2012: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+            ]
+          },
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "C6 2006 VA2T14 PH / CR2 46"
+            ]
+          }
+        ],
+        "technology_family": [
+          {
+            "source_id": "hickleys_vehicle_keys_2026",
+            "publisher": "Hickleys",
+            "title": "Vehicle Keys, Remotes and Transponders",
+            "edition": "Current web catalogue",
+            "url": "https://www.hickleys.com/diagnostics/keys_list.php?cat=102",
+            "catalogue_rows": [
+              "Citroen C6 2005-2012: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+            ]
+          },
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "C6 2006 VA2T14 PH / CR2 46"
+            ]
+          }
+        ],
+        "chip_type": [
+          {
+            "source_id": "hickleys_vehicle_keys_2026",
+            "publisher": "Hickleys",
+            "title": "Vehicle Keys, Remotes and Transponders",
+            "edition": "Current web catalogue",
+            "url": "https://www.hickleys.com/diagnostics/keys_list.php?cat=102",
+            "catalogue_rows": [
+              "Citroen C6 2005-2012: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+            ]
+          },
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "C6 2006 VA2T14 PH / CR2 46"
+            ]
+          }
+        ],
+        "chip_ic": [],
+        "remote_configuration": [
+          {
+            "source_id": "hickleys_vehicle_keys_2026",
+            "publisher": "Hickleys",
+            "title": "Vehicle Keys, Remotes and Transponders",
+            "edition": "Current web catalogue",
+            "url": "https://www.hickleys.com/diagnostics/keys_list.php?cat=102",
+            "catalogue_rows": [
+              "Citroen C6 2005-2012: ID46 (PH20 / PCF7941 or PCF7946 as listed)"
+            ]
+          },
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "C6 2006 VA2T14 PH / CR2 46"
+            ]
+          }
+        ],
+        "frequency": []
+      }
     }
   ],
   "sources": {
@@ -108,5 +206,6 @@
       "https://www.advanced-diagnostics.com/news-posts/software-update-compatible-with-fiat-01-2026-ads2327"
     ],
     "confidence": "high for official vendor/OEM claims"
-  }
+  },
+  "updated_at": "2026-07-19"
 }

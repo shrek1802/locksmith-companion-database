@@ -78,7 +78,60 @@
         "TEMIC 12",
         "Temic fixed ID12",
         "temic_fixed_id12"
-      ]
+      ],
+      "chip_type": "Research Required",
+      "chip_ic": "Research Required",
+      "remote_configuration": "Research Required",
+      "frequency": "Research Required",
+      "chip_or_ic": null,
+      "key_profile_evidence": {
+        "blade_profile": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "V CLASS 1996 2003 VA5T5 TEMIC 12 Y Y"
+            ]
+          },
+          {
+            "source_id": "oem_generation_boundary",
+            "publisher": "Vehicle manufacturer archive",
+            "url": "https://mercedes-benz-publicarchive.com/marsClassic/en/instance/ko/638-series-V-Class-Multi-Purpose-Vehicles-1996---1999.xhtml?oid=5630",
+            "supports": "UK introduction or OEM generation boundary"
+          }
+        ],
+        "transponder_id": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "V CLASS 1996 2003 VA5T5 TEMIC 12 Y Y"
+            ]
+          }
+        ],
+        "technology_family": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "V CLASS 1996 2003 VA5T5 TEMIC 12 Y Y"
+            ]
+          }
+        ],
+        "chip_type": [],
+        "chip_ic": [],
+        "remote_configuration": [],
+        "frequency": []
+      }
     },
     {
       "id": "v_class_uk_scope_other_generations_blade_research",
@@ -105,7 +158,7 @@
         }
       ],
       "status": "partially_verified",
-      "blade_profile": "research_required",
+      "blade_profile": "Research Required",
       "blade_id": null,
       "blade_verification": {
         "status": "research_required",
@@ -116,6 +169,22 @@
         "origin_generation_id": "v_class_uk_scope",
         "boundary_basis": "Retained for generations outside the exact catalogue/OEM mapping",
         "last_checked": "2026-07-18"
+      },
+      "transponder_id": "Research Required",
+      "technology_family": "Research Required",
+      "chip_type": "Research Required",
+      "chip_ic": "Research Required",
+      "remote_configuration": "Research Required",
+      "frequency": "Research Required",
+      "chip_or_ic": null,
+      "key_profile_evidence": {
+        "blade_profile": [],
+        "transponder_id": [],
+        "technology_family": [],
+        "chip_type": [],
+        "chip_ic": [],
+        "remote_configuration": [],
+        "frequency": []
       }
     }
   ],
@@ -154,5 +223,6 @@
       "https://www.autel.com/u/cms/www/202406/05060914c599.pdf"
     ],
     "confidence": "high for official vendor/OEM claims"
-  }
+  },
+  "updated_at": "2026-07-19"
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-16",
+  "updated_at": "2026-07-19",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -27,7 +27,7 @@
         "immobiliser_system": "Ford PATS Hitag Pro",
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_id": "research_required",
+        "transponder_id": "Research Required",
         "frequency_mhz": "433.92",
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -81,6 +81,19 @@
           "status": "research_required",
           "confidence": "canonical_identifier_not_supported",
           "last_checked": "2026-07-19"
+        },
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "433.92 MHz",
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
         }
       },
       "verification": {
@@ -232,10 +245,10 @@
         "immobiliser_system": "Ford connected security / PATS",
         "immobiliser_generation": "Exact S650 implementation requires current tool/OEM confirmation",
         "transponder_type": "Exact build verification required",
-        "transponder_id": "research_required",
+        "transponder_id": "Research Required",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "research_required",
+        "blade_profile": "Research Required",
         "blade_id": null,
         "key_type": "Passive key with emergency blade",
         "button_count": "3 Buttons",
@@ -273,9 +286,22 @@
           "last_checked": "2026-07-19"
         },
         "transponder_family_id": "transponder_unknown",
-        "technology_family": "research_required",
+        "technology_family": "Research Required",
         "chip_or_ic": null,
-        "transponder_aliases": []
+        "transponder_aliases": [],
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Market/build dependent — confirm from original remote label or frequency test",
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
+        }
       },
       "verification": {
         "status": "current_generation_research_required",
@@ -391,7 +417,7 @@
         "immobiliser_system": "Ford PATS / shared-platform system as applicable",
         "immobiliser_generation": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
         "transponder_type": "NXP Original PCF7939FA 128-Bit HITAG Pro (ID47 / may read ID49)",
-        "transponder_id": "research_required",
+        "transponder_id": "Research Required",
         "frequency_mhz": 433,
         "frequency_id": "mhz_433_92",
         "blade_profile": "HU101",
@@ -437,6 +463,19 @@
           "status": "research_required",
           "confidence": "canonical_identifier_not_supported",
           "last_checked": "2026-07-19"
+        },
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "433 MHz",
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
         }
       },
       "verification": {

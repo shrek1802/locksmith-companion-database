@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-19",
   "manufacturer": {
     "id": "volkswagen",
     "name": "Volkswagen"
@@ -27,7 +27,7 @@
         "immobiliser_family_id": "vw_immo_2_3",
         "module_type": "Instrument cluster / immobiliser box depending on build",
         "transponder_type": "ID13 or ID48 family depending on year",
-        "blade_profile": "research_required",
+        "blade_profile": "Research Required",
         "key_type": "Keyed ignition",
         "smart_key": false,
         "access_method": {
@@ -56,6 +56,22 @@
           "status": "research_required",
           "confidence": "conflicting_or_noncanonical_value",
           "last_checked": "2026-07-19"
+        },
+        "transponder_id": "Research Required",
+        "technology_family": "Research Required",
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Research Required",
+        "chip_or_ic": null,
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
         }
       },
       "verification": {
@@ -111,7 +127,23 @@
           "Cluster connection when required"
         ],
         "notes": "Identify cluster manufacturer before selecting procedure.",
-        "blade_id": "hu66"
+        "blade_id": "hu66",
+        "transponder_id": "Research Required",
+        "technology_family": "Research Required",
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Research Required",
+        "chip_or_ic": null,
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
+        }
       },
       "verification": {
         "status": "partially_verified",
@@ -185,6 +217,33 @@
               ]
             }
           ]
+        },
+        "transponder_id": "Research Required",
+        "technology_family": "Research Required",
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Research Required",
+        "chip_or_ic": null,
+        "key_profile_evidence": {
+          "blade_profile": [
+            {
+              "source_id": "silca_proximity_slot_remote_2025",
+              "publisher": "Silca",
+              "title": "Proximity, Slot and Remote Car Keys Catalogue",
+              "edition": "02/2025",
+              "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+              "catalogue_rows": [
+                "Volkswagen Transporter 7H 2009 2016 HU66 434AM"
+              ]
+            }
+          ],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
         }
       },
       "verification": {
@@ -220,7 +279,7 @@
         "immobiliser_family_id": "vw_mqb_48_or_late_immo4",
         "module_type": "Instrument cluster",
         "transponder_type": "ID48 family",
-        "blade_profile": "research_required",
+        "blade_profile": "Research Required",
         "key_type": "Remote key",
         "smart_key": false,
         "access_method": {
@@ -248,6 +307,22 @@
           "status": "research_required",
           "confidence": "conflicting_or_noncanonical_value",
           "last_checked": "2026-07-19"
+        },
+        "transponder_id": "Research Required",
+        "technology_family": "Research Required",
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Research Required",
+        "chip_or_ic": null,
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
         }
       },
       "verification": {
@@ -275,7 +350,7 @@
         "immobiliser_family_id": "vw_mqb_49_5c_or_protected",
         "module_type": "Instrument cluster / access-start system",
         "transponder_type": "Later protected Volkswagen key family",
-        "blade_profile": "research_required",
+        "blade_profile": "Research Required",
         "key_type": "Remote or keyless depending on specification",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -300,6 +375,22 @@
           "status": "research_required",
           "confidence": "conflicting_or_noncanonical_value",
           "last_checked": "2026-07-19"
+        },
+        "transponder_id": "Research Required",
+        "technology_family": "Research Required",
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Research Required",
+        "chip_or_ic": null,
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
         }
       },
       "verification": {

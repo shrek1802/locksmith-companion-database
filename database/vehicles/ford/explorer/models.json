@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-19",
   "manufacturer": {
     "id": "ford",
     "name": "Ford"
@@ -27,10 +27,10 @@
         "immobiliser_system": "Ford SecuriLock / PATS North American-derived architecture",
         "immobiliser_generation": "PATS I to PATS II transition by build",
         "transponder_type": "Texas fixed-code / early Ford transponder family — exact build confirmation required",
-        "transponder_id": "research_required",
+        "transponder_id": "Research Required",
         "frequency_mhz": "European/UK remote application must be confirmed from original remote",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "research_required",
+        "blade_profile": "Research Required",
         "blade_id": null,
         "key_type": "Mechanical ignition key with separate or integrated remote depending build",
         "button_count": "Varies by separate/original remote configuration",
@@ -67,9 +67,22 @@
           "last_checked": "2026-07-19"
         },
         "transponder_family_id": "transponder_unknown",
-        "technology_family": "research_required",
+        "technology_family": "Research Required",
         "chip_or_ic": null,
-        "transponder_aliases": []
+        "transponder_aliases": [],
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "European/UK remote application must be confirmed from original remote",
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
+        }
       },
       "verification": {
         "status": "legacy_platform_core_identified",
@@ -217,10 +230,10 @@
         "immobiliser_system": "Volkswagen MEB-derived connected security architecture",
         "immobiliser_generation": "MEB/MQB-AES-derived implementation — exact Ford application verification required",
         "transponder_type": "Megamos AES family or platform-specific passive credential — exact application verification required",
-        "transponder_id": "research_required",
+        "transponder_id": "Research Required",
         "frequency_mhz": "Market/build dependent — confirm from original remote label or frequency test",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "research_required",
+        "blade_profile": "Research Required",
         "blade_id": null,
         "key_type": "Passive key with connected EV access features",
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
@@ -265,6 +278,19 @@
           "status": "research_required",
           "confidence": "canonical_identifier_not_supported",
           "last_checked": "2026-07-19"
+        },
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Market/build dependent — confirm from original remote label or frequency test",
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
         }
       },
       "verification": {

@@ -1,6 +1,6 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-19",
   "manufacturer": {
     "id": "volkswagen",
     "name": "Volkswagen"
@@ -56,7 +56,23 @@
         },
         "tool_or_cable_required": "Standard OBD for supported variants; programmer connection only where cluster identification requires it",
         "notes": "Do not select the procedure by registration year alone. Confirm cluster manufacturer and immobiliser data route.",
-        "blade_id": "hu66"
+        "blade_id": "hu66",
+        "transponder_id": "Research Required",
+        "technology_family": "Research Required",
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Research Required",
+        "chip_or_ic": null,
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
+        }
       },
       "verification": {
         "status": "partially_verified",
@@ -121,7 +137,23 @@
         },
         "tool_or_cable_required": "Standard OBD or cluster-specific programmer connection",
         "notes": "Keep this record separate from early 2K because late dashboards and tool classifications differ.",
-        "blade_id": "hu66"
+        "blade_id": "hu66",
+        "transponder_id": "Research Required",
+        "technology_family": "Research Required",
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Research Required",
+        "chip_or_ic": null,
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
+        }
       },
       "verification": {
         "status": "research_required",
@@ -151,7 +183,7 @@
         "immobiliser_system": "MQB-style ID48 immobiliser classification used by locksmith tools; dashboard type must be confirmed",
         "module_type": "Instrument cluster",
         "transponder_type": "MQB ID48 family",
-        "blade_profile": "research_required",
+        "blade_profile": "Research Required",
         "key_type": "Remote flip key",
         "smart_key": false,
         "access_method": {
@@ -186,6 +218,22 @@
           "status": "research_required",
           "confidence": "conflicting_or_noncanonical_value",
           "last_checked": "2026-07-19"
+        },
+        "transponder_id": "Research Required",
+        "technology_family": "Research Required",
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Research Required",
+        "chip_or_ic": null,
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
         }
       },
       "verification": {
@@ -216,7 +264,7 @@
         "immobiliser_system": "Later MQB immobiliser family; keyed and keyless vehicles must be identified separately during the job",
         "module_type": "Instrument cluster / access-start system depending on specification",
         "transponder_type": "Later MQB key family — exact key must be confirmed by VIN and original key",
-        "blade_profile": "research_required",
+        "blade_profile": "Research Required",
         "key_type": "Remote key or KESSY smart key",
         "smart_key": "variant_dependent",
         "access_method": {
@@ -248,6 +296,22 @@
           "status": "research_required",
           "confidence": "conflicting_or_noncanonical_value",
           "last_checked": "2026-07-19"
+        },
+        "transponder_id": "Research Required",
+        "technology_family": "Research Required",
+        "chip_type": "Research Required",
+        "chip_ic": "Research Required",
+        "remote_configuration": "Research Required",
+        "frequency": "Research Required",
+        "chip_or_ic": null,
+        "key_profile_evidence": {
+          "blade_profile": [],
+          "transponder_id": [],
+          "technology_family": [],
+          "chip_type": [],
+          "chip_ic": [],
+          "remote_configuration": [],
+          "frequency": []
         }
       },
       "verification": {
