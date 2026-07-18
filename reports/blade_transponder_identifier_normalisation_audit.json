@@ -3,6 +3,18 @@
   "updated_at": "2026-07-19",
   "category": "blade_transponder_identifier_normalisation_audit",
   "method": "Deterministic normalisation using only existing canonical catalogues and recorded evidence; no new vehicle research.",
+  "summary": {
+    "records_updated": 506,
+    "blade_records_updated": 125,
+    "transponder_records_updated": 441,
+    "distinct_recognised_blade_identifiers": 75,
+    "distinct_recognised_transponder_identifiers": 28,
+    "remaining_blade_research_required_or_unset": 896,
+    "remaining_transponder_research_required_or_unset": 1125,
+    "aliases_normalised_on_records": 374,
+    "unsupported_chip_assumptions_removed_from_primary_identifier": 2,
+    "non_null_chip_or_ic_assignments": 0
+  },
   "blade": {
     "blade_values_normalised": 42,
     "blade_files_updated": 51,
@@ -12,7 +24,7 @@
   "transponder": {
     "transponder_values_quarantined": 130,
     "transponder_files_updated": 232,
-    "transponder_63_variants_preserved": 189,
+    "transponder_63_variant_fields_normalised": 189,
     "transponder_ids_normalised": 311,
     "transponder_structured_fields_updated": 622
   }
