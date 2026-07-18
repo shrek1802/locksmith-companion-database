@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "500 / 595 / 695",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "500_uk_generations",
+      "name": "500 / 595 / 695 UK generations",
+      "years": "2008-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Abarth",
+      "url": "https://www.abarthcars.co.uk/",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}

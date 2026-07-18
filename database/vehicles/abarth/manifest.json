@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "abarth",
+    "name": "Abarth",
+    "market": "UK",
+    "drive_side": "RHD"
+  },
+  "version": 1,
+  "models": {
+    "500": {
+      "name": "500 / 595 / 695",
+      "version": 1,
+      "manifest": "500/manifest.json",
+      "status": "research_in_progress"
+    },
+    "124_spider": {
+      "name": "124 Spider",
+      "version": 1,
+      "manifest": "124_spider/manifest.json",
+      "status": "research_in_progress"
+    },
+    "600e": {
+      "name": "600e",
+      "version": 1,
+      "manifest": "600e/manifest.json",
+      "status": "research_in_progress"
+    }
+  },
+  "status": "research_in_progress",
+  "sources": {
+    "official_range": {
+      "url": "https://www.abarthcars.co.uk/"
+    }
+  }
+}
