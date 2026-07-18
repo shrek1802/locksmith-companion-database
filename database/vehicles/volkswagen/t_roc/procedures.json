@@ -1,1 +1,14 @@
-{"schema_version":"2.1","updated_at":"2026-07-17","items":{"t_roc_a11":{"add_key":"PROC_VW_MQB48","all_keys_lost":"PROC_VW_MQB_DASH_DATA"},"t_roc_facelift":{"add_key":"PROC_VW_PROTECTED_PLATFORM","all_keys_lost":"PROC_CHECK_CURRENT_COVERAGE"}}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "items": {
+    "t_roc_a11_2017_2021": {
+      "add_key": {"method":"Identify the exact MQB dashboard and keyed or KESSY configuration before selecting the route","programming_method":"MQB48 dashboard-specific Add Key procedure","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"autel_im508s_xp400_pro":{"status":"conditional","method":"transponder_clone","display_name":"Autel IM508S + XP400 Pro","summary":"APB300 working-key Add Key may be available for supported T-Roc MQB applications.","vehicle_connection":{"required":false,"display_text":"Read the opened working key using APB300"},"working_key_required":true,"vehicle_required":false,"internet_required":true},"obdstar_g3":{"status":"conditional","method":"obd","display_name":"OBDSTAR KeyMaster G3","summary":"MQB key programming is conditional on a supported MQB48 5A/5B dashboard.","vehicle_connection":{"required":true,"display_text":"OBD or supported dashboard-data route"},"internet_required":false}}},
+      "all_keys_lost": {"method":"Read supported MQB dashboard data, calculate security data, prepare the dealer key and learn all keys","programming_method":"MQB48 5A/5B dashboard-data AKL route","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL is available only for supported MQB48 5A/5B dashboard types.","vehicle_connection":{"required":true,"display_text":"RH850/V850 dashboard adapter route where required"},"module_removal_required":true,"internet_required":false,"warnings":["Confirm dashboard processor before removal or reading.","This does not establish MQB5C support."]}}}
+    },
+    "t_roc_a11_facelift_2022_present": {
+      "add_key": {"method":"Confirm VIN, original key, dashboard family and current tool coverage before accepting the job","programming_method":"Later protected MQB support check","online_requirement":"May Be Required","overall_status":"verification_required","warnings":["No blanket Add Key coverage has been verified for every facelift dashboard."]},
+      "all_keys_lost": {"method":"Confirm live platform-specific AKL coverage before accepting the job","programming_method":"Protected MQB / possible MQB5C coverage check","online_requirement":"Likely Required","overall_status":"verification_required","warnings":["Do not promise AKL until the exact dashboard and current software coverage are confirmed."]}
+    }
+  }
+}
