@@ -43,6 +43,12 @@ REFERENCE_IDS = {
     "MEG/CR 48": "megamos_crypto_id48",
 }
 
+MODERN_FAMILY_IDS = {
+    "46": "philips_crypto2_id46",
+    "48": "megamos_crypto_id48",
+    "8E": "sokymat_crypto_id8e",
+}
+
 
 def normalise_token(raw: str) -> tuple[str, str, str] | None:
     matches = list(TOKEN_RE.finditer(raw))
@@ -81,6 +87,7 @@ def normalise_token(raw: str) -> tuple[str, str, str] | None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--applications", type=Path, required=True)
+    parser.add_argument("--proximity-applications", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     rows = json.loads(args.applications.read_text(encoding="utf-8"))
@@ -108,6 +115,25 @@ def main() -> None:
         if identity not in seen:
             families[family_id].append(app)
             seen.add(identity)
+    if args.proximity_applications:
+        modern = json.loads(args.proximity_applications.read_text(encoding="utf-8"))["applications"]
+        for row in modern:
+            code = row["transponder_code"].upper()
+            family_id = MODERN_FAMILY_IDS.get(code, f"silca_id{code.lower().replace('-', '_')}")
+            display_name = f"Silca transponder ID{code}"
+            labels.setdefault(family_id, (display_name, f"ID{code}"))
+            app = {
+                "manufacturer": row["manufacturer"], "model": row["model"], "model_file": row["path"],
+                "generation_or_chassis": row.get("chassis") or "Not specified beyond model and year in catalogue",
+                "year_from": row["year_from"], "year_to": row.get("year_to"),
+                "key_variant_scope": row["key_variant_scope"], "source_id": "silca_proximity_slot_remote_2025",
+                "source_page": row["source_page"], "catalogue_row": row["raw"],
+                "product_reference": row["product_reference"],
+            }
+            identity = (family_id, app["manufacturer"], app["model"], app["generation_or_chassis"], app["year_from"], app["year_to"], app["key_variant_scope"])
+            if identity not in seen:
+                families[family_id].append(app)
+                seen.add(identity)
     items = {}
     for family_id in sorted(families):
         apps = sorted(families[family_id], key=lambda x: (x["manufacturer"], x["model"], x["year_from"], x["year_to"] or 9999))
@@ -121,13 +147,17 @@ def main() -> None:
             "market_scope": "UK database model set",
             "supported_manufacturers": sorted({x["manufacturer"] for x in apps}),
             "supported_models": sorted({f'{x["manufacturer"]}/{x["model"]}' for x in apps}),
-            "applications": apps, "evidence_source_ids": ["silca_car_book_4_2014"],
+            "applications": apps, "evidence_source_ids": sorted({x["source_id"] for x in apps}),
         }
     out = {
         "schema_version": "2.1", "updated_at": "2026-07-18",
         "category": "uk_canonical_transponder_applications", "market": "UK", "drive_side": "RHD",
         "method": "Canonical families preserve the exact Silca transponder identifier. Applications are filtered to models present in the UK database; model records are updated only when their full year range and key scope are supported without conflict.",
-        "sources": {"silca_car_book_4_2014": SOURCE}, "items": items,
+        "sources": {"silca_car_book_4_2014": SOURCE, "silca_proximity_slot_remote_2025": {
+            "publisher": "Silca", "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025", "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "authority": "primary", "checked_at": "2026-07-18", "scope": "Proximity, slot and remote key applications through February 2025"
+        }}, "items": items,
         "build_summary": {"input_rows": len(rows), "matched_rows": sum(len(x) for x in families.values()), "rows_without_published_transponder": skipped},
     }
     args.output.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

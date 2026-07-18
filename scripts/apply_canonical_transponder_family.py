@@ -14,6 +14,7 @@ CATALOGUE = ROOT / "database" / "reference" / "uk_transponder_catalogue.json"
 UNCERTAIN = re.compile(r"unknown|research|required|confirm|likely|var(?:y|ies|iant)|tbc|tbd|not recorded|unspecified", re.I)
 PROXIMITY = re.compile(r"proximity|passive|keyless|smart key|kessy", re.I)
 KEYED = re.compile(r"keyed|ignition key|transponder key|remote key|flip key|mechanical", re.I)
+SLOT = re.compile(r"slot|dash key|fobik", re.I)
 
 
 def concrete(value: Any) -> bool:
@@ -31,17 +32,30 @@ def record_years(record: dict) -> tuple[int, int] | None:
     return years[0], years[1] if len(years) > 1 else years[0]
 
 
-def is_keyed_record(record: dict) -> bool:
+def record_scope(record: dict) -> str:
     vehicle = record.get("vehicle", {})
     info = record.get("vehicle_information", record)
     text = " ".join(str(x) for x in (vehicle.get("variant"), info.get("key_type"), record.get("name")) if x)
     if PROXIMITY.search(text):
-        return False
-    return bool(KEYED.search(text))
+        return "proximity_emergency_insert"
+    if SLOT.search(text):
+        return "slot_key"
+    if KEYED.search(text):
+        return "keyed_or_remote_transponder_key"
+    return "unknown"
+
+
+def scope_matches(record: dict, app_scope: str) -> bool:
+    scope = record_scope(record)
+    if app_scope == "remote_or_flip_key":
+        return scope == "keyed_or_remote_transponder_key"
+    return scope == app_scope
 
 
 def app_end(app: dict) -> int:
-    return app["year_to"] if isinstance(app.get("year_to"), int) else 2014
+    if isinstance(app.get("year_to"), int):
+        return app["year_to"]
+    return 2025 if app["source_id"] == "silca_proximity_slot_remote_2025" else 2014
 
 
 def main() -> None:
@@ -70,10 +84,10 @@ def main() -> None:
         dirty = False
         for record in records:
             years = record_years(record)
-            if years is None or not is_keyed_record(record):
+            if years is None:
                 continue
             start, end = years
-            covering = [(cid, app) for cid, app in applications if app["year_from"] <= start and app_end(app) >= end]
+            covering = [(cid, app) for cid, app in applications if scope_matches(record, app["key_variant_scope"]) and app["year_from"] <= start and app_end(app) >= end]
             covering_ids = {cid for cid, _ in covering}
             if family_id not in covering_ids:
                 continue
@@ -92,19 +106,24 @@ def main() -> None:
                 skipped.append({"record_id": rid, "reason": "existing_concrete_type", "existing": old_type, "candidate": display})
                 continue
             evidence_apps = [app for cid, app in covering if cid == family_id]
-            evidence = [{
-                "source_id": "silca_car_book_4_2014", "publisher": "Silca",
-                "title": catalogue["sources"]["silca_car_book_4_2014"]["title"],
-                "edition": "2014", "url": catalogue["sources"]["silca_car_book_4_2014"]["url"],
-                "catalogue_rows": sorted({app["catalogue_row"] for app in evidence_apps}),
-            }]
+            evidence = []
+            for source_id in sorted({app["source_id"] for app in evidence_apps}):
+                source = catalogue["sources"][source_id]
+                source_apps = [app for app in evidence_apps if app["source_id"] == source_id]
+                evidence.append({
+                    "source_id": source_id, "publisher": source["publisher"], "title": source["title"],
+                    "edition": source["edition"], "url": source["url"],
+                    "catalogue_rows": sorted({app["catalogue_row"] for app in source_apps}),
+                })
             verification = info.get("transponder_verification", {})
             if not isinstance(verification, dict):
                 verification = {}
             if old_type == display and old_id == target_id and verification.get("canonical_transponder_family_id") == family_id:
                 continue
-            info["transponder_type"] = display
-            info["transponder_id"] = target_id
+            if not concrete(old_type):
+                info["transponder_type"] = display
+            if not concrete(old_id):
+                info["transponder_id"] = target_id
             verification.update({
                 "status": "partially_verified", "confidence": "medium", "last_checked": "2026-07-18",
                 "canonical_transponder_family_id": family_id, "record_year_range": f"{start}-{end}", "evidence": evidence,
