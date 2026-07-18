@@ -1,0 +1,102 @@
+{
+  "schema_version": "2.1",
+  "model": "A6",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "c5",
+      "name": "A6 C5",
+      "years": "1997-2004",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "research_in_progress",
+      "verification_scope": "UK model history only."
+    },
+    {
+      "id": "c6",
+      "name": "A6 C6",
+      "years": "2004-2011",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "research_in_progress",
+      "verification_scope": "UK model history only."
+    },
+    {
+      "id": "c7",
+      "name": "A6 C7",
+      "years": "2011-2018",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "BCM2 / Immo V",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "verification_scope": "Abrites identifies this model/era within BCM2 coverage; exact vehicle hardware, UK specification and location remain unverified."
+    },
+    {
+      "id": "c8",
+      "name": "A6 C8",
+      "years": "2018-2025",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "research_in_progress",
+      "verification_scope": "UK model history only."
+    }
+  ],
+  "sources": {
+    "audi_uk_archive": {
+      "publisher": "Audi UK Newsroom",
+      "title": "UK current and previous model archive",
+      "url": "https://press.audi.co.uk/models/concept/releases",
+      "supports": [
+        "UK model presence"
+      ]
+    },
+    "abrites_vag_online": {
+      "publisher": "Abrites",
+      "title": "Diagnostics for VAG Online user manual",
+      "url": "https://abrites.com/media/user_manuals/html/abrites-diagnostics-for-vag-online-user-manual/index.html",
+      "supports": [
+        "BCM2 application scope and operation constraints for named Audi models"
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.1",
+  "model": "A5",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "8t",
+      "name": "A5 8T",
+      "years": "2007-2016",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "BCM2 / Immo V",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "verification_scope": "Abrites identifies this model/era within BCM2 coverage; exact vehicle hardware, UK specification and location remain unverified."
+    },
+    {
+      "id": "f5",
+      "name": "A5 F5",
+      "years": "2016-2024",
+      "platform": "Audi longitudinal architecture; exact platform revision requires generation evidence",
+      "immobiliser_family": "Exact family requires generation and fitted-hardware evidence",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "advanced_key_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "research_in_progress",
+      "verification_scope": "UK model history only."
+    }
+  ],
+  "sources": {
+    "audi_uk_archive": {
+      "publisher": "Audi UK Newsroom",
+      "title": "UK current and previous model archive",
+      "url": "https://press.audi.co.uk/models/concept/releases",
+      "supports": [
+        "UK model presence"
+      ]
+    },
+    "abrites_vag_online": {
+      "publisher": "Abrites",
+      "title": "Diagnostics for VAG Online user manual",
+      "url": "https://abrites.com/media/user_manuals/html/abrites-diagnostics-for-vag-online-user-manual/index.html",
+      "supports": [
+        "BCM2 application scope and operation constraints for named Audi models"
+      ]
+    }
+  }
+}

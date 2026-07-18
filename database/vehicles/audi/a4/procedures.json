@@ -1,0 +1,27 @@
+{
+  "schema_version": "2.1",
+  "model": "A4",
+  "procedures": [
+    {
+      "id": "add_key",
+      "name": "Add key",
+      "method": "Generation and fitted-system specific",
+      "tool_support": [
+        {
+          "tool": "Abrites VAG Online",
+          "status": "partially_verified",
+          "source": "https://abrites.com/media/user_manuals/html/abrites-diagnostics-for-vag-online-user-manual/index.html",
+          "notes": "Manual covers named platform families; verify exact vehicle and active licence."
+        }
+      ],
+      "status": "partially_verified"
+    },
+    {
+      "id": "akl",
+      "name": "All keys lost",
+      "method": "Abrites documents BCM2 AKL by making a dealer key then learning keys for A4/A5/Q5; exact supported vehicle and prerequisites must be confirmed in current software.",
+      "required_adapters": "PROTAG ZN003/ZN002 is stated for supported key programming; additional AKL cables may be required and must be checked for the exact job.",
+      "status": "partially_verified"
+    }
+  ]
+}
