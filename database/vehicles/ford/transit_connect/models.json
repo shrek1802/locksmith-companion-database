@@ -53,7 +53,10 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Not normally expected for this generation",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Early first-generation Transit Connect. Core blade, transponder and frequency are mapped for UK stock lookup; exact OEM remote part numbers and tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -233,7 +236,10 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Not normally expected for this generation",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "The first-generation facelift changes from 4D60 to 4D63. Exact OEM remote part numbers and tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -426,7 +432,10 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Tool/build dependent but normally offline-capable on this early second-generation range",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Second-generation early range uses DST80 before the later Hitag Pro change. OEM part numbers and exact tool coverage remain to be mapped.",
         "generation_tool_ids": [
@@ -619,7 +628,10 @@
           "all_keys_lost": "Supported only with exact-build coverage; later vehicles may require online/security access",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent; verify before accepting AKL",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Late second-generation Transit Connect uses Hitag Pro. Exact OEM remote part numbers and operation-level tool IDs remain to be added.",
         "generation_tool_ids": [
@@ -801,7 +813,10 @@
           "all_keys_lost": "Supported only with exact-build coverage; later vehicles may require online/security access",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent; verify before accepting AKL",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Use only where passive start is physically confirmed. Exact OEM part numbers and tool IDs remain to be added.",
         "generation_tool_ids": [

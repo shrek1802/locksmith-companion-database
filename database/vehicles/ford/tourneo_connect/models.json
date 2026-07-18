@@ -433,7 +433,10 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no for this early second-generation range",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Silca explicitly lists Tourneo Connect CHC from 2013 with HU101 and 433 MHz. The chip family follows the matching Transit Connect DST80 range.",
         "generation_tool_ids": [
@@ -625,7 +628,10 @@
           "all_keys_lost": "Exact-build coverage required; later vehicles may require online security access",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Late second-generation Tourneo Connect shares the matching Transit Connect Hitag Pro security family. Exact OEM part number and tool IDs remain to be mapped.",
         "generation_tool_ids": [
@@ -806,7 +812,10 @@
           "all_keys_lost": "Exact-build coverage required; later vehicles may require online security access",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Use only where push-button start is physically confirmed. Exact OEM part number and tool IDs remain to be mapped.",
         "generation_tool_ids": [

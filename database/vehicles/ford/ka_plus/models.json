@@ -61,7 +61,10 @@
           "all_keys_lost": "Supported only with exact Ka+ coverage; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent; confirm in the selected tool",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Transpondery lists Ford Ka/Ka+ 2016+ as Hitag Pro ID47. Silca independently lists Ka+ 2016-2019 with HU101, 433 MHz and ID47. Exact Ford part number and operation-level tool IDs still need mapping.",
         "generation_tool_ids": [
@@ -254,7 +257,10 @@
           "all_keys_lost": "Yes — tool coverage/security access required",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "tool_or_cable_required": "Standard OBD; battery support recommended",
         "emergency_blade": "Same as ignition blade",

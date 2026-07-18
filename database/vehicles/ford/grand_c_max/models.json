@@ -56,7 +56,10 @@
           "all_keys_lost": "Supported by compatible Ford PATS diagnostic tools; security access/wait procedure may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Not normally expected for this DST80 generation; confirm by tool and operation",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "The Grand C-Max shares the C-Max CB7 security family. The professional Ford transponder catalogue places C-Max 2010-2015 in DST80/ID63-6F. Silca lists C-Max CB7 2010-2015 with HU101 and 433 MHz. Tool IDs and exact OEM remote part numbers remain to be mapped.",
         "generation_tool_ids": [
@@ -249,7 +252,10 @@
           "all_keys_lost": "Supported by compatible Ford PATS diagnostic tools; security access/wait procedure may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Not normally expected for this DST80 generation; confirm by tool and operation",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Use only where passive start is physically confirmed. Core blade, transponder and frequency are supported by C-Max family application catalogues. Exact OEM part number remains to be added.",
         "generation_tool_ids": [
@@ -443,7 +449,10 @@
           "all_keys_lost": "Supported only where the selected tool explicitly covers the exact build/security route",
           "route": "OBD diagnostic programming",
           "online_requirement": "Tool/build dependent; verify before accepting AKL",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Transpondery places C-Max 2015-2020 in Hitag Pro. Silca lists C-Max CEU 2015-on with HU101 and 433 MHz; KeyStation explicitly lists a C-Max/Focus/Grand C-Max 433 MHz ID49 HU101 keyless family. Exact keyed remote OEM part number remains to be added.",
         "generation_tool_ids": [
@@ -635,7 +644,10 @@
           "all_keys_lost": "Supported only where the selected tool explicitly covers the exact build/security route",
           "route": "OBD diagnostic programming",
           "online_requirement": "Tool/build dependent; verify before accepting AKL",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "This exact Grand C-Max keyless application is listed by a UK professional supplier as 433 MHz ID49 with HU101. Transponder family and C-Max CEU blade/frequency are independently supported by Transpondery and Silca. OEM part number remains to be added.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",

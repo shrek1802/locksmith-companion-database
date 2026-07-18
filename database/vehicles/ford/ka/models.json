@@ -413,7 +413,10 @@
           "all_keys_lost": "Supported by compatible Fiat CODE tools; PIN/security data may be required",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no, tool/security-code dependent",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "This generation shares the Fiat 500 platform. KeyStation lists compatible Ford/Fiat 433 MHz ID46 PCF7946 SIP22 remotes, including OEM reference 71765697 on the 3-button family. Never select the Ford PATS menu solely because the badge is Ford.",
         "generation_tool_ids": [

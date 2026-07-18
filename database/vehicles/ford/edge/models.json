@@ -206,7 +206,10 @@
           "all_keys_lost": "Exact configuration and tool coverage required",
           "route": "Ford PATS diagnostic route if genuine keyed variant is confirmed",
           "online_requirement": "Build and operation dependent",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Retained only to prevent a keyed vehicle being forced into the passive record. The normal UK Edge record is passive start; verify the actual ignition before ordering.",
         "generation_tool_ids": [

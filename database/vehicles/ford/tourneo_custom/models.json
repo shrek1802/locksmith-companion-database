@@ -57,7 +57,10 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access/wait may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no for this early DST80 range",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Passenger derivative of the first-generation Transit Custom. Core key data follows the matching V362/V363 Transit Custom security family.",
         "generation_tool_ids": [
@@ -249,7 +252,10 @@
           "all_keys_lost": "Do not accept without VIN/build and exact tool coverage",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build dependent",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Retained as a real transition range because the checked catalogues leave a gap between the early DST80 and later Hitag Pro applications. Confirm the original key or VIN/build before ordering.",
         "generation_tool_ids": [
@@ -442,7 +448,10 @@
           "all_keys_lost": "Exact-build coverage required; later security/online access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Late Tourneo Custom shares the Transit Custom Hitag Pro key family and OEM references. Exact operation-level tool IDs still need mapping.",
         "generation_tool_ids": [
@@ -623,7 +632,10 @@
           "all_keys_lost": "Exact-build coverage required; later security/online access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Use only where passive start is physically confirmed. Core key family and OEM references follow the matching Transit Custom application.",
         "generation_tool_ids": [

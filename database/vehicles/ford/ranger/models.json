@@ -51,7 +51,10 @@
           "all_keys_lost": "Exact immobiliser and tool coverage required",
           "route": "Legacy diagnostic/immobiliser route",
           "online_requirement": "No",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Transpondery confirms Texas 4C for 1999-2000. The early UK Ranger is Mazda-derived, so the blade and remote must not be inferred from later HU101 Ford applications.",
         "generation_tool_ids": [
@@ -226,7 +229,10 @@
           "all_keys_lost": "Exact immobiliser and tool coverage required",
           "route": "OBD diagnostic programming where supported",
           "online_requirement": "No",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Transpondery confirms Texas 4D63 for 2001-2010. Because this is a Mazda-derived UK platform, blade and frequency remain tied to the exact application rather than later Ford T6 data.",
         "generation_tool_ids": [
@@ -407,7 +413,10 @@
           "all_keys_lost": "Supported by compatible Ford PATS tools; security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Normally no for this early T6 range",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Transpondery lists Ranger 2011+ as DST80. Silca independently lists Ranger TKE 2011-2015 with HU101 and 433 MHz; this record stops before the separately catalogued 2015 Hitag Pro application.",
         "generation_tool_ids": [
@@ -599,7 +608,10 @@
           "all_keys_lost": "Exact-build coverage required; later vehicles may require online Ford security access",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Silca explicitly lists Ranger P375 from 2015 with HU101, 433 MHz and ID47. This provides a locksmith-relevant security breakpoint from the earlier DST80 application.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
@@ -784,7 +796,10 @@
           "all_keys_lost": "Exact-build coverage required; online Ford security access may apply",
           "route": "OBD diagnostic programming",
           "online_requirement": "Build and operation dependent",
-          "security_access": "ford_fdrs_online_security_access"
+          "security_access": "verification_required",
+          "security_access_previous_unvalidated": "ford_fdrs_online_security_access",
+          "security_access_status": "research_required",
+          "security_access_note": "Previous method identifier was not accepted by the Ford security-access validator and lacked record-level evidence. It is retained above as a research lead, not as a verified route."
         },
         "notes": "Use only where passive start is physically confirmed. Blade, frequency and Hitag Pro family are supported by the 2015-on Silca Ranger application.",
         "tool_or_cable_required": "Standard OBD; battery support recommended",
