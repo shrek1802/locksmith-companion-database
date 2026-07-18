@@ -1,0 +1,68 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "seat",
+    "name": "SEAT",
+    "market": "UK",
+    "drive_side": "RHD"
+  },
+  "version": 1,
+  "models": {
+    "arona": {
+      "name": "Arona",
+      "version": 1,
+      "manifest": "arona/manifest.json",
+      "status": "research_in_progress"
+    },
+    "ateca": {
+      "name": "Ateca",
+      "version": 1,
+      "manifest": "ateca/manifest.json",
+      "status": "research_in_progress"
+    },
+    "ibiza": {
+      "name": "Ibiza",
+      "version": 1,
+      "manifest": "ibiza/manifest.json",
+      "status": "research_in_progress"
+    },
+    "leon": {
+      "name": "Leon",
+      "version": 1,
+      "manifest": "leon/manifest.json",
+      "status": "research_in_progress"
+    },
+    "tarraco": {
+      "name": "Tarraco",
+      "version": 1,
+      "manifest": "tarraco/manifest.json",
+      "status": "research_in_progress"
+    },
+    "toledo": {
+      "name": "Toledo",
+      "version": 1,
+      "manifest": "toledo/manifest.json",
+      "status": "research_in_progress"
+    }
+  },
+  "status": "research_in_progress",
+  "sources": {
+    "seat_uk_history": {
+      "publisher": "SEAT UK",
+      "title": "70 years of SEAT history",
+      "url": "https://www.seat.co.uk/about-seat/news-events/corporate/70-years-of-history",
+      "supports": [
+        "UK introduction and model history"
+      ]
+    },
+    "autel_apb300": {
+      "publisher": "Autel",
+      "title": "APB300 Volkswagen Group coverage",
+      "url": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+      "supports": [
+        "Working-key Add Key model/year coverage"
+      ]
+    }
+  }
+}

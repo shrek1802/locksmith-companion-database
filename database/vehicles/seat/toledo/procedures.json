@@ -1,0 +1,35 @@
+{
+  "schema_version": "2.1",
+  "model": "Toledo",
+  "procedures": [
+    {
+      "id": "add_key",
+      "name": "Add key",
+      "method": "Read immobiliser data from the opened original working key with APB300; prepare a supported replacement key/PCB",
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Autel APB300 with MaxiIM 508/608 series",
+          "status": "partially_verified",
+          "confidence": "high",
+          "coverage": "SEAT Toledo 2016-2019",
+          "source": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+          "working_key_required": true,
+          "vehicle_connection_required": false,
+          "required_hardware": [
+            "Autel APB300",
+            "Compatible MaxiIM tablet",
+            "Supported Autel IKEY or key PCB"
+          ],
+          "limits": "Add Key only; keyed/KESSY applicability and exact key PCB must be confirmed."
+        }
+      ]
+    },
+    {
+      "id": "akl",
+      "name": "All keys lost",
+      "method": "No AKL support is inferred from APB300 working-key coverage",
+      "status": "research_required"
+    }
+  ]
+}

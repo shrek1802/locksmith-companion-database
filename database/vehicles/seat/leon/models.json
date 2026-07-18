@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.1",
+  "model": "Leon",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "leon_apb300_scope",
+      "name": "Leon APB300 coverage range",
+      "years": "2017-2021",
+      "platform": "Volkswagen Group MQB per official Autel coverage category",
+      "immobiliser_family": "Exact MQB dashboard/key family requires fitted-hardware confirmation",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "seat_uk": {
+      "publisher": "SEAT UK",
+      "title": "UK model range and history",
+      "url": "https://www.seat.co.uk/",
+      "supports": [
+        "UK market presence"
+      ]
+    },
+    "autel_apb300": {
+      "publisher": "Autel",
+      "title": "APB300 Volkswagen Group MLB and MQB coverage",
+      "url": "https://www.autel.com/u/cms/www/202602/12012616q4ru.pdf",
+      "supports": [
+        "SEAT Leon 2017-2021 working-key Add Key coverage"
+      ]
+    }
+  }
+}
