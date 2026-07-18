@@ -1,12 +1,284 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
+  "manufacturer": "Volkswagen",
+  "model": "Polo",
+  "market": "UK",
   "items": {
-    "polo_6n_1994_2001": {"add_key": "PROC_VW_IMMO2_3_ADAPT", "all_keys_lost": "PROC_VW_IMMO2_3_DATA"},
-    "polo_9n_2001_2009": {"add_key": "PROC_VW_IMMO3_4A_OBD", "all_keys_lost": "PROC_VW_CLUSTER_DATA"},
-    "polo_6r_2009_2014": {"add_key": "PROC_VW_IMMO4_CHALLENGE", "all_keys_lost": "PROC_VW_CLUSTER_DATA"},
-    "polo_6c_2014_2017": {"add_key": "PROC_VW_LATE_CLUSTER", "all_keys_lost": "PROC_VW_LATE_CLUSTER_DATA"},
-    "polo_aw_2017_2021": {"add_key": "PROC_VW_MQB48_ADD", "all_keys_lost": "PROC_VW_MQB48_AKL"},
-    "polo_aw_facelift_2021_present": {"add_key": "PROC_VW_LATE_MQB_ADD", "all_keys_lost": "PROC_VW_LATE_MQB_AKL_CHECK"}
-  }
+    "polo_6n_1994_2001": {
+      "add_key": {
+        "method": "PIN-based OBD adaptation where supported after identifying the fitted immobiliser generation",
+        "programming_method": "Identify the cluster or separate immobiliser box before selecting the procedure",
+        "online_requirement": "Not Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "No operation-specific tool is shown until current manufacturer coverage for the exact Polo 6N immobiliser system is confirmed."
+        ]
+      },
+      "all_keys_lost": {
+        "method": "Acquire the required PIN or immobiliser EEPROM data, prepare the correct transponder and adapt all keys",
+        "programming_method": "Immobiliser generation and module dependent",
+        "online_requirement": "Not Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "Confirm whether the vehicle uses a cluster-based or separate immobiliser box before removing or reading any module."
+        ]
+      }
+    },
+    "polo_9n_2001_2009": {
+      "add_key": {
+        "method": "OBD adaptation or saved immobiliser-data route after identifying the exact cluster",
+        "programming_method": "Volkswagen Immo3 or early Immo4 cluster-specific procedure",
+        "online_requirement": "Not Required",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "OBDSTAR documents Volkswagen third- and fourth-generation immobiliser key programming, including Polo applications, but the exact cluster must be identified first.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD on supported clusters; dashboard-data access may be required"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Confirm whether the vehicle is Immo3 or early Immo4 and check the current device menu before programming."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read the required cluster immobiliser data, prepare the dealer key where required and learn all keys",
+        "programming_method": "OBD or dashboard-data route depending on the fitted cluster",
+        "online_requirement": "Not Required for supported local data routes",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is conditional on the fitted Immo3 or Immo4 cluster being supported by the current Volkswagen software.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "OBD or cluster-specific bench connection after module identification"
+            },
+            "module_removal_required": "cluster_dependent",
+            "internet_required": false,
+            "warnings": [
+              "Secure and verify the original immobiliser data before preparing or learning keys."
+            ]
+          }
+        }
+      }
+    },
+    "polo_6r_2009_2014": {
+      "add_key": {
+        "method": "Diagnostic or saved-data route depending on the installed Immo4 dashboard",
+        "programming_method": "Dashboard-specific Volkswagen Immo4 Add Key procedure",
+        "online_requirement": "No blanket online requirement",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Volkswagen Immo4 key programming is supported where the exact Polo dashboard appears in the current device coverage.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD or dashboard-data route depending on cluster"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Identify the dashboard family and current software coverage before beginning the operation."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Acquire the supported dashboard immobiliser data, prepare a dealer key and learn all keys",
+        "programming_method": "Supported Immo4 dashboard-data route",
+        "online_requirement": "Not Required for supported local data routes",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL support depends on the fitted Immo4 dashboard processor and EEPROM being covered by the current software and adapter route.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Cluster-specific OBD or bench-data connection"
+            },
+            "module_removal_required": "dashboard_dependent",
+            "internet_required": false,
+            "warnings": [
+              "Do not assume every Polo 6R dashboard uses the same memory or data-reading route."
+            ]
+          }
+        }
+      }
+    },
+    "polo_6c_2014_2017": {
+      "add_key": {
+        "method": "Supported diagnostic or saved-data route after exact dashboard identification",
+        "programming_method": "Late cluster-based Volkswagen Add Key procedure",
+        "online_requirement": "Tool and operation dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Polo is included in OBDSTAR Volkswagen key-programming coverage, but late 6C dashboard support must be checked by exact unit.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD or supported dashboard-data route"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Keep Polo 6R and 6C dashboard coverage separate and confirm the current device menu."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Confirm dashboard coverage, obtain the immobiliser data and learn all keys using the supported route",
+        "programming_method": "Late dashboard data route only where explicitly supported",
+        "online_requirement": "Tool and operation dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is conditional on the fitted late dashboard being included in current Immo4 or MQB-related coverage.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Dashboard-specific OBD or bench-data connection"
+            },
+            "module_removal_required": "dashboard_dependent",
+            "internet_required": false,
+            "warnings": [
+              "Verify the processor, EEPROM family and supported adapter before removing or reading the dashboard."
+            ]
+          }
+        }
+      }
+    },
+    "polo_aw_2017_2021": {
+      "add_key": {
+        "method": "OBD, saved MQB data or supported working-key route after identifying the exact dashboard and keyless specification",
+        "programming_method": "MQB48 dashboard-specific Add Key procedure",
+        "online_requirement": "Tool and operation dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "Autel APB300 provides a working-key Add Key route for supported Volkswagen Group MQB applications.",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Open and read the original working key using APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Supported Autel VW-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true,
+            "warnings": [
+              "Confirm that the exact Polo key and platform are included in the current APB300 coverage.",
+              "This working-key route does not establish All Keys Lost support."
+            ]
+          },
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "MQB key programming is available only where the fitted MQB48 dashboard is supported by the current software.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "OBD or supported dashboard-data route depending on the installed cluster"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Identify the MQB dashboard generation and keyed or keyless configuration before proceeding."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read supported MQB dashboard data, calculate the required security data, prepare the dealer key and learn all keys",
+        "programming_method": "Supported MQB48 dashboard-data AKL route",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is available only when the Polo AW dashboard is a supported MQB48 type and the required adapter route is available.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "RH850/V850 or other dashboard-specific adapter route where required"
+            },
+            "tool_accessory_ids": [
+              "OBDSTAR MP001",
+              "Applicable OBDSTAR dashboard adapter"
+            ],
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Confirm the dashboard processor and current MQB generation coverage before accepting the AKL job."
+            ]
+          }
+        }
+      }
+    },
+    "polo_aw_facelift_2021_present": {
+      "add_key": {
+        "method": "Current platform-specific Add Key route only after VIN, key type and live tool coverage confirmation",
+        "programming_method": "Later protected MQB support check",
+        "online_requirement": "May Be Required",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "Autel APB300 may provide a working-key Add Key route where the exact later MQB key is supported.",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Read the opened original working key with APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Supported Autel VW-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true,
+            "warnings": [
+              "Check the current Autel coverage against the exact key and vehicle before booking the job.",
+              "Do not treat APB300 Add Key support as proof of AKL coverage."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Confirm current aftermarket coverage before accepting the job",
+        "programming_method": "Later protected MQB AKL support check",
+        "online_requirement": "Likely Required where supported",
+        "overall_status": "verification_required",
+        "warnings": [
+          "No universal operation-specific AKL tool support is shown for the Polo AW facelift.",
+          "Confirm VIN, dashboard, key type and live tool coverage before dismantling or preparing a key."
+        ]
+      }
+    }
+  },
+  "status": "operation_specific_tool_support_partially_verified"
 }

@@ -1,9 +1,9 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "manufacturer": {"id": "volkswagen", "name": "Volkswagen"},
   "model": {"id": "polo", "name": "Polo"},
-  "version": 1,
+  "version": 2,
   "status": "research_in_progress",
   "files": {
     "models": "models.json",
@@ -15,8 +15,8 @@
     "photos": "photos.json"
   },
   "verification": {
-    "scope": "UK RHD Polo generations prepared for app testing",
-    "programming_status": "Not verified",
-    "last_verified": "2026-07-17"
+    "scope": "Six UK RHD Polo generations with conditional operation-specific tool support where current manufacturer evidence permits",
+    "programming_status": "Partially verified; exact cluster, keyless specification and live tool coverage checks remain mandatory",
+    "last_verified": "2026-07-18"
   }
 }
