@@ -5,9 +5,56 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "xsara_uk_generations",
-      "name": "Xsara UK generations",
-      "years": "1997-2006",
+      "id": "xsara_uk_generations_1998_2006_keyed_or_remote_transponder_key_sx9",
+      "name": "Xsara UK generations - keyed_or_remote (1998-2006)",
+      "years": "1998-2006",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "xsara_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "XSARA [SB] 1998 2001 SX9T5 PH 33 Y Y G-C",
+          "XSARA 2001 2006 SX9T14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "SX9",
+      "blade_id": "sx9",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "sx9",
+        "record_year_range": "1998-2006",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "XSARA [SB] 1998 2001 SX9T5 PH 33 Y Y G-C",
+              "XSARA 2001 2006 SX9T14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "xsara_uk_generations_1997_1997_blade_research",
+      "name": "Xsara UK generations - blade research boundary (1997-1997)",
+      "years": "1997-1997",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
       "key_variants": [
@@ -32,7 +79,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1997-1997"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "xsara_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

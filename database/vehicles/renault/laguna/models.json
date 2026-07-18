@@ -5,9 +5,93 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "laguna_uk_generations",
-      "name": "Laguna UK generations",
-      "years": "1994-2012",
+      "id": "laguna_uk_generations_1995_2000_keyed_or_remote_transponder_key_ne73_or_vac102",
+      "name": "Laguna UK generations - keyed_or_remote (1995-2000)",
+      "years": "1995-2000",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "laguna_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "LAGUNA 1995 2000 NE73T5 NE73FH PH 33 Y Y",
+          "LAGUNA 1995 2000 VAC102T1 VAC102FH PH 33 Y Y"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "ne73",
+        "vac102"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1995-2000",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "laguna_uk_generations_2001_2012_slot_key_va150",
+      "name": "Laguna UK generations - slot_key (2001-2012)",
+      "years": "2001-2012",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "slot_key",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "laguna_uk_generations",
+        "key_variant_scope": "slot_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Renault Laguna X56/X75 (VF1G) 2001 2007 VA150 433AM",
+          "Renault Laguna X91 (VF1T) 2008 2015 VA150 433FM"
+        ]
+      },
+      "blade_profile": "VA150",
+      "blade_id": "va150",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "va150",
+        "record_year_range": "2001-2012",
+        "key_variant_scope": "slot_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Renault Laguna X56/X75 (VF1G) 2001 2007 VA150 433AM",
+              "Renault Laguna X91 (VF1T) 2008 2015 VA150 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "laguna_uk_generations_1994_1994_blade_research",
+      "name": "Laguna UK generations - blade research boundary (1994-1994)",
+      "years": "1994-1994",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
       "key_variants": [
@@ -32,7 +116,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1994-1994"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "laguna_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

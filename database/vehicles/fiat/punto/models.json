@@ -5,9 +5,146 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "punto_uk_generations",
-      "name": "Punto UK generations",
-      "years": "1994-2018",
+      "id": "punto_uk_generations_1995_1999_keyed_or_remote_transponder_key_gt15ra",
+      "name": "Punto UK generations - keyed_or_remote (1995-1999)",
+      "years": "1995-1999",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "punto_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "PUNTO 1995 1999 GT15RAT5 GT15RFH MEG 13 Y Y Meg S1"
+        ]
+      },
+      "blade_profile": "GT15RA",
+      "blade_id": "gt15ra",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "gt15ra",
+        "record_year_range": "1995-1999",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "PUNTO 1995 1999 GT15RAT5 GT15RFH MEG 13 Y Y Meg S1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "punto_uk_generations_2009_2014_keyed_or_remote_transponder_key_sip22",
+      "name": "Punto UK generations - keyed_or_remote (2009-2014)",
+      "years": "2009-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "punto_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "PUNTO EVO 2009 2012 SIP22MH SIP22TE SIP22FH Y PH / CR2 46 Y P-BOX",
+          "PUNTO 2012 SIP22MH SIP22TE SIP22FH Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "SIP22",
+      "blade_id": "sip22",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "sip22",
+        "record_year_range": "2009-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "PUNTO EVO 2009 2012 SIP22MH SIP22TE SIP22FH Y PH / CR2 46 Y P-BOX",
+              "PUNTO 2012 SIP22MH SIP22TE SIP22FH Y PH / CR2 46 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "punto_uk_generations_2012_2018_remote_or_flip_key_sip22",
+      "name": "Punto UK generations - remote_or_flip (2012-2018)",
+      "years": "2012-2018",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "punto_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Fiat Punto 199 2012 2018 SIP22 433AM"
+        ]
+      },
+      "blade_profile": "SIP22",
+      "blade_id": "sip22",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "sip22",
+        "record_year_range": "2012-2018",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Fiat Punto 199 2012 2018 SIP22 433AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "punto_uk_generations_1994_1994_blade_research",
+      "name": "Punto UK generations - blade research boundary (1994-1994)",
+      "years": "1994-1994",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
       "key_variants": [
@@ -32,7 +169,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1994-1994"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "punto_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "punto_uk_generations_2000_2008_blade_research",
+      "name": "Punto UK generations - blade research boundary (2000-2008)",
+      "years": "2000-2008",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2000-2008"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "punto_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

@@ -5,9 +5,92 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "106_uk_generations",
-      "name": "106 UK generations",
-      "years": "1991-2003",
+      "id": "106_uk_generations_1997_1999_keyed_or_remote_transponder_key_ne72a",
+      "name": "106 UK generations - keyed_or_remote (1997-1999)",
+      "years": "1997-1999",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "106_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "106 1997 2000 NE72AT5 NE72FH PH 33 Y Y G-V"
+        ]
+      },
+      "blade_profile": "NE72A",
+      "blade_id": "ne72a",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "ne72a",
+        "record_year_range": "1997-1999",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "106 1997 2000 NE72AT5 NE72FH PH 33 Y Y G-V"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "106_uk_generations_2000_2003_keyed_or_remote_transponder_key_ne72a_or_ne73",
+      "name": "106 UK generations - keyed_or_remote (2000-2003)",
+      "years": "2000-2003",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "106_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "106 1997 2000 NE72AT5 NE72FH PH 33 Y Y G-V",
+          "106 2000 2004 NE72AT14 PH / CR2 46",
+          "106 2000 2004 NE73MH NE73TE NE73FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "ne72a",
+        "ne73"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2000-2003",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "106_uk_generations_1991_1996_blade_research",
+      "name": "106 UK generations - blade research boundary (1991-1996)",
+      "years": "1991-1996",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
       "key_variants": [
@@ -32,7 +115,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1991-1996"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "106_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

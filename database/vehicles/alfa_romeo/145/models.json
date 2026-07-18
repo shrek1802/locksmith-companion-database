@@ -5,9 +5,56 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "145_uk_generations",
-      "name": "145 UK generations",
-      "years": "1994-2001",
+      "id": "145_uk_generations_1994_1998_keyed_or_remote_transponder_key_gt15r",
+      "name": "145 UK generations - keyed_or_remote (1994-1998)",
+      "years": "1994-1998",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "145_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "145 1994 1995 GT15RAP GT15RFH",
+          "145 1995 1998 GT15RT2 GT15RFH PH 33 Y Y B-F S1"
+        ]
+      },
+      "blade_profile": "GT15R",
+      "blade_id": "gt15r",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "gt15r",
+        "record_year_range": "1994-1998",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "145 1994 1995 GT15RAP GT15RFH",
+              "145 1995 1998 GT15RT2 GT15RFH PH 33 Y Y B-F S1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "145_uk_generations_1999_2001_blade_research",
+      "name": "145 UK generations - blade research boundary (1999-2001)",
+      "years": "1999-2001",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
       "key_variants": [
@@ -32,7 +79,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1999-2001"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "145_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "seicento_uk_generations",
-      "name": "Seicento UK generations",
-      "years": "1998-2010",
+      "id": "seicento_uk_generations_1998_2000_keyed_or_remote_transponder_key_gt15rb",
+      "name": "Seicento UK generations - keyed_or_remote (1998-2000)",
+      "years": "1998-2000",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "seicento_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SEICENTO 1997 2000 GT15RBT5 GT15RFH MEG 13 Y Y Meg S1"
+        ]
+      },
+      "blade_profile": "GT15RB",
+      "blade_id": "gt15rb",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "gt15rb",
+        "record_year_range": "1998-2000",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "SEICENTO 1997 2000 GT15RBT5 GT15RFH MEG 13 Y Y Meg S1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "seicento_uk_generations_2001_2010_blade_research",
+      "name": "Seicento UK generations - blade research boundary (2001-2010)",
+      "years": "2001-2010",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
       "key_variants": [
@@ -32,7 +77,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2001-2010"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "seicento_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

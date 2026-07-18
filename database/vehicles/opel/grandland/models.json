@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "grandland_uk_generations",
-      "name": "Grandland UK generations",
-      "years": "2017-present",
+      "id": "grandland_uk_generations_2018_2022_proximity_emergency_insert_hu83",
+      "name": "Grandland UK generations - proximity (2018-2022)",
+      "years": "2018-2022",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Opel/GM or PSA/Stellantis body-security family; UK RHD applicability must be proven",
+      "key_variants": [
+        {
+          "type": "proximity",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "grandland_uk_generations",
+        "key_variant_scope": "proximity_emergency_insert",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Opel GRANDLAND X 3630 (ZR) 2018 2022 HU83 433FM"
+        ]
+      },
+      "blade_profile": "HU83",
+      "blade_id": "hu83",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu83",
+        "record_year_range": "2018-2022",
+        "key_variant_scope": "proximity_emergency_insert",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Opel GRANDLAND X 3630 (ZR) 2018 2022 HU83 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "grandland_uk_generations_2017_2017_blade_research",
+      "name": "Grandland UK generations - blade research boundary (2017-2017)",
+      "years": "2017-2017",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Opel/GM or PSA/Stellantis body-security family; UK RHD applicability must be proven",
       "key_variants": [
@@ -32,7 +77,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2017-2017"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "grandland_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "grandland_uk_generations_2023_2026_blade_research",
+      "name": "Grandland UK generations - blade research boundary (2023-present)",
+      "years": "2023-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Opel/GM or PSA/Stellantis body-security family; UK RHD applicability must be proven",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2023-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "grandland_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

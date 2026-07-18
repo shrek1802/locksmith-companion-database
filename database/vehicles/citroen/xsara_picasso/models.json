@@ -5,9 +5,54 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "xsara_picasso_uk_generations",
-      "name": "Xsara Picasso UK generations",
-      "years": "2000-2010",
+      "id": "xsara_picasso_uk_generations_2000_2006_keyed_or_remote_transponder_key_sx9",
+      "name": "Xsara Picasso UK generations - keyed_or_remote (2000-2006)",
+      "years": "2000-2006",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "xsara_picasso_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "XSARA PICASSO 2000 2006 SX9T14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "SX9",
+      "blade_id": "sx9",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "sx9",
+        "record_year_range": "2000-2006",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "XSARA PICASSO 2000 2006 SX9T14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "xsara_picasso_uk_generations_2007_2010_blade_research",
+      "name": "Xsara Picasso UK generations - blade research boundary (2007-2010)",
+      "years": "2007-2010",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
       "key_variants": [
@@ -32,7 +77,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2007-2010"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "xsara_picasso_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

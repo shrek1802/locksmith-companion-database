@@ -5,34 +5,53 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "saxo_uk_generations",
-      "name": "Saxo UK generations",
+      "id": "saxo_uk_generations_1996_2003_keyed_or_remote_transponder_key_sx9",
+      "name": "Saxo UK generations - keyed_or_remote (1996-2003)",
       "years": "1996-2003",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
-        {
-          "type": "slot_key",
-          "status": "research_required"
-        },
-        {
-          "type": "proximity",
-          "status": "research_required"
-        },
-        {
-          "type": "KESSY_or_keyless",
-          "status": "research_required"
-        },
-        {
-          "type": "smart_key",
-          "status": "research_required"
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "saxo_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "SAXO 1996 1997 SX9AP",
+          "SAXO 1998 2000 SX9T5 PH 33 Y Y G-V",
+          "SAXO 2000 2003 SX9T14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "SX9",
+      "blade_id": "sx9",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "sx9",
+        "record_year_range": "1996-2003",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "SAXO 1996 1997 SX9AP",
+              "SAXO 1998 2000 SX9T5 PH 33 Y Y G-V",
+              "SAXO 2000 2003 SX9T14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
     }
   ],
   "sources": {

@@ -5,9 +5,99 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "500_uk_generations",
-      "name": "500 UK generations",
-      "years": "2008-present",
+      "id": "500_uk_generations_2008_2014_keyed_or_remote_transponder_key_sip22",
+      "name": "500 UK generations - keyed_or_remote (2008-2014)",
+      "years": "2008-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "500_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "500 2007 SIP22MH SIP22TE SIP22FH Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "SIP22",
+      "blade_id": "sip22",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "sip22",
+        "record_year_range": "2008-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "500 2007 SIP22MH SIP22TE SIP22FH Y PH / CR2 46 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "500_uk_generations_2008_2024_remote_or_flip_key_sip22",
+      "name": "500 UK generations - remote_or_flip (2008-2024)",
+      "years": "2008-2024",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "500_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Fiat 500 312 2007 2024 SIP22 433AM"
+        ]
+      },
+      "blade_profile": "SIP22",
+      "blade_id": "sip22",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "sip22",
+        "record_year_range": "2008-2024",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Fiat 500 312 2007 2024 SIP22 433AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "500_uk_generations_2025_2026_blade_research",
+      "name": "500 UK generations - blade research boundary (2025-present)",
+      "years": "2025-present",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
       "key_variants": [
@@ -32,7 +122,21 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2025-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "500_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

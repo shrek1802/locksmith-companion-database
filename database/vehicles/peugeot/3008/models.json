@@ -5,9 +5,144 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "3008_uk_generations",
-      "name": "3008 UK generations",
-      "years": "2009-present",
+      "id": "3008_uk_generations_2009_2014_keyed_or_remote_transponder_key_hu83",
+      "name": "3008 UK generations - keyed_or_remote (2009-2014)",
+      "years": "2009-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "3008_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "3008 2009 HU83MH HU83TE HU83FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "HU83",
+      "blade_id": "hu83",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu83",
+        "record_year_range": "2009-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "3008 2009 HU83MH HU83TE HU83FH Y Y PH / CR2 46 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "3008_uk_generations_2009_2013_remote_or_flip_key_hu83",
+      "name": "3008 UK generations - remote_or_flip (2009-2013)",
+      "years": "2009-2013",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "3008_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Peugeot 3008 T84 VF30 2009 2013 HU83 433FM"
+        ]
+      },
+      "blade_profile": "HU83",
+      "blade_id": "hu83",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu83",
+        "record_year_range": "2009-2013",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Peugeot 3008 T84 VF30 2009 2013 HU83 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "3008_uk_generations_2016_2022_proximity_emergency_insert_hu83",
+      "name": "3008 UK generations - proximity (2016-2022)",
+      "years": "2016-2022",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
+        {
+          "type": "proximity",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "3008_uk_generations",
+        "key_variant_scope": "proximity_emergency_insert",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Peugeot 3008 P84 (VF3M) 2016 2022 HU83 433FM"
+        ]
+      },
+      "blade_profile": "HU83",
+      "blade_id": "hu83",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu83",
+        "record_year_range": "2016-2022",
+        "key_variant_scope": "proximity_emergency_insert",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Peugeot 3008 P84 (VF3M) 2016 2022 HU83 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "3008_uk_generations_2015_2015_blade_research",
+      "name": "3008 UK generations - blade research boundary (2015-2015)",
+      "years": "2015-2015",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
       "key_variants": [
@@ -32,7 +167,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-2015"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "3008_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "3008_uk_generations_2023_2026_blade_research",
+      "name": "3008 UK generations - blade research boundary (2023-present)",
+      "years": "2023-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2023-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "3008_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

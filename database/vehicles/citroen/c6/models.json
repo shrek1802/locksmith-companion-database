@@ -5,34 +5,41 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "c6_uk_generations",
-      "name": "C6 UK generations",
+      "id": "c6_uk_generations_2006_2012_keyed_or_remote_transponder_key_va2_or_va6",
+      "name": "C6 UK generations - keyed_or_remote (2006-2012)",
       "years": "2006-2012",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
-        {
-          "type": "slot_key",
-          "status": "research_required"
-        },
-        {
-          "type": "proximity",
-          "status": "research_required"
-        },
-        {
-          "type": "KESSY_or_keyless",
-          "status": "research_required"
-        },
-        {
-          "type": "smart_key",
+          "type": "keyed_or_remote",
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "c6_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "C6 2006 VA2T14 PH / CR2 46",
+          "C6 2006 VA6MH VA6FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "va2",
+        "va6"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2006-2012",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
     }
   ],
   "sources": {

@@ -5,9 +5,99 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "meriva_uk_generations",
-      "name": "Meriva UK generations",
-      "years": "2003-2017",
+      "id": "meriva_uk_generations_2003_2004_remote_or_flip_key_hu46b",
+      "name": "Meriva UK generations - remote_or_flip (2003-2004)",
+      "years": "2003-2004",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Opel/GM or PSA/Stellantis body-security family; UK RHD applicability must be proven",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "meriva_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Opel-Vauxhall Meriva X03 (XC) 2003 2004 HU46B 433AM"
+        ]
+      },
+      "blade_profile": "HU46B",
+      "blade_id": "hu46b",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu46b",
+        "record_year_range": "2003-2004",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Opel-Vauxhall Meriva X03 (XC) 2003 2004 HU46B 433AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "meriva_uk_generations_2010_2014_remote_or_flip_key_hu100",
+      "name": "Meriva UK generations - remote_or_flip (2010-2014)",
+      "years": "2010-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Opel/GM or PSA/Stellantis body-security family; UK RHD applicability must be proven",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "meriva_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Opel-Vauxhall Meriva B (M9) 2010 2014 HU100 433AM"
+        ]
+      },
+      "blade_profile": "HU100",
+      "blade_id": "hu100",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu100",
+        "record_year_range": "2010-2014",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Opel-Vauxhall Meriva B (M9) 2010 2014 HU100 433AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "meriva_uk_generations_2005_2009_blade_research",
+      "name": "Meriva UK generations - blade research boundary (2005-2009)",
+      "years": "2005-2009",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Opel/GM or PSA/Stellantis body-security family; UK RHD applicability must be proven",
       "key_variants": [
@@ -32,7 +122,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2005-2009"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "meriva_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "meriva_uk_generations_2015_2017_blade_research",
+      "name": "Meriva UK generations - blade research boundary (2015-2017)",
+      "years": "2015-2017",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Opel/GM or PSA/Stellantis body-security family; UK RHD applicability must be proven",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2015-2017"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "meriva_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

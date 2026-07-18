@@ -5,34 +5,92 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "206_uk_generations",
-      "name": "206 UK generations",
-      "years": "1998-2009",
+      "id": "206_uk_generations_1998_2000_keyed_or_remote_transponder_key_ne72a",
+      "name": "206 UK generations - keyed_or_remote (1998-2000)",
+      "years": "1998-2000",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "206_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "206 1998 2001 NE72AT29 NE72FH PH / CR 45 Y Y"
+        ]
+      },
+      "blade_profile": "NE72A",
+      "blade_id": "ne72a",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "ne72a",
+        "record_year_range": "1998-2000",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "206 1998 2001 NE72AT29 NE72FH PH / CR 45 Y Y"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "206_uk_generations_2001_2009_keyed_or_remote_transponder_key_ne72a_or_ne73",
+      "name": "206 UK generations - keyed_or_remote (2001-2009)",
+      "years": "2001-2009",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
         {
-          "type": "slot_key",
-          "status": "research_required"
-        },
-        {
-          "type": "proximity",
-          "status": "research_required"
-        },
-        {
-          "type": "KESSY_or_keyless",
-          "status": "research_required"
-        },
-        {
-          "type": "smart_key",
+          "type": "keyed_or_remote",
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "206_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "206 1998 2001 NE72AT29 NE72FH PH / CR 45 Y Y",
+          "206 Cabrio 2001 2002 NE72AT29 NE72FH PH / CR 45 Y Y",
+          "206 2001 2009 NE72AT14 PH / CR2 46",
+          "206 Cabrio 2002 2007 NE72AT14 PH / CR2 46",
+          "206 PLUS 2009 NE72AT14 PH / CR2 46",
+          "206 2001 2009 NE73MH NE73TE NE73FH Y Y PH / CR2 46 Y P-BOX",
+          "206 Cabrio 2002 2007 NE73MH NE73TE NE73FH Y Y PH / CR2 46 Y P-BOX",
+          "206 PLUS 2009 NE73MH NE73TE NE73FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "ne72a",
+        "ne73"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2001-2009",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
     }
   ],
   "sources": {

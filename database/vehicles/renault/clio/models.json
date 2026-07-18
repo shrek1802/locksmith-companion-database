@@ -5,9 +5,349 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "clio_uk_generations",
-      "name": "Clio UK generations",
-      "years": "1991-present",
+      "id": "clio_uk_generations_1995_2000_keyed_or_remote_transponder_key_ne73_or_vac102",
+      "name": "Clio UK generations - keyed_or_remote (1995-2000)",
+      "years": "1995-2000",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "clio_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "CLIO 1995 2001 NE73T5 NE73FH PH 33 Y Y",
+          "CLIO 1995 2001 VAC102T1 VAC102FH PH 33 Y Y"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "ne73",
+        "vac102"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1995-2000",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "clio_uk_generations_2001_2001_keyed_or_remote_transponder_key_ne72_or_ne73_or_vac102",
+      "name": "Clio UK generations - keyed_or_remote (2001-2001)",
+      "years": "2001-2001",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "clio_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "CLIO II 2001 2012 NE72MH NE72ATE NE72FH Y PH / CR2 46 Y P-BOX",
+          "CLIO 1995 2001 NE73T5 NE73FH PH 33 Y Y",
+          "CLIO 1995 2001 VAC102T1 VAC102FH PH 33 Y Y"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "ne72",
+        "ne73",
+        "vac102"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2001-2001",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "clio_uk_generations_2002_2005_keyed_or_remote_transponder_key_ne72",
+      "name": "Clio UK generations - keyed_or_remote (2002-2005)",
+      "years": "2002-2005",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "clio_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "CLIO II 2001 2012 NE72MH NE72ATE NE72FH Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "NE72",
+      "blade_id": "ne72",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "ne72",
+        "record_year_range": "2002-2005",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "CLIO II 2001 2012 NE72MH NE72ATE NE72FH Y PH / CR2 46 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "clio_uk_generations_2006_2012_keyed_or_remote_transponder_key_ne72_or_va6",
+      "name": "Clio UK generations - keyed_or_remote (2006-2012)",
+      "years": "2006-2012",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "clio_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "CLIO II 2001 2012 NE72MH NE72ATE NE72FH Y PH / CR2 46 Y P-BOX",
+          "CLIO III 2006 VA6MH VA6FH Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "ne72",
+        "va6"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2006-2012",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "clio_uk_generations_2013_2014_keyed_or_remote_transponder_key_va6",
+      "name": "Clio UK generations - keyed_or_remote (2013-2014)",
+      "years": "2013-2014",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "clio_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "CLIO III 2006 VA6MH VA6FH Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_profile": "VA6",
+      "blade_id": "va6",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "va6",
+        "record_year_range": "2013-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "CLIO III 2006 VA6MH VA6FH Y PH / CR2 46 Y P-BOX"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "clio_uk_generations_2005_2012_remote_or_flip_key_va2",
+      "name": "Clio UK generations - remote_or_flip (2005-2012)",
+      "years": "2005-2012",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "clio_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Renault Clio X85 2005 2012 VA2 433AM",
+          "Renault Clio 3 X85 2006 2012 VA2 433AM"
+        ]
+      },
+      "blade_profile": "VA2",
+      "blade_id": "va2",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "va2",
+        "record_year_range": "2005-2012",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Renault Clio X85 2005 2012 VA2 433AM",
+              "Renault Clio 3 X85 2006 2012 VA2 433AM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "clio_uk_generations_2019_2024_proximity_emergency_insert_fb107",
+      "name": "Clio UK generations - proximity (2019-2024)",
+      "years": "2019-2024",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "proximity",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "clio_uk_generations",
+        "key_variant_scope": "proximity_emergency_insert",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Renault Clio XJA [GEN 5] 2019 2024 FB107 433FM"
+        ]
+      },
+      "blade_profile": "FB107",
+      "blade_id": "fb107",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "fb107",
+        "record_year_range": "2019-2024",
+        "key_variant_scope": "proximity_emergency_insert",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Renault Clio XJA [GEN 5] 2019 2024 FB107 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "clio_uk_generations_2012_2020_slot_key_va150",
+      "name": "Clio UK generations - slot_key (2012-2020)",
+      "years": "2012-2020",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "slot_key",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "clio_uk_generations",
+        "key_variant_scope": "slot_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Renault Clio X98 (VF1R) 2012 2020 VA150 433FM"
+        ]
+      },
+      "blade_profile": "VA150",
+      "blade_id": "va150",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "va150",
+        "record_year_range": "2012-2020",
+        "key_variant_scope": "slot_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Renault Clio X98 (VF1R) 2012 2020 VA150 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "clio_uk_generations_1991_1994_blade_research",
+      "name": "Clio UK generations - blade research boundary (1991-1994)",
+      "years": "1991-1994",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
       "key_variants": [
@@ -32,7 +372,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1991-1994"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "clio_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "clio_uk_generations_2025_2026_blade_research",
+      "name": "Clio UK generations - blade research boundary (2025-present)",
+      "years": "2025-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2025-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "clio_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {

@@ -5,59 +5,94 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "rcz_uk_generations",
-      "name": "RCZ UK generations",
-      "years": "2010-2015",
+      "id": "rcz_uk_generations_2010_2014_keyed_or_remote_transponder_key_hu83",
+      "name": "RCZ UK generations - keyed_or_remote (2010-2014)",
+      "years": "2010-2014",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
       "key_variants": [
         {
-          "type": "keyed",
-          "status": "research_required"
-        },
-        {
-          "type": "slot_key",
-          "status": "research_required"
-        },
-        {
-          "type": "proximity",
-          "status": "research_required"
-        },
-        {
-          "type": "KESSY_or_keyless",
-          "status": "research_required"
-        },
-        {
-          "type": "smart_key",
-          "status": "research_required"
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
         }
       ],
       "status": "partially_verified",
       "blade_profile": "HU83",
       "blade_verification": {
-        "status": "verified",
-        "confidence": "high",
+        "status": "partially_verified",
+        "confidence": "medium",
         "last_checked": "2026-07-18",
-        "catalogue_application": "Peugeot RCZ (T75), 2010-2015",
+        "canonical_blade_family_id": "hu83",
+        "record_year_range": "2010-2014",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
         "evidence": [
           {
+            "source_id": "silca_car_book_4_2014",
             "publisher": "Silca",
-            "title": "TE Automotive Keys Catalogue",
-            "edition": "2025",
-            "url": "https://www.steenhauer.nl/media/20262/file/files2025/catalogo-chiavitevers4.pdf",
-            "checked_at": "2026-07-18",
-            "confidence": "high"
-          },
-          {
-            "publisher": "Keyline",
-            "title": "POD Keys Vehicle Applications",
-            "edition": "2018",
-            "url": "https://keyline.it/uploads/file_uploads/upload_en_20180817082853.pdf",
-            "checked_at": "2026-07-18",
-            "confidence": "high"
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "RCZ 2010 HU83MH HU83TE HU83FH Y Y PH / CR2 46 Y P-BOX"
+            ]
           }
         ]
-      }
+      },
+      "catalogue_split": {
+        "origin_generation_id": "rcz_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "RCZ 2010 HU83MH HU83TE HU83FH Y Y PH / CR2 46 Y P-BOX"
+        ]
+      },
+      "blade_id": "hu83"
+    },
+    {
+      "id": "rcz_uk_generations_2011_2015_remote_or_flip_key_hu83",
+      "name": "RCZ UK generations - remote_or_flip (2011-2015)",
+      "years": "2011-2015",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "PSA/Stellantis BSI family; platform and BSI generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "HU83",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu83",
+        "record_year_range": "2011-2015",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Peugeot RCZ T75 (VF34J) 2011 2015 HU83 433FM"
+            ]
+          }
+        ]
+      },
+      "catalogue_split": {
+        "origin_generation_id": "rcz_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Peugeot RCZ T75 (VF34J) 2011 2015 HU83 433FM"
+        ]
+      },
+      "blade_id": "hu83"
     }
   ],
   "sources": {

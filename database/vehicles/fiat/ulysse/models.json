@@ -5,9 +5,183 @@
   "drive_side": "RHD",
   "generations": [
     {
-      "id": "ulysse_uk_generations",
-      "name": "Ulysse UK generations",
-      "years": "1995-present",
+      "id": "ulysse_uk_generations_1996_2001_keyed_or_remote_transponder_key_sx9",
+      "name": "Ulysse UK generations - keyed_or_remote (1996-2001)",
+      "years": "1996-2001",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "ulysse_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ULYSSE 1996 2002 SX9T5 PH 33 Y Y S1"
+        ]
+      },
+      "blade_profile": "SX9",
+      "blade_id": "sx9",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "sx9",
+        "record_year_range": "1996-2001",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "ULYSSE 1996 2002 SX9T5 PH 33 Y Y S1"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ulysse_uk_generations_2002_2002_keyed_or_remote_transponder_key_hu83_or_sx9",
+      "name": "Ulysse UK generations - keyed_or_remote (2002-2002)",
+      "years": "2002-2002",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "ulysse_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ULYSSE 2002 2011 HU83T14 PH / CR2 46",
+          "ULYSSE 1996 2002 SX9T5 PH 33 Y Y S1"
+        ]
+      },
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_transition_candidates": [
+        "hu83",
+        "sx9"
+      ],
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "conflicting_catalogue_applications",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2002-2002",
+        "key_variant_scope": "keyed_or_remote_transponder_key"
+      }
+    },
+    {
+      "id": "ulysse_uk_generations_2003_2011_keyed_or_remote_transponder_key_hu83",
+      "name": "Ulysse UK generations - keyed_or_remote (2003-2011)",
+      "years": "2003-2011",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed_or_remote",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "ulysse_uk_generations",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "ULYSSE 2002 2011 HU83T14 PH / CR2 46"
+        ]
+      },
+      "blade_profile": "HU83",
+      "blade_id": "hu83",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu83",
+        "record_year_range": "2003-2011",
+        "key_variant_scope": "keyed_or_remote_transponder_key",
+        "evidence": [
+          {
+            "source_id": "silca_car_book_4_2014",
+            "publisher": "Silca",
+            "title": "The Car Book 4 - Car Keys Guide",
+            "edition": "2014",
+            "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+            "catalogue_rows": [
+              "ULYSSE 2002 2011 HU83T14 PH / CR2 46"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ulysse_uk_generations_2005_2011_remote_or_flip_key_hu83",
+      "name": "Ulysse UK generations - remote_or_flip (2005-2011)",
+      "years": "2005-2011",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "remote_or_flip",
+          "status": "partially_verified"
+        }
+      ],
+      "status": "partially_verified",
+      "catalogue_split": {
+        "origin_generation_id": "ulysse_uk_generations",
+        "key_variant_scope": "remote_or_flip_key",
+        "boundary_basis": "Silca catalogue application year range",
+        "last_checked": "2026-07-18",
+        "source_rows": [
+          "Fiat Ulysse 179 2005 2009 HU83 433AM",
+          "Fiat Ulysse 179 2009 2011 HU83 433FM"
+        ]
+      },
+      "blade_profile": "HU83",
+      "blade_id": "hu83",
+      "blade_verification": {
+        "status": "partially_verified",
+        "confidence": "medium",
+        "last_checked": "2026-07-18",
+        "canonical_blade_family_id": "hu83",
+        "record_year_range": "2005-2011",
+        "key_variant_scope": "remote_or_flip_key",
+        "evidence": [
+          {
+            "source_id": "silca_proximity_slot_remote_2025",
+            "publisher": "Silca",
+            "title": "Proximity, Slot and Remote Car Keys Catalogue",
+            "edition": "02/2025",
+            "url": "https://a.storyblok.com/f/241607/x/72b4b92809/prox-slot-car-key-catalogue-02-2025.pdf",
+            "catalogue_rows": [
+              "Fiat Ulysse 179 2005 2009 HU83 433AM",
+              "Fiat Ulysse 179 2009 2011 HU83 433FM"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "ulysse_uk_generations_1995_1995_blade_research",
+      "name": "Ulysse UK generations - blade research boundary (1995-1995)",
+      "years": "1995-1995",
       "platform": "Generation-specific platform requires confirmation",
       "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
       "key_variants": [
@@ -32,7 +206,65 @@
           "status": "research_required"
         }
       ],
-      "status": "partially_verified"
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "1995-1995"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "ulysse_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
+    },
+    {
+      "id": "ulysse_uk_generations_2012_2026_blade_research",
+      "name": "Ulysse UK generations - blade research boundary (2012-present)",
+      "years": "2012-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Fiat CODE/body-computer or Stellantis family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified",
+      "blade_profile": "research_required",
+      "blade_id": null,
+      "blade_verification": {
+        "status": "research_required",
+        "confidence": "catalogue_year_range_not_covered",
+        "last_checked": "2026-07-18",
+        "record_year_range": "2012-present"
+      },
+      "catalogue_split": {
+        "origin_generation_id": "ulysse_uk_generations",
+        "key_variant_scope": "unresolved",
+        "boundary_basis": "Outside current canonical catalogue coverage",
+        "last_checked": "2026-07-18"
+      }
     }
   ],
   "sources": {
