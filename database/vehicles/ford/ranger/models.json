@@ -1660,5 +1660,22 @@
       "accessed": "2026-07-15"
     }
   },
-  "rebuild_pipeline": "rebuild_all_ford_records_v1"
+  "rebuild_pipeline": "rebuild_all_ford_records_v1",
+  "phase2_architecture_review": {
+    "checked_at": "2026-07-18",
+    "families_reviewed": [
+      "legacy_pats",
+      "bcm_ipc_pats",
+      "rfa_kvm_proximity",
+      "fdrs_restricted",
+      "commercial_variants"
+    ],
+    "status": "partially_verified at named family/tool scope; model applicability remains research_required",
+    "scope_limit": "Preserve per-record security classification; no quarantined route promoted",
+    "sources": [
+      "https://www.motorcraftservice.com/Diagnostic/HelmSupport?categoryId=276&channelId=50&country=USA&language=EN-US",
+      "reports/ford_modern_safety_quarantine.json"
+    ],
+    "confidence": "high for official vendor/OEM claims"
+  }
 }

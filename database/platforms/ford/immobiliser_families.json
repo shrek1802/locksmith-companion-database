@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18",
+  "manufacturer_group": [
+    "Ford"
+  ],
+  "quarantine_policy": "reports/ford_modern_safety_quarantine.json and scripts/audit_ford_security_access.py remain authoritative",
+  "families": {
+    "legacy_pats": {
+      "status": "partially_verified",
+      "variants": [
+        "keyed",
+        "proximity"
+      ],
+      "limits": "Exact transponder, module and security access remain record-specific."
+    },
+    "bcm_ipc_pats": {
+      "status": "partially_verified",
+      "limits": "BCM versus IPC role must follow the stored generation record."
+    },
+    "rfa_kvm_proximity": {
+      "status": "research_required"
+    },
+    "fdrs_restricted": {
+      "status": "verified_source",
+      "architecture": "Ford cloud-based next-generation diagnostic system for some 2018-forward vehicles",
+      "source": "https://www.motorcraftservice.com/Diagnostic/HelmSupport?categoryId=276&channelId=50&country=USA&language=EN-US",
+      "confidence": "high",
+      "limits": "Does not prove a key-programming function or online requirement for every model."
+    },
+    "commercial_variants": {
+      "status": "research_required"
+    }
+  }
+}
