@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "200",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "200_uk_generations",
+      "name": "200 UK generations",
+      "years": "1989-1997",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "LDV immobiliser/body-security family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "LDV",
+      "url": "https://www.myldv.co.uk/",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
