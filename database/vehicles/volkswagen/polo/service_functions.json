@@ -1,9 +1,35 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "items": {
-    "common": ["Read immobiliser information", "Read key status", "Add key", "All keys lost", "Remote learning where separate"],
-    "early": ["Read PIN where supported", "Cluster or immobiliser-box data acquisition"],
-    "mqb": ["Read MQB immobiliser data where supported", "Prepare dealer key", "Adapt keys", "Check current AKL coverage"]
+    "common": {
+      "display_name": "Common immobiliser functions",
+      "status": "conditional",
+      "functions": [
+        "Read immobiliser information",
+        "Read key status",
+        "Add key",
+        "All keys lost",
+        "Remote learning where separate"
+      ]
+    },
+    "early": {
+      "display_name": "Early Polo functions",
+      "status": "verification_required",
+      "functions": [
+        "Read PIN where supported",
+        "Cluster or immobiliser-box data acquisition"
+      ]
+    },
+    "mqb": {
+      "display_name": "MQB Polo functions",
+      "status": "conditional",
+      "functions": [
+        "Read MQB immobiliser data where supported",
+        "Prepare dealer key",
+        "Adapt keys",
+        "Check current all-keys-lost coverage"
+      ]
+    }
   }
 }
