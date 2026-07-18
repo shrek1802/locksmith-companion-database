@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18",
+  "manufacturer_group": [
+    "Mercedes-Benz",
+    "Smart"
+  ],
+  "families": {
+    "das3_eis_ezs": {
+      "status": "partially_verified",
+      "architecture": "DAS3 CAN EIS/EZS family",
+      "tool_support": [
+        {
+          "tool": "Autel MaxiIM with G-BOX3",
+          "operation": "All keys lost password calculation/programming assistance",
+          "methods": [
+            "on_vehicle",
+            "bench"
+          ],
+          "confidence": "high",
+          "source": "https://www.autel.com/u/cms/www/202406/05060914c599.pdf"
+        }
+      ],
+      "limits": "The source does not establish every vehicle/EIS, FBS generation, RHD location or wiring."
+    },
+    "fbs3": {
+      "status": "research_required",
+      "notes": "Do not equate every DAS3 vendor menu with every FBS3 vehicle."
+    },
+    "fbs4": {
+      "status": "research_required",
+      "notes": "No offline capability inferred; authorised restrictions remain model/operation specific."
+    },
+    "keyless_go": {
+      "status": "research_required"
+    },
+    "smart_legacy": {
+      "status": "research_required",
+      "notes": "Smart SAM/immobiliser systems are not inherited from Mercedes passenger-car EIS/EZS."
+    }
+  }
+}

@@ -50,5 +50,21 @@
         "VIN/generation-specific documentation requirement"
       ]
     }
+  },
+  "phase2_architecture_review": {
+    "checked_at": "2026-07-18",
+    "families_reviewed": [
+      "das3_eis_ezs",
+      "fbs3",
+      "fbs4",
+      "keyless_go",
+      "smart_legacy"
+    ],
+    "status": "partially_verified at named family/tool scope; model applicability remains research_required",
+    "scope_limit": "DAS3 tool capability only; no FBS4, model, keyless, online, location or wiring inheritance",
+    "sources": [
+      "https://www.autel.com/u/cms/www/202406/05060914c599.pdf"
+    ],
+    "confidence": "high for official vendor/OEM claims"
   }
 }
