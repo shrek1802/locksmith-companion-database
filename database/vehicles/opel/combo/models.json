@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "Combo",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "combo_uk_generations",
+      "name": "Combo UK generations",
+      "years": "1986-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Opel/GM or PSA/Stellantis body-security family; UK RHD applicability must be proven",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Opel",
+      "url": "https://www.opel.com/",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
