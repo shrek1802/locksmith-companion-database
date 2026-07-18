@@ -21,7 +21,7 @@ Updated: 2026-07-18
 | MQB Passenger | Pass | 20 separate UK/RHD keyed or KESSY records | Research Required pending exact fitted-hardware and current application evidence |
 | MQB Commercial | Pass | 6 separate UK/RHD keyed or KESSY records | Research Required pending exact fitted-hardware and current application evidence |
 | PQ Platform | Pass | 10 separate UK/RHD keyed or KESSY records | Research Required except the existing source-backed Immo 4D family |
-| Legacy | Pending | Pending | Pending |
+| Legacy | Pass | 9 separate UK/RHD keyed or KESSY records | Research Required pending generation splits and RHD module evidence |
 | MEB | Pending | Pending | Pending |
 
 Matrix evidence is deliberately scoped to model, generation and architecture context. It does not verify locksmith procedures, tool support, pinouts or UK RHD component locations.
