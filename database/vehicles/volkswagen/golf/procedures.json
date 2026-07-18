@@ -1,46 +1,335 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-07-18",
   "manufacturer": "Volkswagen",
   "model": "Golf",
   "market": "UK",
   "items": {
     "golf_mk4_1998_2004_keyed": {
-      "add_key": "PROC_VW_IMMO2_3_OBD_ADAPTATION",
-      "all_keys_lost": "PROC_VW_IMMO2_3_SECURITY_DATA_AND_ADAPTATION",
-      "remote_learning": "PROC_VW_REMOTE_MATCHING_VARIANT_DEPENDENT",
+      "add_key": {
+        "method": "OBD adaptation when the immobiliser PIN or cluster security data is available",
+        "programming_method": "Identify Immo2 or Immo3 and the fitted instrument cluster before selecting the procedure",
+        "online_requirement": "Not Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "No operation-specific tool is shown until exact UK Golf Mk4 coverage is verified from a current manufacturer application list."
+        ]
+      },
+      "all_keys_lost": {
+        "method": "Acquire the required immobiliser PIN or cluster data, prepare the correct transponder and adapt all keys",
+        "programming_method": "Cluster and immobiliser-generation dependent",
+        "online_requirement": "Not Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "Do not combine Immo2 and Immo3 procedures or erase keys before the required security data has been secured."
+        ]
+      },
+      "remote_learning": "Remote matching is variant dependent",
       "selection_note": "Identify Immo2 or Immo3 and confirm cluster type before programming."
     },
     "golf_mk5_2004_2009_keyed": {
-      "add_key": "PROC_VW_IMMO4_OBD_OR_SAVED_DATA",
-      "all_keys_lost": "PROC_VW_IMMO4_CLUSTER_DATA_AKL",
-      "remote_learning": "PROC_VW_REMOTE_MATCHING_VARIANT_DEPENDENT",
+      "add_key": {
+        "method": "OBD or saved immobiliser-data route on supported instrument clusters",
+        "programming_method": "Identify the cluster manufacturer and memory type before programming",
+        "online_requirement": "Not Required",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Volkswagen Immo IV key programming is supported, but the exact Golf cluster must be identified first.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD for supported clusters; bench connection may be required for data acquisition"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Coverage depends on the installed cluster and immobiliser data route.",
+              "Confirm the current software menu before starting the job."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read the required Immo IV dashboard data, prepare a dealer key and learn all keys",
+        "programming_method": "OBD or bench dashboard-data route depending on the fitted cluster",
+        "online_requirement": "Not Required for the documented bench-data route",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Supports Volkswagen Immo IV NEC dashboard data reading and AKL when the dashboard is one of the supported types.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "VW4-AKL cable to supported NEC+24C32, NEC+24C64 or 873B-NEC95320 dashboard"
+            },
+            "tool_accessory_ids": [
+              "OBDSTAR VW4-AKL cable"
+            ],
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Only use this route after confirming the exact dashboard processor and EEPROM family.",
+              "Stable regulated power is required for bench reading and key learning."
+            ]
+          }
+        }
+      },
+      "remote_learning": "Remote matching is variant dependent",
       "selection_note": "Identify the fitted cluster manufacturer and supported security-data route."
     },
     "golf_mk6_2009_2013_keyed": {
-      "add_key": "PROC_VW_IMMO4_CHALLENGE_OR_45_ADD_KEY",
-      "all_keys_lost": "PROC_VW_IMMO4_CHALLENGE_OR_45_AKL",
-      "remote_learning": "PROC_VW_REMOTE_MATCHING_VARIANT_DEPENDENT",
+      "add_key": {
+        "method": "Diagnostic or saved immobiliser-data route depending on the fitted dashboard",
+        "programming_method": "Identify the exact Immo IV dashboard family rather than selecting by year alone",
+        "online_requirement": "No blanket online requirement",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Volkswagen Immo IV key programming is supported where the exact dashboard appears in the current device coverage.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD or dashboard-data route depending on cluster"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Confirm Challenge/Immo IV dashboard classification and current software support before programming."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Acquire dashboard immobiliser data, make the dealer key and learn all keys",
+        "programming_method": "Supported Immo IV dashboard bench-data route",
+        "online_requirement": "Not Required for the documented bench-data route",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Supports AKL on supported Volkswagen Immo IV NEC dashboards using the dedicated cable route.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "VW4-AKL cable to a supported NEC+24C32, NEC+24C64 or 873B-NEC95320 dashboard"
+            },
+            "tool_accessory_ids": [
+              "OBDSTAR VW4-AKL cable"
+            ],
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Do not assume every Golf Mk6 dashboard is covered by the same cable or data route.",
+              "Back up and verify the dashboard data before key learning."
+            ]
+          }
+        }
+      },
+      "remote_learning": "Remote matching is variant dependent",
       "selection_note": "Do not choose between Challenge and later trade classifications by year alone."
     },
     "golf_mk7_2013_2017": {
-      "add_key": "PROC_VW_MQB48_ADD_KEY",
-      "all_keys_lost": "PROC_VW_MQB48_DASHBOARD_DATA_AKL",
-      "kessy": "PROC_VW_MQB48_KESSY_IDENTIFICATION",
+      "add_key": {
+        "method": "OBD or saved MQB immobiliser-data route after identifying the exact dashboard and keyed/KESSY configuration",
+        "programming_method": "MQB48 dashboard-specific Add Key procedure",
+        "online_requirement": "Tool and dashboard dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "Autel documents Add Key support for specified Johnson Controls MQB Golf dashboards from 2013–2017.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "Standard OBD after confirming a supported dashboard part number"
+            },
+            "internet_required": true,
+            "warnings": [
+              "Documented support is dashboard-part-number specific, including 5G0920861, 5G0920861A and 5G1920741.",
+              "Check the current Autel vehicle menu and server availability before programming."
+            ]
+          },
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "Supports MQB key programming where the dashboard is a supported MQB48 5A/5B type.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "OBD or dashboard-data route depending on the fitted MQB dashboard"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Identify MQB5A, MQB5B or MQB5C before proceeding; MQB5C is not covered by the documented G3 solution."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Read the supported MQB dashboard data, calculate the required security data, prepare the dealer key and learn all keys",
+        "programming_method": "MQB48 5A/5B dashboard-data AKL route",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "OBDSTAR documents MQB48 5A/5B blade and proximity AKL support with dashboard data acquisition.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "RH850/V850 dashboard adapter route where required"
+            },
+            "tool_accessory_ids": [
+              "OBDSTAR MP001",
+              "OBDSTAR RH850/V850 adapter kit"
+            ],
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Confirm the dashboard processor and MQB generation before removal or reading.",
+              "The documented solution does not establish MQB5C AKL support."
+            ]
+          }
+        }
+      },
+      "kessy": "Identify keyed or KESSY specification before selecting the operation",
       "selection_note": "Identify dashboard family and keyed or KESSY specification first."
     },
     "golf_mk75_2017_2020": {
-      "add_key": "PROC_VW_LATE_MQB48_ADD_KEY",
-      "all_keys_lost": "PROC_VW_LATE_MQB48_SUPPORTED_DATA_AKL",
-      "kessy": "PROC_VW_LATE_MQB48_KESSY_IDENTIFICATION",
+      "add_key": {
+        "method": "Supported diagnostic, working-key or saved-data route after exact dashboard identification",
+        "programming_method": "Late MQB dashboard-specific Add Key procedure",
+        "online_requirement": "Tool and operation dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "Add Key may be available through the Autel APB300 working-key route on a supported MQB application.",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Read immobiliser data from the opened working key using APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Supported Autel VW-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true,
+            "warnings": [
+              "Confirm that the exact Golf key and platform are listed in the current APB300 coverage before accepting the job.",
+              "This working-key Add Key route does not prove All Keys Lost support."
+            ]
+          },
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "obd",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "MQB programming is available only when the fitted late dashboard is a supported MQB48 5A/5B type.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "OBD or supported dashboard-data route"
+            },
+            "internet_required": false,
+            "warnings": [
+              "Later Golf Mk7.5 dashboards vary; check whether the unit is MQB5A, MQB5B or unsupported MQB5C."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "Confirm current dashboard support before accepting the job; supported MQB48 dashboards require security-data acquisition and dealer-key preparation",
+        "programming_method": "MQB48 5A/5B dashboard-data AKL route only where explicitly supported",
+        "online_requirement": "Tool and route dependent",
+        "overall_status": "conditional",
+        "tools": {
+          "obdstar_g3": {
+            "status": "conditional",
+            "method": "bench",
+            "display_name": "OBDSTAR KeyMaster G3",
+            "summary": "AKL is available for supported MQB48 5A/5B dashboards, not as a blanket Golf Mk7.5 claim.",
+            "vehicle_connection": {
+              "required": true,
+              "display_text": "RH850/V850 dashboard adapter route where the fitted dashboard is supported"
+            },
+            "tool_accessory_ids": [
+              "OBDSTAR MP001",
+              "OBDSTAR RH850/V850 adapter kit"
+            ],
+            "module_removal_required": true,
+            "internet_required": false,
+            "warnings": [
+              "Do not proceed until the dashboard processor and MQB generation have been confirmed.",
+              "MQB5C coverage is not established by the documented OBDSTAR solution."
+            ]
+          }
+        }
+      },
+      "kessy": "Identify keyed or KESSY specification before selecting the operation",
       "selection_note": "Confirm current support for the exact dashboard before accepting AKL work."
     },
     "golf_mk8_2020_present": {
-      "add_key": "PROC_VW_MQB49_5C_CURRENT_SUPPORT_CHECK",
-      "all_keys_lost": "PROC_VW_MQB49_5C_AKL_CURRENT_SUPPORT_CHECK",
-      "kessy": "PROC_VW_MQB49_5C_KEYED_OR_KESSY_IDENTIFICATION",
+      "add_key": {
+        "method": "Current platform-specific Add Key route only after VIN, key type and tool coverage confirmation",
+        "programming_method": "Later protected MQB / MQB5C support check",
+        "online_requirement": "May Be Required",
+        "overall_status": "conditional",
+        "tools": {
+          "autel_im508s_xp400_pro": {
+            "status": "conditional",
+            "method": "transponder_clone",
+            "display_name": "Autel IM508S + XP400 Pro",
+            "summary": "Autel APB300 offers a working-key Add Key route for supported Volkswagen Group MQB applications.",
+            "vehicle_connection": {
+              "required": false,
+              "display_text": "Open and read the original working key with APB300"
+            },
+            "tool_accessory_ids": [
+              "Autel APB300",
+              "Supported Autel VW-style IKEY or key PCB"
+            ],
+            "working_key_required": true,
+            "vehicle_required": false,
+            "internet_required": true,
+            "warnings": [
+              "The official APB300 description is platform-wide; exact Golf Mk8 key and VIN coverage must be confirmed in the live Autel menu.",
+              "Do not treat this as All Keys Lost support."
+            ]
+          }
+        }
+      },
+      "all_keys_lost": {
+        "method": "No universal aftermarket AKL coverage claim",
+        "programming_method": "Confirm exact MQB5C vehicle and current authorised tool coverage before booking",
+        "online_requirement": "Likely Required",
+        "overall_status": "verification_required",
+        "warnings": [
+          "OBDSTAR states MQB5C immobiliser functions are under development, so KeyMaster G3 is not listed here for Golf Mk8 AKL.",
+          "No tool should be displayed as supported until exact current coverage is verified."
+        ]
+      },
+      "kessy": "Identify keyed or KESSY specification before selecting the operation",
       "selection_note": "No universal aftermarket coverage claim; confirm VIN, key type and current tool support."
     }
   },
-  "status": "procedure_links_created_research_pending"
+  "status": "operation_specific_tool_support_added_with_conditions",
+  "research_notes": {
+    "sources_checked": [
+      "Autel official VW software update: Golf 2013–2017 Johnson Controls MQB Add Key support",
+      "Autel official APB300 product page: working-key Add Key for supported VAG MQB/MLB applications",
+      "OBDSTAR official KeyMaster G3 product and accessory pages: Immo IV and MQB48 5A/5B AKL routes",
+      "OBDSTAR official MQB architecture note: MQB5C functions under development"
+    ],
+    "rule": "Tool entries are conditional unless the exact dashboard, key type and current software coverage are confirmed."
+  }
 }
