@@ -1,1 +1,59 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"transit","name":"Transit"},"category":"vehicle_service_functions","items":{},"verification":{"status":"not_verified","notes":"Only key-programming-related service functions will be included."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "transit",
+    "name": "Transit"
+  },
+  "category": "vehicle_service_functions",
+  "items": {
+    "ford_transit_add_key": {
+      "id": "ford_transit_add_key",
+      "display_name": "Add Key",
+      "operation": "add_key",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_1995_1999_keyed_uk",
+        "ford_transit_2000_2006_keyed_uk",
+        "ford_transit_2006_2014_keyed_uk",
+        "ford_transit_2007_2013_keyed_uk",
+        "ford_transit_2012_2016_keyed_uk",
+        "ford_transit_2013_2016_keyed_uk",
+        "ford_transit_2016_2023_keyed_uk",
+        "ford_transit_2016_present_keyed_uk",
+        "ford_transit_2016_present_passive_uk",
+        "ford_transit_2023_present_passive_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    },
+    "ford_transit_all_keys_lost": {
+      "id": "ford_transit_all_keys_lost",
+      "display_name": "All Keys Lost",
+      "operation": "all_keys_lost",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_transit_1995_1999_keyed_uk",
+        "ford_transit_2000_2006_keyed_uk",
+        "ford_transit_2006_2014_keyed_uk",
+        "ford_transit_2007_2013_keyed_uk",
+        "ford_transit_2012_2016_keyed_uk",
+        "ford_transit_2013_2016_keyed_uk",
+        "ford_transit_2016_2023_keyed_uk",
+        "ford_transit_2016_present_keyed_uk",
+        "ford_transit_2016_present_passive_uk",
+        "ford_transit_2023_present_passive_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Functions listed here are supported by existing generation-specific model records. Consult models.json for exact variant, tool and online requirements."
+  }
+}

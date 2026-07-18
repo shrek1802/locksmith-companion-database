@@ -1,1 +1,73 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"tourneo_connect","name":"Tourneo Connect"},"category":"vehicle_service_functions","items":{},"verification":{"status":"not_verified","notes":"Only key-programming-related service functions will be included."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "tourneo_connect",
+    "name": "Tourneo Connect"
+  },
+  "category": "vehicle_service_functions",
+  "items": {
+    "ford_tourneo_connect_add_key": {
+      "id": "ford_tourneo_connect_add_key",
+      "display_name": "Add Key",
+      "operation": "add_key",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_connect_2002_2008_keyed_uk",
+        "ford_tourneo_connect_2009_2012_keyed_uk",
+        "ford_tourneo_connect_2013_2015_keyed_uk",
+        "ford_tourneo_connect_2016_2021_keyed_uk",
+        "ford_tourneo_connect_2016_2021_passive_uk",
+        "ford_tourneo_connect_2022_present_mqb_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    },
+    "ford_tourneo_connect_all_keys_lost": {
+      "id": "ford_tourneo_connect_all_keys_lost",
+      "display_name": "All Keys Lost",
+      "operation": "all_keys_lost",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_connect_2002_2008_keyed_uk",
+        "ford_tourneo_connect_2009_2012_keyed_uk",
+        "ford_tourneo_connect_2013_2015_keyed_uk",
+        "ford_tourneo_connect_2016_2021_keyed_uk",
+        "ford_tourneo_connect_2016_2021_passive_uk",
+        "ford_tourneo_connect_2022_present_mqb_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    },
+    "ford_tourneo_connect_dealer_key_generation": {
+      "id": "ford_tourneo_connect_dealer_key_generation",
+      "display_name": "Dealer Key Generation",
+      "operation": "dealer_key_generation",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_connect_2022_present_mqb_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    },
+    "ford_tourneo_connect_read_original_key": {
+      "id": "ford_tourneo_connect_read_original_key",
+      "display_name": "Read Original Key",
+      "operation": "read_original_key",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_tourneo_connect_2022_present_mqb_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Functions listed here are supported by existing generation-specific model records. Consult models.json for exact variant, tool and online requirements."
+  }
+}

@@ -1,9 +1,67 @@
 {
   "schema_version": "2.1",
   "updated_at": "2026-07-14",
-  "manufacturer": {"id":"ford","name":"Ford"},
-  "model": {"id":"focus","name":"Focus"},
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "focus",
+    "name": "Focus"
+  },
   "category": "vehicle_service_functions",
-  "items": {},
-  "verification": {"status":"not_verified","notes":"Only key-programming-related service functions will be included."}
+  "items": {
+    "ford_focus_add_key": {
+      "id": "ford_focus_add_key",
+      "display_name": "Add Key",
+      "operation": "add_key",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_focus_1998_2004_keyed_uk",
+        "ford_focus_2004_2010_keyed_uk",
+        "ford_focus_2008_2010_passive_uk",
+        "ford_focus_2011_2014_keyed_uk",
+        "ford_focus_2011_2014_passive_uk",
+        "ford_focus_2015_2018_keyed_uk",
+        "ford_focus_2015_2018_passive_uk",
+        "ford_focus_2018_2025_passive_uk",
+        "ford_focus_mk1_1998_2005_keyed_uk",
+        "ford_focus_mk2_2005_2011_keyed_uk",
+        "ford_focus_mk3_2011_2015_keyed_uk",
+        "ford_focus_mk3_5_mk4_2015_2020_passive_uk",
+        "ford_focus_mk3_keyless_2011_2015_passive_uk",
+        "ford_focus_mk4_keyless_2020_present_passive_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    },
+    "ford_focus_all_keys_lost": {
+      "id": "ford_focus_all_keys_lost",
+      "display_name": "All Keys Lost",
+      "operation": "all_keys_lost",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_focus_1998_2004_keyed_uk",
+        "ford_focus_2004_2010_keyed_uk",
+        "ford_focus_2008_2010_passive_uk",
+        "ford_focus_2011_2014_keyed_uk",
+        "ford_focus_2011_2014_passive_uk",
+        "ford_focus_2015_2018_keyed_uk",
+        "ford_focus_2015_2018_passive_uk",
+        "ford_focus_2018_2025_passive_uk",
+        "ford_focus_mk1_1998_2005_keyed_uk",
+        "ford_focus_mk2_2005_2011_keyed_uk",
+        "ford_focus_mk3_2011_2015_keyed_uk",
+        "ford_focus_mk3_5_mk4_2015_2020_passive_uk",
+        "ford_focus_mk3_keyless_2011_2015_passive_uk",
+        "ford_focus_mk4_keyless_2020_present_passive_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Functions listed here are supported by existing generation-specific model records. Consult models.json for exact variant, tool and online requirements."
+  }
 }

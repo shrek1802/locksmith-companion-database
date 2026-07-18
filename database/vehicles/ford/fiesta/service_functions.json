@@ -24,6 +24,44 @@
         }
       ],
       "notes": "This is an owner emergency-start function, not a key-programming procedure."
+    },
+    "ford_fiesta_add_key": {
+      "id": "ford_fiesta_add_key",
+      "display_name": "Add Key",
+      "operation": "add_key",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_1995_2001_keyed_uk",
+        "ford_fiesta_2002_2008_keyed_uk",
+        "ford_fiesta_2008_2012_keyed_uk",
+        "ford_fiesta_2008_2012_passive_uk",
+        "ford_fiesta_2013_2017_keyed_uk",
+        "ford_fiesta_2013_2017_passive_uk",
+        "ford_fiesta_2017_2023_keyed_uk",
+        "ford_fiesta_2017_2023_passive_uk",
+        "ford_fiesta_mk8_keyless_2017_2023_passive_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    },
+    "ford_fiesta_all_keys_lost": {
+      "id": "ford_fiesta_all_keys_lost",
+      "display_name": "All Keys Lost",
+      "operation": "all_keys_lost",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_fiesta_1995_2001_keyed_uk",
+        "ford_fiesta_2002_2008_keyed_uk",
+        "ford_fiesta_2008_2012_keyed_uk",
+        "ford_fiesta_2008_2012_passive_uk",
+        "ford_fiesta_2013_2017_keyed_uk",
+        "ford_fiesta_2013_2017_passive_uk",
+        "ford_fiesta_2017_2023_keyed_uk",
+        "ford_fiesta_2017_2023_passive_uk",
+        "ford_fiesta_mk8_keyless_2017_2023_passive_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
     }
   },
   "sources": {
@@ -52,5 +90,9 @@
         "owner manuals are published for later model years including 2022"
       ]
     }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Functions listed here are supported by existing generation-specific model records. Consult models.json for exact variant, tool and online requirements."
   }
 }

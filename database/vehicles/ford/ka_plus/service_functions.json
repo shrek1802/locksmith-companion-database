@@ -1,1 +1,43 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"ka_plus","name":"Ka+"},"category":"vehicle_service_functions","items":{},"verification":{"status":"not_verified","notes":"Only key-programming-related service functions will be included."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "ka_plus",
+    "name": "Ka+"
+  },
+  "category": "vehicle_service_functions",
+  "items": {
+    "ford_ka_plus_add_key": {
+      "id": "ford_ka_plus_add_key",
+      "display_name": "Add Key",
+      "operation": "add_key",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ka_plus_2016_2020_keyed_uk",
+        "ford_ka_plus_2016_2021_keyed_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    },
+    "ford_ka_plus_all_keys_lost": {
+      "id": "ford_ka_plus_all_keys_lost",
+      "display_name": "All Keys Lost",
+      "operation": "all_keys_lost",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_ka_plus_2016_2020_keyed_uk",
+        "ford_ka_plus_2016_2021_keyed_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Functions listed here are supported by existing generation-specific model records. Consult models.json for exact variant, tool and online requirements."
+  }
+}

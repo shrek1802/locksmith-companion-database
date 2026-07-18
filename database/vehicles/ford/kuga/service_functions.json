@@ -1,1 +1,55 @@
-{"schema_version":"2.1","updated_at":"2026-07-14","manufacturer":{"id":"ford","name":"Ford"},"model":{"id":"kuga","name":"Kuga"},"category":"vehicle_service_functions","items":{},"verification":{"status":"not_verified","notes":"Only key-programming-related service functions will be included."}}
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-14",
+  "manufacturer": {
+    "id": "ford",
+    "name": "Ford"
+  },
+  "model": {
+    "id": "kuga",
+    "name": "Kuga"
+  },
+  "category": "vehicle_service_functions",
+  "items": {
+    "ford_kuga_add_key": {
+      "id": "ford_kuga_add_key",
+      "display_name": "Add Key",
+      "operation": "add_key",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_kuga_2008_2012_keyed_uk",
+        "ford_kuga_2008_2012_passive_uk",
+        "ford_kuga_2013_2015_keyed_uk",
+        "ford_kuga_2013_2015_passive_uk",
+        "ford_kuga_2013_2020_passive_uk",
+        "ford_kuga_2016_2019_keyed_uk",
+        "ford_kuga_2016_2019_passive_uk",
+        "ford_kuga_2020_present_passive_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    },
+    "ford_kuga_all_keys_lost": {
+      "id": "ford_kuga_all_keys_lost",
+      "display_name": "All Keys Lost",
+      "operation": "all_keys_lost",
+      "availability": "Generation and variant dependent; use the matching record in models.json",
+      "status": "partially_verified",
+      "source_record_ids": [
+        "ford_kuga_2008_2012_keyed_uk",
+        "ford_kuga_2008_2012_passive_uk",
+        "ford_kuga_2013_2015_keyed_uk",
+        "ford_kuga_2013_2015_passive_uk",
+        "ford_kuga_2013_2020_passive_uk",
+        "ford_kuga_2016_2019_keyed_uk",
+        "ford_kuga_2016_2019_passive_uk",
+        "ford_kuga_2020_present_passive_uk"
+      ],
+      "notes": "Function is indexed from existing generation-specific operations; exact tool and security-access requirements remain record-specific."
+    }
+  },
+  "verification": {
+    "status": "partially_verified",
+    "notes": "Functions listed here are supported by existing generation-specific model records. Consult models.json for exact variant, tool and online requirements."
+  }
+}
