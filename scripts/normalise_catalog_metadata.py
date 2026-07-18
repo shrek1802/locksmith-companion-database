@@ -30,6 +30,7 @@ def main() -> int:
     changed_files = 0
     labels_added = 0
     schemas_added = 0
+    item_ids_normalised = 0
     paths = sorted(
         path for root in SCANNED_ROOTS for path in root.rglob("*.json") if path not in EXCLUDED_PATHS
     )
@@ -47,6 +48,18 @@ def main() -> int:
             changed = True
         items = data.get("items")
         if isinstance(items, dict):
+            normalised_items: dict[str, object] = {}
+            for item_id, item in items.items():
+                normalised_id = str(item_id).replace("/", ".").casefold()
+                if normalised_id != item_id and isinstance(item, dict):
+                    item.setdefault("legacy_item_id", item_id)
+                    item_ids_normalised += 1
+                    changed = True
+                if normalised_id in normalised_items:
+                    raise ValueError(f"normalised item ID collision in {path}: {normalised_id}")
+                normalised_items[normalised_id] = item
+            if normalised_items.keys() != items.keys():
+                data["items"] = items = normalised_items
             for item_id, item in items.items():
                 if not isinstance(item, dict):
                     continue
@@ -61,6 +74,7 @@ def main() -> int:
     print(f"files updated: {changed_files}")
     print(f"display names added: {labels_added}")
     print(f"schema versions added: {schemas_added}")
+    print(f"item IDs normalised: {item_ids_normalised}")
     return 0
 
 
