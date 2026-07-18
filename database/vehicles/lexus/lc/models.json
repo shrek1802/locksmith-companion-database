@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "LC",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "lc_uk_generations",
+      "name": "LC UK generations",
+      "years": "2017-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Toyota/Lexus immobiliser ECU and smart-entry family; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Lexus",
+      "url": "https://www.lexus.co.uk/new-cars",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
