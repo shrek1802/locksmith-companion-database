@@ -50,6 +50,21 @@ SOURCES = {
         "url": "https://www.hickleys.com/diagnostics/keys_list.php?cat=105", "authority": "secondary_trade",
         "checked_at": "2026-07-18", "discovered_via": "Google search results",
     },
+    "keystation_megamos_id13_2026": {
+        "publisher": "Keystation", "title": "ID13 Megamos Diagnostic Transponder Chip",
+        "url": "https://keystation.co.uk/id-13-megamos-diagnostic-transponder-chip",
+        "authority": "secondary_trade", "checked_at": "2026-07-18", "discovered_via": "Google search results after AI Overview did not finish rendering",
+    },
+    "euro_car_key_shop_megamos_id13_2026": {
+        "publisher": "Euro Car Key Shop", "title": "Transponder Megamos ID13",
+        "url": "https://www.eurocarkeyshop.com/trp116-transponder-megamos-id13",
+        "authority": "secondary_trade", "checked_at": "2026-07-18", "discovered_via": "Google search results",
+    },
+    "transpondery_volkswagen_catalogue_2026": {
+        "publisher": "Transpondery", "title": "Volkswagen Transponder Catalog",
+        "url": "https://www.transpondery.com/transponder_catalog/volkswagen_transponder_catalog.html",
+        "authority": "secondary_specialist", "checked_at": "2026-07-18", "discovered_via": "Google search results",
+    },
 }
 
 # Exact Hickleys applications whose model folder exists in the UK repository.
@@ -73,6 +88,23 @@ TEXAS_APPLICATIONS = {
         ("ford", "transit", 2000, 2006), ("ford", "transit_connect", 2002, 2008),
         ("jaguar", "s_type", 1999, 2009), ("jaguar", "x_type", 1999, 2009),
         ("jaguar", "xj", 2002, 2010), ("ldv", "convoy", 2000, 2008),
+    ],
+}
+
+MEGAMOS_APPLICATIONS = {
+    "megamos_fixed_id13": [
+        ("audi", "a4", 1996, 1997), ("audi", "a8", 1996, 1997),
+        ("citroen", "relay", 1997, 2001), ("fiat", "bravo", 1995, 1997),
+        ("fiat", "cinquecento", 1995, 1998), ("fiat", "ducato", 1995, 2001),
+        ("fiat", "punto", 1995, 1999), ("fiat", "seicento", 1998, 1999),
+        ("honda", "civic", 1995, 1999), ("honda", "legend", 1997, 1999),
+        ("honda", "prelude", 1997, 1999), ("jaguar", "xj", 1996, 2000),
+        ("porsche", "boxster", 1996, 1998),
+    ],
+    "megamos_crypto_id48": [
+        ("volkswagen", "beetle", 1998, 2003), ("volkswagen", "bora", 1998, 2005),
+        ("volkswagen", "amarok", 2010, 2026), ("volkswagen", "caddy", 2009, 2015),
+        ("volkswagen", "crafter", 2006, 2016), ("volkswagen", "eos", 2006, 2014),
     ],
 }
 
@@ -151,6 +183,32 @@ def main() -> None:
         "basis": "The ID63 family is independently corroborated, but Keystation explicitly identifies its listed product as 80-bit while older Silca rows do not state bit length. No application was copied across that distinction.",
         "source_ids": ["silca_car_book_4_2014", "keystation_texas_id63_2026", "hickleys_cloning_transponders_2026"],
     }
+    for family_id, applications in MEGAMOS_APPLICATIONS.items():
+        item = data["items"][family_id]
+        source_id = "keystation_megamos_id13_2026" if family_id == "megamos_fixed_id13" else "transpondery_volkswagen_catalogue_2026"
+        existing = {(x["model_file"], x["year_from"], x.get("year_to"), x["source_id"]) for x in item["applications"]}
+        for make, model, start, end in applications:
+            relative = model_path(make, model)
+            if not (ROOT / relative).exists():
+                continue
+            row = {
+                "manufacturer": make, "model": model.replace("_", " "), "model_file": relative,
+                "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+                "year_from": start, "year_to": end, "key_variant_scope": "keyed_or_remote_transponder_key",
+                "source_id": source_id, "source_page": None,
+                "catalogue_row": f"{make.title()} {model.replace('_', ' ').title()} {start}-{'present' if end == 2026 else end}: {'Megamos ID13' if family_id == 'megamos_fixed_id13' else 'Megamos Crypto ID48'}",
+            }
+            key = (relative, start, end, source_id)
+            if key not in existing:
+                item["applications"].append(row); existing.add(key)
+        item["applications"].sort(key=lambda x: (x["manufacturer"], x["model"], x["year_from"], x.get("year_to") or 9999, x["source_id"]))
+        corroborator = "euro_car_key_shop_megamos_id13_2026" if family_id == "megamos_fixed_id13" else "transpondery_volkswagen_catalogue_2026"
+        item["evidence_source_ids"] = sorted(set(item["evidence_source_ids"]) | {source_id, corroborator})
+        item["family_verification"] = {
+            "status": "verified", "confidence": "high", "last_checked": "2026-07-18",
+            "basis": "Independent specialist/trade catalogues corroborate the family; vehicle status is upgraded only for exact overlapping application ranges.",
+            "source_ids": ["silca_car_book_4_2014", source_id, corroborator],
+        }
     CATALOGUE.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({"id46_trade_applications_added": added, "family_statuses_upgraded": 4}))
 

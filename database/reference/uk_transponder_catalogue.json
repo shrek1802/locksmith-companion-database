@@ -87,6 +87,30 @@
       "authority": "secondary_trade",
       "checked_at": "2026-07-18",
       "discovered_via": "Google search results"
+    },
+    "keystation_megamos_id13_2026": {
+      "publisher": "Keystation",
+      "title": "ID13 Megamos Diagnostic Transponder Chip",
+      "url": "https://keystation.co.uk/id-13-megamos-diagnostic-transponder-chip",
+      "authority": "secondary_trade",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search results after AI Overview did not finish rendering"
+    },
+    "euro_car_key_shop_megamos_id13_2026": {
+      "publisher": "Euro Car Key Shop",
+      "title": "Transponder Megamos ID13",
+      "url": "https://www.eurocarkeyshop.com/trp116-transponder-megamos-id13",
+      "authority": "secondary_trade",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search results"
+    },
+    "transpondery_volkswagen_catalogue_2026": {
+      "publisher": "Transpondery",
+      "title": "Volkswagen Transponder Catalog",
+      "url": "https://www.transpondery.com/transponder_catalog/volkswagen_transponder_catalog.html",
+      "authority": "secondary_specialist",
+      "checked_at": "2026-07-18",
+      "discovered_via": "Google search results"
     }
   },
   "items": {
@@ -560,6 +584,30 @@
         },
         {
           "manufacturer": "volkswagen",
+          "model": "amarok",
+          "model_file": "database/vehicles/volkswagen/amarok/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 2010,
+          "year_to": 2026,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "transpondery_volkswagen_catalogue_2026",
+          "source_page": null,
+          "catalogue_row": "Volkswagen Amarok 2010-present: Megamos Crypto ID48"
+        },
+        {
+          "manufacturer": "volkswagen",
+          "model": "beetle",
+          "model_file": "database/vehicles/volkswagen/beetle/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1998,
+          "year_to": 2003,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "transpondery_volkswagen_catalogue_2026",
+          "source_page": null,
+          "catalogue_row": "Volkswagen Beetle 1998-2003: Megamos Crypto ID48"
+        },
+        {
+          "manufacturer": "volkswagen",
           "model": "beetle",
           "model_file": "database/vehicles/volkswagen/beetle/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
@@ -569,6 +617,42 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 383,
           "catalogue_row": "BEETLE 1998 2004 HU66T6 HU66FH MEG / CR 48"
+        },
+        {
+          "manufacturer": "volkswagen",
+          "model": "caddy",
+          "model_file": "database/vehicles/volkswagen/caddy/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 2009,
+          "year_to": 2015,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "transpondery_volkswagen_catalogue_2026",
+          "source_page": null,
+          "catalogue_row": "Volkswagen Caddy 2009-2015: Megamos Crypto ID48"
+        },
+        {
+          "manufacturer": "volkswagen",
+          "model": "crafter",
+          "model_file": "database/vehicles/volkswagen/crafter/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 2006,
+          "year_to": 2016,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "transpondery_volkswagen_catalogue_2026",
+          "source_page": null,
+          "catalogue_row": "Volkswagen Crafter 2006-2016: Megamos Crypto ID48"
+        },
+        {
+          "manufacturer": "volkswagen",
+          "model": "eos",
+          "model_file": "database/vehicles/volkswagen/eos/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 2006,
+          "year_to": 2014,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "transpondery_volkswagen_catalogue_2026",
+          "source_page": null,
+          "catalogue_row": "Volkswagen Eos 2006-2014: Megamos Crypto ID48"
         },
         {
           "manufacturer": "volkswagen",
@@ -669,8 +753,20 @@
       ],
       "evidence_source_ids": [
         "silca_car_book_4_2014",
-        "silca_proximity_slot_remote_2025"
-      ]
+        "silca_proximity_slot_remote_2025",
+        "transpondery_volkswagen_catalogue_2026"
+      ],
+      "family_verification": {
+        "status": "verified",
+        "confidence": "high",
+        "last_checked": "2026-07-18",
+        "basis": "Independent specialist/trade catalogues corroborate the family; vehicle status is upgraded only for exact overlapping application ranges.",
+        "source_ids": [
+          "silca_car_book_4_2014",
+          "transpondery_volkswagen_catalogue_2026",
+          "transpondery_volkswagen_catalogue_2026"
+        ]
+      }
     },
     "megamos_crypto_ida1": {
       "id": "megamos_crypto_ida1",
@@ -982,6 +1078,18 @@
           "manufacturer": "audi",
           "model": "a4",
           "model_file": "database/vehicles/audi/a4/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1996,
+          "year_to": 1997,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Audi A4 1996-1997: Megamos ID13"
+        },
+        {
+          "manufacturer": "audi",
+          "model": "a4",
+          "model_file": "database/vehicles/audi/a4/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 1996,
           "year_to": 1997,
@@ -1030,6 +1138,18 @@
           "manufacturer": "audi",
           "model": "a8",
           "model_file": "database/vehicles/audi/a8/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1996,
+          "year_to": 1997,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Audi A8 1996-1997: Megamos ID13"
+        },
+        {
+          "manufacturer": "audi",
+          "model": "a8",
+          "model_file": "database/vehicles/audi/a8/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 1996,
           "year_to": 1997,
@@ -1051,6 +1171,18 @@
           "catalogue_row": "RELAY 1996 2001 GT10BT5 GT10BTE GT10FH MEG 13 Y Y Meg S1"
         },
         {
+          "manufacturer": "citroen",
+          "model": "relay",
+          "model_file": "database/vehicles/citroen/relay/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1997,
+          "year_to": 2001,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Citroen Relay 1997-2001: Megamos ID13"
+        },
+        {
           "manufacturer": "fiat",
           "model": "bravo",
           "model_file": "database/vehicles/fiat/bravo/models.json",
@@ -1061,6 +1193,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 87,
           "catalogue_row": "BRAVO 1995 1996 GT15RBT5 GT15RFH MEG 13 Y Y Meg S1"
+        },
+        {
+          "manufacturer": "fiat",
+          "model": "bravo",
+          "model_file": "database/vehicles/fiat/bravo/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1995,
+          "year_to": 1997,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Fiat Bravo 1995-1997: Megamos ID13"
         },
         {
           "manufacturer": "fiat",
@@ -1078,6 +1222,18 @@
           "manufacturer": "fiat",
           "model": "cinquecento",
           "model_file": "database/vehicles/fiat/cinquecento/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1995,
+          "year_to": 1998,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Fiat Cinquecento 1995-1998: Megamos ID13"
+        },
+        {
+          "manufacturer": "fiat",
+          "model": "cinquecento",
+          "model_file": "database/vehicles/fiat/cinquecento/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 1997,
           "year_to": 1998,
@@ -1085,6 +1241,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 89,
           "catalogue_row": "CINQUECENTO 1997 1998 GT15RBT5 GT15RFH MEG 13 Y Y Meg S1"
+        },
+        {
+          "manufacturer": "fiat",
+          "model": "ducato",
+          "model_file": "database/vehicles/fiat/ducato/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1995,
+          "year_to": 2001,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Fiat Ducato 1995-2001: Megamos ID13"
         },
         {
           "manufacturer": "fiat",
@@ -1114,6 +1282,18 @@
           "manufacturer": "fiat",
           "model": "punto",
           "model_file": "database/vehicles/fiat/punto/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1995,
+          "year_to": 1999,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Fiat Punto 1995-1999: Megamos ID13"
+        },
+        {
+          "manufacturer": "fiat",
+          "model": "punto",
+          "model_file": "database/vehicles/fiat/punto/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 1995,
           "year_to": 1999,
@@ -1133,6 +1313,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 95,
           "catalogue_row": "SEICENTO 1997 2000 GT15RBT5 GT15RFH MEG 13 Y Y Meg S1"
+        },
+        {
+          "manufacturer": "fiat",
+          "model": "seicento",
+          "model_file": "database/vehicles/fiat/seicento/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1998,
+          "year_to": 1999,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Fiat Seicento 1998-1999: Megamos ID13"
         },
         {
           "manufacturer": "honda",
@@ -1169,6 +1361,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 143,
           "catalogue_row": "ACCORD 1998 2002 HON58RT5 HON58RFH MEG 13 Y Y"
+        },
+        {
+          "manufacturer": "honda",
+          "model": "civic",
+          "model_file": "database/vehicles/honda/civic/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1995,
+          "year_to": 1999,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Honda Civic 1995-1999: Megamos ID13"
         },
         {
           "manufacturer": "honda",
@@ -1292,6 +1496,18 @@
         },
         {
           "manufacturer": "honda",
+          "model": "legend",
+          "model_file": "database/vehicles/honda/legend/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1997,
+          "year_to": 1999,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Honda Legend 1997-1999: Megamos ID13"
+        },
+        {
+          "manufacturer": "honda",
           "model": "nsx",
           "model_file": "database/vehicles/honda/nsx/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
@@ -1301,6 +1517,18 @@
           "source_id": "silca_car_book_4_2014",
           "source_page": 143,
           "catalogue_row": "NSX 1997 2005 HON58RT5 HON58RFH MEG 13 Y Y"
+        },
+        {
+          "manufacturer": "honda",
+          "model": "prelude",
+          "model_file": "database/vehicles/honda/prelude/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1997,
+          "year_to": 1999,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Honda Prelude 1997-1999: Megamos ID13"
         },
         {
           "manufacturer": "honda",
@@ -1366,6 +1594,18 @@
           "manufacturer": "jaguar",
           "model": "xj",
           "model_file": "database/vehicles/jaguar/xj/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1996,
+          "year_to": 2000,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Jaguar Xj 1996-2000: Megamos ID13"
+        },
+        {
+          "manufacturer": "jaguar",
+          "model": "xj",
+          "model_file": "database/vehicles/jaguar/xj/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 1998,
           "year_to": 1999,
@@ -1426,6 +1666,18 @@
           "manufacturer": "porsche",
           "model": "boxster",
           "model_file": "database/vehicles/porsche/boxster/models.json",
+          "generation_or_chassis": "Exact model/year application published by specialist catalogue",
+          "year_from": 1996,
+          "year_to": 1998,
+          "key_variant_scope": "keyed_or_remote_transponder_key",
+          "source_id": "keystation_megamos_id13_2026",
+          "source_page": null,
+          "catalogue_row": "Porsche Boxster 1996-1998: Megamos ID13"
+        },
+        {
+          "manufacturer": "porsche",
+          "model": "boxster",
+          "model_file": "database/vehicles/porsche/boxster/models.json",
           "generation_or_chassis": "Not specified beyond model and year in catalogue",
           "year_from": 1997,
           "year_to": 1998,
@@ -1472,8 +1724,21 @@
         }
       ],
       "evidence_source_ids": [
+        "euro_car_key_shop_megamos_id13_2026",
+        "keystation_megamos_id13_2026",
         "silca_car_book_4_2014"
-      ]
+      ],
+      "family_verification": {
+        "status": "verified",
+        "confidence": "high",
+        "last_checked": "2026-07-18",
+        "basis": "Independent specialist/trade catalogues corroborate the family; vehicle status is upgraded only for exact overlapping application ranges.",
+        "source_ids": [
+          "silca_car_book_4_2014",
+          "keystation_megamos_id13_2026",
+          "euro_car_key_shop_megamos_id13_2026"
+        ]
+      }
     },
     "philips_crypto2_id46": {
       "id": "philips_crypto2_id46",
