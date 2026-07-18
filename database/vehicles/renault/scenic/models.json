@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "Scénic",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "scenic_uk_generations",
+      "name": "Scénic UK generations",
+      "years": "1997-present",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Renault UCH/BCM or later Alliance architecture; generation specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Renault",
+      "url": "https://www.press.renault.co.uk/releases/1673",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
