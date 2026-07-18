@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.1",
+  "updated_at": "2026-07-18",
+  "manufacturer": {
+    "id": "isuzu",
+    "name": "Isuzu",
+    "market": "UK",
+    "drive_side": "RHD"
+  },
+  "version": 1,
+  "models": {
+    "d_max": {
+      "name": "D-Max",
+      "version": 1,
+      "manifest": "d_max/manifest.json",
+      "status": "research_in_progress"
+    },
+    "trooper": {
+      "name": "Trooper",
+      "version": 1,
+      "manifest": "trooper/manifest.json",
+      "status": "research_in_progress"
+    },
+    "rodeo": {
+      "name": "Rodeo",
+      "version": 1,
+      "manifest": "rodeo/manifest.json",
+      "status": "research_in_progress"
+    }
+  },
+  "status": "research_in_progress",
+  "sources": {
+    "official_range": {
+      "url": "https://www.isuzu.co.uk/"
+    }
+  }
+}
