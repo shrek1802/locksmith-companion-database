@@ -20,18 +20,24 @@ def main() -> None:
     records = []
     for path in sorted((ROOT / "database/vehicles").glob("*/*/models.json")):
         data = json.loads(path.read_text(encoding="utf-8"))
-        for key, record in data.get("items", {}).items():
-            info = record.get("vehicle_information", {})
+        detailed = [(key, record, True) for key, record in data.get("items", {}).items()]
+        legacy = [(record.get("id", f"generation_{index}"), record, False) for index, record in enumerate(data.get("generations", []))]
+        for key, record, is_detailed in detailed + legacy:
+            info = record.get("vehicle_information", {}) if is_detailed else record
             verification = info.get("transponder_verification", {})
             status = verification.get("status") if isinstance(verification, dict) else None
             has_value = concrete(info.get("transponder_type")) or concrete(info.get("transponder_id"))
             classification = "verified" if status == "verified" else "partially_verified" if has_value else "research_required"
-            vehicle = record.get("vehicle", {})
+            vehicle = record.get("vehicle", {}) if is_detailed else {}
+            manufacturer = data.get("manufacturer", {})
+            model = data.get("model", {})
+            manufacturer_name = manufacturer.get("name") if isinstance(manufacturer, dict) else manufacturer
+            model_name = model.get("name") if isinstance(model, dict) else model
             records.append({
                 "record_id": record.get("record_id") or key,
-                "manufacturer": vehicle.get("make") or data.get("manufacturer", {}).get("name"),
-                "model": vehicle.get("model") or data.get("model", {}).get("name"),
-                "variant": vehicle.get("variant"), "year_from": vehicle.get("year_from"), "year_to": vehicle.get("year_to"),
+                "manufacturer": vehicle.get("make") or manufacturer_name,
+                "model": vehicle.get("model") or model_name,
+                "variant": vehicle.get("variant") or record.get("name"), "year_from": vehicle.get("year_from"), "year_to": vehicle.get("year_to"),
                 "transponder_type": info.get("transponder_type"), "transponder_id": info.get("transponder_id"),
                 "classification": classification, "model_file": str(path.relative_to(ROOT)).replace("\\", "/"),
             })
