@@ -30,8 +30,8 @@
         "transponder_id": "texas_4c",
         "frequency_mhz": "Confirm original remote and market application",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "Mazda-derived profile — exact application confirmation required",
-        "blade_id": "emergency_blade_unknown",
+        "blade_profile": "FO38R",
+        "blade_id": "fo38r",
         "key_type": "Mechanical ignition key / remote configuration varies",
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
         "battery_type": "Confirm against physical remote",
@@ -61,7 +61,27 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "blade_verification": {
+          "status": "partially_verified",
+          "confidence": "medium",
+          "last_checked": "2026-07-18",
+          "canonical_blade_family_id": "fo38r",
+          "record_year_range": "1999-2000",
+          "evidence": [
+            {
+              "source_id": "silca_car_book_4_2014",
+              "publisher": "Silca",
+              "title": "The Car Book 4 - Car Keys Guide",
+              "edition": "2014",
+              "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+              "catalogue_rows": [
+                "RANGER 1998 2003 FO38RT3 TEXAS 4C C",
+                "RANGER 1999 2000 FO38RT3 TEXAS 4C C"
+              ]
+            }
+          ]
+        }
       },
       "verification": {
         "status": "locksmith_card_core_partially_verified",
@@ -209,8 +229,8 @@
         "transponder_id": "texas_4d63_80bit",
         "frequency_mhz": "Confirm exact UK remote application",
         "frequency_id": "frequency_unknown",
-        "blade_profile": "Mazda-derived profile — exact application confirmation required",
-        "blade_id": "emergency_blade_unknown",
+        "blade_profile": "FO38R",
+        "blade_id": "fo38r",
         "key_type": "Remote key with mechanical blade",
         "button_count": "Varies by original remote and trim configuration — confirm physical key",
         "battery_type": "Confirm against physical remote",
@@ -240,7 +260,26 @@
           "autel_km100x",
           "xhorse_key_tool_max_pro",
           "keydiy_kd_x4"
-        ]
+        ],
+        "blade_verification": {
+          "status": "partially_verified",
+          "confidence": "medium",
+          "last_checked": "2026-07-18",
+          "canonical_blade_family_id": "fo38r",
+          "record_year_range": "2001-2010",
+          "evidence": [
+            {
+              "source_id": "silca_car_book_4_2014",
+              "publisher": "Silca",
+              "title": "The Car Book 4 - Car Keys Guide",
+              "edition": "2014",
+              "url": "https://automotiveeducation.co.uk/wp-content/uploads/2021/01/The-car-book-and-key-guide.pdf",
+              "catalogue_rows": [
+                "RANGER 2001 2010 FO38RT17 TEX / CR 63 C"
+              ]
+            }
+          ]
+        }
       },
       "verification": {
         "status": "locksmith_card_core_partially_verified",
