@@ -45,5 +45,23 @@
         "UK model-family coverage"
       ]
     }
+  },
+  "phase2_architecture_review": {
+    "checked_at": "2026-07-18",
+    "families_reviewed": [
+      "renault_uch_keyed",
+      "renault_card_slot",
+      "renault_proximity",
+      "alliance_bcm_bypass",
+      "nissan_nats_keyed",
+      "nissan_i_key"
+    ],
+    "status": "partially_verified at named family/tool scope; model applicability remains research_required",
+    "scope_limit": "UCH and Nissan BCM/NATS are not merged solely because a vendor shares a bypass family",
+    "sources": [
+      "https://www.advanced-diagnostics.com/news-posts/software-update-compatible-with-renault-10-2025-ads2325",
+      "https://www.advanced-diagnostics.com/smart-pro-accessories/renault-bypass-cable-adc2017"
+    ],
+    "confidence": "high for official vendor/OEM claims"
   }
 }

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-18",
+  "manufacturer_group": [
+    "Renault",
+    "Dacia",
+    "Nissan"
+  ],
+  "families": {
+    "renault_uch_keyed": {
+      "status": "research_required"
+    },
+    "renault_card_slot": {
+      "status": "research_required"
+    },
+    "renault_proximity": {
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Smart Pro ADS2325 with ADC2017",
+          "models": [
+            "Renault Clio",
+            "Renault Captur",
+            "Renault Zoe"
+          ],
+          "operation": "duplicate/program proximity keys",
+          "confidence": "high",
+          "source": "https://www.advanced-diagnostics.com/smart-pro-accessories/renault-bypass-cable-adc2017"
+        }
+      ]
+    },
+    "alliance_bcm_bypass": {
+      "status": "partially_verified",
+      "tool_support": [
+        {
+          "tool": "Smart Pro ADS2325",
+          "scope": "extended Renault and Nissan range; bladed and proximity keys; many AKL",
+          "confidence": "high",
+          "source": "https://www.advanced-diagnostics.com/news-posts/software-update-compatible-with-renault-10-2025-ads2325"
+        }
+      ],
+      "limits": "Exact model coverage and 16+32 versus 40-pin cable must be confirmed."
+    },
+    "nissan_nats_keyed": {
+      "status": "research_required"
+    },
+    "nissan_i_key": {
+      "status": "research_required"
+    }
+  }
+}
