@@ -48,6 +48,21 @@ def main() -> None:
         "supported_families": sum(x["status"] == "catalogue_supported" for x in catalogue["items"].values()),
         "research_required_families": sorted(k for k, x in catalogue["items"].items() if x["status"] != "catalogue_supported"),
     }
+    family_statuses = {
+        family_id: item.get("family_verification", {}).get("status", "unreviewed")
+        for family_id, item in catalogue["items"].items()
+    }
+    verified_families = sum(status == "verified" for status in family_statuses.values())
+    partially_verified_families = sum(status == "partially_verified" for status in family_statuses.values())
+    catalogue_counts.update({
+        "verified_families": verified_families,
+        "partially_verified_families": partially_verified_families,
+        "unreviewed_families": sum(status == "unreviewed" for status in family_statuses.values()),
+        "family_verification_percentage": round(
+            100 * (verified_families + partially_verified_families) / len(family_statuses), 2
+        ) if family_statuses else 0,
+        "catalogue_source_count": len(catalogue.get("sources", {})),
+    })
     report = {
         "schema_version": "2.1", "updated_at": "2026-07-18", "category": "canonical_transponder_completion_audit",
         "scope": "Distinct UK vehicle/key records in database/vehicles",
