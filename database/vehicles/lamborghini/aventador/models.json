@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.1",
+  "model": "Aventador",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "aventador_uk_generations",
+      "name": "Aventador UK generations",
+      "years": "2012-2022",
+      "platform": "Generation-specific platform requires confirmation",
+      "immobiliser_family": "Audi/VAG-derived or Lamborghini access family; model specific",
+      "key_variants": [
+        {
+          "type": "keyed",
+          "status": "research_required"
+        },
+        {
+          "type": "slot_key",
+          "status": "research_required"
+        },
+        {
+          "type": "proximity",
+          "status": "research_required"
+        },
+        {
+          "type": "KESSY_or_keyless",
+          "status": "research_required"
+        },
+        {
+          "type": "smart_key",
+          "status": "research_required"
+        }
+      ],
+      "status": "partially_verified"
+    }
+  ],
+  "sources": {
+    "official_range": {
+      "publisher": "Lamborghini",
+      "url": "https://www.lamborghini.com/en-en/models",
+      "checked_at": "2026-07-18",
+      "confidence": "high",
+      "supports": [
+        "UK model-family coverage"
+      ]
+    }
+  }
+}
