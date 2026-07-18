@@ -1,1 +1,12 @@
-{"schema_version":"2.1","model":"A1","notes":[{"title":"UK/RHD scope","text":"Locations and procedures must be verified on UK right-hand-drive vehicles."},{"title":"Platform split","text":"A1 8X and A1 GB use different immobiliser architectures; identify the platform before key work."}],"status":"research_in_progress"}
+{
+  "schema_version": "2.1",
+  "model": "A1",
+  "notes": [
+    {"title": "UK/RHD scope", "text": "Only UK-market right-hand-drive vehicles are in scope. Component locations remain unverified until supported by UK RHD workshop evidence."},
+    {"title": "Platform split", "text": "Audi primary evidence verifies MQB A0 for the A1 generation produced from October 2018. The 8X PQ25 claim remains research in progress."},
+    {"title": "Key-system split", "text": "Keyed and advanced-key/keyless variants must remain separate. Current public sources do not establish their complete UK production ranges or locksmith procedures."},
+    {"title": "Repository reuse search", "text": "The repository-wide verified-architecture audit found no record-level claim with two traceable sources eligible for automatic reuse."},
+    {"title": "Tool evidence limit", "text": "The Xhorse VVDI2 VAG manual names Audi A1 in a service-mode category. This is tool-menu evidence only and does not prove universal add-key or all-keys-lost support."}
+  ],
+  "status": "research_in_progress"
+}

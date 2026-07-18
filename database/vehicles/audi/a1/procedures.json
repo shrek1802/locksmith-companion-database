@@ -1,1 +1,33 @@
-{"schema_version":"2.1","model":"A1","procedures":[{"id":"add_key","name":"Add key","method":"Platform-dependent OBD/authorised online workflow","notes":"Verify generation, cluster and immobiliser family before starting.","status":"research_in_progress"},{"id":"akl","name":"All keys lost","method":"Platform-dependent security-data workflow","notes":"Do not assume MQB and PQ25 use the same process.","status":"research_in_progress"}]}
+{
+  "schema_version": "2.1",
+  "model": "A1",
+  "procedures": [
+    {
+      "id": "add_key",
+      "name": "Add key",
+      "method": "Select only after generation, exact dashboard and keyed/keyless configuration are identified",
+      "dealer_key_requirement": "not verified",
+      "pin_cs_requirement": "not verified",
+      "online_requirement": "tool and fitted-system dependent; not verified",
+      "status": "research_required",
+      "tool_evidence": [
+        {
+          "tool": "Xhorse VVDI2",
+          "status": "research_required",
+          "source": "https://www.xhorse.co.uk/upload/pro/vvdi2-vag-user-manual.pdf",
+          "supports": "The manual names Audi A1 in a service-mode login category, but does not by itself verify every A1 dashboard, generation, UK vehicle or keyed/keyless operation."
+        }
+      ]
+    },
+    {
+      "id": "akl",
+      "name": "All keys lost",
+      "method": "No generic A1 AKL route is verified",
+      "dealer_key_requirement": "not verified",
+      "pin_cs_requirement": "not verified",
+      "online_requirement": "not verified",
+      "status": "research_required",
+      "conflict_note": "The Xhorse manual describes login-type-dependent AKL behaviour. Exact dashboard identification is required, so model-wide inheritance is prohibited."
+    }
+  ]
+}

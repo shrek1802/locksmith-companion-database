@@ -1,1 +1,18 @@
-{"schema_version":"2.1","model":"A1","connections":[{"id":"obd","name":"OBD-II diagnostic connector","location":"Driver footwell, UK RHD; verify trim-specific position","status":"research_in_progress"},{"id":"bench","name":"Bench/EEPROM connection","notes":"Module and generation specific. Confirm exact hardware before connecting.","status":"research_in_progress"}]}
+{
+  "schema_version": "2.1",
+  "model": "A1",
+  "connections": [
+    {
+      "id": "obd",
+      "name": "OBD-II diagnostic connector",
+      "location": "Exact UK RHD trim location not verified",
+      "status": "research_required"
+    },
+    {
+      "id": "bench",
+      "name": "Bench/EEPROM connection",
+      "notes": "No bench wiring, EEPROM, MCU or adapter claim is stored without exact hardware evidence.",
+      "status": "research_required"
+    }
+  ]
+}

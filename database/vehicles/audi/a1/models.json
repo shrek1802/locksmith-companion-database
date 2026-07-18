@@ -1,1 +1,44 @@
-{"schema_version":"2.1","model":"A1","market":"UK","drive_side":"RHD","generations":[{"id":"8x","name":"A1 8X","years":"2010-2018","platform":"PQ25","immobiliser_family":"Immo 4 / cluster-based","status":"research_in_progress"},{"id":"gb","name":"A1 GB","years":"2018-present","platform":"MQB A0","immobiliser_family":"MQB","status":"research_in_progress"}]}
+{
+  "schema_version": "2.1",
+  "model": "A1",
+  "market": "UK",
+  "drive_side": "RHD",
+  "generations": [
+    {
+      "id": "8x",
+      "name": "A1 8X",
+      "years": "2010-2018",
+      "platform": "PQ25",
+      "immobiliser_family": "Immo 4 / cluster-based",
+      "status": "research_in_progress",
+      "verification_note": "UK model history is confirmed by Audi UK; the PQ25 and immobiliser mapping still require a second traceable technical source before inheritance."
+    },
+    {
+      "id": "gb",
+      "name": "A1 GB",
+      "years": "2018-present",
+      "platform": "MQB A0",
+      "immobiliser_family": "MQB; exact dashboard and key system not yet verified",
+      "status": "partially_verified",
+      "verification_scope": "Audi MediaCenter confirms MQB A0 and Audi UK confirms UK availability. No locksmith procedure, dashboard family or UK RHD module location is verified by those sources.",
+      "key_variants": [
+        {"type": "keyed", "status": "research_required"},
+        {"type": "advanced_key_or_keyless", "status": "research_required"}
+      ]
+    }
+  ],
+  "sources": {
+    "audi_uk_model_archive": {
+      "publisher": "Audi UK",
+      "title": "Audi UK model archive and current model range",
+      "url": "https://press.audi.co.uk/models/concept/releases",
+      "supports": ["A1 is a UK-market model", "A1 Sportback from 2018 is represented in the UK model archive"]
+    },
+    "audi_spain_facts_2025": {
+      "publisher": "Audi MediaCenter",
+      "title": "Audi in Spain 2025 facts and figures",
+      "url": "https://uploads.audi-mediacenter.com/system/production/uploaded_files/33809/file/5877d28fe411826faf4f4d0375b4763adf21a1ff/250318_Audi_in_Spanien_2025_EN.pdf",
+      "supports": ["A1 Sportback production began in October 2018", "Current A1 uses the MQB A0 platform"]
+    }
+  }
+}

@@ -1,1 +1,21 @@
-{"schema_version":"2.1","model":"A1","modules":[{"id":"instrument_cluster","name":"Instrument cluster","role":"Immobiliser/security data depending on generation","location":"Dashboard, UK RHD","status":"research_in_progress"},{"id":"bcm","name":"Body control module","role":"Access/start authorisation support depending on generation","location":"Vehicle-specific","status":"research_in_progress"}]}
+{
+  "schema_version": "2.1",
+  "model": "A1",
+  "modules": [
+    {
+      "id": "instrument_cluster",
+      "name": "Instrument cluster",
+      "role": "Immobiliser/security data depending on generation and fitted hardware",
+      "location": "UK RHD location not verified",
+      "status": "research_required"
+    },
+    {
+      "id": "bcm",
+      "name": "Body control module",
+      "role": "Exact access/start role not verified for either A1 generation",
+      "location": "UK RHD location not verified",
+      "status": "research_required"
+    }
+  ],
+  "reuse_audit": "No source-backed reusable module claim met the repository two-source threshold on 2026-07-18."
+}
