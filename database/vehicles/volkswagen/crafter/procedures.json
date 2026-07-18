@@ -1,1 +1,16 @@
-{"schema_version":"2.1","model":"Crafter","procedures":{"2e_2f":{"add_key":"PROC_VW_CRAFTER_MERCEDES_DERIVED_ADD","all_keys_lost":"PROC_VW_CRAFTER_MERCEDES_DERIVED_AKL"},"sy_sz":{"add_key":"PROC_VW_CRAFTER_LATE_ADD","all_keys_lost":"PROC_VW_CRAFTER_LATE_AKL"}},"status":"research_in_progress"}
+{
+  "schema_version":"2.1",
+  "updated_at":"2026-07-18",
+  "manufacturer":"Volkswagen",
+  "model":"Crafter",
+  "items":{
+    "crafter_2e_2f_2006_2016":{
+      "add_key":{"method":"Identify the Mercedes-derived ignition and immobiliser system before choosing diagnostic or module-data work","programming_method":"Vehicle-specific diagnostic or ignition-module data route","online_requirement":"Tool dependent","overall_status":"verification_required","warnings":["Do not use Volkswagen passenger-car Immo IV or MQB procedures."]},
+      "all_keys_lost":{"method":"Confirm the exact electronic ignition system and supported module-data solution before accepting the job","programming_method":"Mercedes-derived electronic ignition security-data route","online_requirement":"Tool dependent","overall_status":"verification_required","warnings":["No universal aftermarket AKL route has been verified for all variants."]}
+    },
+    "crafter_sy_sz_2017_present":{
+      "add_key":{"method":"Confirm VIN, BCM, dashboard, keyless specification and current security-access coverage","programming_method":"Protected Volkswagen commercial diagnostic route","online_requirement":"May Be Required","overall_status":"verification_required","warnings":["Current support must be checked against the exact vehicle."]},
+      "all_keys_lost":{"method":"Confirm live aftermarket coverage and any online or security-gateway requirement before booking","programming_method":"Protected commercial platform coverage check","online_requirement":"Likely Required","overall_status":"verification_required","warnings":["Do not promise AKL from model year alone."]}
+    }
+  }
+}

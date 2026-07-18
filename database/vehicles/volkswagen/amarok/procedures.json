@@ -1,1 +1,16 @@
-{"schema_version":"2.1","model":"Amarok","procedures":{"2h":{"add_key":"PROC_VW_AMAROK_2H_ADD","all_keys_lost":"PROC_VW_AMAROK_2H_AKL"},"nf":{"add_key":"PROC_FORD_PLATFORM_AMAROK_ADD","all_keys_lost":"PROC_FORD_PLATFORM_AMAROK_AKL"}},"status":"research_in_progress"}
+{
+  "schema_version":"2.1",
+  "updated_at":"2026-07-18",
+  "manufacturer":"Volkswagen",
+  "model":"Amarok",
+  "items":{
+    "amarok_2h_2010_2022":{
+      "add_key":{"method":"Identify the fitted cluster and BCM family, obtain the required immobiliser data and adapt the prepared key","programming_method":"Supported OBD or cluster/BCM data route","online_requirement":"Tool and route dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"obd_or_bench","display_name":"OBDSTAR KeyMaster G3","summary":"Support depends on the fitted Volkswagen immobiliser and dashboard family.","vehicle_connection":{"required":true,"display_text":"Standard OBD or supported cluster/BCM data route"},"internet_required":false}}},
+      "all_keys_lost":{"method":"Read supported cluster or BCM security data, prepare the key and learn all keys","programming_method":"Dashboard or BCM-specific security-data route","online_requirement":"Tool dependent","overall_status":"conditional","tools":{"obdstar_g3":{"status":"conditional","method":"bench","display_name":"OBDSTAR KeyMaster G3","summary":"AKL is conditional on exact module support and a verified data-read route.","vehicle_connection":{"required":true,"display_text":"Supported cluster or BCM adapter"},"module_removal_required":true,"internet_required":false}}}
+    },
+    "amarok_nf_2023_present":{
+      "add_key":{"method":"Use the Ford-platform authorised diagnostic route only after confirming current coverage for the exact vehicle","programming_method":"Ford-derived protected access route","online_requirement":"Likely Required","overall_status":"verification_required","warnings":["Do not apply Volkswagen MQB procedures to this generation."]},
+      "all_keys_lost":{"method":"Confirm current Ford-platform AKL support and security access before accepting the job","programming_method":"Ford-derived protected platform coverage check","online_requirement":"Likely Required","overall_status":"verification_required","warnings":["No blanket aftermarket AKL claim has been verified."]}
+    }
+  }
+}
