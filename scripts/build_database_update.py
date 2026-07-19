@@ -49,7 +49,7 @@ def record_count(models_path: Path) -> int:
     return 0
 
 
-def rebuild(version: str, source_commit: str) -> None:
+def rebuild(version: str, source_commit: str, package_only: bool = False) -> None:
     root_manifest_path = ROOT / "manifest.json"
     root_manifest = load(root_manifest_path)
     manufacturers = root_manifest.get("manufacturers", {})
@@ -93,8 +93,9 @@ def rebuild(version: str, source_commit: str) -> None:
         for model_id, model_entry in sorted(model_entries.items()):
             model_manifest_path = VEHICLES / manufacturer_id / model_id / "manifest.json"
             model_manifest = load(model_manifest_path)
-            model_manifest["version"] = next_version(model_manifest.get("version"))
-            model_manifest["updated_at"] = TODAY
+            if not package_only:
+                model_manifest["version"] = next_version(model_manifest.get("version"))
+                model_manifest["updated_at"] = TODAY
 
             checksums: dict[str, str] = {}
             for component_id, component_reference in model_manifest.get("files", {}).items():
@@ -103,25 +104,29 @@ def rebuild(version: str, source_commit: str) -> None:
                 checksums[component_id] = sha256(component_path)
                 if component_id in {"models", "vehicles"}:
                     record_total += record_count(component_path)
-            model_manifest["checksums"] = checksums
-            save(model_manifest_path, model_manifest)
+            if not package_only:
+                model_manifest["checksums"] = checksums
+                save(model_manifest_path, model_manifest)
 
-            model_entry["version"] = model_manifest["version"]
-            model_entry["sha256"] = sha256(model_manifest_path)
+            if not package_only:
+                model_entry["version"] = model_manifest["version"]
+                model_entry["sha256"] = sha256(model_manifest_path)
             model_total += 1
 
-        manufacturer_manifest["version"] = next_version(manufacturer_manifest.get("version"))
-        manufacturer_manifest["updated_at"] = TODAY
-        save(manufacturer_manifest_path, manufacturer_manifest)
+        if not package_only:
+            manufacturer_manifest["version"] = next_version(manufacturer_manifest.get("version"))
+            manufacturer_manifest["updated_at"] = TODAY
+            save(manufacturer_manifest_path, manufacturer_manifest)
 
-        root_entry["version"] = manufacturer_manifest["version"]
-        root_entry["updated_at"] = TODAY
-        root_entry["sha256"] = sha256(manufacturer_manifest_path)
+            root_entry["version"] = manufacturer_manifest["version"]
+            root_entry["updated_at"] = TODAY
+            root_entry["sha256"] = sha256(manufacturer_manifest_path)
 
     reference_manifest_path = REFERENCE / "manifest.json"
     reference_manifest = load(reference_manifest_path)
-    reference_manifest["updated_at"] = TODAY
-    reference_manifest["version"] = next_version(reference_manifest.get("version"))
+    if not package_only:
+        reference_manifest["updated_at"] = TODAY
+        reference_manifest["version"] = next_version(reference_manifest.get("version"))
     reference_manifest.setdefault("files", {}).update({
         "uk_chip_catalogue": "uk_chip_catalogue.json",
         "key_profile_schema": "key_profile_schema.json",
@@ -130,7 +135,8 @@ def rebuild(version: str, source_commit: str) -> None:
         key: sha256(REFERENCE / (value if isinstance(value, str) else value["file"]))
         for key, value in sorted(reference_manifest["files"].items())
     }
-    save(reference_manifest_path, reference_manifest)
+    if not package_only:
+        save(reference_manifest_path, reference_manifest)
 
     root_manifest.update({
         "schema_version": "2.2",
@@ -149,9 +155,14 @@ def rebuild(version: str, source_commit: str) -> None:
     ]
     database_package = {
         "schema_version": "2.2",
+        "package_contract_version": 2,
         "database_version": version,
         "generated_at": TODAY,
         "source_commit": source_commit,
+        "root_manifest": {
+            key: value for key, value in root_manifest.items()
+            if key not in {"package_sha256", "package_size"}
+        },
         "counts": {
             "manufacturers": len(manufacturers),
             "models": model_total,
@@ -236,8 +247,9 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--version", required=True)
     parser.add_argument("--source-commit", required=True)
+    parser.add_argument("--package-only", action="store_true")
     args = parser.parse_args()
-    rebuild(args.version, args.source_commit)
+    rebuild(args.version, args.source_commit, args.package_only)
 
 
 if __name__ == "__main__":
