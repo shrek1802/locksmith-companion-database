@@ -1,0 +1,62 @@
+name: Backfill Legacy Key Profiles
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backfill-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out database repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Backfill structured fields from legacy data
+        run: python scripts/backfill_legacy_key_profiles.py
+
+      - name: Validate database
+        run: python scripts/validate_database.py
+
+      - name: Validate structured key profiles
+        run: |
+          if [ -f scripts/validate_key_profile_schema.py ]; then
+            python scripts/validate_key_profile_schema.py
+          fi
+
+      - name: Run structured profile tests
+        run: python -m unittest tests/test_structured_key_profiles.py
+
+      - name: Rebuild single-file database update
+        run: python scripts/build_single_file_update.py
+
+      - name: Validate rebuilt database package
+        run: |
+          if [ -f scripts/validate_database_package.py ]; then
+            python scripts/validate_database_package.py
+          fi
+
+      - name: Show changed files
+        run: git status --short
+
+      - name: Commit and publish recovered data
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No database changes were produced."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database manifest.json CHANGELOG.md reports || true
+          git add -u
+          git commit -m "Backfill structured key profiles from legacy data"
+          git push
