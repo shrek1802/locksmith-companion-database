@@ -1,5 +1,12 @@
 # Database Changelog
 
+## 2026.07.19-structured-key-profiles-1
+
+- Rebuilt the raw-file update hierarchy for all 53 UK manufacturers, 733 models and 1,499 vehicle records.
+- Published the seven-field structured key-profile contract and canonical blade, transponder and chip catalogues.
+- Regenerated manufacturer/model versions, component checksums and the complete database package index.
+- Delivery remains the existing `main/manifest.json` plus individual raw JSON files; no competing ZIP updater was introduced.
+
 ## 2026.07.05-cumulative-asia-1
 
 - Expanded Toyota/Lexus/Honda/Mazda/Hyundai/Kia/Suzuki/Subaru generation-key records.

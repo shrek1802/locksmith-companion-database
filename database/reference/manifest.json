@@ -1,7 +1,7 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-18",
-  "version": 8,
+  "updated_at": "2026-07-19",
+  "version": 10,
   "scope": "UK automotive locksmith reference data",
   "files": {
     "reference_sources": "reference_sources.json",
@@ -16,12 +16,31 @@
     "security_platforms": "security_platforms.json",
     "ford_key_mappings": "ford_key_mappings.json",
     "ford_key_mappings_batch2": "ford_key_mappings_batch2.json",
-    "ford_key_mappings_approved": "ford_key_mappings_approved.json"
+    "ford_key_mappings_approved": "ford_key_mappings_approved.json",
+    "uk_chip_catalogue": "uk_chip_catalogue.json",
+    "key_profile_schema": "key_profile_schema.json"
   },
   "rules": {
     "vehicle_mapping_source": "Ford master research workbook",
     "approved_only_for_export": true,
     "unknown_values_must_remain_unknown": true,
     "regional_scope": "UK"
+  },
+  "checksums": {
+    "blades": "68831b70befdc6961b798ec8d8fdad919abff4cfc6e165dc65904789cfec3745",
+    "ford_key_mappings": "3b605dd9acde378c4a15674a2f3d853b18763e0243550e080fcb7575ef7718d2",
+    "ford_key_mappings_approved": "cd09b1440f2a45eecdbe4e2568f3ca52555b53854f53079585bb4fc8e9d33206",
+    "ford_key_mappings_batch2": "cdaf432b1113f3e68749545491537199b0641fb859f9d61f93bd4f51eebb3fa6",
+    "frequencies": "c287dd6977e75fd9ac0135a2a3e9aba7b4cd5b2389cc6d656e6120a7a0a85516",
+    "immobiliser_systems": "9de293d58a2289162edf8b7090ee67677d3e73662cd48eb42fac11b8833dd3f0",
+    "key_profile_schema": "4465d193982c954fa132a159a3b5c104628d45fc5c2d1e2b8ffc5162d0250fcb",
+    "key_types": "d3f6003d278dd6f290e24394e19ddb9036fc10500e876afcec8fae9e322909d0",
+    "reference_sources": "1783101887d6d370eeae4c88e0c01a2b7e9f7e870efc7a973f71346d26d67fe8",
+    "remote_types": "30dad15018f53ed2b82cb45fa80910c3c7ea46a76b222f3b15298f2008352e39",
+    "security_platforms": "b036b39e96c393ae88d91ae6d8d1543ac1940f335a2a44079eef6556f4bb0558",
+    "transponders": "27d729cd063829922a0a8e1b50d4ecb6d7c631a8e24edbb1b1655883a5798bbd",
+    "uk_blade_catalogue": "42f9af6051c479c65fe2d7d6eef8e00e40f1a3313e6eda80954e4fb58dbf21bd",
+    "uk_chip_catalogue": "f2c98ab640a494190ccc3446ccc9371718adf91f16d7d7d41457d1ca8e6b1033",
+    "uk_transponder_catalogue": "8919d1d37f1672d37542c3a4a81e0e4daa1a3632f5fb01ed94b4a73fe2e85ca1"
   }
 }

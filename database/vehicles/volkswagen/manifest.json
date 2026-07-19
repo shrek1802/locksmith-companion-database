@@ -1,34 +1,189 @@
 {
-  "schema_version":"2.1",
-  "updated_at":"2026-07-18",
-  "manufacturer":{"id":"volkswagen","name":"Volkswagen","market":"UK","drive_side":"RHD"},
-  "version":14,
-  "models":{
-    "amarok":{"name":"Amarok","version":2,"manifest":"amarok/manifest.json","status":"research_in_progress"},
-    "arteon":{"name":"Arteon","version":2,"manifest":"arteon/manifest.json","status":"research_in_progress"},
-    "beetle":{"name":"Beetle","version":1,"manifest":"beetle/manifest.json","status":"research_in_progress"},
-    "caddy":{"name":"Caddy","version":2,"manifest":"caddy/manifest.json","status":"research_in_progress"},
-    "cc":{"name":"CC","version":1,"manifest":"cc/manifest.json","status":"research_in_progress"},
-    "crafter":{"name":"Crafter","version":2,"manifest":"crafter/manifest.json","status":"research_in_progress"},
-    "eos":{"name":"Eos","version":1,"manifest":"eos/manifest.json","status":"research_in_progress"},
-    "golf":{"name":"Golf","version":2,"manifest":"golf/manifest.json","status":"research_in_progress"},
-    "id_3":{"name":"ID.3","version":1,"manifest":"id_3/manifest.json","status":"research_in_progress"},
-    "id_4":{"name":"ID.4","version":1,"manifest":"id_4/manifest.json","status":"research_in_progress"},
-    "id_5":{"name":"ID.5","version":1,"manifest":"id_5/manifest.json","status":"research_in_progress"},
-    "id_buzz":{"name":"ID. Buzz","version":1,"manifest":"id_buzz/manifest.json","status":"research_in_progress"},
-    "jetta":{"name":"Jetta","version":1,"manifest":"jetta/manifest.json","status":"research_in_progress"},
-    "passat":{"name":"Passat","version":2,"manifest":"passat/manifest.json","status":"research_in_progress"},
-    "polo":{"name":"Polo","version":2,"manifest":"polo/manifest.json","status":"research_in_progress"},
-    "scirocco":{"name":"Scirocco","version":1,"manifest":"scirocco/manifest.json","status":"research_in_progress"},
-    "sharan":{"name":"Sharan","version":1,"manifest":"sharan/manifest.json","status":"research_in_progress"},
-    "t_cross":{"name":"T-Cross","version":1,"manifest":"t_cross/manifest.json","status":"research_in_progress"},
-    "t_roc":{"name":"T-Roc","version":2,"manifest":"t_roc/manifest.json","status":"research_in_progress"},
-    "taigo":{"name":"Taigo","version":1,"manifest":"taigo/manifest.json","status":"research_in_progress"},
-    "tiguan":{"name":"Tiguan","version":2,"manifest":"tiguan/manifest.json","status":"research_in_progress"},
-    "touareg":{"name":"Touareg","version":2,"manifest":"touareg/manifest.json","status":"research_in_progress"},
-    "touran":{"name":"Touran","version":2,"manifest":"touran/manifest.json","status":"research_in_progress"},
-    "transporter":{"name":"Transporter","version":2,"manifest":"transporter/manifest.json","status":"research_in_progress"},
-    "up":{"name":"Up!","version":2,"manifest":"up/manifest.json","status":"research_in_progress"}
+  "schema_version": "2.1",
+  "updated_at": "2026-07-19",
+  "manufacturer": {
+    "id": "volkswagen",
+    "name": "Volkswagen",
+    "market": "UK",
+    "drive_side": "RHD"
   },
-  "status":"research_in_progress"
+  "version": 16,
+  "models": {
+    "amarok": {
+      "name": "Amarok",
+      "version": 4,
+      "manifest": "amarok/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "4428a0ef6782c5e0821237ed307aa66572057bfb6dae77f7e0fa58dafc1507a1"
+    },
+    "arteon": {
+      "name": "Arteon",
+      "version": 4,
+      "manifest": "arteon/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "f3bdbe99e6409091cf61df96710d7b58e0ad073eb5ec2718fdc37a224455f87d"
+    },
+    "beetle": {
+      "name": "Beetle",
+      "version": 3,
+      "manifest": "beetle/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "285637af9cbed74e9007c51e5a18851bdb2825368bf61eccbe0fa4d4e718bcb9"
+    },
+    "caddy": {
+      "name": "Caddy",
+      "version": 4,
+      "manifest": "caddy/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "23182bbd7eb335f6d148b0e168d55fd9e11a67612ddf537a3338684fe666d412"
+    },
+    "cc": {
+      "name": "CC",
+      "version": 3,
+      "manifest": "cc/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "1d55479e0ffe47664e75de1e750def2b6ee36397c011f8da6c21355561fc02bf"
+    },
+    "crafter": {
+      "name": "Crafter",
+      "version": 4,
+      "manifest": "crafter/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "ce5ebe8112a0e2effc547c237cf61ca219e39e43950443a369162df0d064db0e"
+    },
+    "eos": {
+      "name": "Eos",
+      "version": 3,
+      "manifest": "eos/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "a2dd1313d5db6268092890c3f7f5ba9a2464e877597f58b6f08f368ee535f6e5"
+    },
+    "golf": {
+      "name": "Golf",
+      "version": 4,
+      "manifest": "golf/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "4dacd11020c12d16a1feddfdb6f9c2d15a75e41da5db59ef2a29fe626a820214"
+    },
+    "id_3": {
+      "name": "ID.3",
+      "version": 3,
+      "manifest": "id_3/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "a97f0e466b7a108330d3bab0a67f24f8282ea1f80f51e6ef10bd48054f06891b"
+    },
+    "id_4": {
+      "name": "ID.4",
+      "version": 3,
+      "manifest": "id_4/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "eab4363093a86cf2dcb6fc619b8282a29e9f00795a9de8e49a6ec723c3df8de4"
+    },
+    "id_5": {
+      "name": "ID.5",
+      "version": 3,
+      "manifest": "id_5/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "cb50b7052a19ae886eb66645fa5aad55376479748667c4acb784607c66619c92"
+    },
+    "id_buzz": {
+      "name": "ID. Buzz",
+      "version": 3,
+      "manifest": "id_buzz/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "faaa887f1a5e2d79c672d4664c929fdf5b9a65d98cd87783040f6c755dc65367"
+    },
+    "jetta": {
+      "name": "Jetta",
+      "version": 3,
+      "manifest": "jetta/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "53608d7b161081043a10f97dd23d0e91d029fcc01f91b6ef3ac6d6a4134177c9"
+    },
+    "passat": {
+      "name": "Passat",
+      "version": 4,
+      "manifest": "passat/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "4cd32a41afd574822863048cb731ae92688a8789d494ec6cbc6dbed344ff5363"
+    },
+    "polo": {
+      "name": "Polo",
+      "version": 4,
+      "manifest": "polo/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "33ad874de78845aa9543629c4dd7cc95ad106345e8a97471da1e7bf7144209a9"
+    },
+    "scirocco": {
+      "name": "Scirocco",
+      "version": 3,
+      "manifest": "scirocco/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "9a9df19324ff3e029821571a4fb5640cbd481d03e9cc3de3f0c5455f26b18e6b"
+    },
+    "sharan": {
+      "name": "Sharan",
+      "version": 3,
+      "manifest": "sharan/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "faa5e87ad60382a3e376dc004e967bb659596781e881b308b4af229b74512c54"
+    },
+    "t_cross": {
+      "name": "T-Cross",
+      "version": 3,
+      "manifest": "t_cross/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "954e75f44665e341dd955b686e7ab0f52acd8acf94af348ba39130dfeffb0932"
+    },
+    "t_roc": {
+      "name": "T-Roc",
+      "version": 4,
+      "manifest": "t_roc/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "7b007af9dcb358e4d15c0f0a14267e315d79b87352dc15d96596f5da749a664b"
+    },
+    "taigo": {
+      "name": "Taigo",
+      "version": 3,
+      "manifest": "taigo/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "1f3c4397a0832e1e054e42fab1485e922c3b86d67cfc48c9906ae4e60660963e"
+    },
+    "tiguan": {
+      "name": "Tiguan",
+      "version": 4,
+      "manifest": "tiguan/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "31297dbad40a13a170921f593036f7bdf1e07a94e5727ebe6f4a54e2f2ec93f4"
+    },
+    "touareg": {
+      "name": "Touareg",
+      "version": 4,
+      "manifest": "touareg/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "9697558ccf2abd8863923704e58c07ef15c2eb0c3f5b2eafe150a9c7c60fb80a"
+    },
+    "touran": {
+      "name": "Touran",
+      "version": 4,
+      "manifest": "touran/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "6bebfc483ca39b4d8716ed2b0a6dc514f413bbb6edab6e35517e723bd90868d0"
+    },
+    "transporter": {
+      "name": "Transporter",
+      "version": 4,
+      "manifest": "transporter/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "dc34ccde96b4cbdcba0ad55884e6404b1d1e845f57ac3e1c417c583f1fc84fcb"
+    },
+    "up": {
+      "name": "Up!",
+      "version": 4,
+      "manifest": "up/manifest.json",
+      "status": "research_in_progress",
+      "sha256": "22dd2c8e076b42f15d7e8e92cbb0233e03824bc382618bcc1c449b8d0a546fb0"
+    }
+  },
+  "status": "research_in_progress"
 }

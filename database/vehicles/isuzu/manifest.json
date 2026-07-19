@@ -1,31 +1,34 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-18",
+  "updated_at": "2026-07-19",
   "manufacturer": {
     "id": "isuzu",
     "name": "Isuzu",
     "market": "UK",
     "drive_side": "RHD"
   },
-  "version": 1,
+  "version": 3,
   "models": {
     "d_max": {
       "name": "D-Max",
-      "version": 1,
+      "version": 3,
       "manifest": "d_max/manifest.json",
-      "status": "research_in_progress"
+      "status": "research_in_progress",
+      "sha256": "91ef327fa48a41fb7a61d848078912b633ecdbfd9e0f5865c84f2630cb9ba1d6"
     },
     "trooper": {
       "name": "Trooper",
-      "version": 1,
+      "version": 3,
       "manifest": "trooper/manifest.json",
-      "status": "research_in_progress"
+      "status": "research_in_progress",
+      "sha256": "2b7efab23d9d1f82b89f9c41295d6eebc0f69d87a4605d4c7cd23d0150f88bfa"
     },
     "rodeo": {
       "name": "Rodeo",
-      "version": 1,
+      "version": 3,
       "manifest": "rodeo/manifest.json",
-      "status": "research_in_progress"
+      "status": "research_in_progress",
+      "sha256": "db0858d30296d525a29790085ff7b8a9336386a6018ecfdd5830da623387ade1"
     }
   },
   "status": "research_in_progress",

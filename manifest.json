@@ -1,379 +1,436 @@
 {
-  "schema_version": "2.1",
-  "updated_at": "2026-07-18",
+  "schema_version": "2.2",
+  "updated_at": "2026-07-19",
   "database_root": "database",
   "manufacturers": {
     "ford": {
       "name": "Ford",
-      "version": 42,
+      "version": 44,
       "manifest": "database/vehicles/ford/manifest.json",
       "status": "fully_verified",
-      "updated_at": "2026-07-17"
+      "updated_at": "2026-07-19",
+      "sha256": "1733f34874a770ce6dd55b4df6e3dc155f9610f0265ef55d068e00443b53923c"
     },
     "volkswagen": {
       "name": "Volkswagen",
-      "version": 14,
+      "version": 16,
       "manifest": "database/vehicles/volkswagen/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "dc043e5c4191e84aa270faae84aaa851064d989d5e14685eca5bc122cdb3581b"
     },
     "audi": {
       "name": "Audi",
-      "version": 3,
+      "version": 5,
       "manifest": "database/vehicles/audi/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "8746322f8dd8b816508de22989afe55ca529af301fe3ad488b5d1e69f76c3b1c"
     },
     "seat": {
       "name": "SEAT",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/seat/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "e6e335760dd6e83f93c0bc566d78484d08eac1aebd2e4cf7da4e2177e13148cf"
     },
     "skoda": {
       "name": "Škoda",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/skoda/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "400744f86c8a3208809c4e260b3246e01a8db1edf403713d09133eb92e558a1a"
     },
     "cupra": {
       "name": "CUPRA",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/cupra/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "2e07ac65f8bec88f1008df0f2ea3ce84725f472352f543e83e2956afbf352c3d"
     },
     "bmw": {
       "name": "BMW",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/bmw/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "b98844e93d92fff8eacdb37022fc13a4d5ef6925a92568f9e93632029212908a"
     },
     "mini": {
       "name": "MINI",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/mini/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "05694b8ae031a933a41c63b2b0d1fd2f592cdff42cd4fc4223e653da8998b2de"
     },
     "mercedes_benz": {
       "name": "Mercedes-Benz",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/mercedes_benz/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "ddae21dae27dadfc316a0343fd4f513dc10a708d3b55f0b5e9d2298aebf43011"
     },
     "smart": {
       "name": "Smart",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/smart/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "95e88cdda4374cfc2f7c8b6a995b2e33a08ba417a669f8827e9f7c46b141318d"
     },
     "vauxhall": {
       "name": "Vauxhall",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/vauxhall/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "a056938743bc68e11542318e87c7fc43c9667becc4bf1dfc2fab1edbf0f1c515"
     },
     "opel": {
       "name": "Opel",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/opel/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "47562b936222412aff792d783ff098478de0e695eba13a75990c33069ff2e130"
     },
     "peugeot": {
       "name": "Peugeot",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/peugeot/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "ae81ead2c2d56d122760dae699f60aa1be358d0fbd80b3befded2b714ff2b01a"
     },
     "citroen": {
       "name": "Citroën",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/citroen/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "4cb2a1b890a6b00b9f3e62e2c4899e3247eeed76c937e60f7d9e141f68cde3cf"
     },
     "ds": {
       "name": "DS",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/ds/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "753c7140964df0b23f71d990bee7bb29594c98fb59f0090c692c058b79366772"
     },
     "renault": {
       "name": "Renault",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/renault/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "1befa79264f999c92c976ec33f66db0e04df9f443fe6b405c42846e494874530"
     },
     "dacia": {
       "name": "Dacia",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/dacia/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "fb049bcbce50e03d42ebc98a684725ec0ec4e09988ca395a2a61eedf8a0b466c"
     },
     "nissan": {
       "name": "Nissan",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/nissan/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "c1d0dd88ba10ec005df54e36d5538d7e19e6558fe5385e35ec6653e647496182"
     },
     "toyota": {
       "name": "Toyota",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/toyota/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "b7540850a85c6ff5caa4d4cc493a1eda77a4f0e36043e2e72264c2f585b53377"
     },
     "lexus": {
       "name": "Lexus",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/lexus/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "3a9b8a2f9577a05da25e2912a042f6c5bbea02a1cd5a40cf23f19f36bed32ba0"
     },
     "honda": {
       "name": "Honda",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/honda/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "ba12ecf705f86f52aae896ca5fa5c832fcb1e9cb7cd0bb9c23682bbe466e2d95"
     },
     "mazda": {
       "name": "Mazda",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/mazda/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "b25b3116ed699a89cd1c6a8ae996962371c85e820007ebc22352cb03cec6594a"
     },
     "mitsubishi": {
       "name": "Mitsubishi",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/mitsubishi/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "b25adc84a8c85671646ce30262fac628c45fa4376a458edb28cc95f6b60ef4db"
     },
     "hyundai": {
       "name": "Hyundai",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/hyundai/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "3e5a616c436522de0789ad100868ea63d48916ad455baa36f77c3ecc0d545513"
     },
     "kia": {
       "name": "Kia",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/kia/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "481be1773a8b7611045d1c3c5fd4c7004718be4e2a7bb452aa3159ac3949f287"
     },
     "suzuki": {
       "name": "Suzuki",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/suzuki/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "a23981acc15ee663b453ac2af485884888dac4590299038fde8ccfa811ef1690"
     },
     "subaru": {
       "name": "Subaru",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/subaru/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "51e0f4d7792902874238f0be7f85428c6376e97edef967ee287bd513abf0657a"
     },
     "volvo": {
       "name": "Volvo",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/volvo/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "49a84b68c257e661f58d4524878d11257dcda83e4d58c09ead8a0d3a232c3be7"
     },
     "polestar": {
       "name": "Polestar",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/polestar/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "909c3cb53dba8f46975c2f369e146abcb2a5b331f6f367db81220c9310802a97"
     },
     "jaguar": {
       "name": "Jaguar",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/jaguar/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "0c4ede58c11447a33a98209c49d7c5ea30e10207a7d434dd98f7f90762d4e646"
     },
     "land_rover": {
       "name": "Land Rover",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/land_rover/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "33a74922b20f72d071dab9f98313b65b622b835a23f867865cfb6b4506dd9a58"
     },
     "mg": {
       "name": "MG",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/mg/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "ff7a40e3ba76208c53c87ed2c28847ca5df5f4bd0e849c0bcec0d8b39358cd6b"
     },
     "fiat": {
       "name": "Fiat",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/fiat/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "5ccb929877daef801bee7ebeadda8e6fbd5e0d337bbaa18685864c32992c5877"
     },
     "abarth": {
       "name": "Abarth",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/abarth/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "0709261db570507e99c9a7235a29238933781d07ed7d61594f9235a692eefa1f"
     },
     "alfa_romeo": {
       "name": "Alfa Romeo",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/alfa_romeo/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "c1b0f7bf690b4847fdee1b6503c99638c1c850cf5ca8c8a61fb634d068b455b5"
     },
     "jeep": {
       "name": "Jeep",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/jeep/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "3deb81c5b76c2434c51f197b33c94cc009adc5da95defb1a96c41421281d233b"
     },
     "chrysler": {
       "name": "Chrysler",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/chrysler/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "61d69a5b1248f22baf7783fca7f674707ad6ad1d7b07431da8e576f147cfeb5b"
     },
     "tesla": {
       "name": "Tesla",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/tesla/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "eb2bf2c65d814d73196c5fe73f42aebc192824ebf396912952471d5a292ca779"
     },
     "porsche": {
       "name": "Porsche",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/porsche/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "1c718524d0de67978ba2f189e0b03ecabeda64d5fcf9efab3c7bec4ff59ed0cf"
     },
     "bentley": {
       "name": "Bentley",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/bentley/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "4589b215946bf824f93e39c31e40fbaf5a83aab9420a718a8bcaed7e2b480d98"
     },
     "rolls_royce": {
       "name": "Rolls-Royce",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/rolls_royce/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "9503f8965a0d05b7ac122014dc25995822e71528aee5eb893524cea966fe1093"
     },
     "ferrari": {
       "name": "Ferrari",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/ferrari/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "eaf04e12d761ce6f27dffcff73b43626387b6190cf89f4143e72e20833ddcf7b"
     },
     "lamborghini": {
       "name": "Lamborghini",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/lamborghini/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "6ca85cbde201950f4902bb235f7f0ff15246ed6636bcbe8939d6d2b987eb1db6"
     },
     "maserati": {
       "name": "Maserati",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/maserati/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "e250c0f2f7d081b8a02e8b801bde20d9529a8e6497173cb79091e3eb46c96ce9"
     },
     "aston_martin": {
       "name": "Aston Martin",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/aston_martin/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "5904e60efa3edb5c7a6f191b44690c21fa04504c337bd3d219156c44fa614a15"
     },
     "lotus": {
       "name": "Lotus",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/lotus/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "f79f2422a600e86e124cd918ad8fd919152f726ade01d99483ec505021b6752e"
     },
     "mclaren": {
       "name": "McLaren",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/mclaren/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "9c1d436c752a6d23b32ca80302552e6f68e4deaf7a114b896d95b7607d28a0b7"
     },
     "ineos": {
       "name": "INEOS",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/ineos/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "a140c7f066538f2de92ec9ab88f2fb279fa85ea240a0cf5eef4a9c1dae2b2128"
     },
     "ssangyong": {
       "name": "SsangYong",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/ssangyong/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "6ea4781a59c71d659ba4922f6e05c60e31f2e6b6556281514c469c72602b0f37"
     },
     "genesis": {
       "name": "Genesis",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/genesis/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "3072cf818c2f3cfce80a7809609244ad87f6e9c5d034fe61631814fa743eaacb"
     },
     "isuzu": {
       "name": "Isuzu",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/isuzu/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "b705e57ad9aca8e0a6a510d03907bf122693a6818b39506b702b46a36fdb7bc7"
     },
     "ldv": {
       "name": "LDV",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/ldv/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "8e72e78654d8217c63dca2c04bdecbba6ae3556af6e709d38aac0f9c575fc2bf"
     },
     "maxus": {
       "name": "Maxus",
-      "version": 1,
+      "version": 3,
       "manifest": "database/vehicles/maxus/manifest.json",
       "status": "research_in_progress",
-      "updated_at": "2026-07-18"
+      "updated_at": "2026-07-19",
+      "sha256": "7ff8cd875f71a5c0325266bfc60f13909edbf4287b1aa92069b1187a340d5050"
     }
   },
-  "status": "phase2_architecture_verification_complete"
+  "status": "phase2_architecture_verification_complete",
+  "database_version": "2026.07.19-structured-key-profiles-1",
+  "source_commit": "ff512382c822d3961de1d6689d13d03ce406cfc0",
+  "reference_manifest": "database/reference/manifest.json",
+  "package_index": "database/update_manifest.json"
 }

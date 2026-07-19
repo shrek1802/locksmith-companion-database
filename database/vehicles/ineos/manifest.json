@@ -1,25 +1,27 @@
 {
   "schema_version": "2.1",
-  "updated_at": "2026-07-18",
+  "updated_at": "2026-07-19",
   "manufacturer": {
     "id": "ineos",
     "name": "INEOS",
     "market": "UK",
     "drive_side": "RHD"
   },
-  "version": 1,
+  "version": 3,
   "models": {
     "grenadier": {
       "name": "Grenadier",
-      "version": 1,
+      "version": 3,
       "manifest": "grenadier/manifest.json",
-      "status": "research_in_progress"
+      "status": "research_in_progress",
+      "sha256": "34c8f9933f1977385f40712fc1afc1acf6f8959aac4ce0b42ec38a278e6f4930"
     },
     "quartermaster": {
       "name": "Quartermaster",
-      "version": 1,
+      "version": 3,
       "manifest": "quartermaster/manifest.json",
-      "status": "research_in_progress"
+      "status": "research_in_progress",
+      "sha256": "f132eeb7c016d899391b3b8ce8afefb2a97e556d7de8a3f30c1a2eef6787f972"
     }
   },
   "status": "research_in_progress",
