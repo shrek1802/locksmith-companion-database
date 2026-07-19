@@ -64,6 +64,11 @@ CHIP_TYPE_VALUES = {
 REMOTE_CONFIGURATION_VALUES = {
     "Separate", "Integrated", "Integrated Proximity", "No Remote", "Research Required",
 }
+CHIP_CATALOGUE_REQUIRED_FIELDS = {
+    "canonical_id", "display_name", "manufacturer", "chip_type",
+    "technology_family", "aliases", "typical_transponder_ids",
+    "remote_configuration", "notes", "evidence", "confidence",
+}
 
 errors: list[str] = []
 warnings: list[str] = []
@@ -271,6 +276,21 @@ def validate_items(path: Path, data: dict[str, Any]) -> None:
         if isinstance(part_number, str) and part_number.strip():
             normalized = re.sub(r"\s+", "", part_number).upper()
             part_locations[normalized].append(f"{label}#{item_id}")
+
+        if category == "canonical_chip_catalogue":
+            missing = sorted(CHIP_CATALOGUE_REQUIRED_FIELDS - item.keys())
+            if missing:
+                error(label, f"chip item {item_id!r} is missing fields: {', '.join(missing)}")
+            if item.get("chip_type") not in CHIP_TYPE_VALUES - {"No Separate Transponder"}:
+                error(label, f"chip item {item_id!r} has invalid chip_type {item.get('chip_type')!r}")
+            remote_values = item.get("remote_configuration")
+            if not isinstance(remote_values, list) or not remote_values:
+                error(label, f"chip item {item_id!r} remote_configuration must be a non-empty list")
+            elif any(value not in REMOTE_CONFIGURATION_VALUES for value in remote_values):
+                error(label, f"chip item {item_id!r} has invalid remote_configuration values")
+            for field in ("aliases", "typical_transponder_ids", "evidence"):
+                if not isinstance(item.get(field), list):
+                    error(label, f"chip item {item_id!r} field {field!r} must be a list")
 
 
 def validate_structured_key_profiles(path: Path, data: dict[str, Any]) -> None:
