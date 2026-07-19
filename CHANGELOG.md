@@ -1,5 +1,11 @@
 # Database Changelog
 
+## 2026.07.19-structured-key-profiles-2
+
+- Added `database/database-update.json`, a single 8.61 MB indexed JSON package containing the complete published database.
+- Added package URL, SHA-256, size, format and record counts to the root manifest.
+- Retained all raw JSON files for backwards compatibility while making the consolidated package the normal app update path.
+
 ## 2026.07.19-structured-key-profiles-1
 
 - Rebuilt the raw-file update hierarchy for all 53 UK manufacturers, 733 models and 1,499 vehicle records.

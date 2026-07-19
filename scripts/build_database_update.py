@@ -23,6 +23,10 @@ def save(path: Path, value: dict[str, Any]) -> None:
     path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def save_compact(path: Path, value: dict[str, Any]) -> None:
+    path.write_text(json.dumps(value, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
+
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -136,12 +140,54 @@ def rebuild(version: str, source_commit: str) -> None:
         "reference_manifest": "database/reference/manifest.json",
         "package_index": "database/update_manifest.json",
     })
+    update_manifest_path = ROOT / "database" / "update_manifest.json"
+    database_package_path = ROOT / "database" / "database-update.json"
+    database_manifest_path = ROOT / "database" / "manifest.json"
+    package_source_paths = [
+        path for path in sorted((ROOT / "database").rglob("*.json"))
+        if path not in {update_manifest_path, database_package_path, database_manifest_path}
+    ]
+    database_package = {
+        "schema_version": "2.2",
+        "database_version": version,
+        "generated_at": TODAY,
+        "source_commit": source_commit,
+        "counts": {
+            "manufacturers": len(manufacturers),
+            "models": model_total,
+            "vehicle_records": record_total,
+            "json_files": len(package_source_paths),
+        },
+        "display_contract": {
+            "file": "database/reference/key_profile_schema.json",
+            "order": ["blade_profile", "transponder_id", "technology_family", "chip_type", "chip_ic", "remote_configuration", "frequency"],
+        },
+        "canonical_catalogues": {
+            "blade": "database/reference/uk_blade_catalogue.json",
+            "transponder": "database/reference/uk_transponder_catalogue.json",
+            "chip": "database/reference/uk_chip_catalogue.json",
+        },
+        "files": {
+            path.relative_to(ROOT).as_posix(): load(path)
+            for path in package_source_paths
+        },
+    }
+    save_compact(database_package_path, database_package)
+    package_sha256 = sha256(database_package_path)
+    package_size = database_package_path.stat().st_size
+    package_url = "database/database-update.json"
+    root_manifest.update({
+        "package_url": package_url,
+        "package_sha256": package_sha256,
+        "package_size": package_size,
+        "package_format": "indexed_json",
+        "package_counts": database_package["counts"],
+    })
     save(root_manifest_path, root_manifest)
-    save(ROOT / "database" / "manifest.json", root_manifest)
+    save(database_manifest_path, root_manifest)
 
     indexed_paths = [root_manifest_path]
     indexed_paths.extend(sorted((ROOT / "database").rglob("*.json")))
-    update_manifest_path = ROOT / "database" / "update_manifest.json"
     indexed_paths = [path for path in indexed_paths if path != update_manifest_path]
     files = {
         path.relative_to(ROOT).as_posix(): {
@@ -156,9 +202,13 @@ def rebuild(version: str, source_commit: str) -> None:
         "generated_at": TODAY,
         "source_commit": source_commit,
         "delivery": {
-            "type": "raw_individual_json",
+            "type": "single_indexed_json",
             "root_manifest": "manifest.json",
             "base_url": "https://raw.githubusercontent.com/shrek1802/locksmith-companion-database/main/",
+            "package_url": package_url,
+            "package_sha256": package_sha256,
+            "package_size": package_size,
+            "package_format": "indexed_json",
         },
         "display_contract": {
             "file": "database/reference/key_profile_schema.json",
@@ -173,7 +223,7 @@ def rebuild(version: str, source_commit: str) -> None:
             "manufacturers": len(manufacturers),
             "models": model_total,
             "vehicle_records": record_total,
-            "json_files": len(files),
+            "json_files": len(package_source_paths),
         },
         "files": files,
     }
