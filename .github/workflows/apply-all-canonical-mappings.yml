@@ -1,0 +1,84 @@
+name: Apply All Canonical Mappings
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply_changes:
+        description: "Apply unambiguous catalogue mappings and publish the rebuilt database"
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  canonical-mapping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dry-run canonical mappings
+        run: python scripts/apply_all_canonical_mappings.py
+
+      - name: Upload dry-run reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: canonical-mapping-dry-run-reports
+          path: |
+            reports/canonical_mapping_summary.json
+            reports/canonical_mapping_conflicts.json
+            reports/canonical_mapping_report.md
+
+      - name: Apply canonical mappings
+        if: ${{ inputs.apply_changes }}
+        run: python scripts/apply_all_canonical_mappings.py --apply
+
+      - name: Validate database
+        if: ${{ inputs.apply_changes }}
+        run: python scripts/validate_database.py
+
+      - name: Run structured key-profile tests
+        if: ${{ inputs.apply_changes }}
+        run: python -m unittest tests/test_structured_key_profiles.py
+
+      - name: Build downloadable database package
+        if: ${{ inputs.apply_changes }}
+        run: python scripts/build_database_update.py
+
+      - name: Validate rebuilt database
+        if: ${{ inputs.apply_changes }}
+        run: python scripts/validate_database.py
+
+      - name: Upload final reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: canonical-mapping-final-reports
+          path: |
+            reports/canonical_mapping_summary.json
+            reports/canonical_mapping_conflicts.json
+            reports/canonical_mapping_report.md
+
+      - name: Commit rebuilt database
+        if: ${{ inputs.apply_changes }}
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No unambiguous new mappings were available."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database manifest.json reports CHANGELOG.md 2>/dev/null || true
+          git add -A
+          git commit -m "Apply verified canonical blade and transponder mappings"
+          git push
