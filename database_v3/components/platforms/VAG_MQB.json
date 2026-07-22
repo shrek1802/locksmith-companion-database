@@ -1,9 +1,26 @@
 {
   "id": "VAG_MQB",
   "component_type": "platform",
+  "revision": {
+    "version": 1,
+    "updated_at": "2026-07-22",
+    "change_summary": "Migrated MQB platform to evidence-aware V3 schema",
+    "supersedes": null
+  },
   "data": {
     "vehicle": {"platform": "MQB"},
     "technician_notes": ["Use regulated battery support during immobiliser programming"]
   },
-  "verification": {"status": "provisional", "confidence": "medium", "sources": []}
+  "compatibility": {
+    "applies_to": [{"platform": "MQB", "market": "UK"}],
+    "exclusions": [{"platform": "MQB_EVO"}, {"platform": "MQB_A0"}],
+    "conditions": ["Use a more specific platform component when a vehicle is confirmed as MQB A0 or MQB EVO"]
+  },
+  "verification": {
+    "status": "provisional",
+    "confidence": "medium",
+    "last_checked": null,
+    "sources": [],
+    "workshop_history": []
+  }
 }
