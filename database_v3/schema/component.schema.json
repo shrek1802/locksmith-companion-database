@@ -3,19 +3,42 @@
   "$id": "component.schema.json",
   "title": "Locksmith Knowledge Component",
   "type": "object",
-  "required": ["id", "component_type", "data", "verification"],
+  "required": ["id", "component_type", "revision", "data", "verification"],
   "properties": {
     "id": {"type": "string", "minLength": 1},
     "component_type": {"type": "string", "enum": ["platform", "immobiliser", "key_system", "blade", "transponder", "procedure", "tool_coverage", "locations"]},
+    "revision": {
+      "type": "object",
+      "required": ["version", "updated_at", "change_summary"],
+      "properties": {
+        "version": {"type": "integer", "minimum": 1},
+        "updated_at": {"type": "string", "format": "date"},
+        "change_summary": {"type": "string"},
+        "supersedes": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
     "data": {"type": "object"},
+    "compatibility": {
+      "type": "object",
+      "properties": {
+        "applies_to": {"type": "array", "items": {"type": "object"}},
+        "exclusions": {"type": "array", "items": {"type": "object"}},
+        "conditions": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
     "verification": {
       "type": "object",
-      "required": ["status", "confidence", "sources"],
+      "required": ["status", "confidence", "sources", "workshop_history"],
       "properties": {
-        "status": {"type": "string", "enum": ["unverified", "provisional", "verified", "workshop_verified"]},
+        "status": {"type": "string", "enum": ["unverified", "provisional", "source_verified", "workshop_verified"]},
         "confidence": {"type": "string", "enum": ["unknown", "low", "medium", "high"]},
-        "sources": {"type": "array", "items": {"type": "object"}}
-      }
+        "last_checked": {"type": ["string", "null"], "format": "date"},
+        "sources": {"type": "array", "items": {"type": "object"}},
+        "workshop_history": {"type": "array", "items": {"$ref": "verification-event.schema.json"}}
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false
