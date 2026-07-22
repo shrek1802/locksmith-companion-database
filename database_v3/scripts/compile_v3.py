@@ -12,6 +12,8 @@ COMPONENTS = ROOT / "components"
 VEHICLES = ROOT / "vehicles"
 OUTPUT = ROOT / "compiled" / "vag_mqb_pilot.json"
 REFERENCE_ORDER = ["platform", "immobiliser", "key_system", "blade", "transponder", "procedure", "tool_coverage", "locations"]
+STATUS_RANK = {"unverified": 0, "provisional": 1, "source_verified": 2, "workshop_verified": 3}
+CONFIDENCE_RANK = {"unknown": 0, "low": 1, "medium": 2, "high": 3}
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -61,6 +63,45 @@ def verification_snapshot(component: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def evidence_summary(evidence: list[dict[str, Any]], vehicle_record_id: str) -> dict[str, Any]:
+    statuses = [item["verification"]["status"] for item in evidence]
+    confidences = [item["verification"]["confidence"] for item in evidence]
+    exact_successes = []
+    related_successes = []
+
+    for item in evidence:
+        for event in item["verification"].get("workshop_history", []):
+            if event.get("result") != "success":
+                continue
+            event_vehicle_id = event.get("vehicle_record_id")
+            summary = {
+                "component_id": item["component_id"],
+                "component_type": item["component_type"],
+                "event_id": event.get("event_id"),
+                "vehicle_record_id": event_vehicle_id,
+                "job_type": event.get("job_type"),
+                "tool": deepcopy(event.get("tool")),
+                "completed_at": event.get("completed_at"),
+            }
+            if event_vehicle_id == vehicle_record_id:
+                exact_successes.append(summary)
+            else:
+                related_successes.append(summary)
+
+    weakest_status = min(statuses, key=lambda value: STATUS_RANK.get(value, -1))
+    weakest_confidence = min(confidences, key=lambda value: CONFIDENCE_RANK.get(value, -1))
+    return {
+        "display_status": "exact_vehicle_workshop_verified" if exact_successes else "shared_system_evidence" if related_successes else weakest_status,
+        "lowest_component_status": weakest_status,
+        "lowest_component_confidence": weakest_confidence,
+        "exact_vehicle_success_count": len(exact_successes),
+        "related_vehicle_success_count": len(related_successes),
+        "exact_vehicle_evidence": exact_successes,
+        "related_vehicle_evidence": related_successes,
+        "warning": None if exact_successes else "No successful workshop event is recorded for this exact vehicle record. Shared component information must not be presented as exact-vehicle verification.",
+    }
+
+
 def compile_vehicle(record: dict[str, Any], components: dict[str, dict[str, Any]]) -> dict[str, Any]:
     compiled: dict[str, Any] = {"vehicle": deepcopy(record["vehicle"])}
     references = record["references"]
@@ -80,7 +121,8 @@ def compile_vehicle(record: dict[str, Any], components: dict[str, dict[str, Any]
         "vehicle_record_id": record["id"],
         "references": references,
         "component_evidence": evidence,
-        "confidence_rule": "Exact vehicle workshop evidence is distinct from related-platform evidence; no status is promoted during compilation."
+        "verification_summary": evidence_summary(evidence, record["id"]),
+        "confidence_rule": "Exact vehicle workshop evidence is distinct from related-platform evidence; no status is promoted during compilation.",
     }
     return compiled
 
