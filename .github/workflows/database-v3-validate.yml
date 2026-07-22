@@ -37,15 +37,22 @@ jobs:
       - name: Compile pilot vehicles
         run: python database_v3/scripts/compile_v3.py
 
-      - name: Confirm compiled output is committed
+      - name: Build knowledge graph index
+        run: python database_v3/scripts/build_knowledge_graph.py
+
+      - name: Confirm generated outputs are committed
         run: |
-          git diff --exit-code -- database_v3/compiled/vag_mqb_pilot.json || {
-            echo "Compiled output is stale. Run python database_v3/scripts/compile_v3.py and commit the result."
+          git diff --exit-code -- \
+            database_v3/compiled/vag_mqb_pilot.json \
+            database_v3/compiled/knowledge_graph_index.json || {
+            echo "Generated Database V3 output is stale. Run the compiler and knowledge graph builder, then commit both files."
             exit 1
           }
 
-      - name: Upload compiled pilot
+      - name: Upload compiled Database V3 outputs
         uses: actions/upload-artifact@v4
         with:
-          name: vag-mqb-v3-pilot
-          path: database_v3/compiled/vag_mqb_pilot.json
+          name: locksmith-knowledge-engine-v3
+          path: |
+            database_v3/compiled/vag_mqb_pilot.json
+            database_v3/compiled/knowledge_graph_index.json
