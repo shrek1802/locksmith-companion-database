@@ -1,13 +1,70 @@
 {
   "id": "VAG_MQB_TOOLS",
   "component_type": "tool_coverage",
+  "revision": {
+    "version": 2,
+    "updated_at": "2026-07-22",
+    "change_summary": "Migrated MQB tool coverage to revisioned evidence model and removed implied universal support",
+    "supersedes": null
+  },
   "data": {
     "tool_support": {
-      "autel": {"supported": "configuration_dependent", "minimum_version": null, "adapters_required": null, "functions": [], "notes": "Record exact model/year/cluster and software version before marking supported"},
-      "xhorse": {"supported": "configuration_dependent", "minimum_version": null, "adapters_required": null, "functions": [], "notes": "Record exact model/year/cluster and software version before marking supported"},
-      "obdstar": {"supported": "unknown", "minimum_version": null, "adapters_required": null, "functions": [], "notes": null},
-      "smart_pro": {"supported": "unknown", "minimum_version": null, "adapters_required": null, "functions": [], "notes": null}
+      "autel": {
+        "supported": "configuration_dependent",
+        "minimum_version": null,
+        "adapters_required": null,
+        "functions": [],
+        "notes": "Record exact vehicle, cluster or immobiliser type, function, adapter and software version in workshop history before marking exact support."
+      },
+      "xhorse": {
+        "supported": "configuration_dependent",
+        "minimum_version": null,
+        "adapters_required": null,
+        "functions": [],
+        "notes": "Key generation capability and vehicle programming capability must be verified separately."
+      },
+      "obdstar": {
+        "supported": "unknown",
+        "minimum_version": null,
+        "adapters_required": null,
+        "functions": [],
+        "notes": "No verified shared MQB coverage has yet been entered in this component."
+      },
+      "smart_pro": {
+        "supported": "unknown",
+        "minimum_version": null,
+        "adapters_required": null,
+        "functions": [],
+        "notes": "No verified shared MQB coverage has yet been entered in this component."
+      }
     }
   },
-  "verification": {"status": "unverified", "confidence": "unknown", "sources": []}
+  "compatibility": {
+    "applies_to": [
+      {
+        "platform_id": "VAG_MQB",
+        "market": "UK",
+        "steering": "RHD",
+        "relationship": "candidate_tool_family"
+      }
+    ],
+    "exclusions": [
+      {
+        "condition": "Exact model, year, cluster, immobiliser generation or security variant is not identified",
+        "action": "Do not display a tool as confirmed supported"
+      }
+    ],
+    "conditions": [
+      "Tool coverage can change with software updates and must include the tested software version",
+      "Add-key and all-keys-lost coverage are separate capabilities",
+      "Adapters, bench cables and server or online requirements must be recorded per verification event"
+    ]
+  },
+  "verification": {
+    "status": "unverified",
+    "confidence": "unknown",
+    "last_checked": "2026-07-22",
+    "sources": [],
+    "workshop_history": []
+  }
 }
