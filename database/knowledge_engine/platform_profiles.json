@@ -1,0 +1,59 @@
+{
+  "schema_version": "3.0-draft",
+  "category": "platform_profiles",
+  "items": {
+    "vag_mqb48_mqb45": {
+      "name": "VAG MQB48 / MQB 4.5",
+      "market": "UK",
+      "scope": "Auto locksmith key and immobiliser workflows",
+      "verified_capabilities": [
+        {
+          "id": "add_key_im508s_analogue_working_key",
+          "label": "Add Key with IM508S, working key and analogue/mono V850-NEC dashboard",
+          "confidence": "workshop_verified",
+          "workshop_event_ids": ["we_vag_mqb45_im508s_add_key_001"]
+        },
+        {
+          "id": "mqb48_b5_green_remote",
+          "label": "Xhorse B5 Green Super Remote at 434.42 MHz ASK, reference 0535 446",
+          "confidence": "workshop_verified",
+          "key_profile_ids": ["key_xhorse_b5_green_mqb48"]
+        },
+        {
+          "id": "virtual_cockpit_no_obd_immo",
+          "label": "Virtual Cockpit / Active Info Display excludes OBD IMMO acquisition",
+          "confidence": "workshop_verified",
+          "decision_rule_ids": ["decision_mqb45_cluster_read_route"]
+        }
+      ],
+      "verification_gaps": [
+        {
+          "id": "all_keys_lost",
+          "label": "All Keys Lost procedure",
+          "status": "research_required"
+        },
+        {
+          "id": "virtual_cockpit_full_workflow",
+          "label": "Complete Virtual Cockpit Add Key workflow",
+          "status": "research_required"
+        },
+        {
+          "id": "additional_tools",
+          "label": "Verified workflows for tools other than Autel IM508S",
+          "status": "research_required"
+        },
+        {
+          "id": "vehicle_application_matrix",
+          "label": "Verified vehicle, year and dashboard application matrix",
+          "status": "research_required"
+        },
+        {
+          "id": "internet_and_power_requirements",
+          "label": "Internet, battery support and adapter requirements",
+          "status": "research_required"
+        }
+      ],
+      "last_verified": "2026-07-22"
+    }
+  }
+}
