@@ -1,0 +1,128 @@
+{
+  "schema_version": "3.0-draft",
+  "updated_at": "2026-07-23",
+  "category": "tool_profiles",
+  "notes": [
+    "A listed tool does not imply support for every job on every linked platform.",
+    "Capabilities must be attached to a verified workflow object or exact vehicle application before recommendation.",
+    "User-owned tools are prioritised for future workshop verification."
+  ],
+  "items": {
+    "tool_autel_im508s": {
+      "manufacturer": "Autel",
+      "product": "IM508S",
+      "tool_class": "immobiliser_and_diagnostic_tablet",
+      "user_owned": true,
+      "companion_hardware_ids": ["tool_autel_xp400_pro", "tool_autel_apb131"],
+      "known_verified_platform_ids": ["vag_mqb48_mqb45"],
+      "verified_workflow_object_ids": ["workflow_mqb48_add_key_autel_analogue_working_key"],
+      "general_capability_labels": ["OBD key learning", "IMMO data acquisition where supported", "bench and EEPROM work with supported programmer and adapters"],
+      "requirements_to_resolve": ["software version", "internet requirement", "battery support", "adapter or bypass cable", "vehicle-specific menu coverage"],
+      "confidence": "workshop_verified"
+    },
+    "tool_autel_xp400_pro": {
+      "manufacturer": "Autel",
+      "product": "XP400 Pro",
+      "tool_class": "key_and_eeprom_programmer",
+      "user_owned": true,
+      "parent_tool_ids": ["tool_autel_im508s"],
+      "general_capability_labels": ["EEPROM and MCU reading where supported", "key and transponder operations", "bench module work with supported adapters"],
+      "requirements_to_resolve": ["adapter", "wiring or board connection", "supported MCU or EEPROM", "safe backup and verification steps"],
+      "confidence": "research_required"
+    },
+    "tool_autel_apb131": {
+      "manufacturer": "Autel",
+      "product": "APB131",
+      "tool_class": "key_and_module_adapter",
+      "user_owned": true,
+      "parent_tool_ids": ["tool_autel_xp400_pro", "tool_autel_im508s"],
+      "requirements_to_resolve": ["exact supported application", "connection method", "software menu", "power requirements"],
+      "confidence": "research_required"
+    },
+    "tool_autel_km100x": {
+      "manufacturer": "Autel",
+      "product": "KM100X",
+      "tool_class": "universal_key_generator_and_immo_tool",
+      "user_owned": true,
+      "general_capability_labels": ["Autel universal key generation", "transponder operations", "vehicle key learning where supported"],
+      "requirements_to_resolve": ["vehicle coverage", "key type", "frequency", "online requirement", "AKL limitations"],
+      "confidence": "research_required"
+    },
+    "tool_xhorse_key_tool_plus": {
+      "manufacturer": "Xhorse",
+      "product": "Key Tool Plus",
+      "tool_class": "immobiliser_key_and_programmer_tablet",
+      "user_owned": true,
+      "general_capability_labels": ["key generation", "transponder operations", "OBD immobiliser functions where supported", "EEPROM and module work with supported adapters"],
+      "requirements_to_resolve": ["software version", "database token or online requirement", "adapter", "vehicle-specific workflow"],
+      "confidence": "research_required"
+    },
+    "tool_xhorse_kd_x4": {
+      "manufacturer": "Xhorse",
+      "product": "KD-X4",
+      "tool_class": "key_generation_and_programming_tool",
+      "user_owned": true,
+      "known_key_profile_ids": ["key_xhorse_b5_green_mqb48", "key_xhorse_vvdi_5d_dedicated"],
+      "requirements_to_resolve": ["vehicle programming coverage", "remote type", "frequency", "online requirement"],
+      "confidence": "research_required"
+    },
+    "tool_keydiy_kd_mp": {
+      "manufacturer": "KEYDIY",
+      "product": "KD-MP",
+      "tool_class": "key_generation_and_programming_tool",
+      "user_owned": true,
+      "known_key_profile_ids": ["key_keydiy_kd_fgb_series"],
+      "requirements_to_resolve": ["vehicle programming coverage", "remote application", "frequency", "online requirement"],
+      "confidence": "research_required"
+    },
+    "tool_xhorse_xm38": {
+      "manufacturer": "Xhorse",
+      "product": "XM38",
+      "tool_class": "universal_smart_key",
+      "user_owned": true,
+      "requirements_to_resolve": ["vehicle application", "frequency", "PCB or remote type", "generation tool", "renew or reuse support"],
+      "confidence": "research_required"
+    },
+    "tool_xhorse_super_remote": {
+      "manufacturer": "Xhorse",
+      "product": "VVDI Super Remote",
+      "tool_class": "universal_remote_key",
+      "user_owned": true,
+      "known_key_profile_ids": ["key_xhorse_b5_green_mqb48"],
+      "requirements_to_resolve": ["exact remote model", "transponder generation", "frequency", "vehicle application"],
+      "confidence": "research_required"
+    },
+    "tool_obdstar_g3": {
+      "manufacturer": "OBDSTAR",
+      "product": "Key Master G3",
+      "tool_class": "immobiliser_and_module_programming_tablet",
+      "user_owned": false,
+      "requirements_to_resolve": ["confirmed ownership", "software subscription", "vehicle coverage", "adapter or bypass cable", "online requirement"],
+      "confidence": "research_required"
+    },
+    "tool_xtool_immo": {
+      "manufacturer": "Xtool",
+      "product": "Immobiliser-capable Xtool platform",
+      "tool_class": "immobiliser_and_diagnostic_tablet",
+      "user_owned": true,
+      "requirements_to_resolve": ["exact model", "software version", "vehicle coverage", "adapter", "online requirement"],
+      "confidence": "research_required"
+    },
+    "tool_smart_pro": {
+      "manufacturer": "Advanced Diagnostics",
+      "product": "Smart Pro",
+      "tool_class": "professional_key_programming_tablet",
+      "user_owned": false,
+      "requirements_to_resolve": ["software module", "token or subscription", "vehicle application", "cable", "online security requirement"],
+      "confidence": "research_required"
+    },
+    "tool_lonsdor": {
+      "manufacturer": "Lonsdor",
+      "product": "Lonsdor immobiliser platform",
+      "tool_class": "immobiliser_and_key_programming_tablet",
+      "user_owned": false,
+      "requirements_to_resolve": ["exact model", "software version", "vehicle coverage", "adapter", "online requirement"],
+      "confidence": "research_required"
+    }
+  }
+}
