@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "verification-event.schema.json",
+  "title": "Workshop Verification Event",
+  "type": "object",
+  "required": ["id", "date", "result", "vehicle", "operation", "tool"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "date": {"type": "string", "format": "date"},
+    "result": {"type": "string", "enum": ["success", "partial", "failed", "not_attempted"]},
+    "vehicle": {
+      "type": "object",
+      "required": ["manufacturer", "model", "year", "market", "steering"],
+      "properties": {
+        "manufacturer": {"type": "string"},
+        "model": {"type": "string"},
+        "generation": {"type": ["string", "null"]},
+        "year": {"type": "integer"},
+        "market": {"const": "UK"},
+        "steering": {"const": "RHD"},
+        "vin_masked": {"type": ["string", "null"]},
+        "configuration": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "operation": {"type": "string", "enum": ["spare_key", "add_key", "all_keys_lost", "remote_programming", "module_read", "module_clone", "diagnostic"]},
+    "tool": {
+      "type": "object",
+      "required": ["manufacturer", "model"],
+      "properties": {
+        "manufacturer": {"type": "string"},
+        "model": {"type": "string"},
+        "software_version": {"type": ["string", "null"]},
+        "adapter": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "working_key_present": {"type": ["boolean", "null"]},
+    "key_type": {"type": ["string", "null"]},
+    "duration_minutes": {"type": ["integer", "null"], "minimum": 0},
+    "notes": {"type": ["string", "null"]},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
