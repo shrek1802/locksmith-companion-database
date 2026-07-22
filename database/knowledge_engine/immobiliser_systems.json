@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-22",
+  "scope": "Master immobiliser-system catalogue for UK-market vehicle knowledge mapping",
+  "notes": [
+    "This file records stable immobiliser family and generation names before detailed vehicle applications and procedures are attached.",
+    "A confirmed system name does not automatically verify vehicle coverage, programming support or workshop procedure.",
+    "Vehicle applications, tools, keys and procedures must carry their own evidence and confidence values."
+  ],
+  "items": {
+    "bmw_ews2": { "manufacturer_group": "BMW Group", "marques": ["BMW"], "family": "EWS", "name": "EWS2", "aliases": ["EWS II"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_ews3": { "manufacturer_group": "BMW Group", "marques": ["BMW"], "family": "EWS", "name": "EWS3", "aliases": ["EWS III"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_ews4": { "manufacturer_group": "BMW Group", "marques": ["BMW"], "family": "EWS", "name": "EWS4", "aliases": ["EWS IV"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_cas1": { "manufacturer_group": "BMW Group", "marques": ["BMW", "MINI"], "family": "CAS", "name": "CAS1", "aliases": ["CAS"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_cas2": { "manufacturer_group": "BMW Group", "marques": ["BMW", "MINI"], "family": "CAS", "name": "CAS2", "aliases": [], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_cas3": { "manufacturer_group": "BMW Group", "marques": ["BMW", "MINI"], "family": "CAS", "name": "CAS3", "aliases": [], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_cas3_plus": { "manufacturer_group": "BMW Group", "marques": ["BMW", "MINI"], "family": "CAS", "name": "CAS3+", "aliases": ["CAS3 Plus"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_cas4": { "manufacturer_group": "BMW Group", "marques": ["BMW", "MINI"], "family": "CAS", "name": "CAS4", "aliases": [], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_cas4_plus": { "manufacturer_group": "BMW Group", "marques": ["BMW", "MINI"], "family": "CAS", "name": "CAS4+", "aliases": ["CAS4 Plus"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_fem": { "manufacturer_group": "BMW Group", "marques": ["BMW", "MINI"], "family": "FEM", "name": "FEM", "aliases": ["Front Electronic Module"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_bdc": { "manufacturer_group": "BMW Group", "marques": ["BMW", "MINI"], "family": "BDC", "name": "BDC", "aliases": ["Body Domain Controller"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_bdc2": { "manufacturer_group": "BMW Group", "marques": ["BMW", "MINI"], "family": "BDC", "name": "BDC2", "aliases": ["BDC 2"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "bmw_bdc3": { "manufacturer_group": "BMW Group", "marques": ["BMW", "MINI"], "family": "BDC", "name": "BDC3", "aliases": ["BDC 3"], "name_status": "confirmed", "detail_confidence": "research_required" },
+
+    "vag_immo2": { "manufacturer_group": "Volkswagen Group", "marques": ["Volkswagen", "Audi", "SEAT", "Skoda"], "family": "VAG IMMO", "name": "IMMO 2", "aliases": ["Immobiliser Generation 2", "Immobilizer Generation 2"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "vag_immo3": { "manufacturer_group": "Volkswagen Group", "marques": ["Volkswagen", "Audi", "SEAT", "Skoda"], "family": "VAG IMMO", "name": "IMMO 3", "aliases": ["Immobiliser Generation 3", "Immobilizer Generation 3"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "vag_immo4": { "manufacturer_group": "Volkswagen Group", "marques": ["Volkswagen", "Audi", "SEAT", "Skoda"], "family": "VAG IMMO", "name": "IMMO 4", "aliases": ["Immobiliser Generation 4", "Immobilizer Generation 4"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "vag_immo5": { "manufacturer_group": "Volkswagen Group", "marques": ["Volkswagen", "Audi", "SEAT", "Skoda"], "family": "VAG IMMO", "name": "IMMO 5", "aliases": ["Immobiliser Generation 5", "Immobilizer Generation 5"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "vag_mqb48_mqb45": { "manufacturer_group": "Volkswagen Group", "marques": ["Volkswagen", "Audi", "SEAT", "Skoda"], "family": "MQB", "name": "MQB48 / MQB 4.5", "aliases": ["MQB48", "MQB4.5", "MQB 4.5"], "name_status": "confirmed", "detail_confidence": "workshop_verified" },
+    "vag_mqb_5c": { "manufacturer_group": "Volkswagen Group", "marques": ["Volkswagen", "Audi", "SEAT", "Skoda"], "family": "MQB", "name": "MQB 5C", "aliases": ["MQB5C", "MQB IMMO 5C"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "vag_mqb_5d": { "manufacturer_group": "Volkswagen Group", "marques": ["Volkswagen", "Audi", "SEAT", "Skoda"], "family": "MQB", "name": "MQB 5D", "aliases": ["MQB5D", "MQB IMMO 5D"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "vag_kessy": { "manufacturer_group": "Volkswagen Group", "marques": ["Volkswagen", "Audi", "SEAT", "Skoda", "Bentley", "Porsche"], "family": "KESSY", "name": "KESSY", "aliases": ["Keyless Entry and Start System"], "name_status": "confirmed", "detail_confidence": "research_required" },
+
+    "mercedes_fbs2": { "manufacturer_group": "Mercedes-Benz Group", "marques": ["Mercedes-Benz", "Smart"], "family": "FBS", "name": "FBS2", "aliases": ["FBS 2"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "mercedes_fbs3": { "manufacturer_group": "Mercedes-Benz Group", "marques": ["Mercedes-Benz", "Smart"], "family": "FBS", "name": "FBS3", "aliases": ["FBS 3"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "mercedes_fbs4": { "manufacturer_group": "Mercedes-Benz Group", "marques": ["Mercedes-Benz", "Smart"], "family": "FBS", "name": "FBS4", "aliases": ["FBS 4"], "name_status": "confirmed", "detail_confidence": "research_required" },
+
+    "ford_pats": { "manufacturer_group": "Ford Motor Company", "marques": ["Ford"], "family": "PATS", "name": "PATS", "aliases": ["Passive Anti-Theft System"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "ford_pats2": { "manufacturer_group": "Ford Motor Company", "marques": ["Ford"], "family": "PATS", "name": "PATS II", "aliases": ["PATS 2"], "name_status": "confirmed", "detail_confidence": "research_required" },
+
+    "psa_bsi": { "manufacturer_group": "Stellantis / PSA", "marques": ["Peugeot", "Citroen", "DS"], "family": "BSI", "name": "BSI", "aliases": ["Built-in Systems Interface", "Body Systems Interface"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "renault_uch": { "manufacturer_group": "Renault Group", "marques": ["Renault", "Dacia"], "family": "UCH", "name": "UCH", "aliases": ["Unite Centrale Habitacle", "Central Habitacle Unit"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "nissan_nats": { "manufacturer_group": "Nissan Motor Company", "marques": ["Nissan", "Infiniti"], "family": "NATS", "name": "NATS", "aliases": ["Nissan Anti-Theft System"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "toyota_immobiliser": { "manufacturer_group": "Toyota Motor Corporation", "marques": ["Toyota", "Lexus"], "family": "Toyota Immobiliser", "name": "Immobiliser System", "aliases": ["Engine Immobiliser System"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "toyota_smart_key": { "manufacturer_group": "Toyota Motor Corporation", "marques": ["Toyota", "Lexus"], "family": "Smart Key", "name": "Smart Key System", "aliases": ["Smart Entry and Start System"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "hyundai_kia_smartra": { "manufacturer_group": "Hyundai Motor Group", "marques": ["Hyundai", "Kia"], "family": "SMARTRA", "name": "SMARTRA", "aliases": ["Smart Transponder Antenna"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "hyundai_kia_smart_key": { "manufacturer_group": "Hyundai Motor Group", "marques": ["Hyundai", "Kia"], "family": "Smart Key", "name": "Smart Key System", "aliases": [], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "gm_vats": { "manufacturer_group": "General Motors", "marques": ["Vauxhall", "Opel", "Chevrolet", "Cadillac"], "family": "VATS", "name": "VATS", "aliases": ["Vehicle Anti-Theft System"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "gm_passkey": { "manufacturer_group": "General Motors", "marques": ["Vauxhall", "Opel", "Chevrolet", "Cadillac"], "family": "Pass-Key", "name": "Pass-Key", "aliases": ["PASS-Key"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "gm_passlock": { "manufacturer_group": "General Motors", "marques": ["Vauxhall", "Opel", "Chevrolet", "Cadillac"], "family": "Passlock", "name": "Passlock", "aliases": ["Pass-Lock"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "honda_immobilizer": { "manufacturer_group": "Honda Motor Company", "marques": ["Honda"], "family": "Honda Immobiliser", "name": "Immobiliser System", "aliases": ["Immobilizer System"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "jlr_kvm": { "manufacturer_group": "Jaguar Land Rover", "marques": ["Jaguar", "Land Rover", "Range Rover"], "family": "KVM", "name": "KVM", "aliases": ["Keyless Vehicle Module"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "volvo_cem": { "manufacturer_group": "Volvo Cars", "marques": ["Volvo"], "family": "CEM", "name": "CEM", "aliases": ["Central Electronic Module"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "fiat_code": { "manufacturer_group": "Stellantis / FCA", "marques": ["Fiat", "Alfa Romeo", "Abarth", "Lancia"], "family": "Fiat CODE", "name": "Fiat CODE", "aliases": ["CODE System"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "mitsubishi_etacs": { "manufacturer_group": "Mitsubishi Motors", "marques": ["Mitsubishi"], "family": "ETACS", "name": "ETACS", "aliases": ["Electronic Time and Alarm Control System"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "subaru_biU": { "manufacturer_group": "Subaru Corporation", "marques": ["Subaru"], "family": "BIU", "name": "BIU", "aliases": ["Body Integrated Unit"], "name_status": "confirmed", "detail_confidence": "research_required" },
+    "mazda_pats": { "manufacturer_group": "Mazda Motor Corporation", "marques": ["Mazda"], "family": "PATS", "name": "PATS", "aliases": ["Passive Anti-Theft System"], "name_status": "confirmed", "detail_confidence": "research_required" }
+  }
+}
