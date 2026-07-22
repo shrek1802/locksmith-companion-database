@@ -1,0 +1,48 @@
+{
+  "schema_version": "3.0-draft",
+  "category": "workshop_events",
+  "items": {
+    "we_vag_mqb45_im508s_add_key_001": {
+      "title": "MQB48 / MQB 4.5 add key with IM508S",
+      "market": "UK",
+      "steering_position": "RHD",
+      "platform_ids": ["vag_mqb48_mqb45"],
+      "job_type": "add_key",
+      "working_key_available": true,
+      "tool_ids": ["autel_im508s"],
+      "cluster_type": "v850_nec",
+      "result": "success",
+      "immo_acquisition_method": "obd",
+      "dealer_key_generation": {
+        "required": true,
+        "standard_add_key_route_generated_dealer_key": false,
+        "method": "Generate dealer key from the previously saved IMMO backup file, then return to the vehicle and complete Add Key programming"
+      },
+      "key_used": {
+        "manufacturer": "Xhorse",
+        "product": "B5 Green Super Remote",
+        "application": "MQB48",
+        "frequency": "434.42 MHz ASK",
+        "xhorse_id": "0535 446",
+        "status": "workshop_verified"
+      },
+      "workflow_step_ids": [
+        "step_read_immo_data",
+        "step_save_immo_backup",
+        "step_exit_add_key",
+        "step_open_saved_immo_file",
+        "step_generate_dealer_key",
+        "step_write_dealer_key",
+        "step_return_to_vehicle",
+        "step_program_key_obd"
+      ],
+      "notes": [
+        "The standard IM508S Add Key route did not generate the dealer key on this job.",
+        "The dealer key was generated successfully from the saved IMMO data file.",
+        "The Xhorse B5 Green Super Remote coded and worked correctly."
+      ],
+      "confidence": "workshop_verified",
+      "verified_at": "2026-07-22"
+    }
+  }
+}
