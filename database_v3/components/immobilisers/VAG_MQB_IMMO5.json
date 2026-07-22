@@ -1,6 +1,12 @@
 {
   "id": "VAG_MQB_IMMO5",
   "component_type": "immobiliser",
+  "revision": {
+    "version": 1,
+    "updated_at": "2026-07-22",
+    "change_summary": "Migrated MQB immobiliser family to evidence-aware V3 schema",
+    "supersedes": null
+  },
   "data": {
     "immobiliser": {
       "family": "MQB",
@@ -16,5 +22,16 @@
       "mac_required": false
     }
   },
-  "verification": {"status": "provisional", "confidence": "medium", "sources": []}
+  "compatibility": {
+    "applies_to": [{"platform": "MQB", "market": "UK"}],
+    "exclusions": [],
+    "conditions": ["Confirm cluster, KESSY and immobiliser configuration before applying programming guidance"]
+  },
+  "verification": {
+    "status": "provisional",
+    "confidence": "medium",
+    "last_checked": null,
+    "sources": [],
+    "workshop_history": []
+  }
 }
