@@ -1,12 +1,13 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "updated_at": "2026-07-23",
-  "scope": "UK-market Volkswagen Group model-family to immobiliser-system mapping",
+  "scope": "UK-market Volkswagen Group and related Bentley/Porsche model-family to immobiliser-system mapping",
   "mapping_status": "family_scope",
   "notes": [
     "These mappings connect each existing model family to the immobiliser systems it may use across its UK generations.",
     "The exact fitted system must be resolved by generation, build date, platform, cluster type and VIN before a workflow is recommended.",
-    "A model-family link does not verify a programming procedure, tool, key, cable or AKL route."
+    "A model-family link does not verify a programming procedure, tool, key, cable or AKL route.",
+    "Bentley and Porsche are included where Volkswagen Group immobiliser or KESSY architecture is applicable; legacy or marque-specific systems remain unmapped until separately verified."
   ],
   "systems": {
     "vag_immo2": "IMMO 2",
@@ -88,6 +89,46 @@
         "rapid": ["vag_immo4", "vag_immo5"],
         "superb": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
         "scala": ["vag_mqb48_mqb45", "vag_mqb_5c"]
+      }
+    },
+    "bentley": {
+      "name": "Bentley",
+      "models": {
+        "arnage": [],
+        "bentayga": ["vag_immo5", "vag_kessy"],
+        "continental": ["vag_immo4", "vag_immo5", "vag_kessy"],
+        "flying_spur": ["vag_immo4", "vag_immo5", "vag_kessy"],
+        "mulsanne": ["vag_kessy"]
+      },
+      "notes": {
+        "arnage": "Legacy Bentley/Rolls-Royce-derived security architecture; do not inherit VAG workflow without separate verification.",
+        "mulsanne": "KESSY association requires generation and fitted-hardware confirmation before workflow selection."
+      }
+    },
+    "porsche": {
+      "name": "Porsche",
+      "models": {
+        "718": ["vag_kessy"],
+        "911": ["vag_kessy"],
+        "924": [],
+        "944": [],
+        "968": [],
+        "boxster": ["vag_kessy"],
+        "cayenne": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_kessy"],
+        "cayman": ["vag_kessy"],
+        "macan": ["vag_immo5", "vag_kessy"],
+        "panamera": ["vag_immo5", "vag_kessy"],
+        "taycan": ["vag_kessy"]
+      },
+      "notes": {
+        "924": "Legacy Porsche system; outside the current VAG immobiliser families.",
+        "944": "Legacy Porsche system; outside the current VAG immobiliser families.",
+        "968": "Legacy Porsche system; outside the current VAG immobiliser families.",
+        "718": "Marque-specific immobiliser implementation may sit behind KESSY/keyless functions; verify exact generation and module.",
+        "911": "Spans many generations; do not infer one VAG workflow from the model-family link.",
+        "boxster": "Spans multiple generations; exact immobiliser architecture must be resolved before workflow selection.",
+        "cayman": "Spans multiple generations; exact immobiliser architecture must be resolved before workflow selection.",
+        "taycan": "Later electronic architecture requires separate verified procedure data."
       }
     }
   },
