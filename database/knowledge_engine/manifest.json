@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0-draft",
-  "updated_at": "2026-07-22",
+  "updated_at": "2026-07-23",
   "name": "Locksmith Knowledge Engine",
   "scope": "UK auto locksmith workflows only",
   "principles": [
@@ -11,13 +11,14 @@
   ],
   "object_types": {
     "platform_profiles": "platform_profiles.json",
-    "immobiliser_systems": "immobiliser_systems.json",
     "workshop_events": "workshop_events.json",
     "workshop_insights": "workshop_insights.json",
     "key_profiles": "key_profiles.json",
     "compatibility_rules": "compatibility_rules.json",
     "procedure_steps": "procedure_steps.json",
-    "decision_rules": "decision_rules.json"
+    "decision_rules": "decision_rules.json",
+    "immobiliser_systems": "immobiliser_systems.json",
+    "bmw_group_immobiliser_mappings": "bmw_group_immobiliser_mappings.json"
   },
   "confidence_levels": {
     "workshop_verified": "Confirmed by a completed workshop job",
