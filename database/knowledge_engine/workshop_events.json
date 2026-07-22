@@ -9,7 +9,7 @@
       "platform_ids": ["vag_mqb48_mqb45"],
       "job_type": "add_key",
       "working_key_available": true,
-      "tool_ids": ["autel_im508s"],
+      "tool_ids": ["tool_autel_im508s"],
       "cluster_type": "v850_nec",
       "result": "success",
       "immo_acquisition_method": "obd",
@@ -19,6 +19,7 @@
         "method": "Generate dealer key from the previously saved IMMO backup file, then return to the vehicle and complete Add Key programming"
       },
       "key_used": {
+        "key_profile_id": "key_xhorse_b5_green_mqb48",
         "manufacturer": "Xhorse",
         "product": "B5 Green Super Remote",
         "application": "MQB48",
