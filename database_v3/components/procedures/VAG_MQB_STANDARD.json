@@ -1,13 +1,94 @@
 {
   "id": "VAG_MQB_STANDARD",
   "component_type": "procedure",
+  "revision": {
+    "version": 2,
+    "updated_at": "2026-07-22",
+    "change_summary": "Migrated shared MQB programming procedure to revisioned compatibility and workshop verification structure",
+    "supersedes": null
+  },
   "data": {
     "programming": {
-      "spare_key": {"supported": true, "method": "OBD", "obd": true, "bench": false, "eeprom": false, "working_key_required": true, "dealer_key_required": false, "online_required": false, "battery_support_recommended": true, "estimated_time": "15-30 minutes", "notes": "Configuration-dependent; verify tool coverage before work"},
-      "add_key": {"supported": true, "method": "OBD", "obd": true, "bench": false, "eeprom": false, "working_key_required": true, "dealer_key_required": false, "online_required": false, "battery_support_recommended": true, "estimated_time": "15-30 minutes", "notes": "All keys may need to be present depending on procedure"},
-      "all_keys_lost": {"supported": "configuration_dependent", "method": "Sync-data or module-read method may be required", "obd": "configuration_dependent", "bench": "configuration_dependent", "eeprom": "configuration_dependent", "working_key_required": false, "dealer_key_required": "configuration_dependent", "online_required": false, "battery_support_recommended": true, "estimated_time": null, "notes": "Do not assume universal AKL support across MQB clusters and tool versions"},
-      "remote_programming": {"supported": "usually_with_key_learning", "method": "Integrated with immobiliser key learning", "obd": true, "bench": false, "eeprom": false, "working_key_required": "configuration_dependent", "dealer_key_required": false, "online_required": false, "battery_support_recommended": true, "estimated_time": null, "notes": null}
+      "spare_key": {
+        "supported": "configuration_dependent",
+        "method": "OBD where supported by the exact cluster, immobiliser and tool combination",
+        "obd": "configuration_dependent",
+        "bench": false,
+        "eeprom": false,
+        "working_key_required": true,
+        "dealer_key_required": "configuration_dependent",
+        "online_required": "configuration_dependent",
+        "battery_support_recommended": true,
+        "estimated_time": null,
+        "notes": "Verify exact model year, cluster family, key type and current tool coverage before starting. Keep all available keys present."
+      },
+      "add_key": {
+        "supported": "configuration_dependent",
+        "method": "OBD or tool-specific MQB procedure",
+        "obd": "configuration_dependent",
+        "bench": false,
+        "eeprom": false,
+        "working_key_required": true,
+        "dealer_key_required": "configuration_dependent",
+        "online_required": "configuration_dependent",
+        "battery_support_recommended": true,
+        "estimated_time": null,
+        "notes": "Some procedures relearn every key. Do not begin unless all required keys and regulated battery support are available."
+      },
+      "all_keys_lost": {
+        "supported": "configuration_dependent",
+        "method": "Tool-specific sync-data, cluster, immobiliser or module-read procedure may be required",
+        "obd": "configuration_dependent",
+        "bench": "configuration_dependent",
+        "eeprom": "configuration_dependent",
+        "working_key_required": false,
+        "dealer_key_required": "configuration_dependent",
+        "online_required": "configuration_dependent",
+        "battery_support_recommended": true,
+        "estimated_time": null,
+        "notes": "Never infer universal AKL support from another MQB vehicle. Confirm exact cluster, immobiliser generation, key type, adapters and software version."
+      },
+      "remote_programming": {
+        "supported": "configuration_dependent",
+        "method": "Usually integrated with immobiliser key learning when supported",
+        "obd": "configuration_dependent",
+        "bench": false,
+        "eeprom": false,
+        "working_key_required": "configuration_dependent",
+        "dealer_key_required": false,
+        "online_required": "configuration_dependent",
+        "battery_support_recommended": true,
+        "estimated_time": null,
+        "notes": "Verify remote frequency, button layout and part compatibility separately from transponder learning."
+      }
     }
   },
-  "verification": {"status": "provisional", "confidence": "medium", "sources": []}
+  "compatibility": {
+    "applies_to": [
+      {
+        "platform_id": "VAG_MQB",
+        "market": "UK",
+        "steering": "RHD",
+        "relationship": "shared_procedure_family"
+      }
+    ],
+    "exclusions": [
+      {
+        "condition": "MQB A0, MQB Evo, IMMO5C, IMMO5D or other later security variant confirmed",
+        "action": "Use a more specific procedure component"
+      }
+    ],
+    "conditions": [
+      "Exact support depends on model, year, cluster, immobiliser generation, key system, tool and software version",
+      "Related-platform workshop evidence is advisory and is not exact-vehicle verification",
+      "Battery support is required for safe professional workflow"
+    ]
+  },
+  "verification": {
+    "status": "provisional",
+    "confidence": "medium",
+    "last_checked": "2026-07-22",
+    "sources": [],
+    "workshop_history": []
+  }
 }
