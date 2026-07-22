@@ -1,6 +1,12 @@
 {
   "id": "VAG_MQB_RHD_GENERIC",
   "component_type": "locations",
+  "revision": {
+    "version": 1,
+    "updated_at": "2026-07-22",
+    "change_summary": "Migrated generic UK/RHD MQB locations to evidence-aware V3 schema",
+    "supersedes": null
+  },
   "data": {
     "locations": {
       "obd": "RHD lower dashboard on driver side; exact trim position is model-specific",
@@ -13,5 +19,16 @@
       "fuse_box": null
     }
   },
-  "verification": {"status": "provisional", "confidence": "low", "sources": []}
+  "compatibility": {
+    "applies_to": [{"platform": "MQB", "market": "UK", "steering": "RHD"}],
+    "exclusions": [],
+    "conditions": ["Generic location guidance must not replace a model-specific verified location"]
+  },
+  "verification": {
+    "status": "provisional",
+    "confidence": "low",
+    "last_checked": null,
+    "sources": [],
+    "workshop_history": []
+  }
 }
