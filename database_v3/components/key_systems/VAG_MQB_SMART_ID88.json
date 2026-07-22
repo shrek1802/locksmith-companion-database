@@ -1,6 +1,12 @@
 {
   "id": "VAG_MQB_SMART_ID88",
   "component_type": "key_system",
+  "revision": {
+    "version": 1,
+    "updated_at": "2026-07-22",
+    "change_summary": "Migrated MQB smart-key system to evidence-aware V3 schema",
+    "supersedes": null
+  },
   "data": {
     "key": {
       "type": "Smart Key",
@@ -12,5 +18,16 @@
       "aftermarket_keys": ["Xhorse", "KeyDIY"]
     }
   },
-  "verification": {"status": "provisional", "confidence": "medium", "sources": []}
+  "compatibility": {
+    "applies_to": [{"platform": "MQB", "market": "UK", "key_system": "smart"}],
+    "exclusions": [{"key_system": "blade_key"}],
+    "conditions": ["Confirm frequency, button count and keyless configuration for the exact vehicle"]
+  },
+  "verification": {
+    "status": "provisional",
+    "confidence": "medium",
+    "last_checked": null,
+    "sources": [],
+    "workshop_history": []
+  }
 }
