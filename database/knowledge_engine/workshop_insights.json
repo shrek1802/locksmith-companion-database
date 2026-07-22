@@ -1,0 +1,17 @@
+{
+  "schema_version": "3.0-draft",
+  "category": "workshop_insights",
+  "items": {
+    "insight_mqb45_im508s_dealer_key": {
+      "title": "IM508S may require dealer-key generation from saved IMMO data on MQB 4.5",
+      "platform_ids": ["vag_mqb48_mqb45"],
+      "job_types": ["add_key"],
+      "tool_ids": ["autel_im508s"],
+      "trigger": "The standard Add Key routine does not generate the dealer key",
+      "recommendation": "Save the IMMO backup, exit Add Key, open the saved IMMO file, generate and write the dealer key, then return to the vehicle and complete Add Key programming",
+      "why": "This route was required on a successful workshop job when the normal Add Key path did not generate the dealer key",
+      "evidence_event_ids": ["we_vag_mqb45_im508s_add_key_001"],
+      "confidence": "workshop_verified"
+    }
+  }
+}
