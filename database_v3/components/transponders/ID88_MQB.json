@@ -1,6 +1,46 @@
 {
   "id": "ID88_MQB",
   "component_type": "transponder",
-  "data": {"key": {"transponder": "ID88 MQB"}},
-  "verification": {"status": "provisional", "confidence": "medium", "sources": []}
+  "revision": {
+    "version": 2,
+    "updated_at": "2026-07-22",
+    "change_summary": "Migrated MQB ID88 transponder component to revisioned compatibility and workshop verification structure",
+    "supersedes": null
+  },
+  "data": {
+    "key": {
+      "transponder": "ID88 MQB",
+      "transponder_family": "ID88",
+      "preparation": "configuration_dependent",
+      "clone_support": "unknown",
+      "notes": "Confirm the exact key system, vehicle generation and tool preparation method before generating or programming a key."
+    }
+  },
+  "compatibility": {
+    "applies_to": [
+      {
+        "platform_id": "VAG_MQB",
+        "relationship": "commonly_associated",
+        "market": "UK"
+      }
+    ],
+    "exclusions": [
+      {
+        "condition": "A different transponder generation or later MQB security system is confirmed",
+        "action": "Reference the exact transponder component instead"
+      }
+    ],
+    "conditions": [
+      "ID88 family naming alone does not prove compatibility with every MQB vehicle",
+      "Remote frequency, key part number and transponder preparation must be verified separately",
+      "Related-platform evidence must not be presented as exact-model verification"
+    ]
+  },
+  "verification": {
+    "status": "provisional",
+    "confidence": "medium",
+    "last_checked": "2026-07-22",
+    "sources": [],
+    "workshop_history": []
+  }
 }
