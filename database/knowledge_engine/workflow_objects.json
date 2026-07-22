@@ -1,0 +1,109 @@
+{
+  "schema_version": "3.0-draft",
+  "updated_at": "2026-07-23",
+  "category": "workflow_objects",
+  "scope": "Reusable UK auto-locksmith workflow definitions referenced by vehicles, platforms and decision rules",
+  "notes": [
+    "Workflow objects prevent procedures being duplicated across multiple vehicle records.",
+    "A vehicle may reference a workflow only after its exact platform, immobiliser system and fitted hardware have been resolved.",
+    "Tool support, key compatibility and procedure confidence are evaluated independently.",
+    "Research-required objects must not be presented as confirmed workshop instructions."
+  ],
+  "items": {
+    "workflow_mqb48_add_key_autel_analogue": {
+      "title": "MQB48 / MQB 4.5 Add Key — Autel IM508S — analogue or mono V850/NEC dashboard",
+      "job_type": "add_key",
+      "platform_ids": ["vag_mqb48_mqb45"],
+      "tool_ids": ["autel_im508s"],
+      "requirements": {
+        "working_key": true,
+        "dashboard_types": ["analogue_or_mono_v850_nec"],
+        "vehicle_connection": "obd",
+        "battery_support_recommended": true,
+        "saved_immo_backup_required": true,
+        "internet_requirement": "research_required",
+        "adapter_requirements": []
+      },
+      "immo_acquisition": {
+        "preferred_method": "obd",
+        "available_methods": ["obd", "key_read", "bench_dash_read"],
+        "reason": "The completed workshop job successfully acquired immobiliser data through OBD from the analogue/mono dashboard route."
+      },
+      "procedure_step_ids": [
+        "step_read_immo_data",
+        "step_save_immo_backup",
+        "step_exit_add_key",
+        "step_open_saved_immo_file",
+        "step_generate_dealer_key",
+        "step_write_dealer_key",
+        "step_return_to_vehicle",
+        "step_program_key_obd"
+      ],
+      "compatible_key_profile_ids": ["key_xhorse_b5_green_mqb48"],
+      "warnings": [
+        "Generate the dealer key from the saved IMMO backup rather than relying on the standard Add Key routine to generate it.",
+        "Verify the saved IMMO backup before leaving the read routine.",
+        "Do not apply this exact route to a Virtual Cockpit or Active Info Display vehicle."
+      ],
+      "evidence": {
+        "type": "completed_workshop_job",
+        "result": "success",
+        "notes": "Xhorse B5 Green Super Remote programmed and worked correctly using the saved-IMMO dealer-key route."
+      },
+      "confidence": "workshop_verified"
+    },
+    "workflow_mqb48_immo_from_key_virtual_cockpit": {
+      "title": "MQB48 / MQB 4.5 IMMO acquisition from working key — Virtual Cockpit",
+      "job_type": "immo_data_acquisition",
+      "platform_ids": ["vag_mqb48_mqb45"],
+      "requirements": {
+        "working_key": true,
+        "dashboard_types": ["virtual_cockpit_active_info_display"]
+      },
+      "immo_acquisition": {
+        "preferred_method": "key_read",
+        "available_methods": ["key_read", "bench_dash_read"],
+        "excluded_methods": ["obd"],
+        "reason": "OBD immobiliser-data acquisition is not supported for this dashboard branch."
+      },
+      "warnings": [
+        "This object confirms the acquisition route only; it does not yet define a complete workshop-verified Add Key procedure.",
+        "Confirm tool support for the exact key-read or bench method before starting."
+      ],
+      "confidence": "community_verified"
+    },
+    "workflow_mqb48_akl": {
+      "title": "MQB48 / MQB 4.5 All Keys Lost",
+      "job_type": "all_keys_lost",
+      "platform_ids": ["vag_mqb48_mqb45"],
+      "status": "research_required",
+      "requirements": {
+        "working_key": false
+      },
+      "warnings": [
+        "No complete workshop-verified MQB48 / MQB 4.5 all-keys-lost procedure has been recorded.",
+        "Do not convert the verified Add Key route into an AKL recommendation."
+      ],
+      "confidence": "research_required"
+    },
+    "workflow_mqb5d_key_selection": {
+      "title": "MQB 5D compatible key selection",
+      "job_type": "key_selection",
+      "platform_ids": ["vag_mqb_5d"],
+      "compatible_key_profile_ids": [
+        "key_oem_mqb_5d",
+        "key_xhorse_vvdi_5d_dedicated",
+        "key_keydiy_kd_fgb_series"
+      ],
+      "rules": {
+        "vehicle_correct_variant_required": true,
+        "reject_generic_unverified_keys": true
+      },
+      "warnings": [
+        "Key compatibility does not by itself confirm Add Key or AKL tool support.",
+        "Match frequency, button layout, part family and vehicle application before use."
+      ],
+      "confidence": "community_verified"
+    }
+  }
+}
