@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Lightweight integrity checks for Database V3 without external dependencies."""
+"""Integrity and evidence-safety checks for Database V3."""
 from __future__ import annotations
 
 import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+VALID_STATUSES = {"unverified", "provisional", "source_verified", "workshop_verified", "verified"}
+VALID_RESULTS = {"success", "partial", "failed", "not_attempted"}
 
 
 def load(path: Path):
@@ -17,6 +19,8 @@ def main() -> None:
     component_ids = set()
     component_types = {}
     errors = []
+    warnings = []
+
     for path in (ROOT / "components").rglob("*.json"):
         item = load(path)
         item_id = item.get("id")
@@ -27,6 +31,29 @@ def main() -> None:
             errors.append(f"Duplicate component id: {item_id}")
         component_ids.add(item_id)
         component_types[item_id] = item.get("component_type")
+
+        verification = item.get("verification", {})
+        status = verification.get("status", "unverified")
+        history = verification.get("workshop_history", [])
+        if status not in VALID_STATUSES:
+            errors.append(f"{item_id}: invalid verification status {status}")
+        if status == "workshop_verified" and not history:
+            errors.append(f"{item_id}: workshop_verified requires workshop_history")
+        if status != "workshop_verified" and history:
+            warnings.append(f"{item_id}: workshop history exists but status is {status}")
+        for event in history:
+            result = event.get("result")
+            if result not in VALID_RESULTS:
+                errors.append(f"{item_id}: invalid workshop result {result}")
+            vehicle = event.get("vehicle", {})
+            if vehicle.get("market") != "UK" or vehicle.get("steering") != "RHD":
+                errors.append(f"{item_id}: workshop event must identify UK/RHD vehicle")
+            tool = event.get("tool", {})
+            if not tool.get("manufacturer") or not tool.get("model"):
+                errors.append(f"{item_id}: workshop event requires exact tool manufacturer/model")
+        if "revision" not in item:
+            warnings.append(f"{item_id}: legacy component has no revision block yet")
+
     required_refs = {"platform", "immobiliser", "key_system", "blade", "transponder", "procedure", "tool_coverage", "locations"}
     vehicle_ids = set()
     for path in (ROOT / "vehicles").rglob("*.json"):
@@ -47,6 +74,10 @@ def main() -> None:
         vehicle = item.get("vehicle", {})
         if vehicle.get("market") != "UK" or vehicle.get("steering") != "RHD":
             errors.append(f"{vehicle_id}: must be UK/RHD")
+
+    if warnings:
+        print("Warnings:")
+        print("\n".join(f"- {warning}" for warning in warnings))
     if errors:
         raise SystemExit("\n".join(errors))
     print(f"Validated {len(component_ids)} components and {len(vehicle_ids)} vehicles")
