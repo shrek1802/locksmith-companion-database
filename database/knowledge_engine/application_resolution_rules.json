@@ -1,0 +1,151 @@
+{
+  "schema_version": "3.0-draft",
+  "updated_at": "2026-07-23",
+  "category": "application_resolution_rules",
+  "scope": "UK-market vehicle-to-platform resolution and recommendation guardrails",
+  "principles": [
+    "Do not recommend a workflow from manufacturer and model name alone.",
+    "Resolve generation, production year, key type and relevant module variant before presenting a programming route.",
+    "A platform-family match is not proof of tool support, key compatibility or a complete procedure.",
+    "Where evidence is incomplete, return research_required rather than guessing."
+  ],
+  "items": {
+    "resolve_vag_legacy_immo": {
+      "platform_ids": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5"],
+      "required_inputs": ["marque", "model", "generation_or_platform", "production_year", "key_system", "working_key_available", "job_type"],
+      "additional_checks": ["instrument_cluster_or_kessy_variant", "transponder_family", "pin_cs_or_component_security_requirement"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_vag_mqb": {
+      "platform_ids": ["vag_mqb48_mqb45", "vag_mqb_5c", "vag_mqb_5d"],
+      "required_inputs": ["marque", "model", "generation_or_platform", "production_year", "dashboard_type", "key_system", "working_key_available", "job_type", "tool_id"],
+      "additional_checks": ["analogue_or_virtual_cluster", "blade_or_kessy", "key_frequency", "exact_aftermarket_key_application", "online_or_token_requirement"],
+      "block_recommendation_when_missing": true,
+      "confidence": "community_verified"
+    },
+    "resolve_vag_kessy": {
+      "platform_ids": ["vag_kessy"],
+      "required_inputs": ["marque", "model", "generation_or_platform", "production_year", "kessy_module_part_number", "working_key_available", "job_type"],
+      "additional_checks": ["module_generation", "key_frequency", "pin_cs_or_security_data_route", "used_module_status"],
+      "block_recommendation_when_missing": true,
+      "warnings": ["Do not transfer a Bentley, Porsche, Audi or Volkswagen KESSY procedure solely because the module family name is shared."],
+      "confidence": "research_required"
+    },
+    "resolve_bmw_ews": {
+      "platform_ids": ["bmw_ews2", "bmw_ews3", "bmw_ews4"],
+      "required_inputs": ["marque", "model", "chassis_code", "production_year", "ews_generation", "working_key_available", "job_type"],
+      "additional_checks": ["ews_module_variant", "mcu_or_eeprom", "key_slot_or_transponder_position", "bench_adapter"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_bmw_cas": {
+      "platform_ids": ["bmw_cas1", "bmw_cas2", "bmw_cas3", "bmw_cas3_plus", "bmw_cas4", "bmw_cas4_plus"],
+      "required_inputs": ["marque", "model", "chassis_code", "production_year", "cas_generation", "working_key_available", "job_type", "tool_id"],
+      "additional_checks": ["istap_or_software_level_where_relevant", "encrypted_or_unencrypted_variant", "obd_or_bench_route", "key_frequency", "battery_support"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_bmw_fem_bdc": {
+      "platform_ids": ["bmw_fem", "bmw_bdc", "bmw_bdc2", "bmw_bdc3"],
+      "required_inputs": ["marque", "model", "chassis_code", "production_year", "module_generation", "working_key_available", "job_type", "tool_id"],
+      "additional_checks": ["module_software_level", "unlock_or_preprocessing_requirement", "obd_or_bench_route", "online_requirement", "battery_support"],
+      "block_recommendation_when_missing": true,
+      "warnings": ["Do not apply FEM or first-generation BDC procedures to BDC2 or BDC3 without exact tool and vehicle confirmation."],
+      "confidence": "research_required"
+    },
+    "resolve_mercedes_fbs": {
+      "platform_ids": ["mercedes_fbs2", "mercedes_fbs3", "mercedes_fbs4"],
+      "required_inputs": ["model", "chassis_code", "production_year", "fbs_generation", "key_type", "working_key_available", "job_type", "tool_id"],
+      "additional_checks": ["eis_ezs_part_number", "esl_elv_variant", "ecu_or_tcu_personalisation_scope", "password_or_key_data_route", "online_authorisation_requirement"],
+      "block_recommendation_when_missing": true,
+      "warnings": ["FBS4 must remain separated from FBS3 workflows unless manufacturer or exact-tool evidence confirms the route."],
+      "confidence": "research_required"
+    },
+    "resolve_ford_pats": {
+      "platform_ids": ["ford_pats", "ford_pats2"],
+      "required_inputs": ["model", "generation_or_platform", "production_year", "key_type", "working_key_available", "job_type", "tool_id"],
+      "additional_checks": ["pats_module_location", "incode_outcode_or_online_security", "minimum_key_count", "remote_learning_method", "gateway_or_fdrs_requirement"],
+      "block_recommendation_when_missing": true,
+      "warnings": ["Do not describe newer Ford online-authorised workflows as a generic timed-access PATS procedure."],
+      "confidence": "research_required"
+    },
+    "resolve_psa_bsi": {
+      "platform_ids": ["psa_bsi"],
+      "required_inputs": ["marque", "model", "generation_or_platform", "production_year", "bsi_manufacturer_and_part_number", "key_type", "working_key_available", "job_type"],
+      "additional_checks": ["pin_availability", "bsi_eeprom_or_mcu", "blade_or_proximity", "esl_elv_presence", "used_module_status"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_renault_uch": {
+      "platform_ids": ["renault_uch"],
+      "required_inputs": ["marque", "model", "generation_or_platform", "production_year", "uch_variant", "key_or_card_type", "working_key_available", "job_type"],
+      "additional_checks": ["pin_or_isk_route", "blade_or_card_or_hands_free", "gateway_or_sgw", "bypass_cable", "online_requirement"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_nissan_nats": {
+      "platform_ids": ["nissan_nats"],
+      "required_inputs": ["marque", "model", "generation_or_platform", "production_year", "nats_or_bcm_variant", "key_type", "working_key_available", "job_type"],
+      "additional_checks": ["pin_or_seed_route", "bcm_part_number", "blade_or_intelligent_key", "gateway_or_bypass_cable", "minimum_key_count"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_toyota_immobiliser": {
+      "platform_ids": ["toyota_immobiliser", "toyota_smart_key"],
+      "required_inputs": ["marque", "model", "generation_or_platform", "production_year", "key_system", "working_key_available", "job_type", "tool_id"],
+      "additional_checks": ["blade_or_smart_key", "immobiliser_box_or_certification_ecu", "seed_or_online_authorisation", "ecu_replacement_or_reset_scope", "key_frequency"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_hyundai_kia": {
+      "platform_ids": ["hyundai_kia_smartra", "hyundai_kia_smart_key"],
+      "required_inputs": ["marque", "model", "generation_or_platform", "production_year", "key_system", "working_key_available", "job_type"],
+      "additional_checks": ["pin_requirement", "blade_or_smart_key", "smartra_or_smk_module", "key_frequency", "online_requirement"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_jlr_kvm": {
+      "platform_ids": ["jlr_kvm"],
+      "required_inputs": ["marque", "model", "platform_code", "production_year", "kvm_part_number", "working_key_available", "job_type", "tool_id"],
+      "additional_checks": ["legacy_or_new_kvm_generation", "rfa_or_bcm_relationship", "obd_or_bench_route", "key_frequency", "security_gateway_or_online_requirement"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_volvo_cem": {
+      "platform_ids": ["volvo_cem"],
+      "required_inputs": ["model", "platform_code", "production_year", "cem_variant", "key_type", "working_key_available", "job_type"],
+      "additional_checks": ["cem_location", "mcu_or_eeprom", "obd_or_module_read", "key_frequency", "online_requirement"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_fiat_code": {
+      "platform_ids": ["fiat_code"],
+      "required_inputs": ["marque", "model", "generation_or_platform", "production_year", "body_computer_variant", "key_type", "working_key_available", "job_type"],
+      "additional_checks": ["pin_or_code_card_requirement", "bsi_or_body_computer_eeprom", "blade_or_proximity", "sgw_presence", "bypass_cable_or_authorised_access"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_mitsubishi_etacs": {
+      "platform_ids": ["mitsubishi_etacs"],
+      "required_inputs": ["model", "generation_or_platform", "production_year", "etacs_variant", "key_type", "working_key_available", "job_type"],
+      "additional_checks": ["pin_or_security_code", "blade_or_fast_key", "etacs_part_number", "key_frequency", "online_requirement"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_subaru_biu": {
+      "platform_ids": ["subaru_biU"],
+      "required_inputs": ["model", "generation_or_platform", "production_year", "biu_variant", "key_type", "working_key_available", "job_type"],
+      "additional_checks": ["blade_or_proximity", "security_id_or_online_requirement", "ecu_biu_matching_scope", "key_frequency"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    },
+    "resolve_mazda_pats": {
+      "platform_ids": ["mazda_pats"],
+      "required_inputs": ["model", "generation_or_platform", "production_year", "pats_variant", "key_type", "working_key_available", "job_type"],
+      "additional_checks": ["incode_outcode_or_online_route", "blade_or_advanced_key", "minimum_key_count", "remote_learning_method"],
+      "block_recommendation_when_missing": true,
+      "confidence": "research_required"
+    }
+  }
+}
