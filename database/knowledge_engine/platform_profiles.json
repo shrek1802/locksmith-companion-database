@@ -1,17 +1,27 @@
 {
   "schema_version": "3.0-draft",
+  "updated_at": "2026-07-23",
   "category": "platform_profiles",
+  "notes": [
+    "Profiles are reusable knowledge objects and not blanket procedure claims.",
+    "Only workshop-verified capabilities may drive an automatic recommendation without an additional evidence check.",
+    "Research-required profiles must be resolved to an exact vehicle, generation and fitted hardware before use."
+  ],
   "items": {
     "vag_mqb48_mqb45": {
       "name": "VAG MQB48 / MQB 4.5",
       "market": "UK",
       "scope": "Auto locksmith key and immobiliser workflows",
+      "job_types": ["add_key", "all_keys_lost", "module_replacement"],
+      "acquisition_methods": ["obd", "working_key_read", "bench_dash_read"],
+      "tool_profile_ids": ["tool_autel_im508s"],
       "verified_capabilities": [
         {
           "id": "add_key_im508s_analogue_working_key",
           "label": "Add Key with IM508S, working key and analogue/mono V850-NEC dashboard",
           "confidence": "workshop_verified",
-          "workshop_event_ids": ["we_vag_mqb45_im508s_add_key_001"]
+          "workshop_event_ids": ["we_vag_mqb45_im508s_add_key_001"],
+          "workflow_object_ids": ["workflow_mqb48_add_key_autel_analogue_working_key"]
         },
         {
           "id": "mqb48_b5_green_remote",
@@ -23,37 +33,176 @@
           "id": "virtual_cockpit_no_obd_immo",
           "label": "Virtual Cockpit / Active Info Display excludes OBD IMMO acquisition",
           "confidence": "workshop_verified",
-          "decision_rule_ids": ["decision_mqb45_cluster_read_route"]
+          "decision_rule_ids": ["decision_mqb45_cluster_read_route"],
+          "workflow_object_ids": ["workflow_mqb48_virtual_cockpit_immo_acquisition"]
         }
       ],
-      "verification_gaps": [
-        {
-          "id": "all_keys_lost",
-          "label": "All Keys Lost procedure",
-          "status": "research_required"
-        },
-        {
-          "id": "virtual_cockpit_full_workflow",
-          "label": "Complete Virtual Cockpit Add Key workflow",
-          "status": "research_required"
-        },
-        {
-          "id": "additional_tools",
-          "label": "Verified workflows for tools other than Autel IM508S",
-          "status": "research_required"
-        },
-        {
-          "id": "vehicle_application_matrix",
-          "label": "Verified vehicle, year and dashboard application matrix",
-          "status": "research_required"
-        },
-        {
-          "id": "internet_and_power_requirements",
-          "label": "Internet, battery support and adapter requirements",
-          "status": "research_required"
-        }
-      ],
+      "verification_gaps": ["all_keys_lost", "virtual_cockpit_full_workflow", "additional_tools", "vehicle_application_matrix", "internet_and_power_requirements"],
+      "confidence": "workshop_verified",
       "last_verified": "2026-07-22"
+    },
+    "vag_mqb_5c": {
+      "name": "VAG MQB 5C",
+      "market": "UK",
+      "immobiliser_system_ids": ["vag_mqb_5c"],
+      "job_types": ["add_key", "all_keys_lost", "module_replacement"],
+      "resolution_requirements": ["model generation", "build date", "cluster or BCM variant", "keyless status", "tool and adapter"],
+      "workflow_object_ids": [],
+      "key_profile_ids": [],
+      "tool_profile_ids": [],
+      "confidence": "research_required"
+    },
+    "vag_mqb_5d": {
+      "name": "VAG MQB 5D",
+      "market": "UK",
+      "immobiliser_system_ids": ["vag_mqb_5d"],
+      "job_types": ["add_key", "all_keys_lost", "module_replacement"],
+      "resolution_requirements": ["model generation", "build date", "fitted immobiliser hardware", "keyless status", "tool and adapter"],
+      "workflow_object_ids": ["workflow_mqb5d_key_selection"],
+      "key_profile_ids": ["key_oem_mqb_5d", "key_xhorse_vvdi_5d_dedicated", "key_keydiy_kd_fgb_series"],
+      "tool_profile_ids": [],
+      "confidence": "community_verified"
+    },
+    "vag_kessy": {
+      "name": "Volkswagen Group KESSY",
+      "market": "UK",
+      "immobiliser_system_ids": ["vag_kessy"],
+      "marques": ["Volkswagen", "Audi", "SEAT", "Skoda", "Bentley", "Porsche"],
+      "job_types": ["add_key", "all_keys_lost", "module_replacement"],
+      "resolution_requirements": ["marque and model", "generation", "KESSY part number", "key frequency", "fitted hardware and EEPROM or MCU family"],
+      "warnings": ["Do not share workflows between Bentley, Porsche and mainstream VAG applications without exact hardware confirmation."],
+      "confidence": "research_required"
+    },
+    "bmw_ews": {
+      "name": "BMW EWS Family",
+      "market": "UK",
+      "immobiliser_system_ids": ["bmw_ews2", "bmw_ews3", "bmw_ews4"],
+      "job_types": ["add_key", "all_keys_lost", "module_replacement", "dme_dde_alignment"],
+      "resolution_requirements": ["exact EWS generation", "vehicle chassis", "module MCU or EEPROM", "key transponder type", "available programmer"],
+      "confidence": "research_required"
+    },
+    "bmw_cas": {
+      "name": "BMW/MINI CAS Family",
+      "market": "UK",
+      "immobiliser_system_ids": ["bmw_cas1", "bmw_cas2", "bmw_cas3", "bmw_cas3_plus", "bmw_cas4", "bmw_cas4_plus"],
+      "job_types": ["add_key", "all_keys_lost", "module_replacement", "dme_dde_alignment"],
+      "resolution_requirements": ["exact CAS generation", "vehicle chassis", "encrypted or non-encrypted variant", "key slot or comfort access", "module read method"],
+      "confidence": "research_required"
+    },
+    "bmw_fem": {
+      "name": "BMW/MINI FEM",
+      "market": "UK",
+      "immobiliser_system_ids": ["bmw_fem"],
+      "job_types": ["add_key", "all_keys_lost", "module_replacement"],
+      "resolution_requirements": ["vehicle chassis", "FEM hardware and software level", "working key status", "tool and FEM/BDC adapter", "battery support"],
+      "warnings": ["Do not assume OBD-only support; module preparation or bench work may be required."],
+      "confidence": "research_required"
+    },
+    "bmw_bdc": {
+      "name": "BMW/MINI BDC Family",
+      "market": "UK",
+      "immobiliser_system_ids": ["bmw_bdc", "bmw_bdc2", "bmw_bdc3"],
+      "job_types": ["add_key", "all_keys_lost", "module_replacement"],
+      "resolution_requirements": ["exact BDC generation", "vehicle chassis", "software level", "working key status", "supported tool and adapter"],
+      "warnings": ["BDC, BDC2 and BDC3 must remain separate until exact tool and workflow support is verified."],
+      "confidence": "research_required"
+    },
+    "mercedes_fbs2": {
+      "name": "Mercedes-Benz/Smart FBS2",
+      "market": "UK",
+      "immobiliser_system_ids": ["mercedes_fbs2"],
+      "job_types": ["add_key", "all_keys_lost", "eis_ezs_replacement", "esl_elv_replacement"],
+      "resolution_requirements": ["chassis", "EIS/EZS type", "key type", "ESL/ELV variant", "read method"],
+      "confidence": "research_required"
+    },
+    "mercedes_fbs3": {
+      "name": "Mercedes-Benz/Smart FBS3",
+      "market": "UK",
+      "immobiliser_system_ids": ["mercedes_fbs3"],
+      "job_types": ["add_key", "all_keys_lost", "eis_ezs_replacement", "esl_elv_replacement"],
+      "resolution_requirements": ["chassis", "EIS/EZS type", "key generation", "ESL/ELV variant", "OBD or bench acquisition route"],
+      "confidence": "research_required"
+    },
+    "mercedes_fbs4": {
+      "name": "Mercedes-Benz/Smart FBS4",
+      "market": "UK",
+      "immobiliser_system_ids": ["mercedes_fbs4"],
+      "job_types": ["add_key", "all_keys_lost", "module_replacement"],
+      "resolution_requirements": ["chassis", "security generation", "online or authorised access requirement", "supported tool", "vehicle ownership verification"],
+      "warnings": ["Do not present an offline programming route unless it is specifically verified for the target application."],
+      "confidence": "research_required"
+    },
+    "ford_pats": {
+      "name": "Ford PATS Family",
+      "market": "UK",
+      "immobiliser_system_ids": ["ford_pats", "ford_pats2"],
+      "job_types": ["add_key", "all_keys_lost", "parameter_reset", "module_replacement"],
+      "resolution_requirements": ["model and generation", "build date", "blade or proximity", "in-code or online security route", "minimum key count"],
+      "confidence": "research_required"
+    },
+    "psa_bsi": {
+      "name": "Peugeot/Citroen/DS BSI",
+      "market": "UK",
+      "immobiliser_system_ids": ["psa_bsi"],
+      "job_types": ["add_key", "all_keys_lost", "bsi_replacement", "pin_recovery"],
+      "resolution_requirements": ["model and generation", "BSI manufacturer and part number", "PIN availability", "keyless status", "EEPROM or MCU family"],
+      "confidence": "research_required"
+    },
+    "renault_uch": {
+      "name": "Renault/Dacia UCH",
+      "market": "UK",
+      "immobiliser_system_ids": ["renault_uch"],
+      "job_types": ["add_key", "all_keys_lost", "uch_replacement", "pin_or_isK_recovery"],
+      "resolution_requirements": ["model and generation", "UCH type", "card or blade key", "ISK/PIN route", "gateway or security restrictions"],
+      "confidence": "research_required"
+    },
+    "nissan_nats": {
+      "name": "Nissan/Infiniti NATS",
+      "market": "UK",
+      "immobiliser_system_ids": ["nissan_nats"],
+      "job_types": ["add_key", "all_keys_lost", "bcm_replacement", "pin_calculation"],
+      "resolution_requirements": ["model and generation", "BCM or IMMU part number", "blade or intelligent key", "PIN type", "bypass cable requirement"],
+      "confidence": "research_required"
+    },
+    "toyota_lexus": {
+      "name": "Toyota/Lexus Immobiliser and Smart Key",
+      "market": "UK",
+      "immobiliser_system_ids": ["toyota_immobiliser", "toyota_smart_key"],
+      "job_types": ["add_key", "all_keys_lost", "smart_box_replacement", "ecu_registration"],
+      "resolution_requirements": ["model and generation", "blade or smart key", "certification ECU or smart box type", "seed/passcode route", "emulator or cable requirement"],
+      "confidence": "research_required"
+    },
+    "hyundai_kia": {
+      "name": "Hyundai/Kia SMARTRA and Smart Key",
+      "market": "UK",
+      "immobiliser_system_ids": ["hyundai_kia_smartra", "hyundai_kia_smart_key"],
+      "job_types": ["add_key", "all_keys_lost", "smart_key_module_replacement", "pin_recovery"],
+      "resolution_requirements": ["model and generation", "blade or proximity", "PIN type", "SMARTRA or smart-key module variant", "frequency"],
+      "confidence": "research_required"
+    },
+    "jlr_kvm": {
+      "name": "Jaguar Land Rover KVM",
+      "market": "UK",
+      "immobiliser_system_ids": ["jlr_kvm"],
+      "job_types": ["add_key", "all_keys_lost", "kvm_replacement"],
+      "resolution_requirements": ["model and platform", "KVM part number", "RFA/KVM generation", "key frequency", "security gateway or online requirement"],
+      "confidence": "research_required"
+    },
+    "volvo_cem": {
+      "name": "Volvo CEM",
+      "market": "UK",
+      "immobiliser_system_ids": ["volvo_cem"],
+      "job_types": ["add_key", "all_keys_lost", "cem_replacement"],
+      "resolution_requirements": ["platform", "CEM generation and part number", "key type", "security data acquisition route", "online requirement"],
+      "confidence": "research_required"
+    },
+    "fiat_code": {
+      "name": "Fiat/Alfa Romeo/Abarth CODE",
+      "market": "UK",
+      "immobiliser_system_ids": ["fiat_code"],
+      "job_types": ["add_key", "all_keys_lost", "body_computer_replacement", "pin_recovery"],
+      "resolution_requirements": ["model and generation", "body computer type", "mechanical or proximity key", "PIN availability", "SGW status"],
+      "confidence": "research_required"
     }
   }
 }
