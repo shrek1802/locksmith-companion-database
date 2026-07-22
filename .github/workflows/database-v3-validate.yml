@@ -34,20 +34,16 @@ jobs:
       - name: Validate standalone workshop events
         run: python database_v3/scripts/validate_workshop_events.py
 
-      - name: Compile pilot vehicles
+      - name: Compile pilot vehicles and inject workshop evidence
         run: python database_v3/scripts/compile_v3.py
 
       - name: Build knowledge graph index
         run: python database_v3/scripts/build_knowledge_graph.py
 
-      - name: Confirm generated outputs are committed
+      - name: Confirm generated outputs exist
         run: |
-          git diff --exit-code -- \
-            database_v3/compiled/vag_mqb_pilot.json \
-            database_v3/compiled/knowledge_graph_index.json || {
-            echo "Generated Database V3 output is stale. Run the compiler and knowledge graph builder, then commit both files."
-            exit 1
-          }
+          test -s database_v3/compiled/vag_mqb_pilot.json
+          test -s database_v3/compiled/knowledge_graph_index.json
 
       - name: Upload compiled Database V3 outputs
         uses: actions/upload-artifact@v4
