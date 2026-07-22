@@ -1,0 +1,48 @@
+name: Validate Database V3
+
+on:
+  push:
+    branches:
+      - database-v3-components
+    paths:
+      - "database_v3/**"
+      - ".github/workflows/database-v3-validate.yml"
+  pull_request:
+    paths:
+      - "database_v3/**"
+      - ".github/workflows/database-v3-validate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate component relationships and evidence
+        run: python database_v3/scripts/validate_v3.py
+
+      - name: Compile pilot vehicles
+        run: python database_v3/scripts/compile_v3.py
+
+      - name: Confirm compiled output is committed
+        run: |
+          git diff --exit-code -- database_v3/compiled/vag_mqb_pilot.json || {
+            echo "Compiled output is stale. Run python database_v3/scripts/compile_v3.py and commit the result."
+            exit 1
+          }
+
+      - name: Upload compiled pilot
+        uses: actions/upload-artifact@v4
+        with:
+          name: vag-mqb-v3-pilot
+          path: database_v3/compiled/vag_mqb_pilot.json
