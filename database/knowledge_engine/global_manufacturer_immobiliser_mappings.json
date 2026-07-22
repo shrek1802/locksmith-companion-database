@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-23",
+  "scope": "UK-market manufacturer and marque to immobiliser-family mapping outside BMW Group and Volkswagen Group",
+  "mapping_status": "manufacturer_scope",
+  "notes": [
+    "These links establish the correct shared immobiliser family for each marque before generation-specific applications are added.",
+    "They do not prove that every vehicle from a marque uses every listed system.",
+    "Exact system selection must be resolved from model, generation, build date, VIN, fitted module and key type before a workflow is recommended.",
+    "Programming procedures, tool support, adapters, internet requirements and AKL routes require separate evidence."
+  ],
+  "groups": {
+    "mercedes_benz_group": {
+      "marques": ["Mercedes-Benz", "Smart"],
+      "systems": ["mercedes_fbs2", "mercedes_fbs3", "mercedes_fbs4"],
+      "resolution_fields": ["model", "chassis code", "build date", "EIS/EZS generation", "key type"]
+    },
+    "ford_motor_company": {
+      "marques": ["Ford"],
+      "systems": ["ford_pats", "ford_pats2"],
+      "resolution_fields": ["model", "platform", "build date", "BCM/cluster architecture", "key type"]
+    },
+    "mazda": {
+      "marques": ["Mazda"],
+      "systems": ["mazda_pats"],
+      "resolution_fields": ["model", "generation", "build date", "Ford-derived or Mazda architecture", "key type"]
+    },
+    "stellantis_psa": {
+      "marques": ["Peugeot", "Citroen", "DS"],
+      "systems": ["psa_bsi"],
+      "resolution_fields": ["model", "platform", "build date", "BSI manufacturer and part number", "key type"]
+    },
+    "renault_group": {
+      "marques": ["Renault", "Dacia"],
+      "systems": ["renault_uch"],
+      "resolution_fields": ["model", "platform", "build date", "UCH generation", "key or card type"]
+    },
+    "nissan_group": {
+      "marques": ["Nissan", "Infiniti"],
+      "systems": ["nissan_nats"],
+      "resolution_fields": ["model", "platform", "build date", "BCM/IPDM architecture", "key type"]
+    },
+    "toyota_motor_corporation": {
+      "marques": ["Toyota", "Lexus"],
+      "systems": ["toyota_immobiliser", "toyota_smart_key"],
+      "resolution_fields": ["model", "platform", "build date", "certification ECU or smart-key ECU", "key type"]
+    },
+    "hyundai_motor_group": {
+      "marques": ["Hyundai", "Kia"],
+      "systems": ["hyundai_kia_smartra", "hyundai_kia_smart_key"],
+      "resolution_fields": ["model", "platform", "build date", "SMARTRA/SMK module", "key type"]
+    },
+    "general_motors": {
+      "marques": ["Vauxhall", "Opel", "Chevrolet", "Cadillac"],
+      "systems": ["gm_vats", "gm_passkey", "gm_passlock"],
+      "resolution_fields": ["model", "market", "platform", "build date", "BCM/CIM architecture", "key type"],
+      "warning": "Do not infer North-American VATS, Pass-Key or Passlock coverage for UK Vauxhall/Opel vehicles without platform evidence."
+    },
+    "honda_motor_company": {
+      "marques": ["Honda"],
+      "systems": ["honda_immobilizer"],
+      "resolution_fields": ["model", "generation", "build date", "immobiliser receiver or BCM architecture", "key type"]
+    },
+    "jaguar_land_rover": {
+      "marques": ["Jaguar", "Land Rover", "Range Rover"],
+      "systems": ["jlr_kvm"],
+      "resolution_fields": ["model", "platform", "build date", "KVM/RFA part number", "key type"]
+    },
+    "volvo_cars": {
+      "marques": ["Volvo"],
+      "systems": ["volvo_cem"],
+      "resolution_fields": ["model", "platform", "build date", "CEM generation", "key type"]
+    },
+    "stellantis_fca": {
+      "marques": ["Fiat", "Alfa Romeo", "Abarth", "Lancia"],
+      "systems": ["fiat_code"],
+      "resolution_fields": ["model", "platform", "build date", "BCM/CODE generation", "key type"]
+    },
+    "mitsubishi_motors": {
+      "marques": ["Mitsubishi"],
+      "systems": ["mitsubishi_etacs"],
+      "resolution_fields": ["model", "platform", "build date", "ETACS generation", "key type"]
+    },
+    "subaru_corporation": {
+      "marques": ["Subaru"],
+      "systems": ["subaru_biU"],
+      "resolution_fields": ["model", "platform", "build date", "BIU generation", "key type"]
+    }
+  },
+  "required_resolution_sequence": [
+    "Identify UK-market marque and model",
+    "Resolve exact generation or platform",
+    "Check build date and VIN",
+    "Identify fitted immobiliser-related module and part number where available",
+    "Confirm blade, slot, proximity, smart-key or card configuration",
+    "Only then select a system-specific workflow"
+  ],
+  "confidence": "research_required"
+}
