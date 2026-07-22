@@ -2,6 +2,53 @@
   "schema_version": "3.0-draft",
   "category": "decision_rules",
   "items": {
+    "decision_mqb45_job_workflow": {
+      "platform_ids": ["vag_mqb48_mqb45"],
+      "questions": ["job_type", "working_key_available", "dashboard_type", "tool_id"],
+      "supported_job_types": ["add_key", "all_keys_lost"],
+      "verified_tools": ["autel_im508s"],
+      "add_key": {
+        "working_key_required": true,
+        "dashboard_branches": {
+          "analogue_or_mono_v850_nec": {
+            "preferred_immo_method": "obd",
+            "available_immo_methods": ["obd", "key_read", "bench_dash_read"],
+            "procedure_step_ids": [
+              "step_read_immo_data",
+              "step_save_immo_backup",
+              "step_exit_add_key",
+              "step_open_saved_immo_file",
+              "step_generate_dealer_key",
+              "step_write_dealer_key",
+              "step_return_to_vehicle",
+              "step_program_key_obd"
+            ],
+            "compatible_key_profile_ids": ["key_xhorse_b5_green_mqb48"],
+            "why": "This route is workshop verified with an IM508S, an analogue/mono V850-NEC dashboard and a working key. The dealer key was generated from the saved IMMO backup before returning to Add Key programming.",
+            "warnings": [
+              "The standard Add Key routine did not generate the dealer key on the verified job.",
+              "Save and verify the IMMO backup before leaving the read routine.",
+              "Use the Xhorse B5 Green Super Remote for the verified aftermarket-key route."
+            ],
+            "confidence": "workshop_verified"
+          },
+          "virtual_cockpit_active_info_display": {
+            "preferred_immo_method": "key_read",
+            "available_immo_methods": ["key_read", "bench_dash_read"],
+            "excluded_immo_methods": ["obd"],
+            "compatible_key_profile_ids": ["key_xhorse_b5_green_mqb48"],
+            "why": "OBD IMMO acquisition is not supported on this dashboard type. Obtain IMMO data from a working key or use a supported bench/dashboard method.",
+            "warnings": ["No complete workshop-verified IM508S programming sequence has yet been recorded for this dashboard branch."],
+            "confidence": "community_verified"
+          }
+        }
+      },
+      "all_keys_lost": {
+        "verified": false,
+        "why": "No complete workshop-verified MQB48 / MQB 4.5 all-keys-lost workflow has yet been recorded in the Knowledge Engine.",
+        "confidence": "research_required"
+      }
+    },
     "decision_mqb45_cluster_read_route": {
       "platform_ids": ["vag_mqb48_mqb45"],
       "question": "Which dashboard type is fitted?",
