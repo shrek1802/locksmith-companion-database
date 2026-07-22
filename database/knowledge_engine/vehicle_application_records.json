@@ -1,0 +1,106 @@
+{
+  "schema_version": "3.0-draft",
+  "updated_at": "2026-07-23",
+  "category": "vehicle_application_records",
+  "scope": "UK-market vehicle-to-platform application records for auto locksmith workflows",
+  "rules": [
+    "A vehicle application record identifies a likely or verified immobiliser platform; it does not by itself prove a programming workflow.",
+    "Exact year, generation, dashboard, key type and module identifiers must be resolved before a workflow is recommended.",
+    "Workshop-verified records may link directly to workshop events. Research candidates must remain blocked from automatic workflow recommendation.",
+    "Default steering position is RHD unless the individual vehicle evidence states otherwise."
+  ],
+  "items": {
+    "app_vw_caddy_2017_mqb48_blade_workshop_001": {
+      "manufacturer": "Volkswagen",
+      "model": "Caddy",
+      "market": "UK",
+      "steering_position": "RHD",
+      "model_year": 2017,
+      "key_system": "blade_remote",
+      "platform_ids": ["vag_mqb48_mqb45"],
+      "immobiliser_system_ids": ["vag_mqb48_mqb45"],
+      "working_key_contexts_verified": ["add_key"],
+      "dashboard_context": "analogue_or_mono_v850_nec",
+      "verified_tool_ids": ["tool_autel_im508s"],
+      "verified_key_profile_ids": ["key_xhorse_b5_green_mqb48"],
+      "workflow_object_ids": ["workflow_mqb48_add_key_autel_analogue_working_key"],
+      "workshop_event_ids": ["we_vag_mqb45_im508s_add_key_001"],
+      "automatic_recommendation_allowed": true,
+      "confidence": "workshop_verified",
+      "notes": [
+        "The successful workshop route used a saved IMMO backup to generate and write the dealer key before returning to the vehicle to complete Add Key.",
+        "Do not transfer this workflow to Virtual Cockpit vehicles without resolving the cluster route first."
+      ]
+    },
+    "candidate_vw_tcross_2019_mqb5c_001": {
+      "manufacturer": "Volkswagen",
+      "model": "T-Cross",
+      "market": "UK",
+      "steering_position": "RHD",
+      "model_year": 2019,
+      "platform_ids": ["vag_mqb_5c"],
+      "immobiliser_system_ids": ["vag_mqb_5c"],
+      "record_status": "candidate_requires_verification",
+      "required_resolution": ["exact key type", "dashboard type", "module identifiers", "tool menu coverage", "working key status"],
+      "automatic_recommendation_allowed": false,
+      "confidence": "research_required"
+    },
+    "candidate_bentley_continental_gt_2007_kessy_001": {
+      "manufacturer": "Bentley",
+      "model": "Continental GT",
+      "market": "UK",
+      "steering_position": "RHD",
+      "model_year": 2007,
+      "platform_ids": ["vag_kessy"],
+      "immobiliser_system_ids": ["vag_kessy"],
+      "record_status": "candidate_requires_verification",
+      "required_resolution": ["KESSY part number", "software and hardware version", "key type", "PIN and CS acquisition route", "current key count", "module fault state"],
+      "automatic_recommendation_allowed": false,
+      "confidence": "research_required",
+      "warnings": [
+        "Do not transfer Volkswagen MQB procedures to this KESSY application.",
+        "An immobiliser-active or zero-key state requires fault-state diagnosis before repeating adaptation."
+      ]
+    },
+    "candidate_peugeot_2008_2020_keyless_esl_001": {
+      "manufacturer": "Peugeot",
+      "model": "2008",
+      "market": "UK",
+      "steering_position": "RHD",
+      "model_year": 2020,
+      "platform_ids": ["psa_bsi"],
+      "immobiliser_system_ids": ["psa_bsi"],
+      "key_system": "keyless",
+      "job_context": "electronic_steering_lock_replacement_or_clone",
+      "record_status": "candidate_requires_verification",
+      "required_resolution": ["VIN-decoded generation", "ESL part number", "BSI architecture", "new or used replacement status", "supported read and write method"],
+      "automatic_recommendation_allowed": false,
+      "confidence": "research_required"
+    },
+    "candidate_nissan_qashqai_2020_keyless_001": {
+      "manufacturer": "Nissan",
+      "model": "Qashqai",
+      "market": "UK",
+      "steering_position": "RHD",
+      "model_year": 2020,
+      "platform_ids": ["nissan_nats"],
+      "immobiliser_system_ids": ["nissan_nats"],
+      "key_system": "keyless",
+      "record_status": "candidate_requires_verification",
+      "required_resolution": ["exact generation", "BCM part number", "40-pin bypass requirement", "working key status", "tool-specific coverage"],
+      "automatic_recommendation_allowed": false,
+      "confidence": "research_required"
+    },
+    "candidate_jlr_modern_kvm_001": {
+      "manufacturer_group": "Jaguar Land Rover",
+      "market": "UK",
+      "steering_position": "RHD",
+      "platform_ids": ["jlr_kvm"],
+      "immobiliser_system_ids": ["jlr_kvm"],
+      "record_status": "family_level_candidate",
+      "required_resolution": ["marque", "model", "model year", "KVM part number", "RFA or KVM architecture", "key type", "security state", "tool and adapter"],
+      "automatic_recommendation_allowed": false,
+      "confidence": "research_required"
+    }
+  }
+}
