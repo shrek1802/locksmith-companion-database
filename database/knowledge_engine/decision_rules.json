@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0-draft",
+  "category": "decision_rules",
+  "items": {
+    "decision_mqb45_cluster_read_route": {
+      "platform_ids": ["vag_mqb48_mqb45"],
+      "question": "Which dashboard type is fitted?",
+      "branches": {
+        "analogue_or_mono_v850_nec": {
+          "recommended_immo_acquisition_methods": ["obd", "key_read", "bench_dash_read"],
+          "preferred_method": "obd",
+          "why": "OBD reading is supported on the verified analogue/mono dashboard route"
+        },
+        "virtual_cockpit_active_info_display": {
+          "recommended_immo_acquisition_methods": ["key_read", "bench_dash_read"],
+          "excluded_methods": ["obd"],
+          "why": "OBD IMMO reading is not supported on this dashboard type; obtain IMMO data from a working key or by a supported bench/dashboard method"
+        }
+      },
+      "confidence": "workshop_verified"
+    },
+    "decision_mqb5d_key_selection": {
+      "platform_ids": ["vag_mqb_5d"],
+      "question": "Which compatible key is available?",
+      "allowed_key_profile_ids": [
+        "key_oem_mqb_5d",
+        "key_xhorse_vvdi_5d_dedicated",
+        "key_keydiy_kd_fgb_series"
+      ],
+      "reject_generic_unverified_keys": true,
+      "why": "MQB 5D requires a vehicle-correct OEM key or a dedicated supported aftermarket key",
+      "confidence": "community_verified"
+    }
+  }
+}

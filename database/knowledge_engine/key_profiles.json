@@ -1,0 +1,40 @@
+{
+  "schema_version": "3.0-draft",
+  "category": "key_profiles",
+  "items": {
+    "key_xhorse_b5_green_mqb48": {
+      "manufacturer": "Xhorse",
+      "product": "B5 Green Super Remote",
+      "platform_ids": ["vag_mqb48_mqb45"],
+      "frequency": "434.42 MHz ASK",
+      "reference": "0535 446",
+      "key_class": "aftermarket_remote",
+      "conditions": ["Use the B5 model VVDI Super Remote; ordinary remote is not supported for this application"],
+      "confidence": "workshop_verified"
+    },
+    "key_xhorse_vvdi_5d_dedicated": {
+      "manufacturer": "Xhorse",
+      "product": "VVDI 5D-dedicated key",
+      "platform_ids": ["vag_mqb_5d"],
+      "key_class": "dedicated_aftermarket_key",
+      "conditions": ["Use the dedicated 5D key rather than a standard universal remote"],
+      "confidence": "community_verified"
+    },
+    "key_keydiy_kd_fgb_series": {
+      "manufacturer": "KEYDIY",
+      "product": "KD-FGB series",
+      "platform_ids": ["vag_mqb_5d"],
+      "key_class": "dedicated_aftermarket_key",
+      "conditions": ["Select the correct KD-FGB application for the target vehicle"],
+      "confidence": "community_verified"
+    },
+    "key_oem_mqb_5d": {
+      "manufacturer": "OEM",
+      "product": "Vehicle-correct OEM MQB 5D key",
+      "platform_ids": ["vag_mqb_5d"],
+      "key_class": "oem_key",
+      "conditions": ["Part number, frequency and vehicle application must match"],
+      "confidence": "manufacturer_verified"
+    }
+  }
+}

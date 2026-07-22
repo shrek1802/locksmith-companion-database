@@ -1,0 +1,26 @@
+{
+  "schema_version": "3.0-draft",
+  "updated_at": "2026-07-22",
+  "name": "Locksmith Knowledge Engine",
+  "scope": "UK auto locksmith workflows only",
+  "principles": [
+    "Help an auto locksmith complete a job faster, safer or with more confidence",
+    "Prefer UK-market and RHD evidence",
+    "Never present unverified information as fact",
+    "Keep mechanic-only repair content out of scope"
+  ],
+  "object_types": {
+    "workshop_events": "workshop_events.json",
+    "workshop_insights": "workshop_insights.json",
+    "key_profiles": "key_profiles.json",
+    "compatibility_rules": "compatibility_rules.json",
+    "procedure_steps": "procedure_steps.json",
+    "decision_rules": "decision_rules.json"
+  },
+  "confidence_levels": {
+    "workshop_verified": "Confirmed by a completed workshop job",
+    "manufacturer_verified": "Confirmed by manufacturer or official tool information",
+    "community_verified": "Supported by multiple trusted reports",
+    "research_required": "Not yet sufficiently verified"
+  }
+}
