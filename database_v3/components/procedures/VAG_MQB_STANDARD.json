@@ -1,0 +1,13 @@
+{
+  "id": "VAG_MQB_STANDARD",
+  "component_type": "procedure",
+  "data": {
+    "programming": {
+      "spare_key": {"supported": true, "method": "OBD", "obd": true, "bench": false, "eeprom": false, "working_key_required": true, "dealer_key_required": false, "online_required": false, "battery_support_recommended": true, "estimated_time": "15-30 minutes", "notes": "Configuration-dependent; verify tool coverage before work"},
+      "add_key": {"supported": true, "method": "OBD", "obd": true, "bench": false, "eeprom": false, "working_key_required": true, "dealer_key_required": false, "online_required": false, "battery_support_recommended": true, "estimated_time": "15-30 minutes", "notes": "All keys may need to be present depending on procedure"},
+      "all_keys_lost": {"supported": "configuration_dependent", "method": "Sync-data or module-read method may be required", "obd": "configuration_dependent", "bench": "configuration_dependent", "eeprom": "configuration_dependent", "working_key_required": false, "dealer_key_required": "configuration_dependent", "online_required": false, "battery_support_recommended": true, "estimated_time": null, "notes": "Do not assume universal AKL support across MQB clusters and tool versions"},
+      "remote_programming": {"supported": "usually_with_key_learning", "method": "Integrated with immobiliser key learning", "obd": true, "bench": false, "eeprom": false, "working_key_required": "configuration_dependent", "dealer_key_required": false, "online_required": false, "battery_support_recommended": true, "estimated_time": null, "notes": null}
+    }
+  },
+  "verification": {"status": "provisional", "confidence": "medium", "sources": []}
+}

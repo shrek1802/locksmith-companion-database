@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vehicle.schema.json",
+  "title": "Database V3 Vehicle Record",
+  "type": "object",
+  "required": ["id", "vehicle", "references", "overrides"],
+  "properties": {
+    "id": {"type": "string"},
+    "vehicle": {
+      "type": "object",
+      "required": ["manufacturer", "model", "generation", "year_from", "year_to", "market", "steering"],
+      "properties": {
+        "manufacturer": {"type": "string"},
+        "model": {"type": "string"},
+        "generation": {"type": "string"},
+        "year_from": {"type": "integer"},
+        "year_to": {"type": "integer"},
+        "market": {"const": "UK"},
+        "steering": {"const": "RHD"}
+      },
+      "additionalProperties": true
+    },
+    "references": {
+      "type": "object",
+      "required": ["platform", "immobiliser", "key_system", "blade", "transponder", "procedure", "tool_coverage", "locations"],
+      "additionalProperties": {"type": "string"}
+    },
+    "overrides": {"type": "object"}
+  },
+  "additionalProperties": false
+}

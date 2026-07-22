@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "component.schema.json",
+  "title": "Locksmith Knowledge Component",
+  "type": "object",
+  "required": ["id", "component_type", "data", "verification"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "component_type": {"type": "string", "enum": ["platform", "immobiliser", "key_system", "blade", "transponder", "procedure", "tool_coverage", "locations"]},
+    "data": {"type": "object"},
+    "verification": {
+      "type": "object",
+      "required": ["status", "confidence", "sources"],
+      "properties": {
+        "status": {"type": "string", "enum": ["unverified", "provisional", "verified", "workshop_verified"]},
+        "confidence": {"type": "string", "enum": ["unknown", "low", "medium", "high"]},
+        "sources": {"type": "array", "items": {"type": "object"}}
+      }
+    }
+  },
+  "additionalProperties": false
+}
