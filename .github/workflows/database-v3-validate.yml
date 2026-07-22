@@ -31,6 +31,9 @@ jobs:
       - name: Validate component relationships and evidence
         run: python database_v3/scripts/validate_v3.py
 
+      - name: Validate standalone workshop events
+        run: python database_v3/scripts/validate_workshop_events.py
+
       - name: Compile pilot vehicles
         run: python database_v3/scripts/compile_v3.py
 
