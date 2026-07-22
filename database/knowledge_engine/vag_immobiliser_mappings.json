@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-07-23",
+  "scope": "UK-market Volkswagen Group model-family to immobiliser-system mapping",
+  "mapping_status": "family_scope",
+  "notes": [
+    "These mappings connect each existing model family to the immobiliser systems it may use across its UK generations.",
+    "The exact fitted system must be resolved by generation, build date, platform, cluster type and VIN before a workflow is recommended.",
+    "A model-family link does not verify a programming procedure, tool, key, cable or AKL route."
+  ],
+  "systems": {
+    "vag_immo2": "IMMO 2",
+    "vag_immo3": "IMMO 3",
+    "vag_immo4": "IMMO 4",
+    "vag_immo5": "IMMO 5",
+    "vag_mqb48_mqb45": "MQB48 / MQB 4.5",
+    "vag_mqb_5c": "MQB 5C",
+    "vag_mqb_5d": "MQB 5D",
+    "vag_kessy": "KESSY"
+  },
+  "manufacturers": {
+    "volkswagen": {
+      "name": "Volkswagen",
+      "models": {
+        "amarok": ["vag_immo4", "vag_immo5", "vag_kessy"],
+        "arteon": ["vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "beetle": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5"],
+        "caddy": ["vag_immo3", "vag_immo4", "vag_mqb48_mqb45", "vag_mqb_5c"],
+        "cc": ["vag_immo4", "vag_immo5", "vag_kessy"],
+        "crafter": ["vag_immo4", "vag_immo5", "vag_mqb_5c", "vag_mqb_5d"],
+        "eos": ["vag_immo4", "vag_immo5"],
+        "golf": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c", "vag_mqb_5d", "vag_kessy"],
+        "id_3": ["vag_mqb_5d"],
+        "id_4": ["vag_mqb_5d"],
+        "id_5": ["vag_mqb_5d"],
+        "id_buzz": ["vag_mqb_5d"],
+        "jetta": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45"],
+        "passat": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "polo": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c"],
+        "scirocco": ["vag_immo4", "vag_immo5"],
+        "sharan": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_kessy"],
+        "t_cross": ["vag_mqb48_mqb45", "vag_mqb_5c"],
+        "t_roc": ["vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "taigo": ["vag_mqb_5c"],
+        "tiguan": ["vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "touareg": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_kessy"],
+        "touran": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c"],
+        "transporter": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb_5c", "vag_kessy"],
+        "up": ["vag_immo4", "vag_immo5"]
+      }
+    },
+    "audi": {
+      "name": "Audi",
+      "models": {
+        "a1": ["vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c"],
+        "a3": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c", "vag_mqb_5d", "vag_kessy"],
+        "q2": ["vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "q3": ["vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "tt": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "a4": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5", "vag_kessy"],
+        "a5": ["vag_immo4", "vag_immo5", "vag_kessy"],
+        "a6": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5", "vag_kessy"],
+        "a7": ["vag_immo5", "vag_kessy"],
+        "a8": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_kessy"],
+        "q5": ["vag_immo4", "vag_immo5", "vag_kessy"],
+        "q7": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_kessy"],
+        "q8": ["vag_immo5", "vag_kessy"]
+      }
+    },
+    "seat": {
+      "name": "SEAT",
+      "models": {
+        "arona": ["vag_mqb48_mqb45", "vag_mqb_5c"],
+        "ateca": ["vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "ibiza": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c"],
+        "leon": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c", "vag_mqb_5d", "vag_kessy"],
+        "tarraco": ["vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "toledo": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5"]
+      }
+    },
+    "skoda": {
+      "name": "Škoda",
+      "models": {
+        "fabia": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c"],
+        "karoq": ["vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "kodiaq": ["vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "octavia": ["vag_immo2", "vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c", "vag_mqb_5d", "vag_kessy"],
+        "rapid": ["vag_immo4", "vag_immo5"],
+        "superb": ["vag_immo3", "vag_immo4", "vag_immo5", "vag_mqb48_mqb45", "vag_mqb_5c", "vag_kessy"],
+        "scala": ["vag_mqb48_mqb45", "vag_mqb_5c"]
+      }
+    }
+  },
+  "resolution_requirements": [
+    "Confirm exact model generation or chassis/platform",
+    "Confirm build date and UK market application",
+    "Confirm instrument-cluster or KESSY/BCM variant where relevant",
+    "Confirm keyless/proximity equipment",
+    "Use VIN or fitted hardware before selecting a programming workflow"
+  ],
+  "confidence": "research_required"
+}
