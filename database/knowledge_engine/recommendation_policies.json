@@ -1,0 +1,142 @@
+{
+  "schema_version": "3.0-draft",
+  "updated_at": "2026-07-23",
+  "category": "recommendation_policies",
+  "scope": "Safety, evidence and resolution rules controlling automatic locksmith workflow recommendations",
+  "default_policy": {
+    "automatic_recommendation": "deny",
+    "reason": "A workflow is only recommended automatically when the vehicle application, platform, job context, key state and tool route are sufficiently resolved."
+  },
+  "confidence_policy": {
+    "workshop_verified": {
+      "automatic_recommendation_allowed": true,
+      "conditions": [
+        "The workshop event matches the resolved platform and job type",
+        "Required vehicle distinctions are satisfied",
+        "The linked workflow and procedure steps exist",
+        "No blocking warning applies"
+      ]
+    },
+    "manufacturer_verified": {
+      "automatic_recommendation_allowed": true,
+      "conditions": [
+        "The evidence applies to the exact market, platform and operation",
+        "Tool support and required accessories are separately resolved",
+        "The procedure is not contradicted by a newer security generation"
+      ]
+    },
+    "community_verified": {
+      "automatic_recommendation_allowed": false,
+      "display_mode": "advisory_only",
+      "conditions": [
+        "Show the evidence level clearly",
+        "Require user confirmation before exposing procedural detail",
+        "Do not promote the route above a workshop-verified alternative"
+      ]
+    },
+    "research_required": {
+      "automatic_recommendation_allowed": false,
+      "display_mode": "research_required",
+      "conditions": [
+        "Show missing resolution fields",
+        "Do not infer a procedure from model and year alone"
+      ]
+    }
+  },
+  "hard_blocks": [
+    {
+      "id": "block_unresolved_platform",
+      "when": "platform_id is missing or multiple incompatible platform candidates remain",
+      "action": "block_workflow_recommendation"
+    },
+    {
+      "id": "block_unresolved_job_type",
+      "when": "job type is not resolved as add_key, all_keys_lost, replacement, clone, renew, reset or another defined operation",
+      "action": "block_workflow_recommendation"
+    },
+    {
+      "id": "block_unknown_working_key_state",
+      "when": "working-key availability changes the acquisition or programming route and has not been answered",
+      "action": "request_resolution"
+    },
+    {
+      "id": "block_security_generation_transfer",
+      "when": "a workflow belongs to a different security generation, such as FBS3 versus FBS4, MQB48 versus MQB5C or first-generation BDC versus BDC2/BDC3",
+      "action": "block_workflow_recommendation"
+    },
+    {
+      "id": "block_cross_marque_transfer",
+      "when": "a shared family name is being used to transfer a procedure between marques without exact application evidence",
+      "action": "block_workflow_recommendation"
+    },
+    {
+      "id": "block_tool_only_assumption",
+      "when": "a tool profile lists a general capability but no exact workflow or application support is linked",
+      "action": "show_tool_as_unverified_for_job"
+    },
+    {
+      "id": "block_key_frequency_unknown",
+      "when": "remote or proximity key frequency and application are unresolved",
+      "action": "block_key_recommendation"
+    },
+    {
+      "id": "block_used_module_state_unknown",
+      "when": "a used immobiliser, BCM, BSI, KVM, ESL or similar module is proposed but virgin, personalised, locked or donor state is unknown",
+      "action": "block_replacement_workflow"
+    }
+  ],
+  "minimum_resolution_fields": {
+    "all_jobs": [
+      "manufacturer",
+      "model",
+      "model_year_or_generation",
+      "market",
+      "steering_position",
+      "job_type",
+      "key_system",
+      "working_key_status",
+      "platform_or_module_resolution",
+      "available_tool_ids"
+    ],
+    "add_key": [
+      "existing_key_count_or_working_key_confirmation",
+      "correct_key_profile",
+      "programming_route",
+      "battery_support_requirement"
+    ],
+    "all_keys_lost": [
+      "security_data_acquisition_route",
+      "module_access_method",
+      "bypass_or_adapter_requirement",
+      "online_authorisation_requirement",
+      "post-programming key count requirement"
+    ],
+    "module_replacement_or_clone": [
+      "original_module_part_number",
+      "replacement_module_part_number",
+      "original_module_readability",
+      "donor_or_new_state",
+      "data_transfer_or_personalisation_method",
+      "rollback_backup"
+    ]
+  },
+  "recommendation_output_contract": {
+    "required_fields": [
+      "recommended_workflow_object_id",
+      "reasoning_summary",
+      "confidence",
+      "matched_vehicle_application_id",
+      "platform_id",
+      "job_type",
+      "supported_tool_ids",
+      "compatible_key_profile_ids",
+      "required_accessories",
+      "power_and_internet_requirements",
+      "warnings",
+      "evidence_ids",
+      "unresolved_fields"
+    ],
+    "reasoning_requirement": "Every recommendation must explain why the route was selected and why excluded alternatives were rejected.",
+    "warning_requirement": "Blocking warnings must appear before procedural steps."
+  }
+}
