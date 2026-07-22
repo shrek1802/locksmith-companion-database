@@ -45,9 +45,26 @@ def component_index() -> dict[str, dict[str, Any]]:
     return index
 
 
+def verification_snapshot(component: dict[str, Any]) -> dict[str, Any]:
+    verification = deepcopy(component.get("verification", {}))
+    verification.setdefault("status", "unverified")
+    verification.setdefault("confidence", "unknown")
+    verification.setdefault("last_checked", None)
+    verification.setdefault("sources", [])
+    verification.setdefault("workshop_history", [])
+    return {
+        "component_id": component["id"],
+        "component_type": component["component_type"],
+        "revision": deepcopy(component.get("revision", {"version": 1, "updated_at": None, "change_summary": "Legacy V3 pilot component"})),
+        "compatibility": deepcopy(component.get("compatibility", {"applies_to": [], "exclusions": [], "conditions": []})),
+        "verification": verification,
+    }
+
+
 def compile_vehicle(record: dict[str, Any], components: dict[str, dict[str, Any]]) -> dict[str, Any]:
     compiled: dict[str, Any] = {"vehicle": deepcopy(record["vehicle"])}
     references = record["references"]
+    evidence = []
     for reference_type in REFERENCE_ORDER:
         component_id = references[reference_type]
         component = components.get(component_id)
@@ -56,9 +73,15 @@ def compile_vehicle(record: dict[str, Any], components: dict[str, dict[str, Any]
         if component["component_type"] != reference_type:
             raise ValueError(f"{component_id} is {component['component_type']}, expected {reference_type}")
         compiled = deep_merge(compiled, component["data"])
+        evidence.append(verification_snapshot(component))
     compiled = deep_merge(compiled, record.get("overrides", {}))
     compiled.setdefault("locksmith_configuration_id", record["id"])
-    compiled["v3_metadata"] = {"vehicle_record_id": record["id"], "references": references}
+    compiled["v3_metadata"] = {
+        "vehicle_record_id": record["id"],
+        "references": references,
+        "component_evidence": evidence,
+        "confidence_rule": "Exact vehicle workshop evidence is distinct from related-platform evidence; no status is promoted during compilation."
+    }
     return compiled
 
 
