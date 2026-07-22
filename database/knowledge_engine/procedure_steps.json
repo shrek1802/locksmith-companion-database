@@ -1,0 +1,14 @@
+{
+  "schema_version": "3.0-draft",
+  "category": "procedure_steps",
+  "items": {
+    "step_read_immo_data": {"title": "Read immobiliser data", "scope": "auto_locksmith", "risk": "medium"},
+    "step_save_immo_backup": {"title": "Save and verify IMMO backup", "scope": "auto_locksmith", "risk": "low"},
+    "step_exit_add_key": {"title": "Exit the Add Key routine", "scope": "auto_locksmith", "risk": "low"},
+    "step_open_saved_immo_file": {"title": "Open the saved IMMO data file", "scope": "auto_locksmith", "risk": "low"},
+    "step_generate_dealer_key": {"title": "Generate dealer key from saved IMMO data", "scope": "auto_locksmith", "risk": "medium"},
+    "step_write_dealer_key": {"title": "Write the generated dealer key", "scope": "auto_locksmith", "risk": "medium"},
+    "step_return_to_vehicle": {"title": "Return to the vehicle programming routine", "scope": "auto_locksmith", "risk": "low"},
+    "step_program_key_obd": {"title": "Complete key learning through OBD", "scope": "auto_locksmith", "risk": "medium"}
+  }
+}
