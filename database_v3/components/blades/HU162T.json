@@ -1,9 +1,26 @@
 {
   "id": "HU162T",
   "component_type": "blade",
+  "revision": {
+    "version": 1,
+    "updated_at": "2026-07-22",
+    "change_summary": "Migrated to V3 revision, compatibility and workshop-evidence structure",
+    "supersedes": null
+  },
   "data": {
     "key": {"blade_profile": "HU162T", "emergency_blade": "HU162T"},
     "key_cutting": {"blade": "HU162T", "lishi": "HU162T 2-in-1", "decode_method": "Lishi / decode"}
   },
-  "verification": {"status": "provisional", "confidence": "medium", "sources": []}
+  "compatibility": {
+    "applies_to": [{"platform": "MQB", "market": "UK"}],
+    "exclusions": [],
+    "conditions": ["Confirm blade variant against the physical key before cutting"]
+  },
+  "verification": {
+    "status": "provisional",
+    "confidence": "medium",
+    "last_checked": null,
+    "sources": [],
+    "workshop_history": []
+  }
 }
