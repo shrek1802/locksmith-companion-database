@@ -1,0 +1,27 @@
+{
+  "schema_version": "3.0-draft",
+  "category": "compatibility_rules",
+  "items": {
+    "compat_mqb45_xhorse_b5": {
+      "platform_ids": ["vag_mqb48_mqb45"],
+      "job_types": ["add_key"],
+      "key_profile_ids": ["key_xhorse_b5_green_mqb48"],
+      "status": "supported",
+      "conditions": ["Use B5 Green Super Remote", "Generate dealer key from saved IMMO data when the normal IM508S Add Key route does not generate it"],
+      "confidence": "workshop_verified",
+      "evidence_event_ids": ["we_vag_mqb45_im508s_add_key_001"]
+    },
+    "compat_mqb5d_approved_keys": {
+      "platform_ids": ["vag_mqb_5d"],
+      "job_types": ["add_key", "all_keys_lost"],
+      "key_profile_ids": [
+        "key_oem_mqb_5d",
+        "key_xhorse_vvdi_5d_dedicated",
+        "key_keydiy_kd_fgb_series"
+      ],
+      "status": "supported_with_conditions",
+      "conditions": ["Use a vehicle-correct OEM key or a dedicated supported 5D aftermarket key", "Do not assume a standard universal remote is compatible"],
+      "confidence": "community_verified"
+    }
+  }
+}
