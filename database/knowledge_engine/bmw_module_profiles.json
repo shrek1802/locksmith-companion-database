@@ -1,0 +1,156 @@
+{
+  "schema_version": "3.0-draft",
+  "updated_at": "2026-07-23",
+  "category": "bmw_module_profiles",
+  "scope": "BMW Group immobiliser and body-domain module profiles for UK auto-locksmith workflow resolution",
+  "rules": [
+    "A module family name is not enough to select a programming workflow.",
+    "Resolve the exact module label, hardware version, software state, vehicle generation, key type and job type before recommending work.",
+    "Do not transfer procedures between adjacent generations such as CAS3 and CAS3+, CAS4 and CAS4+, or BDC, BDC2 and BDC3.",
+    "Memory-device, processor, wiring, bench and security-access details remain research_required until supported by suitable evidence.",
+    "UK and RHD evidence is preferred for locations and vehicle applications."
+  ],
+  "items": {
+    "bmw_module_ews2": {
+      "display_name": "EWS2",
+      "manufacturer_group": "BMW Group",
+      "module_family": "EWS",
+      "immobiliser_system_id": "bmw_ews2",
+      "generation_order": 1,
+      "key_architecture": "transponder_key",
+      "required_resolution": ["exact vehicle chassis", "build date", "module part number", "module label", "key state", "job type", "supported tool and adapter"],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_ews3": {
+      "display_name": "EWS3",
+      "manufacturer_group": "BMW Group",
+      "module_family": "EWS",
+      "immobiliser_system_id": "bmw_ews3",
+      "generation_order": 2,
+      "key_architecture": "transponder_key",
+      "required_resolution": ["exact vehicle chassis", "build date", "module variant", "module part number", "key state", "job type", "supported tool and adapter"],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_ews4": {
+      "display_name": "EWS4",
+      "manufacturer_group": "BMW Group",
+      "module_family": "EWS",
+      "immobiliser_system_id": "bmw_ews4",
+      "generation_order": 3,
+      "key_architecture": "transponder_key",
+      "required_resolution": ["exact vehicle chassis", "build date", "module variant", "module part number", "key state", "job type", "supported tool and adapter"],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_cas1": {
+      "display_name": "CAS1",
+      "manufacturer_group": "BMW Group",
+      "module_family": "CAS",
+      "immobiliser_system_id": "bmw_cas1",
+      "generation_order": 4,
+      "required_resolution": ["exact vehicle chassis", "build date", "CAS part number", "hardware and software version", "comfort-access status", "working-key status", "job type", "supported tool and adapter"],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_cas2": {
+      "display_name": "CAS2",
+      "manufacturer_group": "BMW Group",
+      "module_family": "CAS",
+      "immobiliser_system_id": "bmw_cas2",
+      "generation_order": 5,
+      "required_resolution": ["exact vehicle chassis", "build date", "CAS part number", "hardware and software version", "comfort-access status", "working-key status", "job type", "supported tool and adapter"],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_cas3": {
+      "display_name": "CAS3",
+      "manufacturer_group": "BMW Group",
+      "module_family": "CAS",
+      "immobiliser_system_id": "bmw_cas3",
+      "generation_order": 6,
+      "required_resolution": ["exact vehicle chassis", "build date", "CAS part number", "hardware and software version", "CAS3 or CAS3+ confirmation", "comfort-access status", "working-key status", "job type", "supported tool and adapter"],
+      "hard_blocks": ["Do not use a CAS3+ workflow until the module variant is confirmed."],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_cas3_plus": {
+      "display_name": "CAS3+",
+      "manufacturer_group": "BMW Group",
+      "module_family": "CAS",
+      "immobiliser_system_id": "bmw_cas3_plus",
+      "generation_order": 7,
+      "required_resolution": ["exact vehicle chassis", "build date", "CAS part number", "hardware and software version", "encrypted-state confirmation", "comfort-access status", "working-key status", "job type", "supported tool and adapter"],
+      "hard_blocks": ["Do not downgrade this record to CAS3 based only on vehicle year or appearance."],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_cas4": {
+      "display_name": "CAS4",
+      "manufacturer_group": "BMW Group",
+      "module_family": "CAS",
+      "immobiliser_system_id": "bmw_cas4",
+      "generation_order": 8,
+      "required_resolution": ["exact vehicle chassis", "build date", "CAS part number", "hardware and software version", "CAS4 or CAS4+ confirmation", "comfort-access status", "working-key status", "job type", "supported tool and adapter"],
+      "hard_blocks": ["Do not apply a CAS4+ procedure until the exact variant is confirmed."],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_cas4_plus": {
+      "display_name": "CAS4+",
+      "manufacturer_group": "BMW Group",
+      "module_family": "CAS",
+      "immobiliser_system_id": "bmw_cas4_plus",
+      "generation_order": 9,
+      "required_resolution": ["exact vehicle chassis", "build date", "CAS part number", "hardware and software version", "encrypted-state confirmation", "comfort-access status", "working-key status", "job type", "supported tool and adapter"],
+      "hard_blocks": ["Do not treat CAS4+ as ordinary CAS4 based only on casing or model year."],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_fem": {
+      "display_name": "FEM",
+      "manufacturer_group": "BMW Group",
+      "module_family": "FEM",
+      "immobiliser_system_id": "bmw_fem",
+      "generation_order": 10,
+      "required_resolution": ["exact vehicle chassis", "build date", "FEM part number", "hardware and software version", "key type", "working-key status", "job type", "module replacement status", "supported tool and adapter", "internet requirement", "battery-support availability"],
+      "hard_blocks": ["Do not transfer BDC procedures to FEM.", "Do not recommend used-module replacement until donor and original module states are known."],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_bdc": {
+      "display_name": "BDC",
+      "manufacturer_group": "BMW Group",
+      "module_family": "BDC",
+      "immobiliser_system_id": "bmw_bdc",
+      "generation_order": 11,
+      "required_resolution": ["exact vehicle chassis", "build date", "BDC generation", "BDC part number", "hardware and software version", "key type", "working-key status", "job type", "module replacement status", "supported tool and adapter", "internet requirement", "battery-support availability"],
+      "hard_blocks": ["Do not assume BDC2 or BDC3 coverage from generic BDC support.", "Do not recommend used-module replacement until donor and original states are known."],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_bdc2": {
+      "display_name": "BDC2",
+      "manufacturer_group": "BMW Group",
+      "module_family": "BDC",
+      "immobiliser_system_id": "bmw_bdc2",
+      "generation_order": 12,
+      "required_resolution": ["exact vehicle chassis", "build date", "BDC2 confirmation", "module part number", "hardware and software version", "key type", "working-key status", "job type", "security-access state", "supported tool and adapter", "online authorisation requirement", "battery-support availability"],
+      "hard_blocks": ["Do not use first-generation BDC workflows.", "Generic BMW support does not prove BDC2 key-programming support."],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bmw_module_bdc3": {
+      "display_name": "BDC3",
+      "manufacturer_group": "BMW Group",
+      "module_family": "BDC",
+      "immobiliser_system_id": "bmw_bdc3",
+      "generation_order": 13,
+      "required_resolution": ["exact vehicle chassis", "build date", "BDC3 confirmation", "module part number", "hardware and software version", "key type", "working-key status", "job type", "security-access state", "supported tool and adapter", "online authorisation requirement", "battery-support availability"],
+      "hard_blocks": ["Do not infer BDC3 support from BDC or BDC2 capability.", "No automatic workflow is permitted without exact tool-version and security-access evidence."],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    }
+  }
+}
