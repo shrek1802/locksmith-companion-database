@@ -1,0 +1,103 @@
+{
+  "schema_version": "3.0-draft",
+  "updated_at": "2026-07-23",
+  "category": "bmw_application_resolution_matrix",
+  "scope": "Evidence gates used to resolve BMW and MINI chassis candidates to an exact immobiliser/module application before recommending locksmith work",
+  "default_policy": {
+    "automatic_recommendation_allowed": false,
+    "minimum_confidence_for_guided_workflow": "community_verified",
+    "minimum_confidence_for_automatic_workflow": "manufacturer_verified",
+    "required_fields": [
+      "market",
+      "steering_position",
+      "chassis_code",
+      "build_date",
+      "job_type",
+      "working_key_status",
+      "key_type",
+      "module_identity",
+      "tool_and_software_version"
+    ],
+    "blocking_conditions": [
+      "unknown chassis code",
+      "unknown build date where module generations overlap",
+      "module label or part number not confirmed",
+      "comfort-access status unresolved where key variants differ",
+      "tool capability based only on marketing wording",
+      "used replacement module status unresolved",
+      "vehicle voltage unstable",
+      "workshop evidence conflicts with proposed workflow"
+    ]
+  },
+  "generation_rules": {
+    "ews": {
+      "candidate_module_profile_ids": ["bmw_module_ews2", "bmw_module_ews3", "bmw_module_ews4"],
+      "required_evidence": ["module label", "module part number", "key/transponder type", "build date"],
+      "recommended_resolution_order": ["confirm chassis and build date", "identify fitted EWS module", "identify key family", "match tool and adapter support", "select add-key or AKL workflow"],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "cas_early": {
+      "candidate_module_profile_ids": ["bmw_module_cas1", "bmw_module_cas2", "bmw_module_cas3", "bmw_module_cas3_plus"],
+      "required_evidence": ["CAS label", "CAS part number", "CAS hardware/software identification", "key type", "working-key status"],
+      "recommended_resolution_order": ["identify exact CAS generation", "confirm key slot/proximity arrangement", "confirm working-key or AKL state", "confirm safe backup method", "match tool support"],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "cas4": {
+      "candidate_module_profile_ids": ["bmw_module_cas3_plus", "bmw_module_cas4", "bmw_module_cas4_plus"],
+      "required_evidence": ["CAS label", "CAS part number", "encryption/version identification", "key type", "tool software version"],
+      "recommended_resolution_order": ["confirm exact CAS generation", "determine whether backup is available through supported method", "check key frequency and comfort access", "confirm adapter requirements", "apply battery-support policy"],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "fem": {
+      "candidate_module_profile_ids": ["bmw_module_fem"],
+      "required_evidence": ["FEM label and part number", "vehicle build date", "key type", "comfort-access status", "working-key status", "tool and programmer version"],
+      "recommended_resolution_order": ["confirm FEM is fitted", "create and verify backup before modification", "resolve spare-key versus AKL path", "confirm key compatibility", "confirm recovery path before programming"],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    },
+    "bdc": {
+      "candidate_module_profile_ids": ["bmw_module_bdc", "bmw_module_bdc2", "bmw_module_bdc3"],
+      "required_evidence": ["BDC generation", "module label and part number", "vehicle integration level where available", "key type", "comfort-access/digital-key status", "tool online and account requirements"],
+      "recommended_resolution_order": ["resolve exact BDC generation", "confirm current tool support for that generation", "confirm online/account requirements", "confirm permitted key type", "confirm safe recovery and voltage-support plan"],
+      "automatic_workflow_allowed": false,
+      "confidence": "research_required"
+    }
+  },
+  "job_context_rules": {
+    "add_key": {
+      "required_evidence": ["at least one working key verified", "working key starts vehicle", "new key compatibility", "remote frequency", "blade profile where applicable"],
+      "workflow_selection_allowed_when_complete": true
+    },
+    "all_keys_lost": {
+      "required_evidence": ["vehicle ownership/authority verified", "no working key confirmed", "exact module generation", "backup/read method", "recovery path", "mechanical entry and blade plan"],
+      "workflow_selection_allowed_when_complete": true
+    },
+    "module_replacement": {
+      "required_evidence": ["original module status", "donor/new module status", "part-number compatibility", "vehicle identity data requirements", "coding/programming plan", "recovery plan"],
+      "workflow_selection_allowed_when_complete": false
+    },
+    "remote_only_fault": {
+      "required_evidence": ["vehicle starts with key", "central locking fault confirmed", "key battery tested", "second key comparison where available", "vehicle receiver/antenna diagnosis separated from immobiliser diagnosis"],
+      "workflow_selection_allowed_when_complete": true
+    },
+    "comfort_access_fault": {
+      "required_evidence": ["normal remote operation status", "passive entry status by door/handle", "passive start status", "key battery condition", "vehicle antenna/handle fault evidence"],
+      "workflow_selection_allowed_when_complete": true
+    }
+  },
+  "safety_policies": {
+    "voltage_support": {
+      "required_for": ["module programming", "software update", "extended diagnostic session", "bench-to-vehicle write operation"],
+      "rule": "Use a suitable regulated vehicle support supply and follow the tool/manufacturer voltage guidance; do not rely on an unsupported current figure as universally safe."
+    },
+    "backup": {
+      "rule": "Where the supported workflow offers a backup, create it before modification and verify that the file is readable and associated with the correct vehicle/job."
+    },
+    "evidence_promotion": {
+      "rule": "Promote a record only when the evidence source, vehicle identity, module identity, tool version, result and recovery outcome are recorded."
+    }
+  }
+}
